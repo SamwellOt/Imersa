@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "languages": [
+    {
+      "code": "ko",
+      "name": "Coreano",
+      "nativeName": "한국어",
+      "coursePath": "ko/course.json",
+      "doseCount": 7
+    },
+    {
+      "code": "ja",
+      "name": "Japonês",
+      "nativeName": "日本語",
+      "coursePath": "ja/course.json",
+      "doseCount": 1
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Deterministic assembly (build-local / assemble) needs only the stdlib + ffmpeg/ffprobe.
+# Morphological analysis for frequency-word cards (the `words` command):
+fugashi           # Japanese (MeCab/UniDic)
+unidic-lite       # dict for fugashi
+kiwipiepy         # Korean morphological analyzer
+edge-tts          # native neural TTS for card fronts (the `tts` command)
+# Other dojo steps:
+genanki
+# yt-dlp and subs2cia are CLI tools (install separately / via the dojo). subs2cia MUST be
+# mattvsjapan's fork:  pip install git+https://github.com/mattvsjapan/subs2cia.git

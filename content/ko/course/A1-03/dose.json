@@ -1,0 +1,4491 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-03",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 3,
+  "title": "Ontem, hoje e amanhã",
+  "synopsis": "Terceira dose: o passado e o futuro. A primeira história conta a mesma tarde de duas amigas três vezes — hoje, ontem e amanhã — para você ouvir a mesma frase mudando de tempo. A segunda acompanha a Yunji comprando um biscoito e passando por cada cômodo da casa: o cachorro, o gato e o irmão no terraço.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 1041.821333,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 5820,
+      "target": "오늘 윤지는 친구를 만나요.",
+      "translation": "Hoje a Yunji encontra a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 11166,
+      "endMs": 16087,
+      "target": "어제 윤지는 친구를 만났어요.",
+      "translation": "Ontem a Yunji encontrou a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만났",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 21686,
+      "endMs": 28127,
+      "target": "내일 윤지는 친구를 만날 거예요.",
+      "translation": "Amanhã a Yunji vai encontrar a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만날",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 33500,
+      "endMs": 39100,
+      "target": "오늘 윤지하고 친구는 삼각김밥을 먹어요.",
+      "translation": "Hoje a Yunji e a amiga comem gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 42863,
+      "endMs": 49422,
+      "target": "어제 윤지하고 친구는 삼각김밥을 먹었어요.",
+      "translation": "Ontem a Yunji e a amiga comeram gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 55455,
+      "endMs": 62536,
+      "target": "내일 윤지하고 친구는 삼각김밥을 먹을 거예요.",
+      "translation": "Amanhã a Yunji e a amiga vão comer gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 66415,
+      "endMs": 70815,
+      "target": "오늘 윤지는 노래해요.",
+      "translation": "Hoje a Yunji canta.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래해",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 70815,
+      "endMs": 74699,
+      "target": "친구는 춤을 춰요.",
+      "translation": "A amiga dança.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "춰",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 81349,
+      "endMs": 85469,
+      "target": "어제 윤지는 노래했어요.",
+      "translation": "Ontem a Yunji cantou.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래했",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 85469,
+      "endMs": 89720,
+      "target": "친구는 춤을 췄어요.",
+      "translation": "A amiga dançou.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "췄",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 96340,
+      "endMs": 100545,
+      "target": "내일 윤지는 노래할 거예요.",
+      "translation": "Amanhã a Yunji vai cantar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래할",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 100545,
+      "endMs": 104744,
+      "target": "친구는 춤을 출 거예요.",
+      "translation": "A amiga vai dançar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 111959,
+      "endMs": 117700,
+      "target": "오늘 윤지하고 친구는 사진을 찍어요.",
+      "translation": "Hoje a Yunji e a amiga tiram fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 117700,
+      "endMs": 120300,
+      "target": "정말 재미있어요.",
+      "translation": "É muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 126614,
+      "endMs": 132540,
+      "target": "어제 윤지하고 친구는 사진을 찍었어요.",
+      "translation": "Ontem a Yunji e a amiga tiraram fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 133325,
+      "endMs": 136926,
+      "target": "정말 재미있었어요.",
+      "translation": "Foi muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 142190,
+      "endMs": 148419,
+      "target": "내일 윤지하고 친구는 사진을 찍을 거예요.",
+      "translation": "Amanhã a Yunji e a amiga vão tirar fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 148419,
+      "endMs": 152426,
+      "target": "정말 재미있을 거예요.",
+      "translation": "Vai ser muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 165223,
+      "endMs": 169540,
+      "target": "오늘 윤지는 친구를 만나요.",
+      "translation": "Hoje a Yunji encontra a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 175319,
+      "endMs": 180319,
+      "target": "어제 윤지는 친구를 만났어요.",
+      "translation": "Ontem a Yunji encontrou a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만났",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 185366,
+      "endMs": 190726,
+      "target": "내일 윤지는 친구를 만날 거예요.",
+      "translation": "Amanhã a Yunji vai encontrar a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만날",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 195327,
+      "endMs": 202007,
+      "target": "오늘 윤지하고 친구는 삼각김밥을 먹어요.",
+      "translation": "Hoje a Yunji e a amiga comem gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 205959,
+      "endMs": 212518,
+      "target": "어제 윤지하고 친구는 삼각김밥을 먹었어요.",
+      "translation": "Ontem a Yunji e a amiga comeram gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 218399,
+      "endMs": 225399,
+      "target": "내일 윤지하고 친구는 삼각김밥을 먹을 거예요.",
+      "translation": "Amanhã a Yunji e a amiga vão comer gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 231025,
+      "endMs": 234942,
+      "target": "오늘 윤지는 노래해요.",
+      "translation": "Hoje a Yunji canta.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래해",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 234942,
+      "endMs": 238446,
+      "target": "친구는 춤을 춰요.",
+      "translation": "A amiga dança.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "춰",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 244060,
+      "endMs": 248246,
+      "target": "어제 윤지는 노래했어요.",
+      "translation": "Ontem a Yunji cantou.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래했",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 248925,
+      "endMs": 252899,
+      "target": "친구는 춤을 췄어요.",
+      "translation": "A amiga dançou.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "췄",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 259022,
+      "endMs": 263504,
+      "target": "내일 윤지는 노래할 거예요.",
+      "translation": "Amanhã a Yunji vai cantar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래할",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 263682,
+      "endMs": 267718,
+      "target": "친구는 춤을 출 거예요.",
+      "translation": "A amiga vai dançar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 274260,
+      "endMs": 279220,
+      "target": "오늘 윤지하고 친구는 사진을 찍어요.",
+      "translation": "Hoje a Yunji e a amiga tiram fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 280575,
+      "endMs": 284255,
+      "target": "정말 재미있어요.",
+      "translation": "É muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 291047,
+      "endMs": 296940,
+      "target": "어제 윤지하고 친구는 사진을 찍었어요.",
+      "translation": "Ontem a Yunji e a amiga tiraram fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 297739,
+      "endMs": 300380,
+      "target": "정말 재미있었어요.",
+      "translation": "Foi muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 308271,
+      "endMs": 315107,
+      "target": "내일 윤지하고 친구는 사진을 찍을 거예요.",
+      "translation": "Amanhã a Yunji e a amiga vão tirar fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 316028,
+      "endMs": 321428,
+      "target": "정말 재미있을 거예요.",
+      "translation": "Vai ser muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 333620,
+      "endMs": 337980,
+      "target": "오늘 윤지는 친구를 만나요.",
+      "translation": "Hoje a Yunji encontra a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 344423,
+      "endMs": 350903,
+      "target": "오늘 윤지하고 친구는 삼각김밥을 먹어요.",
+      "translation": "Hoje a Yunji e a amiga comem gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 356989,
+      "endMs": 361188,
+      "target": "오늘 윤지는 노래해요.",
+      "translation": "Hoje a Yunji canta.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래해",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 365014,
+      "endMs": 369374,
+      "target": "친구는 춤을 춰요.",
+      "translation": "A amiga dança.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "춰",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 374736,
+      "endMs": 380816,
+      "target": "오늘 윤지하고 친구는 사진을 찍어요.",
+      "translation": "Hoje a Yunji e a amiga tiram fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 386373,
+      "endMs": 389933,
+      "target": "정말 재미있어요.",
+      "translation": "É muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 398028,
+      "endMs": 402989,
+      "target": "어제 윤지는 친구를 만났어요.",
+      "translation": "Ontem a Yunji encontrou a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만났",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 408783,
+      "endMs": 416383,
+      "target": "어제 윤지하고 친구는 삼각김밥을 먹었어요.",
+      "translation": "Ontem a Yunji e a amiga comeram gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 422804,
+      "endMs": 426797,
+      "target": "어제 윤지는 노래했어요.",
+      "translation": "Ontem a Yunji cantou.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래했",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 430781,
+      "endMs": 435022,
+      "target": "친구는 춤을 췄어요.",
+      "translation": "A amiga dançou.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "췄",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 442187,
+      "endMs": 448907,
+      "target": "어제 윤지하고 친구는 사진을 찍었어요.",
+      "translation": "Ontem a Yunji e a amiga tiraram fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 452340,
+      "endMs": 456022,
+      "target": "정말 재미있었어요.",
+      "translation": "Foi muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 465510,
+      "endMs": 470950,
+      "target": "내일 윤지는 친구를 만날 거예요.",
+      "translation": "Amanhã a Yunji vai encontrar a amiga.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만날",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 477047,
+      "endMs": 484086,
+      "target": "내일 윤지하고 친구는 삼각김밥을 먹을 거예요.",
+      "translation": "Amanhã a Yunji e a amiga vão comer gimbap triangular.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "삼각",
+          "surface": "삼각",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "김밥",
+          "surface": "김밥",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 490710,
+      "endMs": 495430,
+      "target": "내일 윤지는 노래할 거예요.",
+      "translation": "Amanhã a Yunji vai cantar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "노래하다",
+          "surface": "노래할",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 499326,
+      "endMs": 505045,
+      "target": "친구는 춤을 출 거예요.",
+      "translation": "A amiga vai dançar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 510980,
+      "endMs": 516460,
+      "target": "내일 윤지하고 친구는 사진을 찍을 거예요.",
+      "translation": "Amanhã a Yunji e a amiga vão tirar fotos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "사진",
+          "surface": "사진",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "찍다",
+          "surface": "찍",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 523149,
+      "endMs": 527469,
+      "target": "정말 재미있을 거예요.",
+      "translation": "Vai ser muito divertido.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "재미있다",
+          "surface": "재미있",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 533919,
+      "endMs": 537540,
+      "target": "오늘 뭐 해요?",
+      "translation": "O que você faz hoje?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 543700,
+      "endMs": 547540,
+      "target": "어제 뭐 했어요?",
+      "translation": "O que você fez ontem?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "했",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 553175,
+      "endMs": 557135,
+      "target": "내일 뭐 할 거예요?",
+      "translation": "O que você vai fazer amanhã?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 559700,
+      "endMs": 564620,
+      "target": "윤지는 가게에 가요.",
+      "translation": "A Yunji vai à loja.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "가게",
+          "surface": "가게",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 566620,
+      "endMs": 571579,
+      "target": "가게에 두쫀쿠가 있어요.",
+      "translation": "Na loja tem biscoito de Dubai.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "가게",
+          "surface": "가게",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 572540,
+      "endMs": 577820,
+      "target": "윤지는 직원한테 말해요.",
+      "translation": "A Yunji fala com o atendente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "직원",
+          "surface": "직원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "말하다",
+          "surface": "말해",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 579659,
+      "endMs": 583900,
+      "target": "\"두쫀쿠 두 개 주세요.\"",
+      "translation": "«Me dá dois biscoitos de Dubai, por favor.»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "lemma": "주다",
+          "surface": "주",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 585140,
+      "endMs": 590780,
+      "target": "직원은 윤지한테 두쫀쿠를 줘요.",
+      "translation": "O atendente dá os biscoitos de Dubai para a Yunji.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "직원",
+          "surface": "직원",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "주다",
+          "surface": "줘",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 593700,
+      "endMs": 598780,
+      "target": "이제 윤지는 집에 가요.",
+      "translation": "Agora a Yunji vai para casa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "이제",
+          "surface": "이제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 599099,
+      "endMs": 603739,
+      "target": "윤지는 거실에 가요.",
+      "translation": "A Yunji vai para a sala.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "거실",
+          "surface": "거실",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 604579,
+      "endMs": 609219,
+      "target": "거실에 강아지가 있어요.",
+      "translation": "Na sala tem um cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거실",
+          "surface": "거실",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 609540,
+      "endMs": 614820,
+      "target": "윤지는 강아지한테 가요.",
+      "translation": "A Yunji vai até o cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 615939,
+      "endMs": 620780,
+      "target": "그리고 강아지한테 인사해요.",
+      "translation": "E cumprimenta o cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "인사하다",
+          "surface": "인사해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 622460,
+      "endMs": 627500,
+      "target": "\"안녕? 오늘 잘 지냈어?\"",
+      "translation": "«Oi! Você passou bem hoje?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "안녕",
+          "surface": "안녕",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "잘",
+          "surface": "잘",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "지내다",
+          "surface": "지냈",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 630299,
+      "endMs": 635979,
+      "target": "윤지는 강아지한테 뽀뽀를 해요.",
+      "translation": "A Yunji dá um beijinho no cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "뽀뽀",
+          "surface": "뽀뽀",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 637380,
+      "endMs": 641580,
+      "target": "윤지는 방에 가요.",
+      "translation": "A Yunji vai para o quarto.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 644100,
+      "endMs": 648380,
+      "target": "방에 고양이가 있어요.",
+      "translation": "No quarto tem um gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 650220,
+      "endMs": 655259,
+      "target": "윤지는 고양이한테 가요.",
+      "translation": "A Yunji vai até o gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 656100,
+      "endMs": 660819,
+      "target": "그리고 고양이한테 물어봐요.",
+      "translation": "E pergunta para o gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "묻다",
+          "surface": "물",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 662220,
+      "endMs": 665220,
+      "target": "\"배고파?\"",
+      "translation": "«Está com fome?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "배고프다",
+          "surface": "배고파",
+          "start": 1,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 666020,
+      "endMs": 671900,
+      "target": "윤지는 고양이한테 간식을 줘요.",
+      "translation": "A Yunji dá um petisco para o gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "간식",
+          "surface": "간식",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "주다",
+          "surface": "줘",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 674100,
+      "endMs": 678860,
+      "target": "윤지는 오빠 방에 가요.",
+      "translation": "A Yunji vai para o quarto do irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 679300,
+      "endMs": 684580,
+      "target": "그런데 오빠 방에 오빠가 없어요.",
+      "translation": "Mas o irmão não está no quarto dele.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "없다",
+          "surface": "없",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 686060,
+      "endMs": 690819,
+      "target": "윤지는 오빠한테 전화해요.",
+      "translation": "A Yunji liga para o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "전화하다",
+          "surface": "전화해",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 692460,
+      "endMs": 696020,
+      "target": "\"오빠, 어디에 있어?\"",
+      "translation": "«Irmão, você está onde?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 698220,
+      "endMs": 702340,
+      "target": "\"지금 옥상에 있어.\"",
+      "translation": "«Agora eu estou no terraço.»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "옥상",
+          "surface": "옥상",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 704979,
+      "endMs": 709419,
+      "target": "윤지는 옥상에 가요.",
+      "translation": "A Yunji vai para o terraço.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "옥상",
+          "surface": "옥상",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 711780,
+      "endMs": 716060,
+      "target": "옥상에 오빠가 있어요.",
+      "translation": "No terraço está o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "옥상",
+          "surface": "옥상",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 716419,
+      "endMs": 721180,
+      "target": "윤지는 오빠한테 가요.",
+      "translation": "A Yunji vai até o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 721940,
+      "endMs": 726620,
+      "target": "오빠가 윤지한테 물어봐요.",
+      "translation": "O irmão pergunta para a Yunji.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "묻다",
+          "surface": "물",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 727979,
+      "endMs": 730979,
+      "target": "\"샀어?\"",
+      "translation": "«Comprou?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "사다",
+          "surface": "샀",
+          "start": 1,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 731699,
+      "endMs": 737500,
+      "target": "윤지는 오빠한테 두쫀쿠를 줘요.",
+      "translation": "A Yunji dá um biscoito de Dubai para o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "주다",
+          "surface": "줘",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 738419,
+      "endMs": 744500,
+      "target": "윤지는 오빠랑 같이 두쫀쿠를 먹어요.",
+      "translation": "A Yunji come o biscoito de Dubai junto com o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 745259,
+      "endMs": 752580,
+      "target": "\"오빠! 엄마한테 말하지 마. 비밀이야.\"",
+      "translation": "«Irmão! Não conta para a mamãe. É segredo.»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "말하다",
+          "surface": "말하",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "비밀",
+          "surface": "비밀",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 763220,
+      "endMs": 768140,
+      "target": "윤지는 가게에 가요.",
+      "translation": "A Yunji vai à loja.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "가게",
+          "surface": "가게",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 773020,
+      "endMs": 777979,
+      "target": "가게에 두쫀쿠가 있어요.",
+      "translation": "Na loja tem biscoito de Dubai.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "가게",
+          "surface": "가게",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 782419,
+      "endMs": 787699,
+      "target": "윤지는 직원한테 말해요.",
+      "translation": "A Yunji fala com o atendente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "직원",
+          "surface": "직원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "말하다",
+          "surface": "말해",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 792699,
+      "endMs": 797020,
+      "target": "\"두쫀쿠 두 개 주세요.\"",
+      "translation": "«Me dá dois biscoitos de Dubai, por favor.»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 1,
+          "end": 4
+        },
+        {
+          "lemma": "주다",
+          "surface": "주",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 801020,
+      "endMs": 806620,
+      "target": "직원은 윤지한테 두쫀쿠를 줘요.",
+      "translation": "O atendente dá os biscoitos de Dubai para a Yunji.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "직원",
+          "surface": "직원",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "주다",
+          "surface": "줘",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 812060,
+      "endMs": 817180,
+      "target": "이제 윤지는 집에 가요.",
+      "translation": "Agora a Yunji vai para casa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "이제",
+          "surface": "이제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s95",
+      "index": 95,
+      "startMs": 820340,
+      "endMs": 824940,
+      "target": "윤지는 거실에 가요.",
+      "translation": "A Yunji vai para a sala.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "거실",
+          "surface": "거실",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s96",
+      "index": 96,
+      "startMs": 828620,
+      "endMs": 833259,
+      "target": "거실에 강아지가 있어요.",
+      "translation": "Na sala tem um cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거실",
+          "surface": "거실",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s97",
+      "index": 97,
+      "startMs": 837580,
+      "endMs": 842900,
+      "target": "윤지는 강아지한테 가요.",
+      "translation": "A Yunji vai até o cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s98",
+      "index": 98,
+      "startMs": 846900,
+      "endMs": 851740,
+      "target": "그리고 강아지한테 인사해요.",
+      "translation": "E cumprimenta o cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "인사하다",
+          "surface": "인사해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s99",
+      "index": 99,
+      "startMs": 856060,
+      "endMs": 861140,
+      "target": "\"안녕? 오늘 잘 지냈어?\"",
+      "translation": "«Oi! Você passou bem hoje?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "안녕",
+          "surface": "안녕",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "잘",
+          "surface": "잘",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "지내다",
+          "surface": "지냈",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s100",
+      "index": 100,
+      "startMs": 865860,
+      "endMs": 871539,
+      "target": "윤지는 강아지한테 뽀뽀를 해요.",
+      "translation": "A Yunji dá um beijinho no cachorrinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "뽀뽀",
+          "surface": "뽀뽀",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "index": 101,
+      "startMs": 876580,
+      "endMs": 880780,
+      "target": "윤지는 방에 가요.",
+      "translation": "A Yunji vai para o quarto.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s102",
+      "index": 102,
+      "startMs": 885140,
+      "endMs": 889340,
+      "target": "방에 고양이가 있어요.",
+      "translation": "No quarto tem um gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s103",
+      "index": 103,
+      "startMs": 893939,
+      "endMs": 899020,
+      "target": "윤지는 고양이한테 가요.",
+      "translation": "A Yunji vai até o gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s104",
+      "index": 104,
+      "startMs": 903140,
+      "endMs": 907940,
+      "target": "그리고 고양이한테 물어봐요.",
+      "translation": "E pergunta para o gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "묻다",
+          "surface": "물",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s105",
+      "index": 105,
+      "startMs": 912739,
+      "endMs": 915739,
+      "target": "\"배고파?\"",
+      "translation": "«Está com fome?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "배고프다",
+          "surface": "배고파",
+          "start": 1,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s106",
+      "index": 106,
+      "startMs": 918260,
+      "endMs": 924140,
+      "target": "윤지는 고양이한테 간식을 줘요.",
+      "translation": "A Yunji dá um petisco para o gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "간식",
+          "surface": "간식",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "주다",
+          "surface": "줘",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s107",
+      "index": 107,
+      "startMs": 930220,
+      "endMs": 934940,
+      "target": "윤지는 오빠 방에 가요.",
+      "translation": "A Yunji vai para o quarto do irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s108",
+      "index": 108,
+      "startMs": 938420,
+      "endMs": 943660,
+      "target": "그런데 오빠 방에 오빠가 없어요.",
+      "translation": "Mas o irmão não está no quarto dele.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "없다",
+          "surface": "없",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s109",
+      "index": 109,
+      "startMs": 947940,
+      "endMs": 952700,
+      "target": "윤지는 오빠한테 전화해요.",
+      "translation": "A Yunji liga para o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "전화하다",
+          "surface": "전화해",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s110",
+      "index": 110,
+      "startMs": 957220,
+      "endMs": 961380,
+      "target": "\"오빠, 어디에 있어?\"",
+      "translation": "«Irmão, você está onde?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "index": 111,
+      "startMs": 965140,
+      "endMs": 969260,
+      "target": "\"지금 옥상에 있어.\"",
+      "translation": "«Agora eu estou no terraço.»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "옥상",
+          "surface": "옥상",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s112",
+      "index": 112,
+      "startMs": 973780,
+      "endMs": 978260,
+      "target": "윤지는 옥상에 가요.",
+      "translation": "A Yunji vai para o terraço.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "옥상",
+          "surface": "옥상",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s113",
+      "index": 113,
+      "startMs": 982220,
+      "endMs": 986500,
+      "target": "옥상에 오빠가 있어요.",
+      "translation": "No terraço está o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "옥상",
+          "surface": "옥상",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s114",
+      "index": 114,
+      "startMs": 990540,
+      "endMs": 995260,
+      "target": "윤지는 오빠한테 가요.",
+      "translation": "A Yunji vai até o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s115",
+      "index": 115,
+      "startMs": 999220,
+      "endMs": 1003900,
+      "target": "오빠가 윤지한테 물어봐요.",
+      "translation": "O irmão pergunta para a Yunji.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "묻다",
+          "surface": "물",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s116",
+      "index": 116,
+      "startMs": 1008220,
+      "endMs": 1011220,
+      "target": "\"샀어?\"",
+      "translation": "«Comprou?»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "사다",
+          "surface": "샀",
+          "start": 1,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s117",
+      "index": 117,
+      "startMs": 1013700,
+      "endMs": 1019500,
+      "target": "윤지는 오빠한테 두쫀쿠를 줘요.",
+      "translation": "A Yunji dá um biscoito de Dubai para o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "주다",
+          "surface": "줘",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s118",
+      "index": 118,
+      "startMs": 1023500,
+      "endMs": 1029540,
+      "target": "윤지는 오빠랑 같이 두쫀쿠를 먹어요.",
+      "translation": "A Yunji come o biscoito de Dubai junto com o irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "두쫀쿠",
+          "surface": "두쫀쿠",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s119",
+      "index": 119,
+      "startMs": 1033619,
+      "endMs": 1040739,
+      "target": "\"오빠! 엄마한테 말하지 마. 비밀이야.\"",
+      "translation": "«Irmão! Não conta para a mamãe. É segredo.»",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오빠",
+          "surface": "오빠",
+          "start": 1,
+          "end": 3
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "말하다",
+          "surface": "말하",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "비밀",
+          "surface": "비밀",
+          "start": 17,
+          "end": 19
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-없다",
+      "segmentId": "",
+      "target": "없다",
+      "translation": "não ter / não estar",
+      "startMs": 679300,
+      "endMs": 684580,
+      "reading": null,
+      "context": "그런데 오빠 방에 오빠가 없어요. — Mas o irmão não está no quarto dele.",
+      "audioClipSrc": "media/tts/w14e5b70e43a7.mp3",
+      "exampleAudioSrc": "media/frag/f3f7cd6d3f9c1.mp3",
+      "freqRank": 4,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "없"
+      ],
+      "sceneSrc": "media/frames/s16171e9b1cdd.jpg"
+    },
+    {
+      "id": "w-잘",
+      "segmentId": "",
+      "target": "잘",
+      "translation": "bem",
+      "startMs": 622460,
+      "endMs": 627500,
+      "reading": null,
+      "context": "\"안녕? 오늘 잘 지냈어?\" — «Oi! Você passou bem hoje?»",
+      "audioClipSrc": "media/tts/wfdb774494454.mp3",
+      "exampleAudioSrc": "media/frag/fa41fe8c71ae5.mp3",
+      "freqRank": 22,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sf0806d570ca4.jpg"
+    },
+    {
+      "id": "w-말하다",
+      "segmentId": "",
+      "target": "말하다",
+      "translation": "falar / dizer",
+      "startMs": 572540,
+      "endMs": 577820,
+      "reading": null,
+      "context": "윤지는 직원한테 말해요. — A Yunji fala com o atendente.",
+      "audioClipSrc": "media/tts/w7109575bcb72.mp3",
+      "exampleAudioSrc": "media/frag/fe67e294c592c.mp3",
+      "freqRank": 23,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "말해"
+      ],
+      "sceneSrc": "media/frames/sd4532b8048f6.jpg"
+    },
+    {
+      "id": "w-정말",
+      "segmentId": "",
+      "target": "정말",
+      "translation": "realmente / muito mesmo",
+      "startMs": 117700,
+      "endMs": 120300,
+      "reading": null,
+      "context": "정말 재미있어요. — É muito divertido.",
+      "audioClipSrc": "media/tts/wd081097ea6ce.mp3",
+      "exampleAudioSrc": "media/frag/f6741907b2f0c.mp3",
+      "freqRank": 28,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sebb592bc7b94.jpg"
+    },
+    {
+      "id": "w-친구",
+      "segmentId": "",
+      "target": "친구",
+      "translation": "amigo / amiga",
+      "startMs": 70815,
+      "endMs": 74699,
+      "reading": null,
+      "context": "친구는 춤을 춰요. — A amiga dança.",
+      "audioClipSrc": "media/tts/w2e2bda5f943b.mp3",
+      "exampleAudioSrc": "media/frag/f230b9f1139ff.mp3",
+      "freqRank": 61,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s06a1e64e6043.jpg"
+    },
+    {
+      "id": "w-만나다",
+      "segmentId": "",
+      "target": "만나다",
+      "translation": "encontrar (alguém)",
+      "startMs": 1500,
+      "endMs": 5820,
+      "reading": null,
+      "context": "오늘 윤지는 친구를 만나요. — Hoje a Yunji encontra a amiga.",
+      "audioClipSrc": "media/tts/w4f73b57a70d5.mp3",
+      "exampleAudioSrc": "media/frag/f6780c198e1a4.mp3",
+      "freqRank": 75,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "만나"
+      ],
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+    },
+    {
+      "id": "w-이제",
+      "segmentId": "",
+      "target": "이제",
+      "translation": "agora / a partir de agora",
+      "startMs": 593700,
+      "endMs": 598780,
+      "reading": null,
+      "context": "이제 윤지는 집에 가요. — Agora a Yunji vai para casa.",
+      "audioClipSrc": "media/tts/wf5e754f61223.mp3",
+      "exampleAudioSrc": "media/frag/f8123fa367213.mp3",
+      "freqRank": 129,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s95bb2bb59bf4.jpg"
+    },
+    {
+      "id": "w-내일",
+      "segmentId": "",
+      "target": "내일",
+      "translation": "amanhã",
+      "startMs": 553175,
+      "endMs": 557135,
+      "reading": null,
+      "context": "내일 뭐 할 거예요? — O que você vai fazer amanhã?",
+      "audioClipSrc": "media/tts/w0fd17ef79976.mp3",
+      "exampleAudioSrc": "media/frag/ff331e22a853a.mp3",
+      "freqRank": 187,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/se0326d008029.jpg"
+    },
+    {
+      "id": "w-사다",
+      "segmentId": "",
+      "target": "사다",
+      "translation": "comprar",
+      "startMs": 727979,
+      "endMs": 730979,
+      "reading": null,
+      "context": "\"샀어?\" — «Comprou?»",
+      "audioClipSrc": "media/tts/wcac1d3391c29.mp3",
+      "exampleAudioSrc": "media/frag/f6814ad28f9e6.mp3",
+      "freqRank": 218,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "샀"
+      ],
+      "sceneSrc": "media/frames/sa655e4c31205.jpg"
+    },
+    {
+      "id": "w-묻다",
+      "segmentId": "",
+      "target": "묻다",
+      "translation": "perguntar",
+      "startMs": 721940,
+      "endMs": 726620,
+      "reading": null,
+      "context": "오빠가 윤지한테 물어봐요. — O irmão pergunta para a Yunji.",
+      "audioClipSrc": "media/tts/wca1319479a96.mp3",
+      "exampleAudioSrc": "media/frag/f328216b22226.mp3",
+      "freqRank": 229,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "물"
+      ],
+      "sceneSrc": "media/frames/s77cd032671fc.jpg"
+    },
+    {
+      "id": "w-사진",
+      "segmentId": "",
+      "target": "사진",
+      "translation": "foto",
+      "startMs": 111959,
+      "endMs": 117700,
+      "reading": null,
+      "context": "오늘 윤지하고 친구는 사진을 찍어요. — Hoje a Yunji e a amiga tiram fotos.",
+      "audioClipSrc": "media/tts/w48a75a3a5093.mp3",
+      "exampleAudioSrc": "media/frag/f57755b0507b2.mp3",
+      "freqRank": 300,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7a952cb6c260.jpg"
+    },
+    {
+      "id": "w-지내다",
+      "segmentId": "",
+      "target": "지내다",
+      "translation": "passar (o tempo) / levar a vida",
+      "startMs": 622460,
+      "endMs": 627500,
+      "reading": null,
+      "context": "\"안녕? 오늘 잘 지냈어?\" — «Oi! Você passou bem hoje?»",
+      "audioClipSrc": "media/tts/w1cb50cfbf500.mp3",
+      "exampleAudioSrc": "media/frag/f691e3c60a89c.mp3",
+      "freqRank": 317,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "지냈"
+      ],
+      "sceneSrc": "media/frames/sf0806d570ca4.jpg"
+    },
+    {
+      "id": "w-오빠",
+      "segmentId": "",
+      "target": "오빠",
+      "translation": "irmão mais velho (dito por uma mulher)",
+      "startMs": 674100,
+      "endMs": 678860,
+      "reading": null,
+      "context": "윤지는 오빠 방에 가요. — A Yunji vai para o quarto do irmão.",
+      "audioClipSrc": "media/tts/wafec8386690a.mp3",
+      "exampleAudioSrc": "media/frag/f6f5afcdfd237.mp3",
+      "freqRank": 347,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s4ddff07a4690.jpg"
+    },
+    {
+      "id": "w-전화하다",
+      "segmentId": "",
+      "target": "전화하다",
+      "translation": "telefonar / ligar",
+      "startMs": 686060,
+      "endMs": 690819,
+      "reading": null,
+      "context": "윤지는 오빠한테 전화해요. — A Yunji liga para o irmão.",
+      "audioClipSrc": "media/tts/wb1914bdc2b14.mp3",
+      "exampleAudioSrc": "media/frag/f7b36a4b24013.mp3",
+      "freqRank": 353,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "전화해"
+      ],
+      "sceneSrc": "media/frames/s993e14852058.jpg"
+    },
+    {
+      "id": "w-비밀",
+      "segmentId": "",
+      "target": "비밀",
+      "translation": "segredo",
+      "startMs": 745259,
+      "endMs": 752580,
+      "reading": null,
+      "context": "\"오빠! 엄마한테 말하지 마. 비밀이야.\" — «Irmão! Não conta para a mamãe. É segredo.»",
+      "audioClipSrc": "media/tts/w4fea225ab158.mp3",
+      "exampleAudioSrc": "media/frag/f144a2575b621.mp3",
+      "freqRank": 377,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s2baa0ea22dc3.jpg"
+    },
+    {
+      "id": "w-어제",
+      "segmentId": "",
+      "target": "어제",
+      "translation": "ontem",
+      "startMs": 543700,
+      "endMs": 547540,
+      "reading": null,
+      "context": "어제 뭐 했어요? — O que você fez ontem?",
+      "audioClipSrc": "media/tts/wf269c1911caa.mp3",
+      "exampleAudioSrc": "media/frag/f3bda857559b1.mp3",
+      "freqRank": 384,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sa9e2e6a87f63.jpg"
+    },
+    {
+      "id": "w-찍다",
+      "segmentId": "",
+      "target": "찍다",
+      "translation": "tirar (foto)",
+      "startMs": 111959,
+      "endMs": 117700,
+      "reading": null,
+      "context": "오늘 윤지하고 친구는 사진을 찍어요. — Hoje a Yunji e a amiga tiram fotos.",
+      "audioClipSrc": "media/tts/wa3f409dc267a.mp3",
+      "exampleAudioSrc": "media/frag/f692f0a72ca1f.mp3",
+      "freqRank": 475,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "찍"
+      ],
+      "sceneSrc": "media/frames/s7a952cb6c260.jpg"
+    },
+    {
+      "id": "w-고양이",
+      "segmentId": "",
+      "target": "고양이",
+      "translation": "gato",
+      "startMs": 644100,
+      "endMs": 648380,
+      "reading": null,
+      "context": "방에 고양이가 있어요. — No quarto tem um gato.",
+      "audioClipSrc": "media/tts/waf8b4e517a38.mp3",
+      "exampleAudioSrc": "media/frag/f522ff553132e.mp3",
+      "freqRank": 628,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s65d0754c9208.jpg"
+    },
+    {
+      "id": "w-춤",
+      "segmentId": "",
+      "target": "춤",
+      "translation": "dança",
+      "startMs": 70815,
+      "endMs": 74699,
+      "reading": null,
+      "context": "친구는 춤을 춰요. — A amiga dança.",
+      "audioClipSrc": "media/tts/we0dd6cfa626a.mp3",
+      "exampleAudioSrc": "media/frag/f92902d75ddc7.mp3",
+      "freqRank": 809,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s06a1e64e6043.jpg"
+    },
+    {
+      "id": "w-재미있다",
+      "segmentId": "",
+      "target": "재미있다",
+      "translation": "ser divertido",
+      "startMs": 117700,
+      "endMs": 120300,
+      "reading": null,
+      "context": "정말 재미있어요. — É muito divertido.",
+      "audioClipSrc": "media/tts/w4c339009e05d.mp3",
+      "exampleAudioSrc": "media/frag/f7e96bdc0f495.mp3",
+      "freqRank": 937,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "재미있"
+      ],
+      "sceneSrc": "media/frames/sebb592bc7b94.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/pgM_VzPmh28",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/pgM_VzPmh28",
+        "startMs": 0,
+        "title": "사진을 찍었어요"
+      },
+      {
+        "url": "https://youtu.be/_fhs5Ib5H2M",
+        "startMs": 558200,
+        "title": "강아지한테 뽀뽀를 해요"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "A mesma frase volta em três tempos seguidos — dá para ouvir a terminação mudando.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 62536,
+      "summary": "Primeira história: hoje, ontem e amanhã. Hoje a Yunji encontra a amiga; ontem encontrou; amanhã vai encontrar. E as duas comem gimbap triangular — hoje, ontem e amanhã.",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 66415,
+      "endMs": 104744,
+      "summary": "A Yunji canta e a amiga dança — nas três épocas: hoje, ontem e amanhã.",
+      "segmentIds": [
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 111959,
+      "endMs": 152426,
+      "summary": "As duas tiram fotos: é muito divertido, foi muito divertido, vai ser muito divertido.",
+      "segmentIds": [
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 165223,
+      "endMs": 321428,
+      "summary": "A mesma história desde o começo (2ª vez).",
+      "segmentIds": [
+        "s19",
+        "s20",
+        "s21",
+        "s22",
+        "s23",
+        "s24",
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 333620,
+      "endMs": 389933,
+      "summary": "Agora só o hoje, de ponta a ponta: encontra, come, canta, dança, tira foto.",
+      "segmentIds": [
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 398028,
+      "endMs": 456022,
+      "summary": "Agora só o ontem: encontrou, comeu, cantou, dançou, tirou foto.",
+      "segmentIds": [
+        "s43",
+        "s44",
+        "s45",
+        "s46",
+        "s47",
+        "s48"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 465510,
+      "endMs": 527469,
+      "summary": "Agora só o amanhã: vai encontrar, vai comer, vai cantar, vai dançar, vai tirar foto.",
+      "segmentIds": [
+        "s49",
+        "s50",
+        "s51",
+        "s52",
+        "s53",
+        "s54"
+      ]
+    },
+    {
+      "id": "p8",
+      "startMs": 533919,
+      "endMs": 557135,
+      "summary": "Três perguntas para você: «O que você faz hoje?», «O que você fez ontem?», «O que você vai fazer amanhã?»",
+      "segmentIds": [
+        "s55",
+        "s56",
+        "s57"
+      ]
+    },
+    {
+      "id": "p9",
+      "startMs": 559700,
+      "endMs": 598780,
+      "summary": "Segunda história: a Yunji vai à loja, fala com o atendente, pede dois biscoitos de Dubai e volta para casa.",
+      "segmentIds": [
+        "s58",
+        "s59",
+        "s60",
+        "s61",
+        "s62",
+        "s63"
+      ]
+    },
+    {
+      "id": "p10",
+      "startMs": 599099,
+      "endMs": 635979,
+      "summary": "Na sala está o cachorrinho: ela chega perto, cumprimenta («Oi! Você passou bem hoje?») e dá um beijinho nele.",
+      "segmentIds": [
+        "s64",
+        "s65",
+        "s66",
+        "s67",
+        "s68",
+        "s69"
+      ]
+    },
+    {
+      "id": "p11",
+      "startMs": 637380,
+      "endMs": 671900,
+      "summary": "No quarto está o gato: ela pergunta «Está com fome?» e dá um petisco.",
+      "segmentIds": [
+        "s70",
+        "s71",
+        "s72",
+        "s73",
+        "s74",
+        "s75"
+      ]
+    },
+    {
+      "id": "p12",
+      "startMs": 674100,
+      "endMs": 752580,
+      "summary": "No quarto do irmão, ele não está. Ela liga: ele está no terraço. Lá em cima ele pergunta «Comprou?» — ela dá um biscoito e os dois comem juntos: «Não conta para a mamãe, é segredo.»",
+      "segmentIds": [
+        "s76",
+        "s77",
+        "s78",
+        "s79",
+        "s80",
+        "s81",
+        "s82",
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87",
+        "s88"
+      ]
+    },
+    {
+      "id": "p13",
+      "startMs": 763220,
+      "endMs": 1040739,
+      "summary": "A mesma história de novo, mais devagar, para repetir junto.",
+      "segmentIds": [
+        "s89",
+        "s90",
+        "s91",
+        "s92",
+        "s93",
+        "s94",
+        "s95",
+        "s96",
+        "s97",
+        "s98",
+        "s99",
+        "s100",
+        "s101",
+        "s102",
+        "s103",
+        "s104",
+        "s105",
+        "s106",
+        "s107",
+        "s108",
+        "s109",
+        "s110",
+        "s111",
+        "s112",
+        "s113",
+        "s114",
+        "s115",
+        "s116",
+        "s117",
+        "s118",
+        "s119"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "-았/었어요 (passado)",
+    "-(으)ㄹ 거예요 (futuro)",
+    "사람 + 한테 (a alguém)",
+    "-하고 / -랑 (e / junto com)",
+    "그런데 (mas / acontece que)"
+  ],
+  "tags": [
+    "história",
+    "tempos verbais",
+    "rotina",
+    "casa"
+  ],
+  "titleTarget": "사진을 찍었어요 · 강아지한테 뽀뽀를 해요",
+  "premise": "Histórias ilustradas A0 que introduzem o passado (-았/었어요) e o futuro (-(으)ㄹ 거예요) por contraste direto: a mesma frase repetida nos três tempos. A segunda história traz a partícula -한테 (a alguém) com verbos de dar, falar, perguntar e telefonar.",
+  "createdAt": "2026-08-22T18:42:32.656010+00:00"
+}

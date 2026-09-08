@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "language": "ko",
+  "name": "Coreano",
+  "nativeName": "한국어",
+  "levels": [
+    {
+      "id": "A1",
+      "name": "Iniciante",
+      "description": "Primeiro contato: fala clara, temas concretos do dia a dia."
+    },
+    {
+      "id": "A2",
+      "name": "Básico",
+      "description": "Rotina, histórias simples, ritmo pausado, vocabulário cotidiano."
+    },
+    {
+      "id": "B1",
+      "name": "Intermediário",
+      "description": "Conversas naturais, opinião, narrativas mais longas."
+    },
+    {
+      "id": "B2",
+      "name": "Intermediário alto",
+      "description": "Fala rápida, humor, gíria, temas abstratos."
+    },
+    {
+      "id": "C1",
+      "name": "Avançado",
+      "description": "Conteúdo nativo sem concessões, nuance e registro."
+    },
+    {
+      "id": "C2",
+      "name": "Domínio",
+      "description": "Qualquer conteúdo, sotaques e subculturas."
+    }
+  ],
+  "doses": [
+    {
+      "id": "ko-A1-01",
+      "level": "A1",
+      "lessonNumber": 1,
+      "title": "Em casa com a família da Yunji",
+      "path": "course/A1-01/dose.json",
+      "durationSec": 1102,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 20
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    },
+    {
+      "id": "ko-A1-02",
+      "level": "A1",
+      "lessonNumber": 2,
+      "title": "Contando: cinco sorvetes, dez tangerinas e as horas do dia",
+      "path": "course/A1-02/dose.json",
+      "durationSec": 955,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 20
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    },
+    {
+      "id": "ko-A1-03",
+      "level": "A1",
+      "lessonNumber": 3,
+      "title": "Ontem, hoje e amanhã",
+      "path": "course/A1-03/dose.json",
+      "durationSec": 1042,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 20
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    },
+    {
+      "id": "ko-A1-04",
+      "level": "A1",
+      "lessonNumber": 4,
+      "title": "A noite antes da prova (e um dia cheio)",
+      "path": "course/A1-04/dose.json",
+      "durationSec": 915,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 20
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    },
+    {
+      "id": "ko-A1-05",
+      "level": "A1",
+      "lessonNumber": 5,
+      "title": "Que tempo faz — e o que você precisa fazer",
+      "path": "course/A1-05/dose.json",
+      "durationSec": 918,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 18,
+        "B": 2
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    },
+    {
+      "id": "ko-A1-06",
+      "level": "A1",
+      "lessonNumber": 6,
+      "title": "O que você consegue fazer, o que você gosta de fazer",
+      "path": "course/A1-06/dose.json",
+      "durationSec": 1209,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 20
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    },
+    {
+      "id": "ko-A1-07",
+      "level": "A1",
+      "lessonNumber": 7,
+      "title": "Viajar: para quê, como e quanto",
+      "path": "course/A1-07/dose.json",
+      "durationSec": 910,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 18,
+        "B": 2
+      },
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+    }
+  ],
+  "vocabLadder": {
+    "exam": "TOPIK",
+    "source": "국립국어원 «한국어 학습용 어휘 목록» + TOPIK 어휘 목록 (2015)",
+    "tiers": [
+      {
+        "tier": "A",
+        "name": "Básico",
+        "exam": "TOPIK I · 1–2급",
+        "cefr": "A1–A2",
+        "words": 1866
+      },
+      {
+        "tier": "B",
+        "name": "Intermediário",
+        "exam": "TOPIK II · 3–4급",
+        "cefr": "B1–B2",
+        "words": 3874
+      },
+      {
+        "tier": "C",
+        "name": "Avançado",
+        "exam": "TOPIK II · 5–6급",
+        "cefr": "C1–C2",
+        "words": 902
+      }
+    ]
+  }
+}

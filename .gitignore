@@ -1,0 +1,24 @@
+# deps / build
+web/node_modules/
+web/dist/
+pipeline/.venv/
+__pycache__/
+*.pyc
+
+# generated content media (keep dose.json/course.json; large media is regenerated)
+content/**/media/
+content/.work/
+
+# local prefs / os
+.DS_Store
+*.log
+
+# artefatos de trabalho da pipeline (mídia baixada, ~845 MB)
+pipeline/.work/
+.work/
+
+# banco do servidor de sincronização (contas, sessões, progresso) — nunca versionar
+server/data/
+
+# builds incrementais do TS
+*.tsbuildinfo

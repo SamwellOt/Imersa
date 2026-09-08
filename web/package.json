@@ -1,0 +1,38 @@
+{
+  "name": "imersa-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Imersa — app do aluno: doses diárias de imersão + SRS",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && rm -rf dist/content",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "serve": "node ../server/index.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "dexie": "^4.0.10",
+    "dexie-react-hooks": "^1.1.7",
+    "framer-motion": "^11.11.17",
+    "fsrs-browser": "^6.6.0",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "tailwind-merge": "^2.5.5",
+    "ts-fsrs": "^5.4.2",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.20.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

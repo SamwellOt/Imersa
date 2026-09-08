@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+KR:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap");
+@import "tailwindcss";
+
+/* Dica de teclado só faz sentido onde há teclado: `md:fine:flex` esconde os
+   atalhos num celular em paisagem (largo, mas sem teclado). */
+@custom-variant fine (@media (hover: hover) and (pointer: fine));
+
+
+/*
+  Imersa — sistema visual.
+
+  Princípios (mantenha ao editar):
+  1. UM acento (teal). Gradiente é proibido como decoração; cor só onde
+     significa alguma coisa (ação primária, estado, nota do card).
+  2. Fundo chapado. Nada de blobs/aura. Profundidade vem de superfície + 1px
+     de borda, não de blur nem glow.
+  3. Hierarquia por tamanho e cor, não por peso. `font-extrabold` não existe
+     aqui — títulos são serifa (Newsreader) em 400/500.
+  4. Raio contido: a escala `--radius-*` abaixo re-tunas todo `rounded-*`.
+  5. Duas vozes: a fala em idioma-alvo é sans (Noto Sans KR/JP; serifa coreana
+     só em destaque — a palavra do card, a linha de abertura) e a tradução em
+     PT é SEMPRE Newsreader itálico (`.line-trans`). O olho separa as duas
+     línguas pela forma, não só pelo cinza.
+  6. Neutros com tom: o escuro é verde-grafite (não azul-marinho), o claro é
+     papel quente. O teal fica análogo ao fundo em vez de colado por cima.
+
+  Tokens semânticos vivem como CSS vars (troca de tema em [data-theme]) e são
+  expostos ao Tailwind via `@theme inline` — daí `bg-surface`, `text-muted`,
+  `border-line` lerem a variável viva.
+*/
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12181a;
+  --surface: #182022;
+  --surface-2: #1f2a2c;
+  --surface-3: #263336;
+  --line: #29353a;
+  --line-strong: #3a484d;
+  --fg: #ecefea;
+  --muted: #9aa7a4;
+  --faint: #6e7b78;
+  --sub-trans: #c8d0cc;
+
+  --brand: #3bd1b4;
+  --brand-strong: #2fbba0;
+  --brand-fg: #05231d;
+  --brand-soft: rgb(59 209 180 / 0.14);
+  --accent: #8b93ec;
+
+  --ring: #3bd1b4;
+
+  --again: #f07186;
+  --hard: #e3a63f;
+  --good: #43c08d;
+  --easy: #5aaee9;
+
+  --shadow-e1: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-e2: 0 2px 4px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+  --overlay: rgb(0 0 0 / 0.55);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f2ec;
+  --surface: #fbfaf7;
+  --surface-2: #efece4;
+  --surface-3: #e4e0d5;
+  --line: #e3e0d6;
+  --line-strong: #cfcbbf;
+  --fg: #1b1f1e;
+  --muted: #5f6866;
+  --faint: #8b9491;
+  --sub-trans: #2e3634;
+
+  --brand: #0e8a79;
+  --brand-strong: #0b6f62;
+  --brand-fg: #ffffff;
+  --brand-soft: rgb(14 138 121 / 0.12);
+  --accent: #5a61c8;
+
+  --ring: #0e8a79;
+
+  --again: #c63c52;
+  --hard: #a86f12;
+  --good: #13805a;
+  --easy: #1b6fb3;
+
+  --shadow-e1: 0 1px 2px rgb(20 26 34 / 0.07);
+  --shadow-e2: 0 1px 2px rgb(20 26 34 / 0.06), 0 8px 20px -12px rgb(20 26 34 / 0.25);
+  --overlay: rgb(20 26 34 / 0.4);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-sub-trans: var(--sub-trans);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-fg: var(--brand-fg);
+  --color-brand-soft: var(--brand-soft);
+  --color-accent: var(--accent);
+  --color-again: var(--again);
+  --color-hard: var(--hard);
+  --color-good: var(--good);
+  --color-easy: var(--easy);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Newsreader", ui-serif, Georgia, "Times New Roman", serif;
+  --font-target: "Noto Sans KR", "Noto Sans JP", "Apple SD Gothic Neo", "Malgun Gothic",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  /* Idioma-alvo em destaque (palavra do card, linha de abertura): serifa
+     coreana/japonesa, que pareia com a Newsreader dos títulos. */
+  --font-target-display: "Noto Serif KR", "Noto Serif JP", "Apple Myungjo", "Batang",
+    "Hiragino Mincho ProN", "Yu Mincho", serif;
+
+  /* Escala de raio contida — de-blobifica a interface inteira de uma vez. */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
+  --radius-2xl: 0.875rem;
+  --radius-3xl: 1.125rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "ss01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--brand) 28%, transparent);
+    color: var(--fg);
+  }
+  /* Cursor de clique: o preflight do Tailwind v4 removeu o `cursor: pointer`
+     padrão dos <button>. Devolvemos para tudo que é clicável (:where = zero
+     especificidade, então utilitários `cursor-*` continuam vencendo). */
+  :where(button, [role="button"], [role="switch"], [role="tab"], [role="option"],
+    summary, label[for], select, input[type="checkbox"], input[type="radio"],
+    input[type="range"], input[type="file"], a[href]
+  ):not(:disabled, [aria-disabled="true"]) {
+    cursor: pointer;
+  }
+  :where(button, [role="button"], [role="switch"], [role="tab"], select, input):is(
+    :disabled, [aria-disabled="true"]
+  ) {
+    cursor: not-allowed;
+  }
+
+  :where(button, a, [role="button"], [role="slider"], input, select, textarea):focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 0.4rem;
+  }
+  /* O ✕ nativo do <input type="search"> duplicaria o nosso botão de limpar. */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--line-strong) transparent;
+  }
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-thumb {
+    background: var(--line-strong); border-radius: 999px;
+    border: 3px solid transparent; background-clip: content-box;
+  }
+}
+
+@layer utilities {
+  .font-target { font-family: var(--font-target); }
+  .font-target-display {
+    font-family: var(--font-target-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+  /* A tradução em PT: itálico serifado, em toda parte (Hoje, legenda,
+     transcrição, verso do card). É a "voz do narrador" — a outra língua se
+     apresenta por outra forma, não só por outro cinza. */
+  .line-trans {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    line-height: 1.35;
+  }
+  /* Títulos: serifa, tracking natural, sem o "extrabold" de landing page. */
+  .font-display {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    font-optical-sizing: auto;
+  }
+  /* Rótulo de seção: pequeno e em caixa baixa (caixa alta espaçada é chapa de
+     painel). A cor fica com quem usa (`text-faint` por padrão) para não
+     competir com `text-brand`/`text-accent`. */
+  .label-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  /* Timecode: a peça de estrutura do app. Aparece sempre que algo tem lugar
+     dentro do vídeo (prime, transcrição, linha do dia, card) — é informação,
+     não enfeite, por isso é sempre mono, tabular e discreto. */
+  .timecode {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.6875rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  /* Linha da dose: a fala em idioma-alvo. Mesmo tratamento no player, na
+     transcrição, no prime e no card — é o átomo visual do produto. */
+  .line-target {
+    font-family: var(--font-target);
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+  }
+
+  /* Legendas: fortes e legíveis sobre a superfície ou sobre o vídeo. */
+  .sub-target { color: var(--fg); }
+  .sub-trans { color: var(--sub-trans); }
+  .sub-shadow {
+    text-shadow:
+      0 1px 10px color-mix(in oklab, black 42%, transparent),
+      0 1px 3px color-mix(in oklab, black 55%, transparent);
+  }
+  [data-theme="light"] .sub-shadow { text-shadow: none; }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+  /* Toque: o `hover:` do Tailwind v4 só vale com (hover: hover), então no
+     celular o botão não dava resposta nenhuma ao dedo. Um esmaecer curto ao
+     pressionar — em tudo que é botão ou link, sem depender de classe. */
+  @media (hover: none) {
+    button:not(:disabled):active,
+    a:active,
+    [role="slider"]:active {
+      opacity: 0.55;
+      transition: opacity 60ms;
+    }
+  }
+  .pt-safe { padding-top: env(safe-area-inset-top); }
+
+  /* Frosted: reservado às barras fixas (topo/rodapé), nunca em cards. */
+  .frosted {
+    background: color-mix(in oklab, var(--bg) 78%, transparent);
+    backdrop-filter: blur(12px) saturate(1.2);
+    -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  }
+  .elev-1 { box-shadow: var(--shadow-e1); }
+  .elev-2 { box-shadow: var(--shadow-e2); }
+  .no-tap-highlight { -webkit-tap-highlight-color: transparent; }
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-rise { animation: riseIn 0.32s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

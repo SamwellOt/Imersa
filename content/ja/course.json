@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "language": "ja",
+  "name": "Japonês",
+  "nativeName": "日本語",
+  "levels": [
+    {
+      "id": "A1",
+      "name": "Iniciante",
+      "description": "Primeiro contato: fala clara, temas concretos do dia a dia."
+    },
+    {
+      "id": "A2",
+      "name": "Básico",
+      "description": "Rotina, histórias simples, ritmo pausado, vocabulário cotidiano."
+    },
+    {
+      "id": "B1",
+      "name": "Intermediário",
+      "description": "Conversas naturais, opinião, narrativas mais longas."
+    },
+    {
+      "id": "B2",
+      "name": "Intermediário alto",
+      "description": "Fala rápida, humor, gíria, temas abstratos."
+    },
+    {
+      "id": "C1",
+      "name": "Avançado",
+      "description": "Conteúdo nativo sem concessões, nuance e registro."
+    },
+    {
+      "id": "C2",
+      "name": "Domínio",
+      "description": "Qualquer conteúdo, sotaques e subculturas."
+    }
+  ],
+  "doses": [
+    {
+      "id": "ja-A2-01",
+      "level": "A2",
+      "lessonNumber": 1,
+      "title": "Acampamento na chuva de Hiace",
+      "path": "course/A2-01/dose.json",
+      "durationSec": 2773,
+      "cardCount": 20,
+      "mediaKind": "audio"
+    }
+  ]
+}

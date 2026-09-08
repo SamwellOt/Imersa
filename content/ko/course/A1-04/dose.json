@@ -1,0 +1,3253 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-04",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 4,
+  "title": "A noite antes da prova (e um dia cheio)",
+  "synopsis": "Quarta dose: como você está e o que está fazendo. Na primeira história, a prova é amanhã e o sono não deixa estudar — abrir a janela, beber água, lavar o rosto, jogar um pouco: nada funciona. Na segunda, um dia cheio do começo ao fim, com uma atividade para cada parte do dia e sempre alguém junto.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 914.821333,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 5500,
+      "target": "내일이 기말시험이에요.",
+      "translation": "Amanhã é a prova final.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "기말",
+          "surface": "기말",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "시험",
+          "surface": "시험",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 9220,
+      "endMs": 13220,
+      "target": "저는 불을 켜요.",
+      "translation": "Eu acendo a luz.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "불",
+          "surface": "불",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "켜다",
+          "surface": "켜",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 14220,
+      "endMs": 18700,
+      "target": "그리고 책을 펴요.",
+      "translation": "E abro o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "펴다",
+          "surface": "펴",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 20860,
+      "endMs": 25019,
+      "target": "저는 공부를 시작해요.",
+      "translation": "Eu começo a estudar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공부",
+          "surface": "공부",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "시작하다",
+          "surface": "시작해",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 28780,
+      "endMs": 31780,
+      "target": "졸려요.",
+      "translation": "Estou com sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 34140,
+      "endMs": 38980,
+      "target": "저는 창문을 열어요.",
+      "translation": "Eu abro a janela.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "열다",
+          "surface": "열",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 40220,
+      "endMs": 43860,
+      "target": "바람이 시원해요.",
+      "translation": "O vento é fresco.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 47260,
+      "endMs": 50780,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 52220,
+      "endMs": 58100,
+      "target": "저는 창문을 닫고 다시 책을 봐요.",
+      "translation": "Eu fecho a janela e volto a olhar o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "닫다",
+          "surface": "닫",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 62419,
+      "endMs": 65419,
+      "target": "졸려요.",
+      "translation": "Estou com sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 67300,
+      "endMs": 71740,
+      "target": "저는 냉장고를 열어요.",
+      "translation": "Eu abro a geladeira.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "냉장고",
+          "surface": "냉장고",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "열다",
+          "surface": "열",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 74139,
+      "endMs": 77699,
+      "target": "물을 마셔요.",
+      "translation": "Bebo água.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "물",
+          "surface": "물",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "마시다",
+          "surface": "마셔",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 80300,
+      "endMs": 83300,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 85020,
+      "endMs": 90539,
+      "target": "저는 방에 와서 다시 책을 펴요.",
+      "translation": "Eu volto para o quarto e abro o livro de novo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "펴다",
+          "surface": "펴",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 95380,
+      "endMs": 98380,
+      "target": "졸려요.",
+      "translation": "Estou com sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 101539,
+      "endMs": 106139,
+      "target": "저는 화장실에 가요.",
+      "translation": "Eu vou ao banheiro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "화장실",
+          "surface": "화장실",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 108220,
+      "endMs": 111780,
+      "target": "세수를 해요.",
+      "translation": "Lavo o rosto.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "세수",
+          "surface": "세수",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 114300,
+      "endMs": 117300,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 119300,
+      "endMs": 124780,
+      "target": "저는 방에 와서 다시 책을 펴요.",
+      "translation": "Eu volto para o quarto e abro o livro de novo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "펴다",
+          "surface": "펴",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 130380,
+      "endMs": 133819,
+      "target": "너무 졸려요.",
+      "translation": "Estou com muito sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 135740,
+      "endMs": 140300,
+      "target": "저는 컴퓨터를 켜요.",
+      "translation": "Eu ligo o computador.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "컴퓨터",
+          "surface": "컴퓨터",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "켜다",
+          "surface": "켜",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 142380,
+      "endMs": 146500,
+      "target": "잠깐 게임을 해요.",
+      "translation": "Jogo um pouco de videogame.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠깐",
+          "surface": "잠깐",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 149699,
+      "endMs": 152699,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 154460,
+      "endMs": 160660,
+      "target": "저는 컴퓨터를 끄고 다시 책을 봐요.",
+      "translation": "Eu desligo o computador e volto a olhar o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "컴퓨터",
+          "surface": "컴퓨터",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "끄다",
+          "surface": "끄",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 164500,
+      "endMs": 168580,
+      "target": "그래도 너무 졸려요.",
+      "translation": "Mesmo assim, estou com muito sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 170819,
+      "endMs": 174940,
+      "target": "저는 책을 덮어요.",
+      "translation": "Eu fecho o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "덮다",
+          "surface": "덮",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 177020,
+      "endMs": 180419,
+      "target": "불을 꺼요.",
+      "translation": "Apago a luz.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "불",
+          "surface": "불",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "끄다",
+          "surface": "꺼",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 182300,
+      "endMs": 186860,
+      "target": "30분만 잘 거예요.",
+      "translation": "Vou dormir só 30 minutos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "자다",
+          "surface": "잘",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 196660,
+      "endMs": 200819,
+      "target": "헐! 벌써 아침이에요.",
+      "translation": "Nossa! Já é de manhã.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "벌써",
+          "surface": "벌써",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 204780,
+      "endMs": 208740,
+      "target": "오늘 시험 어떡하죠?",
+      "translation": "E a prova de hoje, o que eu faço?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "시험",
+          "surface": "시험",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "어떡하다",
+          "surface": "어떡하",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 214180,
+      "endMs": 218180,
+      "target": "내일이 기말시험이에요.",
+      "translation": "Amanhã é a prova final.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "기말",
+          "surface": "기말",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "시험",
+          "surface": "시험",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 221419,
+      "endMs": 225419,
+      "target": "저는 불을 켜요.",
+      "translation": "Eu acendo a luz.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "불",
+          "surface": "불",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "켜다",
+          "surface": "켜",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 228220,
+      "endMs": 232699,
+      "target": "그리고 책을 펴요.",
+      "translation": "E abro o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "펴다",
+          "surface": "펴",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 235940,
+      "endMs": 240099,
+      "target": "저는 공부를 시작해요.",
+      "translation": "Eu começo a estudar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공부",
+          "surface": "공부",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "시작하다",
+          "surface": "시작해",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 245060,
+      "endMs": 248060,
+      "target": "졸려요.",
+      "translation": "Estou com sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 250740,
+      "endMs": 255580,
+      "target": "저는 창문을 열어요.",
+      "translation": "Eu abro a janela.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "열다",
+          "surface": "열",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 258979,
+      "endMs": 262580,
+      "target": "바람이 시원해요.",
+      "translation": "O vento é fresco.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 266460,
+      "endMs": 269979,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 272780,
+      "endMs": 278659,
+      "target": "저는 창문을 닫고 다시 책을 봐요.",
+      "translation": "Eu fecho a janela e volto a olhar o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "닫다",
+          "surface": "닫",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 284139,
+      "endMs": 287139,
+      "target": "졸려요.",
+      "translation": "Estou com sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 290539,
+      "endMs": 294940,
+      "target": "저는 냉장고를 열어요.",
+      "translation": "Eu abro a geladeira.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "냉장고",
+          "surface": "냉장고",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "열다",
+          "surface": "열",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 299379,
+      "endMs": 302940,
+      "target": "물을 마셔요.",
+      "translation": "Bebo água.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "물",
+          "surface": "물",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "마시다",
+          "surface": "마셔",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 305099,
+      "endMs": 308620,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 310419,
+      "endMs": 315940,
+      "target": "저는 방에 와서 다시 책을 펴요.",
+      "translation": "Eu volto para o quarto e abro o livro de novo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "펴다",
+          "surface": "펴",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 321860,
+      "endMs": 324860,
+      "target": "졸려요.",
+      "translation": "Estou com sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 328060,
+      "endMs": 332620,
+      "target": "저는 화장실에 가요.",
+      "translation": "Eu vou ao banheiro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "화장실",
+          "surface": "화장실",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 336860,
+      "endMs": 340380,
+      "target": "세수를 해요.",
+      "translation": "Lavo o rosto.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "세수",
+          "surface": "세수",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 342980,
+      "endMs": 345980,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 348579,
+      "endMs": 354060,
+      "target": "저는 방에 와서 다시 책을 펴요.",
+      "translation": "Eu volto para o quarto e abro o livro de novo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "펴다",
+          "surface": "펴",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 359940,
+      "endMs": 363459,
+      "target": "너무 졸려요.",
+      "translation": "Estou com muito sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 366540,
+      "endMs": 371100,
+      "target": "저는 컴퓨터를 켜요.",
+      "translation": "Eu ligo o computador.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "컴퓨터",
+          "surface": "컴퓨터",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "켜다",
+          "surface": "켜",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 374700,
+      "endMs": 378820,
+      "target": "잠깐 게임을 해요.",
+      "translation": "Jogo um pouco de videogame.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠깐",
+          "surface": "잠깐",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 381420,
+      "endMs": 384940,
+      "target": "잠이 깨요.",
+      "translation": "O sono vai embora.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "깨다",
+          "surface": "깨",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 386660,
+      "endMs": 392940,
+      "target": "저는 컴퓨터를 끄고 다시 책을 봐요.",
+      "translation": "Eu desligo o computador e volto a olhar o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "컴퓨터",
+          "surface": "컴퓨터",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "끄다",
+          "surface": "끄",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "다시",
+          "surface": "다시",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 398300,
+      "endMs": 402300,
+      "target": "그래도 너무 졸려요.",
+      "translation": "Mesmo assim, estou com muito sono.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "졸리다",
+          "surface": "졸려",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 404620,
+      "endMs": 408740,
+      "target": "저는 책을 덮어요.",
+      "translation": "Eu fecho o livro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "덮다",
+          "surface": "덮",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 412140,
+      "endMs": 415579,
+      "target": "불을 꺼요.",
+      "translation": "Apago a luz.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "불",
+          "surface": "불",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "끄다",
+          "surface": "꺼",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 418500,
+      "endMs": 423060,
+      "target": "30분만 잘 거예요.",
+      "translation": "Vou dormir só 30 minutos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "자다",
+          "surface": "잘",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 430180,
+      "endMs": 434339,
+      "target": "헐! 벌써 아침이에요.",
+      "translation": "Nossa! Já é de manhã.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "벌써",
+          "surface": "벌써",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 437899,
+      "endMs": 441860,
+      "target": "오늘 시험 어떡하죠?",
+      "translation": "E a prova de hoje, o que eu faço?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "시험",
+          "surface": "시험",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "어떡하다",
+          "surface": "어떡하",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 444400,
+      "endMs": 448480,
+      "target": "저는 오늘 바빠요",
+      "translation": "Eu estou ocupado hoje",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 466640,
+      "endMs": 469761,
+      "target": "저는 오늘 바빠요.",
+      "translation": "Eu estou ocupado hoje.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 474894,
+      "endMs": 479493,
+      "target": "저는 강아지가 있어요.",
+      "translation": "Eu tenho um cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 483906,
+      "endMs": 488866,
+      "target": "아침에 강아지하고 산책해요.",
+      "translation": "De manhã eu passeio com o cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "산책하다",
+          "surface": "산책해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 494061,
+      "endMs": 499221,
+      "target": "저는 오늘 친구를 만나요.",
+      "translation": "Hoje eu encontro um amigo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 505685,
+      "endMs": 511325,
+      "target": "오전에 친구하고 골프를 쳐요.",
+      "translation": "Pela manhã eu jogo golfe com o amigo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오전",
+          "surface": "오전",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "골프",
+          "surface": "골프",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 514929,
+      "endMs": 519848,
+      "target": "저는 오늘 형도 만나요.",
+      "translation": "Hoje eu também encontro o meu irmão mais velho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "형",
+          "surface": "형",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 523846,
+      "endMs": 529645,
+      "target": "오후에 형하고 색소폰을 불어요.",
+      "translation": "De tarde eu toco saxofone com o meu irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오후",
+          "surface": "오후",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "형",
+          "surface": "형",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "색소폰",
+          "surface": "색소폰",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 533769,
+      "endMs": 538848,
+      "target": "저는 오늘 영어를 공부해요.",
+      "translation": "Hoje eu estudo inglês.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "공부하다",
+          "surface": "공부해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 544493,
+      "endMs": 550973,
+      "target": "저녁에 선생님하고 이야기해요.",
+      "translation": "No fim da tarde eu converso com o professor.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "선생님",
+          "surface": "선생님",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "이야기하다",
+          "surface": "이야기해",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 553324,
+      "endMs": 553824,
+      "target": "밤이에요.",
+      "translation": "É noite.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "밤",
+          "surface": "밤",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 558890,
+      "endMs": 562620,
+      "target": "이제 저는 안 바빠요.",
+      "translation": "Agora eu não estou mais ocupado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "이제",
+          "surface": "이제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 568469,
+      "endMs": 573189,
+      "target": "밤에 강아지하고 쉬어요.",
+      "translation": "De noite eu descanso com o cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "밤",
+          "surface": "밤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "강아지하다",
+          "surface": "강아지하",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 577418,
+      "endMs": 583098,
+      "target": "그리고 재즈 음악을 들어요.",
+      "translation": "E escuto música jazz.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "재즈",
+          "surface": "재즈",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 595252,
+      "endMs": 598470,
+      "target": "저는 오늘 바빠요.",
+      "translation": "Eu estou ocupado hoje.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 603419,
+      "endMs": 607979,
+      "target": "저는 강아지가 있어요.",
+      "translation": "Eu tenho um cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 611012,
+      "endMs": 616253,
+      "target": "아침에 강아지하고 산책해요.",
+      "translation": "De manhã eu passeio com o cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "산책하다",
+          "surface": "산책해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 622747,
+      "endMs": 627868,
+      "target": "저는 오늘 친구를 만나요.",
+      "translation": "Hoje eu encontro um amigo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 633450,
+      "endMs": 639129,
+      "target": "오전에 친구하고 골프를 쳐요.",
+      "translation": "Pela manhã eu jogo golfe com o amigo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오전",
+          "surface": "오전",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "골프",
+          "surface": "골프",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 642545,
+      "endMs": 647424,
+      "target": "저는 오늘 형도 만나요.",
+      "translation": "Hoje eu também encontro o meu irmão mais velho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "형",
+          "surface": "형",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 652730,
+      "endMs": 658489,
+      "target": "오후에 형하고 색소폰을 불어요.",
+      "translation": "De tarde eu toco saxofone com o meu irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오후",
+          "surface": "오후",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "형",
+          "surface": "형",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "색소폰",
+          "surface": "색소폰",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 662086,
+      "endMs": 667207,
+      "target": "저는 오늘 영어를 공부해요.",
+      "translation": "Hoje eu estudo inglês.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "공부하다",
+          "surface": "공부해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 671893,
+      "endMs": 677372,
+      "target": "저녁에 선생님하고 이야기해요.",
+      "translation": "No fim da tarde eu converso com o professor.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "선생님",
+          "surface": "선생님",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "이야기하다",
+          "surface": "이야기해",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 681574,
+      "endMs": 684574,
+      "target": "밤이에요",
+      "translation": "É noite",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "밤",
+          "surface": "밤",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 689560,
+      "endMs": 693199,
+      "target": "이제 저는 안 바빠요.",
+      "translation": "Agora eu não estou mais ocupado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "이제",
+          "surface": "이제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 700076,
+      "endMs": 705796,
+      "target": "밤에 강아지하고 쉬어요.",
+      "translation": "De noite eu descanso com o cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "밤",
+          "surface": "밤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "강아지하다",
+          "surface": "강아지하",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 708466,
+      "endMs": 712438,
+      "target": "그리고 재즈 음악을 들어요.",
+      "translation": "E escuto música jazz.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "재즈",
+          "surface": "재즈",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 726482,
+      "endMs": 730296,
+      "target": "저는 오늘 바빠요.",
+      "translation": "Eu estou ocupado hoje.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 740703,
+      "endMs": 744303,
+      "target": "저는 강아지가 있어요.",
+      "translation": "Eu tenho um cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 751696,
+      "endMs": 757655,
+      "target": "아침에 강아지하고 산책해요.",
+      "translation": "De manhã eu passeio com o cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "강아지",
+          "surface": "강아지",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "산책하다",
+          "surface": "산책해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 764388,
+      "endMs": 768427,
+      "target": "저는 오늘 친구를 만나요.",
+      "translation": "Hoje eu encontro um amigo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 779077,
+      "endMs": 784757,
+      "target": "오전에 친구하고 골프를 쳐요.",
+      "translation": "Pela manhã eu jogo golfe com o amigo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오전",
+          "surface": "오전",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "친구",
+          "surface": "친구",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "골프",
+          "surface": "골프",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 792120,
+      "endMs": 797079,
+      "target": "저는 오늘 형도 만나요.",
+      "translation": "Hoje eu também encontro o meu irmão mais velho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "형",
+          "surface": "형",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "만나다",
+          "surface": "만나",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 806340,
+      "endMs": 812100,
+      "target": "오후에 형하고 색소폰을 불어요.",
+      "translation": "De tarde eu toco saxofone com o meu irmão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오후",
+          "surface": "오후",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "형",
+          "surface": "형",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "색소폰",
+          "surface": "색소폰",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s95",
+      "index": 95,
+      "startMs": 817609,
+      "endMs": 823769,
+      "target": "저는 오늘 영어를 공부해요.",
+      "translation": "Hoje eu estudo inglês.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "공부하다",
+          "surface": "공부해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s96",
+      "index": 96,
+      "startMs": 830414,
+      "endMs": 834893,
+      "target": "저녁에 선생님하고 이야기해요.",
+      "translation": "No fim da tarde eu converso com o professor.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "선생님",
+          "surface": "선생님",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "이야기하다",
+          "surface": "이야기해",
+          "start": 10,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s97",
+      "index": 97,
+      "startMs": 844480,
+      "endMs": 847480,
+      "target": "밤이에요.",
+      "translation": "É noite.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "밤",
+          "surface": "밤",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s98",
+      "index": 98,
+      "startMs": 853284,
+      "endMs": 857004,
+      "target": "이제 저는 안 바빠요.",
+      "translation": "Agora eu não estou mais ocupado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "이제",
+          "surface": "이제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "바쁘다",
+          "surface": "바빠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s99",
+      "index": 99,
+      "startMs": 866378,
+      "endMs": 871137,
+      "target": "밤에 강아지하고 쉬어요.",
+      "translation": "De noite eu descanso com o cachorro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "밤",
+          "surface": "밤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "강아지하다",
+          "surface": "강아지하",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s100",
+      "index": 100,
+      "startMs": 878297,
+      "endMs": 883938,
+      "target": "그리고 재즈 음악을 들어요.",
+      "translation": "E escuto música jazz.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "재즈",
+          "surface": "재즈",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "index": 101,
+      "startMs": 896040,
+      "endMs": 901980,
+      "target": "언제 한국어를 공부해요?",
+      "translation": "Quando você estuda coreano?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "언제",
+          "surface": "언제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "한국어",
+          "surface": "한국어",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "공부하다",
+          "surface": "공부해",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s102",
+      "index": 102,
+      "startMs": 907651,
+      "endMs": 913722,
+      "target": "누구하고 많이 이야기해요?",
+      "translation": "Com quem você conversa bastante?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "이야기하다",
+          "surface": "이야기해",
+          "start": 8,
+          "end": 12
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-보다",
+      "segmentId": "",
+      "target": "보다",
+      "translation": "ver / olhar",
+      "startMs": 52220,
+      "endMs": 58100,
+      "reading": null,
+      "context": "저는 창문을 닫고 다시 책을 봐요. — Eu fecho a janela e volto a olhar o livro.",
+      "audioClipSrc": "media/tts/wba170c3d5931.mp3",
+      "exampleAudioSrc": "media/frag/f63a04e786e13.mp3",
+      "freqRank": 11,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "봐"
+      ],
+      "sceneSrc": "media/frames/s980f6fd9c4c8.jpg"
+    },
+    {
+      "id": "w-듣다",
+      "segmentId": "",
+      "target": "듣다",
+      "translation": "ouvir / escutar",
+      "startMs": 577418,
+      "endMs": 583098,
+      "reading": null,
+      "context": "그리고 재즈 음악을 들어요. — E escuto música jazz.",
+      "audioClipSrc": "media/tts/w31bfb61435b5.mp3",
+      "exampleAudioSrc": "media/frag/f602d1af45253.mp3",
+      "freqRank": 34,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "들"
+      ],
+      "sceneSrc": "media/frames/s022de0cfc531.jpg"
+    },
+    {
+      "id": "w-다시",
+      "segmentId": "",
+      "target": "다시",
+      "translation": "de novo / outra vez",
+      "startMs": 85020,
+      "endMs": 90539,
+      "reading": null,
+      "context": "저는 방에 와서 다시 책을 펴요. — Eu volto para o quarto e abro o livro de novo.",
+      "audioClipSrc": "media/tts/w073a6047af3f.mp3",
+      "exampleAudioSrc": "media/frag/f63d636270dc7.mp3",
+      "freqRank": 42,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s2fdd748c6320.jpg"
+    },
+    {
+      "id": "w-잠깐",
+      "segmentId": "",
+      "target": "잠깐",
+      "translation": "um instante / rapidinho",
+      "startMs": 142380,
+      "endMs": 146500,
+      "reading": null,
+      "context": "잠깐 게임을 해요. — Jogo um pouco de videogame.",
+      "audioClipSrc": "media/tts/wc4c1f128ac31.mp3",
+      "exampleAudioSrc": "media/frag/f365fc87fce6e.mp3",
+      "freqRank": 64,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s196124ad1c92.jpg"
+    },
+    {
+      "id": "w-밤",
+      "segmentId": "",
+      "target": "밤",
+      "translation": "noite (a parte mais tarde)",
+      "startMs": 553324,
+      "endMs": 553824,
+      "reading": null,
+      "context": "밤이에요. — É noite.",
+      "audioClipSrc": "media/tts/w5eb472a7598f.mp3",
+      "exampleAudioSrc": "media/frag/f07053cc7b9b9.mp3",
+      "freqRank": 104,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s742548a51149.jpg"
+    },
+    {
+      "id": "w-많이",
+      "segmentId": "",
+      "target": "많이",
+      "translation": "muito / bastante",
+      "startMs": 907651,
+      "endMs": 913722,
+      "reading": null,
+      "context": "누구하고 많이 이야기해요? — Com quem você conversa bastante?",
+      "audioClipSrc": "media/tts/w711574c8fe65.mp3",
+      "exampleAudioSrc": "media/frag/f725d9794ee56.mp3",
+      "freqRank": 106,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7df0720c9dfc.jpg"
+    },
+    {
+      "id": "w-선생님",
+      "segmentId": "",
+      "target": "선생님",
+      "translation": "professor(a)",
+      "startMs": 544493,
+      "endMs": 550973,
+      "reading": null,
+      "context": "저녁에 선생님하고 이야기해요. — No fim da tarde eu converso com o professor.",
+      "audioClipSrc": "media/tts/w9564f603baee.mp3",
+      "exampleAudioSrc": "media/frag/fd3235af10d12.mp3",
+      "freqRank": 110,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s8f6f56041a8b.jpg"
+    },
+    {
+      "id": "w-시작하다",
+      "segmentId": "",
+      "target": "시작하다",
+      "translation": "começar",
+      "startMs": 20860,
+      "endMs": 25019,
+      "reading": null,
+      "context": "저는 공부를 시작해요. — Eu começo a estudar.",
+      "audioClipSrc": "media/tts/w4f78e97cdec2.mp3",
+      "exampleAudioSrc": "media/frag/f4cb329c2b4b1.mp3",
+      "freqRank": 133,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "시작해"
+      ],
+      "sceneSrc": "media/frames/s3be2f08f2e00.jpg"
+    },
+    {
+      "id": "w-마시다",
+      "segmentId": "",
+      "target": "마시다",
+      "translation": "beber",
+      "startMs": 74139,
+      "endMs": 77699,
+      "reading": null,
+      "context": "물을 마셔요. — Bebo água.",
+      "audioClipSrc": "media/tts/w5430e6b709b9.mp3",
+      "exampleAudioSrc": "media/frag/f2b4c87ebd598.mp3",
+      "freqRank": 238,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "마셔"
+      ],
+      "sceneSrc": "media/frames/s5c1028fc28bb.jpg"
+    },
+    {
+      "id": "w-물",
+      "segmentId": "",
+      "target": "물",
+      "translation": "água",
+      "startMs": 74139,
+      "endMs": 77699,
+      "reading": null,
+      "context": "물을 마셔요. — Bebo água.",
+      "audioClipSrc": "media/tts/w3558e19de463.mp3",
+      "exampleAudioSrc": "media/frag/fac4992bac617.mp3",
+      "freqRank": 245,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s5c1028fc28bb.jpg"
+    },
+    {
+      "id": "w-형",
+      "segmentId": "",
+      "target": "형",
+      "translation": "irmão mais velho (dito por um homem)",
+      "startMs": 514929,
+      "endMs": 519848,
+      "reading": null,
+      "context": "저는 오늘 형도 만나요. — Hoje eu também encontro o meu irmão mais velho.",
+      "audioClipSrc": "media/tts/w7b752ccf7b86.mp3",
+      "exampleAudioSrc": "media/frag/f5bf1fd5e763d.mp3",
+      "freqRank": 258,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s72690ab94911.jpg"
+    },
+    {
+      "id": "w-언제",
+      "segmentId": "",
+      "target": "언제",
+      "translation": "quando",
+      "startMs": 896040,
+      "endMs": 901980,
+      "reading": null,
+      "context": "언제 한국어를 공부해요? — Quando você estuda coreano?",
+      "audioClipSrc": "media/tts/wf77212454dba.mp3",
+      "exampleAudioSrc": "media/frag/f6f8a61ef1ced.mp3",
+      "freqRank": 292,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sbf8f5dc22414.jpg"
+    },
+    {
+      "id": "w-열다",
+      "segmentId": "",
+      "target": "열다",
+      "translation": "abrir",
+      "startMs": 34140,
+      "endMs": 38980,
+      "reading": null,
+      "context": "저는 창문을 열어요. — Eu abro a janela.",
+      "audioClipSrc": "media/tts/wc7c397f57f1e.mp3",
+      "exampleAudioSrc": "media/frag/f81136391fceb.mp3",
+      "freqRank": 321,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "열"
+      ],
+      "sceneSrc": "media/frames/sf5afd6becd02.jpg"
+    },
+    {
+      "id": "w-벌써",
+      "segmentId": "",
+      "target": "벌써",
+      "translation": "já (antes do esperado)",
+      "startMs": 196660,
+      "endMs": 200819,
+      "reading": null,
+      "context": "헐! 벌써 아침이에요. — Nossa! Já é de manhã.",
+      "audioClipSrc": "media/tts/w296cc9c884c1.mp3",
+      "exampleAudioSrc": "media/frag/faaae26681e15.mp3",
+      "freqRank": 325,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s2201baf0c433.jpg"
+    },
+    {
+      "id": "w-책",
+      "segmentId": "",
+      "target": "책",
+      "translation": "livro",
+      "startMs": 14220,
+      "endMs": 18700,
+      "reading": null,
+      "context": "그리고 책을 펴요. — E abro o livro.",
+      "audioClipSrc": "media/tts/wce1c31eaebc0.mp3",
+      "exampleAudioSrc": "media/frag/f60c3afec7582.mp3",
+      "freqRank": 335,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s5cac26d7246d.jpg"
+    },
+    {
+      "id": "w-치다",
+      "segmentId": "",
+      "target": "치다",
+      "translation": "bater / tocar (violão, tênis, golfe)",
+      "startMs": 505685,
+      "endMs": 511325,
+      "reading": null,
+      "context": "오전에 친구하고 골프를 쳐요. — Pela manhã eu jogo golfe com o amigo.",
+      "audioClipSrc": "media/tts/wa6d77206e6d6.mp3",
+      "exampleAudioSrc": "media/frag/f19f31c58bcda.mp3",
+      "freqRank": 395,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "쳐"
+      ],
+      "sceneSrc": "media/frames/sa6ba1f879d6c.jpg"
+    },
+    {
+      "id": "w-불",
+      "segmentId": "",
+      "target": "불",
+      "translation": "luz / fogo",
+      "startMs": 177020,
+      "endMs": 180419,
+      "reading": null,
+      "context": "불을 꺼요. — Apago a luz.",
+      "audioClipSrc": "media/tts/w7c6d3c46bfae.mp3",
+      "exampleAudioSrc": "media/frag/fe38b7d6db6da.mp3",
+      "freqRank": 396,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s3d30d08ebb70.jpg"
+    },
+    {
+      "id": "w-쉬다",
+      "segmentId": "",
+      "target": "쉬다",
+      "translation": "descansar",
+      "startMs": 568469,
+      "endMs": 573189,
+      "reading": null,
+      "context": "밤에 강아지하고 쉬어요. — De noite eu descanso com o cachorro.",
+      "audioClipSrc": "media/tts/w5d356b8ba8a9.mp3",
+      "exampleAudioSrc": "media/frag/fa917a63ca4ac.mp3",
+      "freqRank": 407,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "쉬"
+      ],
+      "sceneSrc": "media/frames/s4e59dd14b7a5.jpg"
+    },
+    {
+      "id": "w-음악",
+      "segmentId": "",
+      "target": "음악",
+      "translation": "música",
+      "startMs": 577418,
+      "endMs": 583098,
+      "reading": null,
+      "context": "그리고 재즈 음악을 들어요. — E escuto música jazz.",
+      "audioClipSrc": "media/tts/w57cafddda690.mp3",
+      "exampleAudioSrc": "media/frag/fbbc5a0c494cc.mp3",
+      "freqRank": 433,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s022de0cfc531.jpg"
+    },
+    {
+      "id": "w-게임",
+      "segmentId": "",
+      "target": "게임",
+      "translation": "jogo / videogame",
+      "startMs": 142380,
+      "endMs": 146500,
+      "reading": null,
+      "context": "잠깐 게임을 해요. — Jogo um pouco de videogame.",
+      "audioClipSrc": "media/tts/w1e38a336963d.mp3",
+      "exampleAudioSrc": "media/frag/fb809b468d35f.mp3",
+      "freqRank": 438,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s196124ad1c92.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/5l0ZnEFC8D0",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/5l0ZnEFC8D0",
+        "startMs": 0,
+        "title": "윤지는 졸려요"
+      },
+      {
+        "url": "https://youtu.be/3NsduAqJiYE",
+        "startMs": 442900,
+        "title": "저는 오늘 바빠요"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "Cada frase repete a mesma estrutura com um verbo diferente — dá para prever o que vem.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 58100,
+      "summary": "Primeira história: amanhã é a prova final. Ele acende a luz, abre o livro e começa a estudar — mas bate o sono. Abre a janela, o vento fresco espanta o sono, e ele fecha a janela e volta ao livro.",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 62419,
+      "endMs": 124780,
+      "summary": "O sono volta. Ele abre a geladeira e bebe água; depois vai ao banheiro lavar o rosto. Toda vez o sono passa por um instante e ele volta a abrir o livro.",
+      "segmentIds": [
+        "s10",
+        "s11",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 130380,
+      "endMs": 208740,
+      "summary": "Com muito sono, liga o computador e joga um pouco. Nada resolve: fecha o livro, apaga a luz e vai dormir «só 30 minutos» — e acorda de manhã. E a prova de hoje?",
+      "segmentIds": [
+        "s20",
+        "s21",
+        "s22",
+        "s23",
+        "s24",
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 214180,
+      "endMs": 441860,
+      "summary": "A mesma noite de novo, do começo (2ª vez).",
+      "segmentIds": [
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42",
+        "s43",
+        "s44",
+        "s45",
+        "s46",
+        "s47",
+        "s48",
+        "s49",
+        "s50",
+        "s51",
+        "s52",
+        "s53",
+        "s54",
+        "s55",
+        "s56",
+        "s57",
+        "s58",
+        "s59",
+        "s60"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 444400,
+      "endMs": 583098,
+      "summary": "Segunda história: um dia cheio. Ele tem um cachorro e passeia com ele de manhã; pela manhã joga golfe com um amigo, de tarde toca saxofone com o irmão mais velho e no fim da tarde conversa com o professor. De noite não está mais ocupado: descansa com o cachorro e escuta jazz.",
+      "segmentIds": [
+        "s61",
+        "s62",
+        "s63",
+        "s64",
+        "s65",
+        "s66",
+        "s67",
+        "s68",
+        "s69",
+        "s70",
+        "s71",
+        "s72",
+        "s73",
+        "s74"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 595252,
+      "endMs": 712438,
+      "summary": "O mesmo dia de novo (2ª vez).",
+      "segmentIds": [
+        "s75",
+        "s76",
+        "s77",
+        "s78",
+        "s79",
+        "s80",
+        "s81",
+        "s82",
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 726482,
+      "endMs": 883938,
+      "summary": "E mais uma vez, agora bem devagar, para repetir junto (3ª vez).",
+      "segmentIds": [
+        "s88",
+        "s89",
+        "s90",
+        "s91",
+        "s92",
+        "s93",
+        "s94",
+        "s95",
+        "s96",
+        "s97",
+        "s98",
+        "s99",
+        "s100"
+      ]
+    },
+    {
+      "id": "p8",
+      "startMs": 896040,
+      "endMs": 913722,
+      "summary": "Duas perguntas para você: «Quando você estuda coreano?» e «Com quem você conversa bastante?»",
+      "segmentIds": [
+        "s101",
+        "s102"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "adjetivos de estado em -아/어요 (졸려요, 바빠요)",
+    "그래도 (mesmo assim) e 다시 (de novo)",
+    "사람 + 하고 (com alguém)",
+    "-고 (e — ligando duas ações: 닫고, 끄고)",
+    "시간 + 에 (de manhã, de tarde, de noite)"
+  ],
+  "tags": [
+    "história",
+    "rotina",
+    "estados",
+    "dia a dia"
+  ],
+  "titleTarget": "윤지는 졸려요 · 저는 오늘 바빠요",
+  "premise": "Histórias ilustradas A0 sobre estados e rotina. Introduzem adjetivos de estado (졸리다, 바쁘다, 시원하다), os pares de ação ligar/desligar e abrir/fechar, a partícula 하고 (com alguém) e os momentos do dia (아침/오전/오후/저녁/밤).",
+  "createdAt": "2026-08-22T18:42:36.095866+00:00"
+}

@@ -1,0 +1,3803 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-01",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 1,
+  "title": "Em casa com a família da Yunji",
+  "synopsis": "Duas histórias ilustradas para o primeiro dia de coreano. Na primeira, o cachorro da casa apresenta a família: quem mora ali, para onde cada um vai de manhã e quem volta de noite. Na segunda, uma menina abre a porta e descobre o que tem na parede, no chão, no teto e na janela. Frases curtas, uma ideia por frase, cada história repetida três vezes.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 1102.021333,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 6061,
+      "target": "윤지는 학교에 가요",
+      "translation": "A Yunji vai para a escola",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 24421,
+      "endMs": 27540,
+      "target": "집에 아빠가 있어요.",
+      "translation": "Em casa está o papai.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 29685,
+      "endMs": 33381,
+      "target": "집에 엄마가 있어요.",
+      "translation": "Em casa está a mamãe.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 34494,
+      "endMs": 38694,
+      "target": "집에 윤지도 있어요.",
+      "translation": "Em casa está a Yunji também.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 40126,
+      "endMs": 46085,
+      "target": "저는 아빠, 엄마, 윤지와 같이 살아요.",
+      "translation": "Eu moro junto com o papai, a mamãe e a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "살다",
+          "surface": "살",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 48398,
+      "endMs": 52398,
+      "target": "아침이에요.",
+      "translation": "É de manhã.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 53180,
+      "endMs": 55980,
+      "target": "아빠는 의사예요.",
+      "translation": "O papai é médico.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "의사",
+          "surface": "의사",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 58198,
+      "endMs": 62758,
+      "target": "아빠는 병원에 가요.",
+      "translation": "O papai vai para o hospital.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "병원",
+          "surface": "병원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 68341,
+      "endMs": 72860,
+      "target": "엄마는 공무원이에요.",
+      "translation": "A mamãe é funcionária pública.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "공무원",
+          "surface": "공무원",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 75741,
+      "endMs": 80220,
+      "target": "엄마는 시청에 가요.",
+      "translation": "A mamãe vai para a prefeitura.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "시청",
+          "surface": "시청",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 83301,
+      "endMs": 86141,
+      "target": "윤지는 고등학생이에요.",
+      "translation": "A Yunji é estudante do ensino médio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고등학생",
+          "surface": "고등학생",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 90701,
+      "endMs": 94981,
+      "target": "윤지는 학교에 가요.",
+      "translation": "A Yunji vai para a escola.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 98981,
+      "endMs": 102460,
+      "target": "저는 학교에 안 가요.",
+      "translation": "Eu não vou para a escola.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 102460,
+      "endMs": 105655,
+      "target": "저는 집에 있어요.",
+      "translation": "Eu estou em casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 108188,
+      "endMs": 112188,
+      "target": "오후예요.",
+      "translation": "É de tarde.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오후",
+          "surface": "오후",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 113381,
+      "endMs": 116741,
+      "target": "윤지가 집에 와요.",
+      "translation": "A Yunji vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 118869,
+      "endMs": 123269,
+      "target": "저는 윤지와 놀아요.",
+      "translation": "Eu brinco com a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "놀다",
+          "surface": "놀",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 126902,
+      "endMs": 130623,
+      "target": "저녁이에요.",
+      "translation": "É de noite.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 132621,
+      "endMs": 135981,
+      "target": "엄마가 집에 와요.",
+      "translation": "A mamãe vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 138582,
+      "endMs": 142781,
+      "target": "아빠도 집에 와요.",
+      "translation": "O papai também vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 144952,
+      "endMs": 148651,
+      "target": "\"다녀왔습니다.\"",
+      "translation": "«Cheguei.»",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "다녀오다",
+          "surface": "다녀왔",
+          "start": 1,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 153309,
+      "endMs": 158148,
+      "target": "우리는 공원에 가요.",
+      "translation": "Nós vamos para o parque.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공원",
+          "surface": "공원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 158891,
+      "endMs": 164844,
+      "target": "저는 아빠, 엄마, 윤지와 같이 산책해요.",
+      "translation": "Eu passeio junto com o papai, a mamãe e a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "산책하다",
+          "surface": "산책해",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 177061,
+      "endMs": 180221,
+      "target": "집에 아빠가 있어요.",
+      "translation": "Em casa está o papai.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 183079,
+      "endMs": 187239,
+      "target": "집에 엄마가 있어요.",
+      "translation": "Em casa está a mamãe.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 189037,
+      "endMs": 193197,
+      "target": "집에 윤지도 있어요.",
+      "translation": "Em casa está a Yunji também.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 200052,
+      "endMs": 205061,
+      "target": "저는 아빠 엄마 윤지와 같이 살아요.",
+      "translation": "Eu moro junto com o papai, a mamãe e a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "lemma": "살다",
+          "surface": "살",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 206900,
+      "endMs": 210739,
+      "target": "아침이에요.",
+      "translation": "É de manhã.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 211953,
+      "endMs": 216513,
+      "target": "아빠는 의사예요.",
+      "translation": "O papai é médico.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "의사",
+          "surface": "의사",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 217336,
+      "endMs": 221676,
+      "target": "아빠는 병원에 가요.",
+      "translation": "O papai vai para o hospital.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "병원",
+          "surface": "병원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 226869,
+      "endMs": 231073,
+      "target": "엄마는 공무원이에요.",
+      "translation": "A mamãe é funcionária pública.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "공무원",
+          "surface": "공무원",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 231892,
+      "endMs": 236035,
+      "target": "엄마는 시청에 가요.",
+      "translation": "A mamãe vai para a prefeitura.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "시청",
+          "surface": "시청",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 241333,
+      "endMs": 245174,
+      "target": "윤지는 고등학생이에요.",
+      "translation": "A Yunji é estudante do ensino médio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고등학생",
+          "surface": "고등학생",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 247086,
+      "endMs": 251407,
+      "target": "윤지는 학교에 가요.",
+      "translation": "A Yunji vai para a escola.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 256388,
+      "endMs": 259628,
+      "target": "저는 학교에 안 가요.",
+      "translation": "Eu não vou para a escola.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 259628,
+      "endMs": 262628,
+      "target": "저는 집에 있어요.",
+      "translation": "Eu estou em casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 264764,
+      "endMs": 267930,
+      "target": "오후예요.",
+      "translation": "É de tarde.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오후",
+          "surface": "오후",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 268739,
+      "endMs": 273219,
+      "target": "윤지가 집에 와요.",
+      "translation": "A Yunji vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 275689,
+      "endMs": 279369,
+      "target": "저는 윤지와 놀아요.",
+      "translation": "Eu brinco com a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "놀다",
+          "surface": "놀",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 282854,
+      "endMs": 284854,
+      "target": "저녁이에요.",
+      "translation": "É de noite.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 288181,
+      "endMs": 292540,
+      "target": "엄마가 집에 와요.",
+      "translation": "A mamãe vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 295341,
+      "endMs": 298897,
+      "target": "아빠도 집에 와요.",
+      "translation": "O papai também vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 301531,
+      "endMs": 305772,
+      "target": "\"다녀왔습니다.\"",
+      "translation": "«Cheguei.»",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "다녀오다",
+          "surface": "다녀왔",
+          "start": 1,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 310200,
+      "endMs": 315265,
+      "target": "우리는 공원에 가요.",
+      "translation": "Nós vamos para o parque.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공원",
+          "surface": "공원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 316475,
+      "endMs": 322525,
+      "target": "저는 아빠, 엄마, 윤지와 같이 산책해요.",
+      "translation": "Eu passeio junto com o papai, a mamãe e a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "산책하다",
+          "surface": "산책해",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 332141,
+      "endMs": 335301,
+      "target": "집에 아빠가 있어요.",
+      "translation": "Em casa está o papai.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 341598,
+      "endMs": 345717,
+      "target": "집에 엄마가 있어요.",
+      "translation": "Em casa está a mamãe.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 350581,
+      "endMs": 355420,
+      "target": "집에 윤지도 있어요.",
+      "translation": "Em casa está a Yunji também.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 361901,
+      "endMs": 366861,
+      "target": "저는 아빠, 엄마, 윤지와 같이 살아요,",
+      "translation": "Eu moro junto com o papai, a mamãe e a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "살다",
+          "surface": "살",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 375341,
+      "endMs": 379341,
+      "target": "아침이에요.",
+      "translation": "É de manhã.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아침",
+          "surface": "아침",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 384420,
+      "endMs": 387221,
+      "target": "아빠는 의사예요.",
+      "translation": "O papai é médico.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "의사",
+          "surface": "의사",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 395293,
+      "endMs": 399814,
+      "target": "아빠는 병원에 가요.",
+      "translation": "O papai vai para o hospital.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "병원",
+          "surface": "병원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 407781,
+      "endMs": 412300,
+      "target": "엄마는 공무원이에요.",
+      "translation": "A mamãe é funcionária pública.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "공무원",
+          "surface": "공무원",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 419420,
+      "endMs": 422861,
+      "target": "엄마는 시청에 가요.",
+      "translation": "A mamãe vai para a prefeitura.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "시청",
+          "surface": "시청",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 430838,
+      "endMs": 435637,
+      "target": "윤지는 고등학생이에요.",
+      "translation": "A Yunji é estudante do ensino médio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고등학생",
+          "surface": "고등학생",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 442420,
+      "endMs": 445700,
+      "target": "윤지는 학교에 가요.",
+      "translation": "A Yunji vai para a escola.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 452454,
+      "endMs": 457014,
+      "target": "저는 학교에 안 가요.",
+      "translation": "Eu não vou para a escola.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "학교",
+          "surface": "학교",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 461086,
+      "endMs": 465126,
+      "target": "저는 집에 있어요.",
+      "translation": "Eu estou em casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 470367,
+      "endMs": 474367,
+      "target": "오후예요.",
+      "translation": "É de tarde.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오후",
+          "surface": "오후",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 477781,
+      "endMs": 481181,
+      "target": "윤지가 집에 와요.",
+      "translation": "A Yunji vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 487644,
+      "endMs": 492165,
+      "target": "저는 윤지와 놀아요.",
+      "translation": "Eu brinco com a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "놀다",
+          "surface": "놀",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 498324,
+      "endMs": 502004,
+      "target": "저녁이에요.",
+      "translation": "É de noite.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 506461,
+      "endMs": 509541,
+      "target": "엄마가 집에 와요.",
+      "translation": "A mamãe vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 516773,
+      "endMs": 520894,
+      "target": "아빠도 집에 와요.",
+      "translation": "O papai também vem para casa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "집",
+          "surface": "집",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 526740,
+      "endMs": 529740,
+      "target": "\"다녀왔습니다!\"",
+      "translation": "«Cheguei!»",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "다녀오다",
+          "surface": "다녀왔",
+          "start": 1,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 537341,
+      "endMs": 540581,
+      "target": "우리는 공원에 가요.",
+      "translation": "Nós vamos para o parque.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공원",
+          "surface": "공원",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 547109,
+      "endMs": 554143,
+      "target": "저는 아빠, 엄마, 윤지와 같이 산책해요.",
+      "translation": "Eu passeio junto com o papai, a mamãe e a Yunji.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "아빠",
+          "surface": "아빠",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "윤지",
+          "surface": "윤지",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "같이",
+          "surface": "같이",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "산책하다",
+          "surface": "산책해",
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 564131,
+      "endMs": 573463,
+      "target": "직업이 뭐예요?",
+      "translation": "Qual é a sua profissão?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "직업",
+          "surface": "직업",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 574931,
+      "endMs": 582781,
+      "target": "오늘 어디에 가요?",
+      "translation": "Hoje você vai aonde?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 585300,
+      "endMs": 589388,
+      "target": "벽이에요.",
+      "translation": "É uma parede.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "벽",
+          "surface": "벽",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 591654,
+      "endMs": 596507,
+      "target": "벽에 거미줄이 있어요.",
+      "translation": "Na parede tem uma teia de aranha.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "벽",
+          "surface": "벽",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "거미줄",
+          "surface": "거미줄",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 599944,
+      "endMs": 605402,
+      "target": "거미줄에 거미가 있어요.",
+      "translation": "Na teia tem uma aranha.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거미줄",
+          "surface": "거미줄",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "거미",
+          "surface": "거미",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 607981,
+      "endMs": 612121,
+      "target": "거미가 커요.",
+      "translation": "A aranha é grande.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거미",
+          "surface": "거미",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 615027,
+      "endMs": 621795,
+      "target": "으악! 거미가 무서워요.",
+      "translation": "Aaah! A aranha dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거미",
+          "surface": "거미",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 625634,
+      "endMs": 629831,
+      "target": "바닥이에요.",
+      "translation": "É o chão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "바닥",
+          "surface": "바닥",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 632475,
+      "endMs": 637222,
+      "target": "바닥에 호박이 있어요.",
+      "translation": "No chão tem uma abóbora.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "바닥",
+          "surface": "바닥",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "호박",
+          "surface": "호박",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 640810,
+      "endMs": 644530,
+      "target": "입이 커요.",
+      "translation": "A boca é grande.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "입",
+          "surface": "입",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 646308,
+      "endMs": 650427,
+      "target": "호박이 웃어요.",
+      "translation": "A abóbora ri.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "호박",
+          "surface": "호박",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "웃다",
+          "surface": "웃",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 653285,
+      "endMs": 659805,
+      "target": "으악! 호박이 무서워요.",
+      "translation": "Aaah! A abóbora dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "호박",
+          "surface": "호박",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 663690,
+      "endMs": 667530,
+      "target": "천장이에요.",
+      "translation": "É o teto.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "천장",
+          "surface": "천장",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 670135,
+      "endMs": 675422,
+      "target": "천장에 박쥐가 있어요.",
+      "translation": "No teto tem morcegos.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "천장",
+          "surface": "천장",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 678902,
+      "endMs": 683439,
+      "target": "엄마 박쥐가 커요.",
+      "translation": "O morcego-mãe é grande.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 687883,
+      "endMs": 692402,
+      "target": "아기 박쥐가 작아요.",
+      "translation": "O morcego-bebê é pequeno.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아기",
+          "surface": "아기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "작다",
+          "surface": "작",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 695488,
+      "endMs": 701668,
+      "target": "으악! 박쥐가 무서워요.",
+      "translation": "Aaah! O morcego dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 704781,
+      "endMs": 708381,
+      "target": "문이에요.",
+      "translation": "É uma porta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "문",
+          "surface": "문",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 710655,
+      "endMs": 715343,
+      "target": "문 뒤에 사람이 있어요.",
+      "translation": "Atrás da porta tem uma pessoa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "문",
+          "surface": "문",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "뒤",
+          "surface": "뒤",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "lemma": "사람",
+          "surface": "사람",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 718027,
+      "endMs": 724246,
+      "target": "어! 사람이 아니에요.",
+      "translation": "Ué! Não é uma pessoa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "사람",
+          "surface": "사람",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 724246,
+      "endMs": 729216,
+      "target": "인형이에요.",
+      "translation": "É uma boneca.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 731311,
+      "endMs": 737191,
+      "target": "으악! 인형이 무서워요.",
+      "translation": "Aaah! A boneca dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 739809,
+      "endMs": 743682,
+      "target": "창문이에요.",
+      "translation": "É uma janela.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 746073,
+      "endMs": 751504,
+      "target": "창문에 고양이가 있어요.",
+      "translation": "Na janela tem um gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 754120,
+      "endMs": 758480,
+      "target": "고양이 눈이 커요.",
+      "translation": "Os olhos do gato são grandes.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "눈",
+          "surface": "눈",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 761381,
+      "endMs": 767698,
+      "target": "으악! 고양이가 무서워요.",
+      "translation": "Aaah! O gato dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 771974,
+      "endMs": 775408,
+      "target": "고양이가 와요.",
+      "translation": "O gato vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s95",
+      "index": 95,
+      "startMs": 777965,
+      "endMs": 784165,
+      "target": "어! 고양이가 작아요.",
+      "translation": "Ué! O gato é pequeno.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "작다",
+          "surface": "작",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s96",
+      "index": 96,
+      "startMs": 786883,
+      "endMs": 790443,
+      "target": "아기 고양이예요.",
+      "translation": "É um gato bebê.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아기",
+          "surface": "아기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s97",
+      "index": 97,
+      "startMs": 793588,
+      "endMs": 798827,
+      "target": "고양이가 귀여워요.",
+      "translation": "O gato é fofo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "귀엽다",
+          "surface": "귀여워",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s98",
+      "index": 98,
+      "startMs": 809055,
+      "endMs": 814833,
+      "target": "벽이에요.",
+      "translation": "É uma parede.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "벽",
+          "surface": "벽",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s99",
+      "index": 99,
+      "startMs": 816575,
+      "endMs": 824614,
+      "target": "벽에 거미줄이 있어요.",
+      "translation": "Na parede tem uma teia de aranha.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "벽",
+          "surface": "벽",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "거미줄",
+          "surface": "거미줄",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s100",
+      "index": 100,
+      "startMs": 828694,
+      "endMs": 836458,
+      "target": "거미줄에 거미가 있어요.",
+      "translation": "Na teia tem uma aranha.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거미줄",
+          "surface": "거미줄",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "거미",
+          "surface": "거미",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "index": 101,
+      "startMs": 840265,
+      "endMs": 845233,
+      "target": "거미가 커요.",
+      "translation": "A aranha é grande.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거미",
+          "surface": "거미",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s102",
+      "index": 102,
+      "startMs": 849385,
+      "endMs": 855900,
+      "target": "거미가 무서워요.",
+      "translation": "A aranha dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "거미",
+          "surface": "거미",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s103",
+      "index": 103,
+      "startMs": 859534,
+      "endMs": 864160,
+      "target": "바닥이에요.",
+      "translation": "É o chão.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "바닥",
+          "surface": "바닥",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s104",
+      "index": 104,
+      "startMs": 867734,
+      "endMs": 873657,
+      "target": "바닥에 호박이 있어요.",
+      "translation": "No chão tem uma abóbora.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "바닥",
+          "surface": "바닥",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "호박",
+          "surface": "호박",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s105",
+      "index": 105,
+      "startMs": 877705,
+      "endMs": 882973,
+      "target": "입이 커요.",
+      "translation": "A boca é grande.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "입",
+          "surface": "입",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s106",
+      "index": 106,
+      "startMs": 887415,
+      "endMs": 892775,
+      "target": "호박이 웃어요.",
+      "translation": "A abóbora ri.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "호박",
+          "surface": "호박",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "웃다",
+          "surface": "웃",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s107",
+      "index": 107,
+      "startMs": 896893,
+      "endMs": 902050,
+      "target": "호박이 무서워요.",
+      "translation": "A abóbora dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "호박",
+          "surface": "호박",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s108",
+      "index": 108,
+      "startMs": 906546,
+      "endMs": 912078,
+      "target": "천장이에요.",
+      "translation": "É o teto.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "천장",
+          "surface": "천장",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s109",
+      "index": 109,
+      "startMs": 915015,
+      "endMs": 921536,
+      "target": "천장에 박쥐가 있어요.",
+      "translation": "No teto tem morcegos.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "천장",
+          "surface": "천장",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s110",
+      "index": 110,
+      "startMs": 926294,
+      "endMs": 931800,
+      "target": "엄마 박쥐가 커요.",
+      "translation": "O morcego-mãe é grande.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "엄마",
+          "surface": "엄마",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "index": 111,
+      "startMs": 937381,
+      "endMs": 944040,
+      "target": "아기 박쥐가 작아요.",
+      "translation": "O morcego-bebê é pequeno.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아기",
+          "surface": "아기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "작다",
+          "surface": "작",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s112",
+      "index": 112,
+      "startMs": 949053,
+      "endMs": 954758,
+      "target": "박쥐가 무서워요.",
+      "translation": "O morcego dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "박쥐",
+          "surface": "박쥐",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s113",
+      "index": 113,
+      "startMs": 961071,
+      "endMs": 966144,
+      "target": "문이에요.",
+      "translation": "É uma porta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "문",
+          "surface": "문",
+          "start": 0,
+          "end": 1
+        }
+      ]
+    },
+    {
+      "id": "s114",
+      "index": 114,
+      "startMs": 969995,
+      "endMs": 976970,
+      "target": "문 뒤에 사람이 있어요.",
+      "translation": "Atrás da porta tem uma pessoa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "문",
+          "surface": "문",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "뒤",
+          "surface": "뒤",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "lemma": "사람",
+          "surface": "사람",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s115",
+      "index": 115,
+      "startMs": 981375,
+      "endMs": 987775,
+      "target": "사람이 아니에요.",
+      "translation": "Não é uma pessoa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "사람",
+          "surface": "사람",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s116",
+      "index": 116,
+      "startMs": 991388,
+      "endMs": 996592,
+      "target": "인형이에요.",
+      "translation": "É uma boneca.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s117",
+      "index": 117,
+      "startMs": 999015,
+      "endMs": 1005026,
+      "target": "인형이 무서워요.",
+      "translation": "A boneca dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 4,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s118",
+      "index": 118,
+      "startMs": 1008888,
+      "endMs": 1013961,
+      "target": "창문이에요.",
+      "translation": "É uma janela.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s119",
+      "index": 119,
+      "startMs": 1016864,
+      "endMs": 1022972,
+      "target": "창문에 고양이가 있어요.",
+      "translation": "Na janela tem um gato.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "창문",
+          "surface": "창문",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s120",
+      "index": 120,
+      "startMs": 1027302,
+      "endMs": 1033487,
+      "target": "고양이 눈이 커요.",
+      "translation": "Os olhos do gato são grandes.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "눈",
+          "surface": "눈",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "크다",
+          "surface": "커",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s121",
+      "index": 121,
+      "startMs": 1037255,
+      "endMs": 1043067,
+      "target": "고양이가 무서워요.",
+      "translation": "O gato dá medo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s122",
+      "index": 122,
+      "startMs": 1049214,
+      "endMs": 1055336,
+      "target": "고양이가 와요.",
+      "translation": "O gato vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s123",
+      "index": 123,
+      "startMs": 1059356,
+      "endMs": 1066140,
+      "target": "고양이가 작아요.",
+      "translation": "O gato é pequeno.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "작다",
+          "surface": "작",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s124",
+      "index": 124,
+      "startMs": 1069414,
+      "endMs": 1075045,
+      "target": "아기 고양이예요.",
+      "translation": "É um gato bebê.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "아기",
+          "surface": "아기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s125",
+      "index": 125,
+      "startMs": 1077955,
+      "endMs": 1083212,
+      "target": "고양이가 귀여워요.",
+      "translation": "O gato é fofo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고양이",
+          "surface": "고양이",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "귀엽다",
+          "surface": "귀여워",
+          "start": 5,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s126",
+      "index": 126,
+      "startMs": 1088141,
+      "endMs": 1091780,
+      "target": "뭐가 무서워요?",
+      "translation": "O que dá medo em você?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "무섭다",
+          "surface": "무서워",
+          "start": 3,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s127",
+      "index": 127,
+      "startMs": 1094943,
+      "endMs": 1100943,
+      "target": "방 벽에 뭐가 있어요?",
+      "translation": "O que tem na parede do seu quarto?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "방",
+          "surface": "방",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "벽",
+          "surface": "벽",
+          "start": 2,
+          "end": 3
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-있다",
+      "segmentId": "",
+      "target": "있다",
+      "translation": "estar / ter / existir",
+      "startMs": 102460,
+      "endMs": 105655,
+      "reading": null,
+      "context": "저는 집에 있어요. — Eu estou em casa.",
+      "audioClipSrc": "media/tts/wdfe763f3f38f.mp3",
+      "exampleAudioSrc": "media/frag/f6a3425349eef.mp3",
+      "freqRank": 2,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "있"
+      ],
+      "sceneSrc": "media/frames/s7648a63d6741.jpg"
+    },
+    {
+      "id": "w-안",
+      "segmentId": "",
+      "target": "안",
+      "translation": "não (vem antes do verbo)",
+      "startMs": 98981,
+      "endMs": 102460,
+      "reading": null,
+      "context": "저는 학교에 안 가요. — Eu não vou para a escola.",
+      "audioClipSrc": "media/tts/w3f1aa7b81440.mp3",
+      "exampleAudioSrc": "media/frag/f0a9d6103826b.mp3",
+      "freqRank": 6,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s31f8f48af095.jpg"
+    },
+    {
+      "id": "w-가다",
+      "segmentId": "",
+      "target": "가다",
+      "translation": "ir",
+      "startMs": 1500,
+      "endMs": 6061,
+      "reading": null,
+      "context": "윤지는 학교에 가요 — A Yunji vai para a escola",
+      "audioClipSrc": "media/tts/wefb0dbba297f.mp3",
+      "exampleAudioSrc": "media/frag/f23fdd9863807.mp3",
+      "freqRank": 7,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "가"
+      ],
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+    },
+    {
+      "id": "w-오다",
+      "segmentId": "",
+      "target": "오다",
+      "translation": "vir",
+      "startMs": 771974,
+      "endMs": 775408,
+      "reading": null,
+      "context": "고양이가 와요. — O gato vem.",
+      "audioClipSrc": "media/tts/wc713b1c037ea.mp3",
+      "exampleAudioSrc": "media/frag/f992a201fede8.mp3",
+      "freqRank": 14,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "와"
+      ],
+      "sceneSrc": "media/frames/sf521a1f8341e.jpg"
+    },
+    {
+      "id": "w-사람",
+      "segmentId": "",
+      "target": "사람",
+      "translation": "pessoa",
+      "startMs": 981375,
+      "endMs": 987775,
+      "reading": null,
+      "context": "사람이 아니에요. — Não é uma pessoa.",
+      "audioClipSrc": "media/tts/w61738cb6ca26.mp3",
+      "exampleAudioSrc": "media/frag/fc8145ddefcae.mp3",
+      "freqRank": 19,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/se0b1c7986374.jpg"
+    },
+    {
+      "id": "w-엄마",
+      "segmentId": "",
+      "target": "엄마",
+      "translation": "mãe / mamãe",
+      "startMs": 132621,
+      "endMs": 135981,
+      "reading": null,
+      "context": "엄마가 집에 와요. — A mamãe vem para casa.",
+      "audioClipSrc": "media/tts/we771a8b3254e.mp3",
+      "exampleAudioSrc": "media/frag/f541c87d39ca8.mp3",
+      "freqRank": 33,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sf60b20e50065.jpg"
+    },
+    {
+      "id": "w-집",
+      "segmentId": "",
+      "target": "집",
+      "translation": "casa",
+      "startMs": 102460,
+      "endMs": 105655,
+      "reading": null,
+      "context": "저는 집에 있어요. — Eu estou em casa.",
+      "audioClipSrc": "media/tts/w4f15583cc4aa.mp3",
+      "exampleAudioSrc": "media/frag/f4cd5e3d31d02.mp3",
+      "freqRank": 41,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7648a63d6741.jpg"
+    },
+    {
+      "id": "w-아빠",
+      "segmentId": "",
+      "target": "아빠",
+      "translation": "pai / papai",
+      "startMs": 53180,
+      "endMs": 55980,
+      "reading": null,
+      "context": "아빠는 의사예요. — O papai é médico.",
+      "audioClipSrc": "media/tts/wb05c8c893ddb.mp3",
+      "exampleAudioSrc": "media/frag/f5524ebad952e.mp3",
+      "freqRank": 46,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s15e1995fe18a.jpg"
+    },
+    {
+      "id": "w-오늘",
+      "segmentId": "",
+      "target": "오늘",
+      "translation": "hoje",
+      "startMs": 574931,
+      "endMs": 582781,
+      "reading": null,
+      "context": "오늘 어디에 가요? — Hoje você vai aonde?",
+      "audioClipSrc": "media/tts/we1e8a7b40216.mp3",
+      "exampleAudioSrc": "media/frag/f1fbd9831363b.mp3",
+      "freqRank": 49,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sc5f8cf22ff8c.jpg"
+    },
+    {
+      "id": "w-같이",
+      "segmentId": "",
+      "target": "같이",
+      "translation": "junto (com)",
+      "startMs": 200052,
+      "endMs": 205061,
+      "reading": null,
+      "context": "저는 아빠 엄마 윤지와 같이 살아요. — Eu moro junto com o papai, a mamãe e a Yunji.",
+      "audioClipSrc": "media/tts/w536a6b0fa83f.mp3",
+      "exampleAudioSrc": "media/frag/fc15ee1be1def.mp3",
+      "freqRank": 59,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s6f88d25ec5a4.jpg"
+    },
+    {
+      "id": "w-살다",
+      "segmentId": "",
+      "target": "살다",
+      "translation": "morar / viver",
+      "startMs": 200052,
+      "endMs": 205061,
+      "reading": null,
+      "context": "저는 아빠 엄마 윤지와 같이 살아요. — Eu moro junto com o papai, a mamãe e a Yunji.",
+      "audioClipSrc": "media/tts/w172e0666e518.mp3",
+      "exampleAudioSrc": "media/frag/fc794ab67a309.mp3",
+      "freqRank": 81,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "살"
+      ],
+      "sceneSrc": "media/frames/s6f88d25ec5a4.jpg"
+    },
+    {
+      "id": "w-크다",
+      "segmentId": "",
+      "target": "크다",
+      "translation": "ser grande",
+      "startMs": 640810,
+      "endMs": 644530,
+      "reading": null,
+      "context": "입이 커요. — A boca é grande.",
+      "audioClipSrc": "media/tts/wdd0f1a89dca1.mp3",
+      "exampleAudioSrc": "media/frag/f1df1b5dfe15a.mp3",
+      "freqRank": 90,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "커"
+      ],
+      "sceneSrc": "media/frames/sdc05df31ce91.jpg"
+    },
+    {
+      "id": "w-눈",
+      "segmentId": "",
+      "target": "눈",
+      "translation": "olho (também: neve)",
+      "startMs": 754120,
+      "endMs": 758480,
+      "reading": null,
+      "context": "고양이 눈이 커요. — Os olhos do gato são grandes.",
+      "audioClipSrc": "media/tts/w0726db86e1da.mp3",
+      "exampleAudioSrc": "media/frag/fe2479f292db6.mp3",
+      "freqRank": 123,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sd531de5a6bd9.jpg"
+    },
+    {
+      "id": "w-뒤",
+      "segmentId": "",
+      "target": "뒤",
+      "translation": "atrás / parte de trás",
+      "startMs": 710655,
+      "endMs": 715343,
+      "reading": null,
+      "context": "문 뒤에 사람이 있어요. — Atrás da porta tem uma pessoa.",
+      "audioClipSrc": "media/tts/w530aafc76047.mp3",
+      "exampleAudioSrc": "media/frag/fb570b99143c1.mp3",
+      "freqRank": 143,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s9bceac3167ea.jpg"
+    },
+    {
+      "id": "w-문",
+      "segmentId": "",
+      "target": "문",
+      "translation": "porta",
+      "startMs": 704781,
+      "endMs": 708381,
+      "reading": null,
+      "context": "문이에요. — É uma porta.",
+      "audioClipSrc": "media/tts/w0dadef774087.mp3",
+      "exampleAudioSrc": "media/frag/f9210d91e61cb.mp3",
+      "freqRank": 164,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sbc50df50c206.jpg"
+    },
+    {
+      "id": "w-아침",
+      "segmentId": "",
+      "target": "아침",
+      "translation": "manhã (também: café da manhã)",
+      "startMs": 48398,
+      "endMs": 52398,
+      "reading": null,
+      "context": "아침이에요. — É de manhã.",
+      "audioClipSrc": "media/tts/wa45cabcadba8.mp3",
+      "exampleAudioSrc": "media/frag/fbf60ebe7a0cb.mp3",
+      "freqRank": 169,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7d35bbb5e09b.jpg"
+    },
+    {
+      "id": "w-방",
+      "segmentId": "",
+      "target": "방",
+      "translation": "quarto",
+      "startMs": 1094943,
+      "endMs": 1100943,
+      "reading": null,
+      "context": "방 벽에 뭐가 있어요? — O que tem na parede do seu quarto?",
+      "audioClipSrc": "media/tts/w5c8c70c261a9.mp3",
+      "exampleAudioSrc": "media/frag/fe24c128ba4f8.mp3",
+      "freqRank": 199,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/se970efe89e8f.jpg"
+    },
+    {
+      "id": "w-작다",
+      "segmentId": "",
+      "target": "작다",
+      "translation": "ser pequeno",
+      "startMs": 1059356,
+      "endMs": 1066140,
+      "reading": null,
+      "context": "고양이가 작아요. — O gato é pequeno.",
+      "audioClipSrc": "media/tts/w420b36b7aa43.mp3",
+      "exampleAudioSrc": "media/frag/f4df793232f0f.mp3",
+      "freqRank": 232,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "작"
+      ],
+      "sceneSrc": "media/frames/s3bcd26a5799c.jpg"
+    },
+    {
+      "id": "w-입",
+      "segmentId": "",
+      "target": "입",
+      "translation": "boca",
+      "startMs": 640810,
+      "endMs": 644530,
+      "reading": null,
+      "context": "입이 커요. — A boca é grande.",
+      "audioClipSrc": "media/tts/w62368820ee32.mp3",
+      "exampleAudioSrc": "media/frag/fb61252f6fb5e.mp3",
+      "freqRank": 234,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sdc05df31ce91.jpg"
+    },
+    {
+      "id": "w-병원",
+      "segmentId": "",
+      "target": "병원",
+      "translation": "hospital",
+      "startMs": 58198,
+      "endMs": 62758,
+      "reading": null,
+      "context": "아빠는 병원에 가요. — O papai vai para o hospital.",
+      "audioClipSrc": "media/tts/w00536290cb52.mp3",
+      "exampleAudioSrc": "media/frag/f6231b4dc521d.mp3",
+      "freqRank": 236,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s9eaaeea2f581.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/o6AP3nVNj_8",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/o6AP3nVNj_8",
+        "startMs": 0,
+        "title": "윤지는 학교에 가요"
+      },
+      {
+        "url": "https://youtu.be/pE_XGFg0TfA",
+        "startMs": 583800,
+        "title": "문 뒤에 뭐가 있어요?"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "Frases de 3 a 6 palavras, uma por vez, com desenho. Cada história aparece 3 vezes — a última bem devagar.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 46085,
+      "summary": "Apresentação da família: em casa estão o papai, a mamãe e a Yunji — e quem narra a história mora com eles (é o cachorro da casa).",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 48398,
+      "endMs": 105655,
+      "summary": "De manhã cada um sai: o papai é médico e vai para o hospital, a mamãe é funcionária pública e vai para a prefeitura, a Yunji é do ensino médio e vai para a escola. O narrador não vai para a escola: fica em casa.",
+      "segmentIds": [
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 108188,
+      "endMs": 164844,
+      "summary": "De tarde a Yunji volta e brinca com ele. De noite os pais chegam («Cheguei!») e todos vão passear no parque.",
+      "segmentIds": [
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20",
+        "s21",
+        "s22",
+        "s23"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 177061,
+      "endMs": 322525,
+      "summary": "A mesma história desde o começo (2ª vez).",
+      "segmentIds": [
+        "s24",
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42",
+        "s43",
+        "s44",
+        "s45"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 332141,
+      "endMs": 554143,
+      "summary": "A história pela 3ª vez, agora bem devagar — é a hora de repetir junto.",
+      "segmentIds": [
+        "s46",
+        "s47",
+        "s48",
+        "s49",
+        "s50",
+        "s51",
+        "s52",
+        "s53",
+        "s54",
+        "s55",
+        "s56",
+        "s57",
+        "s58",
+        "s59",
+        "s60",
+        "s61",
+        "s62",
+        "s63",
+        "s64",
+        "s65",
+        "s66",
+        "s67"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 564131,
+      "endMs": 582781,
+      "summary": "Duas perguntas para você: «Qual é a sua profissão?» e «Hoje você vai aonde?»",
+      "segmentIds": [
+        "s68",
+        "s69"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 585300,
+      "endMs": 659805,
+      "summary": "Segunda história: o que tem atrás da porta? Na parede tem uma teia com uma aranha grande — que medo. No chão, uma abóbora de boca grande, que ri.",
+      "segmentIds": [
+        "s70",
+        "s71",
+        "s72",
+        "s73",
+        "s74",
+        "s75",
+        "s76",
+        "s77",
+        "s78",
+        "s79"
+      ]
+    },
+    {
+      "id": "p8",
+      "startMs": 663690,
+      "endMs": 737191,
+      "summary": "No teto tem morcegos: o morcego-mãe é grande, o morcego-bebê é pequeno. Atrás da porta parece ter uma pessoa — mas é uma boneca.",
+      "segmentIds": [
+        "s80",
+        "s81",
+        "s82",
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87",
+        "s88",
+        "s89"
+      ]
+    },
+    {
+      "id": "p9",
+      "startMs": 739809,
+      "endMs": 798827,
+      "summary": "Na janela tem um gato de olhos grandes. Ele vem chegando — e afinal é só um gatinho, todo fofo.",
+      "segmentIds": [
+        "s90",
+        "s91",
+        "s92",
+        "s93",
+        "s94",
+        "s95",
+        "s96",
+        "s97"
+      ]
+    },
+    {
+      "id": "p10",
+      "startMs": 809055,
+      "endMs": 1083212,
+      "summary": "A mesma história de novo, mais devagar, para repetir junto.",
+      "segmentIds": [
+        "s98",
+        "s99",
+        "s100",
+        "s101",
+        "s102",
+        "s103",
+        "s104",
+        "s105",
+        "s106",
+        "s107",
+        "s108",
+        "s109",
+        "s110",
+        "s111",
+        "s112",
+        "s113",
+        "s114",
+        "s115",
+        "s116",
+        "s117",
+        "s118",
+        "s119",
+        "s120",
+        "s121",
+        "s122",
+        "s123",
+        "s124",
+        "s125"
+      ]
+    },
+    {
+      "id": "p11",
+      "startMs": 1088141,
+      "endMs": 1100943,
+      "summary": "Duas perguntas para você: «O que dá medo em você?» e «O que tem na parede do seu quarto?»",
+      "segmentIds": [
+        "s126",
+        "s127"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "이에요/예요 (é / sou)",
+    "장소 + 에 있어요 (estar / haver em um lugar)",
+    "장소 + 에 가요 / 와요 (ir a / vir a)",
+    "안 + verbo (negação)",
+    "-이/가 (sujeito) e -는/은 (tópico)"
+  ],
+  "tags": [
+    "história",
+    "família",
+    "casa",
+    "iniciante absoluto"
+  ],
+  "titleTarget": "윤지는 학교에 가요 · 문 뒤에 뭐가 있어요?",
+  "premise": "Histórias ilustradas para iniciante absoluto (A0), narradas devagar por uma professora, com desenho na tela para cada frase. Só três estruturas: «X é Y», «em tal lugar tem/está X» e «X vai / vem». Vocabulário de casa, família, profissões e coisas do quarto.",
+  "createdAt": "2026-08-22T18:42:25.796173+00:00"
+}

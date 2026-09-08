@@ -1,0 +1,3612 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-07",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 7,
+  "title": "Viajar: para quê, como e quanto",
+  "synopsis": "Sétima dose: planejar uma viagem. Na primeira história, cada lugar tem um motivo — o aeroporto para pegar o avião, o salão para cortar o cabelo, o restaurante para comer. Na segunda, dois amigos comparam ônibus, trem-bala e avião de Seul a Busan: quanto tempo leva e quanto custa cada um. É a primeira dose com conversa em fala informal e ritmo mais próximo do natural.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 909.854667,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 8220,
+      "target": "저는 비행기를 타러 공항에 가요.",
+      "translation": "Eu vou ao aeroporto para pegar o avião.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "공항",
+          "surface": "공항",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 12076,
+      "endMs": 16746,
+      "target": "비행기를 타고 한국에 가요.",
+      "translation": "Vou de avião para a Coreia.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "한국",
+          "surface": "한국",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 20301,
+      "endMs": 24101,
+      "target": "여기는 한국이에요.",
+      "translation": "Aqui é a Coreia.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "한국",
+          "surface": "한국",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 24194,
+      "endMs": 30513,
+      "target": "저는 지하철을 타러 지하철역에 가요.",
+      "translation": "Eu vou à estação para pegar o metrô.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "지하철",
+          "surface": "지하철",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "지하철역",
+          "surface": "지하철역",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 32636,
+      "endMs": 39228,
+      "target": "지하철을 타고 호텔에 가요.",
+      "translation": "Vou de metrô para o hotel.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "지하철",
+          "surface": "지하철",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "호텔",
+          "surface": "호텔",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 42037,
+      "endMs": 47437,
+      "target": "저는 옷을 사러 백화점에 가요.",
+      "translation": "Eu vou à loja de departamentos para comprar roupa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "옷",
+          "surface": "옷",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "백화점",
+          "surface": "백화점",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 50942,
+      "endMs": 56342,
+      "target": "저는 백화점에서 옷을 사요.",
+      "translation": "Eu compro roupa na loja de departamentos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "백화점",
+          "surface": "백화점",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "옷",
+          "surface": "옷",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 62182,
+      "endMs": 69342,
+      "target": "그리고 머리를 자르러 미용실에 가요.",
+      "translation": "E vou ao salão para cortar o cabelo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "머리",
+          "surface": "머리",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "자르다",
+          "surface": "자르",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "미용실",
+          "surface": "미용실",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 71237,
+      "endMs": 75878,
+      "target": "저는 미용실에서 머리를 잘라요.",
+      "translation": "Eu corto o cabelo no salão.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "미용실",
+          "surface": "미용실",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "머리",
+          "surface": "머리",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "자르다",
+          "surface": "잘",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 81167,
+      "endMs": 86806,
+      "target": "그리고 밥을 먹으러 식당에 가요.",
+      "translation": "E vou ao restaurante para comer.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "밥",
+          "surface": "밥",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "식당",
+          "surface": "식당",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 89233,
+      "endMs": 95434,
+      "target": "저는 식당에서 비빔밥을 먹어요.",
+      "translation": "Eu como bibimbap no restaurante.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "식당",
+          "surface": "식당",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "비빔밥",
+          "surface": "비빔밥",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 98169,
+      "endMs": 101929,
+      "target": "그리고 쉬러 호텔에 가요.",
+      "translation": "E vou ao hotel para descansar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "호텔",
+          "surface": "호텔",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 106740,
+      "endMs": 112220,
+      "target": "저는 호텔에서 잠깐 쉬어요.",
+      "translation": "Eu descanso um pouco no hotel.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "호텔",
+          "surface": "호텔",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "잠깐",
+          "surface": "잠깐",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 114513,
+      "endMs": 120034,
+      "target": "그리고 씻으러 욕실에 가요.",
+      "translation": "E vou ao banheiro para me lavar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "씻다",
+          "surface": "씻",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "욕실",
+          "surface": "욕실",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 123274,
+      "endMs": 129033,
+      "target": "저는 욕실에서 씻어요.",
+      "translation": "Eu me lavo no banheiro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "욕실",
+          "surface": "욕실",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "씻다",
+          "surface": "씻",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 131318,
+      "endMs": 134838,
+      "target": "그리고 침대에서 자요.",
+      "translation": "E durmo na cama.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "침대",
+          "surface": "침대",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "자다",
+          "surface": "자",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 139619,
+      "endMs": 143059,
+      "target": "다음 날이에요.",
+      "translation": "É o dia seguinte.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "다음",
+          "surface": "다음",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날",
+          "surface": "날",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 147598,
+      "endMs": 154038,
+      "target": "저는 콘서트를 보러 공연장에 가요.",
+      "translation": "Eu vou à casa de shows para ver um show.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "보다",
+          "surface": "보",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "공연장",
+          "surface": "공연장",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 156340,
+      "endMs": 162221,
+      "target": "저는 공연장에서 콘서트를 봐요.",
+      "translation": "Eu vejo o show na casa de shows.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공연장",
+          "surface": "공연장",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 162598,
+      "endMs": 167118,
+      "target": "콘서트가 완전 멋져요.",
+      "translation": "O show é totalmente demais.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "완전",
+          "surface": "완전",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "멋지다",
+          "surface": "멋져",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 176753,
+      "endMs": 183513,
+      "target": "저는 비행기를 타러 공항에 가요.",
+      "translation": "Eu vou ao aeroporto para pegar o avião.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "공항",
+          "surface": "공항",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 189781,
+      "endMs": 193781,
+      "target": "비행기를 타고 한국에 가요.",
+      "translation": "Vou de avião para a Coreia.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "한국",
+          "surface": "한국",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 199874,
+      "endMs": 203674,
+      "target": "여기는 한국이에요.",
+      "translation": "Aqui é a Coreia.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "한국",
+          "surface": "한국",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 207860,
+      "endMs": 215140,
+      "target": "저는 지하철을 타러 지하철역에 가요.",
+      "translation": "Eu vou à estação para pegar o metrô.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "지하철",
+          "surface": "지하철",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "지하철역",
+          "surface": "지하철역",
+          "start": 11,
+          "end": 15
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 219863,
+      "endMs": 224941,
+      "target": "지하철을 타고 호텔에 가요.",
+      "translation": "Vou de metrô para o hotel.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "지하철",
+          "surface": "지하철",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "호텔",
+          "surface": "호텔",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 231698,
+      "endMs": 237219,
+      "target": "저는 옷을 사러 백화점에 가요.",
+      "translation": "Eu vou à loja de departamentos para comprar roupa.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "옷",
+          "surface": "옷",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "백화점",
+          "surface": "백화점",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 242513,
+      "endMs": 248913,
+      "target": "저는 백화점에서 옷을 사요.",
+      "translation": "Eu compro roupa na loja de departamentos.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "백화점",
+          "surface": "백화점",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "옷",
+          "surface": "옷",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 255637,
+      "endMs": 260758,
+      "target": "그리고 머리를 자르러 미용실에 가요.",
+      "translation": "E vou ao salão para cortar o cabelo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "머리",
+          "surface": "머리",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "자르다",
+          "surface": "자르",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "미용실",
+          "surface": "미용실",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 268153,
+      "endMs": 274832,
+      "target": "저는 미용실에서 머리를 잘라요.",
+      "translation": "Eu corto o cabelo no salão.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "미용실",
+          "surface": "미용실",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "머리",
+          "surface": "머리",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "자르다",
+          "surface": "잘",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 281103,
+      "endMs": 285703,
+      "target": "그리고 밥을 먹으러 식당에 가요.",
+      "translation": "E vou ao restaurante para comer.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "밥",
+          "surface": "밥",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "식당",
+          "surface": "식당",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 292128,
+      "endMs": 297208,
+      "target": "저는 식당에서 비빔밥을 먹어요.",
+      "translation": "Eu como bibimbap no restaurante.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "식당",
+          "surface": "식당",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "비빔밥",
+          "surface": "비빔밥",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 304500,
+      "endMs": 309220,
+      "target": "그리고 쉬러 호텔에 가요.",
+      "translation": "E vou ao hotel para descansar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "호텔",
+          "surface": "호텔",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 316020,
+      "endMs": 321499,
+      "target": "저는 호텔에서 잠깐 쉬어요.",
+      "translation": "Eu descanso um pouco no hotel.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "호텔",
+          "surface": "호텔",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "잠깐",
+          "surface": "잠깐",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "쉬다",
+          "surface": "쉬",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 327808,
+      "endMs": 334368,
+      "target": "그리고 씻으러 욕실에 가요.",
+      "translation": "E vou ao banheiro para me lavar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "씻다",
+          "surface": "씻",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "욕실",
+          "surface": "욕실",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 339958,
+      "endMs": 343718,
+      "target": "저는 욕실에서 씻어요.",
+      "translation": "Eu me lavo no banheiro.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "욕실",
+          "surface": "욕실",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "씻다",
+          "surface": "씻",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 350993,
+      "endMs": 355553,
+      "target": "그리고 침대에서 자요.",
+      "translation": "E durmo na cama.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "침대",
+          "surface": "침대",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "자다",
+          "surface": "자",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 361140,
+      "endMs": 365540,
+      "target": "다음 날이에요",
+      "translation": "É o dia seguinte",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "다음",
+          "surface": "다음",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날",
+          "surface": "날",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 371038,
+      "endMs": 376358,
+      "target": "저는 콘서트를 보러 공연장에 가요.",
+      "translation": "Eu vou à casa de shows para ver um show.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "보다",
+          "surface": "보",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "공연장",
+          "surface": "공연장",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 383887,
+      "endMs": 389807,
+      "target": "저는 공연장에서 콘서트를 봐요.",
+      "translation": "Eu vejo o show na casa de shows.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "공연장",
+          "surface": "공연장",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 9,
+          "end": 12
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 393674,
+      "endMs": 399074,
+      "target": "콘서트가 완전 멋져요.",
+      "translation": "O show é totalmente demais.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "완전",
+          "surface": "완전",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "멋지다",
+          "surface": "멋져",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 406158,
+      "endMs": 409677,
+      "target": "한국에 뭐 하러 가요?",
+      "translation": "Você vai à Coreia para fazer o quê?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "한국",
+          "surface": "한국",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 412233,
+      "endMs": 416913,
+      "target": "부산까지 얼마나 걸려요?",
+      "translation": "Quanto tempo leva até Busan?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 5,
+          "end": 8
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 420433,
+      "endMs": 425633,
+      "target": "나는 다음 주에 부산에 갈 거야.",
+      "translation": "Eu vou a Busan na semana que vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "다음",
+          "surface": "다음",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "주",
+          "surface": "주",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 428033,
+      "endMs": 433273,
+      "target": "서울에서 부산까지 얼마나 걸려?",
+      "translation": "De Seul até Busan leva quanto tempo?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 436112,
+      "endMs": 440752,
+      "target": "그리고 돈은 얼마나 들어?",
+      "translation": "E de dinheiro, custa quanto?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 7,
+          "end": 10
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 445833,
+      "endMs": 453193,
+      "target": "고속 버스를 타면  서울에서 부산까지 4시간 걸려.",
+      "translation": "Se você pegar o ônibus expresso, de Seul até Busan leva 4 horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속",
+          "surface": "고속",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "버스",
+          "surface": "버스",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 25,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 456033,
+      "endMs": 460713,
+      "target": "돈은 4만 원 정도 들어.",
+      "translation": "De dinheiro custa uns 40 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 462193,
+      "endMs": 467353,
+      "target": "부산행 고속버스 표는 39,700원이야.",
+      "translation": "A passagem de ônibus expresso para Busan é 39.700 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 475992,
+      "endMs": 483713,
+      "target": "KTX를 타면  서울에서 부산까지 2시간 40분 걸려.",
+      "translation": "Se você pegar o KTX, de Seul até Busan leva 2 horas e 40 minutos.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 27,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 486233,
+      "endMs": 490833,
+      "target": "돈은 6만 원 정도 들어.",
+      "translation": "De dinheiro custa uns 60 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 493753,
+      "endMs": 498272,
+      "target": "부산행 기차표는 59,800원이야.",
+      "translation": "A passagem de trem para Busan é 59.800 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "기차",
+          "surface": "기차",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 505632,
+      "endMs": 513153,
+      "target": "비행기를 타면  서울에서 부산까지 1시간 정도 걸려.",
+      "translation": "Se você pegar o avião, de Seul até Busan leva mais ou menos 1 hora.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 26,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 517312,
+      "endMs": 522032,
+      "target": "돈은 8만 원 정도 들어.",
+      "translation": "De dinheiro custa uns 80 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 525992,
+      "endMs": 530753,
+      "target": "부산행 비행기표는 79,700원이야.",
+      "translation": "A passagem de avião para Busan é 79.700 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 536993,
+      "endMs": 543112,
+      "target": "몰이야, 그럼 부산까지 어떻게 갈 거야?",
+      "translation": "Mori, então você vai até Busan como?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어떻",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 546673,
+      "endMs": 551192,
+      "target": "나는 돈이 별로 없어.",
+      "translation": "Eu não tenho muito dinheiro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "별로",
+          "surface": "별로",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "없다",
+          "surface": "없",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 552793,
+      "endMs": 557112,
+      "target": "그렇지만 시간은 많아.",
+      "translation": "Mas tempo eu tenho de sobra.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "많다",
+          "surface": "많",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 560233,
+      "endMs": 566153,
+      "target": "그래서 난 고속버스로 부산에 갈 거야.",
+      "translation": "Por isso eu vou a Busan de ônibus expresso.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 577472,
+      "endMs": 582633,
+      "target": "저는 다음 주에 부산에 갈 거예요.",
+      "translation": "Eu vou a Busan na semana que vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "다음",
+          "surface": "다음",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "주",
+          "surface": "주",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 584873,
+      "endMs": 590313,
+      "target": "서울에서 부산까지 얼마나 걸려요?",
+      "translation": "De Seul até Busan leva quanto tempo?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 592593,
+      "endMs": 596953,
+      "target": "비용은 얼마나 들어요?",
+      "translation": "O custo é de quanto?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비용",
+          "surface": "비용",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 601593,
+      "endMs": 608633,
+      "target": "서울에서 부산까지 고속버스로 가면 4시간이 걸려요.",
+      "translation": "Se você for de Seul até Busan de ônibus expresso, leva 4 horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 10,
+          "end": 14
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 24,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 612752,
+      "endMs": 618832,
+      "target": "부산까지 가는데 비용은 4만 원쯤 들어요.",
+      "translation": "Para ir até Busan o custo é de uns 40 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "비용",
+          "surface": "비용",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 19,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 620513,
+      "endMs": 625873,
+      "target": "부산행 고속 버스 티켓은 39,700원이에요.",
+      "translation": "O bilhete de ônibus expresso para Busan é 39.700 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "고속",
+          "surface": "고속",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "버스",
+          "surface": "버스",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "티켓",
+          "surface": "티켓",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 633392,
+      "endMs": 641073,
+      "target": "서울에서 부산까지 KTX로 가면 2시간 40분이 걸려요.",
+      "translation": "Se você for de Seul até Busan de KTX, leva 2 horas e 40 minutos.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 27,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 643993,
+      "endMs": 650392,
+      "target": "기차로 부산까지 가는 데는  6만 원 정도 들어요.",
+      "translation": "Para ir de trem até Busan custa uns 60 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "기차",
+          "surface": "기차",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 24,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 651553,
+      "endMs": 656392,
+      "target": "부산행 기차 티켓은 59,800원이거든요.",
+      "translation": "É que o bilhete de trem para Busan é 59.800 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "기차",
+          "surface": "기차",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "티켓",
+          "surface": "티켓",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 663473,
+      "endMs": 670313,
+      "target": "서울에서 부산까지 비행기로 가면 1시간쯤 걸려요.",
+      "translation": "Se você for de Seul até Busan de avião, leva mais ou menos 1 hora.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 23,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 672673,
+      "endMs": 680033,
+      "target": "그리고 부산행 비행기 티켓을 사는 데는 8만 원 정도 들어요.",
+      "translation": "E para comprar o bilhete de avião para Busan custa uns 80 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "티켓",
+          "surface": "티켓",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 16,
+          "end": 17
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 27,
+          "end": 29
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 30,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 682753,
+      "endMs": 687673,
+      "target": "부산행 비행기 티켓은 79,700원이거든요.",
+      "translation": "É que o bilhete de avião para Busan é 79.700 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "티켓",
+          "surface": "티켓",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 694753,
+      "endMs": 700273,
+      "target": "몰이 씨, 부산에 어떻게 갈 거예요?",
+      "translation": "Mori, você vai a Busan como?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어떻",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 702833,
+      "endMs": 707313,
+      "target": "저는 돈이 별로 없어요.",
+      "translation": "Eu não tenho muito dinheiro.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "별로",
+          "surface": "별로",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "없다",
+          "surface": "없",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 708912,
+      "endMs": 713313,
+      "target": "하지만 시간은 많아요.",
+      "translation": "Mas tempo eu tenho de sobra.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "많다",
+          "surface": "많",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 716713,
+      "endMs": 723072,
+      "target": "그래서 저는 고속 버스를 타고  부산에 갈 거예요.",
+      "translation": "Por isso eu vou a Busan de ônibus expresso.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속",
+          "surface": "고속",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "버스",
+          "surface": "버스",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 14,
+          "end": 15
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 18,
+          "end": 20
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 22,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 731033,
+      "endMs": 735473,
+      "target": "몰이는 어디에 갈 거예요?",
+      "translation": "Aonde a Mori vai?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 736433,
+      "endMs": 740953,
+      "target": "몰이는 부산에 갈 거예요.",
+      "translation": "A Mori vai a Busan.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 743593,
+      "endMs": 748192,
+      "target": "몰이는 언제 부산에 갈 거예요?",
+      "translation": "Quando a Mori vai a Busan?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "언제",
+          "surface": "언제",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 750833,
+      "endMs": 756233,
+      "target": "몰이는 다음 주에 부산에 갈 거예요.",
+      "translation": "A Mori vai a Busan na semana que vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "다음",
+          "surface": "다음",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "주",
+          "surface": "주",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 761632,
+      "endMs": 767912,
+      "target": "고속버스를 타면  서울에서 부산까지 얼마나 걸려요?",
+      "translation": "Se pegar o ônibus expresso, de Seul até Busan leva quanto tempo?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 20,
+          "end": 23
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 24,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 770273,
+      "endMs": 775713,
+      "target": "고속버스로 가면 4시간이 걸려요.",
+      "translation": "Indo de ônibus expresso, leva 4 horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 0,
+          "end": 4
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 779233,
+      "endMs": 784433,
+      "target": "고속 버스를 타면 돈이 얼마나 들어요?",
+      "translation": "Se pegar o ônibus expresso, custa quanto?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속",
+          "surface": "고속",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "버스",
+          "surface": "버스",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 788192,
+      "endMs": 796562,
+      "target": "4만 원쯤 들어요. 부산행 고속버스 표는 39,700원이에요.",
+      "translation": "Custa uns 40 mil wons. A passagem de ônibus expresso para Busan é 39.700 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 15,
+          "end": 19
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 20,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 802673,
+      "endMs": 809153,
+      "target": "KTX를 타면 서울에서 부산까지  몇 시간 걸려요?",
+      "translation": "Se pegar o KTX, de Seul até Busan leva quantas horas?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 24,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 811192,
+      "endMs": 817033,
+      "target": "KTX로 가면 2시간 40분 걸려요.",
+      "translation": "Indo de KTX, leva 2 horas e 40 minutos.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 16,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 821713,
+      "endMs": 827033,
+      "target": "KTX를 타면 비용이 얼마 정도 들어요?",
+      "translation": "Se pegar o KTX, o custo fica em quanto?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "비용",
+          "surface": "비용",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "얼마",
+          "surface": "얼마",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 15,
+          "end": 17
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 829593,
+      "endMs": 837721,
+      "target": "6만 원 정도 들어요. 부산행 기차표는 59,800원이거든요.",
+      "translation": "Custa uns 60 mil wons. É que a passagem de trem para Busan é 59.800 wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 13,
+          "end": 15
+        },
+        {
+          "lemma": "기차",
+          "surface": "기차",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 19,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 844472,
+      "endMs": 850113,
+      "target": "서울에서 부산까지 비행기로 얼마나 걸려요?",
+      "translation": "De Seul até Busan, de avião, leva quanto tempo?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "lemma": "얼마나",
+          "surface": "얼마나",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 19,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 851993,
+      "endMs": 858873,
+      "target": "서울에서 부산까지  비행기로 1시간쯤 걸려요.",
+      "translation": "De Seul até Busan, de avião, leva mais ou menos 1 hora.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "걸리다",
+          "surface": "걸려",
+          "start": 21,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 862433,
+      "endMs": 866953,
+      "target": "부산행 비행기표가 얼마예요?",
+      "translation": "A passagem de avião para Busan custa quanto?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "얼마",
+          "surface": "얼마",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 869632,
+      "endMs": 872632,
+      "target": "79,700원이에요.",
+      "translation": "É 79.700 wons.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 874472,
+      "endMs": 881233,
+      "target": "비행기로 가면 부산에 가는 데  8만 원 정도 들어요.",
+      "translation": "Indo de avião, para chegar a Busan custa uns 80 mil wons.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "정도",
+          "surface": "정도",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "lemma": "들다",
+          "surface": "들",
+          "start": 26,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 885273,
+      "endMs": 890192,
+      "target": "몰이는 부산에 어떻게 갈 거예요?",
+      "translation": "Como a Mori vai a Busan?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어떻",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 892553,
+      "endMs": 900953,
+      "target": "몰이는 돈이 별로 없어요. 그렇지만 시간은 많아요.",
+      "translation": "A Mori não tem muito dinheiro. Mas tempo ela tem de sobra.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "별로",
+          "surface": "별로",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "없다",
+          "surface": "없",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "lemma": "많다",
+          "surface": "많",
+          "start": 24,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 902433,
+      "endMs": 908792,
+      "target": "그래서 고속버스를 타고  부산에 갈 거예요.",
+      "translation": "Por isso ela vai a Busan de ônibus expresso.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "고속버스",
+          "surface": "고속버스",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "가다",
+          "surface": "갈",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-날",
+      "segmentId": "",
+      "target": "날",
+      "translation": "dia",
+      "startMs": 361140,
+      "endMs": 365540,
+      "reading": null,
+      "context": "다음 날이에요 — É o dia seguinte",
+      "audioClipSrc": "media/tts/wfc198025e969.mp3",
+      "exampleAudioSrc": "media/frag/f8b1f8d11c914.mp3",
+      "freqRank": 30,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sac3ca03e3e15.jpg"
+    },
+    {
+      "id": "w-많다",
+      "segmentId": "",
+      "target": "많다",
+      "translation": "ser muito / haver bastante",
+      "startMs": 552793,
+      "endMs": 557112,
+      "reading": null,
+      "context": "그렇지만 시간은 많아. — Mas tempo eu tenho de sobra.",
+      "audioClipSrc": "media/tts/w15b67567361f.mp3",
+      "exampleAudioSrc": "media/frag/fba25edbaf331.mp3",
+      "freqRank": 67,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "많"
+      ],
+      "sceneSrc": "media/frames/s5b82e37382c0.jpg"
+    },
+    {
+      "id": "w-얼마나",
+      "segmentId": "",
+      "target": "얼마나",
+      "translation": "quanto (tempo, quantidade)",
+      "startMs": 592593,
+      "endMs": 596953,
+      "reading": null,
+      "context": "비용은 얼마나 들어요? — O custo é de quanto?",
+      "audioClipSrc": "media/tts/wa5cbb598b68b.mp3",
+      "exampleAudioSrc": "media/frag/f4e174aacd47f.mp3",
+      "freqRank": 92,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s5337753c28ff.jpg"
+    },
+    {
+      "id": "w-다음",
+      "segmentId": "",
+      "target": "다음",
+      "translation": "próximo / seguinte",
+      "startMs": 361140,
+      "endMs": 365540,
+      "reading": null,
+      "context": "다음 날이에요 — É o dia seguinte",
+      "audioClipSrc": "media/tts/wfe6879802f98.mp3",
+      "exampleAudioSrc": "media/frag/f46deb36c35a3.mp3",
+      "freqRank": 114,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sac3ca03e3e15.jpg"
+    },
+    {
+      "id": "w-멋지다",
+      "segmentId": "",
+      "target": "멋지다",
+      "translation": "ser bacana / demais",
+      "startMs": 162598,
+      "endMs": 167118,
+      "reading": null,
+      "context": "콘서트가 완전 멋져요. — O show é totalmente demais.",
+      "audioClipSrc": "media/tts/wf4346afbe53f.mp3",
+      "exampleAudioSrc": "media/frag/fbd6f6bb87010.mp3",
+      "freqRank": 152,
+      "topikLevel": "B",
+      "imageSrc": null,
+      "newWords": [
+        "멋져"
+      ],
+      "sceneSrc": "media/frames/sf227920ad06d.jpg"
+    },
+    {
+      "id": "w-머리",
+      "segmentId": "",
+      "target": "머리",
+      "translation": "cabeça / cabelo",
+      "startMs": 71237,
+      "endMs": 75878,
+      "reading": null,
+      "context": "저는 미용실에서 머리를 잘라요. — Eu corto o cabelo no salão.",
+      "audioClipSrc": "media/tts/w10b2bd090da4.mp3",
+      "exampleAudioSrc": "media/frag/f52d9e46a637a.mp3",
+      "freqRank": 157,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s2a40bc0364a4.jpg"
+    },
+    {
+      "id": "w-정도",
+      "segmentId": "",
+      "target": "정도",
+      "translation": "mais ou menos / cerca de",
+      "startMs": 456033,
+      "endMs": 460713,
+      "reading": null,
+      "context": "돈은 4만 원 정도 들어. — De dinheiro custa uns 40 mil wons.",
+      "audioClipSrc": "media/tts/w171b78149582.mp3",
+      "exampleAudioSrc": "media/frag/f05542e9e16cb.mp3",
+      "freqRank": 176,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s0b53f48f963a.jpg"
+    },
+    {
+      "id": "w-완전",
+      "segmentId": "",
+      "target": "완전",
+      "translation": "totalmente",
+      "startMs": 162598,
+      "endMs": 167118,
+      "reading": null,
+      "context": "콘서트가 완전 멋져요. — O show é totalmente demais.",
+      "audioClipSrc": "media/tts/w2695e7505a3e.mp3",
+      "exampleAudioSrc": "media/frag/f48fa0dce10ca.mp3",
+      "freqRank": 203,
+      "topikLevel": "B",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sf227920ad06d.jpg"
+    },
+    {
+      "id": "w-들다",
+      "segmentId": "",
+      "target": "들다",
+      "translation": "custar (dinheiro, tempo); também: levantar",
+      "startMs": 456033,
+      "endMs": 460713,
+      "reading": null,
+      "context": "돈은 4만 원 정도 들어. — De dinheiro custa uns 40 mil wons.",
+      "audioClipSrc": "media/tts/we50ad3ebba2b.mp3",
+      "exampleAudioSrc": "media/frag/fd664246248c4.mp3",
+      "freqRank": 222,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "들"
+      ],
+      "sceneSrc": "media/frames/s0b53f48f963a.jpg"
+    },
+    {
+      "id": "w-걸리다",
+      "segmentId": "",
+      "target": "걸리다",
+      "translation": "levar (tempo)",
+      "startMs": 412233,
+      "endMs": 416913,
+      "reading": null,
+      "context": "부산까지 얼마나 걸려요? — Quanto tempo leva até Busan?",
+      "audioClipSrc": "media/tts/wf96ca5a3c970.mp3",
+      "exampleAudioSrc": "media/frag/f958230329772.mp3",
+      "freqRank": 253,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "걸려"
+      ],
+      "sceneSrc": "media/frames/sc806118f70eb.jpg"
+    },
+    {
+      "id": "w-주",
+      "segmentId": "",
+      "target": "주",
+      "translation": "semana",
+      "startMs": 420433,
+      "endMs": 425633,
+      "reading": null,
+      "context": "나는 다음 주에 부산에 갈 거야. — Eu vou a Busan na semana que vem.",
+      "audioClipSrc": "media/tts/wc826a19b3214.mp3",
+      "exampleAudioSrc": "media/frag/f0db951a1e52b.mp3",
+      "freqRank": 304,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s4bd1eb93a80f.jpg"
+    },
+    {
+      "id": "w-별로",
+      "segmentId": "",
+      "target": "별로",
+      "translation": "não muito (com negativa)",
+      "startMs": 546673,
+      "endMs": 551192,
+      "reading": null,
+      "context": "나는 돈이 별로 없어. — Eu não tenho muito dinheiro.",
+      "audioClipSrc": "media/tts/w4d2e56c72746.mp3",
+      "exampleAudioSrc": "media/frag/f1612b9d9a6ac.mp3",
+      "freqRank": 330,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s21c2d8afddb9.jpg"
+    },
+    {
+      "id": "w-얼마",
+      "segmentId": "",
+      "target": "얼마",
+      "translation": "quanto (preço)",
+      "startMs": 862433,
+      "endMs": 866953,
+      "reading": null,
+      "context": "부산행 비행기표가 얼마예요? — A passagem de avião para Busan custa quanto?",
+      "audioClipSrc": "media/tts/wd07e82e9e7ba.mp3",
+      "exampleAudioSrc": "media/frag/f8c500927c1c8.mp3",
+      "freqRank": 440,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s59e389e564a7.jpg"
+    },
+    {
+      "id": "w-밥",
+      "segmentId": "",
+      "target": "밥",
+      "translation": "arroz / comida (refeição)",
+      "startMs": 81167,
+      "endMs": 86806,
+      "reading": null,
+      "context": "그리고 밥을 먹으러 식당에 가요. — E vou ao restaurante para comer.",
+      "audioClipSrc": "media/tts/wf56bae24a3f3.mp3",
+      "exampleAudioSrc": "media/frag/f46bb04ed2730.mp3",
+      "freqRank": 453,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7f68bcbc96ea.jpg"
+    },
+    {
+      "id": "w-호텔",
+      "segmentId": "",
+      "target": "호텔",
+      "translation": "hotel",
+      "startMs": 98169,
+      "endMs": 101929,
+      "reading": null,
+      "context": "그리고 쉬러 호텔에 가요. — E vou ao hotel para descansar.",
+      "audioClipSrc": "media/tts/w3bfcaac6ed8b.mp3",
+      "exampleAudioSrc": "media/frag/ff83838f940de.mp3",
+      "freqRank": 654,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s8fce339966dd.jpg"
+    },
+    {
+      "id": "w-버스",
+      "segmentId": "",
+      "target": "버스",
+      "translation": "ônibus",
+      "startMs": 779233,
+      "endMs": 784433,
+      "reading": null,
+      "context": "고속 버스를 타면 돈이 얼마나 들어요? — Se pegar o ônibus expresso, custa quanto?",
+      "audioClipSrc": "media/tts/wb9e1e36f0e27.mp3",
+      "exampleAudioSrc": "media/frag/f7a7f1b5e4245.mp3",
+      "freqRank": 830,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s814b9d3b836e.jpg"
+    },
+    {
+      "id": "w-자르다",
+      "segmentId": "",
+      "target": "자르다",
+      "translation": "cortar",
+      "startMs": 71237,
+      "endMs": 75878,
+      "reading": null,
+      "context": "저는 미용실에서 머리를 잘라요. — Eu corto o cabelo no salão.",
+      "audioClipSrc": "media/tts/we3298520b17f.mp3",
+      "exampleAudioSrc": "media/frag/f4eae2a8737f6.mp3",
+      "freqRank": 993,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "잘"
+      ],
+      "sceneSrc": "media/frames/s2a40bc0364a4.jpg"
+    },
+    {
+      "id": "w-식당",
+      "segmentId": "",
+      "target": "식당",
+      "translation": "restaurante",
+      "startMs": 81167,
+      "endMs": 86806,
+      "reading": null,
+      "context": "그리고 밥을 먹으러 식당에 가요. — E vou ao restaurante para comer.",
+      "audioClipSrc": "media/tts/w87cdcf9389de.mp3",
+      "exampleAudioSrc": "media/frag/f40eef8229e7b.mp3",
+      "freqRank": 1131,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7f68bcbc96ea.jpg"
+    },
+    {
+      "id": "w-기차",
+      "segmentId": "",
+      "target": "기차",
+      "translation": "trem",
+      "startMs": 493753,
+      "endMs": 498272,
+      "reading": null,
+      "context": "부산행 기차표는 59,800원이야. — A passagem de trem para Busan é 59.800 wons.",
+      "audioClipSrc": "media/tts/w110ea3deb919.mp3",
+      "exampleAudioSrc": "media/frag/f29a3a2ca95ba.mp3",
+      "freqRank": 1281,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s0109587f5dff.jpg"
+    },
+    {
+      "id": "w-공항",
+      "segmentId": "",
+      "target": "공항",
+      "translation": "aeroporto",
+      "startMs": 1500,
+      "endMs": 8220,
+      "reading": null,
+      "context": "저는 비행기를 타러 공항에 가요. — Eu vou ao aeroporto para pegar o avião.",
+      "audioClipSrc": "media/tts/wfa0677f84677.mp3",
+      "exampleAudioSrc": "media/frag/fef4a6c17b550.mp3",
+      "freqRank": 1513,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/i8KeN4G1sPI",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/i8KeN4G1sPI",
+        "startMs": 0,
+        "title": "한국에 뭐 하러 가요?"
+      },
+      {
+        "url": "https://youtu.be/gwaMTwkfoRA",
+        "startMs": 410730,
+        "title": "부산까지 얼마나 걸려요?"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "A conversa aparece duas vezes: primeiro informal entre amigos, depois em fala polida.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 86806,
+      "summary": "Primeira história: cada lugar tem um propósito. Vai ao aeroporto para pegar o avião, e de avião vai para a Coreia. Vai à estação para pegar o metrô, e de metrô vai ao hotel. Vai à loja de departamentos para comprar roupa e ao salão para cortar o cabelo.",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 89233,
+      "endMs": 167118,
+      "summary": "Vai ao restaurante para comer bibimbap, ao hotel para descansar um pouco, ao banheiro para se lavar, e dorme. No dia seguinte vai à casa de shows para ver um show — que é totalmente demais.",
+      "segmentIds": [
+        "s11",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 176753,
+      "endMs": 399074,
+      "summary": "O mesmo roteiro de novo (2ª vez).",
+      "segmentIds": [
+        "s21",
+        "s22",
+        "s23",
+        "s24",
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 406158,
+      "endMs": 409677,
+      "summary": "A pergunta do título: «Você vai à Coreia para fazer o quê?»",
+      "segmentIds": [
+        "s41"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 412233,
+      "endMs": 566153,
+      "summary": "Segunda história, entre amigos e em fala informal: como ir de Seul a Busan. De ônibus expresso são 4 horas e uns 40 mil wons; de KTX, 2h40 e uns 60 mil; de avião, 1 hora e uns 80 mil. Ela não tem muito dinheiro, mas tem tempo de sobra — então vai de ônibus.",
+      "segmentIds": [
+        "s42",
+        "s43",
+        "s44",
+        "s45",
+        "s46",
+        "s47",
+        "s48",
+        "s49",
+        "s50",
+        "s51",
+        "s52",
+        "s53",
+        "s54",
+        "s55",
+        "s56",
+        "s57",
+        "s58"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 577472,
+      "endMs": 723072,
+      "summary": "A mesma conversa, agora em fala polida, com o preço exato de cada passagem.",
+      "segmentIds": [
+        "s59",
+        "s60",
+        "s61",
+        "s62",
+        "s63",
+        "s64",
+        "s65",
+        "s66",
+        "s67",
+        "s68",
+        "s69",
+        "s70",
+        "s71",
+        "s72",
+        "s73",
+        "s74"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 731033,
+      "endMs": 908792,
+      "summary": "Perguntas e respostas sobre a viagem: aonde, quando, como, quanto tempo leva e quanto custa cada opção.",
+      "segmentIds": [
+        "s75",
+        "s76",
+        "s77",
+        "s78",
+        "s79",
+        "s80",
+        "s81",
+        "s82",
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87",
+        "s88",
+        "s89",
+        "s90",
+        "s91",
+        "s92",
+        "s93",
+        "s94"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "-(으)러 가다 (ir a um lugar para fazer algo)",
+    "A에서 B까지 (de A até B)",
+    "얼마나 걸려요? / 얼마나 들어요? (quanto tempo leva / quanto custa)",
+    "-(으)면 (se você for de…)",
+    "반말 (fala informal entre amigos)"
+  ],
+  "tags": [
+    "história",
+    "viagem",
+    "transporte",
+    "preços"
+  ],
+  "titleTarget": "한국에 뭐 하러 가요? · 부산까지 얼마나 걸려요?",
+  "premise": "Histórias ilustradas A0–A1 sobre deslocamento, propósito e custo. Trazem -(으)러 가다 (ir para fazer), -까지 / -에서 (até / de), 얼마나 걸리다 (levar quanto tempo), 얼마나 들다 (custar quanto) e a primeira exposição à fala informal (반말).",
+  "createdAt": "2026-08-22T18:42:47.519332+00:00"
+}

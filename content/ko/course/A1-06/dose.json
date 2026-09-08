@@ -1,0 +1,4530 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-06",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 6,
+  "title": "O que você consegue fazer, o que você gosta de fazer",
+  "synopsis": "Sexta dose: habilidade, gosto e vontade. Primeiro, uma sequência de «você consegue?» — falar inglês, dançar, desenhar, tocar violão, fazer bolo. Depois, um hobby para cada dia da semana. E, por fim, quatro coleções: bonecos, vinis, photocards e ímãs — sempre com algo que a pessoa quer comprar, mas é caro.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 1209.421333,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 5860,
+      "target": "영어를 할 수 있어요?",
+      "translation": "Você consegue falar inglês?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 7057,
+      "endMs": 11450,
+      "target": "네, 영어를 할 수 있어요.",
+      "translation": "Sim, eu consigo falar inglês.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 13121,
+      "endMs": 17163,
+      "target": "저는 호주에서 왔어요.",
+      "translation": "Eu vim da Austrália.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "호주",
+          "surface": "호주",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "왔",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 18387,
+      "endMs": 21906,
+      "target": "힙합 춤을 출 수 있어요?",
+      "translation": "Você consegue dançar hip-hop?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "힙합",
+          "surface": "힙합",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 23137,
+      "endMs": 27235,
+      "target": "네, 힙합 춤을 출 수 있어요.",
+      "translation": "Sim, eu consigo dançar hip-hop.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "힙합",
+          "surface": "힙합",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 28270,
+      "endMs": 31691,
+      "target": "저는 댄서였어요.",
+      "translation": "Eu era dançarino.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "댄서",
+          "surface": "댄서",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 33112,
+      "endMs": 36687,
+      "target": "랩을 할 수 있어요?",
+      "translation": "Você consegue fazer rap?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "랩",
+          "surface": "랩",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 38077,
+      "endMs": 41807,
+      "target": "네, 랩을 할 수 있어요.",
+      "translation": "Sim, eu consigo fazer rap.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "랩",
+          "surface": "랩",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 44093,
+      "endMs": 46433,
+      "target": "저는 래퍼예요.",
+      "translation": "Eu sou rapper.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "래퍼",
+          "surface": "래퍼",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 48213,
+      "endMs": 52493,
+      "target": "그림을 그릴 수 있어요?",
+      "translation": "Você consegue desenhar?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "그리다",
+          "surface": "그릴",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 53896,
+      "endMs": 57975,
+      "target": "네, 그림을 그릴 수 있어요.",
+      "translation": "Sim, eu consigo desenhar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "그리다",
+          "surface": "그릴",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 58887,
+      "endMs": 62822,
+      "target": "저는 그림을 잘 그려요.",
+      "translation": "Eu desenho bem.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "잘",
+          "surface": "잘",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "그리다",
+          "surface": "그려",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 64297,
+      "endMs": 68498,
+      "target": "기타를 칠 수 있어요?",
+      "translation": "Você consegue tocar violão?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "기타",
+          "surface": "기타",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "치다",
+          "surface": "칠",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 69816,
+      "endMs": 73996,
+      "target": "네, 기타를 칠 수 있어요.",
+      "translation": "Sim, eu consigo tocar violão.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "기타",
+          "surface": "기타",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "치다",
+          "surface": "칠",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 75256,
+      "endMs": 78536,
+      "target": "이건 제 기타예요.",
+      "translation": "Este é o meu violão.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "기타",
+          "surface": "기타",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 79525,
+      "endMs": 83085,
+      "target": "케이크를 만들 수 있어요?",
+      "translation": "Você consegue fazer bolo?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "케이크",
+          "surface": "케이크",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 84661,
+      "endMs": 88654,
+      "target": "네, 케이크를 만들 수 있어요.",
+      "translation": "Sim, eu consigo fazer bolo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "케이크",
+          "surface": "케이크",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 90588,
+      "endMs": 95069,
+      "target": "저는 브라우니를 자주 만들어요.",
+      "translation": "Eu faço brownie com frequência.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "브라우니",
+          "surface": "브라우니",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "lemma": "자주",
+          "surface": "자주",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 96455,
+      "endMs": 100418,
+      "target": "야구를 할 수 있어요?",
+      "translation": "Você consegue jogar beisebol?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "야구",
+          "surface": "야구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 101497,
+      "endMs": 106576,
+      "target": "네, 야구를 할 수 있어요.",
+      "translation": "Sim, eu consigo jogar beisebol.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "야구",
+          "surface": "야구",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 108057,
+      "endMs": 111657,
+      "target": "어렸을 때 야구를 배웠어요.",
+      "translation": "Eu aprendi beisebol quando era criança.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어리다",
+          "surface": "어렸",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "야구",
+          "surface": "야구",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "배우다",
+          "surface": "배웠",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 113295,
+      "endMs": 117641,
+      "target": "부산 사투리를 할 수 있어요?",
+      "translation": "Você consegue falar o dialeto de Busan?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "사투리",
+          "surface": "사투리",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 119337,
+      "endMs": 123897,
+      "target": "네, 부산 사투리를 할 수 있어요.",
+      "translation": "Sim, eu consigo falar o dialeto de Busan.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "사투리",
+          "surface": "사투리",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 125060,
+      "endMs": 129779,
+      "target": "저는 부산 사람이에요.",
+      "translation": "Eu sou de Busan.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "사람",
+          "surface": "사람",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 136617,
+      "endMs": 141011,
+      "target": "영어를 할 수 있어요?",
+      "translation": "Você consegue falar inglês?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 145918,
+      "endMs": 151135,
+      "target": "네, 영어를 할 수 있어요.",
+      "translation": "Sim, eu consigo falar inglês.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "영어",
+          "surface": "영어",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 154937,
+      "endMs": 158937,
+      "target": "저는 호주에서 왔어요.",
+      "translation": "Eu vim da Austrália.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "호주",
+          "surface": "호주",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "왔",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 162555,
+      "endMs": 167194,
+      "target": "힙합 춤을 출 수 있어요?",
+      "translation": "Você consegue dançar hip-hop?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "힙합",
+          "surface": "힙합",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 171657,
+      "endMs": 175937,
+      "target": "네, 힙합 춤을 출 수 있어요.",
+      "translation": "Sim, eu consigo dançar hip-hop.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "힙합",
+          "surface": "힙합",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "춤",
+          "surface": "춤",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "추다",
+          "surface": "출",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 180352,
+      "endMs": 184732,
+      "target": "저는 댄서였어요.",
+      "translation": "Eu era dançarino.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "댄서",
+          "surface": "댄서",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 188517,
+      "endMs": 193217,
+      "target": "랩을 할 수 있어요?",
+      "translation": "Você consegue fazer rap?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "랩",
+          "surface": "랩",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 197297,
+      "endMs": 201823,
+      "target": "네, 랩을 할 수 있어요.",
+      "translation": "Sim, eu consigo fazer rap.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "랩",
+          "surface": "랩",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 204787,
+      "endMs": 208728,
+      "target": "저는 래퍼예요.",
+      "translation": "Eu sou rapper.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "래퍼",
+          "surface": "래퍼",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 213964,
+      "endMs": 218244,
+      "target": "그림을 그릴 수 있어요?",
+      "translation": "Você consegue desenhar?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "그리다",
+          "surface": "그릴",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 223497,
+      "endMs": 228240,
+      "target": "네, 그림을 그릴 수 있어요.",
+      "translation": "Sim, eu consigo desenhar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "그리다",
+          "surface": "그릴",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 231872,
+      "endMs": 236551,
+      "target": "저는 그림을 잘 그려요.",
+      "translation": "Eu desenho bem.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "잘",
+          "surface": "잘",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "그리다",
+          "surface": "그려",
+          "start": 9,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 242127,
+      "endMs": 246368,
+      "target": "기타를 칠 수 있어요?",
+      "translation": "Você consegue tocar violão?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "기타",
+          "surface": "기타",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "치다",
+          "surface": "칠",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 251777,
+      "endMs": 256457,
+      "target": "네, 기타를 칠 수 있어요.",
+      "translation": "Sim, eu consigo tocar violão.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "기타",
+          "surface": "기타",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "치다",
+          "surface": "칠",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 259777,
+      "endMs": 264136,
+      "target": "이건 제 기타예요.",
+      "translation": "Este é o meu violão.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "기타",
+          "surface": "기타",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 268122,
+      "endMs": 272685,
+      "target": "케이크를 만들 수 있어요?",
+      "translation": "Você consegue fazer bolo?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "케이크",
+          "surface": "케이크",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 277196,
+      "endMs": 282672,
+      "target": "네, 케이크를 만들 수 있어요.",
+      "translation": "Sim, eu consigo fazer bolo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "케이크",
+          "surface": "케이크",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 287177,
+      "endMs": 291762,
+      "target": "저는 브라우니를 자주 만들어요.",
+      "translation": "Eu faço brownie com frequência.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "브라우니",
+          "surface": "브라우니",
+          "start": 3,
+          "end": 7
+        },
+        {
+          "lemma": "자주",
+          "surface": "자주",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 297286,
+      "endMs": 301565,
+      "target": "야구를 할 수 있어요?",
+      "translation": "Você consegue jogar beisebol?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "야구",
+          "surface": "야구",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 305737,
+      "endMs": 310816,
+      "target": "네, 야구를 할 수 있어요.",
+      "translation": "Sim, eu consigo jogar beisebol.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "야구",
+          "surface": "야구",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 315457,
+      "endMs": 320377,
+      "target": "어렸을 때 야구를 배웠어요.",
+      "translation": "Eu aprendi beisebol quando era criança.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어리다",
+          "surface": "어렸",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "야구",
+          "surface": "야구",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "배우다",
+          "surface": "배웠",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 325319,
+      "endMs": 330159,
+      "target": "부산 사투리를 할 수 있어요?",
+      "translation": "Você consegue falar o dialeto de Busan?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "사투리",
+          "surface": "사투리",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 335256,
+      "endMs": 340777,
+      "target": "네, 부산 사투리를 할 수 있어요.",
+      "translation": "Sim, eu consigo falar o dialeto de Busan.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "사투리",
+          "surface": "사투리",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 11,
+          "end": 12
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 344696,
+      "endMs": 347377,
+      "target": "저는 부산 사람이에요.",
+      "translation": "Eu sou de Busan.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "사람",
+          "surface": "사람",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 353814,
+      "endMs": 358814,
+      "target": "무슨 외국어를 할 수 있어요?",
+      "translation": "Que língua estrangeira você consegue falar?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "외국어",
+          "surface": "외국어",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "하다",
+          "surface": "할",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 361230,
+      "endMs": 367150,
+      "target": "무슨 음식을 만들 수 있어요?",
+      "translation": "Que comida você consegue fazer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "음식",
+          "surface": "음식",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만들",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 369700,
+      "endMs": 374705,
+      "target": "월요일에 저는 낚시를 해요.",
+      "translation": "Na segunda-feira eu pesco.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "월요일",
+          "surface": "월요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "낚시",
+          "surface": "낚시",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 375978,
+      "endMs": 380489,
+      "target": "저는 낚시하는 걸 좋아해요.",
+      "translation": "Eu gosto de pescar.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "낚시하다",
+          "surface": "낚시하",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 385418,
+      "endMs": 389739,
+      "target": "화요일에 저는 테니스를 쳐요.",
+      "translation": "Na terça-feira eu jogo tênis.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "화요일",
+          "surface": "화요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "테니스",
+          "surface": "테니스",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 392289,
+      "endMs": 397528,
+      "target": "제 취미는 테니스 치는 거예요.",
+      "translation": "O meu hobby é jogar tênis.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "테니스",
+          "surface": "테니스",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "lemma": "치다",
+          "surface": "치",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 401689,
+      "endMs": 405295,
+      "target": "수요일에 저는 요리해요.",
+      "translation": "Na quarta-feira eu cozinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "수요일",
+          "surface": "수요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "요리하다",
+          "surface": "요리해",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 407088,
+      "endMs": 411460,
+      "target": "저는 요리하는 걸 좋아해요.",
+      "translation": "Eu gosto de cozinhar.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "요리하다",
+          "surface": "요리하",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 412669,
+      "endMs": 417469,
+      "target": "저는 맛있는 음식 먹는 것도 좋아해요.",
+      "translation": "Eu também gosto de comer comida gostosa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "맛있다",
+          "surface": "맛있",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "음식",
+          "surface": "음식",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 16,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 422422,
+      "endMs": 426509,
+      "target": "목요일에 저는 게임을 해요.",
+      "translation": "Na quinta-feira eu jogo videogame.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "목요일",
+          "surface": "목요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 427315,
+      "endMs": 431209,
+      "target": "제 취미는 게임 하는 거예요.",
+      "translation": "O meu hobby é jogar videogame.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 432822,
+      "endMs": 436723,
+      "target": "시간이 있으면 저는 게임을 해요.",
+      "translation": "Quando eu tenho tempo, eu jogo videogame.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 442869,
+      "endMs": 447069,
+      "target": "금요일에 저는 미술관에 가요.",
+      "translation": "Na sexta-feira eu vou ao museu de arte.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "금요일",
+          "surface": "금요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "미술관",
+          "surface": "미술관",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 449530,
+      "endMs": 454530,
+      "target": "저는 그림 보는 걸 좋아해요.",
+      "translation": "Eu gosto de ver quadros.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "보다",
+          "surface": "보",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 459650,
+      "endMs": 464410,
+      "target": "토요일에 저는 책을 읽어요.",
+      "translation": "No sábado eu leio livros.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "토요일",
+          "surface": "토요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "읽다",
+          "surface": "읽",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 466008,
+      "endMs": 470842,
+      "target": "저는 책 읽는 걸 좋아해요.",
+      "translation": "Eu gosto de ler livros.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "읽다",
+          "surface": "읽",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 474989,
+      "endMs": 479389,
+      "target": "일요일에 저는 자전거를 타요.",
+      "translation": "No domingo eu ando de bicicleta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일요일",
+          "surface": "일요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "자전거",
+          "surface": "자전거",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 480355,
+      "endMs": 484364,
+      "target": "제 취미는 자전거 타는 거예요.",
+      "translation": "O meu hobby é andar de bicicleta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "자전거",
+          "surface": "자전거",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 485435,
+      "endMs": 490669,
+      "target": "날씨가 좋으면 저는 자전거를 타요.",
+      "translation": "Quando o tempo está bom, eu ando de bicicleta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "좋다",
+          "surface": "좋",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "자전거",
+          "surface": "자전거",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 494329,
+      "endMs": 499128,
+      "target": "저는 매일 음악을 들어요.",
+      "translation": "Eu escuto música todo dia.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "매일",
+          "surface": "매일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 500876,
+      "endMs": 505676,
+      "target": "제 취미는 음악 듣는 거예요.",
+      "translation": "O meu hobby é escutar música.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "듣다",
+          "surface": "듣",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 506555,
+      "endMs": 511995,
+      "target": "저는 음악 만드는 것도 좋아해요.",
+      "translation": "Eu também gosto de fazer música.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 13,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 514549,
+      "endMs": 519109,
+      "target": "여러분의 취미는 뭐예요?",
+      "translation": "E o hobby de vocês, qual é?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 530835,
+      "endMs": 538366,
+      "target": "월요일에 저는 낚시를 해요.",
+      "translation": "Na segunda-feira eu pesco.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "월요일",
+          "surface": "월요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "낚시",
+          "surface": "낚시",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 542542,
+      "endMs": 550143,
+      "target": "저는 낚시하는 걸 좋아해요.",
+      "translation": "Eu gosto de pescar.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "낚시하다",
+          "surface": "낚시하",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 555606,
+      "endMs": 562868,
+      "target": "화요일에 저는 테니스를 쳐요.",
+      "translation": "Na terça-feira eu jogo tênis.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "화요일",
+          "surface": "화요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "테니스",
+          "surface": "테니스",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 566868,
+      "endMs": 574481,
+      "target": "제 취미는 테니스 치는 거예요.",
+      "translation": "O meu hobby é jogar tênis.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "테니스",
+          "surface": "테니스",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "lemma": "치다",
+          "surface": "치",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 581261,
+      "endMs": 589134,
+      "target": "수요일에 저는 요리해요.",
+      "translation": "Na quarta-feira eu cozinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "수요일",
+          "surface": "수요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "요리하다",
+          "surface": "요리해",
+          "start": 8,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 592137,
+      "endMs": 599141,
+      "target": "저는 요리하는 걸 좋아해요.",
+      "translation": "Eu gosto de cozinhar.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "요리하다",
+          "surface": "요리하",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 601549,
+      "endMs": 609968,
+      "target": "저는 맛있는 음식 먹는 것도 좋아해요.",
+      "translation": "Eu também gosto de comer comida gostosa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "맛있다",
+          "surface": "맛있",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "음식",
+          "surface": "음식",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 16,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 617221,
+      "endMs": 625274,
+      "target": "목요일에 저는 게임을 해요.",
+      "translation": "Na quinta-feira eu jogo videogame.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "목요일",
+          "surface": "목요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 628748,
+      "endMs": 635419,
+      "target": "제 취미는 게임 하는 거예요.",
+      "translation": "O meu hobby é jogar videogame.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "하다",
+          "surface": "하",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 638317,
+      "endMs": 645471,
+      "target": "시간이 있으면 저는 게임을 해요.",
+      "translation": "Quando eu tenho tempo, eu jogo videogame.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "게임",
+          "surface": "게임",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 653028,
+      "endMs": 660164,
+      "target": "금요일에 저는 미술관에 가요.",
+      "translation": "Na sexta-feira eu vou ao museu de arte.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "금요일",
+          "surface": "금요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "미술관",
+          "surface": "미술관",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 664143,
+      "endMs": 671693,
+      "target": "저는 그림 보는 걸 좋아해요.",
+      "translation": "Eu gosto de ver quadros.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그림",
+          "surface": "그림",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "보다",
+          "surface": "보",
+          "start": 6,
+          "end": 7
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 677875,
+      "endMs": 684548,
+      "target": "토요일에 저는 책을 읽어요.",
+      "translation": "No sábado eu leio livros.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "토요일",
+          "surface": "토요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "읽다",
+          "surface": "읽",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 688216,
+      "endMs": 696395,
+      "target": "저는 책 읽는 걸 좋아해요.",
+      "translation": "Eu gosto de ler livros.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "책",
+          "surface": "책",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "읽다",
+          "surface": "읽",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 10,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 701570,
+      "endMs": 709549,
+      "target": "일요일에 저는 자전거를 타요.",
+      "translation": "No domingo eu ando de bicicleta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일요일",
+          "surface": "일요일",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "자전거",
+          "surface": "자전거",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 713109,
+      "endMs": 721328,
+      "target": "제 취미는 자전거 타는 거예요.",
+      "translation": "O meu hobby é andar de bicicleta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "자전거",
+          "surface": "자전거",
+          "start": 6,
+          "end": 9
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 724549,
+      "endMs": 733193,
+      "target": "날씨가 좋으면 저는 자전거를 타요.",
+      "translation": "Quando o tempo está bom, eu ando de bicicleta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "좋다",
+          "surface": "좋",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "자전거",
+          "surface": "자전거",
+          "start": 11,
+          "end": 14
+        },
+        {
+          "lemma": "타다",
+          "surface": "타",
+          "start": 16,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 737276,
+      "endMs": 745761,
+      "target": "저는 매일 음악을 들어요.",
+      "translation": "Eu escuto música todo dia.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "매일",
+          "surface": "매일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 751149,
+      "endMs": 758783,
+      "target": "제 취미는 음악 듣는 거예요.",
+      "translation": "O meu hobby é escutar música.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "듣다",
+          "surface": "듣",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 761528,
+      "endMs": 770094,
+      "target": "저는 음악 만드는 것도 좋아해요.",
+      "translation": "Eu também gosto de fazer música.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "음악",
+          "surface": "음악",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 13,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 774469,
+      "endMs": 780938,
+      "target": "여러분의 취미는 뭐예요?",
+      "translation": "E o hobby de vocês, qual é?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 5,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 785755,
+      "endMs": 789574,
+      "target": "취미가 있어요?",
+      "translation": "Você tem algum hobby?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 789574,
+      "endMs": 794847,
+      "target": "취미가 뭐예요?",
+      "translation": "Qual é o seu hobby?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "취미",
+          "surface": "취미",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s95",
+      "index": 95,
+      "startMs": 796869,
+      "endMs": 802863,
+      "target": "시간이 있으면 보통 뭐 해요?",
+      "translation": "Quando você tem tempo, o que costuma fazer?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "보통",
+          "surface": "보통",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s96",
+      "index": 96,
+      "startMs": 805400,
+      "endMs": 808000,
+      "target": "저는 인형을 모아요.",
+      "translation": "Eu coleciono bonecos.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s97",
+      "index": 97,
+      "startMs": 812724,
+      "endMs": 818804,
+      "target": "침대 위에 제가 모은 인형들이 있어요.",
+      "translation": "Em cima da cama estão os bonecos que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "침대",
+          "surface": "침대",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "위",
+          "surface": "위",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "인형들",
+          "surface": "인형들",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s98",
+      "index": 98,
+      "startMs": 822325,
+      "endMs": 827645,
+      "target": "저는 새 인형을 사고 싶어요.",
+      "translation": "Eu quero comprar um boneco novo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s99",
+      "index": 99,
+      "startMs": 830084,
+      "endMs": 836004,
+      "target": "그런데 그 인형이 조금 비싸요.",
+      "translation": "Mas esse boneco é um pouco caro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "조금",
+          "surface": "조금",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s100",
+      "index": 100,
+      "startMs": 838245,
+      "endMs": 843605,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "index": 101,
+      "startMs": 848205,
+      "endMs": 852205,
+      "target": "저는 LP를 모아요.",
+      "translation": "Eu coleciono discos de vinil.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s102",
+      "index": 102,
+      "startMs": 855125,
+      "endMs": 860845,
+      "target": "책상 위에 제가 모은 LP들이 있어요.",
+      "translation": "Em cima da mesa estão os vinis que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "책상",
+          "surface": "책상",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "위",
+          "surface": "위",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s103",
+      "index": 103,
+      "startMs": 864165,
+      "endMs": 869484,
+      "target": "저는 새 턴테이블을 사고 싶어요.",
+      "translation": "Eu quero comprar um toca-discos novo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "턴테이블",
+          "surface": "턴테이블",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s104",
+      "index": 104,
+      "startMs": 872324,
+      "endMs": 877805,
+      "target": "그런데 그 턴테이블이 아주 비싸요.",
+      "translation": "Mas esse toca-discos é muito caro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "턴테이블",
+          "surface": "턴테이블",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "lemma": "아주",
+          "surface": "아주",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s105",
+      "index": 105,
+      "startMs": 881805,
+      "endMs": 887005,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s106",
+      "index": 106,
+      "startMs": 889885,
+      "endMs": 894484,
+      "target": "저는 포토 카드를 모아요.",
+      "translation": "Eu coleciono photocards.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "포토",
+          "surface": "포토",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "카드",
+          "surface": "카드",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s107",
+      "index": 107,
+      "startMs": 898285,
+      "endMs": 904565,
+      "target": "앨범 안에 제가 모은 포토 카드들이 있어요.",
+      "translation": "Dentro do álbum estão os photocards que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "앨범",
+          "surface": "앨범",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "포토",
+          "surface": "포토",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "카드들",
+          "surface": "카드들",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 20,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s108",
+      "index": 108,
+      "startMs": 908085,
+      "endMs": 912845,
+      "target": "저는 콘서트에 가고 싶어요.",
+      "translation": "Eu quero ir a um show.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s109",
+      "index": 109,
+      "startMs": 915525,
+      "endMs": 921324,
+      "target": "그런데 콘서트 티켓이 정말 비싸요.",
+      "translation": "Mas o ingresso do show é caro mesmo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "티켓",
+          "surface": "티켓",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s110",
+      "index": 110,
+      "startMs": 924604,
+      "endMs": 930005,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "index": 111,
+      "startMs": 935005,
+      "endMs": 938925,
+      "target": "저는 자석을 모아요.",
+      "translation": "Eu coleciono ímãs.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "자석",
+          "surface": "자석",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s112",
+      "index": 112,
+      "startMs": 941565,
+      "endMs": 948125,
+      "target": "냉장고 문에 제가 모은 자석들이 붙어 있어요.",
+      "translation": "Na porta da geladeira estão colados os ímãs que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "냉장고",
+          "surface": "냉장고",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "문",
+          "surface": "문",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "자석들",
+          "surface": "자석들",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "lemma": "붙다",
+          "surface": "붙",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s113",
+      "index": 113,
+      "startMs": 951645,
+      "endMs": 956365,
+      "target": "저는 또 여행을 가고 싶어요.",
+      "translation": "Eu quero viajar de novo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "또",
+          "surface": "또",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "여행",
+          "surface": "여행",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s114",
+      "index": 114,
+      "startMs": 959484,
+      "endMs": 964565,
+      "target": "그런데 비행기표가 너무 비싸요.",
+      "translation": "Mas a passagem de avião é cara demais.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s115",
+      "index": 115,
+      "startMs": 968484,
+      "endMs": 973725,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s116",
+      "index": 116,
+      "startMs": 982405,
+      "endMs": 986484,
+      "target": "저는 인형을 모아요.",
+      "translation": "Eu coleciono bonecos.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s117",
+      "index": 117,
+      "startMs": 991285,
+      "endMs": 997365,
+      "target": "침대 위에 제가 모은 인형들이 있어요.",
+      "translation": "Em cima da cama estão os bonecos que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "침대",
+          "surface": "침대",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "위",
+          "surface": "위",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "인형들",
+          "surface": "인형들",
+          "start": 12,
+          "end": 15
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s118",
+      "index": 118,
+      "startMs": 1002725,
+      "endMs": 1007965,
+      "target": "저는 새 인형을 사고 싶어요.",
+      "translation": "Eu quero comprar um boneco novo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s119",
+      "index": 119,
+      "startMs": 1012565,
+      "endMs": 1018565,
+      "target": "그런데 그 인형이 조금 비싸요.",
+      "translation": "Mas esse boneco é um pouco caro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "인형",
+          "surface": "인형",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "조금",
+          "surface": "조금",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s120",
+      "index": 120,
+      "startMs": 1022925,
+      "endMs": 1028204,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s121",
+      "index": 121,
+      "startMs": 1034725,
+      "endMs": 1038764,
+      "target": "저는 LP를 모아요.",
+      "translation": "Eu coleciono discos de vinil.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s122",
+      "index": 122,
+      "startMs": 1043285,
+      "endMs": 1048965,
+      "target": "책상 위에 제가 모은 LP들이 있어요.",
+      "translation": "Em cima da mesa estão os vinis que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "책상",
+          "surface": "책상",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "위",
+          "surface": "위",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s123",
+      "index": 123,
+      "startMs": 1054444,
+      "endMs": 1059764,
+      "target": "저는 새 턴테이블을 사고 싶어요.",
+      "translation": "Eu quero comprar um toca-discos novo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "턴테이블",
+          "surface": "턴테이블",
+          "start": 5,
+          "end": 9
+        },
+        {
+          "lemma": "사다",
+          "surface": "사",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s124",
+      "index": 124,
+      "startMs": 1064725,
+      "endMs": 1070164,
+      "target": "그런데 그 턴테이블이 아주 비싸요.",
+      "translation": "Mas esse toca-discos é muito caro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "턴테이블",
+          "surface": "턴테이블",
+          "start": 6,
+          "end": 10
+        },
+        {
+          "lemma": "아주",
+          "surface": "아주",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s125",
+      "index": 125,
+      "startMs": 1076044,
+      "endMs": 1081324,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s126",
+      "index": 126,
+      "startMs": 1086525,
+      "endMs": 1091085,
+      "target": "저는 포토 카드를 모아요.",
+      "translation": "Eu coleciono photocards.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "포토",
+          "surface": "포토",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "카드",
+          "surface": "카드",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s127",
+      "index": 127,
+      "startMs": 1096685,
+      "endMs": 1102925,
+      "target": "앨범 안에 제가 모은 포토 카드들이 있어요.",
+      "translation": "Dentro do álbum estão os photocards que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "앨범",
+          "surface": "앨범",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "포토",
+          "surface": "포토",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "카드들",
+          "surface": "카드들",
+          "start": 15,
+          "end": 18
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 20,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "s128",
+      "index": 128,
+      "startMs": 1109845,
+      "endMs": 1114645,
+      "target": "저는 콘서트에 가고 싶어요.",
+      "translation": "Eu quero ir a um show.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 8,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s129",
+      "index": 129,
+      "startMs": 1119205,
+      "endMs": 1125005,
+      "target": "그런데 콘서트 티켓이 정말 비싸요.",
+      "translation": "Mas o ingresso do show é caro mesmo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "콘서트",
+          "surface": "콘서트",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "티켓",
+          "surface": "티켓",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "정말",
+          "surface": "정말",
+          "start": 12,
+          "end": 14
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 15,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s130",
+      "index": 130,
+      "startMs": 1130365,
+      "endMs": 1135685,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s131",
+      "index": 131,
+      "startMs": 1142925,
+      "endMs": 1146885,
+      "target": "저는 자석을 모아요.",
+      "translation": "Eu coleciono ímãs.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "자석",
+          "surface": "자석",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s132",
+      "index": 132,
+      "startMs": 1151325,
+      "endMs": 1157885,
+      "target": "냉장고 문에 제가 모은 자석들이 붙어 있어요.",
+      "translation": "Na porta da geladeira estão colados os ímãs que eu juntei.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "냉장고",
+          "surface": "냉장고",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "문",
+          "surface": "문",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모은",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "자석들",
+          "surface": "자석들",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "lemma": "붙다",
+          "surface": "붙",
+          "start": 18,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "s133",
+      "index": 133,
+      "startMs": 1163524,
+      "endMs": 1168205,
+      "target": "저는 또 여행을 가고 싶어요.",
+      "translation": "Eu quero viajar de novo.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "또",
+          "surface": "또",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "여행",
+          "surface": "여행",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s134",
+      "index": 134,
+      "startMs": 1173644,
+      "endMs": 1178725,
+      "target": "그런데 비행기 표가 너무 비싸요.",
+      "translation": "Mas a passagem de avião é cara demais.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "비행기",
+          "surface": "비행기",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "표",
+          "surface": "표",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "비싸다",
+          "surface": "비싸",
+          "start": 14,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s135",
+      "index": 135,
+      "startMs": 1184844,
+      "endMs": 1190084,
+      "target": "그래서 저는 요즘 돈을 모아요.",
+      "translation": "Por isso eu ando juntando dinheiro.",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "요즘",
+          "surface": "요즘",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "돈",
+          "surface": "돈",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s136",
+      "index": 136,
+      "startMs": 1199404,
+      "endMs": 1208365,
+      "target": "여러분은 모으는 것이 있어요? 뭐를 모아요?",
+      "translation": "Vocês colecionam alguma coisa? O que vocês colecionam?",
+      "speakerId": "part_c",
+      "tokens": [
+        {
+          "lemma": "모으다",
+          "surface": "모으",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "모으다",
+          "surface": "모아",
+          "start": 20,
+          "end": 22
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-시간",
+      "segmentId": "",
+      "target": "시간",
+      "translation": "tempo / hora",
+      "startMs": 796869,
+      "endMs": 802863,
+      "reading": null,
+      "context": "시간이 있으면 보통 뭐 해요? — Quando você tem tempo, o que costuma fazer?",
+      "audioClipSrc": "media/tts/w3f23fd871c66.mp3",
+      "exampleAudioSrc": "media/frag/f0467ca9f5251.mp3",
+      "freqRank": 50,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s425bea2b444b.jpg"
+    },
+    {
+      "id": "w-만들다",
+      "segmentId": "",
+      "target": "만들다",
+      "translation": "fazer / preparar",
+      "startMs": 79525,
+      "endMs": 83085,
+      "reading": null,
+      "context": "케이크를 만들 수 있어요? — Você consegue fazer bolo?",
+      "audioClipSrc": "media/tts/w49aced47b88e.mp3",
+      "exampleAudioSrc": "media/frag/fede7ca72f20d.mp3",
+      "freqRank": 77,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "만들"
+      ],
+      "sceneSrc": "media/frames/se6089f98a5a4.jpg"
+    },
+    {
+      "id": "w-돈",
+      "segmentId": "",
+      "target": "돈",
+      "translation": "dinheiro",
+      "startMs": 838245,
+      "endMs": 843605,
+      "reading": null,
+      "context": "그래서 저는 요즘 돈을 모아요. — Por isso eu ando juntando dinheiro.",
+      "audioClipSrc": "media/tts/w728f9e6621b8.mp3",
+      "exampleAudioSrc": "media/frag/f2c68985f3fb8.mp3",
+      "freqRank": 85,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s5b9a7c660648.jpg"
+    },
+    {
+      "id": "w-타다",
+      "segmentId": "",
+      "target": "타다",
+      "translation": "pegar (transporte) / andar de",
+      "startMs": 474989,
+      "endMs": 479389,
+      "reading": null,
+      "context": "일요일에 저는 자전거를 타요. — No domingo eu ando de bicicleta.",
+      "audioClipSrc": "media/tts/wdeca95d5b3ea.mp3",
+      "exampleAudioSrc": "media/frag/fc18ac7979bc0.mp3",
+      "freqRank": 251,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "타"
+      ],
+      "sceneSrc": "media/frames/s2769a61df4c6.jpg"
+    },
+    {
+      "id": "w-위",
+      "segmentId": "",
+      "target": "위",
+      "translation": "em cima / sobre",
+      "startMs": 812724,
+      "endMs": 818804,
+      "reading": null,
+      "context": "침대 위에 제가 모은 인형들이 있어요. — Em cima da cama estão os bonecos que eu juntei.",
+      "audioClipSrc": "media/tts/wa549476cf0c3.mp3",
+      "exampleAudioSrc": "media/frag/ffafbc5de7e6b.mp3",
+      "freqRank": 263,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s63f8cddf8315.jpg"
+    },
+    {
+      "id": "w-어리다",
+      "segmentId": "",
+      "target": "어리다",
+      "translation": "ser novo de idade (어렸을 때 = quando era criança)",
+      "startMs": 108057,
+      "endMs": 111657,
+      "reading": null,
+      "context": "어렸을 때 야구를 배웠어요. — Eu aprendi beisebol quando era criança.",
+      "audioClipSrc": "media/tts/w8d549e149acf.mp3",
+      "exampleAudioSrc": "media/frag/fba569230f151.mp3",
+      "freqRank": 301,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "어렸"
+      ],
+      "sceneSrc": "media/frames/s4a27eaf2bd3e.jpg"
+    },
+    {
+      "id": "w-매일",
+      "segmentId": "",
+      "target": "매일",
+      "translation": "todo dia",
+      "startMs": 494329,
+      "endMs": 499128,
+      "reading": null,
+      "context": "저는 매일 음악을 들어요. — Eu escuto música todo dia.",
+      "audioClipSrc": "media/tts/w73780bc1146c.mp3",
+      "exampleAudioSrc": "media/frag/f7217da3d1d82.mp3",
+      "freqRank": 390,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sd2e563957136.jpg"
+    },
+    {
+      "id": "w-읽다",
+      "segmentId": "",
+      "target": "읽다",
+      "translation": "ler",
+      "startMs": 466008,
+      "endMs": 470842,
+      "reading": null,
+      "context": "저는 책 읽는 걸 좋아해요. — Eu gosto de ler livros.",
+      "audioClipSrc": "media/tts/wbb41176472a5.mp3",
+      "exampleAudioSrc": "media/frag/f347c2198455c.mp3",
+      "freqRank": 418,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "읽"
+      ],
+      "sceneSrc": "media/frames/s1a652472c84f.jpg"
+    },
+    {
+      "id": "w-비행기",
+      "segmentId": "",
+      "target": "비행기",
+      "translation": "avião",
+      "startMs": 959484,
+      "endMs": 964565,
+      "reading": null,
+      "context": "그런데 비행기표가 너무 비싸요. — Mas a passagem de avião é cara demais.",
+      "audioClipSrc": "media/tts/w10f4ff682e12.mp3",
+      "exampleAudioSrc": "media/frag/fe004a59d26e9.mp3",
+      "freqRank": 430,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sf50a2283a696.jpg"
+    },
+    {
+      "id": "w-배우다",
+      "segmentId": "",
+      "target": "배우다",
+      "translation": "aprender",
+      "startMs": 108057,
+      "endMs": 111657,
+      "reading": null,
+      "context": "어렸을 때 야구를 배웠어요. — Eu aprendi beisebol quando era criança.",
+      "audioClipSrc": "media/tts/w4881c2b3d301.mp3",
+      "exampleAudioSrc": "media/frag/f6a1add140fe5.mp3",
+      "freqRank": 435,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "배웠"
+      ],
+      "sceneSrc": "media/frames/s4a27eaf2bd3e.jpg"
+    },
+    {
+      "id": "w-요즘",
+      "segmentId": "",
+      "target": "요즘",
+      "translation": "atualmente / esses dias",
+      "startMs": 838245,
+      "endMs": 843605,
+      "reading": null,
+      "context": "그래서 저는 요즘 돈을 모아요. — Por isso eu ando juntando dinheiro.",
+      "audioClipSrc": "media/tts/w4659c5a446da.mp3",
+      "exampleAudioSrc": "media/frag/fe394ec2acdfa.mp3",
+      "freqRank": 486,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s5b9a7c660648.jpg"
+    },
+    {
+      "id": "w-음식",
+      "segmentId": "",
+      "target": "음식",
+      "translation": "comida",
+      "startMs": 361230,
+      "endMs": 367150,
+      "reading": null,
+      "context": "무슨 음식을 만들 수 있어요? — Que comida você consegue fazer?",
+      "audioClipSrc": "media/tts/w4aa26310d3a4.mp3",
+      "exampleAudioSrc": "media/frag/fe6b95a0ea1f0.mp3",
+      "freqRank": 505,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s9f6c53a9d9c1.jpg"
+    },
+    {
+      "id": "w-보통",
+      "segmentId": "",
+      "target": "보통",
+      "translation": "normalmente",
+      "startMs": 796869,
+      "endMs": 802863,
+      "reading": null,
+      "context": "시간이 있으면 보통 뭐 해요? — Quando você tem tempo, o que costuma fazer?",
+      "audioClipSrc": "media/tts/w6b10175158b0.mp3",
+      "exampleAudioSrc": "media/frag/fd7d32a92ac41.mp3",
+      "freqRank": 640,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s425bea2b444b.jpg"
+    },
+    {
+      "id": "w-여행",
+      "segmentId": "",
+      "target": "여행",
+      "translation": "viagem",
+      "startMs": 951645,
+      "endMs": 956365,
+      "reading": null,
+      "context": "저는 또 여행을 가고 싶어요. — Eu quero viajar de novo.",
+      "audioClipSrc": "media/tts/w1aaf85e3d5d0.mp3",
+      "exampleAudioSrc": "media/frag/f351a80fdbaf1.mp3",
+      "freqRank": 667,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7afb41b3a5c7.jpg"
+    },
+    {
+      "id": "w-자주",
+      "segmentId": "",
+      "target": "자주",
+      "translation": "com frequência",
+      "startMs": 90588,
+      "endMs": 95069,
+      "reading": null,
+      "context": "저는 브라우니를 자주 만들어요. — Eu faço brownie com frequência.",
+      "audioClipSrc": "media/tts/w31d7a633662e.mp3",
+      "exampleAudioSrc": "media/frag/fcc0ad1a64947.mp3",
+      "freqRank": 706,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s403407878506.jpg"
+    },
+    {
+      "id": "w-맛있다",
+      "segmentId": "",
+      "target": "맛있다",
+      "translation": "ser gostoso",
+      "startMs": 412669,
+      "endMs": 417469,
+      "reading": null,
+      "context": "저는 맛있는 음식 먹는 것도 좋아해요. — Eu também gosto de comer comida gostosa.",
+      "audioClipSrc": "media/tts/wdb7972856205.mp3",
+      "exampleAudioSrc": "media/frag/f363fb0ff207a.mp3",
+      "freqRank": 735,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "맛있"
+      ],
+      "sceneSrc": "media/frames/s271b5fb4af4b.jpg"
+    },
+    {
+      "id": "w-그림",
+      "segmentId": "",
+      "target": "그림",
+      "translation": "desenho / quadro",
+      "startMs": 48213,
+      "endMs": 52493,
+      "reading": null,
+      "context": "그림을 그릴 수 있어요? — Você consegue desenhar?",
+      "audioClipSrc": "media/tts/w472b71fdf738.mp3",
+      "exampleAudioSrc": "media/frag/fd9612e57967d.mp3",
+      "freqRank": 786,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sd113de15bee9.jpg"
+    },
+    {
+      "id": "w-붙다",
+      "segmentId": "",
+      "target": "붙다",
+      "translation": "grudar / estar colado",
+      "startMs": 941565,
+      "endMs": 948125,
+      "reading": null,
+      "context": "냉장고 문에 제가 모은 자석들이 붙어 있어요. — Na porta da geladeira estão colados os ímãs que eu juntei.",
+      "audioClipSrc": "media/tts/w45c0fdcb850d.mp3",
+      "exampleAudioSrc": "media/frag/f6306d6c50970.mp3",
+      "freqRank": 833,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "붙"
+      ],
+      "sceneSrc": "media/frames/s65c60ac1b17f.jpg"
+    },
+    {
+      "id": "w-카드",
+      "segmentId": "",
+      "target": "카드",
+      "translation": "cartão",
+      "startMs": 889885,
+      "endMs": 894484,
+      "reading": null,
+      "context": "저는 포토 카드를 모아요. — Eu coleciono photocards.",
+      "audioClipSrc": "media/tts/w7e9cf38c8c75.mp3",
+      "exampleAudioSrc": "media/frag/f07fc47c7db78.mp3",
+      "freqRank": 855,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sc85312cad430.jpg"
+    },
+    {
+      "id": "w-인형",
+      "segmentId": "",
+      "target": "인형",
+      "translation": "boneco / boneca",
+      "startMs": 805400,
+      "endMs": 808000,
+      "reading": null,
+      "context": "저는 인형을 모아요. — Eu coleciono bonecos.",
+      "audioClipSrc": "media/tts/wd83cc5c6894e.mp3",
+      "exampleAudioSrc": "media/frag/f417c95b3ef1f.mp3",
+      "freqRank": 1297,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s583d76c73347.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/hGV3_Q4Zi9M",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/hGV3_Q4Zi9M",
+        "startMs": 0,
+        "title": "영어를 할 수 있어요"
+      },
+      {
+        "url": "https://youtu.be/CoBbEOYFdFY",
+        "startMs": 368200,
+        "title": "취미가 뭐예요?"
+      },
+      {
+        "url": "https://youtu.be/XFqrDIQDplM",
+        "startMs": 803900,
+        "title": "뭐를 모아요?"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "Três histórias curtas, cada uma repetida — a pergunta vem sempre antes da resposta.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 62822,
+      "summary": "Primeira história: «Você consegue?». Falar inglês (ele veio da Austrália), dançar hip-hop (era dançarino), fazer rap (é rapper) e desenhar (desenha bem).",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 64297,
+      "endMs": 129779,
+      "summary": "Tocar violão, fazer bolo (faz brownie com frequência), jogar beisebol (aprendeu quando era criança) e falar o dialeto de Busan (é de lá).",
+      "segmentIds": [
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20",
+        "s21",
+        "s22",
+        "s23",
+        "s24"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 136617,
+      "endMs": 347377,
+      "summary": "As mesmas perguntas de novo (2ª vez).",
+      "segmentIds": [
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42",
+        "s43",
+        "s44",
+        "s45",
+        "s46",
+        "s47",
+        "s48"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 353814,
+      "endMs": 367150,
+      "summary": "Duas perguntas para você: «Que língua estrangeira você consegue falar?» e «Que comida você consegue fazer?»",
+      "segmentIds": [
+        "s49",
+        "s50"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 369700,
+      "endMs": 436723,
+      "summary": "Segunda história: os hobbies da semana. Segunda, pescar; terça, tênis; quarta, cozinhar (e comer comida gostosa); quinta, videogame quando sobra tempo.",
+      "segmentIds": [
+        "s51",
+        "s52",
+        "s53",
+        "s54",
+        "s55",
+        "s56",
+        "s57",
+        "s58",
+        "s59",
+        "s60"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 442869,
+      "endMs": 511995,
+      "summary": "Sexta, museu de arte; sábado, ler; domingo, bicicleta quando o tempo está bom. E todo dia, música — inclusive fazer música.",
+      "segmentIds": [
+        "s61",
+        "s62",
+        "s63",
+        "s64",
+        "s65",
+        "s66",
+        "s67",
+        "s68",
+        "s69",
+        "s70"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 514549,
+      "endMs": 770094,
+      "summary": "A semana de hobbies de novo (2ª vez).",
+      "segmentIds": [
+        "s71",
+        "s72",
+        "s73",
+        "s74",
+        "s75",
+        "s76",
+        "s77",
+        "s78",
+        "s79",
+        "s80",
+        "s81",
+        "s82",
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87",
+        "s88",
+        "s89",
+        "s90",
+        "s91"
+      ]
+    },
+    {
+      "id": "p8",
+      "startMs": 774469,
+      "endMs": 802863,
+      "summary": "Perguntas: «Você tem algum hobby?», «Qual é o seu hobby?», «Quando você tem tempo, o que costuma fazer?»",
+      "segmentIds": [
+        "s92",
+        "s93",
+        "s94",
+        "s95"
+      ]
+    },
+    {
+      "id": "p9",
+      "startMs": 805400,
+      "endMs": 887005,
+      "summary": "Terceira história: coleções. Bonecos em cima da cama — quer comprar um novo, mas é caro, então anda juntando dinheiro. Vinis em cima da mesa — quer um toca-discos novo, muito caro.",
+      "segmentIds": [
+        "s96",
+        "s97",
+        "s98",
+        "s99",
+        "s100",
+        "s101",
+        "s102",
+        "s103",
+        "s104",
+        "s105"
+      ]
+    },
+    {
+      "id": "p10",
+      "startMs": 889885,
+      "endMs": 973725,
+      "summary": "Photocards dentro do álbum — quer ir a um show, mas o ingresso é caro mesmo. Ímãs colados na porta da geladeira — quer viajar de novo, mas a passagem de avião é cara demais.",
+      "segmentIds": [
+        "s106",
+        "s107",
+        "s108",
+        "s109",
+        "s110",
+        "s111",
+        "s112",
+        "s113",
+        "s114",
+        "s115"
+      ]
+    },
+    {
+      "id": "p11",
+      "startMs": 982405,
+      "endMs": 1208365,
+      "summary": "As coleções de novo (2ª vez), terminando com a pergunta: «O que vocês colecionam?»",
+      "segmentIds": [
+        "s116",
+        "s117",
+        "s118",
+        "s119",
+        "s120",
+        "s121",
+        "s122",
+        "s123",
+        "s124",
+        "s125",
+        "s126",
+        "s127",
+        "s128",
+        "s129",
+        "s130",
+        "s131",
+        "s132",
+        "s133",
+        "s134",
+        "s135",
+        "s136"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "-(으)ㄹ 수 있다 (conseguir / saber fazer)",
+    "-는 것 / -는 거 (a ação de fazer algo: 읽는 거)",
+    "-고 싶다 (querer fazer)",
+    "-(으)면 (quando / se)",
+    "무슨 + substantivo (que tipo de…)"
+  ],
+  "tags": [
+    "história",
+    "habilidades",
+    "hobbies",
+    "coleções"
+  ],
+  "titleTarget": "영어를 할 수 있어요? · 취미가 뭐예요? · 뭐를 모아요?",
+  "premise": "Histórias ilustradas A0 sobre habilidades, hobbies e coleções. Introduzem -(으)ㄹ 수 있다 (conseguir), a nominalização -는 것/거 (a ação de fazer algo), -고 싶다 (querer) e o condicional -(으)면 (quando/se).",
+  "createdAt": "2026-08-22T18:42:43.841197+00:00"
+}

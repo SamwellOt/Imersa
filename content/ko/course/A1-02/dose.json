@@ -1,0 +1,2896 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-02",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 2,
+  "title": "Contando: cinco sorvetes, dez tangerinas e as horas do dia",
+  "synopsis": "Segunda dose: números. Na primeira história um cliente entra no mercado e na loja de frutas e pede — contando um por um — cinco sorvetes e dez tangerinas. Na segunda, dois amigos acompanham o dia hora a hora, de uma da tarde até a meia-noite: almoço, soneca, jantar, louça, banho e a ceia que tira o sono.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 954.721333,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 6380,
+      "target": "저는 슈퍼에 가요.",
+      "translation": "Eu vou ao mercado.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "슈퍼",
+          "surface": "슈퍼",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 8190,
+      "endMs": 11324,
+      "target": "어서 오세요.",
+      "translation": "Seja bem-vindo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어서",
+          "surface": "어서",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 11324,
+      "endMs": 14810,
+      "target": "뭐 드릴까요?",
+      "translation": "O que vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 16139,
+      "endMs": 20499,
+      "target": "붕어빵 아이스크림 있어요?",
+      "translation": "Tem sorvete de bungeoppang?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "붕어빵",
+          "surface": "붕어빵",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "아이스크림",
+          "surface": "아이스크림",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 22594,
+      "endMs": 29352,
+      "target": "네, 있어요. 몇 개 드릴까요?",
+      "translation": "Sim, tem. Quantos vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 30271,
+      "endMs": 33991,
+      "target": "다섯 개 주세요.",
+      "translation": "Me dá cinco, por favor.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "주다",
+          "surface": "주",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 35925,
+      "endMs": 40714,
+      "target": "한 개,  두 개,  세 개,",
+      "translation": "Um, dois, três,",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 40714,
+      "endMs": 45590,
+      "target": "네 개,  다섯 개",
+      "translation": "quatro, cinco",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 47296,
+      "endMs": 54343,
+      "target": "손님, 붕어빵 아이스크림 다섯 개 여기 있어요.",
+      "translation": "Freguês, aqui estão os cinco sorvetes de bungeoppang.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "손님",
+          "surface": "손님",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "붕어빵",
+          "surface": "붕어빵",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "아이스크림",
+          "surface": "아이스크림",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 22,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 56166,
+      "endMs": 58884,
+      "target": "감사합니다.",
+      "translation": "Obrigado.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "감사하다",
+          "surface": "감사합",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 60279,
+      "endMs": 66201,
+      "target": "저는 붕어빵 아이스크림을 좋아해요.",
+      "translation": "Eu gosto de sorvete de bungeoppang.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "붕어빵",
+          "surface": "붕어빵",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "아이스크림",
+          "surface": "아이스크림",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 14,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 69333,
+      "endMs": 73854,
+      "target": "저는 과일 가게에 가요.",
+      "translation": "Eu vou à loja de frutas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "과일",
+          "surface": "과일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "가게",
+          "surface": "가게",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 74979,
+      "endMs": 78396,
+      "target": "어서 오세요.",
+      "translation": "Seja bem-vindo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어서",
+          "surface": "어서",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 78472,
+      "endMs": 82010,
+      "target": "뭐 드릴까요?",
+      "translation": "O que vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 83254,
+      "endMs": 86780,
+      "target": "귤 있어요?",
+      "translation": "Tem tangerina?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 2,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 86780,
+      "endMs": 93302,
+      "target": "네, 있어요. 몇 개 드릴까요?",
+      "translation": "Sim, tem. Quantos vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 94755,
+      "endMs": 98878,
+      "target": "귤 열 개 주세요.",
+      "translation": "Me dá dez tangerinas, por favor.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "주다",
+          "surface": "주",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 101037,
+      "endMs": 109661,
+      "target": "한 개, 두 개, 세 개, 네 개, 다섯 개",
+      "translation": "Um, dois, três, quatro, cinco",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 109661,
+      "endMs": 121222,
+      "target": "여섯 개, 일곱 개, 여덟 개, 아홉 개, 열 개",
+      "translation": "seis, sete, oito, nove, dez",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 121863,
+      "endMs": 127370,
+      "target": "손님, 귤 열 개 여기 있어요.",
+      "translation": "Freguês, aqui estão as dez tangerinas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "손님",
+          "surface": "손님",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 129710,
+      "endMs": 133315,
+      "target": "감사합니다.",
+      "translation": "Obrigado.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "감사하다",
+          "surface": "감사합",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 134408,
+      "endMs": 139010,
+      "target": "저는 귤을 너무 좋아해요.",
+      "translation": "Eu gosto muito de tangerina.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 147491,
+      "endMs": 151371,
+      "target": "저는 슈퍼에 가요.",
+      "translation": "Eu vou ao mercado.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "슈퍼",
+          "surface": "슈퍼",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 155798,
+      "endMs": 160379,
+      "target": "어서 오세요.",
+      "translation": "Seja bem-vindo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어서",
+          "surface": "어서",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 161627,
+      "endMs": 167091,
+      "target": "뭐 드릴까요?",
+      "translation": "O que vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 168322,
+      "endMs": 173586,
+      "target": "붕어빵 아이스크림 있어요?",
+      "translation": "Tem sorvete de bungeoppang?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "붕어빵",
+          "surface": "붕어빵",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "아이스크림",
+          "surface": "아이스크림",
+          "start": 4,
+          "end": 9
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 176621,
+      "endMs": 185219,
+      "target": "네, 있어요. 몇 개 드릴까요?",
+      "translation": "Sim, tem. Quantos vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 187832,
+      "endMs": 191952,
+      "target": "다섯 개 주세요.",
+      "translation": "Me dá cinco, por favor.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "주다",
+          "surface": "주",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 195535,
+      "endMs": 209678,
+      "target": "한 개, 두 개, 세 개, 네 개, 다섯 개.",
+      "translation": "Um, dois, três, quatro, cinco.",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 213643,
+      "endMs": 223130,
+      "target": "손님, 붕어빵 아이스크림 다섯 개 여기 있어요.",
+      "translation": "Freguês, aqui estão os cinco sorvetes de bungeoppang.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "손님",
+          "surface": "손님",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "붕어빵",
+          "surface": "붕어빵",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "아이스크림",
+          "surface": "아이스크림",
+          "start": 8,
+          "end": 13
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 22,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 227689,
+      "endMs": 231146,
+      "target": "감사합니다.",
+      "translation": "Obrigado.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "감사하다",
+          "surface": "감사합",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 233446,
+      "endMs": 240563,
+      "target": "저는 붕어빵 아이스크림을 좋아해요.",
+      "translation": "Eu gosto de sorvete de bungeoppang.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "붕어빵",
+          "surface": "붕어빵",
+          "start": 3,
+          "end": 6
+        },
+        {
+          "lemma": "아이스크림",
+          "surface": "아이스크림",
+          "start": 7,
+          "end": 12
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 14,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 244063,
+      "endMs": 249478,
+      "target": "저는 과일 가게에 가요.",
+      "translation": "Eu vou à loja de frutas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "과일",
+          "surface": "과일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "가게",
+          "surface": "가게",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "가다",
+          "surface": "가",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 252368,
+      "endMs": 256648,
+      "target": "어서 오세요.",
+      "translation": "Seja bem-vindo.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어서",
+          "surface": "어서",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 258165,
+      "endMs": 262516,
+      "target": "뭐 드릴까요?",
+      "translation": "O que vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 2,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 264702,
+      "endMs": 268900,
+      "target": "귤 있어요?",
+      "translation": "Tem tangerina?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 2,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 270805,
+      "endMs": 279058,
+      "target": "네, 있어요. 몇 개 드릴까요?",
+      "translation": "Sim, tem. Quantos vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 281639,
+      "endMs": 286618,
+      "target": "귤 열 개 주세요.",
+      "translation": "Me dá dez tangerinas, por favor.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "주다",
+          "surface": "주",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 289165,
+      "endMs": 301747,
+      "target": "한 개, 두 개, 세 개, 네 개, 다섯 개.",
+      "translation": "Um, dois, três, quatro, cinco.",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 304576,
+      "endMs": 315334,
+      "target": "여섯 개, 일곱 개, 여덟 개, 아홉 개, 열 개.",
+      "translation": "Seis, sete, oito, nove, dez.",
+      "speakerId": "part_a",
+      "tokens": []
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 320528,
+      "endMs": 327461,
+      "target": "손님, 귤 열 개 여기 있어요.",
+      "translation": "Freguês, aqui estão as dez tangerinas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "손님",
+          "surface": "손님",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 330933,
+      "endMs": 335452,
+      "target": "감사합니다.",
+      "translation": "Obrigado.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "감사하다",
+          "surface": "감사합",
+          "start": 0,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 337174,
+      "endMs": 342933,
+      "target": "저는 귤을 너무 좋아해요.",
+      "translation": "Eu gosto muito de tangerina.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "귤",
+          "surface": "귤",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "좋아하다",
+          "surface": "좋아해",
+          "start": 9,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 347996,
+      "endMs": 355168,
+      "target": "어서 오세요. 뭐 드릴까요?",
+      "translation": "Seja bem-vindo. O que vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "어서",
+          "surface": "어서",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 10,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 360116,
+      "endMs": 365844,
+      "target": "몇 개 드릴까요?",
+      "translation": "Quantos vai querer?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "드리다",
+          "surface": "드릴",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 368400,
+      "endMs": 372040,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 373600,
+      "endMs": 376600,
+      "target": "1시예요.",
+      "translation": "É uma hora.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 379000,
+      "endMs": 384560,
+      "target": "저는 1시 5분에 점심을 먹어요.",
+      "translation": "Eu como o almoço à 1h05.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "점심",
+          "surface": "점심",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 386919,
+      "endMs": 390720,
+      "target": "지금은 2시예요.",
+      "translation": "Agora são duas horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 393000,
+      "endMs": 397960,
+      "target": "2시 10분에 후식을 먹어요.",
+      "translation": "Às 2h10 eu como a sobremesa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "후식",
+          "surface": "후식",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 401160,
+      "endMs": 404919,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 407240,
+      "endMs": 410240,
+      "target": "3시예요.",
+      "translation": "São três horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 412639,
+      "endMs": 418240,
+      "target": "3시 15분부터 낮잠을 자요.",
+      "translation": "A partir das 3h15 eu tiro uma soneca.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "낮잠",
+          "surface": "낮잠",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "자다",
+          "surface": "자",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 420440,
+      "endMs": 425120,
+      "target": "한이 씨, 지금 몇 시예요?",
+      "translation": "Hani, que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "한이",
+          "surface": "한이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 428880,
+      "endMs": 431880,
+      "target": "4시예요.",
+      "translation": "São quatro horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 433800,
+      "endMs": 437639,
+      "target": "몰이 씨, 일어나세요.",
+      "translation": "Mori, levante-se.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "일어나다",
+          "surface": "일어나",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 441240,
+      "endMs": 446479,
+      "target": "저는 4시 20분에 일어나요.",
+      "translation": "Eu levanto às 4h20.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일어나다",
+          "surface": "일어나",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 448639,
+      "endMs": 452280,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 454079,
+      "endMs": 457079,
+      "target": "5시예요.",
+      "translation": "São cinco horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 458840,
+      "endMs": 464280,
+      "target": "5시 30분에 간식을 먹어요.",
+      "translation": "Às 5h30 eu como um lanche.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "간식",
+          "surface": "간식",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 467800,
+      "endMs": 471680,
+      "target": "지금은 6시예요.",
+      "translation": "Agora são seis horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 474680,
+      "endMs": 479759,
+      "target": "6시 반부터 요리를 해요.",
+      "translation": "A partir das seis e meia eu cozinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "반",
+          "surface": "반",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "요리",
+          "surface": "요리",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 482240,
+      "endMs": 486079,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 487039,
+      "endMs": 490039,
+      "target": "7시예요.",
+      "translation": "São sete horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 492320,
+      "endMs": 497720,
+      "target": "7시 40분에 저녁을 먹어요.",
+      "translation": "Às 7h40 eu como o jantar.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 500600,
+      "endMs": 504560,
+      "target": "지금은 8시예요.",
+      "translation": "Agora são oito horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 505680,
+      "endMs": 511000,
+      "target": "8시 50분에 설거지를 해요.",
+      "translation": "Às 8h50 eu lavo a louça.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "설거지",
+          "surface": "설거지",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 513120,
+      "endMs": 516639,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 517960,
+      "endMs": 520960,
+      "target": "9시예요.",
+      "translation": "São nove horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 523319,
+      "endMs": 528919,
+      "target": "9시 45분에 샤워를 해요.",
+      "translation": "Às 9h45 eu tomo banho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "샤워",
+          "surface": "샤워",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 532120,
+      "endMs": 536079,
+      "target": "지금은 10시예요.",
+      "translation": "Agora são dez horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 538079,
+      "endMs": 543759,
+      "target": "10시 50분에 야식을 먹어요.",
+      "translation": "Às 10h50 eu como a ceia.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "야식",
+          "surface": "야식",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 546039,
+      "endMs": 549280,
+      "target": "또 먹어요?",
+      "translation": "Vai comer de novo?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "또",
+          "surface": "또",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 2,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 551680,
+      "endMs": 554680,
+      "target": "네.",
+      "translation": "Sim.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 555720,
+      "endMs": 559400,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 561240,
+      "endMs": 564240,
+      "target": "11시예요.",
+      "translation": "São onze horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 567800,
+      "endMs": 574079,
+      "target": "11시 55분에 침대에 누워요.",
+      "translation": "Às 11h55 eu me deito na cama.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "침대",
+          "surface": "침대",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "눕다",
+          "surface": "누워",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 577280,
+      "endMs": 583000,
+      "target": "그리고 12시에 잠을 자요.",
+      "translation": "E às 12h eu durmo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "자다",
+          "surface": "자",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 588199,
+      "endMs": 594759,
+      "target": "그런데 너무 배불러서 잠이 안 와요.",
+      "translation": "Mas estou tão cheio que o sono não vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "배부르다",
+          "surface": "배불",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 596880,
+      "endMs": 600520,
+      "target": "그럴 줄 알았어요.",
+      "translation": "Eu sabia que ia ser assim.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그럴",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "알다",
+          "surface": "알",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 610000,
+      "endMs": 613639,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 618919,
+      "endMs": 621919,
+      "target": "1시예요.",
+      "translation": "É uma hora.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 626040,
+      "endMs": 631560,
+      "target": "저는 1시 5분에 점심을 먹어요.",
+      "translation": "Eu como o almoço à 1h05.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "점심",
+          "surface": "점심",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 639000,
+      "endMs": 642760,
+      "target": "지금은 2시예요.",
+      "translation": "Agora são duas horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 647719,
+      "endMs": 652640,
+      "target": "2시 10분에 후식을 먹어요.",
+      "translation": "Às 2h10 eu como a sobremesa.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "후식",
+          "surface": "후식",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 660399,
+      "endMs": 664160,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 669519,
+      "endMs": 672519,
+      "target": "3시예요.",
+      "translation": "São três horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 678240,
+      "endMs": 683839,
+      "target": "3시 15분부터 낮잠을 자요.",
+      "translation": "A partir das 3h15 eu tiro uma soneca.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "낮잠",
+          "surface": "낮잠",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "자다",
+          "surface": "자",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 689959,
+      "endMs": 694640,
+      "target": "한이 씨, 지금 몇 시예요?",
+      "translation": "Hani, que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "한이",
+          "surface": "한이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 702320,
+      "endMs": 705320,
+      "target": "4시예요.",
+      "translation": "São quatro horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 710160,
+      "endMs": 713959,
+      "target": "몰이 씨, 일어나세요.",
+      "translation": "Mori, levante-se.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "일어나다",
+          "surface": "일어나",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 720680,
+      "endMs": 725920,
+      "target": "저는 4시 20분에 일어나요.",
+      "translation": "Eu levanto às 4h20.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일어나다",
+          "surface": "일어나",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 732959,
+      "endMs": 736640,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 740959,
+      "endMs": 743959,
+      "target": "5시예요.",
+      "translation": "São cinco horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s95",
+      "index": 95,
+      "startMs": 748160,
+      "endMs": 753600,
+      "target": "5시 30분에 간식을 먹어요.",
+      "translation": "Às 5h30 eu como um lanche.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "간식",
+          "surface": "간식",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s96",
+      "index": 96,
+      "startMs": 760480,
+      "endMs": 764320,
+      "target": "지금은 6시예요.",
+      "translation": "Agora são seis horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s97",
+      "index": 97,
+      "startMs": 769560,
+      "endMs": 774680,
+      "target": "6시 반부터 요리를 해요.",
+      "translation": "A partir das seis e meia eu cozinho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "반",
+          "surface": "반",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "요리",
+          "surface": "요리",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s98",
+      "index": 98,
+      "startMs": 781079,
+      "endMs": 784920,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s99",
+      "index": 99,
+      "startMs": 789279,
+      "endMs": 792279,
+      "target": "7시예요.",
+      "translation": "São sete horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s100",
+      "index": 100,
+      "startMs": 797640,
+      "endMs": 803040,
+      "target": "7시 40분에 저녁을 먹어요.",
+      "translation": "Às 7h40 eu como o jantar.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "저녁",
+          "surface": "저녁",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "index": 101,
+      "startMs": 810279,
+      "endMs": 814200,
+      "target": "지금은 8시예요.",
+      "translation": "Agora são oito horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s102",
+      "index": 102,
+      "startMs": 819040,
+      "endMs": 824320,
+      "target": "8시 50분에 설거지를 해요.",
+      "translation": "Às 8h50 eu lavo a louça.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "설거지",
+          "surface": "설거지",
+          "start": 8,
+          "end": 11
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s103",
+      "index": 103,
+      "startMs": 830959,
+      "endMs": 834719,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s104",
+      "index": 104,
+      "startMs": 838800,
+      "endMs": 841800,
+      "target": "9시예요.",
+      "translation": "São nove horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s105",
+      "index": 105,
+      "startMs": 846760,
+      "endMs": 852360,
+      "target": "9시 45분에 샤워를 해요.",
+      "translation": "Às 9h45 eu tomo banho.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "샤워",
+          "surface": "샤워",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "하다",
+          "surface": "해",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s106",
+      "index": 106,
+      "startMs": 860320,
+      "endMs": 864240,
+      "target": "지금은 10시예요.",
+      "translation": "Agora são dez horas.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s107",
+      "index": 107,
+      "startMs": 869440,
+      "endMs": 875160,
+      "target": "10시 50분에 야식을 먹어요.",
+      "translation": "Às 10h50 eu como a ceia.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "야식",
+          "surface": "야식",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s108",
+      "index": 108,
+      "startMs": 881480,
+      "endMs": 884800,
+      "target": "또 먹어요?",
+      "translation": "Vai comer de novo?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "또",
+          "surface": "또",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "먹다",
+          "surface": "먹",
+          "start": 2,
+          "end": 3
+        }
+      ]
+    },
+    {
+      "id": "s109",
+      "index": 109,
+      "startMs": 889399,
+      "endMs": 891800,
+      "target": "네.",
+      "translation": "Sim.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s110",
+      "index": 110,
+      "startMs": 895120,
+      "endMs": 898760,
+      "target": "지금 몇 시예요?",
+      "translation": "Que horas são agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "index": 111,
+      "startMs": 902120,
+      "endMs": 905120,
+      "target": "11시예요.",
+      "translation": "São onze horas.",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s112",
+      "index": 112,
+      "startMs": 909959,
+      "endMs": 916200,
+      "target": "11시 55분에 침대에 누워요.",
+      "translation": "Às 11h55 eu me deito na cama.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "침대",
+          "surface": "침대",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "lemma": "눕다",
+          "surface": "누워",
+          "start": 13,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s113",
+      "index": 113,
+      "startMs": 922399,
+      "endMs": 928040,
+      "target": "그리고 12시에 잠을 자요.",
+      "translation": "E às 12h eu durmo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "lemma": "자다",
+          "surface": "자",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s114",
+      "index": 114,
+      "startMs": 936440,
+      "endMs": 943040,
+      "target": "그런데 너무 배불러서 잠이 안 와요.",
+      "translation": "Mas estou tão cheio que o sono não vem.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "배부르다",
+          "surface": "배불",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "잠",
+          "surface": "잠",
+          "start": 12,
+          "end": 13
+        },
+        {
+          "lemma": "안",
+          "surface": "안",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 17,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "s115",
+      "index": 115,
+      "startMs": 949360,
+      "endMs": 953639,
+      "target": "그럴 줄 알았어요.",
+      "translation": "Eu sabia que ia ser assim.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그럴",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "알다",
+          "surface": "알",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-하다",
+      "segmentId": "",
+      "target": "하다",
+      "translation": "fazer",
+      "startMs": 474680,
+      "endMs": 479759,
+      "reading": null,
+      "context": "6시 반부터 요리를 해요. — A partir das seis e meia eu cozinho.",
+      "audioClipSrc": "media/tts/wd8ff41ad37e8.mp3",
+      "exampleAudioSrc": "media/frag/f1a9a98a49b66.mp3",
+      "freqRank": 1,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "해"
+      ],
+      "sceneSrc": "media/frames/sb93253fe7ff0.jpg"
+    },
+    {
+      "id": "w-알다",
+      "segmentId": "",
+      "target": "알다",
+      "translation": "saber / conhecer",
+      "startMs": 596880,
+      "endMs": 600520,
+      "reading": null,
+      "context": "그럴 줄 알았어요. — Eu sabia que ia ser assim.",
+      "audioClipSrc": "media/tts/w4d5956ac3f50.mp3",
+      "exampleAudioSrc": "media/frag/fe6b18d76bf2c.mp3",
+      "freqRank": 5,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "알"
+      ],
+      "sceneSrc": "media/frames/sa6b6766115aa.jpg"
+    },
+    {
+      "id": "w-그렇다",
+      "segmentId": "",
+      "target": "그렇다",
+      "translation": "ser assim",
+      "startMs": 596880,
+      "endMs": 600520,
+      "reading": null,
+      "context": "그럴 줄 알았어요. — Eu sabia que ia ser assim.",
+      "audioClipSrc": "media/tts/w86cb52720b0b.mp3",
+      "exampleAudioSrc": "media/frag/f675184c8159a.mp3",
+      "freqRank": 10,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "그럴"
+      ],
+      "sceneSrc": "media/frames/sa6b6766115aa.jpg"
+    },
+    {
+      "id": "w-지금",
+      "segmentId": "",
+      "target": "지금",
+      "translation": "agora",
+      "startMs": 368400,
+      "endMs": 372040,
+      "reading": null,
+      "context": "지금 몇 시예요? — Que horas são agora?",
+      "audioClipSrc": "media/tts/w50596b413c48.mp3",
+      "exampleAudioSrc": "media/frag/ff727167f2bd7.mp3",
+      "freqRank": 26,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s294c89d0b9c5.jpg"
+    },
+    {
+      "id": "w-주다",
+      "segmentId": "",
+      "target": "주다",
+      "translation": "dar",
+      "startMs": 30271,
+      "endMs": 33991,
+      "reading": null,
+      "context": "다섯 개 주세요. — Me dá cinco, por favor.",
+      "audioClipSrc": "media/tts/w62a806f1cac8.mp3",
+      "exampleAudioSrc": "media/frag/fbc6cf1b29799.mp3",
+      "freqRank": 37,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "주"
+      ],
+      "sceneSrc": "media/frames/s8fa167f423ee.jpg"
+    },
+    {
+      "id": "w-너무",
+      "segmentId": "",
+      "target": "너무",
+      "translation": "demais / muito",
+      "startMs": 134408,
+      "endMs": 139010,
+      "reading": null,
+      "context": "저는 귤을 너무 좋아해요. — Eu gosto muito de tangerina.",
+      "audioClipSrc": "media/tts/w5f8fad3be17f.mp3",
+      "exampleAudioSrc": "media/frag/fd7c3426bf25a.mp3",
+      "freqRank": 48,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s65391d4f6299.jpg"
+    },
+    {
+      "id": "w-또",
+      "segmentId": "",
+      "target": "또",
+      "translation": "de novo / outra vez",
+      "startMs": 546039,
+      "endMs": 549280,
+      "reading": null,
+      "context": "또 먹어요? — Vai comer de novo?",
+      "audioClipSrc": "media/tts/w4ad93346195b.mp3",
+      "exampleAudioSrc": "media/frag/f3a7a2f324a68.mp3",
+      "freqRank": 68,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s6483aff2fcbf.jpg"
+    },
+    {
+      "id": "w-어서",
+      "segmentId": "",
+      "target": "어서",
+      "translation": "depressa (어서 오세요 = seja bem-vindo)",
+      "startMs": 8190,
+      "endMs": 11324,
+      "reading": null,
+      "context": "어서 오세요. — Seja bem-vindo.",
+      "audioClipSrc": "media/tts/waeac95f2d319.mp3",
+      "exampleAudioSrc": "media/frag/f6d59cf166e8f.mp3",
+      "freqRank": 70,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s1b00353223c9.jpg"
+    },
+    {
+      "id": "w-먹다",
+      "segmentId": "",
+      "target": "먹다",
+      "translation": "comer",
+      "startMs": 546039,
+      "endMs": 549280,
+      "reading": null,
+      "context": "또 먹어요? — Vai comer de novo?",
+      "audioClipSrc": "media/tts/wa8d7fa09a2fa.mp3",
+      "exampleAudioSrc": "media/frag/fe3edd28b56a9.mp3",
+      "freqRank": 76,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "먹"
+      ],
+      "sceneSrc": "media/frames/s6483aff2fcbf.jpg"
+    },
+    {
+      "id": "w-일어나다",
+      "segmentId": "",
+      "target": "일어나다",
+      "translation": "levantar-se / acordar",
+      "startMs": 433800,
+      "endMs": 437639,
+      "reading": null,
+      "context": "몰이 씨, 일어나세요. — Mori, levante-se.",
+      "audioClipSrc": "media/tts/wb6e78fc82701.mp3",
+      "exampleAudioSrc": "media/frag/f8d3616143f55.mp3",
+      "freqRank": 122,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "일어나"
+      ],
+      "sceneSrc": "media/frames/sed95af424565.jpg"
+    },
+    {
+      "id": "w-좋아하다",
+      "segmentId": "",
+      "target": "좋아하다",
+      "translation": "gostar de",
+      "startMs": 134408,
+      "endMs": 139010,
+      "reading": null,
+      "context": "저는 귤을 너무 좋아해요. — Eu gosto muito de tangerina.",
+      "audioClipSrc": "media/tts/w46633efb390b.mp3",
+      "exampleAudioSrc": "media/frag/f7397e26701e7.mp3",
+      "freqRank": 127,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "좋아해"
+      ],
+      "sceneSrc": "media/frames/s65391d4f6299.jpg"
+    },
+    {
+      "id": "w-감사하다",
+      "segmentId": "",
+      "target": "감사하다",
+      "translation": "agradecer (감사합니다 = obrigado)",
+      "startMs": 56166,
+      "endMs": 58884,
+      "reading": null,
+      "context": "감사합니다. — Obrigado.",
+      "audioClipSrc": "media/tts/w6c08bdfe157d.mp3",
+      "exampleAudioSrc": "media/frag/f7a3819b69856.mp3",
+      "freqRank": 134,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "감사합"
+      ],
+      "sceneSrc": "media/frames/s94dacec1a15a.jpg"
+    },
+    {
+      "id": "w-드리다",
+      "segmentId": "",
+      "target": "드리다",
+      "translation": "dar (forma humilde)",
+      "startMs": 11324,
+      "endMs": 14810,
+      "reading": null,
+      "context": "뭐 드릴까요? — O que vai querer?",
+      "audioClipSrc": "media/tts/w88fbc80e15cc.mp3",
+      "exampleAudioSrc": "media/frag/fa19eedb88186.mp3",
+      "freqRank": 189,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "드릴"
+      ],
+      "sceneSrc": "media/frames/s07cdc0b9ecb0.jpg"
+    },
+    {
+      "id": "w-자다",
+      "segmentId": "",
+      "target": "자다",
+      "translation": "dormir",
+      "startMs": 577280,
+      "endMs": 583000,
+      "reading": null,
+      "context": "그리고 12시에 잠을 자요. — E às 12h eu durmo.",
+      "audioClipSrc": "media/tts/wa1b6522e559e.mp3",
+      "exampleAudioSrc": "media/frag/f9a13d89e91ed.mp3",
+      "freqRank": 223,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "자"
+      ],
+      "sceneSrc": "media/frames/sfcfc8b7784d8.jpg"
+    },
+    {
+      "id": "w-저녁",
+      "segmentId": "",
+      "target": "저녁",
+      "translation": "noite (também: jantar)",
+      "startMs": 492320,
+      "endMs": 497720,
+      "reading": null,
+      "context": "7시 40분에 저녁을 먹어요. — Às 7h40 eu como o jantar.",
+      "audioClipSrc": "media/tts/w7ed29071b3cc.mp3",
+      "exampleAudioSrc": "media/frag/f03672f61e7e6.mp3",
+      "freqRank": 324,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sb4093a4e3c51.jpg"
+    },
+    {
+      "id": "w-잠",
+      "segmentId": "",
+      "target": "잠",
+      "translation": "sono",
+      "startMs": 577280,
+      "endMs": 583000,
+      "reading": null,
+      "context": "그리고 12시에 잠을 자요. — E às 12h eu durmo.",
+      "audioClipSrc": "media/tts/w285a7032aba8.mp3",
+      "exampleAudioSrc": "media/frag/f3d4815149a62.mp3",
+      "freqRank": 449,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sfcfc8b7784d8.jpg"
+    },
+    {
+      "id": "w-가게",
+      "segmentId": "",
+      "target": "가게",
+      "translation": "loja",
+      "startMs": 69333,
+      "endMs": 73854,
+      "reading": null,
+      "context": "저는 과일 가게에 가요. — Eu vou à loja de frutas.",
+      "audioClipSrc": "media/tts/wfc79037e7087.mp3",
+      "exampleAudioSrc": "media/frag/fe744de249faf.mp3",
+      "freqRank": 450,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7ca928615423.jpg"
+    },
+    {
+      "id": "w-침대",
+      "segmentId": "",
+      "target": "침대",
+      "translation": "cama",
+      "startMs": 567800,
+      "endMs": 574079,
+      "reading": null,
+      "context": "11시 55분에 침대에 누워요. — Às 11h55 eu me deito na cama.",
+      "audioClipSrc": "media/tts/we724ec66e17f.mp3",
+      "exampleAudioSrc": "media/frag/f6481da02a764.mp3",
+      "freqRank": 480,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s437725d6bc52.jpg"
+    },
+    {
+      "id": "w-반",
+      "segmentId": "",
+      "target": "반",
+      "translation": "metade (meia hora)",
+      "startMs": 474680,
+      "endMs": 479759,
+      "reading": null,
+      "context": "6시 반부터 요리를 해요. — A partir das seis e meia eu cozinho.",
+      "audioClipSrc": "media/tts/wcd494f06af25.mp3",
+      "exampleAudioSrc": "media/frag/ff9592e434c0a.mp3",
+      "freqRank": 557,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sb93253fe7ff0.jpg"
+    },
+    {
+      "id": "w-손님",
+      "segmentId": "",
+      "target": "손님",
+      "translation": "cliente / freguês",
+      "startMs": 121863,
+      "endMs": 127370,
+      "reading": null,
+      "context": "손님, 귤 열 개 여기 있어요. — Freguês, aqui estão as dez tangerinas.",
+      "audioClipSrc": "media/tts/wa5bb6d1af868.mp3",
+      "exampleAudioSrc": "media/frag/f8a6057b52ff6.mp3",
+      "freqRank": 698,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s82eca3073b87.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/RaIdzsJQ018",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/RaIdzsJQ018",
+        "startMs": 0,
+        "title": "귤이 몇 개 있어요?"
+      },
+      {
+        "url": "https://youtu.be/jjCQXZYaOSY",
+        "startMs": 366900,
+        "title": "지금 몇 시예요?"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "Repete cada número em voz alta e devagar. As frases de loja e de horas voltam dezenas de vezes.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 66201,
+      "summary": "Primeira história: ele vai ao mercado. «Seja bem-vindo, o que vai querer?» Ele pede cinco sorvetes de bungeoppang (o bolinho em forma de peixe) e conta um por um: um, dois, três, quatro, cinco.",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 69333,
+      "endMs": 139010,
+      "summary": "Depois vai à loja de frutas e pede dez tangerinas — contadas de um a dez. Ele gosta muito de tangerina.",
+      "segmentIds": [
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20",
+        "s21",
+        "s22"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 147491,
+      "endMs": 342933,
+      "summary": "As mesmas duas compras de novo, agora mais devagar (2ª vez).",
+      "segmentIds": [
+        "s23",
+        "s24",
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42",
+        "s43"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 347996,
+      "endMs": 365844,
+      "summary": "As frases da loja, soltas, para você repetir: «Seja bem-vindo, o que vai querer?» e «Quantos vai querer?»",
+      "segmentIds": [
+        "s44",
+        "s45"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 368400,
+      "endMs": 418240,
+      "summary": "Segunda história: o dia inteiro hora por hora. Uma hora: almoço à 1h05. Duas: sobremesa às 2h10. Três: soneca a partir das 3h15.",
+      "segmentIds": [
+        "s46",
+        "s47",
+        "s48",
+        "s49",
+        "s50",
+        "s51",
+        "s52",
+        "s53"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 420440,
+      "endMs": 479759,
+      "summary": "Quatro horas: «Mori, levante-se» — ele acorda às 4h20. Cinco: lanche às 5h30. Seis: cozinha a partir das seis e meia.",
+      "segmentIds": [
+        "s54",
+        "s55",
+        "s56",
+        "s57",
+        "s58",
+        "s59",
+        "s60",
+        "s61",
+        "s62"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 482240,
+      "endMs": 554680,
+      "summary": "Sete horas: jantar às 7h40. Oito: lava a louça às 8h50. Nove: banho às 9h45. Dez: ceia às 10h50 — «vai comer de novo?»",
+      "segmentIds": [
+        "s63",
+        "s64",
+        "s65",
+        "s66",
+        "s67",
+        "s68",
+        "s69",
+        "s70",
+        "s71",
+        "s72",
+        "s73",
+        "s74"
+      ]
+    },
+    {
+      "id": "p8",
+      "startMs": 555720,
+      "endMs": 600520,
+      "summary": "Onze horas: deita na cama às 11h55 e dorme à meia-noite. Mas está tão cheio que o sono não vem. «Eu sabia que ia ser assim.»",
+      "segmentIds": [
+        "s75",
+        "s76",
+        "s77",
+        "s78",
+        "s79",
+        "s80"
+      ]
+    },
+    {
+      "id": "p9",
+      "startMs": 610000,
+      "endMs": 953639,
+      "summary": "O dia inteiro de novo, hora por hora, mais devagar (2ª vez).",
+      "segmentIds": [
+        "s81",
+        "s82",
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87",
+        "s88",
+        "s89",
+        "s90",
+        "s91",
+        "s92",
+        "s93",
+        "s94",
+        "s95",
+        "s96",
+        "s97",
+        "s98",
+        "s99",
+        "s100",
+        "s101",
+        "s102",
+        "s103",
+        "s104",
+        "s105",
+        "s106",
+        "s107",
+        "s108",
+        "s109",
+        "s110",
+        "s111",
+        "s112",
+        "s113",
+        "s114",
+        "s115"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "números nativos 하나~열 + 개 (contador de unidades)",
+    "몇 개 / 몇 시 (quantos / que horas)",
+    "-(으)세요 (pedido educado: 주세요, 일어나세요)",
+    "시간 + 에 (às tantas horas)",
+    "-부터 (a partir de)"
+  ],
+  "tags": [
+    "história",
+    "números",
+    "compras",
+    "rotina"
+  ],
+  "titleTarget": "귤이 몇 개 있어요? · 지금 몇 시예요?",
+  "premise": "Histórias ilustradas A0 sobre contagem. A primeira ensina os números nativos (하나~열) com o contador 개 e as frases de loja (어서 오세요 / 주세요). A segunda ensina as horas (몇 시) com os verbos da rotina.",
+  "createdAt": "2026-08-22T18:42:29.051990+00:00"
+}

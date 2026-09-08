@@ -1,0 +1,3715 @@
+{
+  "schemaVersion": 1,
+  "id": "ko-A1-05",
+  "language": "ko",
+  "languageName": "Coreano",
+  "level": "A1",
+  "lessonNumber": 5,
+  "title": "Que tempo faz — e o que você precisa fazer",
+  "synopsis": "Quinta dose: o degrau é dizer que **precisa** de alguma coisa. A primeira história liga cada tipo de tempo ao que se faz por causa dele: sol e óculos escuros, calor e água, chuva e guarda-chuva, neve e passo devagar. A segunda são três telefonemas — Busan, Seul e Jeju — perguntando como está o tempo hoje, como estava ontem e como vai estar amanhã.",
+  "media": {
+    "kind": "video",
+    "src": "media/main.mp4",
+    "durationSec": 917.621333,
+    "condensedAudioSrc": null,
+    "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "index": 1,
+      "startMs": 1500,
+      "endMs": 5661,
+      "target": "날씨가 좋아요.",
+      "translation": "O tempo está bom.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "좋다",
+          "surface": "좋",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "index": 2,
+      "startMs": 7301,
+      "endMs": 10741,
+      "target": "눈이 부셔요.",
+      "translation": "Os olhos ficam ofuscados.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "눈",
+          "surface": "눈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "부시다",
+          "surface": "부셔",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "index": 3,
+      "startMs": 12220,
+      "endMs": 17420,
+      "target": "그래서 선글라스를 써야 돼요.",
+      "translation": "Por isso eu preciso usar óculos de sol.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "선글라스",
+          "surface": "선글라스",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "lemma": "쓰다",
+          "surface": "써",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "index": 4,
+      "startMs": 21301,
+      "endMs": 25140,
+      "target": "날씨가 더워요.",
+      "translation": "O tempo está quente.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더워",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "index": 5,
+      "startMs": 27661,
+      "endMs": 31021,
+      "target": "땀이 나요.",
+      "translation": "Sai suor.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "땀",
+          "surface": "땀",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "나다",
+          "surface": "나",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "index": 6,
+      "startMs": 32941,
+      "endMs": 38581,
+      "target": "그래서 물을 많이 마셔야 돼요.",
+      "translation": "Por isso eu preciso beber muita água.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "물",
+          "surface": "물",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "마시다",
+          "surface": "마셔",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "index": 7,
+      "startMs": 42140,
+      "endMs": 45780,
+      "target": "비가 조금 와요.",
+      "translation": "Chove um pouco.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "조금",
+          "surface": "조금",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "index": 8,
+      "startMs": 47981,
+      "endMs": 51420,
+      "target": "옷이 젖어요.",
+      "translation": "A roupa molha.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "옷",
+          "surface": "옷",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "젖다",
+          "surface": "젖",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "index": 9,
+      "startMs": 53500,
+      "endMs": 58301,
+      "target": "그래서 우산을 써야 돼요.",
+      "translation": "Por isso eu preciso usar guarda-chuva.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "우산",
+          "surface": "우산",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "쓰다",
+          "surface": "써",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "index": 10,
+      "startMs": 61941,
+      "endMs": 66060,
+      "target": "비가 많이 와요.",
+      "translation": "Chove muito.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "index": 11,
+      "startMs": 69700,
+      "endMs": 73541,
+      "target": "양말이 젖어요.",
+      "translation": "A meia molha.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "양말",
+          "surface": "양말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "젖다",
+          "surface": "젖",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "index": 12,
+      "startMs": 76261,
+      "endMs": 81181,
+      "target": "그래서 장화를 신어야 돼요.",
+      "translation": "Por isso eu preciso calçar galochas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "장화",
+          "surface": "장화",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "신다",
+          "surface": "신",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "index": 13,
+      "startMs": 85221,
+      "endMs": 88941,
+      "target": "바람이 불어요.",
+      "translation": "O vento sopra.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "index": 14,
+      "startMs": 90941,
+      "endMs": 93941,
+      "target": "추워요.",
+      "translation": "Está frio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "춥다",
+          "surface": "추워",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "index": 15,
+      "startMs": 95501,
+      "endMs": 100501,
+      "target": "그래서 코트를 입어야 돼요.",
+      "translation": "Por isso eu preciso vestir um casaco.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "코트",
+          "surface": "코트",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "입다",
+          "surface": "입",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "index": 16,
+      "startMs": 104901,
+      "endMs": 109100,
+      "target": "날씨가 너무 추워요.",
+      "translation": "O tempo está frio demais.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "춥다",
+          "surface": "추워",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "index": 17,
+      "startMs": 110421,
+      "endMs": 113940,
+      "target": "손이 시려요.",
+      "translation": "As mãos ficam geladas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "손",
+          "surface": "손",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "시리다",
+          "surface": "시려",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "index": 18,
+      "startMs": 116301,
+      "endMs": 121301,
+      "target": "그래서 장갑을 껴야 돼요.",
+      "translation": "Por isso eu preciso pôr luvas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "장갑",
+          "surface": "장갑",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "끼다",
+          "surface": "껴",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "index": 19,
+      "startMs": 125141,
+      "endMs": 128621,
+      "target": "눈이 와요.",
+      "translation": "Cai neve.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "눈",
+          "surface": "눈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "index": 20,
+      "startMs": 130141,
+      "endMs": 133141,
+      "target": "미끄러워요.",
+      "translation": "Está escorregadio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "미끄럽다",
+          "surface": "미끄러워",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "index": 21,
+      "startMs": 136660,
+      "endMs": 141741,
+      "target": "그래서 천천히 걸어야 돼요.",
+      "translation": "Por isso eu preciso andar devagar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "천천히",
+          "surface": "천천히",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "걷다",
+          "surface": "걸",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "index": 22,
+      "startMs": 144741,
+      "endMs": 151341,
+      "target": "여러분이 있는 곳은 지금 날씨가 어때요?",
+      "translation": "Como está o tempo agora aí onde você está?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "곳",
+          "surface": "곳",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "index": 23,
+      "startMs": 155261,
+      "endMs": 161261,
+      "target": "그런 날씨에 뭐를 준비해야 돼요?",
+      "translation": "Com esse tempo, o que você precisa preparar?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "준비하다",
+          "surface": "준비해",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "index": 24,
+      "startMs": 172421,
+      "endMs": 176581,
+      "target": "날씨가 좋아요.",
+      "translation": "O tempo está bom.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "좋다",
+          "surface": "좋",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "index": 25,
+      "startMs": 181100,
+      "endMs": 184540,
+      "target": "눈이 부셔요.",
+      "translation": "Os olhos ficam ofuscados.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "눈",
+          "surface": "눈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "부시다",
+          "surface": "부셔",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "index": 26,
+      "startMs": 188901,
+      "endMs": 194021,
+      "target": "그래서 선글라스를 써야 돼요.",
+      "translation": "Por isso eu preciso usar óculos de sol.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "선글라스",
+          "surface": "선글라스",
+          "start": 4,
+          "end": 8
+        },
+        {
+          "lemma": "쓰다",
+          "surface": "써",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "index": 27,
+      "startMs": 199500,
+      "endMs": 203421,
+      "target": "날씨가 더워요.",
+      "translation": "O tempo está quente.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더워",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "index": 28,
+      "startMs": 206220,
+      "endMs": 209540,
+      "target": "땀이 나요.",
+      "translation": "Sai suor.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "땀",
+          "surface": "땀",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "나다",
+          "surface": "나",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "index": 29,
+      "startMs": 212820,
+      "endMs": 218380,
+      "target": "그래서 물을 많이 마셔야 돼요.",
+      "translation": "Por isso eu preciso beber muita água.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "물",
+          "surface": "물",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "마시다",
+          "surface": "마셔",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "index": 30,
+      "startMs": 223781,
+      "endMs": 227421,
+      "target": "비가 조금 와요.",
+      "translation": "Chove um pouco.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "조금",
+          "surface": "조금",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "index": 31,
+      "startMs": 230540,
+      "endMs": 234021,
+      "target": "옷이 젖어요.",
+      "translation": "A roupa molha.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "옷",
+          "surface": "옷",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "젖다",
+          "surface": "젖",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "index": 32,
+      "startMs": 236660,
+      "endMs": 241421,
+      "target": "그래서 우산을 써야 돼요.",
+      "translation": "Por isso eu preciso usar guarda-chuva.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "우산",
+          "surface": "우산",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "쓰다",
+          "surface": "써",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "index": 33,
+      "startMs": 246540,
+      "endMs": 250621,
+      "target": "비가 많이 와요.",
+      "translation": "Chove muito.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "index": 34,
+      "startMs": 255220,
+      "endMs": 259061,
+      "target": "양말이 젖어요.",
+      "translation": "A meia molha.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "양말",
+          "surface": "양말",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "젖다",
+          "surface": "젖",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "index": 35,
+      "startMs": 264220,
+      "endMs": 269141,
+      "target": "그래서 장화를 신어야 돼요.",
+      "translation": "Por isso eu preciso calçar galochas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "장화",
+          "surface": "장화",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "신다",
+          "surface": "신",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s36",
+      "index": 36,
+      "startMs": 274141,
+      "endMs": 277820,
+      "target": "바람이 불어요.",
+      "translation": "O vento sopra.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s37",
+      "index": 37,
+      "startMs": 282021,
+      "endMs": 285021,
+      "target": "추워요.",
+      "translation": "Está frio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "춥다",
+          "surface": "추워",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s38",
+      "index": 38,
+      "startMs": 288500,
+      "endMs": 293380,
+      "target": "그래서 코트를 입어야 돼요.",
+      "translation": "Por isso eu preciso vestir um casaco.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "코트",
+          "surface": "코트",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "입다",
+          "surface": "입",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s39",
+      "index": 39,
+      "startMs": 299301,
+      "endMs": 303581,
+      "target": "날씨가 너무 추워요.",
+      "translation": "O tempo está frio demais.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "춥다",
+          "surface": "추워",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s40",
+      "index": 40,
+      "startMs": 306341,
+      "endMs": 309820,
+      "target": "손이 시려요.",
+      "translation": "As mãos ficam geladas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "손",
+          "surface": "손",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "시리다",
+          "surface": "시려",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "index": 41,
+      "startMs": 313261,
+      "endMs": 318181,
+      "target": "그래서 장갑을 껴야 돼요.",
+      "translation": "Por isso eu preciso pôr luvas.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "장갑",
+          "surface": "장갑",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "끼다",
+          "surface": "껴",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "id": "s42",
+      "index": 42,
+      "startMs": 323581,
+      "endMs": 327060,
+      "target": "눈이 와요.",
+      "translation": "Cai neve.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "눈",
+          "surface": "눈",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s43",
+      "index": 43,
+      "startMs": 329581,
+      "endMs": 332581,
+      "target": "미끄러워요.",
+      "translation": "Está escorregadio.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "미끄럽다",
+          "surface": "미끄러워",
+          "start": 0,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s44",
+      "index": 44,
+      "startMs": 336380,
+      "endMs": 341380,
+      "target": "그래서 천천히 걸어야 돼요.",
+      "translation": "Por isso eu preciso andar devagar.",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "천천히",
+          "surface": "천천히",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "lemma": "걷다",
+          "surface": "걸",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s45",
+      "index": 45,
+      "startMs": 350860,
+      "endMs": 357501,
+      "target": "여러분이 있는 곳은 지금 날씨가 어때요?",
+      "translation": "Como está o tempo agora aí onde você está?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "lemma": "곳",
+          "surface": "곳",
+          "start": 8,
+          "end": 9
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 11,
+          "end": 13
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 14,
+          "end": 16
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 18,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "id": "s46",
+      "index": 46,
+      "startMs": 364420,
+      "endMs": 370661,
+      "target": "그런 날씨에 뭐를 준비해야 돼요?",
+      "translation": "Com esse tempo, o que você precisa preparar?",
+      "speakerId": "part_a",
+      "tokens": [
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "준비하다",
+          "surface": "준비해",
+          "start": 10,
+          "end": 13
+        },
+        {
+          "lemma": "되다",
+          "surface": "돼",
+          "start": 15,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "s47",
+      "index": 47,
+      "startMs": 373200,
+      "endMs": 376200,
+      "target": "여보세요?",
+      "translation": "Alô?",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s48",
+      "index": 48,
+      "startMs": 376960,
+      "endMs": 381760,
+      "target": "몰이 씨, 지금 어디에 있어요?",
+      "translation": "Mori, você está onde agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s49",
+      "index": 49,
+      "startMs": 383079,
+      "endMs": 386639,
+      "target": "부산에 있어요.",
+      "translation": "Estou em Busan.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s50",
+      "index": 50,
+      "startMs": 388320,
+      "endMs": 393160,
+      "target": "부산은 오늘 날씨가 어때요?",
+      "translation": "Como está o tempo em Busan hoje?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s51",
+      "index": 51,
+      "startMs": 396079,
+      "endMs": 399480,
+      "target": "비가 와요.",
+      "translation": "Está chovendo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s52",
+      "index": 52,
+      "startMs": 400520,
+      "endMs": 405160,
+      "target": "비가 오고 천둥이 쳐요.",
+      "translation": "Chove e troveja.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "천둥",
+          "surface": "천둥",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s53",
+      "index": 53,
+      "startMs": 407960,
+      "endMs": 412199,
+      "target": "어제는 날씨가 어땠어요?",
+      "translation": "Como estava o tempo ontem?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어땠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s54",
+      "index": 54,
+      "startMs": 416520,
+      "endMs": 421079,
+      "target": "어제도 비가 많이 왔어요.",
+      "translation": "Ontem também choveu muito.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "오다",
+          "surface": "왔",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s55",
+      "index": 55,
+      "startMs": 424600,
+      "endMs": 428719,
+      "target": "내일도 비가 올까요?",
+      "translation": "Será que amanhã também vai chover?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "올",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s56",
+      "index": 56,
+      "startMs": 431600,
+      "endMs": 437320,
+      "target": "네. 내일도 비가 올 거예요.",
+      "translation": "Sim. Amanhã também vai chover.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "오다",
+          "surface": "올",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s57",
+      "index": 57,
+      "startMs": 439040,
+      "endMs": 443000,
+      "target": "일기예보를 봤어요.",
+      "translation": "Eu vi a previsão do tempo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일기",
+          "surface": "일기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "예보",
+          "surface": "예보",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "보다",
+          "surface": "봤",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s58",
+      "index": 58,
+      "startMs": 446760,
+      "endMs": 451799,
+      "target": "그래요? 그럼 운전 조심하세요.",
+      "translation": "É mesmo? Então dirija com cuidado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그래",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "운전",
+          "surface": "운전",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "조심하다",
+          "surface": "조심하",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s59",
+      "index": 59,
+      "startMs": 460640,
+      "endMs": 463640,
+      "target": "여보세요?",
+      "translation": "Alô?",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s60",
+      "index": 60,
+      "startMs": 464840,
+      "endMs": 469720,
+      "target": "몰이씨, 지금 어디에 있어요?",
+      "translation": "Mori, você está onde agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 12,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "index": 61,
+      "startMs": 473560,
+      "endMs": 477080,
+      "target": "서울에 있어요.",
+      "translation": "Estou em Seul.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s62",
+      "index": 62,
+      "startMs": 480399,
+      "endMs": 485320,
+      "target": "서울은 오늘 날씨가 어때요?",
+      "translation": "Como está o tempo em Seul hoje?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s63",
+      "index": 63,
+      "startMs": 488320,
+      "endMs": 491320,
+      "target": "추워요.",
+      "translation": "Está frio.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "춥다",
+          "surface": "추워",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s64",
+      "index": 64,
+      "startMs": 491679,
+      "endMs": 495840,
+      "target": "춥고 바람이 불어요.",
+      "translation": "Está frio e venta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "춥다",
+          "surface": "춥",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s65",
+      "index": 65,
+      "startMs": 500880,
+      "endMs": 505120,
+      "target": "어제는 날씨가 어땠어요?",
+      "translation": "Como estava o tempo ontem?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어땠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s66",
+      "index": 66,
+      "startMs": 508000,
+      "endMs": 512399,
+      "target": "어제도 너무 추웠어요.",
+      "translation": "Ontem também estava muito frio.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "춥다",
+          "surface": "추웠",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s67",
+      "index": 67,
+      "startMs": 516440,
+      "endMs": 520120,
+      "target": "내일도 추울까요?",
+      "translation": "Será que amanhã também vai estar frio?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춥다",
+          "surface": "추울",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s68",
+      "index": 68,
+      "startMs": 522679,
+      "endMs": 529600,
+      "target": "네. 내일도 춥고 바람이 불 거예요.",
+      "translation": "Sim. Amanhã também vai estar frio e ventando.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "춥다",
+          "surface": "춥",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s69",
+      "index": 69,
+      "startMs": 532040,
+      "endMs": 536120,
+      "target": "일기예보를 들었어요.",
+      "translation": "Eu ouvi a previsão do tempo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일기",
+          "surface": "일기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "예보",
+          "surface": "예보",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s70",
+      "index": 70,
+      "startMs": 537720,
+      "endMs": 542600,
+      "target": "그래요? 그럼 감기 조심하세요.",
+      "translation": "É mesmo? Então cuidado para não pegar um resfriado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그래",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "감기",
+          "surface": "감기",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "조심하다",
+          "surface": "조심하",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "index": 71,
+      "startMs": 550359,
+      "endMs": 553359,
+      "target": "여보세요?",
+      "translation": "Alô?",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s72",
+      "index": 72,
+      "startMs": 555799,
+      "endMs": 560679,
+      "target": "몰이 씨, 지금 어디에 있어요?",
+      "translation": "Mori, você está onde agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s73",
+      "index": 73,
+      "startMs": 562799,
+      "endMs": 566720,
+      "target": "제주도에 있어요.",
+      "translation": "Estou na Ilha de Jeju.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "제주도",
+          "surface": "제주도",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s74",
+      "index": 74,
+      "startMs": 569920,
+      "endMs": 575160,
+      "target": "제주도는 오늘 날씨가 어때요?",
+      "translation": "Como está o tempo em Jeju hoje?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "제주도",
+          "surface": "제주도",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s75",
+      "index": 75,
+      "startMs": 578040,
+      "endMs": 581040,
+      "target": "더워요.",
+      "translation": "Está quente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "덥다",
+          "surface": "더워",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s76",
+      "index": 76,
+      "startMs": 582040,
+      "endMs": 585639,
+      "target": "덥고 습해요.",
+      "translation": "Está quente e úmido.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "덥다",
+          "surface": "덥",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "습하다",
+          "surface": "습해",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s77",
+      "index": 77,
+      "startMs": 588720,
+      "endMs": 592959,
+      "target": "어제는 날씨가 어땠어요?",
+      "translation": "Como estava o tempo ontem?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어땠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s78",
+      "index": 78,
+      "startMs": 596840,
+      "endMs": 601120,
+      "target": "어제도 아주 더웠어요.",
+      "translation": "Ontem também estava muito quente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "아주",
+          "surface": "아주",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더웠",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s79",
+      "index": 79,
+      "startMs": 603440,
+      "endMs": 606920,
+      "target": "내일도 더울까요?",
+      "translation": "Será que amanhã também vai estar quente?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더울",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s80",
+      "index": 80,
+      "startMs": 608959,
+      "endMs": 614040,
+      "target": "네. 내일도 더울 거예요.",
+      "translation": "Sim. Amanhã também vai estar quente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더울",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "index": 81,
+      "startMs": 616239,
+      "endMs": 620320,
+      "target": "일기예보를 확인했어요.",
+      "translation": "Eu conferi a previsão do tempo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일기",
+          "surface": "일기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "예보",
+          "surface": "예보",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "확인하다",
+          "surface": "확인했",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "index": 82,
+      "startMs": 626079,
+      "endMs": 632600,
+      "target": "그래요? 그럼 더위 조심하세요.",
+      "translation": "É mesmo? Então cuidado com o calor.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그래",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "더위",
+          "surface": "더위",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "조심하다",
+          "surface": "조심하",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s83",
+      "index": 83,
+      "startMs": 641280,
+      "endMs": 644280,
+      "target": "여보세요?",
+      "translation": "Alô?",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s84",
+      "index": 84,
+      "startMs": 646239,
+      "endMs": 651120,
+      "target": "몰이 씨, 지금 어디에 있어요?",
+      "translation": "Mori, você está onde agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s85",
+      "index": 85,
+      "startMs": 654639,
+      "endMs": 658200,
+      "target": "부산에 있어요.",
+      "translation": "Estou em Busan.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s86",
+      "index": 86,
+      "startMs": 660959,
+      "endMs": 665760,
+      "target": "부산은 오늘 날씨가 어때요?",
+      "translation": "Como está o tempo em Busan hoje?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "부산",
+          "surface": "부산",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s87",
+      "index": 87,
+      "startMs": 669480,
+      "endMs": 672880,
+      "target": "비가 와요.",
+      "translation": "Está chovendo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "오다",
+          "surface": "와",
+          "start": 3,
+          "end": 4
+        }
+      ]
+    },
+    {
+      "id": "s88",
+      "index": 88,
+      "startMs": 674359,
+      "endMs": 679000,
+      "target": "비가 오고 천둥이 쳐요.",
+      "translation": "Chove e troveja.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "오다",
+          "surface": "오",
+          "start": 3,
+          "end": 4
+        },
+        {
+          "lemma": "천둥",
+          "surface": "천둥",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "치다",
+          "surface": "쳐",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s89",
+      "index": 89,
+      "startMs": 681599,
+      "endMs": 685840,
+      "target": "어제는 날씨가 어땠어요?",
+      "translation": "Como estava o tempo ontem?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어땠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s90",
+      "index": 90,
+      "startMs": 689560,
+      "endMs": 694159,
+      "target": "어제도 비가 많이 왔어요.",
+      "translation": "Ontem também choveu muito.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "많이",
+          "surface": "많이",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "오다",
+          "surface": "왔",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "index": 91,
+      "startMs": 697440,
+      "endMs": 701599,
+      "target": "내일도 비가 올까요?",
+      "translation": "Será que amanhã também vai chover?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "lemma": "오다",
+          "surface": "올",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "index": 92,
+      "startMs": 705039,
+      "endMs": 710800,
+      "target": "네. 내일도 비가 올 거예요.",
+      "translation": "Sim. Amanhã também vai chover.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "비",
+          "surface": "비",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "오다",
+          "surface": "올",
+          "start": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "index": 93,
+      "startMs": 714920,
+      "endMs": 718920,
+      "target": "일기예보를 봤어요.",
+      "translation": "Eu vi a previsão do tempo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일기",
+          "surface": "일기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "예보",
+          "surface": "예보",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "보다",
+          "surface": "봤",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s94",
+      "index": 94,
+      "startMs": 721960,
+      "endMs": 727000,
+      "target": "그래요? 그럼 운전 조심하세요.",
+      "translation": "É mesmo? Então dirija com cuidado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그래",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "운전",
+          "surface": "운전",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "조심하다",
+          "surface": "조심하",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s95",
+      "index": 95,
+      "startMs": 735120,
+      "endMs": 738120,
+      "target": "여보세요?",
+      "translation": "Alô?",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s96",
+      "index": 96,
+      "startMs": 739680,
+      "endMs": 744560,
+      "target": "몰이 씨, 지금 어디에 있어요?",
+      "translation": "Mori, você está onde agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s97",
+      "index": 97,
+      "startMs": 747760,
+      "endMs": 751240,
+      "target": "서울에 있어요.",
+      "translation": "Estou em Seul.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s98",
+      "index": 98,
+      "startMs": 753920,
+      "endMs": 758839,
+      "target": "서울은 오늘 날씨가 어때요?",
+      "translation": "Como está o tempo em Seul hoje?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "서울",
+          "surface": "서울",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 7,
+          "end": 9
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 11,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "s99",
+      "index": 99,
+      "startMs": 762240,
+      "endMs": 765240,
+      "target": "추워요.",
+      "translation": "Está frio.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "춥다",
+          "surface": "추워",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s100",
+      "index": 100,
+      "startMs": 767360,
+      "endMs": 771560,
+      "target": "춥고 바람이 불어요.",
+      "translation": "Está frio e venta.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "춥다",
+          "surface": "춥",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 7,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "s101",
+      "index": 101,
+      "startMs": 774760,
+      "endMs": 779039,
+      "target": "어제는 날씨가 어땠어요?",
+      "translation": "Como estava o tempo ontem?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어땠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s102",
+      "index": 102,
+      "startMs": 783279,
+      "endMs": 787640,
+      "target": "어제도 너무 추웠어요.",
+      "translation": "Ontem também estava muito frio.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "너무",
+          "surface": "너무",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "춥다",
+          "surface": "추웠",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s103",
+      "index": 103,
+      "startMs": 791480,
+      "endMs": 795159,
+      "target": "내일도 추울까요?",
+      "translation": "Será que amanhã também vai estar frio?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "춥다",
+          "surface": "추울",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s104",
+      "index": 104,
+      "startMs": 798159,
+      "endMs": 805080,
+      "target": "네. 내일도 춥고 바람이 불 거예요.",
+      "translation": "Sim. Amanhã também vai estar frio e ventando.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "춥다",
+          "surface": "춥",
+          "start": 7,
+          "end": 8
+        },
+        {
+          "lemma": "바람",
+          "surface": "바람",
+          "start": 10,
+          "end": 12
+        },
+        {
+          "lemma": "불다",
+          "surface": "불",
+          "start": 14,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "s105",
+      "index": 105,
+      "startMs": 809279,
+      "endMs": 813399,
+      "target": "일기예보를 들었어요.",
+      "translation": "Eu ouvi a previsão do tempo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일기",
+          "surface": "일기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "예보",
+          "surface": "예보",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "듣다",
+          "surface": "들",
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "s106",
+      "index": 106,
+      "startMs": 816760,
+      "endMs": 821640,
+      "target": "그래요? 그럼 감기 조심하세요.",
+      "translation": "É mesmo? Então cuidado para não pegar um resfriado.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그래",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "감기",
+          "surface": "감기",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "조심하다",
+          "surface": "조심하",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s107",
+      "index": 107,
+      "startMs": 830960,
+      "endMs": 833960,
+      "target": "여보세요?",
+      "translation": "Alô?",
+      "speakerId": "part_b",
+      "tokens": []
+    },
+    {
+      "id": "s108",
+      "index": 108,
+      "startMs": 835560,
+      "endMs": 840440,
+      "target": "몰이 씨, 지금 어디에 있어요?",
+      "translation": "Mori, você está onde agora?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "몰이",
+          "surface": "몰이",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "지금",
+          "surface": "지금",
+          "start": 6,
+          "end": 8
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 13,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s109",
+      "index": 109,
+      "startMs": 843440,
+      "endMs": 847360,
+      "target": "제주도에 있어요.",
+      "translation": "Estou na Ilha de Jeju.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "제주도",
+          "surface": "제주도",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s110",
+      "index": 110,
+      "startMs": 850480,
+      "endMs": 855719,
+      "target": "제주도는 오늘 날씨가 어때요?",
+      "translation": "Como está o tempo em Jeju hoje?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "제주도",
+          "surface": "제주도",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "lemma": "오늘",
+          "surface": "오늘",
+          "start": 5,
+          "end": 7
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어때",
+          "start": 12,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "index": 111,
+      "startMs": 859159,
+      "endMs": 862159,
+      "target": "더워요.",
+      "translation": "Está quente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "덥다",
+          "surface": "더워",
+          "start": 0,
+          "end": 2
+        }
+      ]
+    },
+    {
+      "id": "s112",
+      "index": 112,
+      "startMs": 864399,
+      "endMs": 868039,
+      "target": "덥고 습해요.",
+      "translation": "Está quente e úmido.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "덥다",
+          "surface": "덥",
+          "start": 0,
+          "end": 1
+        },
+        {
+          "lemma": "습하다",
+          "surface": "습해",
+          "start": 3,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "s113",
+      "index": 113,
+      "startMs": 870719,
+      "endMs": 874960,
+      "target": "어제는 날씨가 어땠어요?",
+      "translation": "Como estava o tempo ontem?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "날씨",
+          "surface": "날씨",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "어떻다",
+          "surface": "어땠",
+          "start": 8,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "s114",
+      "index": 114,
+      "startMs": 878440,
+      "endMs": 882719,
+      "target": "어제도 아주 더웠어요.",
+      "translation": "Ontem também estava muito quente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "어제",
+          "surface": "어제",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "아주",
+          "surface": "아주",
+          "start": 4,
+          "end": 6
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더웠",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s115",
+      "index": 115,
+      "startMs": 885960,
+      "endMs": 889760,
+      "target": "내일도 더울까요?",
+      "translation": "Será que amanhã também vai estar quente?",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더울",
+          "start": 4,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "id": "s116",
+      "index": 116,
+      "startMs": 892880,
+      "endMs": 897960,
+      "target": "네. 내일도 더울 거예요.",
+      "translation": "Sim. Amanhã também vai estar quente.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "내일",
+          "surface": "내일",
+          "start": 3,
+          "end": 5
+        },
+        {
+          "lemma": "덥다",
+          "surface": "더울",
+          "start": 7,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s117",
+      "index": 117,
+      "startMs": 901360,
+      "endMs": 905399,
+      "target": "일기예보를 확인했어요.",
+      "translation": "Eu conferi a previsão do tempo.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "일기",
+          "surface": "일기",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "예보",
+          "surface": "예보",
+          "start": 2,
+          "end": 4
+        },
+        {
+          "lemma": "확인하다",
+          "surface": "확인했",
+          "start": 6,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "id": "s118",
+      "index": 118,
+      "startMs": 909240,
+      "endMs": 916560,
+      "target": "그래요? 그럼 더위 조심하세요.",
+      "translation": "É mesmo? Então cuidado com o calor.",
+      "speakerId": "part_b",
+      "tokens": [
+        {
+          "lemma": "그렇다",
+          "surface": "그래",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "lemma": "더위",
+          "surface": "더위",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "lemma": "조심하다",
+          "surface": "조심하",
+          "start": 11,
+          "end": 14
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "w-되다",
+      "segmentId": "",
+      "target": "되다",
+      "translation": "tornar-se / dar certo (-어야 되다 = precisar)",
+      "startMs": 53500,
+      "endMs": 58301,
+      "reading": null,
+      "context": "그래서 우산을 써야 돼요. — Por isso eu preciso usar guarda-chuva.",
+      "audioClipSrc": "media/tts/w7533c28db9b4.mp3",
+      "exampleAudioSrc": "media/frag/f86805fb1f98d.mp3",
+      "freqRank": 3,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "돼"
+      ],
+      "sceneSrc": "media/frames/s5881ff1beafb.jpg"
+    },
+    {
+      "id": "w-좋다",
+      "segmentId": "",
+      "target": "좋다",
+      "translation": "ser bom",
+      "startMs": 1500,
+      "endMs": 5661,
+      "reading": null,
+      "context": "날씨가 좋아요. — O tempo está bom.",
+      "audioClipSrc": "media/tts/wba40a6d673b6.mp3",
+      "exampleAudioSrc": "media/frag/fd7ff66016f4f.mp3",
+      "freqRank": 8,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "좋"
+      ],
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+    },
+    {
+      "id": "w-어떻다",
+      "segmentId": "",
+      "target": "어떻다",
+      "translation": "ser como (어때요? = como está?)",
+      "startMs": 407960,
+      "endMs": 412199,
+      "reading": null,
+      "context": "어제는 날씨가 어땠어요? — Como estava o tempo ontem?",
+      "audioClipSrc": "media/tts/w8166ae134267.mp3",
+      "exampleAudioSrc": "media/frag/fce13ba0c1a27.mp3",
+      "freqRank": 15,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "어땠"
+      ],
+      "sceneSrc": "media/frames/sc5eac415c81d.jpg"
+    },
+    {
+      "id": "w-쓰다",
+      "segmentId": "",
+      "target": "쓰다",
+      "translation": "usar / pôr (guarda-chuva, óculos); também: escrever",
+      "startMs": 53500,
+      "endMs": 58301,
+      "reading": null,
+      "context": "그래서 우산을 써야 돼요. — Por isso eu preciso usar guarda-chuva.",
+      "audioClipSrc": "media/tts/wb6aa6119faf1.mp3",
+      "exampleAudioSrc": "media/frag/fedf16594fe3a.mp3",
+      "freqRank": 72,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "써"
+      ],
+      "sceneSrc": "media/frames/s5881ff1beafb.jpg"
+    },
+    {
+      "id": "w-아주",
+      "segmentId": "",
+      "target": "아주",
+      "translation": "muito",
+      "startMs": 596840,
+      "endMs": 601120,
+      "reading": null,
+      "context": "어제도 아주 더웠어요. — Ontem também estava muito quente.",
+      "audioClipSrc": "media/tts/wed69c8876c7c.mp3",
+      "exampleAudioSrc": "media/frag/fc9858c235579.mp3",
+      "freqRank": 74,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s0b27105842e0.jpg"
+    },
+    {
+      "id": "w-나다",
+      "segmentId": "",
+      "target": "나다",
+      "translation": "sair / surgir (땀이 나다 = suar)",
+      "startMs": 27661,
+      "endMs": 31021,
+      "reading": null,
+      "context": "땀이 나요. — Sai suor.",
+      "audioClipSrc": "media/tts/w9cd22902e422.mp3",
+      "exampleAudioSrc": "media/frag/f23362ca44949.mp3",
+      "freqRank": 95,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "나"
+      ],
+      "sceneSrc": "media/frames/sd1e5ba504c3a.jpg"
+    },
+    {
+      "id": "w-곳",
+      "segmentId": "",
+      "target": "곳",
+      "translation": "lugar",
+      "startMs": 144741,
+      "endMs": 151341,
+      "reading": null,
+      "context": "여러분이 있는 곳은 지금 날씨가 어때요? — Como está o tempo agora aí onde você está?",
+      "audioClipSrc": "media/tts/w0f229ede96a8.mp3",
+      "exampleAudioSrc": "media/frag/f794c42dc9cb0.mp3",
+      "freqRank": 111,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sb2a25b105f6a.jpg"
+    },
+    {
+      "id": "w-손",
+      "segmentId": "",
+      "target": "손",
+      "translation": "mão",
+      "startMs": 110421,
+      "endMs": 113940,
+      "reading": null,
+      "context": "손이 시려요. — As mãos ficam geladas.",
+      "audioClipSrc": "media/tts/we0204577db22.mp3",
+      "exampleAudioSrc": "media/frag/fad137236bd6d.mp3",
+      "freqRank": 115,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sb03d578b8ce6.jpg"
+    },
+    {
+      "id": "w-조금",
+      "segmentId": "",
+      "target": "조금",
+      "translation": "um pouco",
+      "startMs": 42140,
+      "endMs": 45780,
+      "reading": null,
+      "context": "비가 조금 와요. — Chove um pouco.",
+      "audioClipSrc": "media/tts/w41cc107061e4.mp3",
+      "exampleAudioSrc": "media/frag/f6a8729e5e417.mp3",
+      "freqRank": 190,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s3dab6d8bca71.jpg"
+    },
+    {
+      "id": "w-조심하다",
+      "segmentId": "",
+      "target": "조심하다",
+      "translation": "ter cuidado",
+      "startMs": 446760,
+      "endMs": 451799,
+      "reading": null,
+      "context": "그래요? 그럼 운전 조심하세요. — É mesmo? Então dirija com cuidado.",
+      "audioClipSrc": "media/tts/w5b06ae4e1126.mp3",
+      "exampleAudioSrc": "media/frag/fb51b087b959f.mp3",
+      "freqRank": 271,
+      "topikLevel": "B",
+      "imageSrc": null,
+      "newWords": [
+        "조심하"
+      ],
+      "sceneSrc": "media/frames/se80e6b064f65.jpg"
+    },
+    {
+      "id": "w-옷",
+      "segmentId": "",
+      "target": "옷",
+      "translation": "roupa",
+      "startMs": 47981,
+      "endMs": 51420,
+      "reading": null,
+      "context": "옷이 젖어요. — A roupa molha.",
+      "audioClipSrc": "media/tts/w96b1d30300e5.mp3",
+      "exampleAudioSrc": "media/frag/f3a19e81f412e.mp3",
+      "freqRank": 275,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s92847c2a76cb.jpg"
+    },
+    {
+      "id": "w-입다",
+      "segmentId": "",
+      "target": "입다",
+      "translation": "vestir",
+      "startMs": 95501,
+      "endMs": 100501,
+      "reading": null,
+      "context": "그래서 코트를 입어야 돼요. — Por isso eu preciso vestir um casaco.",
+      "audioClipSrc": "media/tts/wb5e8b8c2a68f.mp3",
+      "exampleAudioSrc": "media/frag/fae2ca4c07f91.mp3",
+      "freqRank": 346,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "입"
+      ],
+      "sceneSrc": "media/frames/s7fdfc5653204.jpg"
+    },
+    {
+      "id": "w-확인하다",
+      "segmentId": "",
+      "target": "확인하다",
+      "translation": "conferir / verificar",
+      "startMs": 616239,
+      "endMs": 620320,
+      "reading": null,
+      "context": "일기예보를 확인했어요. — Eu conferi a previsão do tempo.",
+      "audioClipSrc": "media/tts/w72f159f1b8e9.mp3",
+      "exampleAudioSrc": "media/frag/f2e988f0e107a.mp3",
+      "freqRank": 362,
+      "topikLevel": "B",
+      "imageSrc": null,
+      "newWords": [
+        "확인했"
+      ],
+      "sceneSrc": "media/frames/s501b76291a96.jpg"
+    },
+    {
+      "id": "w-준비하다",
+      "segmentId": "",
+      "target": "준비하다",
+      "translation": "preparar",
+      "startMs": 155261,
+      "endMs": 161261,
+      "reading": null,
+      "context": "그런 날씨에 뭐를 준비해야 돼요? — Com esse tempo, o que você precisa preparar?",
+      "audioClipSrc": "media/tts/wf6ee8aa1f415.mp3",
+      "exampleAudioSrc": "media/frag/f4ca9d37cb40e.mp3",
+      "freqRank": 409,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "준비해"
+      ],
+      "sceneSrc": "media/frames/s1b93e62c4815.jpg"
+    },
+    {
+      "id": "w-걷다",
+      "segmentId": "",
+      "target": "걷다",
+      "translation": "andar / caminhar",
+      "startMs": 136660,
+      "endMs": 141741,
+      "reading": null,
+      "context": "그래서 천천히 걸어야 돼요. — Por isso eu preciso andar devagar.",
+      "audioClipSrc": "media/tts/wb2a554728020.mp3",
+      "exampleAudioSrc": "media/frag/f31de6f042845.mp3",
+      "freqRank": 514,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "걸"
+      ],
+      "sceneSrc": "media/frames/s7e6bb01c1084.jpg"
+    },
+    {
+      "id": "w-천천히",
+      "segmentId": "",
+      "target": "천천히",
+      "translation": "devagar",
+      "startMs": 136660,
+      "endMs": 141741,
+      "reading": null,
+      "context": "그래서 천천히 걸어야 돼요. — Por isso eu preciso andar devagar.",
+      "audioClipSrc": "media/tts/w418765a73d85.mp3",
+      "exampleAudioSrc": "media/frag/f358313438116.mp3",
+      "freqRank": 529,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s7e6bb01c1084.jpg"
+    },
+    {
+      "id": "w-바람",
+      "segmentId": "",
+      "target": "바람",
+      "translation": "vento",
+      "startMs": 85221,
+      "endMs": 88941,
+      "reading": null,
+      "context": "바람이 불어요. — O vento sopra.",
+      "audioClipSrc": "media/tts/w031fefa02685.mp3",
+      "exampleAudioSrc": "media/frag/f324c74d29f53.mp3",
+      "freqRank": 562,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/s9a3b31304977.jpg"
+    },
+    {
+      "id": "w-비",
+      "segmentId": "",
+      "target": "비",
+      "translation": "chuva",
+      "startMs": 396079,
+      "endMs": 399480,
+      "reading": null,
+      "context": "비가 와요. — Está chovendo.",
+      "audioClipSrc": "media/tts/w7120b736859f.mp3",
+      "exampleAudioSrc": "media/frag/f316a86cb0a31.mp3",
+      "freqRank": 649,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/sbc5ce7400334.jpg"
+    },
+    {
+      "id": "w-운전",
+      "segmentId": "",
+      "target": "운전",
+      "translation": "direção (운전하다 = dirigir)",
+      "startMs": 446760,
+      "endMs": 451799,
+      "reading": null,
+      "context": "그래요? 그럼 운전 조심하세요. — É mesmo? Então dirija com cuidado.",
+      "audioClipSrc": "media/tts/wef9d05ea37b5.mp3",
+      "exampleAudioSrc": "media/frag/fdbd0534a0840.mp3",
+      "freqRank": 1377,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [],
+      "sceneSrc": "media/frames/se80e6b064f65.jpg"
+    },
+    {
+      "id": "w-춥다",
+      "segmentId": "",
+      "target": "춥다",
+      "translation": "estar frio (o tempo)",
+      "startMs": 516440,
+      "endMs": 520120,
+      "reading": null,
+      "context": "내일도 추울까요? — Será que amanhã também vai estar frio?",
+      "audioClipSrc": "media/tts/w77f24e3213b9.mp3",
+      "exampleAudioSrc": "media/frag/f24f03158a5b0.mp3",
+      "freqRank": 1409,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "newWords": [
+        "추울"
+      ],
+      "sceneSrc": "media/frames/s7dea8f7fb9ea.jpg"
+    }
+  ],
+  "source": {
+    "platform": "youtube",
+    "url": "https://youtu.be/X86WmJLSLRk",
+    "creator": "몰입한국어 Immersion in Korean",
+    "creatorHandle": null,
+    "parts": [
+      {
+        "url": "https://youtu.be/X86WmJLSLRk",
+        "startMs": 0,
+        "title": "우산을 써야 돼요"
+      },
+      {
+        "url": "https://youtu.be/JnQElvNOHyQ",
+        "startMs": 371700,
+        "title": "오늘 날씨가 어때요?"
+      }
+    ]
+  },
+  "difficulty": {
+    "cefr": "A1",
+    "comprehensibilityHint": "A mesma frase volta nos três tempos (hoje, ontem, amanhã) em cada ligação.",
+    "newVocabCount": null
+  },
+  "primePreview": [
+    {
+      "id": "p1",
+      "startMs": 1500,
+      "endMs": 81181,
+      "summary": "Primeira história: o tempo manda no que você faz. Sol forte ofusca os olhos — precisa de óculos escuros. Calor dá suor — precisa beber muita água. Chuva fina molha a roupa — precisa de guarda-chuva. Chuva forte molha a meia — precisa de galocha.",
+      "segmentIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "p2",
+      "startMs": 85221,
+      "endMs": 161261,
+      "summary": "Vento e frio — precisa de casaco. Frio demais gela as mãos — precisa de luvas. Neve deixa escorregadio — precisa andar devagar. E aí onde você está, como está o tempo?",
+      "segmentIds": [
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20",
+        "s21",
+        "s22",
+        "s23"
+      ]
+    },
+    {
+      "id": "p3",
+      "startMs": 172421,
+      "endMs": 370661,
+      "summary": "A mesma sequência de novo (2ª vez).",
+      "segmentIds": [
+        "s24",
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32",
+        "s33",
+        "s34",
+        "s35",
+        "s36",
+        "s37",
+        "s38",
+        "s39",
+        "s40",
+        "s41",
+        "s42",
+        "s43",
+        "s44",
+        "s45",
+        "s46"
+      ]
+    },
+    {
+      "id": "p4",
+      "startMs": 373200,
+      "endMs": 451799,
+      "summary": "Segunda história: um telefonema. «Alô, Mori, você está onde?» — em Busan, chovendo e trovejando. Ontem também choveu muito; amanhã também vai chover, ela viu a previsão. «Então dirija com cuidado.»",
+      "segmentIds": [
+        "s47",
+        "s48",
+        "s49",
+        "s50",
+        "s51",
+        "s52",
+        "s53",
+        "s54",
+        "s55",
+        "s56",
+        "s57",
+        "s58"
+      ]
+    },
+    {
+      "id": "p5",
+      "startMs": 460640,
+      "endMs": 542600,
+      "summary": "A mesma ligação, agora de Seul: frio e vento, ontem e amanhã também. «Então cuidado para não pegar um resfriado.»",
+      "segmentIds": [
+        "s59",
+        "s60",
+        "s61",
+        "s62",
+        "s63",
+        "s64",
+        "s65",
+        "s66",
+        "s67",
+        "s68",
+        "s69",
+        "s70"
+      ]
+    },
+    {
+      "id": "p6",
+      "startMs": 550359,
+      "endMs": 632600,
+      "summary": "E de Jeju: quente e úmido, ontem e amanhã também. «Então cuidado com o calor.»",
+      "segmentIds": [
+        "s71",
+        "s72",
+        "s73",
+        "s74",
+        "s75",
+        "s76",
+        "s77",
+        "s78",
+        "s79",
+        "s80",
+        "s81",
+        "s82"
+      ]
+    },
+    {
+      "id": "p7",
+      "startMs": 641280,
+      "endMs": 916560,
+      "summary": "As três ligações de novo, mais devagar (2ª vez).",
+      "segmentIds": [
+        "s83",
+        "s84",
+        "s85",
+        "s86",
+        "s87",
+        "s88",
+        "s89",
+        "s90",
+        "s91",
+        "s92",
+        "s93",
+        "s94",
+        "s95",
+        "s96",
+        "s97",
+        "s98",
+        "s99",
+        "s100",
+        "s101",
+        "s102",
+        "s103",
+        "s104",
+        "s105",
+        "s106",
+        "s107",
+        "s108",
+        "s109",
+        "s110",
+        "s111",
+        "s112",
+        "s113",
+        "s114",
+        "s115",
+        "s116",
+        "s117",
+        "s118"
+      ]
+    }
+  ],
+  "vocab": [],
+  "grammarPoints": [
+    "-아/어야 되다 (precisar fazer)",
+    "어때요? / 어땠어요? (como está / como estava)",
+    "그래서 (por isso)",
+    "-(으)ㄹ까요? (será que…?)",
+    "쓰다 / 입다 / 신다 / 끼다 (vestir conforme a peça)"
+  ],
+  "tags": [
+    "história",
+    "clima",
+    "necessidade",
+    "telefone"
+  ],
+  "titleTarget": "우산을 써야 돼요 · 오늘 날씨가 어때요?",
+  "premise": "Histórias ilustradas A0 sobre clima e necessidade. Trazem -어야 되다 (precisar fazer), 어때요? / 어땠어요? (como está / como estava), o conectivo 그래서 (por isso) e os verbos de vestir 쓰다 / 입다 / 신다 / 끼다.",
+  "createdAt": "2026-08-22T18:42:39.724033+00:00"
+}
