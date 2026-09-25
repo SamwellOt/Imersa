@@ -40,7 +40,8 @@ def synth_words(words: list[dict], lang: str, out_dir: str, force: bool = False)
             fn = tts_filename(w["lemma"])
             path = os.path.join(out_dir, fn)
             if force or not os.path.isfile(path) or os.path.getsize(path) == 0:
-                await edge_tts.Communicate(w["lemma"], voice).save(path)
+                # japonês: fala a grafia exibida (綺麗), não a chave UniDic (奇麗)
+                await edge_tts.Communicate(w.get("display") or w["lemma"], voice).save(path)
                 made += 1
             w["ttsFile"] = fn
         return made

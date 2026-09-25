@@ -203,7 +203,11 @@ export function useMediaController(
 
   useEffect(() => {
     const el = mediaRef.current;
-    if (el && opts.rate) el.playbackRate = opts.rate;
+    if (!el || !opts.rate) return;
+    // o default também: `load()` (o "tentar de novo" depois de um erro) volta
+    // `playbackRate` ao `defaultPlaybackRate`, e o vídeo retomava em 1×
+    el.defaultPlaybackRate = opts.rate;
+    el.playbackRate = opts.rate;
   }, [opts.rate]);
 
   const retry = useCallback(() => {
@@ -230,7 +234,9 @@ export function useMediaController(
     el.currentTime = Math.max(0, el.currentTime + delta / 1000);
   }, []);
   const setRate = useCallback((r: number) => {
-    if (mediaRef.current) mediaRef.current.playbackRate = r;
+    if (!mediaRef.current) return;
+    mediaRef.current.defaultPlaybackRate = r;
+    mediaRef.current.playbackRate = r;
   }, []);
   const goToSegment = useCallback(
     (i: number) => {

@@ -52,9 +52,14 @@ Em produção quem serve é o `server/` (Node puro, sem dependências): ele entr
 o `content/` e a API de sincronização na mesma porta. Para usar em **mais de um
 aparelho**, gere um código em *Ajustes → Sincronização* e cole o mesmo código no outro —
 o progresso passa a ir e voltar sozinho. Ver [`server/README.md`](server/README.md).
-Já vem com a **trilha A1 de coreano** (7 lições em vídeo) + uma **dose demo em
-japonês**, para você experimentar o fluxo completo. Nenhuma chave de API é necessária
+Já vem com a **trilha A1 de coreano** (7 lições em vídeo) e a **trilha B1 de
+japonês** (7 lições em vídeo para intermediário), para você experimentar o fluxo completo. Nenhuma chave de API é necessária
 para rodar o app (só para gerar conteúdo novo).
+
+Em **Ajustes → Repetição espaçada → Escrita na frente do card**, você pode exibir
+a palavra no idioma estudado junto do áudio, antes de revelar a resposta. A opção
+vem desligada e fica salva neste navegador. Funciona na revisão da dose e na
+revisão avulsa; a tradução continua no verso.
 
 ### Fábrica de doses (quando for adicionar conteúdo novo)
 ```bash
@@ -84,7 +89,13 @@ python -m dose_factory build-local \
 **1º idioma: Coreano 🇰🇷** — trilha **A1** com **7 lições em vídeo**, 15–20 min e **20 cards
 de palavra** cada (140 palavras distintas, sem repetir), em progressão i+1: histórias
 ilustradas A0 de fala lentíssima, subindo de «isto é / está em» até fala informal e
-planejamento de viagem. Há também uma dose **demo** em japonês (áudio). A arquitetura
+planejamento de viagem.
+
+**2º idioma: Japonês** — trilha **B1** com **7 lições em vídeo** de 16–25 min para quem
+está na transição **N4 → N3** (base: vocabulário JLPT N5 e N4 + as palavras frequentes sem nível JLPT;
+estrangeirismos em katakana não viram card): vlog de viagem, conversas e dois vlogs 100% nativos no fim. Os 20 cards de cada
+lição começam no N3, a régua de nível é o JLPT (N3 · N2 · N1), e as lições seguem uma
+escada de dificuldade contínua para os próximos lotes. A arquitetura
 segue idioma-agnóstica. Roda em **produção** na porta 8000, com **sincronização entre
 aparelhos**. Veja [`docs/roadmap.md`](docs/roadmap.md).
 

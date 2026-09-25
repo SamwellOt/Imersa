@@ -21,8 +21,8 @@ import { createHash } from "node:crypto";
 import { mkdirSync } from "node:fs";
 import { dirname } from "node:path";
 
-export const KINDS = ["card", "review", "doseProgress", "immersion", "setting"];
-const EVENT_KINDS = new Set(["review", "immersion"]);
+export const KINDS = ["card", "review", "doseProgress", "immersion", "setting", "mark"];
+const EVENT_KINDS = new Set(["review", "immersion", "mark"]);
 /** Teto de registros por resposta — mantém o payload previsível em conexões ruins. */
 export const PAGE = 2000;
 

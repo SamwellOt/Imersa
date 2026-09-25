@@ -23,6 +23,14 @@ _TIER_LABELS = {
     "ko": [("A", "Básico", "TOPIK I · 1–2급", "A1–A2"),
            ("B", "Intermediário", "TOPIK II · 3–4급", "B1–B2"),
            ("C", "Avançado", "TOPIK II · 5–6급", "C1–C2")],
+    # N5–N4 são a base declarada do aluno (sem card), então a escada começa no N3
+    "ja": [("A", "Intermediário", "JLPT N3", "B1"),
+           ("B", "Intermediário alto", "JLPT N2", "B2"),
+           ("C", "Avançado", "JLPT N1", "C1")],
+}
+_LADDER_SOURCES = {
+    "ko": "국립국어원 «한국어 학습용 어휘 목록» + TOPIK 어휘 목록 (2015)",
+    "ja": "listas de vocabulário JLPT (Jonathan Waller / tanos.co.uk)",
 }
 
 
@@ -44,7 +52,7 @@ def _vocab_ladder(lang: str) -> Optional[dict]:
         return None
     return {
         "exam": _EXAMS.get(lang, ""),
-        "source": "국립국어원 «한국어 학습용 어휘 목록» + TOPIK 어휘 목록 (2015)",
+        "source": _LADDER_SOURCES.get(lang, ""),
         "tiers": [{"tier": t, "name": n, "exam": e, "cefr": c, "words": sizes.get(t, 0)}
                   for t, n, e, c in labels],
     }

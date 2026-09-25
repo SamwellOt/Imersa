@@ -170,14 +170,18 @@ export async function continueAsGuest(): Promise<void> {
 export async function hasUnsyncedChanges(): Promise<boolean> {
   const state = await getSetting<{ pushedAt: number }>(`${LOCAL_SETTING}syncState`, { pushedAt: 0 });
   const since = state.pushedAt;
-  const [c, p, r, i, t] = await Promise.all([
-    db.cards.filter((x) => (x.updatedAt ?? 0) > since).count(),
-    db.doseProgress.filter((x) => (x.updatedAt ?? 0) > since).count(),
-    db.reviewLog.filter((x) => x.reviewedAt > since).count(),
-    db.immersionLog.filter((x) => x.at > since).count(),
+  // as mesmas tabelas que o sync sobe (`localChanges`): «não entendi» e ajustes
+  // ficavam de fora e sumiam sem aviso ao sair offline
+  const [c, p, r, i, t, m, s] = await Promise.all([
+    db.cards.where("updatedAt").above(since).count(),
+    db.doseProgress.where("updatedAt").above(since).count(),
+    db.reviewLog.where("reviewedAt").above(since).count(),
+    db.immersionLog.where("at").above(since).count(),
     db.tombstones.count(),
+    db.lineMarks.where("at").above(since).count(),
+    db.settings.filter((x) => !x.key.startsWith(LOCAL_SETTING) && (x.updatedAt ?? 0) > since).count(),
   ]);
-  return c + p + r + i + t > 0;
+  return c + p + r + i + t + m + s > 0;
 }
 
 /**

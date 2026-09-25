@@ -9,6 +9,7 @@ import { Library } from "@/pages/Library";
 import { Progress } from "@/pages/Progress";
 import { Settings } from "@/pages/Settings";
 import { Auth } from "@/pages/Auth";
+import { Listen } from "@/pages/Listen";
 import { applyTheme, useApp } from "@/lib/store";
 import { useAuth } from "@/lib/auth";
 import type { ReactNode } from "react";
@@ -79,6 +80,15 @@ export default function App() {
           element={
             <RequireOnboarding>
               <Review />
+            </RequireOnboarding>
+          }
+        />
+
+        <Route
+          path="/escuta/:doseId"
+          element={
+            <RequireOnboarding>
+              <Listen />
             </RequireOnboarding>
           }
         />

@@ -11,7 +11,524 @@
     "kind": "video",
     "src": "media/main.mp4",
     "durationSec": 954.721333,
-    "condensedAudioSrc": null,
+    "condensedAudioSrc": "media/condensed.mp3",
+    "condensedMap": [
+      [
+        0,
+        1350,
+        5380
+      ],
+      [
+        5380,
+        8040,
+        7120
+      ],
+      [
+        12500,
+        15989,
+        4860
+      ],
+      [
+        17360,
+        22444,
+        11897
+      ],
+      [
+        29257,
+        35775,
+        10165
+      ],
+      [
+        39422,
+        47146,
+        7547
+      ],
+      [
+        46969,
+        56016,
+        3218
+      ],
+      [
+        50187,
+        60129,
+        6422
+      ],
+      [
+        56609,
+        69183,
+        13177
+      ],
+      [
+        69786,
+        83104,
+        10548
+      ],
+      [
+        80334,
+        94605,
+        4623
+      ],
+      [
+        84957,
+        100887,
+        26833
+      ],
+      [
+        111790,
+        129560,
+        9800
+      ],
+      [
+        121590,
+        147341,
+        4380
+      ],
+      [
+        125970,
+        155648,
+        5081
+      ],
+      [
+        131051,
+        161477,
+        5964
+      ],
+      [
+        137015,
+        168172,
+        5764
+      ],
+      [
+        142779,
+        176471,
+        9098
+      ],
+      [
+        151877,
+        187682,
+        4620
+      ],
+      [
+        156497,
+        195385,
+        14643
+      ],
+      [
+        171140,
+        213493,
+        9987
+      ],
+      [
+        181127,
+        227539,
+        3957
+      ],
+      [
+        185084,
+        233296,
+        7617
+      ],
+      [
+        192701,
+        243913,
+        5915
+      ],
+      [
+        198616,
+        252218,
+        4780
+      ],
+      [
+        203396,
+        258015,
+        4851
+      ],
+      [
+        208247,
+        264552,
+        4698
+      ],
+      [
+        212945,
+        270655,
+        8753
+      ],
+      [
+        221698,
+        281489,
+        5479
+      ],
+      [
+        227177,
+        289015,
+        13082
+      ],
+      [
+        240259,
+        304426,
+        11258
+      ],
+      [
+        251517,
+        320378,
+        7433
+      ],
+      [
+        258950,
+        330783,
+        5019
+      ],
+      [
+        263969,
+        337024,
+        6259
+      ],
+      [
+        270228,
+        347846,
+        7672
+      ],
+      [
+        277900,
+        359966,
+        6228
+      ],
+      [
+        284128,
+        368250,
+        4140
+      ],
+      [
+        288268,
+        373450,
+        3500
+      ],
+      [
+        291768,
+        378850,
+        6060
+      ],
+      [
+        297828,
+        386769,
+        4301
+      ],
+      [
+        302129,
+        392850,
+        5460
+      ],
+      [
+        307589,
+        401010,
+        4259
+      ],
+      [
+        311848,
+        407090,
+        3500
+      ],
+      [
+        315348,
+        412489,
+        6101
+      ],
+      [
+        321449,
+        420290,
+        5180
+      ],
+      [
+        326629,
+        428730,
+        3500
+      ],
+      [
+        330129,
+        433650,
+        4339
+      ],
+      [
+        334468,
+        441090,
+        5739
+      ],
+      [
+        340207,
+        448489,
+        4141
+      ],
+      [
+        344348,
+        453929,
+        3500
+      ],
+      [
+        347848,
+        458690,
+        5940
+      ],
+      [
+        353788,
+        467650,
+        4380
+      ],
+      [
+        358168,
+        474530,
+        5579
+      ],
+      [
+        363747,
+        482090,
+        8299
+      ],
+      [
+        372046,
+        492170,
+        5900
+      ],
+      [
+        377946,
+        500450,
+        10900
+      ],
+      [
+        388846,
+        512970,
+        4019
+      ],
+      [
+        392865,
+        517810,
+        3500
+      ],
+      [
+        396365,
+        523169,
+        6100
+      ],
+      [
+        402465,
+        531970,
+        4459
+      ],
+      [
+        406924,
+        537929,
+        6180
+      ],
+      [
+        413104,
+        545889,
+        3741
+      ],
+      [
+        416845,
+        551530,
+        8220
+      ],
+      [
+        425065,
+        561090,
+        3500
+      ],
+      [
+        428565,
+        567650,
+        6779
+      ],
+      [
+        435344,
+        577130,
+        6220
+      ],
+      [
+        441564,
+        588049,
+        7060
+      ],
+      [
+        448624,
+        596730,
+        4140
+      ],
+      [
+        452764,
+        609850,
+        4139
+      ],
+      [
+        456903,
+        618769,
+        3500
+      ],
+      [
+        460403,
+        625890,
+        6020
+      ],
+      [
+        466423,
+        638850,
+        4260
+      ],
+      [
+        470683,
+        647569,
+        5421
+      ],
+      [
+        476104,
+        660249,
+        4261
+      ],
+      [
+        480365,
+        669369,
+        3500
+      ],
+      [
+        483865,
+        678090,
+        6099
+      ],
+      [
+        489964,
+        689809,
+        5181
+      ],
+      [
+        495145,
+        702170,
+        3500
+      ],
+      [
+        498645,
+        710010,
+        4299
+      ],
+      [
+        502944,
+        720530,
+        5740
+      ],
+      [
+        508684,
+        732809,
+        4181
+      ],
+      [
+        512865,
+        740809,
+        3500
+      ],
+      [
+        516365,
+        748010,
+        5940
+      ],
+      [
+        522305,
+        760330,
+        4340
+      ],
+      [
+        526645,
+        769410,
+        5620
+      ],
+      [
+        532265,
+        780929,
+        4341
+      ],
+      [
+        536606,
+        789129,
+        3500
+      ],
+      [
+        540106,
+        797490,
+        5900
+      ],
+      [
+        546006,
+        810129,
+        4421
+      ],
+      [
+        550427,
+        818890,
+        5780
+      ],
+      [
+        556207,
+        830809,
+        4260
+      ],
+      [
+        560467,
+        838650,
+        3500
+      ],
+      [
+        563967,
+        846610,
+        6100
+      ],
+      [
+        570067,
+        860170,
+        4420
+      ],
+      [
+        574487,
+        869290,
+        6220
+      ],
+      [
+        580707,
+        881330,
+        3820
+      ],
+      [
+        584527,
+        889249,
+        2901
+      ],
+      [
+        587428,
+        894970,
+        4140
+      ],
+      [
+        591568,
+        901970,
+        3500
+      ],
+      [
+        595068,
+        909809,
+        6741
+      ],
+      [
+        601809,
+        922249,
+        6141
+      ],
+      [
+        607950,
+        936290,
+        7100
+      ],
+      [
+        615050,
+        949210,
+        4779
+      ]
+    ],
     "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
   },
   "segments": [
@@ -24,6 +541,13 @@
       "translation": "Eu vou ao mercado.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "슈퍼",
           "surface": "슈퍼",
@@ -71,6 +595,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "드리다",
           "surface": "드릴",
           "start": 2,
@@ -117,10 +648,31 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 3,
           "end": 4
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "드리다",
@@ -140,6 +692,20 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "주다",
           "surface": "주",
           "start": 5,
@@ -155,7 +721,50 @@
       "target": "한 개,  두 개,  세 개,",
       "translation": "Um, dois, três,",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "한",
+          "surface": "한",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "두",
+          "surface": "두",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "세",
+          "surface": "세",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s8",
@@ -165,7 +774,36 @@
       "target": "네 개,  다섯 개",
       "translation": "quatro, cinco",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 6,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s9",
@@ -193,6 +831,27 @@
           "surface": "아이스크림",
           "start": 8,
           "end": 13
+        },
+        {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 14,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "여기",
+          "surface": "여기",
+          "start": 19,
+          "end": 21,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -229,6 +888,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "붕어빵",
           "surface": "붕어빵",
           "start": 3,
@@ -257,6 +923,13 @@
       "translation": "Eu vou à loja de frutas.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "과일",
           "surface": "과일",
@@ -310,6 +983,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "드리다",
           "surface": "드릴",
           "start": 2,
@@ -350,10 +1030,31 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 3,
           "end": 4
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "드리다",
@@ -379,6 +1080,20 @@
           "end": 1
         },
         {
+          "lemma": "열",
+          "surface": "열",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "주다",
           "surface": "주",
           "start": 6,
@@ -394,7 +1109,78 @@
       "target": "한 개, 두 개, 세 개, 네 개, 다섯 개",
       "translation": "Um, dois, três, quatro, cinco",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "한",
+          "surface": "한",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "두",
+          "surface": "두",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "세",
+          "surface": "세",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 20,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 23,
+          "end": 24,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s19",
@@ -404,7 +1190,78 @@
       "target": "여섯 개, 일곱 개, 여덟 개, 아홉 개, 열 개",
       "translation": "seis, sete, oito, nove, dez",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여섯",
+          "surface": "여섯",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "일곱",
+          "surface": "일곱",
+          "start": 6,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "여덟",
+          "surface": "여덟",
+          "start": 12,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "아홉",
+          "surface": "아홉",
+          "start": 18,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 21,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "열",
+          "surface": "열",
+          "start": 24,
+          "end": 25,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 26,
+          "end": 27,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s20",
@@ -426,6 +1283,27 @@
           "surface": "귤",
           "start": 4,
           "end": 5
+        },
+        {
+          "lemma": "열",
+          "surface": "열",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "여기",
+          "surface": "여기",
+          "start": 10,
+          "end": 12,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -462,6 +1340,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "귤",
           "surface": "귤",
           "start": 3,
@@ -490,6 +1375,13 @@
       "translation": "Eu vou ao mercado.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "슈퍼",
           "surface": "슈퍼",
@@ -537,6 +1429,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "드리다",
           "surface": "드릴",
           "start": 2,
@@ -583,10 +1482,31 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 3,
           "end": 4
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "드리다",
@@ -606,6 +1526,20 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "주다",
           "surface": "주",
           "start": 5,
@@ -621,7 +1555,78 @@
       "target": "한 개, 두 개, 세 개, 네 개, 다섯 개.",
       "translation": "Um, dois, três, quatro, cinco.",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "한",
+          "surface": "한",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "두",
+          "surface": "두",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "세",
+          "surface": "세",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 20,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 23,
+          "end": 24,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s30",
@@ -649,6 +1654,27 @@
           "surface": "아이스크림",
           "start": 8,
           "end": 13
+        },
+        {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 14,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "여기",
+          "surface": "여기",
+          "start": 19,
+          "end": 21,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -685,6 +1711,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "붕어빵",
           "surface": "붕어빵",
           "start": 3,
@@ -713,6 +1746,13 @@
       "translation": "Eu vou à loja de frutas.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "과일",
           "surface": "과일",
@@ -766,6 +1806,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "드리다",
           "surface": "드릴",
           "start": 2,
@@ -806,10 +1853,31 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 3,
           "end": 4
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "드리다",
@@ -835,6 +1903,20 @@
           "end": 1
         },
         {
+          "lemma": "열",
+          "surface": "열",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "주다",
           "surface": "주",
           "start": 6,
@@ -850,7 +1932,78 @@
       "target": "한 개, 두 개, 세 개, 네 개, 다섯 개.",
       "translation": "Um, dois, três, quatro, cinco.",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "한",
+          "surface": "한",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "두",
+          "surface": "두",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "세",
+          "surface": "세",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "다섯",
+          "surface": "다섯",
+          "start": 20,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 23,
+          "end": 24,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s40",
@@ -860,7 +2013,78 @@
       "target": "여섯 개, 일곱 개, 여덟 개, 아홉 개, 열 개.",
       "translation": "Seis, sete, oito, nove, dez.",
       "speakerId": "part_a",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여섯",
+          "surface": "여섯",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "일곱",
+          "surface": "일곱",
+          "start": 6,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "여덟",
+          "surface": "여덟",
+          "start": 12,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "아홉",
+          "surface": "아홉",
+          "start": 18,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 21,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "열",
+          "surface": "열",
+          "start": 24,
+          "end": 25,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 26,
+          "end": 27,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s41",
@@ -882,6 +2106,27 @@
           "surface": "귤",
           "start": 4,
           "end": 5
+        },
+        {
+          "lemma": "열",
+          "surface": "열",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "여기",
+          "surface": "여기",
+          "start": 10,
+          "end": 12,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -917,6 +2162,13 @@
       "translation": "Eu gosto muito de tangerina.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "귤",
           "surface": "귤",
@@ -959,6 +2211,13 @@
           "end": 4
         },
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "드리다",
           "surface": "드릴",
           "start": 10,
@@ -975,6 +2234,20 @@
       "translation": "Quantos vai querer?",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "드리다",
           "surface": "드릴",
@@ -997,6 +2270,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1008,7 +2302,22 @@
       "target": "1시예요.",
       "translation": "É uma hora.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s48",
@@ -1019,6 +2328,27 @@
       "translation": "Eu como o almoço à 1h05.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
         {
           "lemma": "점심",
           "surface": "점심",
@@ -1047,6 +2377,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1059,6 +2403,20 @@
       "translation": "Às 2h10 eu como a sobremesa.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "후식",
           "surface": "후식",
@@ -1087,6 +2445,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1098,7 +2477,22 @@
       "target": "3시예요.",
       "translation": "São três horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s53",
@@ -1109,6 +2503,20 @@
       "translation": "A partir das 3h15 eu tiro uma soneca.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "낮잠",
           "surface": "낮잠",
@@ -1136,13 +2544,43 @@
           "lemma": "한이",
           "surface": "한이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -1154,7 +2592,22 @@
       "target": "4시예요.",
       "translation": "São quatro horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s56",
@@ -1169,7 +2622,16 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "일어나다",
@@ -1188,6 +2650,27 @@
       "translation": "Eu levanto às 4h20.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
         {
           "lemma": "일어나다",
           "surface": "일어나",
@@ -1210,6 +2693,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1221,7 +2725,22 @@
       "target": "5시예요.",
       "translation": "São cinco horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s60",
@@ -1232,6 +2751,20 @@
       "translation": "Às 5h30 eu como um lanche.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "간식",
           "surface": "간식",
@@ -1260,6 +2793,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1272,6 +2819,13 @@
       "translation": "A partir das seis e meia eu cozinho.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
         {
           "lemma": "반",
           "surface": "반",
@@ -1306,6 +2860,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1317,7 +2892,22 @@
       "target": "7시예요.",
       "translation": "São sete horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s65",
@@ -1328,6 +2918,20 @@
       "translation": "Às 7h40 eu como o jantar.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "저녁",
           "surface": "저녁",
@@ -1356,6 +2960,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1368,6 +2986,20 @@
       "translation": "Às 8h50 eu lavo a louça.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "설거지",
           "surface": "설거지",
@@ -1396,6 +3028,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1407,7 +3060,22 @@
       "target": "9시예요.",
       "translation": "São nove horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s70",
@@ -1418,6 +3086,20 @@
       "translation": "Às 9h45 eu tomo banho.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "샤워",
           "surface": "샤워",
@@ -1446,6 +3128,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -1458,6 +3154,20 @@
       "translation": "Às 10h50 eu como a ceia.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
         {
           "lemma": "야식",
           "surface": "야식",
@@ -1503,7 +3213,15 @@
       "target": "네.",
       "translation": "Sim.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s75",
@@ -1519,6 +3237,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1530,7 +3269,22 @@
       "target": "11시예요.",
       "translation": "São onze horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s77",
@@ -1541,6 +3295,20 @@
       "translation": "Às 11h55 eu me deito na cama.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
         {
           "lemma": "침대",
           "surface": "침대",
@@ -1565,6 +3333,20 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "잠",
           "surface": "잠",
           "start": 9,
@@ -1587,6 +3369,13 @@
       "translation": "Mas estou tão cheio que o sono não vem.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "너무",
           "surface": "너무",
@@ -1635,6 +3424,13 @@
           "end": 2
         },
         {
+          "lemma": "줄",
+          "surface": "줄",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "알다",
           "surface": "알",
           "start": 5,
@@ -1656,6 +3452,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1667,7 +3484,22 @@
       "target": "1시예요.",
       "translation": "É uma hora.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s83",
@@ -1678,6 +3510,27 @@
       "translation": "Eu como o almoço à 1h05.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
         {
           "lemma": "점심",
           "surface": "점심",
@@ -1706,6 +3559,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1718,6 +3585,20 @@
       "translation": "Às 2h10 eu como a sobremesa.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "후식",
           "surface": "후식",
@@ -1746,6 +3627,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1757,7 +3659,22 @@
       "target": "3시예요.",
       "translation": "São três horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s88",
@@ -1768,6 +3685,20 @@
       "translation": "A partir das 3h15 eu tiro uma soneca.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "낮잠",
           "surface": "낮잠",
@@ -1795,13 +3726,43 @@
           "lemma": "한이",
           "surface": "한이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -1813,7 +3774,22 @@
       "target": "4시예요.",
       "translation": "São quatro horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s91",
@@ -1828,7 +3804,16 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "일어나다",
@@ -1847,6 +3832,27 @@
       "translation": "Eu levanto às 4h20.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
         {
           "lemma": "일어나다",
           "surface": "일어나",
@@ -1869,6 +3875,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1880,7 +3907,22 @@
       "target": "5시예요.",
       "translation": "São cinco horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s95",
@@ -1891,6 +3933,20 @@
       "translation": "Às 5h30 eu como um lanche.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "간식",
           "surface": "간식",
@@ -1919,6 +3975,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1931,6 +4001,13 @@
       "translation": "A partir das seis e meia eu cozinho.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
         {
           "lemma": "반",
           "surface": "반",
@@ -1965,6 +4042,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1976,7 +4074,22 @@
       "target": "7시예요.",
       "translation": "São sete horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s100",
@@ -1987,6 +4100,20 @@
       "translation": "Às 7h40 eu como o jantar.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "저녁",
           "surface": "저녁",
@@ -2015,6 +4142,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -2027,6 +4168,20 @@
       "translation": "Às 8h50 eu lavo a louça.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "설거지",
           "surface": "설거지",
@@ -2055,6 +4210,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -2066,7 +4242,22 @@
       "target": "9시예요.",
       "translation": "São nove horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s105",
@@ -2077,6 +4268,20 @@
       "translation": "Às 9h45 eu tomo banho.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
         {
           "lemma": "샤워",
           "surface": "샤워",
@@ -2105,6 +4310,20 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -2117,6 +4336,20 @@
       "translation": "Às 10h50 eu como a ceia.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
         {
           "lemma": "야식",
           "surface": "야식",
@@ -2162,7 +4395,15 @@
       "target": "네.",
       "translation": "Sim.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s110",
@@ -2178,6 +4419,27 @@
           "surface": "지금",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -2189,7 +4451,22 @@
       "target": "11시예요.",
       "translation": "São onze horas.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s112",
@@ -2200,6 +4477,20 @@
       "translation": "Às 11h55 eu me deito na cama.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
         {
           "lemma": "침대",
           "surface": "침대",
@@ -2224,6 +4515,20 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "시",
+          "surface": "시",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "잠",
           "surface": "잠",
           "start": 9,
@@ -2246,6 +4551,13 @@
       "translation": "Mas estou tão cheio que o sono não vem.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "너무",
           "surface": "너무",
@@ -2294,6 +4606,13 @@
           "end": 2
         },
         {
+          "lemma": "줄",
+          "surface": "줄",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "알다",
           "surface": "알",
           "start": 5,
@@ -2317,10 +4636,12 @@
       "freqRank": 1,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sb93253fe7ff0.jpg",
       "newWords": [
         "해"
       ],
-      "sceneSrc": "media/frames/sb93253fe7ff0.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-알다",
@@ -2336,10 +4657,12 @@
       "freqRank": 5,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sa6b6766115aa.jpg",
       "newWords": [
         "알"
       ],
-      "sceneSrc": "media/frames/sa6b6766115aa.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-그렇다",
@@ -2352,13 +4675,15 @@
       "context": "그럴 줄 알았어요. — Eu sabia que ia ser assim.",
       "audioClipSrc": "media/tts/w86cb52720b0b.mp3",
       "exampleAudioSrc": "media/frag/f675184c8159a.mp3",
-      "freqRank": 10,
+      "freqRank": 11,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sa6b6766115aa.jpg",
       "newWords": [
         "그럴"
       ],
-      "sceneSrc": "media/frames/sa6b6766115aa.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-지금",
@@ -2374,8 +4699,10 @@
       "freqRank": 26,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s294c89d0b9c5.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s294c89d0b9c5.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-주다",
@@ -2388,13 +4715,15 @@
       "context": "다섯 개 주세요. — Me dá cinco, por favor.",
       "audioClipSrc": "media/tts/w62a806f1cac8.mp3",
       "exampleAudioSrc": "media/frag/fbc6cf1b29799.mp3",
-      "freqRank": 37,
+      "freqRank": 35,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s8fa167f423ee.jpg",
       "newWords": [
         "주"
       ],
-      "sceneSrc": "media/frames/s8fa167f423ee.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-너무",
@@ -2407,11 +4736,13 @@
       "context": "저는 귤을 너무 좋아해요. — Eu gosto muito de tangerina.",
       "audioClipSrc": "media/tts/w5f8fad3be17f.mp3",
       "exampleAudioSrc": "media/frag/fd7c3426bf25a.mp3",
-      "freqRank": 48,
+      "freqRank": 46,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s65391d4f6299.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s65391d4f6299.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-또",
@@ -2424,11 +4755,13 @@
       "context": "또 먹어요? — Vai comer de novo?",
       "audioClipSrc": "media/tts/w4ad93346195b.mp3",
       "exampleAudioSrc": "media/frag/f3a7a2f324a68.mp3",
-      "freqRank": 68,
+      "freqRank": 70,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s6483aff2fcbf.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s6483aff2fcbf.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-어서",
@@ -2441,11 +4774,13 @@
       "context": "어서 오세요. — Seja bem-vindo.",
       "audioClipSrc": "media/tts/waeac95f2d319.mp3",
       "exampleAudioSrc": "media/frag/f6d59cf166e8f.mp3",
-      "freqRank": 70,
+      "freqRank": 76,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s1b00353223c9.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s1b00353223c9.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-먹다",
@@ -2458,13 +4793,15 @@
       "context": "또 먹어요? — Vai comer de novo?",
       "audioClipSrc": "media/tts/wa8d7fa09a2fa.mp3",
       "exampleAudioSrc": "media/frag/fe3edd28b56a9.mp3",
-      "freqRank": 76,
+      "freqRank": 72,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s6483aff2fcbf.jpg",
       "newWords": [
         "먹"
       ],
-      "sceneSrc": "media/frames/s6483aff2fcbf.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-일어나다",
@@ -2477,13 +4814,15 @@
       "context": "몰이 씨, 일어나세요. — Mori, levante-se.",
       "audioClipSrc": "media/tts/wb6e78fc82701.mp3",
       "exampleAudioSrc": "media/frag/f8d3616143f55.mp3",
-      "freqRank": 122,
+      "freqRank": 112,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sed95af424565.jpg",
       "newWords": [
         "일어나"
       ],
-      "sceneSrc": "media/frames/sed95af424565.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-좋아하다",
@@ -2496,13 +4835,15 @@
       "context": "저는 귤을 너무 좋아해요. — Eu gosto muito de tangerina.",
       "audioClipSrc": "media/tts/w46633efb390b.mp3",
       "exampleAudioSrc": "media/frag/f7397e26701e7.mp3",
-      "freqRank": 127,
+      "freqRank": 124,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s65391d4f6299.jpg",
       "newWords": [
         "좋아해"
       ],
-      "sceneSrc": "media/frames/s65391d4f6299.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-감사하다",
@@ -2515,13 +4856,15 @@
       "context": "감사합니다. — Obrigado.",
       "audioClipSrc": "media/tts/w6c08bdfe157d.mp3",
       "exampleAudioSrc": "media/frag/f7a3819b69856.mp3",
-      "freqRank": 134,
+      "freqRank": 132,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s94dacec1a15a.jpg",
       "newWords": [
         "감사합"
       ],
-      "sceneSrc": "media/frames/s94dacec1a15a.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-드리다",
@@ -2534,13 +4877,15 @@
       "context": "뭐 드릴까요? — O que vai querer?",
       "audioClipSrc": "media/tts/w88fbc80e15cc.mp3",
       "exampleAudioSrc": "media/frag/fa19eedb88186.mp3",
-      "freqRank": 189,
+      "freqRank": 161,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s07cdc0b9ecb0.jpg",
       "newWords": [
         "드릴"
       ],
-      "sceneSrc": "media/frames/s07cdc0b9ecb0.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-자다",
@@ -2553,13 +4898,15 @@
       "context": "그리고 12시에 잠을 자요. — E às 12h eu durmo.",
       "audioClipSrc": "media/tts/wa1b6522e559e.mp3",
       "exampleAudioSrc": "media/frag/f9a13d89e91ed.mp3",
-      "freqRank": 223,
+      "freqRank": 197,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sfcfc8b7784d8.jpg",
       "newWords": [
         "자"
       ],
-      "sceneSrc": "media/frames/sfcfc8b7784d8.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-저녁",
@@ -2572,11 +4919,13 @@
       "context": "7시 40분에 저녁을 먹어요. — Às 7h40 eu como o jantar.",
       "audioClipSrc": "media/tts/w7ed29071b3cc.mp3",
       "exampleAudioSrc": "media/frag/f03672f61e7e6.mp3",
-      "freqRank": 324,
+      "freqRank": 331,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sb4093a4e3c51.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sb4093a4e3c51.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-잠",
@@ -2592,8 +4941,10 @@
       "freqRank": 449,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sfcfc8b7784d8.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sfcfc8b7784d8.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-가게",
@@ -2606,11 +4957,13 @@
       "context": "저는 과일 가게에 가요. — Eu vou à loja de frutas.",
       "audioClipSrc": "media/tts/wfc79037e7087.mp3",
       "exampleAudioSrc": "media/frag/fe744de249faf.mp3",
-      "freqRank": 450,
+      "freqRank": 445,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7ca928615423.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s7ca928615423.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-침대",
@@ -2623,11 +4976,13 @@
       "context": "11시 55분에 침대에 누워요. — Às 11h55 eu me deito na cama.",
       "audioClipSrc": "media/tts/we724ec66e17f.mp3",
       "exampleAudioSrc": "media/frag/f6481da02a764.mp3",
-      "freqRank": 480,
+      "freqRank": 483,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s437725d6bc52.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s437725d6bc52.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-반",
@@ -2640,11 +4995,13 @@
       "context": "6시 반부터 요리를 해요. — A partir das seis e meia eu cozinho.",
       "audioClipSrc": "media/tts/wcd494f06af25.mp3",
       "exampleAudioSrc": "media/frag/ff9592e434c0a.mp3",
-      "freqRank": 557,
+      "freqRank": 540,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sb93253fe7ff0.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sb93253fe7ff0.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-손님",
@@ -2657,11 +5014,13 @@
       "context": "손님, 귤 열 개 여기 있어요. — Freguês, aqui estão as dez tangerinas.",
       "audioClipSrc": "media/tts/wa5bb6d1af868.mp3",
       "exampleAudioSrc": "media/frag/f8a6057b52ff6.mp3",
-      "freqRank": 698,
+      "freqRank": 642,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s82eca3073b87.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s82eca3073b87.jpg"
+      "kind": null,
+      "focus": null
     }
   ],
   "source": {
@@ -2892,5 +5251,793 @@
   ],
   "titleTarget": "귤이 몇 개 있어요? · 지금 몇 시예요?",
   "premise": "Histórias ilustradas A0 sobre contagem. A primeira ensina os números nativos (하나~열) com o contador 개 e as frases de loja (어서 오세요 / 주세요). A segunda ensina as horas (몇 시) com os verbos da rotina.",
-  "createdAt": "2026-08-22T18:42:29.051990+00:00"
+  "glossary": [
+    {
+      "lemma": "저",
+      "target": "저",
+      "reading": null,
+      "meaning": "eu (formal)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "슈퍼",
+      "target": "슈퍼",
+      "reading": null,
+      "meaning": "mercadinho, supermercado",
+      "meaningEn": null,
+      "freqRank": 1163,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-슈퍼",
+        "segmentId": "s1",
+        "target": "슈퍼",
+        "translation": "mercadinho, supermercado",
+        "startMs": 1500,
+        "endMs": 6380,
+        "reading": null,
+        "context": "저는 슈퍼에 가요. — Eu vou ao mercado.",
+        "audioClipSrc": "media/tts/wf422d10c7590.mp3",
+        "exampleAudioSrc": "media/frag/fd5808e8fed78.mp3",
+        "freqRank": 1163,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+      }
+    },
+    {
+      "lemma": "가다",
+      "target": "가다",
+      "reading": null,
+      "meaning": "ir",
+      "meaningEn": null,
+      "freqRank": 7,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "오다",
+      "target": "오다",
+      "reading": null,
+      "meaning": "vir",
+      "meaningEn": null,
+      "freqRank": 14,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "뭐",
+      "target": "뭐",
+      "reading": null,
+      "meaning": "o quê",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "붕어빵",
+      "target": "붕어빵",
+      "reading": null,
+      "meaning": "bungeoppang (bolinho em forma de peixe, com recheio doce)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "card": {
+        "id": "w-붕어빵",
+        "segmentId": "s4",
+        "target": "붕어빵",
+        "translation": "bungeoppang (bolinho em forma de peixe, com recheio doce)",
+        "startMs": 16139,
+        "endMs": 20499,
+        "reading": null,
+        "context": "붕어빵 아이스크림 있어요? — Tem sorvete de bungeoppang?",
+        "audioClipSrc": "media/tts/w884b44eac371.mp3",
+        "exampleAudioSrc": "media/frag/f746eb2ba94ea.mp3",
+        "freqRank": null,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s72d74cf58020.jpg"
+      }
+    },
+    {
+      "lemma": "아이스크림",
+      "target": "아이스크림",
+      "reading": null,
+      "meaning": "sorvete",
+      "meaningEn": null,
+      "freqRank": 1605,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-아이스크림",
+        "segmentId": "s4",
+        "target": "아이스크림",
+        "translation": "sorvete",
+        "startMs": 16139,
+        "endMs": 20499,
+        "reading": null,
+        "context": "붕어빵 아이스크림 있어요? — Tem sorvete de bungeoppang?",
+        "audioClipSrc": "media/tts/wc015152068cf.mp3",
+        "exampleAudioSrc": "media/frag/fa27c8225db1a.mp3",
+        "freqRank": 1605,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s72d74cf58020.jpg"
+      }
+    },
+    {
+      "lemma": "있다",
+      "target": "있다",
+      "reading": null,
+      "meaning": "estar / ter / existir",
+      "meaningEn": null,
+      "freqRank": 2,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "네",
+      "target": "네",
+      "reading": null,
+      "meaning": "sim",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "몇",
+      "target": "몇",
+      "reading": null,
+      "meaning": "quantos (몇 시 = que horas)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "개",
+      "target": "개",
+      "reading": null,
+      "meaning": "(contador) unidades, coisas",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "다섯",
+      "target": "다섯",
+      "reading": null,
+      "meaning": "cinco",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "한",
+      "target": "한",
+      "reading": null,
+      "meaning": "um (antes de contador: 한 개)",
+      "meaningEn": null,
+      "freqRank": 2678,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "두",
+      "target": "두",
+      "reading": null,
+      "meaning": "dois (antes de contador: 두 개)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "세",
+      "target": "세",
+      "reading": null,
+      "meaning": "três (antes de contador: 세 개)",
+      "meaningEn": null,
+      "freqRank": 7557,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "여기",
+      "target": "여기",
+      "reading": null,
+      "meaning": "aqui",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "과일",
+      "target": "과일",
+      "reading": null,
+      "meaning": "fruta",
+      "meaningEn": null,
+      "freqRank": 3198,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-과일",
+        "segmentId": "s12",
+        "target": "과일",
+        "translation": "fruta",
+        "startMs": 69333,
+        "endMs": 73854,
+        "reading": null,
+        "context": "저는 과일 가게에 가요. — Eu vou à loja de frutas.",
+        "audioClipSrc": "media/tts/w6186e58085a8.mp3",
+        "exampleAudioSrc": "media/frag/f79275f334287.mp3",
+        "freqRank": 3198,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s7ca928615423.jpg"
+      }
+    },
+    {
+      "lemma": "귤",
+      "target": "귤",
+      "reading": null,
+      "meaning": "tangerina",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-귤",
+        "segmentId": "s15",
+        "target": "귤",
+        "translation": "tangerina",
+        "startMs": 83254,
+        "endMs": 86780,
+        "reading": null,
+        "context": "귤 있어요? — Tem tangerina?",
+        "audioClipSrc": "media/tts/w7d7360ccb9e0.mp3",
+        "exampleAudioSrc": "media/frag/f0ec57476416b.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s668a25eb463d.jpg"
+      }
+    },
+    {
+      "lemma": "열",
+      "target": "열",
+      "reading": null,
+      "meaning": "dez",
+      "meaningEn": null,
+      "freqRank": 1387,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "여섯",
+      "target": "여섯",
+      "reading": null,
+      "meaning": "seis",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "일곱",
+      "target": "일곱",
+      "reading": null,
+      "meaning": "sete",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "여덟",
+      "target": "여덟",
+      "reading": null,
+      "meaning": "oito",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "아홉",
+      "target": "아홉",
+      "reading": null,
+      "meaning": "nove",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "시",
+      "target": "시",
+      "reading": null,
+      "meaning": "hora (몇 시 = que horas)",
+      "meaningEn": null,
+      "freqRank": 564,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "이다",
+      "target": "이다",
+      "reading": null,
+      "meaning": "ser (copula: 이에요/예요)",
+      "meaningEn": null,
+      "freqRank": 1396,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "분",
+      "target": "분",
+      "reading": null,
+      "meaning": "minuto",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "점심",
+      "target": "점심",
+      "reading": null,
+      "meaning": "almoço; meio-dia",
+      "meaningEn": null,
+      "freqRank": 782,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-점심",
+        "segmentId": "s48",
+        "target": "점심",
+        "translation": "almoço; meio-dia",
+        "startMs": 379000,
+        "endMs": 384560,
+        "reading": null,
+        "context": "저는 1시 5분에 점심을 먹어요. — Eu como o almoço à 1h05.",
+        "audioClipSrc": "media/tts/w8c884a727b72.mp3",
+        "exampleAudioSrc": "media/frag/fc930aff7fd44.mp3",
+        "freqRank": 782,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s5d291f004678.jpg"
+      }
+    },
+    {
+      "lemma": "후식",
+      "target": "후식",
+      "reading": null,
+      "meaning": "sobremesa",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-후식",
+        "segmentId": "s50",
+        "target": "후식",
+        "translation": "sobremesa",
+        "startMs": 393000,
+        "endMs": 397960,
+        "reading": null,
+        "context": "2시 10분에 후식을 먹어요. — Às 2h10 eu como a sobremesa.",
+        "audioClipSrc": "media/tts/wd9ca58b8ade0.mp3",
+        "exampleAudioSrc": "media/frag/f51bf56482f73.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s5eff7111e64b.jpg"
+      }
+    },
+    {
+      "lemma": "낮잠",
+      "target": "낮잠",
+      "reading": null,
+      "meaning": "soneca, cochilo",
+      "meaningEn": null,
+      "freqRank": 3193,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-낮잠",
+        "segmentId": "s53",
+        "target": "낮잠",
+        "translation": "soneca, cochilo",
+        "startMs": 412639,
+        "endMs": 418240,
+        "reading": null,
+        "context": "3시 15분부터 낮잠을 자요. — A partir das 3h15 eu tiro uma soneca.",
+        "audioClipSrc": "media/tts/w442dbc217a71.mp3",
+        "exampleAudioSrc": "media/frag/f2564e3022ae4.mp3",
+        "freqRank": 3193,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/seca5b74a26af.jpg"
+      }
+    },
+    {
+      "lemma": "한이",
+      "target": "한이",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "씨",
+      "target": "씨",
+      "reading": null,
+      "meaning": "(~씨) senhor/senhora (tratamento)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "몰이",
+      "target": "몰이",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "간식",
+      "target": "간식",
+      "reading": null,
+      "meaning": "lanche",
+      "meaningEn": null,
+      "freqRank": 4176,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-간식",
+        "segmentId": "s60",
+        "target": "간식",
+        "translation": "lanche",
+        "startMs": 458840,
+        "endMs": 464280,
+        "reading": null,
+        "context": "5시 30분에 간식을 먹어요. — Às 5h30 eu como um lanche.",
+        "audioClipSrc": "media/tts/w9076ddcdd2e3.mp3",
+        "exampleAudioSrc": "media/frag/f4d2bedc61a11.mp3",
+        "freqRank": 4176,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb09f6b6b2fd1.jpg"
+      }
+    },
+    {
+      "lemma": "요리",
+      "target": "요리",
+      "reading": null,
+      "meaning": "cozinha, prato (요리를 하다 = cozinhar)",
+      "meaningEn": null,
+      "freqRank": 1150,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-요리",
+        "segmentId": "s62",
+        "target": "요리",
+        "translation": "cozinha, prato (요리를 하다 = cozinhar)",
+        "startMs": 474680,
+        "endMs": 479759,
+        "reading": null,
+        "context": "6시 반부터 요리를 해요. — A partir das seis e meia eu cozinho.",
+        "audioClipSrc": "media/tts/w38cf8918141f.mp3",
+        "exampleAudioSrc": "media/frag/f7581846d3042.mp3",
+        "freqRank": 1150,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb93253fe7ff0.jpg"
+      }
+    },
+    {
+      "lemma": "설거지",
+      "target": "설거지",
+      "reading": null,
+      "meaning": "lavar a louça",
+      "meaningEn": null,
+      "freqRank": 6899,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-설거지",
+        "segmentId": "s67",
+        "target": "설거지",
+        "translation": "lavar a louça",
+        "startMs": 505680,
+        "endMs": 511000,
+        "reading": null,
+        "context": "8시 50분에 설거지를 해요. — Às 8h50 eu lavo a louça.",
+        "audioClipSrc": "media/tts/wf50532e638a1.mp3",
+        "exampleAudioSrc": "media/frag/ffd8d14ae1f80.mp3",
+        "freqRank": 6899,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s3ac6f3b163d8.jpg"
+      }
+    },
+    {
+      "lemma": "샤워",
+      "target": "샤워",
+      "reading": null,
+      "meaning": "banho de chuveiro",
+      "meaningEn": null,
+      "freqRank": 2267,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-샤워",
+        "segmentId": "s70",
+        "target": "샤워",
+        "translation": "banho de chuveiro",
+        "startMs": 523319,
+        "endMs": 528919,
+        "reading": null,
+        "context": "9시 45분에 샤워를 해요. — Às 9h45 eu tomo banho.",
+        "audioClipSrc": "media/tts/wb8039ba05c08.mp3",
+        "exampleAudioSrc": "media/frag/f2016522856e5.mp3",
+        "freqRank": 2267,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s323c4e8dcf27.jpg"
+      }
+    },
+    {
+      "lemma": "야식",
+      "target": "야식",
+      "reading": null,
+      "meaning": "lanche da noite, ceia",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "card": {
+        "id": "w-야식",
+        "segmentId": "s72",
+        "target": "야식",
+        "translation": "lanche da noite, ceia",
+        "startMs": 538079,
+        "endMs": 543759,
+        "reading": null,
+        "context": "10시 50분에 야식을 먹어요. — Às 10h50 eu como a ceia.",
+        "audioClipSrc": "media/tts/wfc0c70ef3c48.mp3",
+        "exampleAudioSrc": "media/frag/ff5d90596631a.mp3",
+        "freqRank": null,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sea095cbe4e00.jpg"
+      }
+    },
+    {
+      "lemma": "눕다",
+      "target": "눕다",
+      "reading": null,
+      "meaning": "deitar-se",
+      "meaningEn": null,
+      "freqRank": 1049,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-눕다",
+        "segmentId": "s77",
+        "target": "눕다",
+        "translation": "deitar-se",
+        "startMs": 567800,
+        "endMs": 574079,
+        "reading": null,
+        "context": "11시 55분에 침대에 누워요. — Às 11h55 eu me deito na cama.",
+        "audioClipSrc": "media/tts/w1bcaccb6e32e.mp3",
+        "exampleAudioSrc": "media/frag/ff3c812c8a576.mp3",
+        "freqRank": 1049,
+        "topikLevel": "A",
+        "newWords": [
+          "누워"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s437725d6bc52.jpg"
+      }
+    },
+    {
+      "lemma": "그리고",
+      "target": "그리고",
+      "reading": null,
+      "meaning": "e, e também",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "그런데",
+      "target": "그런데",
+      "reading": null,
+      "meaning": "mas, só que",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "배부르다",
+      "target": "배부르다",
+      "reading": null,
+      "meaning": "estar de barriga cheia",
+      "meaningEn": null,
+      "freqRank": 9576,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-배부르다",
+        "segmentId": "s79",
+        "target": "배부르다",
+        "translation": "estar de barriga cheia",
+        "startMs": 588199,
+        "endMs": 594759,
+        "reading": null,
+        "context": "그런데 너무 배불러서 잠이 안 와요. — Mas estou tão cheio que o sono não vem.",
+        "audioClipSrc": "media/tts/wd99fa94469cb.mp3",
+        "exampleAudioSrc": "media/frag/fb6e0d86cc909.mp3",
+        "freqRank": 9576,
+        "topikLevel": "A",
+        "newWords": [
+          "배불"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8dc89ff2d6b6.jpg"
+      }
+    },
+    {
+      "lemma": "안",
+      "target": "안",
+      "reading": null,
+      "meaning": "não (vem antes do verbo)",
+      "meaningEn": null,
+      "freqRank": 6,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "줄",
+      "target": "줄",
+      "reading": null,
+      "meaning": "(~ㄹ 줄 알다) saber que; saber como",
+      "meaningEn": null,
+      "freqRank": 61,
+      "topikLevel": "A",
+      "dict": true
+    }
+  ],
+  "sentenceCards": [
+    {
+      "id": "s-45d312a6ef",
+      "kind": "sentence",
+      "segmentId": "s5",
+      "target": "네, 있어요. 몇 개 드릴까요?",
+      "translation": "Sim, tem. Quantos vai querer?",
+      "startMs": 22594,
+      "endMs": 29352,
+      "audioClipSrc": "media/frag/fbdd03518ef34.mp3",
+      "exampleAudioSrc": "media/frag/fbdd03518ef34.mp3",
+      "freqRank": 161,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "드리다",
+        "target": "드리다",
+        "meaning": "dar (forma humilde)",
+        "reading": null,
+        "start": 12,
+        "end": 14
+      },
+      "sceneSrc": "media/frames/saab6e68a9741.jpg"
+    },
+    {
+      "id": "s-c463d30625",
+      "kind": "sentence",
+      "segmentId": "s13",
+      "target": "어서 오세요.",
+      "translation": "Seja bem-vindo.",
+      "startMs": 74979,
+      "endMs": 78396,
+      "audioClipSrc": "media/frag/f4cfd387f6ca0.mp3",
+      "exampleAudioSrc": "media/frag/f4cfd387f6ca0.mp3",
+      "freqRank": 76,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "어서",
+        "target": "어서",
+        "meaning": "depressa (어서 오세요 = seja bem-vindo)",
+        "reading": null,
+        "start": 0,
+        "end": 2
+      },
+      "sceneSrc": "media/frames/s365958c712de.jpg"
+    },
+    {
+      "id": "s-0b4f949904",
+      "kind": "sentence",
+      "segmentId": "s57",
+      "target": "저는 4시 20분에 일어나요.",
+      "translation": "Eu levanto às 4h20.",
+      "startMs": 441240,
+      "endMs": 446479,
+      "audioClipSrc": "media/frag/fb2c5c3dc1ad6.mp3",
+      "exampleAudioSrc": "media/frag/fb2c5c3dc1ad6.mp3",
+      "freqRank": 112,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "일어나다",
+        "target": "일어나다",
+        "meaning": "levantar-se / acordar",
+        "reading": null,
+        "start": 11,
+        "end": 14
+      },
+      "sceneSrc": "media/frames/s3640c20e41cd.jpg"
+    },
+    {
+      "id": "s-6ca334d9c7",
+      "kind": "sentence",
+      "segmentId": "s54",
+      "target": "한이 씨, 지금 몇 시예요?",
+      "translation": "Hani, que horas são agora?",
+      "startMs": 420440,
+      "endMs": 425120,
+      "audioClipSrc": "media/frag/f141b4a22d9ce.mp3",
+      "exampleAudioSrc": "media/frag/f141b4a22d9ce.mp3",
+      "freqRank": 26,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "지금",
+        "target": "지금",
+        "meaning": "agora",
+        "reading": null,
+        "start": 6,
+        "end": 8
+      },
+      "sceneSrc": "media/frames/se70f4f01e0fc.jpg"
+    },
+    {
+      "id": "s-acfe8960ca",
+      "kind": "sentence",
+      "segmentId": "s28",
+      "target": "다섯 개 주세요.",
+      "translation": "Me dá cinco, por favor.",
+      "startMs": 187832,
+      "endMs": 191952,
+      "audioClipSrc": "media/frag/f4106c2cf7c83.mp3",
+      "exampleAudioSrc": "media/frag/f4106c2cf7c83.mp3",
+      "freqRank": 35,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "주다",
+        "target": "주다",
+        "meaning": "dar",
+        "reading": null,
+        "start": 5,
+        "end": 6
+      },
+      "sceneSrc": "media/frames/scdb741cf8baa.jpg"
+    }
+  ],
+  "createdAt": "2026-09-24T19:33:33.884792+00:00"
 }

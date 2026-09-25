@@ -11,7 +11,574 @@
     "kind": "video",
     "src": "media/main.mp4",
     "durationSec": 917.621333,
-    "condensedAudioSrc": null,
+    "condensedAudioSrc": "media/condensed.mp3",
+    "condensedMap": [
+      [
+        0,
+        1350,
+        4661
+      ],
+      [
+        4661,
+        7151,
+        3940
+      ],
+      [
+        8601,
+        12070,
+        5700
+      ],
+      [
+        14301,
+        21151,
+        4339
+      ],
+      [
+        18640,
+        27511,
+        3860
+      ],
+      [
+        22500,
+        32791,
+        6140
+      ],
+      [
+        28640,
+        41990,
+        4140
+      ],
+      [
+        32780,
+        47831,
+        3939
+      ],
+      [
+        36719,
+        53350,
+        5301
+      ],
+      [
+        42020,
+        61791,
+        4619
+      ],
+      [
+        46639,
+        69550,
+        4341
+      ],
+      [
+        50980,
+        76111,
+        5420
+      ],
+      [
+        56400,
+        85071,
+        4220
+      ],
+      [
+        60620,
+        90791,
+        3500
+      ],
+      [
+        64120,
+        95351,
+        5500
+      ],
+      [
+        69620,
+        104751,
+        4699
+      ],
+      [
+        74319,
+        110271,
+        4019
+      ],
+      [
+        78338,
+        116151,
+        5500
+      ],
+      [
+        83838,
+        124991,
+        3980
+      ],
+      [
+        87818,
+        129991,
+        3500
+      ],
+      [
+        91318,
+        136510,
+        5581
+      ],
+      [
+        96899,
+        144591,
+        7100
+      ],
+      [
+        103999,
+        155111,
+        6500
+      ],
+      [
+        110499,
+        172271,
+        4660
+      ],
+      [
+        115159,
+        180950,
+        3940
+      ],
+      [
+        119099,
+        188751,
+        5620
+      ],
+      [
+        124719,
+        199350,
+        4421
+      ],
+      [
+        129140,
+        206070,
+        3820
+      ],
+      [
+        132960,
+        212670,
+        6060
+      ],
+      [
+        139020,
+        223631,
+        4140
+      ],
+      [
+        143160,
+        230390,
+        3981
+      ],
+      [
+        147141,
+        236510,
+        5261
+      ],
+      [
+        152402,
+        246390,
+        4581
+      ],
+      [
+        156983,
+        255070,
+        4341
+      ],
+      [
+        161324,
+        264070,
+        5421
+      ],
+      [
+        166745,
+        273991,
+        4179
+      ],
+      [
+        170924,
+        281871,
+        3500
+      ],
+      [
+        174424,
+        288350,
+        5380
+      ],
+      [
+        179804,
+        299151,
+        4780
+      ],
+      [
+        184584,
+        306191,
+        3979
+      ],
+      [
+        188563,
+        313111,
+        5420
+      ],
+      [
+        193983,
+        323431,
+        3979
+      ],
+      [
+        197962,
+        329431,
+        3500
+      ],
+      [
+        201462,
+        336230,
+        5500
+      ],
+      [
+        206962,
+        350710,
+        7141
+      ],
+      [
+        214103,
+        364270,
+        6741
+      ],
+      [
+        220844,
+        373050,
+        9060
+      ],
+      [
+        229904,
+        382929,
+        4060
+      ],
+      [
+        233964,
+        388170,
+        5340
+      ],
+      [
+        239304,
+        395929,
+        9581
+      ],
+      [
+        248885,
+        407810,
+        4739
+      ],
+      [
+        253624,
+        416370,
+        5059
+      ],
+      [
+        258683,
+        424450,
+        4619
+      ],
+      [
+        263302,
+        431450,
+        6220
+      ],
+      [
+        269522,
+        438890,
+        4460
+      ],
+      [
+        273982,
+        446610,
+        5539
+      ],
+      [
+        279521,
+        460490,
+        9580
+      ],
+      [
+        289101,
+        473410,
+        4020
+      ],
+      [
+        293121,
+        480249,
+        5421
+      ],
+      [
+        298542,
+        488170,
+        8020
+      ],
+      [
+        306562,
+        500730,
+        4740
+      ],
+      [
+        311302,
+        507850,
+        4899
+      ],
+      [
+        316201,
+        516290,
+        4180
+      ],
+      [
+        320381,
+        522529,
+        7421
+      ],
+      [
+        327802,
+        531890,
+        4580
+      ],
+      [
+        332382,
+        537570,
+        5380
+      ],
+      [
+        337762,
+        550209,
+        3500
+      ],
+      [
+        341262,
+        555649,
+        5380
+      ],
+      [
+        346642,
+        562649,
+        4421
+      ],
+      [
+        351063,
+        569770,
+        5740
+      ],
+      [
+        356803,
+        577890,
+        8099
+      ],
+      [
+        364902,
+        588570,
+        4739
+      ],
+      [
+        369641,
+        596690,
+        4780
+      ],
+      [
+        374421,
+        603290,
+        3980
+      ],
+      [
+        378401,
+        608809,
+        5581
+      ],
+      [
+        383982,
+        616089,
+        4581
+      ],
+      [
+        388563,
+        625929,
+        7021
+      ],
+      [
+        395584,
+        641130,
+        3500
+      ],
+      [
+        399084,
+        646089,
+        5381
+      ],
+      [
+        404465,
+        654489,
+        4061
+      ],
+      [
+        408526,
+        660809,
+        5301
+      ],
+      [
+        413827,
+        669330,
+        3900
+      ],
+      [
+        417727,
+        674209,
+        5141
+      ],
+      [
+        422868,
+        681449,
+        4741
+      ],
+      [
+        427609,
+        689410,
+        5099
+      ],
+      [
+        432708,
+        697290,
+        4659
+      ],
+      [
+        437367,
+        704889,
+        6261
+      ],
+      [
+        443628,
+        714770,
+        4500
+      ],
+      [
+        448128,
+        721810,
+        5540
+      ],
+      [
+        453668,
+        734970,
+        3500
+      ],
+      [
+        457168,
+        739530,
+        5380
+      ],
+      [
+        462548,
+        747610,
+        3980
+      ],
+      [
+        466528,
+        753770,
+        5419
+      ],
+      [
+        471947,
+        762090,
+        3500
+      ],
+      [
+        475447,
+        767210,
+        4700
+      ],
+      [
+        480147,
+        774610,
+        4779
+      ],
+      [
+        484926,
+        783129,
+        4861
+      ],
+      [
+        489787,
+        791330,
+        4179
+      ],
+      [
+        493966,
+        798009,
+        7421
+      ],
+      [
+        501387,
+        809129,
+        4620
+      ],
+      [
+        506007,
+        816610,
+        5380
+      ],
+      [
+        511387,
+        830810,
+        3500
+      ],
+      [
+        514887,
+        835410,
+        5380
+      ],
+      [
+        520267,
+        843290,
+        4420
+      ],
+      [
+        524687,
+        850330,
+        5739
+      ],
+      [
+        530426,
+        859009,
+        3500
+      ],
+      [
+        533926,
+        864249,
+        4140
+      ],
+      [
+        538066,
+        870569,
+        4741
+      ],
+      [
+        542807,
+        878290,
+        4779
+      ],
+      [
+        547586,
+        885810,
+        4300
+      ],
+      [
+        551886,
+        892730,
+        5580
+      ],
+      [
+        557466,
+        901210,
+        4539
+      ],
+      [
+        562005,
+        909090,
+        7820
+      ]
+    ],
     "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
   },
   "segments": [
@@ -70,6 +637,13 @@
       "translation": "Por isso eu preciso usar óculos de sol.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "선글라스",
           "surface": "선글라스",
@@ -145,6 +719,13 @@
       "translation": "Por isso eu preciso beber muita água.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "물",
           "surface": "물",
@@ -233,6 +814,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "우산",
           "surface": "우산",
           "start": 4,
@@ -314,10 +902,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "장화",
           "surface": "장화",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "신다",
@@ -382,6 +979,13 @@
       "translation": "Por isso eu preciso vestir um casaco.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "코트",
           "surface": "코트",
@@ -464,6 +1068,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "장갑",
           "surface": "장갑",
           "start": 4,
@@ -533,6 +1144,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "천천히",
           "surface": "천천히",
           "start": 4,
@@ -561,6 +1179,13 @@
       "translation": "Como está o tempo agora aí onde você está?",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "여러분",
+          "surface": "여러분",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "있다",
           "surface": "있",
@@ -603,10 +1228,24 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그런",
+          "surface": "그런",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "날씨",
           "surface": "날씨",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 7,
+          "end": 8,
+          "dict": true
         },
         {
           "lemma": "준비하다",
@@ -677,6 +1316,13 @@
       "translation": "Por isso eu preciso usar óculos de sol.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "선글라스",
           "surface": "선글라스",
@@ -752,6 +1398,13 @@
       "translation": "Por isso eu preciso beber muita água.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "물",
           "surface": "물",
@@ -840,6 +1493,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "우산",
           "surface": "우산",
           "start": 4,
@@ -921,10 +1581,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "장화",
           "surface": "장화",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "신다",
@@ -989,6 +1658,13 @@
       "translation": "Por isso eu preciso vestir um casaco.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "코트",
           "surface": "코트",
@@ -1071,6 +1747,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "장갑",
           "surface": "장갑",
           "start": 4,
@@ -1140,6 +1823,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "천천히",
           "surface": "천천히",
           "start": 4,
@@ -1168,6 +1858,13 @@
       "translation": "Como está o tempo agora aí onde você está?",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "여러분",
+          "surface": "여러분",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "있다",
           "surface": "있",
@@ -1210,10 +1907,24 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "그런",
+          "surface": "그런",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "날씨",
           "surface": "날씨",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 7,
+          "end": 8,
+          "dict": true
         },
         {
           "lemma": "준비하다",
@@ -1237,7 +1948,15 @@
       "target": "여보세요?",
       "translation": "Alô?",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여보세요",
+          "surface": "여보세요",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s48",
@@ -1252,13 +1971,29 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 9,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1281,7 +2016,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -1304,7 +2041,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오늘",
@@ -1487,6 +2226,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "내일",
           "surface": "내일",
           "start": 3,
@@ -1503,6 +2249,20 @@
           "surface": "올",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 13,
+          "end": 14,
+          "dict": true
         }
       ]
     },
@@ -1551,6 +2311,13 @@
           "end": 2
         },
         {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "운전",
           "surface": "운전",
           "start": 8,
@@ -1572,7 +2339,15 @@
       "target": "여보세요?",
       "translation": "Alô?",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여보세요",
+          "surface": "여보세요",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s60",
@@ -1587,13 +2362,29 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 5,
           "end": 7
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 8,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1616,7 +2407,9 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -1639,7 +2432,9 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오늘",
@@ -1798,6 +2593,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "내일",
           "surface": "내일",
           "start": 3,
@@ -1820,6 +2622,20 @@
           "surface": "불",
           "start": 14,
           "end": 15
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 16,
+          "end": 17,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 17,
+          "end": 18,
+          "dict": true
         }
       ]
     },
@@ -1868,6 +2684,13 @@
           "end": 2
         },
         {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "감기",
           "surface": "감기",
           "start": 8,
@@ -1889,7 +2712,15 @@
       "target": "여보세요?",
       "translation": "Alô?",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여보세요",
+          "surface": "여보세요",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s72",
@@ -1904,13 +2735,29 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 9,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1933,7 +2780,9 @@
           "lemma": "제주도",
           "surface": "제주도",
           "start": 0,
-          "end": 3
+          "end": 3,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -1956,7 +2805,9 @@
           "lemma": "제주도",
           "surface": "제주도",
           "start": 0,
-          "end": 3
+          "end": 3,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오늘",
@@ -2109,6 +2960,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "내일",
           "surface": "내일",
           "start": 3,
@@ -2119,6 +2977,20 @@
           "surface": "더울",
           "start": 7,
           "end": 9
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -2167,6 +3039,13 @@
           "end": 2
         },
         {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "더위",
           "surface": "더위",
           "start": 8,
@@ -2188,7 +3067,15 @@
       "target": "여보세요?",
       "translation": "Alô?",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여보세요",
+          "surface": "여보세요",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s84",
@@ -2203,13 +3090,29 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 9,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -2232,7 +3135,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -2255,7 +3160,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오늘",
@@ -2438,6 +3345,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "내일",
           "surface": "내일",
           "start": 3,
@@ -2454,6 +3368,20 @@
           "surface": "올",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 13,
+          "end": 14,
+          "dict": true
         }
       ]
     },
@@ -2502,6 +3430,13 @@
           "end": 2
         },
         {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "운전",
           "surface": "운전",
           "start": 8,
@@ -2523,7 +3458,15 @@
       "target": "여보세요?",
       "translation": "Alô?",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여보세요",
+          "surface": "여보세요",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s96",
@@ -2538,13 +3481,29 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 9,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -2567,7 +3526,9 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -2590,7 +3551,9 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오늘",
@@ -2749,6 +3712,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "내일",
           "surface": "내일",
           "start": 3,
@@ -2771,6 +3741,20 @@
           "surface": "불",
           "start": 14,
           "end": 15
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 16,
+          "end": 17,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 17,
+          "end": 18,
+          "dict": true
         }
       ]
     },
@@ -2819,6 +3803,13 @@
           "end": 2
         },
         {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "감기",
           "surface": "감기",
           "start": 8,
@@ -2840,7 +3831,15 @@
       "target": "여보세요?",
       "translation": "Alô?",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "여보세요",
+          "surface": "여보세요",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s108",
@@ -2855,13 +3854,29 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "지금",
           "surface": "지금",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 9,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -2884,7 +3899,9 @@
           "lemma": "제주도",
           "surface": "제주도",
           "start": 0,
-          "end": 3
+          "end": 3,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -2907,7 +3924,9 @@
           "lemma": "제주도",
           "surface": "제주도",
           "start": 0,
-          "end": 3
+          "end": 3,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오늘",
@@ -3060,6 +4079,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "내일",
           "surface": "내일",
           "start": 3,
@@ -3070,6 +4096,20 @@
           "surface": "더울",
           "start": 7,
           "end": 9
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -3118,6 +4158,13 @@
           "end": 2
         },
         {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "더위",
           "surface": "더위",
           "start": 8,
@@ -3147,10 +4194,33 @@
       "freqRank": 3,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s5881ff1beafb.jpg",
       "newWords": [
         "돼"
       ],
-      "sceneSrc": "media/frames/s5881ff1beafb.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-어떻다",
+      "segmentId": "",
+      "target": "어떻다",
+      "translation": "ser como (어때요? = como está?)",
+      "startMs": 407960,
+      "endMs": 412199,
+      "reading": null,
+      "context": "어제는 날씨가 어땠어요? — Como estava o tempo ontem?",
+      "audioClipSrc": "media/tts/w8166ae134267.mp3",
+      "exampleAudioSrc": "media/frag/fce13ba0c1a27.mp3",
+      "freqRank": 16,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/sc5eac415c81d.jpg",
+      "newWords": [
+        "어땠"
+      ],
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-좋다",
@@ -3166,29 +4236,12 @@
       "freqRank": 8,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg",
       "newWords": [
         "좋"
       ],
-      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
-    },
-    {
-      "id": "w-어떻다",
-      "segmentId": "",
-      "target": "어떻다",
-      "translation": "ser como (어때요? = como está?)",
-      "startMs": 407960,
-      "endMs": 412199,
-      "reading": null,
-      "context": "어제는 날씨가 어땠어요? — Como estava o tempo ontem?",
-      "audioClipSrc": "media/tts/w8166ae134267.mp3",
-      "exampleAudioSrc": "media/frag/fce13ba0c1a27.mp3",
-      "freqRank": 15,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "어땠"
-      ],
-      "sceneSrc": "media/frames/sc5eac415c81d.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-쓰다",
@@ -3201,13 +4254,15 @@
       "context": "그래서 우산을 써야 돼요. — Por isso eu preciso usar guarda-chuva.",
       "audioClipSrc": "media/tts/wb6aa6119faf1.mp3",
       "exampleAudioSrc": "media/frag/fedf16594fe3a.mp3",
-      "freqRank": 72,
+      "freqRank": 63,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s5881ff1beafb.jpg",
       "newWords": [
         "써"
       ],
-      "sceneSrc": "media/frames/s5881ff1beafb.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-아주",
@@ -3220,11 +4275,13 @@
       "context": "어제도 아주 더웠어요. — Ontem também estava muito quente.",
       "audioClipSrc": "media/tts/wed69c8876c7c.mp3",
       "exampleAudioSrc": "media/frag/fc9858c235579.mp3",
-      "freqRank": 74,
+      "freqRank": 79,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s0b27105842e0.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s0b27105842e0.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-나다",
@@ -3237,64 +4294,15 @@
       "context": "땀이 나요. — Sai suor.",
       "audioClipSrc": "media/tts/w9cd22902e422.mp3",
       "exampleAudioSrc": "media/frag/f23362ca44949.mp3",
-      "freqRank": 95,
+      "freqRank": 81,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sd1e5ba504c3a.jpg",
       "newWords": [
         "나"
       ],
-      "sceneSrc": "media/frames/sd1e5ba504c3a.jpg"
-    },
-    {
-      "id": "w-곳",
-      "segmentId": "",
-      "target": "곳",
-      "translation": "lugar",
-      "startMs": 144741,
-      "endMs": 151341,
-      "reading": null,
-      "context": "여러분이 있는 곳은 지금 날씨가 어때요? — Como está o tempo agora aí onde você está?",
-      "audioClipSrc": "media/tts/w0f229ede96a8.mp3",
-      "exampleAudioSrc": "media/frag/f794c42dc9cb0.mp3",
-      "freqRank": 111,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/sb2a25b105f6a.jpg"
-    },
-    {
-      "id": "w-손",
-      "segmentId": "",
-      "target": "손",
-      "translation": "mão",
-      "startMs": 110421,
-      "endMs": 113940,
-      "reading": null,
-      "context": "손이 시려요. — As mãos ficam geladas.",
-      "audioClipSrc": "media/tts/we0204577db22.mp3",
-      "exampleAudioSrc": "media/frag/fad137236bd6d.mp3",
-      "freqRank": 115,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/sb03d578b8ce6.jpg"
-    },
-    {
-      "id": "w-조금",
-      "segmentId": "",
-      "target": "조금",
-      "translation": "um pouco",
-      "startMs": 42140,
-      "endMs": 45780,
-      "reading": null,
-      "context": "비가 조금 와요. — Chove um pouco.",
-      "audioClipSrc": "media/tts/w41cc107061e4.mp3",
-      "exampleAudioSrc": "media/frag/f6a8729e5e417.mp3",
-      "freqRank": 190,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s3dab6d8bca71.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-조심하다",
@@ -3307,140 +4315,53 @@
       "context": "그래요? 그럼 운전 조심하세요. — É mesmo? Então dirija com cuidado.",
       "audioClipSrc": "media/tts/w5b06ae4e1126.mp3",
       "exampleAudioSrc": "media/frag/fb51b087b959f.mp3",
-      "freqRank": 271,
+      "freqRank": 272,
       "topikLevel": "B",
       "imageSrc": null,
+      "sceneSrc": "media/frames/se80e6b064f65.jpg",
       "newWords": [
         "조심하"
       ],
-      "sceneSrc": "media/frames/se80e6b064f65.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-옷",
+      "id": "w-곳",
       "segmentId": "",
-      "target": "옷",
-      "translation": "roupa",
-      "startMs": 47981,
-      "endMs": 51420,
+      "target": "곳",
+      "translation": "lugar",
+      "startMs": 144741,
+      "endMs": 151341,
       "reading": null,
-      "context": "옷이 젖어요. — A roupa molha.",
-      "audioClipSrc": "media/tts/w96b1d30300e5.mp3",
-      "exampleAudioSrc": "media/frag/f3a19e81f412e.mp3",
-      "freqRank": 275,
+      "context": "여러분이 있는 곳은 지금 날씨가 어때요? — Como está o tempo agora aí onde você está?",
+      "audioClipSrc": "media/tts/w0f229ede96a8.mp3",
+      "exampleAudioSrc": "media/frag/f794c42dc9cb0.mp3",
+      "freqRank": 105,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sb2a25b105f6a.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s92847c2a76cb.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-입다",
+      "id": "w-손",
       "segmentId": "",
-      "target": "입다",
-      "translation": "vestir",
-      "startMs": 95501,
-      "endMs": 100501,
+      "target": "손",
+      "translation": "mão",
+      "startMs": 110421,
+      "endMs": 113940,
       "reading": null,
-      "context": "그래서 코트를 입어야 돼요. — Por isso eu preciso vestir um casaco.",
-      "audioClipSrc": "media/tts/wb5e8b8c2a68f.mp3",
-      "exampleAudioSrc": "media/frag/fae2ca4c07f91.mp3",
-      "freqRank": 346,
+      "context": "손이 시려요. — As mãos ficam geladas.",
+      "audioClipSrc": "media/tts/we0204577db22.mp3",
+      "exampleAudioSrc": "media/frag/fad137236bd6d.mp3",
+      "freqRank": 113,
       "topikLevel": "A",
       "imageSrc": null,
-      "newWords": [
-        "입"
-      ],
-      "sceneSrc": "media/frames/s7fdfc5653204.jpg"
-    },
-    {
-      "id": "w-확인하다",
-      "segmentId": "",
-      "target": "확인하다",
-      "translation": "conferir / verificar",
-      "startMs": 616239,
-      "endMs": 620320,
-      "reading": null,
-      "context": "일기예보를 확인했어요. — Eu conferi a previsão do tempo.",
-      "audioClipSrc": "media/tts/w72f159f1b8e9.mp3",
-      "exampleAudioSrc": "media/frag/f2e988f0e107a.mp3",
-      "freqRank": 362,
-      "topikLevel": "B",
-      "imageSrc": null,
-      "newWords": [
-        "확인했"
-      ],
-      "sceneSrc": "media/frames/s501b76291a96.jpg"
-    },
-    {
-      "id": "w-준비하다",
-      "segmentId": "",
-      "target": "준비하다",
-      "translation": "preparar",
-      "startMs": 155261,
-      "endMs": 161261,
-      "reading": null,
-      "context": "그런 날씨에 뭐를 준비해야 돼요? — Com esse tempo, o que você precisa preparar?",
-      "audioClipSrc": "media/tts/wf6ee8aa1f415.mp3",
-      "exampleAudioSrc": "media/frag/f4ca9d37cb40e.mp3",
-      "freqRank": 409,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "준비해"
-      ],
-      "sceneSrc": "media/frames/s1b93e62c4815.jpg"
-    },
-    {
-      "id": "w-걷다",
-      "segmentId": "",
-      "target": "걷다",
-      "translation": "andar / caminhar",
-      "startMs": 136660,
-      "endMs": 141741,
-      "reading": null,
-      "context": "그래서 천천히 걸어야 돼요. — Por isso eu preciso andar devagar.",
-      "audioClipSrc": "media/tts/wb2a554728020.mp3",
-      "exampleAudioSrc": "media/frag/f31de6f042845.mp3",
-      "freqRank": 514,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "걸"
-      ],
-      "sceneSrc": "media/frames/s7e6bb01c1084.jpg"
-    },
-    {
-      "id": "w-천천히",
-      "segmentId": "",
-      "target": "천천히",
-      "translation": "devagar",
-      "startMs": 136660,
-      "endMs": 141741,
-      "reading": null,
-      "context": "그래서 천천히 걸어야 돼요. — Por isso eu preciso andar devagar.",
-      "audioClipSrc": "media/tts/w418765a73d85.mp3",
-      "exampleAudioSrc": "media/frag/f358313438116.mp3",
-      "freqRank": 529,
-      "topikLevel": "A",
-      "imageSrc": null,
+      "sceneSrc": "media/frames/sb03d578b8ce6.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s7e6bb01c1084.jpg"
-    },
-    {
-      "id": "w-바람",
-      "segmentId": "",
-      "target": "바람",
-      "translation": "vento",
-      "startMs": 85221,
-      "endMs": 88941,
-      "reading": null,
-      "context": "바람이 불어요. — O vento sopra.",
-      "audioClipSrc": "media/tts/w031fefa02685.mp3",
-      "exampleAudioSrc": "media/frag/f324c74d29f53.mp3",
-      "freqRank": 562,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s9a3b31304977.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-비",
@@ -3453,28 +4374,70 @@
       "context": "비가 와요. — Está chovendo.",
       "audioClipSrc": "media/tts/w7120b736859f.mp3",
       "exampleAudioSrc": "media/frag/f316a86cb0a31.mp3",
-      "freqRank": 649,
+      "freqRank": 597,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sbc5ce7400334.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sbc5ce7400334.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-운전",
+      "id": "w-조금",
       "segmentId": "",
-      "target": "운전",
-      "translation": "direção (운전하다 = dirigir)",
-      "startMs": 446760,
-      "endMs": 451799,
+      "target": "조금",
+      "translation": "um pouco",
+      "startMs": 42140,
+      "endMs": 45780,
       "reading": null,
-      "context": "그래요? 그럼 운전 조심하세요. — É mesmo? Então dirija com cuidado.",
-      "audioClipSrc": "media/tts/wef9d05ea37b5.mp3",
-      "exampleAudioSrc": "media/frag/fdbd0534a0840.mp3",
-      "freqRank": 1377,
+      "context": "비가 조금 와요. — Chove um pouco.",
+      "audioClipSrc": "media/tts/w41cc107061e4.mp3",
+      "exampleAudioSrc": "media/frag/f6a8729e5e417.mp3",
+      "freqRank": 192,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s3dab6d8bca71.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/se80e6b064f65.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-날씨",
+      "segmentId": "",
+      "target": "날씨",
+      "translation": "tempo, clima (do dia)",
+      "startMs": 1500,
+      "endMs": 5661,
+      "reading": null,
+      "context": "날씨가 좋아요. — O tempo está bom.",
+      "audioClipSrc": "media/tts/w451a758fec88.mp3",
+      "exampleAudioSrc": "media/frag/f00f1a4e5dbe6.mp3",
+      "freqRank": 1446,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-바람",
+      "segmentId": "",
+      "target": "바람",
+      "translation": "vento",
+      "startMs": 85221,
+      "endMs": 88941,
+      "reading": null,
+      "context": "바람이 불어요. — O vento sopra.",
+      "audioClipSrc": "media/tts/w031fefa02685.mp3",
+      "exampleAudioSrc": "media/frag/f324c74d29f53.mp3",
+      "freqRank": 556,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s9a3b31304977.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-춥다",
@@ -3487,13 +4450,137 @@
       "context": "내일도 추울까요? — Será que amanhã também vai estar frio?",
       "audioClipSrc": "media/tts/w77f24e3213b9.mp3",
       "exampleAudioSrc": "media/frag/f24f03158a5b0.mp3",
-      "freqRank": 1409,
+      "freqRank": 1170,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7dea8f7fb9ea.jpg",
       "newWords": [
         "추울"
       ],
-      "sceneSrc": "media/frames/s7dea8f7fb9ea.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-옷",
+      "segmentId": "",
+      "target": "옷",
+      "translation": "roupa",
+      "startMs": 47981,
+      "endMs": 51420,
+      "reading": null,
+      "context": "옷이 젖어요. — A roupa molha.",
+      "audioClipSrc": "media/tts/w96b1d30300e5.mp3",
+      "exampleAudioSrc": "media/frag/f3a19e81f412e.mp3",
+      "freqRank": 270,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s92847c2a76cb.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-입다",
+      "segmentId": "",
+      "target": "입다",
+      "translation": "vestir",
+      "startMs": 95501,
+      "endMs": 100501,
+      "reading": null,
+      "context": "그래서 코트를 입어야 돼요. — Por isso eu preciso vestir um casaco.",
+      "audioClipSrc": "media/tts/wb5e8b8c2a68f.mp3",
+      "exampleAudioSrc": "media/frag/fae2ca4c07f91.mp3",
+      "freqRank": 303,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s7fdfc5653204.jpg",
+      "newWords": [
+        "입"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-확인하다",
+      "segmentId": "",
+      "target": "확인하다",
+      "translation": "conferir / verificar",
+      "startMs": 616239,
+      "endMs": 620320,
+      "reading": null,
+      "context": "일기예보를 확인했어요. — Eu conferi a previsão do tempo.",
+      "audioClipSrc": "media/tts/w72f159f1b8e9.mp3",
+      "exampleAudioSrc": "media/frag/f2e988f0e107a.mp3",
+      "freqRank": 289,
+      "topikLevel": "B",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s501b76291a96.jpg",
+      "newWords": [
+        "확인했"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-준비하다",
+      "segmentId": "",
+      "target": "준비하다",
+      "translation": "preparar",
+      "startMs": 155261,
+      "endMs": 161261,
+      "reading": null,
+      "context": "그런 날씨에 뭐를 준비해야 돼요? — Com esse tempo, o que você precisa preparar?",
+      "audioClipSrc": "media/tts/wf6ee8aa1f415.mp3",
+      "exampleAudioSrc": "media/frag/f4ca9d37cb40e.mp3",
+      "freqRank": 371,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s1b93e62c4815.jpg",
+      "newWords": [
+        "준비해"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-걷다",
+      "segmentId": "",
+      "target": "걷다",
+      "translation": "andar / caminhar",
+      "startMs": 136660,
+      "endMs": 141741,
+      "reading": null,
+      "context": "그래서 천천히 걸어야 돼요. — Por isso eu preciso andar devagar.",
+      "audioClipSrc": "media/tts/wb2a554728020.mp3",
+      "exampleAudioSrc": "media/frag/f31de6f042845.mp3",
+      "freqRank": 461,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s7e6bb01c1084.jpg",
+      "newWords": [
+        "걸"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-천천히",
+      "segmentId": "",
+      "target": "천천히",
+      "translation": "devagar",
+      "startMs": 136660,
+      "endMs": 141741,
+      "reading": null,
+      "context": "그래서 천천히 걸어야 돼요. — Por isso eu preciso andar devagar.",
+      "audioClipSrc": "media/tts/w418765a73d85.mp3",
+      "exampleAudioSrc": "media/frag/f358313438116.mp3",
+      "freqRank": 539,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s7e6bb01c1084.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
     }
   ],
   "source": {
@@ -3711,5 +4798,949 @@
   ],
   "titleTarget": "우산을 써야 돼요 · 오늘 날씨가 어때요?",
   "premise": "Histórias ilustradas A0 sobre clima e necessidade. Trazem -어야 되다 (precisar fazer), 어때요? / 어땠어요? (como está / como estava), o conectivo 그래서 (por isso) e os verbos de vestir 쓰다 / 입다 / 신다 / 끼다.",
-  "createdAt": "2026-08-22T18:42:39.724033+00:00"
+  "glossary": [
+    {
+      "lemma": "눈",
+      "target": "눈",
+      "reading": null,
+      "meaning": "olho (também: neve)",
+      "meaningEn": null,
+      "freqRank": 126,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "부시다",
+      "target": "부시다",
+      "reading": null,
+      "meaning": "ofuscar (눈이 부시다 = a luz ofusca os olhos)",
+      "meaningEn": null,
+      "freqRank": 8290,
+      "topikLevel": null,
+      "card": {
+        "id": "w-부시다",
+        "segmentId": "s2",
+        "target": "부시다",
+        "translation": "ofuscar (눈이 부시다 = a luz ofusca os olhos)",
+        "startMs": 7301,
+        "endMs": 10741,
+        "reading": null,
+        "context": "눈이 부셔요. — Os olhos ficam ofuscados.",
+        "audioClipSrc": "media/tts/w1402905ab749.mp3",
+        "exampleAudioSrc": "media/frag/f90bf9c4a06b7.mp3",
+        "freqRank": 8290,
+        "topikLevel": null,
+        "newWords": [
+          "부셔"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/scc5685aa9d61.jpg"
+      }
+    },
+    {
+      "lemma": "그래서",
+      "target": "그래서",
+      "reading": null,
+      "meaning": "por isso, então",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "선글라스",
+      "target": "선글라스",
+      "reading": null,
+      "meaning": "óculos de sol",
+      "meaningEn": null,
+      "freqRank": 6693,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-선글라스",
+        "segmentId": "s3",
+        "target": "선글라스",
+        "translation": "óculos de sol",
+        "startMs": 12220,
+        "endMs": 17420,
+        "reading": null,
+        "context": "그래서 선글라스를 써야 돼요. — Por isso eu preciso usar óculos de sol.",
+        "audioClipSrc": "media/tts/w9f0f355c3aa6.mp3",
+        "exampleAudioSrc": "media/frag/f68d824d97e11.mp3",
+        "freqRank": 6693,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/scd8579e2eaca.jpg"
+      }
+    },
+    {
+      "lemma": "덥다",
+      "target": "덥다",
+      "reading": null,
+      "meaning": "quente (tempo)",
+      "meaningEn": null,
+      "freqRank": 2573,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-덥다",
+        "segmentId": "s76",
+        "target": "덥다",
+        "translation": "quente (tempo)",
+        "startMs": 582040,
+        "endMs": 585639,
+        "reading": null,
+        "context": "덥고 습해요. — Está quente e úmido.",
+        "audioClipSrc": "media/tts/w1f75eaf2e148.mp3",
+        "exampleAudioSrc": "media/frag/fe0cbb6dcd0d1.mp3",
+        "freqRank": 2573,
+        "topikLevel": "A",
+        "newWords": [
+          "덥"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc1d40375e820.jpg"
+      }
+    },
+    {
+      "lemma": "땀",
+      "target": "땀",
+      "reading": null,
+      "meaning": "suor",
+      "meaningEn": null,
+      "freqRank": 2398,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-땀",
+        "segmentId": "s5",
+        "target": "땀",
+        "translation": "suor",
+        "startMs": 27661,
+        "endMs": 31021,
+        "reading": null,
+        "context": "땀이 나요. — Sai suor.",
+        "audioClipSrc": "media/tts/w655f66cbe639.mp3",
+        "exampleAudioSrc": "media/frag/fe77ad5104b1d.mp3",
+        "freqRank": 2398,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd1e5ba504c3a.jpg"
+      }
+    },
+    {
+      "lemma": "물",
+      "target": "물",
+      "reading": null,
+      "meaning": "água",
+      "meaningEn": null,
+      "freqRank": 240,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "많이",
+      "target": "많이",
+      "reading": null,
+      "meaning": "muito / bastante",
+      "meaningEn": null,
+      "freqRank": 108,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "마시다",
+      "target": "마시다",
+      "reading": null,
+      "meaning": "beber",
+      "meaningEn": null,
+      "freqRank": 213,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "오다",
+      "target": "오다",
+      "reading": null,
+      "meaning": "vir",
+      "meaningEn": null,
+      "freqRank": 14,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "젖다",
+      "target": "젖다",
+      "reading": null,
+      "meaning": "molhar-se",
+      "meaningEn": null,
+      "freqRank": 2806,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-젖다",
+        "segmentId": "s8",
+        "target": "젖다",
+        "translation": "molhar-se",
+        "startMs": 47981,
+        "endMs": 51420,
+        "reading": null,
+        "context": "옷이 젖어요. — A roupa molha.",
+        "audioClipSrc": "media/tts/we3a5030a2d84.mp3",
+        "exampleAudioSrc": "media/frag/f8e9f7c86d464.mp3",
+        "freqRank": 2806,
+        "topikLevel": "A",
+        "newWords": [
+          "젖"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s92847c2a76cb.jpg"
+      }
+    },
+    {
+      "lemma": "우산",
+      "target": "우산",
+      "reading": null,
+      "meaning": "guarda-chuva",
+      "meaningEn": null,
+      "freqRank": 5953,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-우산",
+        "segmentId": "s9",
+        "target": "우산",
+        "translation": "guarda-chuva",
+        "startMs": 53500,
+        "endMs": 58301,
+        "reading": null,
+        "context": "그래서 우산을 써야 돼요. — Por isso eu preciso usar guarda-chuva.",
+        "audioClipSrc": "media/tts/wf7d7a660bc80.mp3",
+        "exampleAudioSrc": "media/frag/f9fd16749451b.mp3",
+        "freqRank": 5953,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s5881ff1beafb.jpg"
+      }
+    },
+    {
+      "lemma": "양말",
+      "target": "양말",
+      "reading": null,
+      "meaning": "meia",
+      "meaningEn": null,
+      "freqRank": 3067,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-양말",
+        "segmentId": "s11",
+        "target": "양말",
+        "translation": "meia",
+        "startMs": 69700,
+        "endMs": 73541,
+        "reading": null,
+        "context": "양말이 젖어요. — A meia molha.",
+        "audioClipSrc": "media/tts/wb21fccdce102.mp3",
+        "exampleAudioSrc": "media/frag/f7b3856bacd71.mp3",
+        "freqRank": 3067,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc4a4a52ed512.jpg"
+      }
+    },
+    {
+      "lemma": "장화",
+      "target": "장화",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "신다",
+      "target": "신다",
+      "reading": null,
+      "meaning": "calçar (sapato, meia)",
+      "meaningEn": null,
+      "freqRank": 5307,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-신다",
+        "segmentId": "s12",
+        "target": "신다",
+        "translation": "calçar (sapato, meia)",
+        "startMs": 76261,
+        "endMs": 81181,
+        "reading": null,
+        "context": "그래서 장화를 신어야 돼요. — Por isso eu preciso calçar galochas.",
+        "audioClipSrc": "media/tts/wfe8f04094bee.mp3",
+        "exampleAudioSrc": "media/frag/fd8c5d6efd9ea.mp3",
+        "freqRank": 5307,
+        "topikLevel": "A",
+        "newWords": [
+          "신"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sca15269508f5.jpg"
+      }
+    },
+    {
+      "lemma": "불다",
+      "target": "불다",
+      "reading": null,
+      "meaning": "soprar; tocar (instrumento de sopro)",
+      "meaningEn": null,
+      "freqRank": 2310,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-불다",
+        "segmentId": "s13",
+        "target": "불다",
+        "translation": "soprar; tocar (instrumento de sopro)",
+        "startMs": 85221,
+        "endMs": 88941,
+        "reading": null,
+        "context": "바람이 불어요. — O vento sopra.",
+        "audioClipSrc": "media/tts/w9216693e3183.mp3",
+        "exampleAudioSrc": "media/frag/f9e7c578327af.mp3",
+        "freqRank": 2310,
+        "topikLevel": "A",
+        "newWords": [
+          "불"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s9a3b31304977.jpg"
+      }
+    },
+    {
+      "lemma": "코트",
+      "target": "코트",
+      "reading": null,
+      "meaning": "casaco, sobretudo",
+      "meaningEn": null,
+      "freqRank": 1924,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-코트",
+        "segmentId": "s15",
+        "target": "코트",
+        "translation": "casaco, sobretudo",
+        "startMs": 95501,
+        "endMs": 100501,
+        "reading": null,
+        "context": "그래서 코트를 입어야 돼요. — Por isso eu preciso vestir um casaco.",
+        "audioClipSrc": "media/tts/w07d736f95401.mp3",
+        "exampleAudioSrc": "media/frag/f2d08bfb83fe2.mp3",
+        "freqRank": 1924,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s7fdfc5653204.jpg"
+      }
+    },
+    {
+      "lemma": "너무",
+      "target": "너무",
+      "reading": null,
+      "meaning": "demais / muito",
+      "meaningEn": null,
+      "freqRank": 46,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "시리다",
+      "target": "시리다",
+      "reading": null,
+      "meaning": "gelar, doer de frio (손이 시리다)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "card": {
+        "id": "w-시리다",
+        "segmentId": "s17",
+        "target": "시리다",
+        "translation": "gelar, doer de frio (손이 시리다)",
+        "startMs": 110421,
+        "endMs": 113940,
+        "reading": null,
+        "context": "손이 시려요. — As mãos ficam geladas.",
+        "audioClipSrc": "media/tts/wd614d6a54979.mp3",
+        "exampleAudioSrc": "media/frag/fb85307ed5c24.mp3",
+        "freqRank": null,
+        "topikLevel": null,
+        "newWords": [
+          "시려"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb03d578b8ce6.jpg"
+      }
+    },
+    {
+      "lemma": "장갑",
+      "target": "장갑",
+      "reading": null,
+      "meaning": "luva",
+      "meaningEn": null,
+      "freqRank": 2757,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-장갑",
+        "segmentId": "s18",
+        "target": "장갑",
+        "translation": "luva",
+        "startMs": 116301,
+        "endMs": 121301,
+        "reading": null,
+        "context": "그래서 장갑을 껴야 돼요. — Por isso eu preciso pôr luvas.",
+        "audioClipSrc": "media/tts/w6ce5849f371c.mp3",
+        "exampleAudioSrc": "media/frag/fc34639aab7b8.mp3",
+        "freqRank": 2757,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s46d1af57524d.jpg"
+      }
+    },
+    {
+      "lemma": "끼다",
+      "target": "끼다",
+      "reading": null,
+      "meaning": "pôr, vestir (luva, anel, óculos)",
+      "meaningEn": null,
+      "freqRank": 1701,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-끼다",
+        "segmentId": "s18",
+        "target": "끼다",
+        "translation": "pôr, vestir (luva, anel, óculos)",
+        "startMs": 116301,
+        "endMs": 121301,
+        "reading": null,
+        "context": "그래서 장갑을 껴야 돼요. — Por isso eu preciso pôr luvas.",
+        "audioClipSrc": "media/tts/we45f7f5b46f0.mp3",
+        "exampleAudioSrc": "media/frag/f9c05abc8d685.mp3",
+        "freqRank": 1701,
+        "topikLevel": "A",
+        "newWords": [
+          "껴"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s46d1af57524d.jpg"
+      }
+    },
+    {
+      "lemma": "미끄럽다",
+      "target": "미끄럽다",
+      "reading": null,
+      "meaning": "escorregadio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-미끄럽다",
+        "segmentId": "s20",
+        "target": "미끄럽다",
+        "translation": "escorregadio",
+        "startMs": 130141,
+        "endMs": 133141,
+        "reading": null,
+        "context": "미끄러워요. — Está escorregadio.",
+        "audioClipSrc": "media/tts/w979216228ebc.mp3",
+        "exampleAudioSrc": "media/frag/f155cdda81c50.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [
+          "미끄러워"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sa6c8e0e40d12.jpg"
+      }
+    },
+    {
+      "lemma": "여러분",
+      "target": "여러분",
+      "reading": null,
+      "meaning": "pessoal, todos vocês",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "있다",
+      "target": "있다",
+      "reading": null,
+      "meaning": "estar / ter / existir",
+      "meaningEn": null,
+      "freqRank": 2,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "지금",
+      "target": "지금",
+      "reading": null,
+      "meaning": "agora",
+      "meaningEn": null,
+      "freqRank": 26,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "그런",
+      "target": "그런",
+      "reading": null,
+      "meaning": "esse tipo de, assim",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "뭐",
+      "target": "뭐",
+      "reading": null,
+      "meaning": "o quê",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "여보세요",
+      "target": "여보세요",
+      "reading": null,
+      "meaning": "alô? (telefone)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "몰이",
+      "target": "몰이",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "씨",
+      "target": "씨",
+      "reading": null,
+      "meaning": "(~씨) senhor/senhora (tratamento)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "어디",
+      "target": "어디",
+      "reading": null,
+      "meaning": "onde",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "부산",
+      "target": "부산",
+      "reading": null,
+      "meaning": "Busan (cidade)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "오늘",
+      "target": "오늘",
+      "reading": null,
+      "meaning": "hoje",
+      "meaningEn": null,
+      "freqRank": 47,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "천둥",
+      "target": "천둥",
+      "reading": null,
+      "meaning": "trovão (천둥이 치다 = trovejar)",
+      "meaningEn": null,
+      "freqRank": 5395,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-천둥",
+        "segmentId": "s52",
+        "target": "천둥",
+        "translation": "trovão (천둥이 치다 = trovejar)",
+        "startMs": 400520,
+        "endMs": 405160,
+        "reading": null,
+        "context": "비가 오고 천둥이 쳐요. — Chove e troveja.",
+        "audioClipSrc": "media/tts/wbb6ca14481b5.mp3",
+        "exampleAudioSrc": "media/frag/fdc2007c151f1.mp3",
+        "freqRank": 5395,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s017a8f12204c.jpg"
+      }
+    },
+    {
+      "lemma": "치다",
+      "target": "치다",
+      "reading": null,
+      "meaning": "bater / tocar (violão, tênis, golfe)",
+      "meaningEn": null,
+      "freqRank": 333,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "어제",
+      "target": "어제",
+      "reading": null,
+      "meaning": "ontem",
+      "meaningEn": null,
+      "freqRank": 389,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "내일",
+      "target": "내일",
+      "reading": null,
+      "meaning": "amanhã",
+      "meaningEn": null,
+      "freqRank": 186,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "네",
+      "target": "네",
+      "reading": null,
+      "meaning": "sim",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "거",
+      "target": "거",
+      "reading": null,
+      "meaning": "coisa (= 것); (~ㄹ 거예요) vai…",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "이다",
+      "target": "이다",
+      "reading": null,
+      "meaning": "ser (copula: 이에요/예요)",
+      "meaningEn": null,
+      "freqRank": 1396,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "일기",
+      "target": "일기",
+      "reading": null,
+      "meaning": "diário; tempo (일기예보 = previsão do tempo)",
+      "meaningEn": null,
+      "freqRank": 4951,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-일기",
+        "segmentId": "s57",
+        "target": "일기",
+        "translation": "diário; tempo (일기예보 = previsão do tempo)",
+        "startMs": 439040,
+        "endMs": 443000,
+        "reading": null,
+        "context": "일기예보를 봤어요. — Eu vi a previsão do tempo.",
+        "audioClipSrc": "media/tts/w0ff485db5a64.mp3",
+        "exampleAudioSrc": "media/frag/f1ce3e8088611.mp3",
+        "freqRank": 4951,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sa329e5f2fa2b.jpg"
+      }
+    },
+    {
+      "lemma": "예보",
+      "target": "예보",
+      "reading": null,
+      "meaning": "previsão (일기예보 = previsão do tempo)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-예보",
+        "segmentId": "s57",
+        "target": "예보",
+        "translation": "previsão (일기예보 = previsão do tempo)",
+        "startMs": 439040,
+        "endMs": 443000,
+        "reading": null,
+        "context": "일기예보를 봤어요. — Eu vi a previsão do tempo.",
+        "audioClipSrc": "media/tts/w834b77618bea.mp3",
+        "exampleAudioSrc": "media/frag/f7f03c5e38bdc.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sa329e5f2fa2b.jpg"
+      }
+    },
+    {
+      "lemma": "보다",
+      "target": "보다",
+      "reading": null,
+      "meaning": "ver / olhar",
+      "meaningEn": null,
+      "freqRank": 10,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "그렇다",
+      "target": "그렇다",
+      "reading": null,
+      "meaning": "ser assim",
+      "meaningEn": null,
+      "freqRank": 11,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "그럼",
+      "target": "그럼",
+      "reading": null,
+      "meaning": "então",
+      "meaningEn": null,
+      "freqRank": 30,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "운전",
+      "target": "운전",
+      "reading": null,
+      "meaning": "direção (운전하다 = dirigir)",
+      "meaningEn": null,
+      "freqRank": 1201,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-운전",
+        "segmentId": "s58",
+        "target": "운전",
+        "translation": "direção (운전하다 = dirigir)",
+        "startMs": 446760,
+        "endMs": 451799,
+        "reading": null,
+        "context": "그래요? 그럼 운전 조심하세요. — É mesmo? Então dirija com cuidado.",
+        "audioClipSrc": "media/tts/wef9d05ea37b5.mp3",
+        "exampleAudioSrc": "media/frag/fdbd0534a0840.mp3",
+        "freqRank": 1201,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/se80e6b064f65.jpg"
+      }
+    },
+    {
+      "lemma": "서울",
+      "target": "서울",
+      "reading": null,
+      "meaning": "Seul (capital)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "듣다",
+      "target": "듣다",
+      "reading": null,
+      "meaning": "ouvir / escutar",
+      "meaningEn": null,
+      "freqRank": 31,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "감기",
+      "target": "감기",
+      "reading": null,
+      "meaning": "resfriado, gripe",
+      "meaningEn": null,
+      "freqRank": 2417,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-감기",
+        "segmentId": "s70",
+        "target": "감기",
+        "translation": "resfriado, gripe",
+        "startMs": 537720,
+        "endMs": 542600,
+        "reading": null,
+        "context": "그래요? 그럼 감기 조심하세요. — É mesmo? Então cuidado para não pegar um resfriado.",
+        "audioClipSrc": "media/tts/w3812fdeb1549.mp3",
+        "exampleAudioSrc": "media/frag/fbbdd4284432a.mp3",
+        "freqRank": 2417,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s82ed399a2ce8.jpg"
+      }
+    },
+    {
+      "lemma": "제주도",
+      "target": "제주도",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "습하다",
+      "target": "습하다",
+      "reading": null,
+      "meaning": "úmido, abafado",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-습하다",
+        "segmentId": "s76",
+        "target": "습하다",
+        "translation": "úmido, abafado",
+        "startMs": 582040,
+        "endMs": 585639,
+        "reading": null,
+        "context": "덥고 습해요. — Está quente e úmido.",
+        "audioClipSrc": "media/tts/wb1245ad82440.mp3",
+        "exampleAudioSrc": "media/frag/f36169dbb55a6.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [
+          "습해"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc1d40375e820.jpg"
+      }
+    },
+    {
+      "lemma": "더위",
+      "target": "더위",
+      "reading": null,
+      "meaning": "calor",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-더위",
+        "segmentId": "s82",
+        "target": "더위",
+        "translation": "calor",
+        "startMs": 626079,
+        "endMs": 632600,
+        "reading": null,
+        "context": "그래요? 그럼 더위 조심하세요. — É mesmo? Então cuidado com o calor.",
+        "audioClipSrc": "media/tts/w7a2987d5d0f8.mp3",
+        "exampleAudioSrc": "media/frag/fbf9e81f63038.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s67231c05af81.jpg"
+      }
+    }
+  ],
+  "sentenceCards": [
+    {
+      "id": "s-3439162a63",
+      "kind": "sentence",
+      "segmentId": "s6",
+      "target": "그래서 물을 많이 마셔야 돼요.",
+      "translation": "Por isso eu preciso beber muita água.",
+      "startMs": 32941,
+      "endMs": 38581,
+      "audioClipSrc": "media/frag/f3b14eacee458.mp3",
+      "exampleAudioSrc": "media/frag/f3b14eacee458.mp3",
+      "freqRank": 3,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "되다",
+        "target": "되다",
+        "meaning": "tornar-se / dar certo (-어야 되다 = precisar)",
+        "reading": null,
+        "start": 14,
+        "end": 15
+      },
+      "sceneSrc": "media/frames/sd355fd7bd0b2.jpg"
+    },
+    {
+      "id": "s-5cd6912f55",
+      "kind": "sentence",
+      "segmentId": "s54",
+      "target": "어제도 비가 많이 왔어요.",
+      "translation": "Ontem também choveu muito.",
+      "startMs": 416520,
+      "endMs": 421079,
+      "audioClipSrc": "media/frag/f3a80efab1ad7.mp3",
+      "exampleAudioSrc": "media/frag/f3a80efab1ad7.mp3",
+      "freqRank": 597,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "비",
+        "target": "비",
+        "meaning": "chuva",
+        "reading": null,
+        "start": 4,
+        "end": 5
+      },
+      "sceneSrc": "media/frames/s31ad7afd696f.jpg"
+    },
+    {
+      "id": "s-821428aa7e",
+      "kind": "sentence",
+      "segmentId": "s66",
+      "target": "어제도 너무 추웠어요.",
+      "translation": "Ontem também estava muito frio.",
+      "startMs": 508000,
+      "endMs": 512399,
+      "audioClipSrc": "media/frag/f264cd0a15970.mp3",
+      "exampleAudioSrc": "media/frag/f264cd0a15970.mp3",
+      "freqRank": 1170,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "춥다",
+        "target": "춥다",
+        "meaning": "estar frio (o tempo)",
+        "reading": null,
+        "start": 7,
+        "end": 9
+      },
+      "sceneSrc": "media/frames/sa08941cae2da.jpg"
+    }
+  ],
+  "createdAt": "2026-09-24T19:34:02.113660+00:00"
 }

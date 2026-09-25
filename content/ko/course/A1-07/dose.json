@@ -11,7 +11,459 @@
     "kind": "video",
     "src": "media/main.mp4",
     "durationSec": 909.854667,
-    "condensedAudioSrc": null,
+    "condensedAudioSrc": "media/condensed.mp3",
+    "condensedMap": [
+      [
+        0,
+        1350,
+        7220
+      ],
+      [
+        7220,
+        11926,
+        5170
+      ],
+      [
+        12390,
+        20151,
+        10712
+      ],
+      [
+        23102,
+        32486,
+        7092
+      ],
+      [
+        30194,
+        41887,
+        5900
+      ],
+      [
+        36094,
+        50792,
+        5900
+      ],
+      [
+        41994,
+        62032,
+        7660
+      ],
+      [
+        49654,
+        71087,
+        5141
+      ],
+      [
+        54795,
+        81017,
+        6139
+      ],
+      [
+        60934,
+        89083,
+        6701
+      ],
+      [
+        67635,
+        98019,
+        4260
+      ],
+      [
+        71895,
+        106590,
+        5980
+      ],
+      [
+        77875,
+        114363,
+        6021
+      ],
+      [
+        83896,
+        123124,
+        6259
+      ],
+      [
+        90155,
+        131168,
+        4020
+      ],
+      [
+        94175,
+        139469,
+        3940
+      ],
+      [
+        98115,
+        147448,
+        6940
+      ],
+      [
+        105055,
+        156190,
+        11278
+      ],
+      [
+        116333,
+        176603,
+        7260
+      ],
+      [
+        123593,
+        189631,
+        4500
+      ],
+      [
+        128093,
+        199724,
+        4300
+      ],
+      [
+        132393,
+        207710,
+        7780
+      ],
+      [
+        140173,
+        219713,
+        5578
+      ],
+      [
+        145751,
+        231548,
+        6021
+      ],
+      [
+        151772,
+        242363,
+        6900
+      ],
+      [
+        158672,
+        255487,
+        5621
+      ],
+      [
+        164293,
+        268003,
+        7179
+      ],
+      [
+        171472,
+        280953,
+        5100
+      ],
+      [
+        176572,
+        291978,
+        5580
+      ],
+      [
+        182152,
+        304350,
+        5220
+      ],
+      [
+        187372,
+        315870,
+        5979
+      ],
+      [
+        193351,
+        327658,
+        7060
+      ],
+      [
+        200411,
+        339808,
+        4260
+      ],
+      [
+        204671,
+        350843,
+        5060
+      ],
+      [
+        209731,
+        360990,
+        4900
+      ],
+      [
+        214631,
+        370888,
+        5820
+      ],
+      [
+        220451,
+        383737,
+        6420
+      ],
+      [
+        226871,
+        393524,
+        5900
+      ],
+      [
+        232771,
+        406008,
+        4019
+      ],
+      [
+        236790,
+        412083,
+        5180
+      ],
+      [
+        241970,
+        420283,
+        5700
+      ],
+      [
+        247670,
+        427883,
+        5740
+      ],
+      [
+        253410,
+        435962,
+        5140
+      ],
+      [
+        258550,
+        445683,
+        7860
+      ],
+      [
+        266410,
+        455883,
+        5180
+      ],
+      [
+        271590,
+        462043,
+        5660
+      ],
+      [
+        277250,
+        475842,
+        8221
+      ],
+      [
+        285471,
+        486083,
+        5100
+      ],
+      [
+        290571,
+        493603,
+        5019
+      ],
+      [
+        295590,
+        505482,
+        8021
+      ],
+      [
+        303611,
+        517162,
+        5220
+      ],
+      [
+        308831,
+        525842,
+        5261
+      ],
+      [
+        314092,
+        536843,
+        6619
+      ],
+      [
+        320711,
+        546523,
+        5019
+      ],
+      [
+        325730,
+        552643,
+        4819
+      ],
+      [
+        330549,
+        560083,
+        6420
+      ],
+      [
+        336969,
+        577322,
+        5661
+      ],
+      [
+        342630,
+        584723,
+        5940
+      ],
+      [
+        348570,
+        592443,
+        4860
+      ],
+      [
+        353430,
+        601443,
+        7540
+      ],
+      [
+        360970,
+        612602,
+        6580
+      ],
+      [
+        367550,
+        620363,
+        5860
+      ],
+      [
+        373410,
+        633242,
+        8181
+      ],
+      [
+        381591,
+        643843,
+        12899
+      ],
+      [
+        394490,
+        663323,
+        7340
+      ],
+      [
+        401830,
+        672523,
+        7860
+      ],
+      [
+        409690,
+        682603,
+        5420
+      ],
+      [
+        415110,
+        694603,
+        6020
+      ],
+      [
+        421130,
+        702683,
+        4980
+      ],
+      [
+        426110,
+        708762,
+        4901
+      ],
+      [
+        431011,
+        716563,
+        6859
+      ],
+      [
+        437870,
+        730883,
+        10420
+      ],
+      [
+        448290,
+        743443,
+        5099
+      ],
+      [
+        453389,
+        750683,
+        5900
+      ],
+      [
+        459289,
+        761482,
+        6780
+      ],
+      [
+        466069,
+        770123,
+        5940
+      ],
+      [
+        472009,
+        779083,
+        5700
+      ],
+      [
+        477709,
+        788042,
+        8870
+      ],
+      [
+        486579,
+        802523,
+        6980
+      ],
+      [
+        493559,
+        811042,
+        6341
+      ],
+      [
+        499900,
+        821563,
+        5820
+      ],
+      [
+        505720,
+        829443,
+        8628
+      ],
+      [
+        514348,
+        844322,
+        6141
+      ],
+      [
+        520489,
+        851843,
+        7380
+      ],
+      [
+        527869,
+        862283,
+        5020
+      ],
+      [
+        532889,
+        869482,
+        3500
+      ],
+      [
+        536389,
+        874322,
+        7261
+      ],
+      [
+        543650,
+        885123,
+        5419
+      ],
+      [
+        549069,
+        892403,
+        8900
+      ],
+      [
+        557969,
+        902283,
+        6859
+      ]
+    ],
     "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
   },
   "segments": [
@@ -24,6 +476,13 @@
       "translation": "Eu vou ao aeroporto para pegar o avião.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "비행기",
           "surface": "비행기",
@@ -75,7 +534,9 @@
           "lemma": "한국",
           "surface": "한국",
           "start": 8,
-          "end": 10
+          "end": 10,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
@@ -95,10 +556,26 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "여기",
+          "surface": "여기",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "한국",
           "surface": "한국",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -111,6 +588,13 @@
       "translation": "Eu vou à estação para pegar o metrô.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "지하철",
           "surface": "지하철",
@@ -182,6 +666,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "옷",
           "surface": "옷",
           "start": 3,
@@ -217,6 +708,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "백화점",
           "surface": "백화점",
           "start": 3,
@@ -245,6 +743,13 @@
       "translation": "E vou ao salão para cortar o cabelo.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "머리",
           "surface": "머리",
@@ -281,6 +786,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "미용실",
           "surface": "미용실",
           "start": 3,
@@ -309,6 +821,13 @@
       "translation": "E vou ao restaurante para comer.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "밥",
           "surface": "밥",
@@ -345,6 +864,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "식당",
           "surface": "식당",
           "start": 3,
@@ -373,6 +899,13 @@
       "translation": "E vou ao hotel para descansar.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "쉬다",
           "surface": "쉬",
@@ -403,6 +936,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "호텔",
           "surface": "호텔",
           "start": 3,
@@ -431,6 +971,13 @@
       "translation": "E vou ao banheiro para me lavar.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "씻다",
           "surface": "씻",
@@ -461,6 +1008,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "욕실",
           "surface": "욕실",
           "start": 3,
@@ -483,6 +1037,13 @@
       "translation": "E durmo na cama.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "침대",
           "surface": "침대",
@@ -517,6 +1078,13 @@
           "surface": "날",
           "start": 3,
           "end": 4
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 4,
+          "end": 5,
+          "dict": true
         }
       ]
     },
@@ -529,6 +1097,13 @@
       "translation": "Eu vou à casa de shows para ver um show.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "콘서트",
           "surface": "콘서트",
@@ -564,6 +1139,13 @@
       "translation": "Eu vejo o show na casa de shows.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "공연장",
           "surface": "공연장",
@@ -623,6 +1205,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "비행기",
           "surface": "비행기",
           "start": 3,
@@ -673,7 +1262,9 @@
           "lemma": "한국",
           "surface": "한국",
           "start": 8,
-          "end": 10
+          "end": 10,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
@@ -693,10 +1284,26 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "여기",
+          "surface": "여기",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "한국",
           "surface": "한국",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -709,6 +1316,13 @@
       "translation": "Eu vou à estação para pegar o metrô.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "지하철",
           "surface": "지하철",
@@ -780,6 +1394,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "옷",
           "surface": "옷",
           "start": 3,
@@ -815,6 +1436,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "백화점",
           "surface": "백화점",
           "start": 3,
@@ -843,6 +1471,13 @@
       "translation": "E vou ao salão para cortar o cabelo.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "머리",
           "surface": "머리",
@@ -879,6 +1514,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "미용실",
           "surface": "미용실",
           "start": 3,
@@ -907,6 +1549,13 @@
       "translation": "E vou ao restaurante para comer.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "밥",
           "surface": "밥",
@@ -943,6 +1592,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "식당",
           "surface": "식당",
           "start": 3,
@@ -971,6 +1627,13 @@
       "translation": "E vou ao hotel para descansar.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "쉬다",
           "surface": "쉬",
@@ -1001,6 +1664,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "호텔",
           "surface": "호텔",
           "start": 3,
@@ -1029,6 +1699,13 @@
       "translation": "E vou ao banheiro para me lavar.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "씻다",
           "surface": "씻",
@@ -1059,6 +1736,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "욕실",
           "surface": "욕실",
           "start": 3,
@@ -1081,6 +1765,13 @@
       "translation": "E durmo na cama.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "침대",
           "surface": "침대",
@@ -1115,6 +1806,13 @@
           "surface": "날",
           "start": 3,
           "end": 4
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 4,
+          "end": 5,
+          "dict": true
         }
       ]
     },
@@ -1127,6 +1825,13 @@
       "translation": "Eu vou à casa de shows para ver um show.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "콘서트",
           "surface": "콘서트",
@@ -1162,6 +1867,13 @@
       "translation": "Eu vejo o show na casa de shows.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "공연장",
           "surface": "공연장",
@@ -1224,7 +1936,16 @@
           "lemma": "한국",
           "surface": "한국",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 4,
+          "end": 5,
+          "dict": true
         },
         {
           "lemma": "하다",
@@ -1253,7 +1974,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "얼마나",
@@ -1279,6 +2002,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "나",
+          "surface": "나",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "다음",
           "surface": "다음",
           "start": 3,
@@ -1294,13 +2024,29 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 9,
-          "end": 11
+          "end": 11,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 13,
           "end": 14
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 16,
+          "end": 17,
+          "dict": true
         }
       ]
     },
@@ -1317,13 +2063,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "얼마나",
@@ -1348,6 +2098,13 @@
       "translation": "E de dinheiro, custa quanto?",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "돈",
           "surface": "돈",
@@ -1399,13 +2156,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 16,
-          "end": 18
+          "end": 18,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "시간",
@@ -1437,6 +2198,20 @@
           "end": 1
         },
         {
+          "lemma": "만",
+          "surface": "만",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "정도",
           "surface": "정도",
           "start": 8,
@@ -1463,7 +2238,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "고속버스",
@@ -1476,6 +2260,20 @@
           "surface": "표",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 18,
+          "end": 19,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 19,
+          "end": 20,
+          "dict": true
         }
       ]
     },
@@ -1498,13 +2296,31 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 9,
-          "end": 11
+          "end": 11,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 14,
-          "end": 16
+          "end": 16,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 20,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 25,
+          "end": 26,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -1528,6 +2344,20 @@
           "surface": "돈",
           "start": 0,
           "end": 1
+        },
+        {
+          "lemma": "만",
+          "surface": "만",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 6,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "정도",
@@ -1556,7 +2386,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "기차",
@@ -1569,6 +2408,20 @@
           "surface": "표",
           "start": 6,
           "end": 7
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 16,
+          "end": 17,
+          "dict": true
         }
       ]
     },
@@ -1597,13 +2450,24 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 9,
-          "end": 11
+          "end": 11,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 14,
-          "end": 16
+          "end": 16,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 20,
+          "end": 22,
+          "dict": true
         },
         {
           "lemma": "정도",
@@ -1635,6 +2499,20 @@
           "end": 1
         },
         {
+          "lemma": "만",
+          "surface": "만",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "정도",
           "surface": "정도",
           "start": 8,
@@ -1661,7 +2539,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "비행기",
@@ -1674,6 +2561,20 @@
           "surface": "표",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 16,
+          "end": 17,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 17,
+          "end": 18,
+          "dict": true
         }
       ]
     },
@@ -1690,13 +2591,31 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "그럼",
+          "surface": "그럼",
+          "start": 5,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 8,
-          "end": 10
+          "end": 10,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "어떻다",
@@ -1709,6 +2628,20 @@
           "surface": "갈",
           "start": 17,
           "end": 18
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 20,
+          "end": 21,
+          "dict": true
         }
       ]
     },
@@ -1721,6 +2654,13 @@
       "translation": "Eu não tenho muito dinheiro.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "나",
+          "surface": "나",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "돈",
           "surface": "돈",
@@ -1751,6 +2691,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그렇지만",
+          "surface": "그렇지만",
+          "start": 0,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "시간",
           "surface": "시간",
           "start": 5,
@@ -1774,6 +2721,20 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "나",
+          "surface": "난",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "고속버스",
           "surface": "고속버스",
           "start": 6,
@@ -1783,13 +2744,29 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 12,
-          "end": 14
+          "end": 14,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 16,
           "end": 17
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 18,
+          "end": 19,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 19,
+          "end": 20,
+          "dict": true
         }
       ]
     },
@@ -1802,6 +2779,13 @@
       "translation": "Eu vou a Busan na semana que vem.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "다음",
           "surface": "다음",
@@ -1818,13 +2802,29 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 9,
-          "end": 11
+          "end": 11,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 13,
           "end": 14
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 16,
+          "end": 17,
+          "dict": true
         }
       ]
     },
@@ -1841,13 +2841,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "얼마나",
@@ -1905,13 +2909,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고속버스",
@@ -1924,6 +2932,13 @@
           "surface": "가",
           "start": 16,
           "end": 17
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 20,
+          "end": 22,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -1946,7 +2961,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
@@ -1955,10 +2972,31 @@
           "end": 6
         },
         {
+          "lemma": "데",
+          "surface": "데",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "비용",
           "surface": "비용",
           "start": 9,
           "end": 11
+        },
+        {
+          "lemma": "만",
+          "surface": "만",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 16,
+          "end": 17,
+          "dict": true
         },
         {
           "lemma": "들다",
@@ -1981,7 +3019,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "고속",
@@ -2000,6 +3047,20 @@
           "surface": "티켓",
           "start": 10,
           "end": 12
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 20,
+          "end": 21,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 21,
+          "end": 22,
+          "dict": true
         }
       ]
     },
@@ -2016,19 +3077,37 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "가",
           "start": 15,
           "end": 16
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 19,
+          "end": 21,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 24,
+          "end": 25,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -2057,13 +3136,36 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "가",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "데",
+          "surface": "데",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "만",
+          "surface": "만",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 19,
+          "end": 20,
+          "dict": true
         },
         {
           "lemma": "정도",
@@ -2092,7 +3194,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "기차",
@@ -2105,6 +3216,20 @@
           "surface": "티켓",
           "start": 7,
           "end": 9
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 17,
+          "end": 18,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 18,
+          "end": 19,
+          "dict": true
         }
       ]
     },
@@ -2121,13 +3246,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "비행기",
@@ -2140,6 +3269,13 @@
           "surface": "가",
           "start": 15,
           "end": 16
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 19,
+          "end": 21,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -2159,10 +3295,26 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "부산",
           "surface": "부산",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 6,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "비행기",
@@ -2181,6 +3333,27 @@
           "surface": "사",
           "start": 16,
           "end": 17
+        },
+        {
+          "lemma": "데",
+          "surface": "데",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "만",
+          "surface": "만",
+          "start": 23,
+          "end": 24,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 25,
+          "end": 26,
+          "dict": true
         },
         {
           "lemma": "정도",
@@ -2209,7 +3382,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "비행기",
@@ -2222,6 +3404,20 @@
           "surface": "티켓",
           "start": 8,
           "end": 10
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 18,
+          "end": 19,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 19,
+          "end": 20,
+          "dict": true
         }
       ]
     },
@@ -2238,13 +3434,24 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "씨",
+          "surface": "씨",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 6,
-          "end": 8
+          "end": 8,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "어떻다",
@@ -2257,6 +3464,20 @@
           "surface": "갈",
           "start": 14,
           "end": 15
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 16,
+          "end": 17,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 17,
+          "end": 18,
+          "dict": true
         }
       ]
     },
@@ -2269,6 +3490,13 @@
       "translation": "Eu não tenho muito dinheiro.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "돈",
           "surface": "돈",
@@ -2299,6 +3527,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "하지만",
+          "surface": "하지만",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "시간",
           "surface": "시간",
           "start": 4,
@@ -2322,6 +3557,20 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "고속",
           "surface": "고속",
           "start": 7,
@@ -2343,13 +3592,29 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 18,
-          "end": 20
+          "end": 20,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 22,
           "end": 23
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 24,
+          "end": 25,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 25,
+          "end": 26,
+          "dict": true
         }
       ]
     },
@@ -2366,13 +3631,36 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 4,
+          "end": 6,
+          "dict": true
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -2389,19 +3677,37 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 10,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -2418,7 +3724,9 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "언제",
@@ -2430,13 +3738,29 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 7,
-          "end": 9
+          "end": 9,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 11,
           "end": 12
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 13,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -2453,7 +3777,9 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "다음",
@@ -2471,13 +3797,29 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 10,
-          "end": 12
+          "end": 12,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 14,
           "end": 15
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 16,
+          "end": 17,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 17,
+          "end": 18,
+          "dict": true
         }
       ]
     },
@@ -2506,13 +3848,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 10,
-          "end": 12
+          "end": 12,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 15,
-          "end": 17
+          "end": 17,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "얼마나",
@@ -2548,6 +3894,13 @@
           "surface": "가",
           "start": 6,
           "end": 7
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 10,
+          "end": 12,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -2614,6 +3967,20 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "만",
+          "surface": "만",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "들다",
           "surface": "들",
           "start": 6,
@@ -2623,7 +3990,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 13,
+          "end": 14,
+          "dict": true
         },
         {
           "lemma": "고속버스",
@@ -2636,6 +4012,20 @@
           "surface": "표",
           "start": 20,
           "end": 21
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 29,
+          "end": 30,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 30,
+          "end": 31,
+          "dict": true
         }
       ]
     },
@@ -2658,13 +4048,31 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 8,
-          "end": 10
+          "end": 10,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 13,
-          "end": 15
+          "end": 15,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "몇",
+          "surface": "몇",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 21,
+          "end": 23,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -2688,6 +4096,20 @@
           "surface": "가",
           "start": 5,
           "end": 6
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 9,
+          "end": 11,
+          "dict": true
+        },
+        {
+          "lemma": "분",
+          "surface": "분",
+          "start": 14,
+          "end": 15,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -2748,6 +4170,20 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "만",
+          "surface": "만",
+          "start": 1,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "정도",
           "surface": "정도",
           "start": 5,
@@ -2763,7 +4199,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 13,
-          "end": 15
+          "end": 15,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 15,
+          "end": 16,
+          "dict": true
         },
         {
           "lemma": "기차",
@@ -2776,6 +4221,20 @@
           "surface": "표",
           "start": 19,
           "end": 20
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 28,
+          "end": 29,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 29,
+          "end": 30,
+          "dict": true
         }
       ]
     },
@@ -2792,13 +4251,17 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "비행기",
@@ -2833,19 +4296,30 @@
           "lemma": "서울",
           "surface": "서울",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "비행기",
           "surface": "비행기",
           "start": 11,
           "end": 14
+        },
+        {
+          "lemma": "시간",
+          "surface": "시간",
+          "start": 17,
+          "end": 19,
+          "dict": true
         },
         {
           "lemma": "걸리다",
@@ -2868,7 +4342,16 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "행",
+          "surface": "행",
+          "start": 2,
+          "end": 3,
+          "dict": true
         },
         {
           "lemma": "비행기",
@@ -2887,6 +4370,13 @@
           "surface": "얼마",
           "start": 10,
           "end": 12
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -2898,7 +4388,22 @@
       "target": "79,700원이에요.",
       "translation": "É 79.700 wons.",
       "speakerId": "part_b",
-      "tokens": []
+      "tokens": [
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        }
+      ]
     },
     {
       "id": "s91",
@@ -2925,13 +4430,36 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 8,
-          "end": 10
+          "end": 10,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "가",
           "start": 12,
           "end": 13
+        },
+        {
+          "lemma": "데",
+          "surface": "데",
+          "start": 15,
+          "end": 16,
+          "dict": true
+        },
+        {
+          "lemma": "만",
+          "surface": "만",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "원",
+          "surface": "원",
+          "start": 21,
+          "end": 22,
+          "dict": true
         },
         {
           "lemma": "정도",
@@ -2960,13 +4488,17 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "부산",
           "surface": "부산",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "어떻다",
@@ -2979,6 +4511,20 @@
           "surface": "갈",
           "start": 12,
           "end": 13
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 15,
+          "end": 16,
+          "dict": true
         }
       ]
     },
@@ -2995,7 +4541,9 @@
           "lemma": "몰이",
           "surface": "몰이",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "돈",
@@ -3014,6 +4562,13 @@
           "surface": "없",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "그렇지만",
+          "surface": "그렇지만",
+          "start": 15,
+          "end": 19,
+          "dict": true
         },
         {
           "lemma": "시간",
@@ -3039,6 +4594,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "고속버스",
           "surface": "고속버스",
           "start": 4,
@@ -3054,18 +4616,53 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 14,
-          "end": 16
+          "end": 16,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가다",
           "surface": "갈",
           "start": 18,
           "end": 19
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 20,
+          "end": 21,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 21,
+          "end": 22,
+          "dict": true
         }
       ]
     }
   ],
   "cards": [
+    {
+      "id": "w-얼마나",
+      "segmentId": "",
+      "target": "얼마나",
+      "translation": "quanto (tempo, quantidade)",
+      "startMs": 592593,
+      "endMs": 596953,
+      "reading": null,
+      "context": "비용은 얼마나 들어요? — O custo é de quanto?",
+      "audioClipSrc": "media/tts/wa5cbb598b68b.mp3",
+      "exampleAudioSrc": "media/frag/f4e174aacd47f.mp3",
+      "freqRank": 96,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s5337753c28ff.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
     {
       "id": "w-날",
       "segmentId": "",
@@ -3077,11 +4674,55 @@
       "context": "다음 날이에요 — É o dia seguinte",
       "audioClipSrc": "media/tts/wfc198025e969.mp3",
       "exampleAudioSrc": "media/frag/f8b1f8d11c914.mp3",
-      "freqRank": 30,
+      "freqRank": 245,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sac3ca03e3e15.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sac3ca03e3e15.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-들다",
+      "segmentId": "",
+      "target": "들다",
+      "translation": "custar (dinheiro, tempo); também: levantar",
+      "startMs": 456033,
+      "endMs": 460713,
+      "reading": null,
+      "context": "돈은 4만 원 정도 들어. — De dinheiro custa uns 40 mil wons.",
+      "audioClipSrc": "media/tts/we50ad3ebba2b.mp3",
+      "exampleAudioSrc": "media/frag/fd664246248c4.mp3",
+      "freqRank": 203,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s0b53f48f963a.jpg",
+      "newWords": [
+        "들"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-걸리다",
+      "segmentId": "",
+      "target": "걸리다",
+      "translation": "levar (tempo)",
+      "startMs": 412233,
+      "endMs": 416913,
+      "reading": null,
+      "context": "부산까지 얼마나 걸려요? — Quanto tempo leva até Busan?",
+      "audioClipSrc": "media/tts/wf96ca5a3c970.mp3",
+      "exampleAudioSrc": "media/frag/f958230329772.mp3",
+      "freqRank": 217,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/sc806118f70eb.jpg",
+      "newWords": [
+        "걸려"
+      ],
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-많다",
@@ -3094,30 +4735,34 @@
       "context": "그렇지만 시간은 많아. — Mas tempo eu tenho de sobra.",
       "audioClipSrc": "media/tts/w15b67567361f.mp3",
       "exampleAudioSrc": "media/frag/fba25edbaf331.mp3",
-      "freqRank": 67,
+      "freqRank": 65,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s5b82e37382c0.jpg",
       "newWords": [
         "많"
       ],
-      "sceneSrc": "media/frames/s5b82e37382c0.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-얼마나",
+      "id": "w-정도",
       "segmentId": "",
-      "target": "얼마나",
-      "translation": "quanto (tempo, quantidade)",
-      "startMs": 592593,
-      "endMs": 596953,
+      "target": "정도",
+      "translation": "mais ou menos / cerca de",
+      "startMs": 456033,
+      "endMs": 460713,
       "reading": null,
-      "context": "비용은 얼마나 들어요? — O custo é de quanto?",
-      "audioClipSrc": "media/tts/wa5cbb598b68b.mp3",
-      "exampleAudioSrc": "media/frag/f4e174aacd47f.mp3",
-      "freqRank": 92,
+      "context": "돈은 4만 원 정도 들어. — De dinheiro custa uns 40 mil wons.",
+      "audioClipSrc": "media/tts/w171b78149582.mp3",
+      "exampleAudioSrc": "media/frag/f05542e9e16cb.mp3",
+      "freqRank": 168,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s0b53f48f963a.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s5337753c28ff.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-다음",
@@ -3130,11 +4775,32 @@
       "context": "다음 날이에요 — É o dia seguinte",
       "audioClipSrc": "media/tts/wfe6879802f98.mp3",
       "exampleAudioSrc": "media/frag/f46deb36c35a3.mp3",
-      "freqRank": 114,
+      "freqRank": 109,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sac3ca03e3e15.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sac3ca03e3e15.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-머리",
+      "segmentId": "",
+      "target": "머리",
+      "translation": "cabeça / cabelo",
+      "startMs": 71237,
+      "endMs": 75878,
+      "reading": null,
+      "context": "저는 미용실에서 머리를 잘라요. — Eu corto o cabelo no salão.",
+      "audioClipSrc": "media/tts/w10b2bd090da4.mp3",
+      "exampleAudioSrc": "media/frag/f52d9e46a637a.mp3",
+      "freqRank": 150,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s2a40bc0364a4.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-멋지다",
@@ -3150,44 +4816,12 @@
       "freqRank": 152,
       "topikLevel": "B",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf227920ad06d.jpg",
       "newWords": [
         "멋져"
       ],
-      "sceneSrc": "media/frames/sf227920ad06d.jpg"
-    },
-    {
-      "id": "w-머리",
-      "segmentId": "",
-      "target": "머리",
-      "translation": "cabeça / cabelo",
-      "startMs": 71237,
-      "endMs": 75878,
-      "reading": null,
-      "context": "저는 미용실에서 머리를 잘라요. — Eu corto o cabelo no salão.",
-      "audioClipSrc": "media/tts/w10b2bd090da4.mp3",
-      "exampleAudioSrc": "media/frag/f52d9e46a637a.mp3",
-      "freqRank": 157,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s2a40bc0364a4.jpg"
-    },
-    {
-      "id": "w-정도",
-      "segmentId": "",
-      "target": "정도",
-      "translation": "mais ou menos / cerca de",
-      "startMs": 456033,
-      "endMs": 460713,
-      "reading": null,
-      "context": "돈은 4만 원 정도 들어. — De dinheiro custa uns 40 mil wons.",
-      "audioClipSrc": "media/tts/w171b78149582.mp3",
-      "exampleAudioSrc": "media/frag/f05542e9e16cb.mp3",
-      "freqRank": 176,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s0b53f48f963a.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-완전",
@@ -3200,49 +4834,13 @@
       "context": "콘서트가 완전 멋져요. — O show é totalmente demais.",
       "audioClipSrc": "media/tts/w2695e7505a3e.mp3",
       "exampleAudioSrc": "media/frag/f48fa0dce10ca.mp3",
-      "freqRank": 203,
+      "freqRank": 211,
       "topikLevel": "B",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf227920ad06d.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sf227920ad06d.jpg"
-    },
-    {
-      "id": "w-들다",
-      "segmentId": "",
-      "target": "들다",
-      "translation": "custar (dinheiro, tempo); também: levantar",
-      "startMs": 456033,
-      "endMs": 460713,
-      "reading": null,
-      "context": "돈은 4만 원 정도 들어. — De dinheiro custa uns 40 mil wons.",
-      "audioClipSrc": "media/tts/we50ad3ebba2b.mp3",
-      "exampleAudioSrc": "media/frag/fd664246248c4.mp3",
-      "freqRank": 222,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "들"
-      ],
-      "sceneSrc": "media/frames/s0b53f48f963a.jpg"
-    },
-    {
-      "id": "w-걸리다",
-      "segmentId": "",
-      "target": "걸리다",
-      "translation": "levar (tempo)",
-      "startMs": 412233,
-      "endMs": 416913,
-      "reading": null,
-      "context": "부산까지 얼마나 걸려요? — Quanto tempo leva até Busan?",
-      "audioClipSrc": "media/tts/wf96ca5a3c970.mp3",
-      "exampleAudioSrc": "media/frag/f958230329772.mp3",
-      "freqRank": 253,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "걸려"
-      ],
-      "sceneSrc": "media/frames/sc806118f70eb.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-주",
@@ -3255,11 +4853,13 @@
       "context": "나는 다음 주에 부산에 갈 거야. — Eu vou a Busan na semana que vem.",
       "audioClipSrc": "media/tts/wc826a19b3214.mp3",
       "exampleAudioSrc": "media/frag/f0db951a1e52b.mp3",
-      "freqRank": 304,
+      "freqRank": 310,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s4bd1eb93a80f.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s4bd1eb93a80f.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-별로",
@@ -3272,45 +4872,13 @@
       "context": "나는 돈이 별로 없어. — Eu não tenho muito dinheiro.",
       "audioClipSrc": "media/tts/w4d2e56c72746.mp3",
       "exampleAudioSrc": "media/frag/f1612b9d9a6ac.mp3",
-      "freqRank": 330,
+      "freqRank": 312,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s21c2d8afddb9.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s21c2d8afddb9.jpg"
-    },
-    {
-      "id": "w-얼마",
-      "segmentId": "",
-      "target": "얼마",
-      "translation": "quanto (preço)",
-      "startMs": 862433,
-      "endMs": 866953,
-      "reading": null,
-      "context": "부산행 비행기표가 얼마예요? — A passagem de avião para Busan custa quanto?",
-      "audioClipSrc": "media/tts/wd07e82e9e7ba.mp3",
-      "exampleAudioSrc": "media/frag/f8c500927c1c8.mp3",
-      "freqRank": 440,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s59e389e564a7.jpg"
-    },
-    {
-      "id": "w-밥",
-      "segmentId": "",
-      "target": "밥",
-      "translation": "arroz / comida (refeição)",
-      "startMs": 81167,
-      "endMs": 86806,
-      "reading": null,
-      "context": "그리고 밥을 먹으러 식당에 가요. — E vou ao restaurante para comer.",
-      "audioClipSrc": "media/tts/wf56bae24a3f3.mp3",
-      "exampleAudioSrc": "media/frag/f46bb04ed2730.mp3",
-      "freqRank": 453,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s7f68bcbc96ea.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-호텔",
@@ -3323,11 +4891,51 @@
       "context": "그리고 쉬러 호텔에 가요. — E vou ao hotel para descansar.",
       "audioClipSrc": "media/tts/w3bfcaac6ed8b.mp3",
       "exampleAudioSrc": "media/frag/ff83838f940de.mp3",
-      "freqRank": 654,
+      "freqRank": 669,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s8fce339966dd.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s8fce339966dd.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-얼마",
+      "segmentId": "",
+      "target": "얼마",
+      "translation": "quanto (preço)",
+      "startMs": 862433,
+      "endMs": 866953,
+      "reading": null,
+      "context": "부산행 비행기표가 얼마예요? — A passagem de avião para Busan custa quanto?",
+      "audioClipSrc": "media/tts/wd07e82e9e7ba.mp3",
+      "exampleAudioSrc": "media/frag/f8c500927c1c8.mp3",
+      "freqRank": 401,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s59e389e564a7.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-밥",
+      "segmentId": "",
+      "target": "밥",
+      "translation": "arroz / comida (refeição)",
+      "startMs": 81167,
+      "endMs": 86806,
+      "reading": null,
+      "context": "그리고 밥을 먹으러 식당에 가요. — E vou ao restaurante para comer.",
+      "audioClipSrc": "media/tts/wf56bae24a3f3.mp3",
+      "exampleAudioSrc": "media/frag/f46bb04ed2730.mp3",
+      "freqRank": 452,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s7f68bcbc96ea.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-버스",
@@ -3340,11 +4948,13 @@
       "context": "고속 버스를 타면 돈이 얼마나 들어요? — Se pegar o ônibus expresso, custa quanto?",
       "audioClipSrc": "media/tts/wb9e1e36f0e27.mp3",
       "exampleAudioSrc": "media/frag/f7a7f1b5e4245.mp3",
-      "freqRank": 830,
+      "freqRank": 850,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s814b9d3b836e.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s814b9d3b836e.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-자르다",
@@ -3357,13 +4967,15 @@
       "context": "저는 미용실에서 머리를 잘라요. — Eu corto o cabelo no salão.",
       "audioClipSrc": "media/tts/we3298520b17f.mp3",
       "exampleAudioSrc": "media/frag/f4eae2a8737f6.mp3",
-      "freqRank": 993,
+      "freqRank": 870,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s2a40bc0364a4.jpg",
       "newWords": [
         "잘"
       ],
-      "sceneSrc": "media/frames/s2a40bc0364a4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-식당",
@@ -3376,11 +4988,13 @@
       "context": "그리고 밥을 먹으러 식당에 가요. — E vou ao restaurante para comer.",
       "audioClipSrc": "media/tts/w87cdcf9389de.mp3",
       "exampleAudioSrc": "media/frag/f40eef8229e7b.mp3",
-      "freqRank": 1131,
+      "freqRank": 1083,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7f68bcbc96ea.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s7f68bcbc96ea.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-기차",
@@ -3393,28 +5007,32 @@
       "context": "부산행 기차표는 59,800원이야. — A passagem de trem para Busan é 59.800 wons.",
       "audioClipSrc": "media/tts/w110ea3deb919.mp3",
       "exampleAudioSrc": "media/frag/f29a3a2ca95ba.mp3",
-      "freqRank": 1281,
+      "freqRank": 1203,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s0109587f5dff.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s0109587f5dff.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-공항",
+      "id": "w-표",
       "segmentId": "",
-      "target": "공항",
-      "translation": "aeroporto",
-      "startMs": 1500,
-      "endMs": 8220,
+      "target": "표",
+      "translation": "bilhete, passagem, ingresso",
+      "startMs": 862433,
+      "endMs": 866953,
       "reading": null,
-      "context": "저는 비행기를 타러 공항에 가요. — Eu vou ao aeroporto para pegar o avião.",
-      "audioClipSrc": "media/tts/wfa0677f84677.mp3",
-      "exampleAudioSrc": "media/frag/fef4a6c17b550.mp3",
-      "freqRank": 1513,
+      "context": "부산행 비행기표가 얼마예요? — A passagem de avião para Busan custa quanto?",
+      "audioClipSrc": "media/tts/wc4facab2f053.mp3",
+      "exampleAudioSrc": "media/frag/ff9ad38bb8cda.mp3",
+      "freqRank": 1474,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s59e389e564a7.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+      "kind": null,
+      "focus": null
     }
   ],
   "source": {
@@ -3608,5 +5226,885 @@
   ],
   "titleTarget": "한국에 뭐 하러 가요? · 부산까지 얼마나 걸려요?",
   "premise": "Histórias ilustradas A0–A1 sobre deslocamento, propósito e custo. Trazem -(으)러 가다 (ir para fazer), -까지 / -에서 (até / de), 얼마나 걸리다 (levar quanto tempo), 얼마나 들다 (custar quanto) e a primeira exposição à fala informal (반말).",
-  "createdAt": "2026-08-22T18:42:47.519332+00:00"
+  "glossary": [
+    {
+      "lemma": "저",
+      "target": "저",
+      "reading": null,
+      "meaning": "eu (formal)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "비행기",
+      "target": "비행기",
+      "reading": null,
+      "meaning": "avião",
+      "meaningEn": null,
+      "freqRank": 430,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-06"
+    },
+    {
+      "lemma": "타다",
+      "target": "타다",
+      "reading": null,
+      "meaning": "pegar (transporte) / andar de",
+      "meaningEn": null,
+      "freqRank": 222,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-06"
+    },
+    {
+      "lemma": "공항",
+      "target": "공항",
+      "reading": null,
+      "meaning": "aeroporto",
+      "meaningEn": null,
+      "freqRank": 1342,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-공항",
+        "segmentId": "s1",
+        "target": "공항",
+        "translation": "aeroporto",
+        "startMs": 1500,
+        "endMs": 8220,
+        "reading": null,
+        "context": "저는 비행기를 타러 공항에 가요. — Eu vou ao aeroporto para pegar o avião.",
+        "audioClipSrc": "media/tts/wfa0677f84677.mp3",
+        "exampleAudioSrc": "media/frag/fef4a6c17b550.mp3",
+        "freqRank": 1342,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+      }
+    },
+    {
+      "lemma": "가다",
+      "target": "가다",
+      "reading": null,
+      "meaning": "ir",
+      "meaningEn": null,
+      "freqRank": 7,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "한국",
+      "target": "한국",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "여기",
+      "target": "여기",
+      "reading": null,
+      "meaning": "aqui",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "이다",
+      "target": "이다",
+      "reading": null,
+      "meaning": "ser (copula: 이에요/예요)",
+      "meaningEn": null,
+      "freqRank": 1396,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "지하철",
+      "target": "지하철",
+      "reading": null,
+      "meaning": "metrô",
+      "meaningEn": null,
+      "freqRank": 2882,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-지하철",
+        "segmentId": "s5",
+        "target": "지하철",
+        "translation": "metrô",
+        "startMs": 32636,
+        "endMs": 39228,
+        "reading": null,
+        "context": "지하철을 타고 호텔에 가요. — Vou de metrô para o hotel.",
+        "audioClipSrc": "media/tts/w2a7ace43dcfb.mp3",
+        "exampleAudioSrc": "media/frag/fa951d2a0e929.mp3",
+        "freqRank": 2882,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sde8aadb01db4.jpg"
+      }
+    },
+    {
+      "lemma": "지하철역",
+      "target": "지하철역",
+      "reading": null,
+      "meaning": "estação de metrô",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-지하철역",
+        "segmentId": "s4",
+        "target": "지하철역",
+        "translation": "estação de metrô",
+        "startMs": 24194,
+        "endMs": 30513,
+        "reading": null,
+        "context": "저는 지하철을 타러 지하철역에 가요. — Eu vou à estação para pegar o metrô.",
+        "audioClipSrc": "media/tts/w5afc1ef1b4b9.mp3",
+        "exampleAudioSrc": "media/frag/f88fdb7bba525.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/scde136d729c9.jpg"
+      }
+    },
+    {
+      "lemma": "옷",
+      "target": "옷",
+      "reading": null,
+      "meaning": "roupa",
+      "meaningEn": null,
+      "freqRank": 270,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-05"
+    },
+    {
+      "lemma": "사다",
+      "target": "사다",
+      "reading": null,
+      "meaning": "comprar",
+      "meaningEn": null,
+      "freqRank": 191,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "백화점",
+      "target": "백화점",
+      "reading": null,
+      "meaning": "loja de departamentos",
+      "meaningEn": null,
+      "freqRank": 5193,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-백화점",
+        "segmentId": "s7",
+        "target": "백화점",
+        "translation": "loja de departamentos",
+        "startMs": 50942,
+        "endMs": 56342,
+        "reading": null,
+        "context": "저는 백화점에서 옷을 사요. — Eu compro roupa na loja de departamentos.",
+        "audioClipSrc": "media/tts/w4045d68c9cf4.mp3",
+        "exampleAudioSrc": "media/frag/f87ea13a19be0.mp3",
+        "freqRank": 5193,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s4e6570a17b8a.jpg"
+      }
+    },
+    {
+      "lemma": "그리고",
+      "target": "그리고",
+      "reading": null,
+      "meaning": "e, e também",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "미용실",
+      "target": "미용실",
+      "reading": null,
+      "meaning": "salão de beleza, cabeleireiro",
+      "meaningEn": null,
+      "freqRank": 5078,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-미용실",
+        "segmentId": "s9",
+        "target": "미용실",
+        "translation": "salão de beleza, cabeleireiro",
+        "startMs": 71237,
+        "endMs": 75878,
+        "reading": null,
+        "context": "저는 미용실에서 머리를 잘라요. — Eu corto o cabelo no salão.",
+        "audioClipSrc": "media/tts/w58f857ebb7b0.mp3",
+        "exampleAudioSrc": "media/frag/fc2faa8b17d22.mp3",
+        "freqRank": 5078,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s2a40bc0364a4.jpg"
+      }
+    },
+    {
+      "lemma": "먹다",
+      "target": "먹다",
+      "reading": null,
+      "meaning": "comer",
+      "meaningEn": null,
+      "freqRank": 72,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "비빔밥",
+      "target": "비빔밥",
+      "reading": null,
+      "meaning": "bibimbap (arroz misturado com legumes)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-비빔밥",
+        "segmentId": "s11",
+        "target": "비빔밥",
+        "translation": "bibimbap (arroz misturado com legumes)",
+        "startMs": 89233,
+        "endMs": 95434,
+        "reading": null,
+        "context": "저는 식당에서 비빔밥을 먹어요. — Eu como bibimbap no restaurante.",
+        "audioClipSrc": "media/tts/w6549b5477367.mp3",
+        "exampleAudioSrc": "media/frag/ffaaf80e3fd95.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s70264a90be22.jpg"
+      }
+    },
+    {
+      "lemma": "쉬다",
+      "target": "쉬다",
+      "reading": null,
+      "meaning": "descansar",
+      "meaningEn": null,
+      "freqRank": 346,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "잠깐",
+      "target": "잠깐",
+      "reading": null,
+      "meaning": "um instante / rapidinho",
+      "meaningEn": null,
+      "freqRank": 62,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "씻다",
+      "target": "씻다",
+      "reading": null,
+      "meaning": "lavar, lavar-se",
+      "meaningEn": null,
+      "freqRank": 2077,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-씻다",
+        "segmentId": "s15",
+        "target": "씻다",
+        "translation": "lavar, lavar-se",
+        "startMs": 123274,
+        "endMs": 129033,
+        "reading": null,
+        "context": "저는 욕실에서 씻어요. — Eu me lavo no banheiro.",
+        "audioClipSrc": "media/tts/wd429a46fed52.mp3",
+        "exampleAudioSrc": "media/frag/f7fff07443d0e.mp3",
+        "freqRank": 2077,
+        "topikLevel": "A",
+        "newWords": [
+          "씻"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s40d7369b9034.jpg"
+      }
+    },
+    {
+      "lemma": "욕실",
+      "target": "욕실",
+      "reading": null,
+      "meaning": "banheiro (com banheira/chuveiro)",
+      "meaningEn": null,
+      "freqRank": 3296,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-욕실",
+        "segmentId": "s15",
+        "target": "욕실",
+        "translation": "banheiro (com banheira/chuveiro)",
+        "startMs": 123274,
+        "endMs": 129033,
+        "reading": null,
+        "context": "저는 욕실에서 씻어요. — Eu me lavo no banheiro.",
+        "audioClipSrc": "media/tts/w89a2b304320f.mp3",
+        "exampleAudioSrc": "media/frag/fc36b105f86fd.mp3",
+        "freqRank": 3296,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s40d7369b9034.jpg"
+      }
+    },
+    {
+      "lemma": "침대",
+      "target": "침대",
+      "reading": null,
+      "meaning": "cama",
+      "meaningEn": null,
+      "freqRank": 483,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "자다",
+      "target": "자다",
+      "reading": null,
+      "meaning": "dormir",
+      "meaningEn": null,
+      "freqRank": 197,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "콘서트",
+      "target": "콘서트",
+      "reading": null,
+      "meaning": "show, concerto",
+      "meaningEn": null,
+      "freqRank": 3390,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-콘서트",
+        "segmentId": "s20",
+        "target": "콘서트",
+        "translation": "show, concerto",
+        "startMs": 162598,
+        "endMs": 167118,
+        "reading": null,
+        "context": "콘서트가 완전 멋져요. — O show é totalmente demais.",
+        "audioClipSrc": "media/tts/wccb4418bd6ea.mp3",
+        "exampleAudioSrc": "media/frag/fb851773951b0.mp3",
+        "freqRank": 3390,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf227920ad06d.jpg"
+      }
+    },
+    {
+      "lemma": "보다",
+      "target": "보다",
+      "reading": null,
+      "meaning": "ver / olhar",
+      "meaningEn": null,
+      "freqRank": 10,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "공연장",
+      "target": "공연장",
+      "reading": null,
+      "meaning": "casa de shows, teatro",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-공연장",
+        "segmentId": "s19",
+        "target": "공연장",
+        "translation": "casa de shows, teatro",
+        "startMs": 156340,
+        "endMs": 162221,
+        "reading": null,
+        "context": "저는 공연장에서 콘서트를 봐요. — Eu vejo o show na casa de shows.",
+        "audioClipSrc": "media/tts/w8f2300b7f080.mp3",
+        "exampleAudioSrc": "media/frag/f2ad9ce7e8495.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sa27149cc255e.jpg"
+      }
+    },
+    {
+      "lemma": "뭐",
+      "target": "뭐",
+      "reading": null,
+      "meaning": "o quê",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "하다",
+      "target": "하다",
+      "reading": null,
+      "meaning": "fazer",
+      "meaningEn": null,
+      "freqRank": 1,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "부산",
+      "target": "부산",
+      "reading": null,
+      "meaning": "Busan (cidade)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "나",
+      "target": "나",
+      "reading": null,
+      "meaning": "eu (informal)",
+      "meaningEn": null,
+      "freqRank": 9694,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "거",
+      "target": "거",
+      "reading": null,
+      "meaning": "coisa (= 것); (~ㄹ 거예요) vai…",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "서울",
+      "target": "서울",
+      "reading": null,
+      "meaning": "Seul (capital)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "돈",
+      "target": "돈",
+      "reading": null,
+      "meaning": "dinheiro",
+      "meaningEn": null,
+      "freqRank": 84,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-06"
+    },
+    {
+      "lemma": "고속",
+      "target": "고속",
+      "reading": null,
+      "meaning": "alta velocidade (고속버스 = ônibus expresso)",
+      "meaningEn": null,
+      "freqRank": 6497,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-고속",
+        "segmentId": "s81",
+        "target": "고속",
+        "translation": "alta velocidade (고속버스 = ônibus expresso)",
+        "startMs": 779233,
+        "endMs": 784433,
+        "reading": null,
+        "context": "고속 버스를 타면 돈이 얼마나 들어요? — Se pegar o ônibus expresso, custa quanto?",
+        "audioClipSrc": "media/tts/w5a0d1c02a881.mp3",
+        "exampleAudioSrc": "media/frag/f2b80d0de5fc3.mp3",
+        "freqRank": 6497,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s814b9d3b836e.jpg"
+      }
+    },
+    {
+      "lemma": "시간",
+      "target": "시간",
+      "reading": null,
+      "meaning": "tempo / hora",
+      "meaningEn": null,
+      "freqRank": 48,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-06"
+    },
+    {
+      "lemma": "만",
+      "target": "만",
+      "reading": null,
+      "meaning": "dez mil",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "원",
+      "target": "원",
+      "reading": null,
+      "meaning": "won (moeda)",
+      "meaningEn": null,
+      "freqRank": 3563,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "행",
+      "target": "행",
+      "reading": null,
+      "meaning": "(~행) com destino a",
+      "meaningEn": null,
+      "freqRank": 5111,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "고속버스",
+      "target": "고속버스",
+      "reading": null,
+      "meaning": "ônibus expresso (interestadual)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-고속버스",
+        "segmentId": "s80",
+        "target": "고속버스",
+        "translation": "ônibus expresso (interestadual)",
+        "startMs": 770273,
+        "endMs": 775713,
+        "reading": null,
+        "context": "고속버스로 가면 4시간이 걸려요. — Indo de ônibus expresso, leva 4 horas.",
+        "audioClipSrc": "media/tts/w1b7b059fbae2.mp3",
+        "exampleAudioSrc": "media/frag/fee0b5ad3a6c7.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s548ed768700f.jpg"
+      }
+    },
+    {
+      "lemma": "분",
+      "target": "분",
+      "reading": null,
+      "meaning": "minuto",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "몰이",
+      "target": "몰이",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "그럼",
+      "target": "그럼",
+      "reading": null,
+      "meaning": "então",
+      "meaningEn": null,
+      "freqRank": 30,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "어떻다",
+      "target": "어떻다",
+      "reading": null,
+      "meaning": "ser como (어때요? = como está?)",
+      "meaningEn": null,
+      "freqRank": 16,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-05"
+    },
+    {
+      "lemma": "없다",
+      "target": "없다",
+      "reading": null,
+      "meaning": "não ter / não estar",
+      "meaningEn": null,
+      "freqRank": 4,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "그렇지만",
+      "target": "그렇지만",
+      "reading": null,
+      "meaning": "porém, mas",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "그래서",
+      "target": "그래서",
+      "reading": null,
+      "meaning": "por isso, então",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "비용",
+      "target": "비용",
+      "reading": null,
+      "meaning": "custo, despesa",
+      "meaningEn": null,
+      "freqRank": 1719,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-비용",
+        "segmentId": "s61",
+        "target": "비용",
+        "translation": "custo, despesa",
+        "startMs": 592593,
+        "endMs": 596953,
+        "reading": null,
+        "context": "비용은 얼마나 들어요? — O custo é de quanto?",
+        "audioClipSrc": "media/tts/w119a37e3f8d8.mp3",
+        "exampleAudioSrc": "media/frag/f7e40ad53e19a.mp3",
+        "freqRank": 1719,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s5337753c28ff.jpg"
+      }
+    },
+    {
+      "lemma": "데",
+      "target": "데",
+      "reading": null,
+      "meaning": "(~는데) e, mas (contexto); lugar",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "dict": true
+    },
+    {
+      "lemma": "티켓",
+      "target": "티켓",
+      "reading": null,
+      "meaning": "ingresso, bilhete",
+      "meaningEn": null,
+      "freqRank": 2471,
+      "topikLevel": null,
+      "card": {
+        "id": "w-티켓",
+        "segmentId": "s67",
+        "target": "티켓",
+        "translation": "ingresso, bilhete",
+        "startMs": 651553,
+        "endMs": 656392,
+        "reading": null,
+        "context": "부산행 기차 티켓은 59,800원이거든요. — É que o bilhete de trem para Busan é 59.800 wons.",
+        "audioClipSrc": "media/tts/waeed5e61e6c4.mp3",
+        "exampleAudioSrc": "media/frag/f2ef75a074e80.mp3",
+        "freqRank": 2471,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s73f68c1e00ef.jpg"
+      }
+    },
+    {
+      "lemma": "씨",
+      "target": "씨",
+      "reading": null,
+      "meaning": "(~씨) senhor/senhora (tratamento)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "하지만",
+      "target": "하지만",
+      "reading": null,
+      "meaning": "mas, porém",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "어디",
+      "target": "어디",
+      "reading": null,
+      "meaning": "onde",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "언제",
+      "target": "언제",
+      "reading": null,
+      "meaning": "quando",
+      "meaningEn": null,
+      "freqRank": 297,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "몇",
+      "target": "몇",
+      "reading": null,
+      "meaning": "quantos (몇 시 = que horas)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    }
+  ],
+  "sentenceCards": [
+    {
+      "id": "s-70df2f77a3",
+      "kind": "sentence",
+      "segmentId": "s13",
+      "target": "저는 호텔에서 잠깐 쉬어요.",
+      "translation": "Eu descanso um pouco no hotel.",
+      "startMs": 106740,
+      "endMs": 112220,
+      "audioClipSrc": "media/frag/fbd74021b227a.mp3",
+      "exampleAudioSrc": "media/frag/fbd74021b227a.mp3",
+      "freqRank": 669,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "호텔",
+        "target": "호텔",
+        "meaning": "hotel",
+        "reading": null,
+        "start": 3,
+        "end": 5
+      },
+      "sceneSrc": "media/frames/sa45e29afc600.jpg"
+    },
+    {
+      "id": "s-a76620d8d0",
+      "kind": "sentence",
+      "segmentId": "s68",
+      "target": "서울에서 부산까지 비행기로 가면 1시간쯤 걸려요.",
+      "translation": "Se você for de Seul até Busan de avião, leva mais ou menos 1 hora.",
+      "startMs": 663473,
+      "endMs": 670313,
+      "audioClipSrc": "media/frag/f93a40738105e.mp3",
+      "exampleAudioSrc": "media/frag/f93a40738105e.mp3",
+      "freqRank": 217,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "걸리다",
+        "target": "걸리다",
+        "meaning": "levar (tempo)",
+        "reading": null,
+        "start": 23,
+        "end": 25
+      },
+      "sceneSrc": "media/frames/se439beb50557.jpg"
+    },
+    {
+      "id": "s-2f839629cf",
+      "kind": "sentence",
+      "segmentId": "s72",
+      "target": "저는 돈이 별로 없어요.",
+      "translation": "Eu não tenho muito dinheiro.",
+      "startMs": 702833,
+      "endMs": 707313,
+      "audioClipSrc": "media/frag/f50c8470099fa.mp3",
+      "exampleAudioSrc": "media/frag/f50c8470099fa.mp3",
+      "freqRank": 312,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "별로",
+        "target": "별로",
+        "meaning": "não muito (com negativa)",
+        "reading": null,
+        "start": 6,
+        "end": 8
+      },
+      "sceneSrc": "media/frames/s6fb0846bbd75.jpg"
+    },
+    {
+      "id": "s-9602f8f562",
+      "kind": "sentence",
+      "segmentId": "s54",
+      "target": "부산행 비행기표는 79,700원이야.",
+      "translation": "A passagem de avião para Busan é 79.700 wons.",
+      "startMs": 525992,
+      "endMs": 530753,
+      "audioClipSrc": "media/frag/fc51c7faa0bec.mp3",
+      "exampleAudioSrc": "media/frag/fc51c7faa0bec.mp3",
+      "freqRank": 1474,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "표",
+        "target": "표",
+        "meaning": "bilhete, passagem, ingresso",
+        "reading": null,
+        "start": 7,
+        "end": 8
+      },
+      "sceneSrc": "media/frames/sfd7dc2563dd7.jpg"
+    },
+    {
+      "id": "s-ab9055bda4",
+      "kind": "sentence",
+      "segmentId": "s73",
+      "target": "하지만 시간은 많아요.",
+      "translation": "Mas tempo eu tenho de sobra.",
+      "startMs": 708912,
+      "endMs": 713313,
+      "audioClipSrc": "media/frag/f1bb744e2e38c.mp3",
+      "exampleAudioSrc": "media/frag/f1bb744e2e38c.mp3",
+      "freqRank": 65,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "많다",
+        "target": "많다",
+        "meaning": "ser muito / haver bastante",
+        "reading": null,
+        "start": 8,
+        "end": 9
+      },
+      "sceneSrc": "media/frames/s60853a157d50.jpg"
+    }
+  ],
+  "createdAt": "2026-09-24T19:34:21.142286+00:00"
 }

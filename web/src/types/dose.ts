@@ -27,7 +27,12 @@ export interface Media {
   kind: MediaKind;
   src: string;
   durationSec: number;
+  /** Áudio condensado (`dose_factory enrich`): só as falas, emendadas — para
+   *  ouvir de novo a lição (e offline). */
   condensedAudioSrc?: string | null;
+  /** `[[inícioCondensado, inícioOriginal, duração], …]` em ms: é por ele que a
+   *  escuta acha a legenda de cada instante do áudio condensado. */
+  condensedMap?: [number, number, number][];
   posterSrc?: string | null;
 }
 
@@ -45,6 +50,15 @@ export interface SegmentToken {
   surface: string;
   start: number;
   end: number;
+  /** Palavra da base que o aluno já sabe (as N mais frequentes do idioma — no
+   *  japonês, as 1000 primeiras). Conta como conhecida sem precisar de card. */
+  base?: boolean;
+  /** Só dicionário: palavra que nunca vira card (人, 私, この, はい, nomes,
+   *  números; 저, 그리고, 시, 이다). Toca e abre o dicionário, mas fica FORA da
+   *  compreensão, das marcas "conhecido/novo" e do Prime adaptativo. */
+  dict?: boolean;
+  /** Nome próprio (só em token `dict`): pessoa, lugar ou outro. */
+  proper?: "person" | "place" | "name";
 }
 
 export interface Segment {
@@ -90,6 +104,49 @@ export interface SentenceCard {
    *  foi ouvida. Ausente em dose antiga: o card fica sem imagem, nunca um erro. */
   sceneSrc?: string | null;
   newWords?: string[];
+  /** Japonês: outras palavras frequentes com a MESMA pronúncia (使用 · 仕様 · 私用).
+   *  Com a frente só em áudio o card seria ambíguo — então a escrita aparece junto. */
+  homophones?: string[] | null;
+  /** "sentence" = card de escuta de uma frase i+1 (`Dose.sentenceCards`): a frente
+   *  toca a frase, o verso mostra texto + tradução. Ausente = card de palavra. */
+  kind?: "word" | "sentence" | null;
+  /** Card de frase: a palavra nova dela (card desta dose) e a posição em `target`. */
+  focus?: SentenceFocus | null;
+}
+
+export interface SentenceFocus {
+  lemma: string;
+  target: string;
+  meaning?: string | null;
+  reading?: string | null;
+  start: number;
+  end: number;
+}
+
+/**
+ * Uma palavra da fala no dicionário da dose (`dose_factory enrich`): é o que
+ * aparece ao tocar numa palavra da legenda. Cobre toda palavra de conteúdo que
+ * não é card desta dose.
+ */
+export interface GlossEntry {
+  lemma: string;
+  /** Grafia (forma de dicionário como foi dita). */
+  target: string;
+  reading?: string | null;
+  /** Significado em PT (curado). */
+  meaning?: string | null;
+  /** Reserva em inglês (JMdict / Wiktionary) quando não há PT. */
+  meaningEn?: string | null;
+  freqRank?: number | null;
+  topikLevel?: TopikTier | null;
+  /** Da base que o aluno já sabe (conta como conhecida sem card). */
+  base?: boolean;
+  /** Card de outra lição do curso (id da dose): não oferece "+ card" aqui. */
+  cardIn?: string | null;
+  /** Palavra só de dicionário (ver `SegmentToken.dict`): sem "+ card" nem «já sei». */
+  dict?: boolean;
+  /** Material para virar card ("+ card"): só palavra nova, com PT. */
+  card?: SentenceCard | null;
 }
 
 export interface VocabItem {
@@ -117,6 +174,11 @@ export interface Dose {
   primePreview: PrimeChunk[];
   cards: SentenceCard[];
   vocab?: VocabItem[];
+  /** Dicionário da legenda (toque na palavra, "+ card"). Ausente em dose antiga. */
+  glossary?: GlossEntry[];
+  /** Até 5 cards de escuta de frases i+1 (todas as palavras conhecidas menos uma,
+   *  que é card desta dose). */
+  sentenceCards?: SentenceCard[];
   grammarPoints?: string[];
   tags?: string[];
   createdAt: string;
@@ -142,6 +204,8 @@ export interface DoseRef {
   /** Capa (quadro do vídeo), relativa à pasta da dose — copiada de `media.posterSrc`
    *  para a Biblioteca e a trilha do Hoje não precisarem baixar cada dose.json. */
   posterSrc?: string | null;
+  /** Áudio condensado da dose (copiado de `media`): a Biblioteca oferece "ouvir". */
+  condensedAudioSrc?: string | null;
   /** Quantos cards da dose em cada faixa, ex.: { A: 18, B: 2 }. */
   cardTiers?: Partial<Record<TopikTier, number>>;
 }

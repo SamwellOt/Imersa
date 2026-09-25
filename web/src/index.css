@@ -214,6 +214,17 @@
     letter-spacing: -0.005em;
     font-optical-sizing: auto;
   }
+  /* Título de página (Hoje, Biblioteca, Progresso, Ajustes, Entrar): a serifa
+     em 400, grande e com entrelinha curta. É o único lugar em que o tipo fica
+     realmente grande — o resto da página fica pequeno para ele ter espaço. */
+  .page-title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(2.125rem, 1.7rem + 1.2vw, 2.625rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    font-optical-sizing: auto;
+  }
   /* Rótulo de seção: pequeno e em caixa baixa (caixa alta espaçada é chapa de
      painel). A cor fica com quem usa (`text-faint` por padrão) para não
      competir com `text-brand`/`text-accent`. */
@@ -274,9 +285,22 @@
     backdrop-filter: blur(12px) saturate(1.2);
     -webkit-backdrop-filter: blur(12px) saturate(1.2);
   }
+  /* Barras fixas do celular (navegação de baixo, cabeçalhos): fundo OPACO. Com
+     o vidro translúcido o texto da página atravessava os rótulos da navegação —
+     e o blur não é garantido em todo navegador, então nem 94% bastava. */
+  .bar-solid { background: var(--bg); }
   .elev-1 { box-shadow: var(--shadow-e1); }
   .elev-2 { box-shadow: var(--shadow-e2); }
   .no-tap-highlight { -webkit-tap-highlight-color: transparent; }
+  /* Palavra da legenda que abre o dicionário: sem mudar o texto, só o cursor e
+     um fundo discreto no hover/toque (a legenda é para ler). */
+  .word-tap {
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 120ms;
+  }
+  .word-tap:hover { background: color-mix(in oklab, var(--brand) 16%, transparent); }
 }
 
 @keyframes riseIn {

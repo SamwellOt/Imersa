@@ -97,7 +97,7 @@ Isso permite evoluir pipeline e app de forma independente e testar cada um isola
 |---|---|---|
 | **Tipos/contrato** | `src/types/dose.ts` | Espelha o `dose.json`. |
 | **Dados** | `src/lib/content.ts` | Carrega `index.json` / `course.json` / `dose.json`, resolve caminhos de mídia. |
-| **Persistência** | `src/lib/db.ts` | Schema Dexie: `cards` (estado SRS, com `learning_steps`, `suspended`, `buriedUntil`), `reviewLog`, `immersionLog`, `doseProgress`, `settings`, `tombstones`. |
+| **Persistência** | `src/lib/db.ts` | Schema Dexie: `cards` (estado SRS, com `learning_steps`, `suspended`, `buriedUntil`), `reviewLog`, `immersionLog`, `lineMarks` (evento «não entendi»), `doseProgress`, `settings`, `tombstones`. Card também guarda `known` («já sei») e `origin` ("extra" = "+ card", "sentence" = frase i+1 — fora do teto de novos). |
 | **SRS** | `src/lib/srs.ts` | Agendador FSRS-6 (ts-fsrs 5) com passos de aprendizado, fila com prioridade (aprendendo → vencidos → novos), learn-ahead, notas/desfazer, adiar/suspender/reiniciar, reagendamento por histórico. |
 | **Vocabulário pela legenda** | `src/lib/vocab.ts` | Junta `segments[].tokens` (lema = id do card sem `w-`) ao estado FSRS: status por palavra (fixada / aprendendo / nunca), cortes para marcar a legenda, cobertura por lição (ocorrências e distintas). |
 | **Estatísticas SRS** | `src/lib/srsStats.ts` | Retenção real/estimada, previsão de vencimentos, botões, estados — derivado do log, nunca armazenado. |
@@ -195,7 +195,14 @@ escrita nem gerar mudança à toa para a sincronização carregar.
 mantém o lugar, o botão Voltar do navegador anda entre as fases em vez de sair da
 dose, e dá para linkar direto para a imersão. Sem `?fase`, uma dose **já
 concluída** abre na **imersão** (rever o vídeo é o motivo de reabrir); as demais,
-no Prime.
+no Prime. O idioma da dose sai do prefixo do id (`langOfDoseId` em `lib/content.ts`,
+`ko-A1-01` → `ko`), não do idioma ativo: um link de lição do outro idioma abre em vez
+de dar "Dose não encontrada".
+
+**Atalhos de tecla** (player, flashcard, escuta) ignoram teclas com Ctrl/⌘/Alt
+(`hasShortcutModifier` em `lib/hooks.ts`; Ctrl+Alt = AltGr passa): antes Ctrl+F
+também abria a tela cheia, Ctrl+R repetia a fala e Ctrl+1…4 dava nota ao card.
+A exceção é o Ctrl+Z da revisão, que é desfazer de propósito.
 
 **Dia de estudo às 4h** (`DAY_ROLLOVER_HOUR`, `utils.ts`). `dayKey()` desloca 4 h
 antes de pegar a data, como o "next day starts at" do Anki: a cota de novos, o teto de

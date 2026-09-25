@@ -6,10 +6,12 @@
   do cache quebraria o arrastar da barra de progresso e estouraria a cota. Então
   `.mp4`/`.webm` e qualquer requisição com `Range` vão direto para a rede.
 
-  O que fica offline: o app (JS/CSS/HTML), os JSONs de conteúdo e os clipes
-  curtos de áudio dos cards (TTS da palavra + fragmento da frase).
+  O que fica offline: o app (JS/CSS/HTML), os JSONs de conteúdo, os clipes
+  curtos de áudio dos cards (TTS da palavra + fragmento da frase) e o áudio
+  condensado da escuta (`/escuta/:id` baixa o mp3 inteiro, sem `Range`, então ele
+  passa pelo cache-first dos mp3).
 */
-const VERSION = "imersa-v4"; // v4: /otimizar fora do shell + `cache: "reload"` honrado; v3: capas/cenas offline; v2: assets com COEP
+const VERSION = "imersa-v6"; // v6: áudio condensado offline; v5: JSON de conteúdo rede-primeiro; v4: /otimizar fora do shell + `cache: "reload"` honrado; v3: capas/cenas offline; v2: assets com COEP
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
 const PRECACHE = ["/", "/index.html", "/manifest.webmanifest"];
@@ -72,20 +74,45 @@ async function pruneAssets(html) {
   }
 }
 
+/**
+ * JSON de conteúdo (index/course/dose): **rede primeiro**, cópia só sem rede.
+ *
+ * Era stale-while-revalidate: rápido, mas a primeira abertura depois de uma
+ * dose ser regerada mostrava a versão antiga. Na revisão isso é perigoso — o
+ * aluno avaliava cards que já não existem no conteúdo, e a revisão seguinte
+ * (que confere na fonte) os apagava como órfãos. Os arquivos são pequenos; se a
+ * rede não responder em `CONTENT_TIMEOUT_MS`, vale a cópia (offline-first).
+ */
+const CONTENT_TIMEOUT_MS = 4000;
+
+async function networkFirst(request, cacheName) {
+  const cache = await caches.open(cacheName);
+  // `cache: "reload"` = o app quer a FONTE (a revisão confere se uma dose sumiu
+  // mesmo antes de apagar registro órfão): sem rede, erro — nunca a cópia, que
+  // pode ser de antes de a dose existir e faria apagar progresso de verdade.
+  if (request.cache === "reload") {
+    const res = await fetch(request);
+    if (res && res.ok) cache.put(request, res.clone());
+    return res;
+  }
+  const network = fetch(request).then((res) => {
+    if (res && res.ok) cache.put(request, res.clone());
+    return res;
+  });
+  network.catch(() => {}); // perdeu para a cópia e depois falhou: não é erro de ninguém
+  const timeout = new Promise((ok) => setTimeout(() => ok(null), CONTENT_TIMEOUT_MS));
+  try {
+    const res = await Promise.race([network, timeout]);
+    if (res) return res;
+    // rede lenta: a cópia agora, se houver; senão espera a rede mesmo
+    return (await cache.match(request)) || (await network);
+  } catch {
+    return (await cache.match(request)) || Response.error();
+  }
+}
+
 async function staleWhileRevalidate(request, cacheName) {
   const cache = await caches.open(cacheName);
-  // `cache: "reload"` no fetch = o app quer a fonte, não a cópia (é como a
-  // revisão confere se uma dose sumiu MESMO antes de apagar registro órfão).
-  // Rede primeiro; um 404 aí é resposta de verdade. Sem rede, cai na cópia.
-  if (request.cache === "reload") {
-    try {
-      const res = await fetch(request);
-      if (res && res.ok) cache.put(request, res.clone());
-      return res;
-    } catch {
-      return (await cache.match(request)) || Response.error();
-    }
-  }
   const hit = await cache.match(request);
   const network = fetch(request)
     .then((res) => {
@@ -137,7 +164,7 @@ self.addEventListener("fetch", (event) => {
   if (isAsset(url)) {
     event.respondWith(cacheFirst(request, SHELL)); // hash no nome = imutável
   } else if (isContentJson(url)) {
-    event.respondWith(staleWhileRevalidate(request, RUNTIME)); // regerar dose atualiza sozinho
+    event.respondWith(networkFirst(request, RUNTIME)); // regerar dose vale na hora
   } else if (sameOrigin && (isShortAudio(url) || isContentImage(url))) {
     event.respondWith(cacheFirst(request, RUNTIME)); // TTS, fragmentos, capas e cenas dos cards
   } else if (isFont(url)) {

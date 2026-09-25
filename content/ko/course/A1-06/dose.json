@@ -11,7 +11,634 @@
     "kind": "video",
     "src": "media/main.mp4",
     "durationSec": 1209.421333,
-    "condensedAudioSrc": null,
+    "condensedAudioSrc": "media/condensed.mp3",
+    "condensedMap": [
+      [
+        0,
+        1350,
+        10450
+      ],
+      [
+        10450,
+        12971,
+        4542
+      ],
+      [
+        14992,
+        18237,
+        4019
+      ],
+      [
+        19011,
+        22987,
+        9054
+      ],
+      [
+        28065,
+        32962,
+        4075
+      ],
+      [
+        32140,
+        37927,
+        4230
+      ],
+      [
+        36370,
+        43943,
+        2840
+      ],
+      [
+        39210,
+        48063,
+        4780
+      ],
+      [
+        43990,
+        53746,
+        9426
+      ],
+      [
+        53416,
+        64147,
+        4701
+      ],
+      [
+        58117,
+        69666,
+        4680
+      ],
+      [
+        62797,
+        75106,
+        8329
+      ],
+      [
+        71126,
+        84511,
+        4493
+      ],
+      [
+        75619,
+        90438,
+        4981
+      ],
+      [
+        80600,
+        96305,
+        10621
+      ],
+      [
+        91221,
+        107907,
+        4100
+      ],
+      [
+        95321,
+        113145,
+        4846
+      ],
+      [
+        100167,
+        119187,
+        10942
+      ],
+      [
+        111109,
+        136467,
+        4894
+      ],
+      [
+        116003,
+        145768,
+        5717
+      ],
+      [
+        121720,
+        154787,
+        4500
+      ],
+      [
+        126220,
+        162405,
+        5139
+      ],
+      [
+        131359,
+        171507,
+        4780
+      ],
+      [
+        136139,
+        180202,
+        4880
+      ],
+      [
+        141019,
+        188367,
+        5200
+      ],
+      [
+        146219,
+        197147,
+        5026
+      ],
+      [
+        151245,
+        204637,
+        4441
+      ],
+      [
+        155686,
+        213814,
+        4780
+      ],
+      [
+        160466,
+        223347,
+        5243
+      ],
+      [
+        165709,
+        231722,
+        5179
+      ],
+      [
+        170888,
+        241977,
+        4741
+      ],
+      [
+        175629,
+        251627,
+        5180
+      ],
+      [
+        180809,
+        259627,
+        4859
+      ],
+      [
+        185668,
+        267972,
+        5063
+      ],
+      [
+        190731,
+        277046,
+        5976
+      ],
+      [
+        196707,
+        287027,
+        5085
+      ],
+      [
+        201792,
+        297136,
+        4779
+      ],
+      [
+        206571,
+        305587,
+        5579
+      ],
+      [
+        212150,
+        315307,
+        5420
+      ],
+      [
+        217570,
+        325169,
+        5340
+      ],
+      [
+        222910,
+        335106,
+        6021
+      ],
+      [
+        228931,
+        344546,
+        3181
+      ],
+      [
+        232112,
+        353664,
+        5500
+      ],
+      [
+        237612,
+        361080,
+        6420
+      ],
+      [
+        244032,
+        369550,
+        5505
+      ],
+      [
+        249537,
+        375828,
+        5011
+      ],
+      [
+        254548,
+        385268,
+        4821
+      ],
+      [
+        259369,
+        392139,
+        5739
+      ],
+      [
+        265108,
+        401539,
+        4106
+      ],
+      [
+        269214,
+        406938,
+        4872
+      ],
+      [
+        274086,
+        412519,
+        5300
+      ],
+      [
+        279386,
+        422272,
+        9287
+      ],
+      [
+        288673,
+        432672,
+        4401
+      ],
+      [
+        293074,
+        442719,
+        4700
+      ],
+      [
+        297774,
+        449380,
+        5500
+      ],
+      [
+        303274,
+        459500,
+        5260
+      ],
+      [
+        308534,
+        465858,
+        5334
+      ],
+      [
+        313868,
+        474839,
+        16180
+      ],
+      [
+        330048,
+        494179,
+        5299
+      ],
+      [
+        335347,
+        500726,
+        11619
+      ],
+      [
+        346966,
+        514399,
+        5060
+      ],
+      [
+        352026,
+        530685,
+        8031
+      ],
+      [
+        360057,
+        542392,
+        8101
+      ],
+      [
+        368158,
+        555456,
+        7762
+      ],
+      [
+        375920,
+        566718,
+        8113
+      ],
+      [
+        384033,
+        581111,
+        8373
+      ],
+      [
+        392406,
+        591987,
+        7504
+      ],
+      [
+        399910,
+        601399,
+        8919
+      ],
+      [
+        408829,
+        617071,
+        8553
+      ],
+      [
+        417382,
+        628598,
+        7171
+      ],
+      [
+        424553,
+        638167,
+        7654
+      ],
+      [
+        432207,
+        652878,
+        7636
+      ],
+      [
+        439843,
+        663993,
+        8050
+      ],
+      [
+        447893,
+        677725,
+        7173
+      ],
+      [
+        455066,
+        688066,
+        8679
+      ],
+      [
+        463745,
+        701420,
+        8479
+      ],
+      [
+        472224,
+        712959,
+        8719
+      ],
+      [
+        480943,
+        724399,
+        9144
+      ],
+      [
+        490087,
+        737126,
+        8985
+      ],
+      [
+        499072,
+        750999,
+        8134
+      ],
+      [
+        507206,
+        761378,
+        9066
+      ],
+      [
+        516272,
+        774319,
+        6969
+      ],
+      [
+        523241,
+        785605,
+        9592
+      ],
+      [
+        532833,
+        796719,
+        6494
+      ],
+      [
+        539327,
+        805250,
+        3100
+      ],
+      [
+        542427,
+        812574,
+        6580
+      ],
+      [
+        549007,
+        822175,
+        5820
+      ],
+      [
+        554827,
+        829934,
+        6420
+      ],
+      [
+        561247,
+        838095,
+        5860
+      ],
+      [
+        567107,
+        848055,
+        4500
+      ],
+      [
+        571607,
+        854975,
+        6220
+      ],
+      [
+        577827,
+        864015,
+        5819
+      ],
+      [
+        583646,
+        872174,
+        5981
+      ],
+      [
+        589627,
+        881655,
+        5700
+      ],
+      [
+        595327,
+        889735,
+        5099
+      ],
+      [
+        600426,
+        898135,
+        6780
+      ],
+      [
+        607206,
+        907935,
+        5260
+      ],
+      [
+        612466,
+        915375,
+        6299
+      ],
+      [
+        618765,
+        924454,
+        5901
+      ],
+      [
+        624666,
+        934855,
+        4420
+      ],
+      [
+        629086,
+        941415,
+        7060
+      ],
+      [
+        636146,
+        951495,
+        5220
+      ],
+      [
+        641366,
+        959334,
+        5581
+      ],
+      [
+        646947,
+        968334,
+        5741
+      ],
+      [
+        652688,
+        982255,
+        4579
+      ],
+      [
+        657267,
+        991135,
+        6580
+      ],
+      [
+        663847,
+        1002575,
+        5740
+      ],
+      [
+        669587,
+        1012415,
+        6500
+      ],
+      [
+        676087,
+        1022775,
+        5779
+      ],
+      [
+        681866,
+        1034575,
+        4539
+      ],
+      [
+        686405,
+        1043135,
+        6180
+      ],
+      [
+        692585,
+        1054294,
+        5820
+      ],
+      [
+        698405,
+        1064575,
+        5939
+      ],
+      [
+        704344,
+        1075894,
+        5780
+      ],
+      [
+        710124,
+        1086375,
+        5060
+      ],
+      [
+        715184,
+        1096535,
+        6740
+      ],
+      [
+        721924,
+        1109695,
+        5300
+      ],
+      [
+        727224,
+        1119055,
+        6300
+      ],
+      [
+        733524,
+        1130215,
+        5820
+      ],
+      [
+        739344,
+        1142775,
+        4460
+      ],
+      [
+        743804,
+        1151175,
+        7060
+      ],
+      [
+        750864,
+        1163374,
+        5181
+      ],
+      [
+        756045,
+        1173494,
+        5581
+      ],
+      [
+        761626,
+        1184694,
+        5740
+      ],
+      [
+        767366,
+        1199254,
+        9461
+      ]
+    ],
     "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
   },
   "segments": [
@@ -28,13 +655,22 @@
           "lemma": "영어",
           "surface": "영어",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
           "surface": "할",
           "start": 4,
           "end": 5
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 6,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -54,16 +690,32 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "영어",
           "surface": "영어",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
           "surface": "할",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -83,10 +735,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "호주",
           "surface": "호주",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오다",
@@ -124,6 +785,13 @@
           "end": 7
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 10,
@@ -140,6 +808,13 @@
       "translation": "Sim, eu consigo dançar hip-hop.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "힙합",
           "surface": "힙합",
@@ -159,6 +834,13 @@
           "end": 10
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 13,
@@ -176,10 +858,24 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "댄서",
           "surface": "댄서",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "이다",
+          "surface": "였",
+          "start": 5,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -205,6 +901,13 @@
           "end": 4
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 7,
@@ -222,6 +925,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "랩",
           "surface": "랩",
           "start": 3,
@@ -232,6 +942,13 @@
           "surface": "할",
           "start": 6,
           "end": 7
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -251,10 +968,26 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "래퍼",
           "surface": "래퍼",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 5,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -280,6 +1013,13 @@
           "end": 6
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 9,
@@ -297,6 +1037,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "그림",
           "surface": "그림",
           "start": 3,
@@ -307,6 +1054,13 @@
           "surface": "그릴",
           "start": 7,
           "end": 9
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -325,6 +1079,13 @@
       "translation": "Eu desenho bem.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "그림",
           "surface": "그림",
@@ -367,6 +1128,13 @@
           "end": 5
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 8,
@@ -384,6 +1152,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "기타",
           "surface": "기타",
           "start": 3,
@@ -394,6 +1169,13 @@
           "surface": "칠",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -413,10 +1195,31 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "이거",
+          "surface": "이건",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "제",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "기타",
           "surface": "기타",
           "start": 5,
           "end": 7
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -442,6 +1245,13 @@
           "end": 7
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 10,
@@ -459,6 +1269,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "케이크",
           "surface": "케이크",
           "start": 3,
@@ -469,6 +1286,13 @@
           "surface": "만들",
           "start": 8,
           "end": 10
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 11,
+          "end": 12,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -488,10 +1312,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "브라우니",
           "surface": "브라우니",
           "start": 3,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "자주",
@@ -529,6 +1362,13 @@
           "end": 5
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 8,
@@ -546,6 +1386,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "야구",
           "surface": "야구",
           "start": 3,
@@ -556,6 +1403,13 @@
           "surface": "할",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -579,6 +1433,13 @@
           "surface": "어렸",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "때",
+          "surface": "때",
+          "start": 4,
+          "end": 5,
+          "dict": true
         },
         {
           "lemma": "야구",
@@ -607,7 +1468,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "사투리",
@@ -620,6 +1483,13 @@
           "surface": "할",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -639,10 +1509,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "부산",
           "surface": "부산",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "사투리",
@@ -655,6 +1534,13 @@
           "surface": "할",
           "start": 11,
           "end": 12
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 13,
+          "end": 14,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -674,16 +1560,32 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "부산",
           "surface": "부산",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "사람",
           "surface": "사람",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 8,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -700,13 +1602,22 @@
           "lemma": "영어",
           "surface": "영어",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
           "surface": "할",
           "start": 4,
           "end": 5
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 6,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -726,16 +1637,32 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "영어",
           "surface": "영어",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
           "surface": "할",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -755,10 +1682,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "호주",
           "surface": "호주",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오다",
@@ -796,6 +1732,13 @@
           "end": 7
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 10,
@@ -812,6 +1755,13 @@
       "translation": "Sim, eu consigo dançar hip-hop.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "힙합",
           "surface": "힙합",
@@ -831,6 +1781,13 @@
           "end": 10
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 13,
@@ -848,10 +1805,24 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "댄서",
           "surface": "댄서",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "이다",
+          "surface": "였",
+          "start": 5,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -877,6 +1848,13 @@
           "end": 4
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 7,
@@ -894,6 +1872,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "랩",
           "surface": "랩",
           "start": 3,
@@ -904,6 +1889,13 @@
           "surface": "할",
           "start": 6,
           "end": 7
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -923,10 +1915,26 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "래퍼",
           "surface": "래퍼",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 5,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -952,6 +1960,13 @@
           "end": 6
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 9,
@@ -969,6 +1984,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "그림",
           "surface": "그림",
           "start": 3,
@@ -979,6 +2001,13 @@
           "surface": "그릴",
           "start": 7,
           "end": 9
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -997,6 +2026,13 @@
       "translation": "Eu desenho bem.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "그림",
           "surface": "그림",
@@ -1039,6 +2075,13 @@
           "end": 5
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 8,
@@ -1056,6 +2099,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "기타",
           "surface": "기타",
           "start": 3,
@@ -1066,6 +2116,13 @@
           "surface": "칠",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1085,10 +2142,31 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "이거",
+          "surface": "이건",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "제",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "기타",
           "surface": "기타",
           "start": 5,
           "end": 7
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -1114,6 +2192,13 @@
           "end": 7
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 10,
@@ -1131,6 +2216,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "케이크",
           "surface": "케이크",
           "start": 3,
@@ -1141,6 +2233,13 @@
           "surface": "만들",
           "start": 8,
           "end": 10
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 11,
+          "end": 12,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1160,10 +2259,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "브라우니",
           "surface": "브라우니",
           "start": 3,
-          "end": 7
+          "end": 7,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "자주",
@@ -1201,6 +2309,13 @@
           "end": 5
         },
         {
+          "lemma": "수",
+          "surface": "수",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 8,
@@ -1218,6 +2333,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "야구",
           "surface": "야구",
           "start": 3,
@@ -1228,6 +2350,13 @@
           "surface": "할",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1251,6 +2380,13 @@
           "surface": "어렸",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "때",
+          "surface": "때",
+          "start": 4,
+          "end": 5,
+          "dict": true
         },
         {
           "lemma": "야구",
@@ -1279,7 +2415,9 @@
           "lemma": "부산",
           "surface": "부산",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "사투리",
@@ -1292,6 +2430,13 @@
           "surface": "할",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1311,10 +2456,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "네",
+          "surface": "네",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "부산",
           "surface": "부산",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "사투리",
@@ -1327,6 +2481,13 @@
           "surface": "할",
           "start": 11,
           "end": 12
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 13,
+          "end": 14,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1346,16 +2507,32 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "부산",
           "surface": "부산",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "사람",
           "surface": "사람",
           "start": 6,
           "end": 8
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 8,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -1369,6 +2546,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "무슨",
+          "surface": "무슨",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "외국어",
           "surface": "외국어",
           "start": 3,
@@ -1379,6 +2563,13 @@
           "surface": "할",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1398,6 +2589,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "무슨",
+          "surface": "무슨",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "음식",
           "surface": "음식",
           "start": 3,
@@ -1408,6 +2606,13 @@
           "surface": "만들",
           "start": 7,
           "end": 9
+        },
+        {
+          "lemma": "수",
+          "surface": "수",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -1433,6 +2638,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "낚시",
           "surface": "낚시",
           "start": 8,
@@ -1456,10 +2668,24 @@
       "speakerId": "part_b",
       "tokens": [
         {
-          "lemma": "낚시하다",
-          "surface": "낚시하",
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "낚시",
+          "surface": "낚시",
           "start": 3,
-          "end": 6
+          "end": 5
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -1485,6 +2711,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "테니스",
           "surface": "테니스",
           "start": 8,
@@ -1508,6 +2741,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -1524,6 +2764,20 @@
           "surface": "치",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 13,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -1543,6 +2797,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "요리하다",
           "surface": "요리해",
           "start": 8,
@@ -1560,10 +2821,24 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "요리하다",
           "surface": "요리하",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -1583,6 +2858,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "맛있다",
           "surface": "맛있",
           "start": 3,
@@ -1599,6 +2881,13 @@
           "surface": "먹",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "것",
+          "surface": "것",
+          "start": 13,
+          "end": 14,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -1624,6 +2913,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "게임",
           "surface": "게임",
           "start": 8,
@@ -1647,6 +2943,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -1663,6 +2966,20 @@
           "surface": "하",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 13,
+          "end": 14,
+          "dict": true
         }
       ]
     },
@@ -1686,6 +3003,13 @@
           "surface": "있",
           "start": 4,
           "end": 5
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "게임",
@@ -1717,6 +3041,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "미술관",
           "surface": "미술관",
           "start": 8,
@@ -1740,6 +3071,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "그림",
           "surface": "그림",
           "start": 3,
@@ -1750,6 +3088,13 @@
           "surface": "보",
           "start": 6,
           "end": 7
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -1775,6 +3120,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "책",
           "surface": "책",
           "start": 8,
@@ -1798,6 +3150,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "책",
           "surface": "책",
           "start": 3,
@@ -1808,6 +3167,13 @@
           "surface": "읽",
           "start": 5,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -1833,6 +3199,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "자전거",
           "surface": "자전거",
           "start": 8,
@@ -1856,6 +3229,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -1872,6 +3252,20 @@
           "surface": "타",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 13,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -1897,6 +3291,13 @@
           "end": 5
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "자전거",
           "surface": "자전거",
           "start": 11,
@@ -1919,6 +3320,13 @@
       "translation": "Eu escuto música todo dia.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "매일",
           "surface": "매일",
@@ -1949,6 +3357,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -1965,6 +3380,20 @@
           "surface": "듣",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 13,
+          "end": 14,
+          "dict": true
         }
       ]
     },
@@ -1978,10 +3407,31 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "음악",
           "surface": "음악",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만드",
+          "start": 6,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "것",
+          "surface": "것",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2001,10 +3451,31 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "여러분",
+          "surface": "여러분",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 5,
           "end": 7
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 10,
+          "end": 11,
+          "dict": true
         }
       ]
     },
@@ -2022,6 +3493,13 @@
           "surface": "월요일",
           "start": 0,
           "end": 3
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
         },
         {
           "lemma": "낚시",
@@ -2047,10 +3525,24 @@
       "speakerId": "part_b",
       "tokens": [
         {
-          "lemma": "낚시하다",
-          "surface": "낚시하",
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "낚시",
+          "surface": "낚시",
           "start": 3,
-          "end": 6
+          "end": 5
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2076,6 +3568,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "테니스",
           "surface": "테니스",
           "start": 8,
@@ -2099,6 +3598,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -2115,6 +3621,20 @@
           "surface": "치",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 13,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -2134,6 +3654,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "요리하다",
           "surface": "요리해",
           "start": 8,
@@ -2151,10 +3678,24 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "요리하다",
           "surface": "요리하",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2174,6 +3715,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "맛있다",
           "surface": "맛있",
           "start": 3,
@@ -2190,6 +3738,13 @@
           "surface": "먹",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "것",
+          "surface": "것",
+          "start": 13,
+          "end": 14,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2215,6 +3770,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "게임",
           "surface": "게임",
           "start": 8,
@@ -2238,6 +3800,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -2254,6 +3823,20 @@
           "surface": "하",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 13,
+          "end": 14,
+          "dict": true
         }
       ]
     },
@@ -2277,6 +3860,13 @@
           "surface": "있",
           "start": 4,
           "end": 5
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "게임",
@@ -2308,6 +3898,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "미술관",
           "surface": "미술관",
           "start": 8,
@@ -2331,6 +3928,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "그림",
           "surface": "그림",
           "start": 3,
@@ -2341,6 +3945,13 @@
           "surface": "보",
           "start": 6,
           "end": 7
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 9,
+          "end": 10,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2366,6 +3977,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "책",
           "surface": "책",
           "start": 8,
@@ -2389,6 +4007,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "책",
           "surface": "책",
           "start": 3,
@@ -2399,6 +4024,13 @@
           "surface": "읽",
           "start": 5,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "걸",
+          "start": 8,
+          "end": 9,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2424,6 +4056,13 @@
           "end": 3
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "자전거",
           "surface": "자전거",
           "start": 8,
@@ -2447,6 +4086,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -2463,6 +4109,20 @@
           "surface": "타",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 13,
+          "end": 14,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -2488,6 +4148,13 @@
           "end": 5
         },
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
           "lemma": "자전거",
           "surface": "자전거",
           "start": 11,
@@ -2510,6 +4177,13 @@
       "translation": "Eu escuto música todo dia.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "매일",
           "surface": "매일",
@@ -2540,6 +4214,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 2,
@@ -2556,6 +4237,20 @@
           "surface": "듣",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 12,
+          "end": 13,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 13,
+          "end": 14,
+          "dict": true
         }
       ]
     },
@@ -2569,10 +4264,31 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "음악",
           "surface": "음악",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "만들다",
+          "surface": "만드",
+          "start": 6,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "것",
+          "surface": "것",
+          "start": 10,
+          "end": 11,
+          "dict": true
         },
         {
           "lemma": "좋아하다",
@@ -2592,10 +4308,31 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "여러분",
+          "surface": "여러분",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "취미",
           "surface": "취미",
           "start": 5,
           "end": 7
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 10,
+          "end": 11,
+          "dict": true
         }
       ]
     },
@@ -2636,6 +4373,20 @@
           "surface": "취미",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 5,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -2667,6 +4418,13 @@
           "end": 10
         },
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
           "lemma": "하다",
           "surface": "해",
           "start": 13,
@@ -2683,6 +4441,13 @@
       "translation": "Eu coleciono bonecos.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "인형",
           "surface": "인형",
@@ -2719,16 +4484,23 @@
           "end": 4
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 9,
           "end": 11
         },
         {
-          "lemma": "인형들",
-          "surface": "인형들",
+          "lemma": "인형",
+          "surface": "인형",
           "start": 12,
-          "end": 15
+          "end": 14
         },
         {
           "lemma": "있다",
@@ -2748,6 +4520,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "새",
+          "surface": "새",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "인형",
           "surface": "인형",
           "start": 5,
@@ -2758,6 +4544,13 @@
           "surface": "사",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -2770,6 +4563,20 @@
       "translation": "Mas esse boneco é um pouco caro.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "그",
+          "surface": "그",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
         {
           "lemma": "인형",
           "surface": "인형",
@@ -2800,6 +4607,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -2828,6 +4649,13 @@
       "translation": "Eu coleciono discos de vinil.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "모으다",
           "surface": "모아",
@@ -2858,6 +4686,13 @@
           "end": 4
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 9,
@@ -2881,6 +4716,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "새",
+          "surface": "새",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "턴테이블",
           "surface": "턴테이블",
           "start": 5,
@@ -2891,6 +4740,13 @@
           "surface": "사",
           "start": 11,
           "end": 12
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -2903,6 +4759,20 @@
       "translation": "Mas esse toca-discos é muito caro.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "그",
+          "surface": "그",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
         {
           "lemma": "턴테이블",
           "surface": "턴테이블",
@@ -2933,6 +4803,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -2961,6 +4845,13 @@
       "translation": "Eu coleciono photocards.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "포토",
           "surface": "포토",
@@ -3003,6 +4894,13 @@
           "end": 4
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 9,
@@ -3015,10 +4913,10 @@
           "end": 14
         },
         {
-          "lemma": "카드들",
-          "surface": "카드들",
+          "lemma": "카드",
+          "surface": "카드",
           "start": 15,
-          "end": 18
+          "end": 17
         },
         {
           "lemma": "있다",
@@ -3038,6 +4936,13 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "콘서트",
           "surface": "콘서트",
           "start": 3,
@@ -3048,6 +4953,13 @@
           "surface": "가",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -3060,6 +4972,13 @@
       "translation": "Mas o ingresso do show é caro mesmo.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "콘서트",
           "surface": "콘서트",
@@ -3096,6 +5015,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -3124,6 +5057,13 @@
       "translation": "Eu coleciono ímãs.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "자석",
           "surface": "자석",
@@ -3160,22 +5100,36 @@
           "end": 5
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 10,
           "end": 12
         },
         {
-          "lemma": "자석들",
-          "surface": "자석들",
+          "lemma": "자석",
+          "surface": "자석",
           "start": 13,
-          "end": 16
+          "end": 15
         },
         {
           "lemma": "붙다",
           "surface": "붙",
           "start": 18,
           "end": 19
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 21,
+          "end": 22,
+          "dict": true
         }
       ]
     },
@@ -3188,6 +5142,13 @@
       "translation": "Eu quero viajar de novo.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "또",
           "surface": "또",
@@ -3205,6 +5166,13 @@
           "surface": "가",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -3217,6 +5185,13 @@
       "translation": "Mas a passagem de avião é cara demais.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "비행기",
           "surface": "비행기",
@@ -3253,6 +5228,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -3281,6 +5270,13 @@
       "translation": "Eu coleciono bonecos.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "인형",
           "surface": "인형",
@@ -3317,16 +5313,23 @@
           "end": 4
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 9,
           "end": 11
         },
         {
-          "lemma": "인형들",
-          "surface": "인형들",
+          "lemma": "인형",
+          "surface": "인형",
           "start": 12,
-          "end": 15
+          "end": 14
         },
         {
           "lemma": "있다",
@@ -3346,6 +5349,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "새",
+          "surface": "새",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "인형",
           "surface": "인형",
           "start": 5,
@@ -3356,6 +5373,13 @@
           "surface": "사",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -3368,6 +5392,20 @@
       "translation": "Mas esse boneco é um pouco caro.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "그",
+          "surface": "그",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
         {
           "lemma": "인형",
           "surface": "인형",
@@ -3398,6 +5436,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -3426,6 +5478,13 @@
       "translation": "Eu coleciono discos de vinil.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "모으다",
           "surface": "모아",
@@ -3456,6 +5515,13 @@
           "end": 4
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 9,
@@ -3479,6 +5545,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
+          "lemma": "새",
+          "surface": "새",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "턴테이블",
           "surface": "턴테이블",
           "start": 5,
@@ -3489,6 +5569,13 @@
           "surface": "사",
           "start": 11,
           "end": 12
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 14,
+          "end": 15,
+          "dict": true
         }
       ]
     },
@@ -3501,6 +5588,20 @@
       "translation": "Mas esse toca-discos é muito caro.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "그",
+          "surface": "그",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
         {
           "lemma": "턴테이블",
           "surface": "턴테이블",
@@ -3531,6 +5632,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -3559,6 +5674,13 @@
       "translation": "Eu coleciono photocards.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "포토",
           "surface": "포토",
@@ -3601,6 +5723,13 @@
           "end": 4
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 6,
+          "end": 7,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 9,
@@ -3613,10 +5742,10 @@
           "end": 14
         },
         {
-          "lemma": "카드들",
-          "surface": "카드들",
+          "lemma": "카드",
+          "surface": "카드",
           "start": 15,
-          "end": 18
+          "end": 17
         },
         {
           "lemma": "있다",
@@ -3636,6 +5765,13 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "콘서트",
           "surface": "콘서트",
           "start": 3,
@@ -3646,6 +5782,13 @@
           "surface": "가",
           "start": 8,
           "end": 9
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -3658,6 +5801,13 @@
       "translation": "Mas o ingresso do show é caro mesmo.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "콘서트",
           "surface": "콘서트",
@@ -3694,6 +5844,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -3722,6 +5886,13 @@
       "translation": "Eu coleciono ímãs.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "자석",
           "surface": "자석",
@@ -3758,22 +5929,36 @@
           "end": 5
         },
         {
+          "lemma": "저",
+          "surface": "제",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모은",
           "start": 10,
           "end": 12
         },
         {
-          "lemma": "자석들",
-          "surface": "자석들",
+          "lemma": "자석",
+          "surface": "자석",
           "start": 13,
-          "end": 16
+          "end": 15
         },
         {
           "lemma": "붙다",
           "surface": "붙",
           "start": 18,
           "end": 19
+        },
+        {
+          "lemma": "있다",
+          "surface": "있",
+          "start": 21,
+          "end": 22,
+          "dict": true
         }
       ]
     },
@@ -3786,6 +5971,13 @@
       "translation": "Eu quero viajar de novo.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "또",
           "surface": "또",
@@ -3803,6 +5995,13 @@
           "surface": "가",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "싶다",
+          "surface": "싶",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -3815,6 +6014,13 @@
       "translation": "Mas a passagem de avião é cara demais.",
       "speakerId": "part_c",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "비행기",
           "surface": "비행기",
@@ -3851,6 +6057,20 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "그래서",
+          "surface": "그래서",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
           "lemma": "요즘",
           "surface": "요즘",
           "start": 7,
@@ -3880,16 +6100,37 @@
       "speakerId": "part_c",
       "tokens": [
         {
+          "lemma": "여러분",
+          "surface": "여러분",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "모으다",
           "surface": "모으",
           "start": 5,
           "end": 7
         },
         {
+          "lemma": "것",
+          "surface": "것",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 12,
           "end": 13
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 17,
+          "end": 18,
+          "dict": true
         },
         {
           "lemma": "모으다",
@@ -3902,21 +6143,23 @@
   ],
   "cards": [
     {
-      "id": "w-시간",
+      "id": "w-돈",
       "segmentId": "",
-      "target": "시간",
-      "translation": "tempo / hora",
-      "startMs": 796869,
-      "endMs": 802863,
+      "target": "돈",
+      "translation": "dinheiro",
+      "startMs": 838245,
+      "endMs": 843605,
       "reading": null,
-      "context": "시간이 있으면 보통 뭐 해요? — Quando você tem tempo, o que costuma fazer?",
-      "audioClipSrc": "media/tts/w3f23fd871c66.mp3",
-      "exampleAudioSrc": "media/frag/f0467ca9f5251.mp3",
-      "freqRank": 50,
+      "context": "그래서 저는 요즘 돈을 모아요. — Por isso eu ando juntando dinheiro.",
+      "audioClipSrc": "media/tts/w728f9e6621b8.mp3",
+      "exampleAudioSrc": "media/frag/f2c68985f3fb8.mp3",
+      "freqRank": 84,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s5b9a7c660648.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s425bea2b444b.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-만들다",
@@ -3929,30 +6172,34 @@
       "context": "케이크를 만들 수 있어요? — Você consegue fazer bolo?",
       "audioClipSrc": "media/tts/w49aced47b88e.mp3",
       "exampleAudioSrc": "media/frag/fede7ca72f20d.mp3",
-      "freqRank": 77,
+      "freqRank": 69,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/se6089f98a5a4.jpg",
       "newWords": [
         "만들"
       ],
-      "sceneSrc": "media/frames/se6089f98a5a4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-돈",
+      "id": "w-시간",
       "segmentId": "",
-      "target": "돈",
-      "translation": "dinheiro",
-      "startMs": 838245,
-      "endMs": 843605,
+      "target": "시간",
+      "translation": "tempo / hora",
+      "startMs": 796869,
+      "endMs": 802863,
       "reading": null,
-      "context": "그래서 저는 요즘 돈을 모아요. — Por isso eu ando juntando dinheiro.",
-      "audioClipSrc": "media/tts/w728f9e6621b8.mp3",
-      "exampleAudioSrc": "media/frag/f2c68985f3fb8.mp3",
-      "freqRank": 85,
+      "context": "시간이 있으면 보통 뭐 해요? — Quando você tem tempo, o que costuma fazer?",
+      "audioClipSrc": "media/tts/w3f23fd871c66.mp3",
+      "exampleAudioSrc": "media/frag/f0467ca9f5251.mp3",
+      "freqRank": 48,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s425bea2b444b.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s5b9a7c660648.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-타다",
@@ -3965,13 +6212,15 @@
       "context": "일요일에 저는 자전거를 타요. — No domingo eu ando de bicicleta.",
       "audioClipSrc": "media/tts/wdeca95d5b3ea.mp3",
       "exampleAudioSrc": "media/frag/fc18ac7979bc0.mp3",
-      "freqRank": 251,
+      "freqRank": 222,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s2769a61df4c6.jpg",
       "newWords": [
         "타"
       ],
-      "sceneSrc": "media/frames/s2769a61df4c6.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-위",
@@ -3987,44 +6236,50 @@
       "freqRank": 263,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s63f8cddf8315.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s63f8cddf8315.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-어리다",
+      "id": "w-요즘",
       "segmentId": "",
-      "target": "어리다",
-      "translation": "ser novo de idade (어렸을 때 = quando era criança)",
-      "startMs": 108057,
-      "endMs": 111657,
+      "target": "요즘",
+      "translation": "atualmente / esses dias",
+      "startMs": 838245,
+      "endMs": 843605,
       "reading": null,
-      "context": "어렸을 때 야구를 배웠어요. — Eu aprendi beisebol quando era criança.",
-      "audioClipSrc": "media/tts/w8d549e149acf.mp3",
-      "exampleAudioSrc": "media/frag/fba569230f151.mp3",
-      "freqRank": 301,
+      "context": "그래서 저는 요즘 돈을 모아요. — Por isso eu ando juntando dinheiro.",
+      "audioClipSrc": "media/tts/w4659c5a446da.mp3",
+      "exampleAudioSrc": "media/frag/fe394ec2acdfa.mp3",
+      "freqRank": 476,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s5b9a7c660648.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-모으다",
+      "segmentId": "",
+      "target": "모으다",
+      "translation": "juntar, colecionar, economizar (돈을 모으다 = juntar dinheiro)",
+      "startMs": 805400,
+      "endMs": 808000,
+      "reading": null,
+      "context": "저는 인형을 모아요. — Eu coleciono bonecos.",
+      "audioClipSrc": "media/tts/wb764124823e9.mp3",
+      "exampleAudioSrc": "media/frag/f8e7cac956574.mp3",
+      "freqRank": 1172,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s583d76c73347.jpg",
       "newWords": [
-        "어렸"
+        "모아"
       ],
-      "sceneSrc": "media/frames/s4a27eaf2bd3e.jpg"
-    },
-    {
-      "id": "w-매일",
-      "segmentId": "",
-      "target": "매일",
-      "translation": "todo dia",
-      "startMs": 494329,
-      "endMs": 499128,
-      "reading": null,
-      "context": "저는 매일 음악을 들어요. — Eu escuto música todo dia.",
-      "audioClipSrc": "media/tts/w73780bc1146c.mp3",
-      "exampleAudioSrc": "media/frag/f7217da3d1d82.mp3",
-      "freqRank": 390,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/sd2e563957136.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-읽다",
@@ -4037,13 +6292,112 @@
       "context": "저는 책 읽는 걸 좋아해요. — Eu gosto de ler livros.",
       "audioClipSrc": "media/tts/wbb41176472a5.mp3",
       "exampleAudioSrc": "media/frag/f347c2198455c.mp3",
-      "freqRank": 418,
+      "freqRank": 381,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s1a652472c84f.jpg",
       "newWords": [
         "읽"
       ],
-      "sceneSrc": "media/frames/s1a652472c84f.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-그림",
+      "segmentId": "",
+      "target": "그림",
+      "translation": "desenho / quadro",
+      "startMs": 48213,
+      "endMs": 52493,
+      "reading": null,
+      "context": "그림을 그릴 수 있어요? — Você consegue desenhar?",
+      "audioClipSrc": "media/tts/w472b71fdf738.mp3",
+      "exampleAudioSrc": "media/frag/fd9612e57967d.mp3",
+      "freqRank": 728,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/sd113de15bee9.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-어리다",
+      "segmentId": "",
+      "target": "어리다",
+      "translation": "ser novo de idade (어렸을 때 = quando era criança)",
+      "startMs": 108057,
+      "endMs": 111657,
+      "reading": null,
+      "context": "어렸을 때 야구를 배웠어요. — Eu aprendi beisebol quando era criança.",
+      "audioClipSrc": "media/tts/w8d549e149acf.mp3",
+      "exampleAudioSrc": "media/frag/fba569230f151.mp3",
+      "freqRank": 290,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s4a27eaf2bd3e.jpg",
+      "newWords": [
+        "어렸"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-음식",
+      "segmentId": "",
+      "target": "음식",
+      "translation": "comida",
+      "startMs": 361230,
+      "endMs": 367150,
+      "reading": null,
+      "context": "무슨 음식을 만들 수 있어요? — Que comida você consegue fazer?",
+      "audioClipSrc": "media/tts/w4aa26310d3a4.mp3",
+      "exampleAudioSrc": "media/frag/fe6b95a0ea1f0.mp3",
+      "freqRank": 489,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s9f6c53a9d9c1.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-매일",
+      "segmentId": "",
+      "target": "매일",
+      "translation": "todo dia",
+      "startMs": 494329,
+      "endMs": 499128,
+      "reading": null,
+      "context": "저는 매일 음악을 들어요. — Eu escuto música todo dia.",
+      "audioClipSrc": "media/tts/w73780bc1146c.mp3",
+      "exampleAudioSrc": "media/frag/f7217da3d1d82.mp3",
+      "freqRank": 386,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/sd2e563957136.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-인형",
+      "segmentId": "",
+      "target": "인형",
+      "translation": "boneco / boneca",
+      "startMs": 805400,
+      "endMs": 808000,
+      "reading": null,
+      "context": "저는 인형을 모아요. — Eu coleciono bonecos.",
+      "audioClipSrc": "media/tts/wd83cc5c6894e.mp3",
+      "exampleAudioSrc": "media/frag/f417c95b3ef1f.mp3",
+      "freqRank": 1254,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s583d76c73347.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-비행기",
@@ -4059,8 +6413,10 @@
       "freqRank": 430,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf50a2283a696.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sf50a2283a696.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-배우다",
@@ -4073,153 +6429,15 @@
       "context": "어렸을 때 야구를 배웠어요. — Eu aprendi beisebol quando era criança.",
       "audioClipSrc": "media/tts/w4881c2b3d301.mp3",
       "exampleAudioSrc": "media/frag/f6a1add140fe5.mp3",
-      "freqRank": 435,
+      "freqRank": 388,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s4a27eaf2bd3e.jpg",
       "newWords": [
         "배웠"
       ],
-      "sceneSrc": "media/frames/s4a27eaf2bd3e.jpg"
-    },
-    {
-      "id": "w-요즘",
-      "segmentId": "",
-      "target": "요즘",
-      "translation": "atualmente / esses dias",
-      "startMs": 838245,
-      "endMs": 843605,
-      "reading": null,
-      "context": "그래서 저는 요즘 돈을 모아요. — Por isso eu ando juntando dinheiro.",
-      "audioClipSrc": "media/tts/w4659c5a446da.mp3",
-      "exampleAudioSrc": "media/frag/fe394ec2acdfa.mp3",
-      "freqRank": 486,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s5b9a7c660648.jpg"
-    },
-    {
-      "id": "w-음식",
-      "segmentId": "",
-      "target": "음식",
-      "translation": "comida",
-      "startMs": 361230,
-      "endMs": 367150,
-      "reading": null,
-      "context": "무슨 음식을 만들 수 있어요? — Que comida você consegue fazer?",
-      "audioClipSrc": "media/tts/w4aa26310d3a4.mp3",
-      "exampleAudioSrc": "media/frag/fe6b95a0ea1f0.mp3",
-      "freqRank": 505,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s9f6c53a9d9c1.jpg"
-    },
-    {
-      "id": "w-보통",
-      "segmentId": "",
-      "target": "보통",
-      "translation": "normalmente",
-      "startMs": 796869,
-      "endMs": 802863,
-      "reading": null,
-      "context": "시간이 있으면 보통 뭐 해요? — Quando você tem tempo, o que costuma fazer?",
-      "audioClipSrc": "media/tts/w6b10175158b0.mp3",
-      "exampleAudioSrc": "media/frag/fd7d32a92ac41.mp3",
-      "freqRank": 640,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s425bea2b444b.jpg"
-    },
-    {
-      "id": "w-여행",
-      "segmentId": "",
-      "target": "여행",
-      "translation": "viagem",
-      "startMs": 951645,
-      "endMs": 956365,
-      "reading": null,
-      "context": "저는 또 여행을 가고 싶어요. — Eu quero viajar de novo.",
-      "audioClipSrc": "media/tts/w1aaf85e3d5d0.mp3",
-      "exampleAudioSrc": "media/frag/f351a80fdbaf1.mp3",
-      "freqRank": 667,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s7afb41b3a5c7.jpg"
-    },
-    {
-      "id": "w-자주",
-      "segmentId": "",
-      "target": "자주",
-      "translation": "com frequência",
-      "startMs": 90588,
-      "endMs": 95069,
-      "reading": null,
-      "context": "저는 브라우니를 자주 만들어요. — Eu faço brownie com frequência.",
-      "audioClipSrc": "media/tts/w31d7a633662e.mp3",
-      "exampleAudioSrc": "media/frag/fcc0ad1a64947.mp3",
-      "freqRank": 706,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/s403407878506.jpg"
-    },
-    {
-      "id": "w-맛있다",
-      "segmentId": "",
-      "target": "맛있다",
-      "translation": "ser gostoso",
-      "startMs": 412669,
-      "endMs": 417469,
-      "reading": null,
-      "context": "저는 맛있는 음식 먹는 것도 좋아해요. — Eu também gosto de comer comida gostosa.",
-      "audioClipSrc": "media/tts/wdb7972856205.mp3",
-      "exampleAudioSrc": "media/frag/f363fb0ff207a.mp3",
-      "freqRank": 735,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "맛있"
-      ],
-      "sceneSrc": "media/frames/s271b5fb4af4b.jpg"
-    },
-    {
-      "id": "w-그림",
-      "segmentId": "",
-      "target": "그림",
-      "translation": "desenho / quadro",
-      "startMs": 48213,
-      "endMs": 52493,
-      "reading": null,
-      "context": "그림을 그릴 수 있어요? — Você consegue desenhar?",
-      "audioClipSrc": "media/tts/w472b71fdf738.mp3",
-      "exampleAudioSrc": "media/frag/fd9612e57967d.mp3",
-      "freqRank": 786,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [],
-      "sceneSrc": "media/frames/sd113de15bee9.jpg"
-    },
-    {
-      "id": "w-붙다",
-      "segmentId": "",
-      "target": "붙다",
-      "translation": "grudar / estar colado",
-      "startMs": 941565,
-      "endMs": 948125,
-      "reading": null,
-      "context": "냉장고 문에 제가 모은 자석들이 붙어 있어요. — Na porta da geladeira estão colados os ímãs que eu juntei.",
-      "audioClipSrc": "media/tts/w45c0fdcb850d.mp3",
-      "exampleAudioSrc": "media/frag/f6306d6c50970.mp3",
-      "freqRank": 833,
-      "topikLevel": "A",
-      "imageSrc": null,
-      "newWords": [
-        "붙"
-      ],
-      "sceneSrc": "media/frames/s65c60ac1b17f.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-카드",
@@ -4232,28 +6450,91 @@
       "context": "저는 포토 카드를 모아요. — Eu coleciono photocards.",
       "audioClipSrc": "media/tts/w7e9cf38c8c75.mp3",
       "exampleAudioSrc": "media/frag/f07fc47c7db78.mp3",
-      "freqRank": 855,
+      "freqRank": 774,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sc85312cad430.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sc85312cad430.jpg"
+      "kind": null,
+      "focus": null
     },
     {
-      "id": "w-인형",
+      "id": "w-비싸다",
       "segmentId": "",
-      "target": "인형",
-      "translation": "boneco / boneca",
-      "startMs": 805400,
-      "endMs": 808000,
+      "target": "비싸다",
+      "translation": "caro",
+      "startMs": 830084,
+      "endMs": 836004,
       "reading": null,
-      "context": "저는 인형을 모아요. — Eu coleciono bonecos.",
-      "audioClipSrc": "media/tts/wd83cc5c6894e.mp3",
-      "exampleAudioSrc": "media/frag/f417c95b3ef1f.mp3",
-      "freqRank": 1297,
+      "context": "그런데 그 인형이 조금 비싸요. — Mas esse boneco é um pouco caro.",
+      "audioClipSrc": "media/tts/w2cda3f7dc649.mp3",
+      "exampleAudioSrc": "media/frag/fe7c97ba69bf4.mp3",
+      "freqRank": 1551,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sc4173f2196d6.jpg",
+      "newWords": [
+        "비싸"
+      ],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-여행",
+      "segmentId": "",
+      "target": "여행",
+      "translation": "viagem",
+      "startMs": 951645,
+      "endMs": 956365,
+      "reading": null,
+      "context": "저는 또 여행을 가고 싶어요. — Eu quero viajar de novo.",
+      "audioClipSrc": "media/tts/w1aaf85e3d5d0.mp3",
+      "exampleAudioSrc": "media/frag/f351a80fdbaf1.mp3",
+      "freqRank": 631,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s7afb41b3a5c7.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s583d76c73347.jpg"
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-자전거",
+      "segmentId": "",
+      "target": "자전거",
+      "translation": "bicicleta",
+      "startMs": 474989,
+      "endMs": 479389,
+      "reading": null,
+      "context": "일요일에 저는 자전거를 타요. — No domingo eu ando de bicicleta.",
+      "audioClipSrc": "media/tts/wce8bac595b6f.mp3",
+      "exampleAudioSrc": "media/frag/fec111917fdc9.mp3",
+      "freqRank": 1659,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s2769a61df4c6.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
+    },
+    {
+      "id": "w-자주",
+      "segmentId": "",
+      "target": "자주",
+      "translation": "com frequência",
+      "startMs": 90588,
+      "endMs": 95069,
+      "reading": null,
+      "context": "저는 브라우니를 자주 만들어요. — Eu faço brownie com frequência.",
+      "audioClipSrc": "media/tts/w31d7a633662e.mp3",
+      "exampleAudioSrc": "media/frag/fcc0ad1a64947.mp3",
+      "freqRank": 729,
+      "topikLevel": "A",
+      "imageSrc": null,
+      "sceneSrc": "media/frames/s403407878506.jpg",
+      "newWords": [],
+      "kind": null,
+      "focus": null
     }
   ],
   "source": {
@@ -4526,5 +6807,1467 @@
   ],
   "titleTarget": "영어를 할 수 있어요? · 취미가 뭐예요? · 뭐를 모아요?",
   "premise": "Histórias ilustradas A0 sobre habilidades, hobbies e coleções. Introduzem -(으)ㄹ 수 있다 (conseguir), a nominalização -는 것/거 (a ação de fazer algo), -고 싶다 (querer) e o condicional -(으)면 (quando/se).",
-  "createdAt": "2026-08-22T18:42:43.841197+00:00"
+  "glossary": [
+    {
+      "lemma": "영어",
+      "target": "영어",
+      "reading": null,
+      "meaning": "inglês",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "하다",
+      "target": "하다",
+      "reading": null,
+      "meaning": "fazer",
+      "meaningEn": null,
+      "freqRank": 1,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "수",
+      "target": "수",
+      "reading": null,
+      "meaning": "(~ㄹ 수 있다) poder, conseguir",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "있다",
+      "target": "있다",
+      "reading": null,
+      "meaning": "estar / ter / existir",
+      "meaningEn": null,
+      "freqRank": 2,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "네",
+      "target": "네",
+      "reading": null,
+      "meaning": "sim",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "저",
+      "target": "저",
+      "reading": null,
+      "meaning": "eu (formal)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "호주",
+      "target": "호주",
+      "reading": null,
+      "meaning": "Austrália",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "오다",
+      "target": "오다",
+      "reading": null,
+      "meaning": "vir",
+      "meaningEn": null,
+      "freqRank": 14,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "힙합",
+      "target": "힙합",
+      "reading": null,
+      "meaning": "hip-hop",
+      "meaningEn": null,
+      "freqRank": 5403,
+      "topikLevel": null,
+      "card": {
+        "id": "w-힙합",
+        "segmentId": "s4",
+        "target": "힙합",
+        "translation": "hip-hop",
+        "startMs": 18387,
+        "endMs": 21906,
+        "reading": null,
+        "context": "힙합 춤을 출 수 있어요? — Você consegue dançar hip-hop?",
+        "audioClipSrc": "media/tts/w0db7549e600f.mp3",
+        "exampleAudioSrc": "media/frag/f7372cc9ee345.mp3",
+        "freqRank": 5403,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s82a38c849790.jpg"
+      }
+    },
+    {
+      "lemma": "춤",
+      "target": "춤",
+      "reading": null,
+      "meaning": "dança",
+      "meaningEn": null,
+      "freqRank": 798,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "추다",
+      "target": "추다",
+      "reading": null,
+      "meaning": "dançar (춤을 추다)",
+      "meaningEn": null,
+      "freqRank": 1807,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-추다",
+        "segmentId": "s4",
+        "target": "추다",
+        "translation": "dançar (춤을 추다)",
+        "startMs": 18387,
+        "endMs": 21906,
+        "reading": null,
+        "context": "힙합 춤을 출 수 있어요? — Você consegue dançar hip-hop?",
+        "audioClipSrc": "media/tts/w19b0d16722fe.mp3",
+        "exampleAudioSrc": "media/frag/f73d5693cad3d.mp3",
+        "freqRank": 1807,
+        "topikLevel": "A",
+        "newWords": [
+          "출"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s82a38c849790.jpg"
+      }
+    },
+    {
+      "lemma": "댄서",
+      "target": "댄서",
+      "reading": null,
+      "meaning": "dançarino(a)",
+      "meaningEn": null,
+      "freqRank": 8166,
+      "topikLevel": null,
+      "card": {
+        "id": "w-댄서",
+        "segmentId": "s6",
+        "target": "댄서",
+        "translation": "dançarino(a)",
+        "startMs": 28270,
+        "endMs": 31691,
+        "reading": null,
+        "context": "저는 댄서였어요. — Eu era dançarino.",
+        "audioClipSrc": "media/tts/we06182045a1d.mp3",
+        "exampleAudioSrc": "media/frag/f316e51d60baf.mp3",
+        "freqRank": 8166,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s58cb764a1873.jpg"
+      }
+    },
+    {
+      "lemma": "이다",
+      "target": "이다",
+      "reading": null,
+      "meaning": "ser (copula: 이에요/예요)",
+      "meaningEn": null,
+      "freqRank": 1396,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "랩",
+      "target": "랩",
+      "reading": null,
+      "meaning": "rap",
+      "meaningEn": null,
+      "freqRank": 2979,
+      "topikLevel": null,
+      "card": {
+        "id": "w-랩",
+        "segmentId": "s7",
+        "target": "랩",
+        "translation": "rap",
+        "startMs": 33112,
+        "endMs": 36687,
+        "reading": null,
+        "context": "랩을 할 수 있어요? — Você consegue fazer rap?",
+        "audioClipSrc": "media/tts/w51a25144cae5.mp3",
+        "exampleAudioSrc": "media/frag/f8f430a8ff14b.mp3",
+        "freqRank": 2979,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd1a6f5c91167.jpg"
+      }
+    },
+    {
+      "lemma": "래퍼",
+      "target": "래퍼",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "그리다",
+      "target": "그리다",
+      "reading": null,
+      "meaning": "desenhar, pintar",
+      "meaningEn": null,
+      "freqRank": 2026,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-그리다",
+        "segmentId": "s10",
+        "target": "그리다",
+        "translation": "desenhar, pintar",
+        "startMs": 48213,
+        "endMs": 52493,
+        "reading": null,
+        "context": "그림을 그릴 수 있어요? — Você consegue desenhar?",
+        "audioClipSrc": "media/tts/wc848f7c722b7.mp3",
+        "exampleAudioSrc": "media/frag/fa61561029cfa.mp3",
+        "freqRank": 2026,
+        "topikLevel": "A",
+        "newWords": [
+          "그릴"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd113de15bee9.jpg"
+      }
+    },
+    {
+      "lemma": "잘",
+      "target": "잘",
+      "reading": null,
+      "meaning": "bem",
+      "meaningEn": null,
+      "freqRank": 23,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "기타",
+      "target": "기타",
+      "reading": null,
+      "meaning": "violão, guitarra",
+      "meaningEn": null,
+      "freqRank": 2405,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-기타",
+        "segmentId": "s15",
+        "target": "기타",
+        "translation": "violão, guitarra",
+        "startMs": 75256,
+        "endMs": 78536,
+        "reading": null,
+        "context": "이건 제 기타예요. — Este é o meu violão.",
+        "audioClipSrc": "media/tts/w7f598db05d45.mp3",
+        "exampleAudioSrc": "media/frag/f8b1c5364f0d6.mp3",
+        "freqRank": 2405,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sa9b5765cebee.jpg"
+      }
+    },
+    {
+      "lemma": "치다",
+      "target": "치다",
+      "reading": null,
+      "meaning": "bater / tocar (violão, tênis, golfe)",
+      "meaningEn": null,
+      "freqRank": 333,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "이거",
+      "target": "이거",
+      "reading": null,
+      "meaning": "isto (이건 = isto é)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "케이크",
+      "target": "케이크",
+      "reading": null,
+      "meaning": "bolo",
+      "meaningEn": null,
+      "freqRank": 1845,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-케이크",
+        "segmentId": "s16",
+        "target": "케이크",
+        "translation": "bolo",
+        "startMs": 79525,
+        "endMs": 83085,
+        "reading": null,
+        "context": "케이크를 만들 수 있어요? — Você consegue fazer bolo?",
+        "audioClipSrc": "media/tts/we1f78f99c2cd.mp3",
+        "exampleAudioSrc": "media/frag/feb6f1622f83d.mp3",
+        "freqRank": 1845,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/se6089f98a5a4.jpg"
+      }
+    },
+    {
+      "lemma": "브라우니",
+      "target": "브라우니",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "야구",
+      "target": "야구",
+      "reading": null,
+      "meaning": "beisebol",
+      "meaningEn": null,
+      "freqRank": 3280,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-야구",
+        "segmentId": "s19",
+        "target": "야구",
+        "translation": "beisebol",
+        "startMs": 96455,
+        "endMs": 100418,
+        "reading": null,
+        "context": "야구를 할 수 있어요? — Você consegue jogar beisebol?",
+        "audioClipSrc": "media/tts/wb735412499b4.mp3",
+        "exampleAudioSrc": "media/frag/fa6d527effd5b.mp3",
+        "freqRank": 3280,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s47131eac20b1.jpg"
+      }
+    },
+    {
+      "lemma": "때",
+      "target": "때",
+      "reading": null,
+      "meaning": "quando, época (어렸을 때 = quando criança)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "부산",
+      "target": "부산",
+      "reading": null,
+      "meaning": "Busan (cidade)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "사투리",
+      "target": "사투리",
+      "reading": null,
+      "meaning": "dialeto, sotaque regional",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-사투리",
+        "segmentId": "s22",
+        "target": "사투리",
+        "translation": "dialeto, sotaque regional",
+        "startMs": 113295,
+        "endMs": 117641,
+        "reading": null,
+        "context": "부산 사투리를 할 수 있어요? — Você consegue falar o dialeto de Busan?",
+        "audioClipSrc": "media/tts/wd69ebb896c2a.mp3",
+        "exampleAudioSrc": "media/frag/f4c5cf0087879.mp3",
+        "freqRank": null,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/saa34ecb24dee.jpg"
+      }
+    },
+    {
+      "lemma": "사람",
+      "target": "사람",
+      "reading": null,
+      "meaning": "pessoa",
+      "meaningEn": null,
+      "freqRank": 12,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "무슨",
+      "target": "무슨",
+      "reading": null,
+      "meaning": "que, qual (무슨 외국어)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "외국어",
+      "target": "외국어",
+      "reading": null,
+      "meaning": "língua estrangeira",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-외국어",
+        "segmentId": "s49",
+        "target": "외국어",
+        "translation": "língua estrangeira",
+        "startMs": 353814,
+        "endMs": 358814,
+        "reading": null,
+        "context": "무슨 외국어를 할 수 있어요? — Que língua estrangeira você consegue falar?",
+        "audioClipSrc": "media/tts/wd06eaed52df2.mp3",
+        "exampleAudioSrc": "media/frag/facdfe19a25fc.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/scf5ed122894a.jpg"
+      }
+    },
+    {
+      "lemma": "월요일",
+      "target": "월요일",
+      "reading": null,
+      "meaning": "segunda-feira",
+      "meaningEn": null,
+      "freqRank": 2098,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-월요일",
+        "segmentId": "s51",
+        "target": "월요일",
+        "translation": "segunda-feira",
+        "startMs": 369700,
+        "endMs": 374705,
+        "reading": null,
+        "context": "월요일에 저는 낚시를 해요. — Na segunda-feira eu pesco.",
+        "audioClipSrc": "media/tts/w6787715bbb1e.mp3",
+        "exampleAudioSrc": "media/frag/f07bc9e9d6c5f.mp3",
+        "freqRank": 2098,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf3bbf0a0bd19.jpg"
+      }
+    },
+    {
+      "lemma": "낚시",
+      "target": "낚시",
+      "reading": null,
+      "meaning": "pesca (낚시를 하다 = pescar)",
+      "meaningEn": null,
+      "freqRank": 2316,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-낚시",
+        "segmentId": "s51",
+        "target": "낚시",
+        "translation": "pesca (낚시를 하다 = pescar)",
+        "startMs": 369700,
+        "endMs": 374705,
+        "reading": null,
+        "context": "월요일에 저는 낚시를 해요. — Na segunda-feira eu pesco.",
+        "audioClipSrc": "media/tts/w3cff97d170be.mp3",
+        "exampleAudioSrc": "media/frag/f5fda4e7e6ae3.mp3",
+        "freqRank": 2316,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf3bbf0a0bd19.jpg"
+      }
+    },
+    {
+      "lemma": "거",
+      "target": "거",
+      "reading": null,
+      "meaning": "coisa (= 것); (~ㄹ 거예요) vai…",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "좋아하다",
+      "target": "좋아하다",
+      "reading": null,
+      "meaning": "gostar de",
+      "meaningEn": null,
+      "freqRank": 124,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "화요일",
+      "target": "화요일",
+      "reading": null,
+      "meaning": "terça-feira",
+      "meaningEn": null,
+      "freqRank": 3317,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-화요일",
+        "segmentId": "s53",
+        "target": "화요일",
+        "translation": "terça-feira",
+        "startMs": 385418,
+        "endMs": 389739,
+        "reading": null,
+        "context": "화요일에 저는 테니스를 쳐요. — Na terça-feira eu jogo tênis.",
+        "audioClipSrc": "media/tts/wbff43de253c2.mp3",
+        "exampleAudioSrc": "media/frag/fc37fcaca8190.mp3",
+        "freqRank": 3317,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8be0b2eb10c3.jpg"
+      }
+    },
+    {
+      "lemma": "테니스",
+      "target": "테니스",
+      "reading": null,
+      "meaning": "tênis",
+      "meaningEn": null,
+      "freqRank": 5045,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-테니스",
+        "segmentId": "s53",
+        "target": "테니스",
+        "translation": "tênis",
+        "startMs": 385418,
+        "endMs": 389739,
+        "reading": null,
+        "context": "화요일에 저는 테니스를 쳐요. — Na terça-feira eu jogo tênis.",
+        "audioClipSrc": "media/tts/w9952aa963030.mp3",
+        "exampleAudioSrc": "media/frag/f2945777fc6b9.mp3",
+        "freqRank": 5045,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8be0b2eb10c3.jpg"
+      }
+    },
+    {
+      "lemma": "취미",
+      "target": "취미",
+      "reading": null,
+      "meaning": "hobby, passatempo",
+      "meaningEn": null,
+      "freqRank": 2936,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-취미",
+        "segmentId": "s93",
+        "target": "취미",
+        "translation": "hobby, passatempo",
+        "startMs": 785755,
+        "endMs": 789574,
+        "reading": null,
+        "context": "취미가 있어요? — Você tem algum hobby?",
+        "audioClipSrc": "media/tts/w1179642bcd61.mp3",
+        "exampleAudioSrc": "media/frag/feda6250020d2.mp3",
+        "freqRank": 2936,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s2a55787fe15f.jpg"
+      }
+    },
+    {
+      "lemma": "수요일",
+      "target": "수요일",
+      "reading": null,
+      "meaning": "quarta-feira",
+      "meaningEn": null,
+      "freqRank": 3286,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-수요일",
+        "segmentId": "s55",
+        "target": "수요일",
+        "translation": "quarta-feira",
+        "startMs": 401689,
+        "endMs": 405295,
+        "reading": null,
+        "context": "수요일에 저는 요리해요. — Na quarta-feira eu cozinho.",
+        "audioClipSrc": "media/tts/wf36964a9c308.mp3",
+        "exampleAudioSrc": "media/frag/f316568b9bfbd.mp3",
+        "freqRank": 3286,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s09f8468c496e.jpg"
+      }
+    },
+    {
+      "lemma": "요리하다",
+      "target": "요리하다",
+      "reading": null,
+      "meaning": "cozinhar",
+      "meaningEn": null,
+      "freqRank": 3473,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-요리하다",
+        "segmentId": "s55",
+        "target": "요리하다",
+        "translation": "cozinhar",
+        "startMs": 401689,
+        "endMs": 405295,
+        "reading": null,
+        "context": "수요일에 저는 요리해요. — Na quarta-feira eu cozinho.",
+        "audioClipSrc": "media/tts/w4e0195ee5c65.mp3",
+        "exampleAudioSrc": "media/frag/f3243ab879d8c.mp3",
+        "freqRank": 3473,
+        "topikLevel": "A",
+        "newWords": [
+          "요리해"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s09f8468c496e.jpg"
+      }
+    },
+    {
+      "lemma": "맛있다",
+      "target": "맛있다",
+      "reading": null,
+      "meaning": "ser gostoso",
+      "meaningEn": null,
+      "freqRank": 659,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-맛있다",
+        "segmentId": "s57",
+        "target": "맛있다",
+        "translation": "ser gostoso",
+        "startMs": 412669,
+        "endMs": 417469,
+        "reading": null,
+        "context": "저는 맛있는 음식 먹는 것도 좋아해요. — Eu também gosto de comer comida gostosa.",
+        "audioClipSrc": "media/tts/wdb7972856205.mp3",
+        "exampleAudioSrc": "media/frag/f363fb0ff207a.mp3",
+        "freqRank": 659,
+        "topikLevel": "A",
+        "newWords": [
+          "맛있"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s271b5fb4af4b.jpg"
+      }
+    },
+    {
+      "lemma": "먹다",
+      "target": "먹다",
+      "reading": null,
+      "meaning": "comer",
+      "meaningEn": null,
+      "freqRank": 72,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "것",
+      "target": "것",
+      "reading": null,
+      "meaning": "coisa; o fato de",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "목요일",
+      "target": "목요일",
+      "reading": null,
+      "meaning": "quinta-feira",
+      "meaningEn": null,
+      "freqRank": 2923,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-목요일",
+        "segmentId": "s58",
+        "target": "목요일",
+        "translation": "quinta-feira",
+        "startMs": 422422,
+        "endMs": 426509,
+        "reading": null,
+        "context": "목요일에 저는 게임을 해요. — Na quinta-feira eu jogo videogame.",
+        "audioClipSrc": "media/tts/wc9b38a0d65dc.mp3",
+        "exampleAudioSrc": "media/frag/ff34cbef9f059.mp3",
+        "freqRank": 2923,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sddecd0d6844d.jpg"
+      }
+    },
+    {
+      "lemma": "게임",
+      "target": "게임",
+      "reading": null,
+      "meaning": "jogo / videogame",
+      "meaningEn": null,
+      "freqRank": 425,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "금요일",
+      "target": "금요일",
+      "reading": null,
+      "meaning": "sexta-feira",
+      "meaningEn": null,
+      "freqRank": 1760,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-금요일",
+        "segmentId": "s61",
+        "target": "금요일",
+        "translation": "sexta-feira",
+        "startMs": 442869,
+        "endMs": 447069,
+        "reading": null,
+        "context": "금요일에 저는 미술관에 가요. — Na sexta-feira eu vou ao museu de arte.",
+        "audioClipSrc": "media/tts/w4def5de196c6.mp3",
+        "exampleAudioSrc": "media/frag/f8a50f212be3c.mp3",
+        "freqRank": 1760,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s68e5bcb8ba88.jpg"
+      }
+    },
+    {
+      "lemma": "미술관",
+      "target": "미술관",
+      "reading": null,
+      "meaning": "museu de arte",
+      "meaningEn": null,
+      "freqRank": 9012,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-미술관",
+        "segmentId": "s61",
+        "target": "미술관",
+        "translation": "museu de arte",
+        "startMs": 442869,
+        "endMs": 447069,
+        "reading": null,
+        "context": "금요일에 저는 미술관에 가요. — Na sexta-feira eu vou ao museu de arte.",
+        "audioClipSrc": "media/tts/wbafa33ca5caa.mp3",
+        "exampleAudioSrc": "media/frag/fc7df6fcaf8c9.mp3",
+        "freqRank": 9012,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s68e5bcb8ba88.jpg"
+      }
+    },
+    {
+      "lemma": "가다",
+      "target": "가다",
+      "reading": null,
+      "meaning": "ir",
+      "meaningEn": null,
+      "freqRank": 7,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "보다",
+      "target": "보다",
+      "reading": null,
+      "meaning": "ver / olhar",
+      "meaningEn": null,
+      "freqRank": 10,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "토요일",
+      "target": "토요일",
+      "reading": null,
+      "meaning": "sábado",
+      "meaningEn": null,
+      "freqRank": 1830,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-토요일",
+        "segmentId": "s63",
+        "target": "토요일",
+        "translation": "sábado",
+        "startMs": 459650,
+        "endMs": 464410,
+        "reading": null,
+        "context": "토요일에 저는 책을 읽어요. — No sábado eu leio livros.",
+        "audioClipSrc": "media/tts/w46345320e49d.mp3",
+        "exampleAudioSrc": "media/frag/f7c92d6fc3a2e.mp3",
+        "freqRank": 1830,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sbced530ceb5d.jpg"
+      }
+    },
+    {
+      "lemma": "책",
+      "target": "책",
+      "reading": null,
+      "meaning": "livro",
+      "meaningEn": null,
+      "freqRank": 311,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "일요일",
+      "target": "일요일",
+      "reading": null,
+      "meaning": "domingo",
+      "meaningEn": null,
+      "freqRank": 2271,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-일요일",
+        "segmentId": "s65",
+        "target": "일요일",
+        "translation": "domingo",
+        "startMs": 474989,
+        "endMs": 479389,
+        "reading": null,
+        "context": "일요일에 저는 자전거를 타요. — No domingo eu ando de bicicleta.",
+        "audioClipSrc": "media/tts/w90963b5c5621.mp3",
+        "exampleAudioSrc": "media/frag/fd14896869615.mp3",
+        "freqRank": 2271,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s2769a61df4c6.jpg"
+      }
+    },
+    {
+      "lemma": "날씨",
+      "target": "날씨",
+      "reading": null,
+      "meaning": "tempo, clima (do dia)",
+      "meaningEn": null,
+      "freqRank": 1446,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-05"
+    },
+    {
+      "lemma": "좋다",
+      "target": "좋다",
+      "reading": null,
+      "meaning": "ser bom",
+      "meaningEn": null,
+      "freqRank": 8,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-05"
+    },
+    {
+      "lemma": "음악",
+      "target": "음악",
+      "reading": null,
+      "meaning": "música",
+      "meaningEn": null,
+      "freqRank": 441,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "듣다",
+      "target": "듣다",
+      "reading": null,
+      "meaning": "ouvir / escutar",
+      "meaningEn": null,
+      "freqRank": 31,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04"
+    },
+    {
+      "lemma": "여러분",
+      "target": "여러분",
+      "reading": null,
+      "meaning": "pessoal, todos vocês",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "뭐",
+      "target": "뭐",
+      "reading": null,
+      "meaning": "o quê",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "보통",
+      "target": "보통",
+      "reading": null,
+      "meaning": "normalmente",
+      "meaningEn": null,
+      "freqRank": 651,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-보통",
+        "segmentId": "s95",
+        "target": "보통",
+        "translation": "normalmente",
+        "startMs": 796869,
+        "endMs": 802863,
+        "reading": null,
+        "context": "시간이 있으면 보통 뭐 해요? — Quando você tem tempo, o que costuma fazer?",
+        "audioClipSrc": "media/tts/w6b10175158b0.mp3",
+        "exampleAudioSrc": "media/frag/fd7d32a92ac41.mp3",
+        "freqRank": 651,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s425bea2b444b.jpg"
+      }
+    },
+    {
+      "lemma": "침대",
+      "target": "침대",
+      "reading": null,
+      "meaning": "cama",
+      "meaningEn": null,
+      "freqRank": 483,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "새",
+      "target": "새",
+      "reading": null,
+      "meaning": "novo",
+      "meaningEn": null,
+      "freqRank": 206,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "사다",
+      "target": "사다",
+      "reading": null,
+      "meaning": "comprar",
+      "meaningEn": null,
+      "freqRank": 191,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "싶다",
+      "target": "싶다",
+      "reading": null,
+      "meaning": "(~고 싶다) querer",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "그런데",
+      "target": "그런데",
+      "reading": null,
+      "meaning": "mas, só que",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "그",
+      "target": "그",
+      "reading": null,
+      "meaning": "esse, aquele; ele",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "조금",
+      "target": "조금",
+      "reading": null,
+      "meaning": "um pouco",
+      "meaningEn": null,
+      "freqRank": 192,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-05"
+    },
+    {
+      "lemma": "그래서",
+      "target": "그래서",
+      "reading": null,
+      "meaning": "por isso, então",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "책상",
+      "target": "책상",
+      "reading": null,
+      "meaning": "escrivaninha, mesa de estudo",
+      "meaningEn": null,
+      "freqRank": 1676,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-책상",
+        "segmentId": "s102",
+        "target": "책상",
+        "translation": "escrivaninha, mesa de estudo",
+        "startMs": 855125,
+        "endMs": 860845,
+        "reading": null,
+        "context": "책상 위에 제가 모은 LP들이 있어요. — Em cima da mesa estão os vinis que eu juntei.",
+        "audioClipSrc": "media/tts/w79458c35713e.mp3",
+        "exampleAudioSrc": "media/frag/f9728344d075e.mp3",
+        "freqRank": 1676,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd80f6e38ae80.jpg"
+      }
+    },
+    {
+      "lemma": "턴테이블",
+      "target": "턴테이블",
+      "reading": null,
+      "meaning": "toca-discos",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "card": {
+        "id": "w-턴테이블",
+        "segmentId": "s103",
+        "target": "턴테이블",
+        "translation": "toca-discos",
+        "startMs": 864165,
+        "endMs": 869484,
+        "reading": null,
+        "context": "저는 새 턴테이블을 사고 싶어요. — Eu quero comprar um toca-discos novo.",
+        "audioClipSrc": "media/tts/w2d6f92a65c0a.mp3",
+        "exampleAudioSrc": "media/frag/f026c22c9688d.mp3",
+        "freqRank": null,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd18af4b58a73.jpg"
+      }
+    },
+    {
+      "lemma": "아주",
+      "target": "아주",
+      "reading": null,
+      "meaning": "muito",
+      "meaningEn": null,
+      "freqRank": 79,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-05"
+    },
+    {
+      "lemma": "포토",
+      "target": "포토",
+      "reading": null,
+      "meaning": "foto (포토 카드 = photocard)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "card": {
+        "id": "w-포토",
+        "segmentId": "s106",
+        "target": "포토",
+        "translation": "foto (포토 카드 = photocard)",
+        "startMs": 889885,
+        "endMs": 894484,
+        "reading": null,
+        "context": "저는 포토 카드를 모아요. — Eu coleciono photocards.",
+        "audioClipSrc": "media/tts/w0e8ec27bcd7e.mp3",
+        "exampleAudioSrc": "media/frag/f871d5da9a252.mp3",
+        "freqRank": null,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc85312cad430.jpg"
+      }
+    },
+    {
+      "lemma": "앨범",
+      "target": "앨범",
+      "reading": null,
+      "meaning": "álbum",
+      "meaningEn": null,
+      "freqRank": 1577,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-앨범",
+        "segmentId": "s107",
+        "target": "앨범",
+        "translation": "álbum",
+        "startMs": 898285,
+        "endMs": 904565,
+        "reading": null,
+        "context": "앨범 안에 제가 모은 포토 카드들이 있어요. — Dentro do álbum estão os photocards que eu juntei.",
+        "audioClipSrc": "media/tts/w7a39b3998bd0.mp3",
+        "exampleAudioSrc": "media/frag/f6b99220709e1.mp3",
+        "freqRank": 1577,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf45730127ade.jpg"
+      }
+    },
+    {
+      "lemma": "안",
+      "target": "안",
+      "reading": null,
+      "meaning": "não (vem antes do verbo)",
+      "meaningEn": null,
+      "freqRank": 6,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "콘서트",
+      "target": "콘서트",
+      "reading": null,
+      "meaning": "show, concerto",
+      "meaningEn": null,
+      "freqRank": 3390,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-콘서트",
+        "segmentId": "s108",
+        "target": "콘서트",
+        "translation": "show, concerto",
+        "startMs": 908085,
+        "endMs": 912845,
+        "reading": null,
+        "context": "저는 콘서트에 가고 싶어요. — Eu quero ir a um show.",
+        "audioClipSrc": "media/tts/wccb4418bd6ea.mp3",
+        "exampleAudioSrc": "media/frag/fb851773951b0.mp3",
+        "freqRank": 3390,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s1ad8523a4a43.jpg"
+      }
+    },
+    {
+      "lemma": "티켓",
+      "target": "티켓",
+      "reading": null,
+      "meaning": "ingresso, bilhete",
+      "meaningEn": null,
+      "freqRank": 2471,
+      "topikLevel": null,
+      "card": {
+        "id": "w-티켓",
+        "segmentId": "s109",
+        "target": "티켓",
+        "translation": "ingresso, bilhete",
+        "startMs": 915525,
+        "endMs": 921324,
+        "reading": null,
+        "context": "그런데 콘서트 티켓이 정말 비싸요. — Mas o ingresso do show é caro mesmo.",
+        "audioClipSrc": "media/tts/waeed5e61e6c4.mp3",
+        "exampleAudioSrc": "media/frag/f2ef75a074e80.mp3",
+        "freqRank": 2471,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb0a6950e5765.jpg"
+      }
+    },
+    {
+      "lemma": "정말",
+      "target": "정말",
+      "reading": null,
+      "meaning": "realmente / muito mesmo",
+      "meaningEn": null,
+      "freqRank": 28,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "자석",
+      "target": "자석",
+      "reading": null,
+      "meaning": "ímã",
+      "meaningEn": null,
+      "freqRank": 4835,
+      "topikLevel": null,
+      "card": {
+        "id": "w-자석",
+        "segmentId": "s111",
+        "target": "자석",
+        "translation": "ímã",
+        "startMs": 935005,
+        "endMs": 938925,
+        "reading": null,
+        "context": "저는 자석을 모아요. — Eu coleciono ímãs.",
+        "audioClipSrc": "media/tts/w9708d7a823c7.mp3",
+        "exampleAudioSrc": "media/frag/f2d6c218f6d26.mp3",
+        "freqRank": 4835,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/see4b684ae4ca.jpg"
+      }
+    },
+    {
+      "lemma": "냉장고",
+      "target": "냉장고",
+      "reading": null,
+      "meaning": "geladeira",
+      "meaningEn": null,
+      "freqRank": 2211,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-냉장고",
+        "segmentId": "s112",
+        "target": "냉장고",
+        "translation": "geladeira",
+        "startMs": 941565,
+        "endMs": 948125,
+        "reading": null,
+        "context": "냉장고 문에 제가 모은 자석들이 붙어 있어요. — Na porta da geladeira estão colados os ímãs que eu juntei.",
+        "audioClipSrc": "media/tts/w9ece6896c4d5.mp3",
+        "exampleAudioSrc": "media/frag/f97fe3f962d53.mp3",
+        "freqRank": 2211,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s65c60ac1b17f.jpg"
+      }
+    },
+    {
+      "lemma": "문",
+      "target": "문",
+      "reading": null,
+      "meaning": "porta",
+      "meaningEn": null,
+      "freqRank": 292,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "붙다",
+      "target": "붙다",
+      "reading": null,
+      "meaning": "grudar / estar colado",
+      "meaningEn": null,
+      "freqRank": 755,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-붙다",
+        "segmentId": "s112",
+        "target": "붙다",
+        "translation": "grudar / estar colado",
+        "startMs": 941565,
+        "endMs": 948125,
+        "reading": null,
+        "context": "냉장고 문에 제가 모은 자석들이 붙어 있어요. — Na porta da geladeira estão colados os ímãs que eu juntei.",
+        "audioClipSrc": "media/tts/w45c0fdcb850d.mp3",
+        "exampleAudioSrc": "media/frag/f6306d6c50970.mp3",
+        "freqRank": 755,
+        "topikLevel": "A",
+        "newWords": [
+          "붙"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s65c60ac1b17f.jpg"
+      }
+    },
+    {
+      "lemma": "또",
+      "target": "또",
+      "reading": null,
+      "meaning": "de novo / outra vez",
+      "meaningEn": null,
+      "freqRank": 70,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "표",
+      "target": "표",
+      "reading": null,
+      "meaning": "bilhete, passagem, ingresso",
+      "meaningEn": null,
+      "freqRank": 1474,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-07"
+    },
+    {
+      "lemma": "너무",
+      "target": "너무",
+      "reading": null,
+      "meaning": "demais / muito",
+      "meaningEn": null,
+      "freqRank": 46,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    }
+  ],
+  "sentenceCards": [
+    {
+      "id": "s-dd7fab76be",
+      "kind": "sentence",
+      "segmentId": "s60",
+      "target": "시간이 있으면 저는 게임을 해요.",
+      "translation": "Quando eu tenho tempo, eu jogo videogame.",
+      "startMs": 432822,
+      "endMs": 436723,
+      "audioClipSrc": "media/frag/f55ffbf1a67b9.mp3",
+      "exampleAudioSrc": "media/frag/f55ffbf1a67b9.mp3",
+      "freqRank": 48,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "시간",
+        "target": "시간",
+        "meaning": "tempo / hora",
+        "reading": null,
+        "start": 0,
+        "end": 2
+      },
+      "sceneSrc": "media/frames/s162a2770e5a7.jpg"
+    },
+    {
+      "id": "s-30bd6e1479",
+      "kind": "sentence",
+      "segmentId": "s136",
+      "target": "여러분은 모으는 것이 있어요? 뭐를 모아요?",
+      "translation": "Vocês colecionam alguma coisa? O que vocês colecionam?",
+      "startMs": 1199404,
+      "endMs": 1208365,
+      "audioClipSrc": "media/frag/f4a59fea28b8a.mp3",
+      "exampleAudioSrc": "media/frag/f4a59fea28b8a.mp3",
+      "freqRank": 1172,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "모으다",
+        "target": "모으다",
+        "meaning": "juntar, colecionar, economizar (돈을 모으다 = juntar dinheiro)",
+        "reading": null,
+        "start": 5,
+        "end": 7
+      },
+      "sceneSrc": "media/frames/sa75c60c80026.jpg"
+    },
+    {
+      "id": "s-3343cbf248",
+      "kind": "sentence",
+      "segmentId": "s62",
+      "target": "저는 그림 보는 걸 좋아해요.",
+      "translation": "Eu gosto de ver quadros.",
+      "startMs": 449530,
+      "endMs": 454530,
+      "audioClipSrc": "media/frag/fe014938e73d4.mp3",
+      "exampleAudioSrc": "media/frag/fe014938e73d4.mp3",
+      "freqRank": 728,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "그림",
+        "target": "그림",
+        "meaning": "desenho / quadro",
+        "reading": null,
+        "start": 3,
+        "end": 5
+      },
+      "sceneSrc": "media/frames/se68ac6c7df84.jpg"
+    },
+    {
+      "id": "s-ad22477128",
+      "kind": "sentence",
+      "segmentId": "s133",
+      "target": "저는 또 여행을 가고 싶어요.",
+      "translation": "Eu quero viajar de novo.",
+      "startMs": 1163524,
+      "endMs": 1168205,
+      "audioClipSrc": "media/frag/f228261554900.mp3",
+      "exampleAudioSrc": "media/frag/f228261554900.mp3",
+      "freqRank": 631,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "여행",
+        "target": "여행",
+        "meaning": "viagem",
+        "reading": null,
+        "start": 5,
+        "end": 7
+      },
+      "sceneSrc": "media/frames/sc57bff4c7cca.jpg"
+    },
+    {
+      "id": "s-cdb7dcd714",
+      "kind": "sentence",
+      "segmentId": "s85",
+      "target": "저는 책 읽는 걸 좋아해요.",
+      "translation": "Eu gosto de ler livros.",
+      "startMs": 688216,
+      "endMs": 696395,
+      "audioClipSrc": "media/frag/f19f1e30d38e6.mp3",
+      "exampleAudioSrc": "media/frag/f19f1e30d38e6.mp3",
+      "freqRank": 381,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "읽다",
+        "target": "읽다",
+        "meaning": "ler",
+        "reading": null,
+        "start": 5,
+        "end": 6
+      },
+      "sceneSrc": "media/frames/s5e69eff2d353.jpg"
+    }
+  ],
+  "createdAt": "2026-09-24T19:34:11.403485+00:00"
 }

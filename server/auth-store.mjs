@@ -37,6 +37,9 @@ export class AuthError extends Error {
   }
 }
 
+// hash de uma senha qualquer, só para o login de e-mail inexistente custar o mesmo
+const DUMMY_HASH = `scrypt$${"0".repeat(32)}$${"0".repeat(KEY_LEN * 2)}`;
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
 export function normalizeEmail(raw) {
@@ -165,7 +168,12 @@ export function openAuth(db) {
   return {
     TOKEN_PREFIX,
 
-    async register({ email, password, name, device, agent }) {
+    async register({ email, password, name, device, agent, ip = "" }) {
+      // cadastro também é limitado por IP: cada um custa um scrypt (~32 MB,
+      // dezenas de ms) e ocupa o banco — sem limite, um laço derrubava o serviço
+      const key = `reg:${ip}`;
+      rateCheck(key);
+      rateFail(key); // conta toda tentativa: RATE_MAX cadastros por janela
       const em = normalizeEmail(email);
       const pw = checkPassword(password);
       if (q.userByEmail.get(em)) {
@@ -173,7 +181,17 @@ export function openAuth(db) {
       }
       const id = newId();
       const now = Date.now();
-      q.insertUser.run(id, em, cleanName(name), await hashPassword(pw), now, now);
+      const passHash = await hashPassword(pw);
+      try {
+        q.insertUser.run(id, em, cleanName(name), passHash, now, now);
+      } catch (err) {
+        // dois cadastros do mesmo e-mail ao mesmo tempo (duplo toque): ambos
+        // passam da checagem acima durante o scrypt e o segundo bate no UNIQUE
+        if (q.userByEmail.get(em)) {
+          throw new AuthError(409, "Já existe uma conta com este e-mail. Quer entrar?");
+        }
+        throw err;
+      }
       const session = issueSession(id, { device, agent });
       return { user: publicUser(q.userById.get(id)), session };
     },
@@ -188,7 +206,11 @@ export function openAuth(db) {
       const keys = [`e:${em}`, `ip:${ip}`];
       for (const k of keys) rateCheck(k);
       const user = q.userByEmail.get(em);
-      const ok = user && (await verifyPassword(String(password ?? ""), user.passHash));
+      // e-mail sem conta também paga um scrypt: senão a resposta instantânea
+      // entregava quais e-mails têm conta (tempo de resposta ≠)
+      const ok = user
+        ? await verifyPassword(String(password ?? ""), user.passHash)
+        : (await verifyPassword(String(password ?? ""), DUMMY_HASH), false);
       if (!ok) {
         for (const k of keys) rateFail(k);
         throw new AuthError(401, "E-mail ou senha incorretos.");

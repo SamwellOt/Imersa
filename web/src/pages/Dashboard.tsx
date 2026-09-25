@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Play, Check, RotateCcw } from "lucide-react";
@@ -8,7 +9,7 @@ import { dailyStats } from "@/lib/db";
 import { loadLemmaStatus, lemmaOfCardId, coverage, knownShare, hasTokens, statusOf } from "@/lib/vocab";
 import type { LemmaStatus } from "@/lib/vocab";
 import { useDueCount } from "@/lib/useDue";
-import { useAsync, useDocumentTitle, useMediaQuery } from "@/lib/hooks";
+import { useAsync, useDocumentTitle } from "@/lib/hooks";
 import { useApp } from "@/lib/store";
 import { firstName, useAuth } from "@/lib/auth";
 import { Card, Button } from "@/components/ui/primitives";
@@ -59,20 +60,30 @@ function WeekStrip({
   doneToday: boolean;
 }) {
   const today = dayKey();
+  const weekday = (day: string) => {
+    const [y, m, d] = day.split("-").map(Number);
+    return new Intl.DateTimeFormat("pt-BR", { weekday: "narrow" }).format(new Date(y, m - 1, d));
+  };
   return (
-    <div className="flex flex-col gap-1.5 sm:items-end sm:pt-1">
-      <div className="flex gap-1" aria-hidden>
+    <div className="flex flex-col gap-2 sm:items-end sm:pt-1">
+      {/* Um quadrado por dia com a inicial do dia embaixo: é um calendário de
+          bolso, não um indicador de progresso. */}
+      <div className="flex gap-1.5" aria-hidden>
         {days.map((d) => {
           const isToday = d.day === today;
           return (
-            <span
-              key={d.day}
-              className={cn(
-                "h-3.5 w-3.5 rounded-[3px]",
-                d.active ? (isToday && !doneToday ? "bg-brand/45" : "bg-brand") : "bg-surface-3",
-                isToday && "outline outline-1 -outline-offset-1 outline-line-strong",
-              )}
-            />
+            <span key={d.day} className="flex flex-col items-center gap-1">
+              <span
+                className={cn(
+                  "h-3 w-3 rounded-[3px]",
+                  d.active ? (isToday && !doneToday ? "bg-brand/45" : "bg-brand") : "bg-surface-3",
+                  isToday && "outline outline-1 -outline-offset-1 outline-line-strong",
+                )}
+              />
+              <span className={cn("text-[0.625rem] leading-none", isToday ? "text-fg" : "text-faint")}>
+                {weekday(d.day)}
+              </span>
+            </span>
           );
         })}
       </div>
@@ -109,59 +120,86 @@ function Trail({
 }) {
   const nav = useNavigate();
   const doneCount = doneIds.size;
-  // No celular, 7 capas em ~350 px viravam miniaturas ilegíveis: 4 por linha.
-  const wide = useMediaQuery("(min-width: 640px)");
-  const cols = wide ? Math.min(doses.length, 7) : Math.min(doses.length, 4);
+  // Filmstrip: uma fita horizontal de quadros grandes o bastante para ter
+  // título, que rola de lado (a grade de 7 miniaturas era ilegível). A dose
+  // atual entra na janela sozinha.
+  const strip = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = strip.current;
+    const cur = el?.querySelector<HTMLElement>("[data-current]");
+    if (!el || !cur) return;
+    el.scrollLeft = Math.max(0, cur.offsetLeft - el.offsetLeft);
+  }, [currentId]);
   return (
-    <div>
+    <section>
       <div className="flex items-baseline justify-between text-xs text-muted">
         <span>
           <b className="font-semibold text-fg">Trilha {doses[0]?.level ?? ""}</b>, {doneCount} de{" "}
           {total} {pluralize(total, "concluída", "concluídas")}
         </span>
+        <span className="timecode text-faint">
+          {fmtDuration(doses.reduce((a, d) => a + d.durationSec, 0))} de vídeo
+        </span>
       </div>
       <div
-        className="mt-2.5 grid gap-2"
-        style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
+        ref={strip}
+        className="no-scrollbar mt-3 flex snap-x gap-3 overflow-x-auto"
       >
         {doses.map((d) => {
           const done = doneIds.has(d.id);
           const cur = d.id === currentId;
+          const dim = !done && !cur;
           const poster = d.posterSrc ? mediaUrl(lang, d.path, d.posterSrc) : null;
           return (
             <button
               key={d.id}
+              data-current={cur || undefined}
               onClick={() => nav(`/dose/${d.id}`)}
-              title={d.title}
               aria-label={`${BRAND.unit} ${d.lessonNumber}: ${d.title}`}
-              className={cn(
-                "relative overflow-hidden rounded-md border border-line bg-surface-2 text-left transition-colors hover:border-line-strong",
-                cur && "outline outline-2 -outline-offset-2 outline-brand",
-              )}
+              className="group w-[9.5rem] shrink-0 snap-start text-left sm:w-[10.5rem]"
             >
-              {poster ? (
-                <img
-                  src={poster}
-                  alt=""
-                  loading="lazy"
-                  className={cn("aspect-video w-full object-cover", !done && !cur && "opacity-40 grayscale")}
-                />
-              ) : (
-                <div className="aspect-video w-full" />
-              )}
-              <span className="timecode absolute left-1.5 top-1 rounded-[3px] bg-black/65 px-1 text-[0.625rem] text-white">
-                {String(d.lessonNumber).padStart(2, "0")}
-              </span>
-              {done && (
-                <span className="absolute right-1 top-1 grid h-4 w-4 place-items-center rounded-full bg-brand text-brand-fg">
-                  <Check size={9} strokeWidth={3.5} />
+              <span
+                className={cn(
+                  "relative block aspect-video w-full overflow-hidden rounded-lg border border-line bg-surface-2 transition-colors group-hover:border-line-strong",
+                  cur && "outline outline-2 -outline-offset-2 outline-brand",
+                )}
+              >
+                {poster && (
+                  <img
+                    src={poster}
+                    alt=""
+                    loading="lazy"
+                    className={cn(
+                      "h-full w-full object-cover transition-[filter,opacity]",
+                      dim && "opacity-45 grayscale group-hover:opacity-80 group-hover:grayscale-0",
+                    )}
+                  />
+                )}
+                <span className="timecode absolute left-1.5 top-1.5 rounded-[3px] bg-black/65 px-1 py-px text-[0.625rem] text-white">
+                  {String(d.lessonNumber).padStart(2, "0")}
                 </span>
-              )}
+                <span className="timecode absolute bottom-1.5 right-1.5 rounded-[3px] bg-black/65 px-1 py-px text-[0.625rem] text-white">
+                  {fmtDuration(d.durationSec)}
+                </span>
+                {done && (
+                  <span className="absolute right-1.5 top-1.5 grid h-4 w-4 place-items-center rounded-full bg-brand text-brand-fg">
+                    <Check size={9} strokeWidth={3.5} />
+                  </span>
+                )}
+              </span>
+              <span
+                className={cn(
+                  "mt-1.5 line-clamp-2 block text-xs leading-snug",
+                  cur ? "font-medium text-fg" : dim ? "text-faint" : "text-muted",
+                )}
+              >
+                {d.title}
+              </span>
             </button>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -321,8 +359,8 @@ export function Dashboard() {
     <div className="mx-auto flex max-w-[960px] flex-col gap-6">
       <header className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
         <div>
-          <p className="text-xs text-faint">{todayLabel()}</p>
-          <h1 className="font-display mt-1 text-[1.75rem] leading-tight md:text-[1.9rem]">
+          <p className="text-sm text-muted">{todayLabel()}</p>
+          <h1 className="page-title mt-1">
             {greeting()}{userFirstName ? `, ${userFirstName}` : ""}.
           </h1>
         </div>
@@ -368,7 +406,7 @@ export function Dashboard() {
                       </span>
                     )}
                   </div>
-                  <h2 className="font-display mt-1.5 text-[1.5rem] leading-tight md:text-[1.625rem]">
+                  <h2 className="font-display mt-1.5 text-[1.5rem] leading-[1.15] md:text-[1.75rem]">
                     {featured.title}
                   </h2>
                   {nextDoseFull?.titleTarget && (
@@ -432,29 +470,23 @@ export function Dashboard() {
             </Card>
           )}
 
-          <Trail
-            lang={entry.code}
-            doses={course.doses}
-            doneIds={doneIds}
-            currentId={next?.id}
-            total={course.doses.length}
-          />
         </div>
 
-        {/* Coluna lateral: revisão e números, em letra pequena */}
-        <div className="flex flex-col gap-4">
-          <Card className="px-4 py-4">
-            <div className="flex items-baseline justify-between">
+        {/* Coluna lateral: revisão e números, sem caixa — só filete e tipo. A
+            única superfície da tela é a dose. */}
+        <aside className="flex flex-col gap-8 lg:pt-1">
+          <section>
+            <div className="flex items-baseline justify-between border-b border-line pb-2">
               <span className="text-sm font-semibold">Revisão</span>
               <span className="timecode text-faint">vira às 4:00</span>
             </div>
-            <div className="mt-2.5 text-[1.75rem] font-semibold leading-none tabular-nums">
-              {due}
-              <span className="ml-1.5 text-[0.8125rem] font-normal text-muted">
+            <div className="mt-3 flex items-baseline gap-2">
+              <span className="font-display text-[2.5rem] font-normal leading-none tabular-nums">{due}</span>
+              <span className="text-[0.8125rem] text-muted">
                 {pluralize(due, "card vencido", "cards vencidos")}
               </span>
             </div>
-            <p className="mt-1.5 text-xs text-muted">
+            <p className="mt-2 text-xs leading-relaxed text-muted">
               {due > 0
                 ? `Uns ${Math.max(1, Math.round(due / 2))} ${pluralize(Math.max(1, Math.round(due / 2)), "minuto", "minutos")}.`
                 : learnAhead > 0
@@ -477,30 +509,40 @@ export function Dashboard() {
                 </span>
               </div>
             )}
-          </Card>
+          </section>
 
-          <Card className="px-4 py-4">
-            <div className="flex items-baseline justify-between">
+          <section>
+            <div className="flex items-baseline justify-between border-b border-line pb-2">
               <span className="text-sm font-semibold">Até aqui</span>
-              <span className="timecode text-faint">{entry.nativeName}</span>
+              <span className="font-target text-xs text-faint">{entry.nativeName}</span>
             </div>
-            <dl className="mt-3 grid grid-cols-[1fr_auto] gap-y-2 text-[0.8125rem]">
-              <dt className="text-muted">Palavras fixadas</dt>
-              <dd className="text-right font-semibold tabular-nums">{overview.cardsKnown}</dd>
-              <dt className="text-muted">Em aprendizado</dt>
-              <dd className="text-right font-semibold tabular-nums">{overview.cardsLearning}</dd>
-              <dt className="text-muted">Doses feitas</dt>
-              <dd className="text-right font-semibold tabular-nums">{overview.dosesCompleted}</dd>
-              <dt className="text-muted">Imersão</dt>
-              <dd className="text-right font-semibold tabular-nums">
-                {fmtDuration(overview.immersionMsTotal / 1000)}
-              </dd>
-              <dt className="text-muted">Revisões</dt>
-              <dd className="text-right font-semibold tabular-nums">{overview.reviewsTotal}</dd>
+            <dl className="text-[0.8125rem]">
+              {(
+                [
+                  ["Palavras fixadas", overview.cardsKnown],
+                  ["Em aprendizado", overview.cardsLearning],
+                  ["Doses feitas", overview.dosesCompleted],
+                  ["Imersão", fmtDuration(overview.immersionMsTotal / 1000)],
+                  ["Revisões", overview.reviewsTotal],
+                ] as [string, string | number][]
+              ).map(([label, value]) => (
+                <div key={label} className="flex items-baseline justify-between border-b border-line py-1.5">
+                  <dt className="text-muted">{label}</dt>
+                  <dd className="font-medium tabular-nums">{value}</dd>
+                </div>
+              ))}
             </dl>
-          </Card>
-        </div>
+          </section>
+        </aside>
       </div>
+
+      <Trail
+        lang={entry.code}
+        doses={course.doses}
+        doneIds={doneIds}
+        currentId={next?.id}
+        total={course.doses.length}
+      />
     </div>
   );
 }

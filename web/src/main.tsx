@@ -35,9 +35,17 @@ if (import.meta.env.PROD && "serviceWorker" in navigator) {
 
 // ?reset=all wipes everything; ?reset=<lang> (e.g. ?reset=ko) wipes one language's
 // SRS + progress. Then it redirects to a clean URL and mounts fresh.
+// Sempre com confirmação: o reset grava tombstones e, com conta, se propaga para
+// o servidor e os outros aparelhos — um link aberto sem querer (histórico,
+// autocompletar da barra) apagava a conta inteira em silêncio.
 const resetParam = new URLSearchParams(location.search).get("reset");
 if (resetParam) {
-  (resetParam === "all" ? resetAll() : resetLanguage(resetParam)).finally(() => {
+  const what = resetParam === "all" ? "TODO o progresso" : `o progresso do idioma «${resetParam}»`;
+  const ok = confirm(
+    `Apagar ${what} (cards, revisões, estatísticas)?\n\n` +
+    "Com conta, isso vale também para a conta e para os outros aparelhos.",
+  );
+  (ok ? (resetParam === "all" ? resetAll() : resetLanguage(resetParam)) : Promise.resolve()).finally(() => {
     location.replace(location.pathname + location.hash);
   });
 } else {

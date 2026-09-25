@@ -64,7 +64,7 @@ Regras que fazem a troca de conta ser segura (`adopt`/`logout` em `auth.ts`):
 
 **Ao mexer no estado do aluno, respeite a forma de cada tabela** (é ela que faz o merge
 funcionar sem servidor esperto — ver `docs/architecture.md`):
-- `reviewLog` / `immersionLog` são **eventos imutáveis** com `uid` global → nunca edite um
+- `reviewLog` / `immersionLog` / `lineMarks` são **eventos imutáveis** com `uid` global → nunca edite um
   evento no lugar; crie outro (e um tombstone, se for apagar).
 - `cards` / `doseProgress` / `settings` são **estado**: toda escrita precisa atualizar
   `updatedAt`, senão a alteração perde o last-write-wins e some (vale inclusive para
@@ -94,7 +94,7 @@ funcionar sem servidor esperto — ver `docs/architecture.md`):
 
 Regras em `docs/design-system.md`; tokens em `web/src/index.css`. Resumo:
 **um acento** (teal — gradiente é proibido como decoração), **fundo chapado**
-(nada de blob/aura; `.frosted` só nas barras fixas), **hierarquia por tamanho e
+(nada de blob/aura; `.frosted` só nas barras fixas do desktop — no celular as barras são opacas, `.bar-solid`, e o cabeçalho tem o seletor de idioma), **hierarquia por tamanho e
 cor** (títulos em serifa Newsreader 400/500 — `font-extrabold` não existe),
 **raio contido** (a escala `--radius-*` re-tuna todo `rounded-*`), **no máximo
 dois acentos por tela**, **sem emoji na UI** (idioma se apresenta na própria
@@ -106,8 +106,12 @@ coisa com "cara de IA": emoji, caixa alta espaçada, grade de tiles).
 (`cards[].sceneSrc`) no verso do card — `python -m dose_factory frames` extrai.
 **Duas vozes tipográficas**: idioma-alvo em sans (serifa coreana
 `.font-target-display` só em destaque), tradução PT **sempre** em Newsreader
-itálico (`.line-trans`). Neutros com tom: escuro verde-grafite `#12181a`, claro
-papel `#f4f2ec`. `Card` só para objetos; seções vivem no fundo com filete.
+itálico (`.line-trans`); o `h1` de cada página é `.page-title` (Newsreader 400,
+grande). Neutros com tom: escuro verde-grafite `#12181a`, claro
+papel `#f4f2ec`. `Card` só para objetos; seções vivem no fundo com filete (no
+Hoje a única superfície é o card da dose; a coluna lateral e a trilha em
+**filmstrip** ficam no fundo; lâminas da Biblioteca **sem moldura**; nav ativa =
+traço na margem, não pílula).
 **A linha da dose é o átomo visual**: fala em idioma-alvo + tradução + timecode
 (`components/ui/DoseLine.tsx`) — abre o Hoje, estrutura o Prime, é a transcrição
 e volta no verso do card. Telas de dados carregam com **esqueleto**, não spinner.
@@ -130,6 +134,9 @@ de ensinar o que o vídeo diz.
 A pipeline publica a escada em `course.json` (`vocabLadder`) e o app lê de lá (`lib/levels.ts`,
 seção "Nível" em `/progress`), então **nenhum número de nível fica embutido no app**.
 Hoje: 140 palavras, 136 na faixa Básica = 7,3% do TOPIK I; ~94 lições fecham o A1–A2.
+**Japonês usa JLPT** (`data/jlpt_ja.json`, listas Waller/tanos por lema UniDic): como N5 e
+N4 são a base do aluno (sem card), a escada começa no N3 e as letras são só chaves —
+`A` = N3 · `B` = N2 · `C` = N1 (`_JLPT_TO_TIER` em `levels.py`, rótulos em `course.py`).
 
 ## Metodologia (cada Dose = 1 lição diária)
 
@@ -146,15 +153,58 @@ output + análise de erros). Ver `docs/methodology.md`. Espelha os *dojo skills*
   meça: palavras distintas por minuto, caracteres falados por segundo e a **mediana do rank
   de frequência** das palavras dele (`frequency.rank_map`). Um vlog nativo "de A1" costuma
   dar 15+ palavras novas por minuto: é degrau demais para o dia 1.
+  (Isso vale para quem começa do zero, o caso do coreano. O **japonês** é outro aluno:
+  intermediário N4–N3, já fazia imersão, pediu **vlog / viagem / conversa natural de até
+  30 min** e vai pedir lições **em lotes** ("faça mais 7"), então a progressão tem de ser
+  uma **escada contínua entre lotes**. A régua é `.work/ja/ladder.py`: score 0–100 com
+  **âncoras fixas** (média de palavras fora da base/min, % de ocorrências fora da base e
+  car/s), estável quando entram candidatos novos. Regras: lição nova só **acima** da última
+  publicada; passo de **~4–6 pontos** por lição (o 1º lote foi de 13 a ~40; o vlog nativo
+  rápido fica em ~90–100, ou seja, umas 20 lições depois); variar gênero e canal entre
+  dias seguidos; não queimar os nativos cedo. Antes de um lote novo: ampliar o conjunto de
+  candidatos (`scout/search*.sh`, só legenda via Tor) e rodar `ladder.py --next N`.
+  Vídeo já transcrito e traduzido que ficou forte demais para o lote vai para o **banco**
+  (`.work/ja/bank/<id do vídeo>/`, meta em `lessons_meta.py` chaveada pelo id) e é
+  promovido quando a escada chegar nele. Tudo em `.work/ja` é chaveado por **vídeo**, não
+  pelo número da lição, para a escada poder ser reordenada.)
 - **15–20 min** por lição, pegando o trecho **otimizado** de alta compreensão. Se **e só se**
   não existir um vídeo bom de ~15 min, emende **2 ou 3** vídeos numa lição só (mesmo nível,
   mesmo canal de preferência) e tire os 20 cards do conjunto. As origens ficam registradas
   em `source.parts[]`; os tempos da dose são sempre os do vídeo **concatenado**.
-- **20 cards por dose = as 20 palavras de maior frequência** que aparecem no vídeo (forma
-  de dicionário), medida pela **lista de frequência do idioma** (`frequency.py`;
-  `data/freq_raw_<lang>.txt`; ko via kiwipiepy, ja via fugashi) — o vídeo define o
-  conjunto candidato, a lista define a ordem; não é contagem dentro do vídeo.
+- **20 cards por dose = frequência do idioma × ocorrências no vídeo** (forma de dicionário;
+  `frequency.py`; ko: `data/freq_raw_ko.txt` via kiwipiepy; ja: `data/freq_bccwj_ja.tsv` via
+  fugashi). O vídeo define o conjunto candidato; a nota é `−ln(rank) + 0,85·ln(falas em que
+  aparece)` (`card_score`) e entram primeiro as ditas **2+ vezes** (rank ≤ 12000), depois as
+  demais. A lista do idioma continua o peso principal; a ocorrência só impede que a palavra
+  dita uma vez tome o lugar da que sustenta o vídeo (pedido do usuário em 24/09/2026 — antes
+  era só a lista, e 充電 ×20 ficava de fora). **Nome próprio** não é token nem card (NNP,
+  固有名詞, `data/names_<lang>.json`); no japonês **compostos de unidade longa** viram uma
+  palavra (飛行機, 金曜日 — `data/luw_ja.tsv`, 長単位語彙表 do NINJAL; leitura do JMdict).
   **Sem repetir** palavras de lições anteriores (dedup acumulado → i+1).
+  **Base já conhecida** (`KNOWN_BASE` em `frequency.py`, hoje
+  `{"ja": {"top": 1000, "jlpt": ("N5", "N4"), "loanwords": True, "declared": "known_ja.json"}}`): o aluno de japonês
+  está na transição N4→N3 («base de 1000 palavras»). A base é **N5 + N4 inteiros**
+  (便利, 窓, 遠い ficam depois do #1000 do corpus); o top-1000 só completa com palavras que
+  **nenhum nível do JLPT reivindica** — o JLPT manda: 355 das 1000 mais frequentes são
+  N3+ (状態, 確認, 結果) e **não** são base (até 09/2026 eram, por engano). **外来語 não vira
+  card** (fáceis demais — pedido do aluno): lema em katakana (`is_loanword`) conta como
+  base, e card cuja grafia seria só katakana (マジ, コショウ) também fica de fora.
+  **Palavras declaradas**: `data/known_ja.json` lista as N3+ que o aluno disse já saber
+  (55 das 243 do top-1000 que faltavam, marcadas em 24/09/2026) — contam como base e
+  vencem o JLPT. Ao acrescentar palavras ali, rode `words --frozen` (lições estudadas) e
+  `tokens --lang ja` (atualiza o `base: true` das legendas publicadas).
+  Lições já estudadas entram no dedup com `words --frozen L1.words.json …` (não são
+  regeneradas: o id do card é o lema, mudar o conjunto deixaria cards órfãos). Hoje B1-01 a
+  B1-03 (ja) e A1-01 a A1-04 (ko) estão congeladas (`meanings.py` ainda escreve L3+ — o L3
+  não muda porque o significado é o mesmo). Significado novo vai para
+  `data/dict_pt_<lang>.json` (`dict --pt`), de onde o `words` preenche `meaning`.
+  **Depois de montar, rode `dose_factory enrich --lang <l>`**: glossário (dicionário da
+  legenda + "+ card"), cards de frase i+1, homófonos, áudio condensado e cenas.
+  A base **nunca vira card** (os 20 são N3 para cima ou fora das listas) e cada
+  token dela na legenda leva `base: true`, que o app conta como conhecido sem card
+  (`tokenStatus` em `lib/vocab.ts`). Coreano não tem base.
+  No japonês o card mostra a **grafia falada** (`display`: 綺麗, não a chave UniDic 奇麗)
+  com a leitura em hiragana; o id continua `w-<lema UniDic>`.
   Card: **frente** = a palavra por **TTS nativo** (edge-tts → `media/tts/<hash>.mp3`,
   campo `audioClipSrc`); **verso** (ao revelar) = significado PT + **frase-exemplo curta**
   (`best_example` pega a frase mais curta que contém a palavra) tocada por um **fragmento
@@ -162,6 +212,29 @@ output + análise de erros). Ver `docs/methodology.md`. Espelha os *dojo skills*
   grande) com a **palavra destacada** na frase (superfície real via offsets do kiwi, ex.
   하다→해) e o **rank de frequência** da palavra (`freqRank`, ex. 하다 = #1) mostrado no
   verso. A imersão mostra **todas** as legendas; só o SRS usa as 20 palavras.
+  **Além dos 20** (todos fora do teto diário, `CardRecord.origin`): **+ Card** pelo
+  dicionário da legenda (`glossary[].card`) e até 5 **cards de frase i+1**
+  (`sentenceCards`, entram só depois que a palavra deles foi vista; `srs.sentenceCards`).
+  **«Já sei»** (K no card novo, ou no dicionário) = `CardRecord.known`: fora das filas,
+  conta como conhecida, exportável para `dose_factory known`. Card de palavra cujo lema
+  já tem registro em outra lição não volta como novo (`buildDoseQueue`). Toda busca de card
+  por id passa por `lib/cards.ts:findCard` (senão card de frase/extra vira "órfão" e é
+  apagado). **Homófono** japonês (`cards[].homophones`) mostra a escrita na frente.
+  **Escrita opcional na frente**: Ajustes → Repetição espaçada → "Escrita na frente
+  do card" mostra também `card.target` (idioma estudado), mantendo o áudio.
+  **Frase-exemplo na frente** (Ajustes → Repetição espaçada, padrão ligado,
+  `flashcardExample` em `lib/store.ts`): embaixo da palavra, a frase da lição com a
+  palavra sublinhada e um botão ▶ — a **i+1** (`sentenceCards` com esse foco) quando
+  existe, senão o `context` do card (`exampleFor` em `lib/cards.ts`). Ao abrir, só a
+  palavra toca; a frase toca no botão e, ao revelar, sozinha (`autoPlayExample`,
+  "Tocar a frase ao revelar"). O verso usa a mesma frase. Os **cards de frase
+  separados** (escuta) ficaram opcionais e **desligados por padrão**
+  (`srs.sentenceCards = false`); desligados, os já avaliados saem das filas sem ser
+  apagados (`hiddenBySettings` em `srs.ts`). Padrão
+  desligado; `flashcardFrontText` em `lib/store.ts`, persistido no `localStorage`
+  (`imersa-prefs`), por navegador, sem sincronização entre aparelhos. Vale para a
+  revisão da dose e a avulsa, pelo `Flashcard` compartilhado. Tradução, leitura e
+  frase-exemplo continuam no verso; não altera o FSRS nem o contrato de conteúdo.
   `newPerDay = 20` no app (1 lição/dia). Um card **só conta como visto** (vira registro no
   IndexedDB + soma no teto diário) **quando é avaliado** (De novo/Bom/…) — abrir ou pular a
   revisão não consome nada (`gradeNew` cria o registro no 1º grade; `buildDoseQueue` oferece
@@ -237,6 +310,14 @@ output + análise de erros). Ver `docs/methodology.md`. Espelha os *dojo skills*
 - **Prime** = 0,1s antes de cada fala o vídeo **pausa** e mostra a legenda no **idioma
   nativo (PT)**; o aluno lê o significado, dá play e ouve a fala em idioma-alvo "às cegas"
   (a legenda some quando a fala começa). Ver `ImmersionPlayer.tsx` (modo "primed").
+  **Prime adaptativo** (`primedAdaptive`, **desligado por padrão — o usuário exigiu que
+  seja configurado para funcionar**: Ajustes → Imersão ou o botão de filtro no player em
+  modo Primed): pausa só nas falas com palavra ainda não fixada (`needsPrime` em `vocab.ts`).
+- **Player**: tocar numa palavra da legenda abre o dicionário (`WordPopover`: + Card / Já
+  sei); **N** marca «não entendi» na fala (evento `lineMarks`, kind `mark` no sync) — é a
+  compreensão real em `/progress` e o `--feedback` das escadas (`ladder.py`). **Escuta**:
+  `/escuta/:doseId` toca o áudio condensado (baixado inteiro → offline pelo SW), conta como
+  imersão.
 - **Progressivo (i+1)**: cada dia um degrau acima. Curadoria em **vlog / conversa natural**,
   no nível do aluno.
 - **Tradução PT fiel** (feita para aprender, preserva a estrutura do original — não
@@ -268,8 +349,22 @@ python -m dose_factory assemble --language ko ... --media L.h264.mp4 \
   --words L.words.json --meta L.meta.json
 ```
 Regenerar `words` **preserva** os `meaning`/`ttsFile` já preenchidos (merge por lema).
-Listas de frequência em `pipeline/data/freq_raw_<lang>.txt` (OpenSubtitles/OPUS; swappable
-por uma lista oficial). Cache de lema-frequência em `data/lemma_freq_<lang>.json`.
+Listas de frequência: coreano em `pipeline/data/freq_raw_ko.txt` (OpenSubtitles/OPUS, as
+50 mil formas, lematizadas para `data/lemma_freq_ko.json` — **refaça com `dose_factory
+freqlist --lang ko` sempre que mexer na lematização coreana**: a lista e o analisador
+dependem um do outro e o cache velho deixava 사람들 separado de 사람; contrações que o
+kiwi lê soltas como substantivo — 날 = 나를, 거지 = 것이지, 수도 = -ㄹ 수도 — são
+desfeitas em `_KO_SURFACE_FIX`). Palavra fora da lista mas no TOPIK/JLPT (귤, 김밥)
+pode virar card com peso de rara (antes era descartada); japonês em `data/freq_bccwj_ja.tsv` — o
+**BCCWJ 短単位語彙表 do NINJAL**, já por lema UniDic, ordenado pelo registro coloquial
+(Yahoo!知恵袋 + Yahoo!ブログ). A lista OpenSubtitles do japonês era inútil (sem espaços para
+separar: 見る caía em #990, atrás de 捜査 e 殺人) e foi removida.
+
+**Fluxo do japonês (B1, com Scribe):** `.work/ja/lessons.txt` (lição · parte · id) →
+`dl.sh` (360p via Tor) → `build.py` (H.264 + loudnorm, concatena, **transcreve a mídia
+concatenada** no Scribe `language_code=jpn` e roda `prep`) → `pt.tsv` por lição (tradução
+fiel) → `lessons_meta.py` (meta + prime + `trans.json`) → `words` → `meanings.py` → `tts` →
+`assemble.sh` (monta as 7 e roda `frames`). Erros do Scribe se corrigem no `units.json`.
 
 **Notas operacionais deste ambiente** (importantes):
 - **YouTube bloqueia o IP** ("Sign in to confirm you're not a bot"). Roteie o yt-dlp pelo
@@ -291,7 +386,7 @@ por uma lista oficial). Cache de lema-frequência em `data/lemma_freq_<lang>.jso
   `primePreview[]` = blocos de prime em PT; `media.posterSrc` = capa (também copiada para o
   `DoseRef` do `course.json`, para Biblioteca/trilha não baixarem cada dose). Ambos opcionais.
 - `segments[].tokens[]` = palavras de conteúdo da fala com posição e **lema = id do card
-  sem `w-`**. É a ponte legenda ↔ SRS: a **legenda "conhecido/novo"** (opcional, Ajustes →
+  sem `w-`** (+ `base: true` quando a palavra está na base já conhecida do curso; + `dict: true` nas palavras **só de dicionário** — 人, 私, この, はい, nomes, números; 저, 그리고, 시, 이다 —, que nunca viram card: tocáveis na legenda, mas fora de compreensão, marcas e Prime. **Toda palavra da fala** (menos partícula, auxiliar e pontuação) abre o dicionário; significado PT curado em `dict_pt_<lang>.json`, e `enrich --glossary-only` refaz só tokens + glossário). É a ponte legenda ↔ SRS: a **legenda "conhecido/novo"** (opcional, Ajustes →
   Imersão ou o marcador no player: fixada limpa · aprendendo sublinhada · nunca estudada
   pontilhada) e a seção **Compreensão por lição** em `/progress` (% das ocorrências já
   fixadas, i+1 da próxima lição, minutos de imersão por lição — `immersionLog.doseId`)
@@ -309,21 +404,32 @@ Detalhes: `docs/dose-contract.md`.
   05 clima e -어야 되다 · 06 -ㄹ 수 있다, hobbies e -고 싶다 · 07 -러 가다, viagem e 반말.
   A curva medida (car/s falados · palavras novas/min): **1,8→2,7 · 2,6→4,4** — contra
   4,3–7,3 car/s e 15 palavras/min dos vlogs nativos que abriam o curso antes.
-- Dose **demo** em japonês (áudio) com 20 cards de palavra, como vitrine de UX.
+- **2º idioma: Japonês** — trilha **B1** com **7 lições em vídeo** (16–25 min) para um
+  aluno na **transição N4→N3** (base = JLPT N5 + N4 + top-1000 sem nível JLPT + 外来語; cards do N3 para cima, sem katakana),
+  vlog / viagem / conversa natural, em escada contínua (`.work/ja/ladder.py`):
+  01 bate-volta em Kyoto (Shun) · 02 café com o kōhai: namoro e casamento (Japanese by Yu) ·
+  03 felicidade, Miku & Sayaka · 04 trem e avião Kofu→Hiroshima (Speak Japanese Naturally) ·
+  05 entrevistas de rua + café do amigo (Shun) · 06 Okinawa com a amiga (りこ氏, nativo) ·
+  07 primeiro camping com a bebê (sasayui, nativo, Kansai-ben). Compreensão pela base (N5+N4+外来語):
+  90→78%; fala 3,8→6,7 car/s. No banco, prontos para os próximos lotes: YUYU (dia de
+  20 h), casal na estrada (香取サヤカ), Nagoya (りおん). A dose demo só-áudio saiu (cópia em
+  `pipeline/.work/ja-demo/published/`). Legenda do japonês = **uma linha por frase**,
+  frases longas divididas em orações, cada linha com a sua tradução (`clauses.py`).
 - Roda em **produção** na porta 8000 pelo `server/` (serviço `imersa`):
   `cd web && npm run build && systemctl restart imersa`.
 - **Contas** (e-mail + senha, sessões por aparelho) e **sincronização desktop ↔ celular**
   pela conta (09/2026). Convidado continua possível; código de sincronização é legado.
-- Próximo: continuar a trilha de coreano (dias 4+). Ver `docs/roadmap.md`.
+- Próximo: continuar as trilhas (coreano e japonês). Ver `docs/roadmap.md`.
 
 ## Navegação (contrato de URL)
 
 `/` Hoje · `/library` · `/progress` · `/settings` · `/review` (revisão avulsa) ·
 `/entrar` · `/criar-conta` (conta; `?next=` volta para onde estava) · `/onboarding` ·
-`/dose/:doseId?fase=prime|imersao|revisao|fim` · `/otimizar?lang=` (página separada,
+`/dose/:doseId?fase=prime|imersao|revisao|fim` · `/escuta/:doseId` (áudio condensado) ·
+`/otimizar?lang=` (página separada,
 fora do SPA — otimizador do FSRS). **A fase da dose vive na URL** —
 recarregar mantém o lugar e o Voltar do navegador anda entre as fases. Sem
-`?fase`, dose já concluída abre na **imersão**. Ver `docs/architecture.md`.
+`?fase`, dose já concluída abre na **imersão**. O idioma de `/dose/:id` e `/escuta/:id` sai do **prefixo do id** (`langOfDoseId`), não do idioma ativo — link de lição de outro idioma abre. Atalhos de tecla ignoram Ctrl/⌘/Alt (`hasShortcutModifier`: Ctrl+F não é tela cheia, Ctrl+3 não dá nota). Ver `docs/architecture.md`.
 
 ## Reset de progresso local
 

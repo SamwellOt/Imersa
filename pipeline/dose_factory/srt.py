@@ -99,7 +99,7 @@ def _group_scribe(path: str, *, max_chars: int | None, gap_s: float) -> list[Sen
         return len("".join(buf).replace(" ", ""))
 
     def flush() -> None:
-        nonlocal buf, start, end, spk, pending_space
+        nonlocal buf, start, end, pending_space
         text = _clean("".join(buf))
         if text and start is not None and end is not None:
             out.append(Sentence(int(start * 1000), int(end * 1000), text, spk))
@@ -164,6 +164,106 @@ def sentences_from_scribe(path: str) -> list[Sentence]:
         else:
             merged.append(s)
     return merged
+
+
+_CLAUSE_END = set("、，,")
+# partículas e continuações que nunca abrem uma linha de legenda
+_NO_CUT_BEFORE = set("のはがをにでともへやかねよなってただじゃぞさわるんっ")
+
+
+def _sentence_words(path: str, gap_s: float = 2.5) -> list[list[dict]]:
+    """As palavras (texto + tempos) de cada frase, na MESMA divisão e ordem de
+    `sentences_from_scribe` (inclusive a fusão de frases repetidas seguidas)."""
+    words = _load_words(path)
+    out: list[list[dict]] = []
+    buf: list[dict] = []
+    spk = None
+    prev_end = None
+    pending_space = False
+
+    def flush():
+        nonlocal buf, spk
+        if buf and _clean("".join(w["text"] for w in buf)):
+            out.append(buf)
+        buf, spk = [], None
+
+    for w in words:
+        wt = w.get("type")
+        if wt == "spacing":
+            if buf:
+                pending_space = True
+            continue
+        if wt not in ("word", "audio_event") or w.get("start") is None or w.get("end") is None:
+            continue
+        s, e = w["start"], w["end"]
+        if wt == "audio_event":
+            flush()
+            prev_end = e
+            continue
+        sp = w.get("speaker_id")
+        if buf and ((spk is not None and sp != spk) or (prev_end is not None and s - prev_end >= gap_s)):
+            flush()
+        if not buf:
+            spk = sp
+        txt = (" " if buf and pending_space else "") + w.get("text", "")
+        buf.append({"text": txt, "start": s, "end": e})
+        prev_end = e
+        pending_space = False
+        if txt and txt[-1] in _SENT_END:
+            flush()
+    flush()
+    merged: list[list[dict]] = []
+    for ws in out:
+        if merged and _clean("".join(x["text"] for x in merged[-1])) == _clean("".join(x["text"] for x in ws)):
+            merged[-1] = merged[-1] + [{"text": "", "start": ws[-1]["start"], "end": ws[-1]["end"]}]
+        else:
+            merged.append(ws)
+    return merged
+
+
+def _split_clauses(ws: list[dict], max_chars: int) -> list[list[dict]]:
+    """Divide uma frase longa em orações: corta depois de 「、」 (ou numa pausa
+    ≥ 0,35 s), no ponto que deixa as metades mais parecidas, e repete até cada
+    pedaço caber em `max_chars`. Sem ponto de corte bom, a frase fica inteira."""
+    vis = lambda part: len(_clean("".join(x["text"] for x in part)).replace(" ", ""))
+    total = vis(ws)
+    if total <= max_chars or len(ws) < 2:
+        return [ws]
+    best, best_cost = None, None
+    acc = 0
+    for j in range(len(ws) - 1):
+        acc += len(ws[j]["text"].strip())
+        left, right = acc, total - acc
+        if left < 8 or right < 8:
+            continue
+        punct = ws[j]["text"].strip()[-1:] in _CLAUSE_END
+        nxt = ws[j + 1]["text"].strip()[:1]
+        # pausa no meio do sintagma (「時 | の友達」, 「人 | で結構」) não é fim de oração
+        pause = ws[j + 1]["start"] - ws[j]["end"] >= 0.35 and nxt not in _NO_CUT_BEFORE
+        if not (punct or pause):
+            continue
+        cost = abs(left - total / 2) + (0 if punct else 6)
+        if best_cost is None or cost < best_cost:
+            best, best_cost = j, cost
+    if best is None:
+        return [ws]
+    return _split_clauses(ws[: best + 1], max_chars) + _split_clauses(ws[best + 1:], max_chars)
+
+
+def clause_lines_from_scribe(path: str, max_chars: int = 40) -> list[list[Sentence]]:
+    """Legenda por FRASE (a unidade traduzida), com as frases longas divididas em
+    orações. Uma lista por frase de `sentences_from_scribe`, na mesma ordem: a
+    legenda nunca repete a tradução de outra linha e o modo primed pausa uma vez
+    por fala de verdade — não a cada respiro de 0,5 s."""
+    out = []
+    for ws in _sentence_words(path):
+        parts = []
+        for part in _split_clauses(ws, max_chars):
+            text = _clean("".join(x["text"] for x in part))
+            if text:
+                parts.append(Sentence(int(part[0]["start"] * 1000), int(part[-1]["end"] * 1000), text, None))
+        out.append(parts)
+    return out
 
 
 def display_lines_from_scribe(path: str) -> list[Sentence]:

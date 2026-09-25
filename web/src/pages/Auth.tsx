@@ -143,7 +143,7 @@ export function Auth({ mode }: { mode: "login" | "register" }) {
     <div className="mx-auto flex min-h-dvh w-full max-w-[26rem] flex-col px-6 py-10 md:py-16">
       <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="flex-1">
         <Logo />
-        <h1 className="font-display mt-10 text-[2rem] leading-[1.15]">
+        <h1 className="page-title mt-10">
           {isRegister ? "Crie sua conta." : "Bem-vindo de volta."}
         </h1>
         <p className="mt-3 text-[0.9375rem] leading-relaxed text-muted">

@@ -1,7 +1,9 @@
 import { db, dailyStats } from "@/lib/db";
 import { getOverview, dayIsActive } from "@/lib/progress";
 import { getLevelProgress, daysToFinish, type LevelProgress } from "@/lib/levels";
-import { getSrsSettings, unsuspendAll } from "@/lib/srs";
+import { getSrsSettings, unsuspendAll, unmarkKnown } from "@/lib/srs";
+import { marksByDose } from "@/lib/marks";
+import type { CardRecord } from "@/lib/db";
 import { computeSrsStats, type SrsStats } from "@/lib/srsStats";
 import { loadCourseByLanguage, loadDose, mediaUrl } from "@/lib/content";
 import { getAllProgress } from "@/lib/progress";
@@ -13,12 +15,13 @@ import { SectionLabel } from "@/components/ui/primitives";
 import { StatsSkeleton, ErrorScreen } from "@/components/ui/feedback";
 import { dayKey, shiftDay, fmtDuration, pluralize, cn } from "@/lib/utils";
 import { humanDays } from "@/lib/srs";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
+import { Undo2 } from "lucide-react";
 
 const DAYS = 28;
 
 const pct = (n: number, total: number) =>
-  n <= 0 ? "0%" : `${Math.max(0.8, (n / total) * 100)}%`;
+  n <= 0 || total <= 0 ? "0%" : `${Math.min(100, Math.max(0.8, (n / total) * 100))}%`;
 
 /**
  * Onde o aluno está na escada de vocabulário do idioma (TOPIK, no coreano).
@@ -100,6 +103,9 @@ interface LessonRow {
   next: boolean;
   immersionMs: number;
   poster: string | null;
+  /** Falas marcadas «não entendi» e total de falas: a compreensão REAL. */
+  unclear: number;
+  segments: number;
 }
 
 /**
@@ -109,10 +115,11 @@ interface LessonRow {
  * sabido antes de começar. Lição de build antigo (sem tokens) fica de fora.
  */
 async function lessonRows(lang: string, course: Awaited<ReturnType<typeof loadCourseByLanguage>>): Promise<LessonRow[]> {
-  const [status, progress, imm] = await Promise.all([
+  const [status, progress, imm, marks] = await Promise.all([
     loadLemmaStatus(lang),
     getAllProgress(lang),
     db.immersionLog.where("language").equals(lang).toArray(),
+    marksByDose(lang),
   ]);
   const msByDose = new Map<string, number>();
   for (const i of imm) if (i.doseId) msByDose.set(i.doseId, (msByDose.get(i.doseId) ?? 0) + i.ms);
@@ -134,6 +141,8 @@ async function lessonRows(lang: string, course: Awaited<ReturnType<typeof loadCo
       id: ref.id, lessonNumber: ref.lessonNumber, title: ref.title, cov, completed, next,
       immersionMs: msByDose.get(ref.id) ?? 0,
       poster: posterRel ? mediaUrl(lang, ref.path, posterRel) : null,
+      unclear: new Set((marks.get(ref.id) ?? []).map((m) => m.segmentId)).size,
+      segments: dose.segments.length,
     });
   }
   return rows;
@@ -175,10 +184,14 @@ function LessonCoverage({ rows }: { rows: LessonRow[] }) {
                 <div className="bg-brand/30" style={{ width: `${learn * 100}%` }} />
               </div>
               <p className="mt-1 text-[0.6875rem] tabular-nums text-faint">
-                {r.cov.lemmas} {pluralize(r.cov.lemmas, "palavra", "palavras")}, {r.cov.lemmasKnown} fixadas
+                {r.cov.lemmas} {pluralize(r.cov.lemmas, "palavra", "palavras")}, {r.cov.lemmasKnown} conhecidas
                 {r.cov.lemmasLearning > 0 && <>, {r.cov.lemmasLearning} aprendendo</>}
                 {left > 0 && <>, {left} por estudar</>}
                 {r.immersionMs >= 60_000 && <>. {fmtDuration(r.immersionMs / 1000)} de imersão</>}
+                {r.unclear > 0 && (
+                  <>. <span className="text-hard">{r.unclear} {pluralize(r.unclear, "fala não entendida", "falas não entendidas")}</span>{" "}
+                  ({Math.round((1 - r.unclear / r.segments) * 100)}% entendidas)</>
+                )}
               </p>
             </div>
             <span className={cn("text-right text-sm tabular-nums", dim ? "text-faint" : "font-semibold")}>
@@ -188,9 +201,46 @@ function LessonCoverage({ rows }: { rows: LessonRow[] }) {
         );
       })}
       <p className="pt-3 text-[0.6875rem] leading-relaxed text-faint">
-        Porcentagem do que é dito na lição (cada ocorrência de palavra de conteúdo) que o FSRS
-        já considera fixado; a faixa clara é o que está em aprendizado. Na próxima lição, é o
-        quanto já vem sabido antes de começar.
+        Porcentagem do que é dito na lição (cada ocorrência de palavra de conteúdo) que você
+        já conhece: a base do curso somada ao que o FSRS já considera fixado. A faixa clara é
+        o que está em aprendizado. Na próxima lição, é o quanto já vem sabido antes de começar.
+        As falas «não entendidas» (tecla N no player) são a compreensão real, para comparar com
+        a prevista.
+      </p>
+    </div>
+  );
+}
+
+/** «Já sei»: a lista, com o caminho de volta (a palavra torna a ser nova). */
+function KnownWords({ recs, onChange }: { recs: CardRecord[]; onChange: () => void }) {
+  const [open, setOpen] = useState(false);
+  const shown = open ? recs : recs.slice(0, 24);
+  return (
+    <div className="mt-3">
+      <div className="flex flex-wrap gap-1.5">
+        {shown.map((r) => (
+          <button
+            key={r.key}
+            onClick={async () => {
+              await unmarkKnown(r);
+              onChange();
+            }}
+            title="Voltar a estudar esta palavra"
+            className="group inline-flex items-center gap-1 rounded-md border border-line px-2 py-0.5 text-sm transition-colors hover:border-line-strong"
+          >
+            <span className="font-target">{r.cardId.replace(/^w-/, "")}</span>
+            <Undo2 size={11} className="text-faint opacity-0 transition-opacity group-hover:opacity-100" />
+          </button>
+        ))}
+      </div>
+      {recs.length > shown.length && (
+        <button onClick={() => setOpen(true)} className="mt-2 text-xs text-muted hover:text-fg">
+          mostrar as {recs.length}
+        </button>
+      )}
+      <p className="pt-3 text-[0.6875rem] leading-relaxed text-faint">
+        Contam como conhecidas e ficam fora das revisões. Toque numa palavra para voltar a
+        estudá-la. Em Ajustes → Dados dá para exportar a lista para a fábrica de lições.
       </p>
     </div>
   );
@@ -239,8 +289,10 @@ export function Progress() {
     // "Novos" aqui = cards reiniciados (o registro só nasce na primeira nota).
     const st = stats.states;
     const states = { learning: st.learning + st.new, review: st.review, relearning: st.relearning };
+    const known = cards.filter((c) => c.known && c.cardId.startsWith("w-"))
+      .sort((a, b) => b.updatedAt - a.updatedAt);
     return {
-      overview, series, states, totalCards: cards.length, level, stats, lessons,
+      overview, series, states, totalCards: cards.length, level, stats, lessons, known,
       newPerDay: srs.newPerDay, targetRetention: srs.requestRetention,
     };
   }, [lang]);
@@ -254,7 +306,7 @@ export function Progress() {
   if (loading) return <StatsSkeleton />;
   if (error || !data) return <ErrorScreen message={error?.message ?? "Erro"} onRetry={reload} />;
 
-  const { overview, series, states, totalCards, level, newPerDay, stats, targetRetention, lessons } = data;
+  const { overview, series, states, totalCards, level, newPerDay, stats, targetRetention, lessons, known } = data;
   const active = Math.max(1, totalCards - stats.states.suspended);
   const maxRev = Math.max(1, ...series.map((s) => s.reviews));
   const activeDays = series.filter((s) => dayIsActive({ ...s, dosesCompleted: 0 })).length;
@@ -265,7 +317,7 @@ export function Progress() {
 
   return (
     <div className="mx-auto max-w-[960px]">
-      <h1 className="font-display text-[1.75rem] leading-tight md:text-[1.9rem]">Progresso</h1>
+      <h1 className="page-title">Progresso</h1>
 
       {/* Os números, numa frase — não numa grade de tiles. Quando é tudo zero,
           a frase diz que ainda não começou e a página não parece quebrada. */}
@@ -337,6 +389,13 @@ export function Progress() {
             <section>
               <SectionLabel>Compreensão por lição</SectionLabel>
               <LessonCoverage rows={lessons} />
+            </section>
+          )}
+
+          {known.length > 0 && (
+            <section>
+              <SectionLabel>Palavras que você já sabia, {known.length}</SectionLabel>
+              <KnownWords recs={known} onChange={reload} />
             </section>
           )}
         </div>
@@ -475,25 +534,34 @@ function ButtonShare({ label, n, total, cls }: { label: string; n: number; total
 function Forecast({ days }: { days: SrsStats["forecast"] }) {
   const max = Math.max(1, ...days.map((d) => d.count));
   const labels = ["hoje", "amanhã"];
+  const wd = (day: string) => {
+    const [y, m, dd] = day.split("-").map(Number);
+    return new Intl.DateTimeFormat("pt-BR", { weekday: "short" })
+      .format(new Date(y, m - 1, dd))
+      .replace(".", "");
+  };
+  // Barras sobre uma linha de base, sem trilho preenchido atrás — o trilho
+  // fazia sete caixas iguais, e a leitura era "grade", não "quantidade".
   return (
-    <div className="mt-3 grid grid-cols-7 gap-1.5">
-      {days.map((d, i) => {
-        const [y, m, dd] = d.day.split("-").map(Number);
-        const date = new Date(y, m - 1, dd);
-        const wd = new Intl.DateTimeFormat("pt-BR", { weekday: "short" }).format(date).replace(".", "");
-        return (
-          <div key={d.day} className="flex flex-col items-center gap-1.5">
+    <div className="mt-3">
+      <div className="grid grid-cols-7 gap-2 border-b border-line">
+        {days.map((d, i) => (
+          <div key={d.day} className="flex flex-col items-center">
             <span className="text-[0.6875rem] font-semibold tabular-nums text-muted">{d.count || ""}</span>
-            <div className="flex h-14 w-full items-end rounded-[3px] bg-surface-3">
+            <div className="mt-1 flex h-12 w-full items-end">
               <div
-                className={cn("w-full rounded-[3px]", i === 0 ? "bg-brand" : "bg-brand/55")}
-                style={{ height: `${(d.count / max) * 100}%` }}
+                className={cn("w-full rounded-t-[2px]", i === 0 ? "bg-brand" : "bg-brand/55")}
+                style={{ height: d.count ? `${Math.max(4, (d.count / max) * 100)}%` : 0 }}
               />
             </div>
-            <span className="text-[0.625rem] text-faint">{labels[i] ?? wd}</span>
           </div>
-        );
-      })}
+        ))}
+      </div>
+      <div className="mt-1.5 grid grid-cols-7 gap-2 text-center text-[0.625rem] text-faint">
+        {days.map((d, i) => (
+          <span key={d.day}>{labels[i] ?? wd(d.day)}</span>
+        ))}
+      </div>
     </div>
   );
 }

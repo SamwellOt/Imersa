@@ -1,19 +1,21 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Play, Pause, SkipBack, SkipForward, Repeat, RotateCcw, List, X, AlertTriangle, Rewind,
-  Highlighter, Maximize2, Minimize2,
+  Highlighter, Maximize2, Minimize2, CircleHelp, Filter,
 } from "lucide-react";
 import { useLiveQuery } from "dexie-react-hooks";
 import type { Dose, Segment } from "@/types/dose";
-import { loadLemmaStatus, hasTokens, coverage, knownShare, type LemmaStatus } from "@/lib/vocab";
-import { MarkedText, MarkLegend } from "@/components/ui/MarkedText";
+import { loadLemmaStatus, hasTokens, coverage, knownShare, needsPrime, type LemmaStatus } from "@/lib/vocab";
+import { MarkedText, MarkLegend, type OnWord } from "@/components/ui/MarkedText";
+import { marksOf, toggleMark } from "@/lib/marks";
+import { WordPopover } from "./WordPopover";
 import { useMediaController } from "./useMediaController";
 import { TranscriptList } from "./TranscriptList";
 import { Segmented } from "@/components/ui/Segmented";
 import { IconButton, Kbd, Button } from "@/components/ui/primitives";
 import { cn, clamp, fmtClock } from "@/lib/utils";
 import { useApp, type SubtitleMode } from "@/lib/store";
-import { useHotkeys, isInteractiveTarget, useMediaQuery } from "@/lib/hooks";
+import { useHotkeys, isInteractiveTarget, hasShortcutModifier, useMediaQuery } from "@/lib/hooks";
 
 const SUB_OPTS: { value: SubtitleMode; label: string }[] = [
   { value: "target", label: "Alvo" },
@@ -48,7 +50,7 @@ const TARGET_CLS =
  * inteiro ~60 vezes por segundo (texto piscando e trabalho de layout à toa).
  */
 function CaptionPanel({
-  mode, line, primeSeg, playing, marks,
+  mode, line, primeSeg, playing, marks, onWord,
 }: {
   mode: SubtitleMode;
   line: Segment | null;
@@ -56,6 +58,7 @@ function CaptionPanel({
   playing: boolean;
   /** Status por lema quando a legenda "conhecido/novo" está ligada; null = desligada. */
   marks: LemmaStatus | null;
+  onWord?: OnWord;
 }) {
   // A altura é reservada (min-h + centralização) para a troca de legenda não
   // empurrar os controles para baixo a cada fala.
@@ -100,7 +103,7 @@ function CaptionPanel({
         <>
           {showTarget && (
             <p className={cn(TARGET_CLS, "text-balance")}>
-              {marks ? <MarkedText seg={line} status={marks} /> : line.target}
+              <MarkedText seg={line} status={marks} onWord={onWord} />
             </p>
           )}
           {showTrans && line.translation && (
@@ -167,7 +170,7 @@ export function ImmersionPlayer({
   const segments = dose.segments;
   const {
     subtitleMode, setSubtitleMode, playbackRate, setPlaybackRate, subtitleMarks, setSubtitleMarks,
-    transcriptOpen, setTranscriptOpen,
+    transcriptOpen, setTranscriptOpen, primedAdaptive, setPrimedAdaptive,
   } = useApp();
   const [loop, setLoop] = useState(false);
   // Transcrição: no desktop é uma coluna ao lado do vídeo (preferência salva,
@@ -219,11 +222,29 @@ export function ImmersionPlayer({
   // reage a escrita no banco (`useLiveQuery`) — avaliar cards numa outra aba já
   // muda a marca aqui. Dose sem tokens (build antigo) não oferece o destaque.
   const markable = useMemo(() => hasTokens(segments), [segments]);
+  // O status das palavras serve às marcas, ao Prime adaptativo e ao dicionário.
   const lemmaStatus = useLiveQuery(
-    () => (markable && subtitleMarks ? loadLemmaStatus(dose.language) : Promise.resolve(null)),
-    [dose.language, markable, subtitleMarks],
+    () => (markable ? loadLemmaStatus(dose.language) : Promise.resolve(null)),
+    [dose.language, markable],
   );
   const marks = markable && subtitleMarks ? (lemmaStatus ?? null) : null;
+
+  // Prime adaptativo (opcional, Ajustes → Imersão): pausa só antes das falas com
+  // alguma palavra ainda não fixada. Desligado, ou sem tokens: pausa em todas.
+  const adaptive = subtitleMode === "primed" && primedAdaptive && markable && lemmaStatus != null;
+  const wantsPrime = (sg: Segment) => !adaptive || needsPrime(sg, lemmaStatus);
+  const primeCount = useMemo(
+    () => (adaptive ? segments.filter((sg) => needsPrime(sg, lemmaStatus)).length : segments.length),
+    [adaptive, segments, lemmaStatus],
+  );
+
+  // «Não entendi» (tecla N): falas marcadas desta dose
+  const unclear = useLiveQuery(() => marksOf(dose.id), [dose.id]) ?? new Set<string>();
+
+  // Dicionário: palavra tocada na legenda
+  const [lookup, setLookup] = useState<{ lemma: string; rect: DOMRect } | null>(null);
+  const assetBase = mediaUrl.slice(0, Math.max(0, mediaUrl.length - dose.media.src.length));
+  const assetUrl = (rel: string) => assetBase + rel;
   const knownPct = useMemo(() => {
     if (!marks) return null;
     const share = knownShare(coverage(segments, marks));
@@ -289,7 +310,7 @@ export function ImmersionPlayer({
     // a próxima fala cuja janela ainda não passou (ao retomar da pausa, a fala
     // que acabou de ser lida fica para trás e o alvo vira a seguinte)
     const nxt = segments.find(
-      (s) => s.startMs - PRIME_LEAD_MS > cur + 30 && s.id !== primePausedRef.current,
+      (s) => s.startMs - PRIME_LEAD_MS > cur + 30 && s.id !== primePausedRef.current && wantsPrime(s),
     );
     if (!nxt) return;
     const target = nxt.startMs - PRIME_LEAD_MS;
@@ -305,13 +326,13 @@ export function ImmersionPlayer({
     }, delay);
     return () => clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [subtitleMode, ctl.playing, ctl.activeIndex, playbackRate, segments]);
+  }, [subtitleMode, ctl.playing, ctl.activeIndex, playbackRate, segments, adaptive, lemmaStatus]);
   useEffect(() => {
     if (subtitleMode !== "primed") {
       primePausedRef.current = null;
       return;
     }
-    if (ctl.playing && primeSeg && primePausedRef.current !== primeSeg.id) {
+    if (ctl.playing && primeSeg && primePausedRef.current !== primeSeg.id && wantsPrime(primeSeg)) {
       primePausedRef.current = primeSeg.id;
       setPrimeHold(primeSeg);
       ctl.pause();
@@ -322,18 +343,31 @@ export function ImmersionPlayer({
   useHotkeys((e) => {
     // Se o foco está num botão/slider, o teclado é dele: senão o Espaço dava
     // play no vídeo em vez de ativar o controle focado.
-    if (isInteractiveTarget(e)) return;
+    if (isInteractiveTarget(e) || hasShortcutModifier(e)) return;
     if (e.code === "Space") { e.preventDefault(); ctl.toggle(); }
     else if (e.key === "ArrowLeft") ctl.prevSegment();
     else if (e.key === "ArrowRight") ctl.nextSegment();
     else if (e.key.toLowerCase() === "r") ctl.replaySegment();
     else if (e.key.toLowerCase() === "l") setLoop((v) => !v);
     else if (e.key.toLowerCase() === "t") toggleTranscript();
+    else if (e.key.toLowerCase() === "n") toggleUnclear();
     else if (e.key.toLowerCase() === "f" && isVideo) setCinema(!cinemaManual);
     else if (e.key === "Escape" && cinemaManual) setCinema(false);
   });
 
   const pct = ctl.durationMs > 0 ? (ctl.currentMs / ctl.durationMs) * 100 : 0;
+
+  const curSeg = ctl.activeIndex >= 0 ? segments[ctl.activeIndex] : null;
+  const curUnclear = !!curSeg && unclear.has(curSeg.id);
+  function toggleUnclear() {
+    if (curSeg) void toggleMark(dose.language, dose.id, curSeg.id);
+  }
+  const onWord: OnWord | undefined = markable
+    ? (lemma, _seg, anchor) => {
+        ctl.pause();
+        setLookup({ lemma, rect: anchor.getBoundingClientRect() });
+      }
+    : undefined;
 
   // Draggable seek (mouse + touch via pointer events).
   const seekDragRef = useRef(false);
@@ -448,8 +482,8 @@ export function ImmersionPlayer({
                   style={{ background: "linear-gradient(to top, rgb(8 12 14 / 0.84), rgb(8 12 14 / 0))" }}
                 >
                   {(subtitleMode === "target" || subtitleMode === "both") && (
-                    <p className="line-target text-balance text-[1.375rem] font-medium text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.55)] md:text-[1.75rem]">
-                      {marks ? <MarkedText seg={line} status={marks} /> : line.target}
+                    <p className="line-target pointer-events-auto text-balance text-[1.375rem] font-medium text-white [text-shadow:0_1px_3px_rgb(0_0_0/0.55)] md:text-[1.75rem]">
+                      <MarkedText seg={line} status={marks} onWord={onWord} />
                     </p>
                   )}
                   {(subtitleMode === "translation" || subtitleMode === "both") && line.translation && (
@@ -469,7 +503,7 @@ export function ImmersionPlayer({
             !ctl.error && (
               /* Áudio: sem quadro para escrever por cima, a legenda fica numa faixa própria. */
               <div className="border-t border-line bg-surface-2 px-5 py-4">
-                <CaptionPanel mode={subtitleMode} line={line} primeSeg={primeSeg} playing={ctl.playing} marks={marks} />
+                <CaptionPanel mode={subtitleMode} line={line} primeSeg={primeSeg} playing={ctl.playing} marks={marks} onWord={onWord} />
               </div>
             )
           )}
@@ -592,6 +626,29 @@ export function ImmersionPlayer({
                   <Highlighter size={16} />
                 </IconButton>
               )}
+              {markable && subtitleMode === "primed" && (
+                <IconButton
+                  label={
+                    primedAdaptive
+                      ? `Prime adaptativo ligado: pausa em ${primeCount} de ${segments.length} falas (só as com palavra nova)`
+                      : "Prime adaptativo: pausar só nas falas com palavra nova"
+                  }
+                  active={primedAdaptive}
+                  onClick={() => setPrimedAdaptive(!primedAdaptive)}
+                  className={NARROW}
+                >
+                  <Filter size={15} />
+                </IconButton>
+              )}
+              <IconButton
+                label={curUnclear ? "Desmarcar «não entendi» (N)" : "Não entendi esta fala (N)"}
+                active={curUnclear}
+                onClick={toggleUnclear}
+                disabled={!curSeg}
+                className={NARROW}
+              >
+                <CircleHelp size={16} />
+              </IconButton>
               {isVideo && (
                 <IconButton
                   label={cinema ? "Sair da tela cheia (Esc)" : "Tela cheia (F)"}
@@ -620,6 +677,7 @@ export function ImmersionPlayer({
             <span className="inline-flex items-center gap-1"><Kbd>R</Kbd> repetir</span>
             <span className="inline-flex items-center gap-1"><Kbd>L</Kbd> loop</span>
             <span className="inline-flex items-center gap-1"><Kbd>T</Kbd> transcrição</span>
+            <span className="inline-flex items-center gap-1"><Kbd>N</Kbd> não entendi</span>
             <span className="inline-flex items-center gap-1"><Kbd>F</Kbd> tela cheia</span>
           </div>
 
@@ -647,6 +705,7 @@ export function ImmersionPlayer({
           <span className="text-[0.6875rem] text-faint">
             {segments.length} falas
             {knownPct != null && `, ${knownPct}% já fixado`}
+            {unclear.size > 0 && `, ${unclear.size} não ${unclear.size === 1 ? "entendida" : "entendidas"}`}
           </span>
         </div>
         <div className="min-h-0 flex-1 overflow-y-auto p-1.5">
@@ -656,6 +715,8 @@ export function ImmersionPlayer({
             onSeek={(i) => ctl.goToSegment(i)}
             showTranslation={subtitleMode !== "target" && subtitleMode !== "off"}
             marks={marks}
+            unclear={unclear}
+            onWord={onWord}
           />
         </div>
         {marks && (
@@ -664,6 +725,15 @@ export function ImmersionPlayer({
           </div>
         )}
       </aside>
+      )}
+      {lookup && (
+        <WordPopover
+          dose={dose}
+          lemma={lookup.lemma}
+          anchor={lookup.rect}
+          assetUrl={assetUrl}
+          onClose={() => setLookup(null)}
+        />
       )}
     </div>
   );

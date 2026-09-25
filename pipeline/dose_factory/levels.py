@@ -32,6 +32,26 @@ TIERS = {
 _NIKL_TO_TIER = {"초급": "A", "중급": "B", "고급": "C"}
 
 
+# Japonês: JLPT por lema UniDic (data/jlpt_ja.json, listas de Jonathan Waller / tanos,
+# via open-anki-jlpt-decks). N5 e N4 são a base do aluno (sem card, fora da escada);
+# a escada usa as letras como chave: A = N3, B = N2, C = N1.
+_JLPT_TO_TIER = {"N3": "A", "N2": "B", "N1": "C"}
+
+
+@functools.lru_cache(maxsize=2)
+def _jlpt(lang: str) -> dict[str, str]:
+    path = os.path.join(DATA, f"jlpt_{lang}.json")
+    if not os.path.isfile(path):
+        return {}
+    with open(path, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def exam_level(lemma: str, lang: str) -> str | None:
+    """Nível de exame da palavra ("N3"…), só onde há tabela por nível (japonês)."""
+    return _jlpt(lang).get(lemma)
+
+
 @functools.lru_cache(maxsize=4)
 def _table(lang: str) -> dict[str, dict]:
     path = os.path.join(DATA, f"topik_{lang}.json")
@@ -44,6 +64,8 @@ def _table(lang: str) -> dict[str, dict]:
 @functools.lru_cache(maxsize=4)
 def tier_map(lang: str) -> dict[str, str]:
     """lema -> 'A' | 'B' | 'C'. A união das duas listas, pela mais básica."""
+    if _jlpt(lang):
+        return {lm: _JLPT_TO_TIER[lv] for lm, lv in _jlpt(lang).items() if lv in _JLPT_TO_TIER}
     out: dict[str, str] = {}
     for word, v in _table(lang).items():
         tiers = {t for t in (v.get("topik"), _NIKL_TO_TIER.get(v.get("nikl", ""))) if t}

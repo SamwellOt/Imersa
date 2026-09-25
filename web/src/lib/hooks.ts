@@ -111,6 +111,16 @@ export function isInteractiveTarget(e: KeyboardEvent): boolean {
 }
 
 /**
+ * A tecla veio com Ctrl/⌘/Alt? Então é atalho do navegador ou do sistema (Ctrl+F
+ * buscar, Ctrl+R recarregar, Ctrl+1 trocar de aba) e não da tela: sem esta
+ * guarda, Ctrl+F também abria a tela cheia do vídeo e Ctrl+3 dava nota ao card.
+ * Ctrl+Alt juntos é AltGr (o "@" de muitos teclados europeus) e passa.
+ */
+export function hasShortcutModifier(e: KeyboardEvent): boolean {
+  return e.metaKey || e.ctrlKey !== e.altKey;
+}
+
+/**
  * O foco está num campo de texto? Guarda mais estreita que `isInteractiveTarget`:
  * atalhos como "/" devem funcionar com um botão focado (o botão não usa "/"),
  * mas nunca no meio de uma digitação.

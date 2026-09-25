@@ -188,8 +188,8 @@ export async function getOverview(language: string): Promise<OverviewStats> {
   const stats = Array.from(agg.values());
   return {
     streak,
-    cardsKnown: cards.filter((c) => c.state === 2).length,
-    cardsLearning: cards.filter((c) => c.state === 1 || c.state === 3).length,
+    cardsKnown: cards.filter((c) => c.known || c.state === 2).length,
+    cardsLearning: cards.filter((c) => !c.known && (c.state === 1 || c.state === 3)).length,
     totalCards: cards.length,
     dosesCompleted: progress.filter((p) => p.completed).length,
     immersionMsTotal: stats.reduce((a, s) => a + s.immersionMs, 0),

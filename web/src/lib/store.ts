@@ -18,6 +18,18 @@ interface AppState {
   subtitleMarks: boolean;
   /** Transcrição ao lado do vídeo (desktop). Fechada, o vídeo volta ao centro. */
   transcriptOpen: boolean;
+  /** Mostrar a palavra no idioma-alvo junto do áudio na frente do flashcard. */
+  flashcardFrontText: boolean;
+  /** Frase-exemplo (a i+1 da palavra, quando existe) na FRENTE do card de
+   *  palavra, com a palavra sublinhada e um botão de ouvir. Só a palavra toca
+   *  sozinha ao abrir; a frase, ao toque. */
+  flashcardExample: boolean;
+  /** Ao revelar a resposta, tocar a frase-exemplo automaticamente. */
+  autoPlayExample: boolean;
+  /** Prime adaptativo: no modo Primed, pausar só antes das falas que têm palavra
+   *  ainda não fixada. Desligado por padrão — o aluno liga em Ajustes → Imersão
+   *  (ou no player, no modo Primed). */
+  primedAdaptive: boolean;
 
   setTheme: (t: Theme) => void;
   toggleTheme: () => void;
@@ -28,6 +40,10 @@ interface AppState {
   setFurigana: (v: boolean) => void;
   setSubtitleMarks: (v: boolean) => void;
   setTranscriptOpen: (v: boolean) => void;
+  setFlashcardFrontText: (v: boolean) => void;
+  setFlashcardExample: (v: boolean) => void;
+  setAutoPlayExample: (v: boolean) => void;
+  setPrimedAdaptive: (v: boolean) => void;
 }
 
 export const useApp = create<AppState>()(
@@ -41,6 +57,10 @@ export const useApp = create<AppState>()(
       furigana: false,
       subtitleMarks: false,
       transcriptOpen: true,
+      flashcardFrontText: false,
+      flashcardExample: true,
+      autoPlayExample: true,
+      primedAdaptive: false,
 
       setTheme: (theme) => set({ theme }),
       toggleTheme: () => set((s) => ({ theme: s.theme === "dark" ? "light" : "dark" })),
@@ -51,6 +71,10 @@ export const useApp = create<AppState>()(
       setFurigana: (furigana) => set({ furigana }),
       setSubtitleMarks: (subtitleMarks) => set({ subtitleMarks }),
       setTranscriptOpen: (transcriptOpen) => set({ transcriptOpen }),
+      setFlashcardFrontText: (flashcardFrontText) => set({ flashcardFrontText }),
+      setFlashcardExample: (flashcardExample) => set({ flashcardExample }),
+      setAutoPlayExample: (autoPlayExample) => set({ autoPlayExample }),
+      setPrimedAdaptive: (primedAdaptive) => set({ primedAdaptive }),
     }),
     { name: "imersa-prefs" },
   ),

@@ -21,17 +21,17 @@ export function Review() {
 
   return (
     <div className="min-h-dvh">
-      <div className="frosted pt-safe sticky top-0 z-30 border-b border-line">
+      <div className="bar-solid pt-safe sticky top-0 z-30 border-b border-line">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-2.5">
           <button
             onClick={() => nav("/")}
-            className="grid h-8 w-8 place-items-center rounded-lg text-faint transition-colors hover:bg-surface-2 hover:text-fg"
+            className="-ml-1 grid h-10 w-10 place-items-center rounded-lg md:ml-0 md:h-8 md:w-8 text-faint transition-colors hover:bg-surface-2 hover:text-fg"
             aria-label="Sair da revisão"
           >
             <X size={16} />
           </button>
           <div className="text-[0.8125rem] font-medium">Revisão diária</div>
-          <div className="w-8" />
+          <div className="w-10 md:w-8" />
         </div>
       </div>
       <div className="mx-auto max-w-3xl px-5 py-8 pb-[max(2rem,env(safe-area-inset-bottom))]">

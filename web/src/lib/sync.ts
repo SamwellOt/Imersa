@@ -24,6 +24,7 @@ import {
   type CardRecord,
   type DoseProgressRecord,
   type ImmersionRecord,
+  type MarkRecord,
   type ReviewRecord,
   type SyncKind,
 } from "./db";
@@ -133,19 +134,23 @@ interface Change {
 }
 
 async function localChanges(since: number): Promise<Change[]> {
-  const [cards, progress, reviews, immersion, settings, tombs] = await Promise.all([
-    db.cards.filter((c) => (c.updatedAt ?? 0) > since).toArray(),
-    db.doseProgress.filter((p) => (p.updatedAt ?? 0) > since).toArray(),
-    db.reviewLog.filter((r) => r.reviewedAt > since).toArray(),
-    db.immersionLog.filter((i) => i.at > since).toArray(),
+  const [cards, progress, reviews, immersion, settings, tombs, marks] = await Promise.all([
+    // pelos índices: com anos de histórico, varrer as tabelas inteiras a cada
+    // nota (o sync roda 2,5 s depois de cada avaliação) pesava no celular
+    db.cards.where("updatedAt").above(since).toArray(),
+    db.doseProgress.where("updatedAt").above(since).toArray(),
+    db.reviewLog.where("reviewedAt").above(since).toArray(),
+    db.immersionLog.where("at").above(since).toArray(),
     db.settings.filter((s) => !s.key.startsWith(LOCAL_SETTING) && (s.updatedAt ?? 0) > since).toArray(),
-    db.tombstones.filter((t) => t.deletedAt > since).toArray(),
+    db.tombstones.where("deletedAt").above(since).toArray(),
+    db.lineMarks.where("at").above(since).toArray(),
   ]);
   return [
     ...cards.map((c) => ({ kind: "card" as const, id: c.key, updatedAt: c.updatedAt, value: c })),
     ...progress.map((p) => ({ kind: "doseProgress" as const, id: p.doseId, updatedAt: p.updatedAt, value: p })),
     ...reviews.map((r) => ({ kind: "review" as const, id: r.uid, updatedAt: r.reviewedAt, value: r })),
     ...immersion.map((i) => ({ kind: "immersion" as const, id: i.uid, updatedAt: i.at, value: i })),
+    ...marks.map((m) => ({ kind: "mark" as const, id: m.uid, updatedAt: m.at, value: m })),
     ...settings.map((s) => ({ kind: "setting" as const, id: s.key, updatedAt: s.updatedAt ?? 0, value: s.value })),
     ...tombs.map((t) => ({ kind: t.kind, id: t.id, updatedAt: t.deletedAt, deleted: true })),
   ];
@@ -168,7 +173,7 @@ async function applyRemote(records: Incoming[]): Promise<number> {
   const importedAt = await getSetting<number>(IMPORTED_AT_KEY, 0);
   await db.transaction(
     "rw",
-    db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings,
+    [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.lineMarks],
     async () => {
       for (const r of records) {
         if (r.deleted) {
@@ -187,6 +192,7 @@ async function applyRemote(records: Incoming[]): Promise<number> {
           } else {
             if (r.updatedAt < importedAt) continue;
             if (r.kind === "review") await db.reviewLog.delete(r.id);
+            else if (r.kind === "mark") await db.lineMarks.delete(r.id);
             else await db.immersionLog.delete(r.id);
           }
           applied++;
@@ -212,6 +218,8 @@ async function applyRemote(records: Incoming[]): Promise<number> {
           await db.reviewLog.put(r.value as ReviewRecord);
         } else if (r.kind === "immersion") {
           await db.immersionLog.put(r.value as ImmersionRecord);
+        } else if (r.kind === "mark") {
+          await db.lineMarks.put(r.value as MarkRecord);
         } else if (r.kind === "setting") {
           if (r.id.startsWith(LOCAL_SETTING)) continue; // nunca importar config local
           const cur = await db.settings.get(r.id);
@@ -303,15 +311,20 @@ async function runSync(opts: SyncOpts = {}): Promise<SyncResult> {
     return { ok: false, sent: 0, received, error };
   }
 
+  // O corte é 1 ms ANTES do início: algo carimbado no mesmo milissegundo de
+  // `startedAt` mas gravado depois da leitura do lote não entrou nele — com o
+  // corte em `startedAt` (e `above`, estrito) essa escrita nunca mais subia, e o
+  // tombstone era apagado sem ter viajado. Reenviar o que já foi é inofensivo.
+  const cut = startedAt - 1;
   // limpa os tombstones já entregues — eles só existem para viajar uma vez
-  const delivered = await db.tombstones.filter((t) => t.deletedAt <= startedAt).toArray();
+  const delivered = await db.tombstones.where("deletedAt").belowOrEqual(cut).toArray();
   if (delivered.length) await db.tombstones.bulkDelete(delivered.map((t) => t.tid));
 
   await setSetting(STATE_KEY, {
     cursor,
     // `startedAt` e não `Date.now()`: o que foi gravado DURANTE a subida precisa
     // entrar no próximo lote, senão some.
-    pushedAt: startedAt,
+    pushedAt: cut,
     lastOkAt: Date.now(),
     lastError: null,
   });

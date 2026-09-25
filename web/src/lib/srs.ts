@@ -15,6 +15,7 @@ import {
   type StepUnit,
 } from "ts-fsrs";
 import type { Dose, SentenceCard } from "@/types/dose";
+import { findCard, isSentenceCard, WORD_PREFIX } from "./cards";
 import {
   db,
   getSetting,
@@ -49,6 +50,11 @@ export interface SrsSettings {
   learnAheadMin: number;
   reviewOrder: ReviewOrder;
   newOrder: NewOrder;
+  /** Cards de frase i+1 SEPARADOS (`dose.sentenceCards`), cards de escuta. Desde
+   *  09/2026 a frase i+1 mora no próprio card da palavra (frente e verso), então
+   *  isto vem desligado; desligado, os que já existem também saem das filas
+   *  (nada é apagado — religar os traz de volta). */
+  sentenceCards: boolean;
   /** Parâmetros FSRS. `null` = padrão do FSRS-6. Vêm do otimizador (/otimizar)
    *  ou colados à mão, como no Anki. */
   w: number[] | null;
@@ -68,6 +74,7 @@ export const DEFAULT_SRS_SETTINGS: SrsSettings = {
   learnAheadMin: 20,
   reviewOrder: "due",
   newOrder: "mix",
+  sentenceCards: false,
   w: null,
   wOptimizedAt: null,
   wReviews: 0,
@@ -209,9 +216,9 @@ export function cardKey(doseId: string, cardId: string): string {
 
 // ---- card predicates ----
 
-/** Fora de toda fila: suspenso, ou adiado até um instante ainda por vir. */
+/** Fora de toda fila: «já sei», suspenso, ou adiado até um instante ainda por vir. */
 export function isActive(c: CardRecord, now = Date.now()): boolean {
-  return !c.suspended && !(c.buriedUntil != null && c.buriedUntil > now);
+  return !c.known && !c.suspended && !(c.buriedUntil != null && c.buriedUntil > now);
 }
 
 export function isLearningState(c: CardRecord): boolean {
@@ -223,8 +230,15 @@ function availableAt(c: CardRecord): number {
   return Math.max(c.due, c.buriedUntil ?? 0);
 }
 
-async function activeCards(language: string, now = Date.now()): Promise<CardRecord[]> {
-  return (await db.cards.where("language").equals(language).toArray()).filter((c) => isActive(c, now));
+/** Card de frase separado com a opção desligada: fora das filas, sem apagar. */
+function hiddenBySettings(c: CardRecord, s: SrsSettings): boolean {
+  return c.origin === "sentence" && !s.sentenceCards;
+}
+
+async function activeCards(language: string, now = Date.now(), settings?: SrsSettings): Promise<CardRecord[]> {
+  const s = settings ?? (await getSrsSettings());
+  return (await db.cards.where("language").equals(language).toArray())
+    .filter((c) => isActive(c, now) && !hiddenBySettings(c, s));
 }
 
 // ---- daily counters ----
@@ -242,11 +256,13 @@ export interface TodayCounts {
 export async function getTodayCounts(language: string): Promise<TodayCounts> {
   // Counted from actual GRADES today — a card only counts once it's been rated.
   const today = dayKey();
-  const revs = await db.reviewLog.where("language").equals(language).toArray();
-  const todays = revs.filter((r) => r.day === today);
+  // pelo índice do dia: o log inteiro do idioma cresce para sempre e isto roda
+  // a cada montagem de fila e a cada lição no Hoje
+  const todays = await db.reviewLog.where("day").equals(today).filter((r) => r.language === language).toArray();
   return {
     reviewsDone: todays.length,
-    newIntroduced: todays.filter((r) => r.state === State.New).length,
+    // card extra ("+ card") e de frase não gastam a cota dos 20 da dose
+    newIntroduced: todays.filter((r) => r.state === State.New && !r.origin).length,
     reviewCardsDone: todays.filter((r) => r.state === State.Review).length,
   };
 }
@@ -373,23 +389,42 @@ export async function buildDoseQueue(dose: Dose, settings?: SrsSettings): Promis
   const now = Date.now();
   const mineAll = await db.cards.where("doseId").equals(dose.id).toArray();
   const existingKeys = new Set(mineAll.map((c) => c.key));
-  const mine = mineAll.filter((c) => isActive(c, now));
+  const mine = mineAll.filter((c) => isActive(c, now) && !hiddenBySettings(c, s));
+  // Palavra que já tem registro em QUALQUER lição do idioma (virou "+ card" na
+  // legenda de outra dose, ou foi marcada «já sei») não volta como nova aqui.
+  const langRecs = await db.cards.where("language").equals(dose.language).toArray();
+  const wordsSeen = new Set(langRecs.filter((r) => r.cardId.startsWith(WORD_PREFIX)).map((r) => r.cardId));
 
   const { newIntroduced } = await getTodayCounts(dose.language);
   const allowance = Math.max(0, s.newPerDay - newIntroduced);
-  const unseen = dose.cards.filter((c) => !existingKeys.has(cardKey(dose.id, c.id)));
+  const unseen = dose.cards.filter(
+    (c) => !existingKeys.has(cardKey(dose.id, c.id)) && !wordsSeen.has(c.id),
+  );
   const news: QueueEntry[] = unseen
     .slice(0, allowance)
     .map((c) => ({ key: cardKey(dose.id, c.id), doseId: dose.id, cardId: c.id, isNew: true }));
+  // Frase i+1 só depois que a palavra nova dela já foi vista (numa sessão
+  // anterior): ouvir a palavra de novo, noutro contexto, é o ponto do card.
+  // Palavra marcada «já sei» não precisa do reencontro: a frase dela fica de fora.
+  if (s.sentenceCards) {
+    const studying = new Set(
+      langRecs.filter((r) => r.cardId.startsWith(WORD_PREFIX) && !r.known).map((r) => r.cardId),
+    );
+    for (const c of dose.sentenceCards ?? []) {
+      const key = cardKey(dose.id, c.id);
+      if (existingKeys.has(key) || !c.focus || !studying.has(WORD_PREFIX + c.focus.lemma)) continue;
+      news.push({ key, doseId: dose.id, cardId: c.id, isNew: true });
+    }
+  }
 
-  return { entries: assemble(mine, news, s, now), heldBack: unseen.length - news.length };
+  return { entries: assemble(mine, news, s, now), heldBack: unseen.length - Math.min(unseen.length, allowance) };
 }
 
 /** Standalone review: only already-seen cards due now (new cards come from doses). */
 export async function buildDueQueue(language: string, settings?: SrsSettings): Promise<QueueEntry[]> {
   const s = settings ?? (await getSrsSettings());
   const now = Date.now();
-  const active = await activeCards(language, now);
+  const active = await activeCards(language, now, s);
   // Teto de revisões do dia, contado do log (não por sessão): abrir a tela
   // três vezes não triplica o teto. Aprendizado não conta, como no Anki.
   const { reviewCardsDone } = await getTodayCounts(language);
@@ -423,11 +458,12 @@ export async function dueLearning(
   now = Date.now(),
 ): Promise<CardRecord[]> {
   const cutoff = now + aheadMin * 60_000;
+  const s = await getSrsSettings();
   const recs = scope.doseId
     ? await db.cards.where("doseId").equals(scope.doseId).toArray()
     : await db.cards.where("language").equals(scope.language).toArray();
   return recs
-    .filter((r) => isLearningState(r) && isActive(r, now) && r.due <= cutoff)
+    .filter((r) => isLearningState(r) && isActive(r, now) && !hiddenBySettings(r, s) && r.due <= cutoff)
     .sort((a, b) => a.due - b.due);
 }
 
@@ -438,8 +474,9 @@ export async function dueLearning(
  */
 export async function nextDueAt(language: string): Promise<number | null> {
   const now = Date.now();
+  const s = await getSrsSettings();
   const future = (await db.cards.where("language").equals(language).toArray())
-    .filter((c) => !c.suspended && availableAt(c) > now)
+    .filter((c) => !c.suspended && !c.known && !hiddenBySettings(c, s) && availableAt(c) > now)
     .map(availableAt);
   return future.length ? Math.min(...future) : null;
 }
@@ -468,7 +505,7 @@ export async function countLearnAhead(language: string, settings?: SrsSettings):
   const s = settings ?? (await getSrsSettings());
   const now = Date.now();
   const cutoff = now + s.learnAheadMin * 60_000;
-  return (await activeCards(language, now)).filter(
+  return (await activeCards(language, now, s)).filter(
     (c) => isLearningState(c) && c.due > now && c.due <= cutoff,
   ).length;
 }
@@ -490,7 +527,9 @@ export async function countNewReady(
   settings?: SrsSettings,
 ): Promise<number> {
   const s = settings ?? (await getSrsSettings());
-  const seen = await db.cards.where("doseId").equals(doseId).count();
+  // só os 20 da dose: "+ card" e cards de frase moram na mesma dose, mas não
+  // fazem parte do `cardCount` — contá-los escondia palavras novas no Hoje
+  const seen = await db.cards.where("doseId").equals(doseId).filter((c) => !c.origin).count();
   const unseen = Math.max(0, cardCount - seen);
   const { newIntroduced } = await getTodayCounts(language);
   return Math.min(unseen, Math.max(0, s.newPerDay - newIntroduced));
@@ -590,6 +629,7 @@ export async function gradeCard(
       day: dayKey(now),
       elapsedMs: Math.min(Math.max(0, elapsedMs), MAX_ANSWER_MS),
       state: stateBefore,
+      ...(rec.origin ? { origin: rec.origin } : {}),
     });
   });
   scheduleSync();
@@ -614,6 +654,7 @@ export async function gradeNew(
   if (existing) return gradeCard(existing, rating, elapsedMs, s);
   const now = new Date();
   const next = scheduler(s).next(createEmptyCard(now), now, rating as Grade).card;
+  const origin = isSentenceCard(card) ? ("sentence" as const) : undefined;
   const rec: CardRecord = {
     key,
     doseId: dose.id,
@@ -632,6 +673,7 @@ export async function gradeNew(
     introducedAt: now.getTime(),
     updatedAt: now.getTime(),
     topikLevel: card.topikLevel ?? null,
+    ...(origin ? { origin } : {}),
   };
   const reviewUid = newUid();
   await db.transaction("rw", [db.cards, db.reviewLog], async () => {
@@ -640,6 +682,7 @@ export async function gradeNew(
       uid: reviewUid, key, doseId: dose.id, language: dose.language, rating,
       reviewedAt: now.getTime(), day: dayKey(now),
       elapsedMs: Math.min(Math.max(0, elapsedMs), MAX_ANSWER_MS), state: State.New,
+      ...(origin ? { origin } : {}),
     });
   });
   scheduleSync();
@@ -659,9 +702,72 @@ export async function undoGrade(g: GradeResult): Promise<void> {
     await db.cards.delete(g.rec.key);
     await tombstone("card", g.rec.key);
   }
-  await db.reviewLog.delete(g.reviewUid);
-  await tombstone("review", g.reviewUid);
+  if (g.reviewUid) {  // «já sei» não gera nota
+    await db.reviewLog.delete(g.reviewUid);
+    await tombstone("review", g.reviewUid);
+  }
   scheduleSync();
+}
+
+// ---- «já sei» e "+ card" ----
+
+/** Registro "vazio" (card novo, sem memória) para um card desta dose. */
+function freshRecord(dose: Dose, card: SentenceCard, now: number): CardRecord {
+  const c = createEmptyCard(new Date(now));
+  return {
+    key: cardKey(dose.id, card.id), doseId: dose.id, cardId: card.id, language: dose.language,
+    due: now, stability: c.stability, difficulty: c.difficulty, elapsed_days: c.elapsed_days,
+    scheduled_days: c.scheduled_days, learning_steps: c.learning_steps ?? 0, reps: 0, lapses: 0,
+    state: State.New, introducedAt: now, updatedAt: now, topikLevel: card.topikLevel ?? null,
+  };
+}
+
+/**
+ * «Já sei»: a palavra nunca entra em fila, conta como conhecida (legenda,
+ * compreensão, nível) e não gasta a cota do dia. Se ela já tinha registro (outra
+ * lição), é ESSE registro que recebe a marca — um card por palavra.
+ */
+export async function markKnown(dose: Dose, card: SentenceCard): Promise<GradeResult> {
+  const now = Date.now();
+  const lemmaKey = (await db.cards.where("language").equals(dose.language).toArray())
+    .find((r) => r.cardId === card.id);
+  const prev = lemmaKey ?? (await db.cards.get(cardKey(dose.id, card.id))) ?? null;
+  const rec: CardRecord = { ...(prev ?? freshRecord(dose, card, now)), known: true, updatedAt: now };
+  await db.cards.put(rec);
+  scheduleSync();
+  return { rec, prev, reviewUid: "", wasNew: prev == null, language: dose.language };
+}
+
+/** Desfaz o «já sei»: a palavra volta a ser nova (ou ao estado FSRS que tinha). */
+export async function unmarkKnown(rec: CardRecord): Promise<void> {
+  if (rec.reps > 0) {
+    await db.cards.put({ ...rec, known: false, updatedAt: Date.now() });
+  } else {
+    await db.cards.delete(rec.key);
+    await tombstone("card", rec.key);
+  }
+  scheduleSync();
+}
+
+/** Palavras marcadas «já sei» no idioma. */
+export async function listKnown(language: string): Promise<CardRecord[]> {
+  return (await db.cards.where("language").equals(language).toArray()).filter((c) => c.known);
+}
+
+/**
+ * "+ card": a palavra da legenda entra no SRS desta dose como card novo, já
+ * vencido — aparece na próxima revisão (da dose, ou a avulsa). Não conta no teto
+ * de palavras novas do dia: foi o aluno que escolheu.
+ */
+export async function addExtraCard(dose: Dose, card: SentenceCard): Promise<CardRecord> {
+  const now = Date.now();
+  const existing = (await db.cards.where("language").equals(dose.language).toArray())
+    .find((r) => r.cardId === card.id);
+  if (existing) return existing;
+  const rec: CardRecord = { ...freshRecord(dose, card, now), origin: "extra" };
+  await db.cards.put(rec);
+  scheduleSync();
+  return rec;
 }
 
 // ---- card actions (Anki: bury / suspend / forget) ----
@@ -791,5 +897,5 @@ export async function rescheduleAll(
 
 /** Map a CardRecord back to its authored SentenceCard within a loaded Dose. */
 export function findSentenceCard(dose: Dose, cardId: string): SentenceCard | undefined {
-  return dose.cards.find((c) => c.id === cardId);
+  return findCard(dose, cardId);
 }

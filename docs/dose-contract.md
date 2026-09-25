@@ -104,7 +104,8 @@ Caminhos dentro de `dose.json` são **relativos à pasta da dose** (ex.:
   "media": {
     "kind": "audio",             // "audio" | "video"
     "src": "media/main.mp3",
-    "condensedAudioSrc": null,   // opcional (passive listening)
+    "condensedAudioSrc": "media/condensed.mp3",  // opcional: só as falas, emendadas (escuta /escuta/:id)
+    "condensedMap": [[0, 18569, 3101], [3101, 22150, 5820]],  // [inícioCondensado, inícioOriginal, duração] ms
     "posterSrc": "media/frames/p….jpg",  // capa: quadro do vídeo (dose_factory frames); null em áudio
     "durationSec": 612
   },
@@ -124,7 +125,7 @@ Caminhos dentro de `dose.json` são **relativos à pasta da dose** (ex.:
       "speakerId": "speaker_1",
       "tokens": [                // palavras de conteúdo da fala (opcional)
         { "lemma": "梅雨", "surface": "梅雨", "start": 4, "end": 6 },
-        { "lemma": "入る", "surface": "入り", "start": 7, "end": 9 }
+        { "lemma": "入る", "surface": "入り", "start": 7, "end": 9, "base": true }
       ]
     }
   ],
@@ -153,7 +154,33 @@ Caminhos dentro de `dose.json` são **relativos à pasta da dose** (ex.:
       "sceneSrc": "media/frames/s….jpg", // quadro do vídeo no momento da frase-exemplo (verso do card)
       "startMs": 865734,         // tempos da frase-exemplo na mídia (referência/fallback)
       "endMs": 867454,
-      "newWords": ["가"]         // superfície REAL como a palavra apareceu (p/ destacar na frase)
+      "newWords": ["가"],        // superfície REAL como a palavra apareceu (p/ destacar na frase)
+      "homophones": ["仕様", "試用"]  // japonês: mesma pronúncia → o app mostra a escrita na frente (opcional)
+    }
+  ],
+  "sentenceCards": [             // até 5 cards de escuta de frases i+1 (dose_factory enrich) — opcional
+    {
+      "id": "s-3fa9c01b2e",      // "s-" + hash(frase|lema): estável
+      "kind": "sentence",
+      "segmentId": "s42",
+      "target": "山手線がホームに来ています。",  // a frase inteira
+      "translation": "O trem da linha Yamanote está chegando na plataforma.",
+      "startMs": 301200, "endMs": 303900,
+      "audioClipSrc": "media/frag/f….mp3",       // FRENTE: a frase (fragmento pré-cortado)
+      "exampleAudioSrc": "media/frag/f….mp3",
+      "sceneSrc": "media/frames/s….jpg",
+      "focus": { "lemma": "ホーム", "target": "ホーム", "meaning": "plataforma", "reading": null, "start": 4, "end": 7 }
+    }
+  ],
+  "glossary": [                  // dicionário da legenda: toda palavra da fala que não é card desta dose
+    {
+      "lemma": "充電器", "target": "充電器", "reading": "じゅうでんき",
+      "meaning": "carregador",   // PT curado (data/dict_pt_<lang>.json)
+      "meaningEn": null,         // reserva EN (JMdict / Wiktionary) quando não há PT
+      "freqRank": 5210, "topikLevel": null,
+      "base": true,              // opcional: da base já conhecida
+      "cardIn": "ja-B1-07",      // opcional: é card de outra lição (sem "+ card" aqui)
+      "card": { "id": "w-充電器", "…": "mesmo formato de cards[]" }  // opcional: material do "+ card"
     }
   ],
   "vocab": [                     // opcional
@@ -197,5 +224,28 @@ Caminhos dentro de `dose.json` são **relativos à pasta da dose** (ex.:
   legenda "conhecido/novo" no player (opcional, `subtitleMarks`) e **compreensão por
   lição** em `/progress` (`lib/vocab.ts`). Dose sem `tokens` funciona igual, só sem essas
   duas coisas. Para preencher numa dose já publicada: `python -m dose_factory tokens`.
+  Além delas, com **`dict: true`**, toda outra palavra da fala (pronome, conjunção,
+  interjeição, número, nome próprio, prefixo/sufixo; no coreano também 이다, 싶다,
+  contadores): só existem para **abrir o dicionário** ao toque — o app as ignora na
+  compreensão, nas marcas "conhecido/novo" e no Prime adaptativo, e o glossário
+  não oferece "+ card" nem «já sei» para elas (`glossary[].dict`). Nome próprio
+  leva `proper` (`person`/`place`/`name`). Partícula, auxiliar e pontuação não são token.
+  `base: true` (opcional) marca palavra da **base que o aluno já sabe** (`KNOWN_BASE` em
+  `frequency.py`: no japonês, JLPT N5 e N4 + as do top-1000 BCCWJ que o JLPT não classifica + 外来語). Sem card para ela,
+  o app a conta como conhecida; se um dia virar card, vale o estado do card.
+- **Como os 20 cards são escolhidos** (`frequency.select_frequency_words`): candidatos =
+  palavras do vídeo fora da base e das lições anteriores; nota = `−ln(rank no idioma) +
+  0,85·ln(falas em que aparece)`. Primeiro entram as ditas 2+ vezes (com rank ≤ 12000),
+  depois as demais, sempre pela nota. A lista do idioma continua sendo o peso principal;
+  as ocorrências tiram da frente a palavra dita uma vez só e trazem a que sustenta o vídeo.
+  Nome próprio (NNP do kiwi, 固有名詞 do UniDic, e `data/names_<lang>.json`) não é token
+  nem card. No japonês, compostos de unidade longa (飛行機, 金曜日 — `data/luw_ja.tsv`, do
+  長単位語彙表 do NINJAL) viram uma palavra só, com leitura do JMdict.
+- **`glossary` / `sentenceCards` / `condensed*` / `homophones`** são preenchidos por
+  `python -m dose_factory enrich --lang <l>` sobre a dose publicada (idempotente). Todo
+  card fora de `cards[]` (frase, "+ card") é achado pelo app via `lib/cards.ts:findCard`.
+- **`cards[].target` × id no japonês:** o id é `w-<lema UniDic>` (a chave, às vezes numa
+  grafia rara: 奇麗, 矢張り), e `target` é a grafia em que o vídeo disse a palavra (綺麗,
+  やっぱり), com `reading` em hiragana quando tem kanji.
 - **Compatibilidade:** o app ignora campos desconhecidos e trata os opcionais como
   ausentes; bump de `schemaVersion` só em mudança quebra-compatibilidade.

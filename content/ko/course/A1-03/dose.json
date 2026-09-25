@@ -11,7 +11,484 @@
     "kind": "video",
     "src": "media/main.mp4",
     "durationSec": 1041.821333,
-    "condensedAudioSrc": null,
+    "condensedAudioSrc": "media/condensed.mp3",
+    "condensedMap": [
+      [
+        0,
+        1350,
+        4820
+      ],
+      [
+        4820,
+        11016,
+        5421
+      ],
+      [
+        10241,
+        21536,
+        6941
+      ],
+      [
+        17182,
+        33350,
+        6100
+      ],
+      [
+        23282,
+        42713,
+        7059
+      ],
+      [
+        30341,
+        55305,
+        7581
+      ],
+      [
+        37922,
+        66265,
+        8784
+      ],
+      [
+        46706,
+        81199,
+        8871
+      ],
+      [
+        55577,
+        96190,
+        8904
+      ],
+      [
+        64481,
+        111809,
+        8841
+      ],
+      [
+        73322,
+        126464,
+        10812
+      ],
+      [
+        84134,
+        142040,
+        10736
+      ],
+      [
+        94870,
+        165073,
+        4817
+      ],
+      [
+        99687,
+        175169,
+        5500
+      ],
+      [
+        105187,
+        185216,
+        5860
+      ],
+      [
+        111047,
+        195177,
+        7180
+      ],
+      [
+        118227,
+        205809,
+        7059
+      ],
+      [
+        125286,
+        218249,
+        7500
+      ],
+      [
+        132786,
+        230875,
+        7921
+      ],
+      [
+        140707,
+        243910,
+        9339
+      ],
+      [
+        150046,
+        258872,
+        9196
+      ],
+      [
+        159242,
+        274110,
+        5460
+      ],
+      [
+        164702,
+        280425,
+        4180
+      ],
+      [
+        168882,
+        290897,
+        9833
+      ],
+      [
+        178715,
+        308121,
+        13657
+      ],
+      [
+        192372,
+        333470,
+        4860
+      ],
+      [
+        197232,
+        344273,
+        6980
+      ],
+      [
+        204212,
+        356839,
+        4699
+      ],
+      [
+        208911,
+        364864,
+        4860
+      ],
+      [
+        213771,
+        374586,
+        6580
+      ],
+      [
+        220351,
+        386223,
+        4060
+      ],
+      [
+        224411,
+        397878,
+        5461
+      ],
+      [
+        229872,
+        408633,
+        8100
+      ],
+      [
+        237972,
+        422654,
+        4493
+      ],
+      [
+        242465,
+        430631,
+        4741
+      ],
+      [
+        247206,
+        442037,
+        7220
+      ],
+      [
+        254426,
+        452190,
+        4182
+      ],
+      [
+        258608,
+        465360,
+        5940
+      ],
+      [
+        264548,
+        476897,
+        7539
+      ],
+      [
+        272087,
+        490560,
+        5220
+      ],
+      [
+        277307,
+        499176,
+        6219
+      ],
+      [
+        283526,
+        510830,
+        5980
+      ],
+      [
+        289506,
+        522999,
+        4820
+      ],
+      [
+        294326,
+        533769,
+        4121
+      ],
+      [
+        298447,
+        543550,
+        4340
+      ],
+      [
+        302787,
+        553025,
+        4460
+      ],
+      [
+        307247,
+        559550,
+        5420
+      ],
+      [
+        312667,
+        566470,
+        11700
+      ],
+      [
+        324367,
+        579509,
+        4741
+      ],
+      [
+        329108,
+        584990,
+        6140
+      ],
+      [
+        335248,
+        593550,
+        27580
+      ],
+      [
+        362828,
+        622310,
+        5540
+      ],
+      [
+        368368,
+        630149,
+        6180
+      ],
+      [
+        374548,
+        637230,
+        4700
+      ],
+      [
+        379248,
+        643950,
+        4780
+      ],
+      [
+        384028,
+        650070,
+        11099
+      ],
+      [
+        395127,
+        662070,
+        10180
+      ],
+      [
+        405307,
+        673950,
+        10980
+      ],
+      [
+        416287,
+        685910,
+        5259
+      ],
+      [
+        421546,
+        692310,
+        4060
+      ],
+      [
+        425606,
+        698070,
+        4620
+      ],
+      [
+        430226,
+        704829,
+        4940
+      ],
+      [
+        435166,
+        711630,
+        15340
+      ],
+      [
+        450506,
+        727829,
+        25101
+      ],
+      [
+        475607,
+        763070,
+        5420
+      ],
+      [
+        481027,
+        772870,
+        5459
+      ],
+      [
+        486486,
+        782269,
+        5780
+      ],
+      [
+        492266,
+        792549,
+        4821
+      ],
+      [
+        497087,
+        800870,
+        6100
+      ],
+      [
+        503187,
+        811910,
+        5620
+      ],
+      [
+        508807,
+        820190,
+        5100
+      ],
+      [
+        513907,
+        828470,
+        5139
+      ],
+      [
+        519046,
+        837430,
+        5820
+      ],
+      [
+        524866,
+        846750,
+        5340
+      ],
+      [
+        530206,
+        855910,
+        5580
+      ],
+      [
+        535786,
+        865710,
+        6179
+      ],
+      [
+        541965,
+        876430,
+        4700
+      ],
+      [
+        546665,
+        884990,
+        4700
+      ],
+      [
+        551365,
+        893789,
+        5581
+      ],
+      [
+        556946,
+        902990,
+        5300
+      ],
+      [
+        562246,
+        912589,
+        3500
+      ],
+      [
+        565746,
+        918110,
+        6380
+      ],
+      [
+        572126,
+        930070,
+        5220
+      ],
+      [
+        577346,
+        938270,
+        5740
+      ],
+      [
+        583086,
+        947790,
+        5260
+      ],
+      [
+        588346,
+        957070,
+        4660
+      ],
+      [
+        593006,
+        964990,
+        4620
+      ],
+      [
+        597626,
+        973630,
+        4980
+      ],
+      [
+        602606,
+        982070,
+        4780
+      ],
+      [
+        607386,
+        990390,
+        5220
+      ],
+      [
+        612606,
+        999070,
+        5180
+      ],
+      [
+        617786,
+        1008070,
+        3500
+      ],
+      [
+        621286,
+        1013550,
+        6300
+      ],
+      [
+        627586,
+        1023350,
+        6540
+      ],
+      [
+        634126,
+        1033469,
+        7620
+      ]
+    ],
     "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
   },
   "segments": [
@@ -34,7 +511,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -69,7 +548,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -104,7 +585,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -117,6 +600,20 @@
           "surface": "만날",
           "start": 11,
           "end": 13
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 15,
+          "end": 16,
+          "dict": true
         }
       ]
     },
@@ -139,7 +636,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -192,7 +691,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -245,7 +746,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -276,6 +779,20 @@
           "surface": "먹",
           "start": 18,
           "end": 19
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 21,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 22,
+          "end": 23,
+          "dict": true
         }
       ]
     },
@@ -298,7 +815,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
@@ -356,7 +875,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
@@ -414,13 +935,29 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
           "surface": "노래할",
           "start": 7,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -450,6 +987,20 @@
           "surface": "출",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 10,
+          "end": 11,
+          "dict": true
         }
       ]
     },
@@ -472,7 +1023,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -542,7 +1095,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -612,7 +1167,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -637,6 +1194,20 @@
           "surface": "찍",
           "start": 16,
           "end": 17
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 20,
+          "end": 21,
+          "dict": true
         }
       ]
     },
@@ -660,6 +1231,20 @@
           "surface": "재미있",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 9,
+          "end": 10,
+          "dict": true
         }
       ]
     },
@@ -682,7 +1267,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -717,7 +1304,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -752,7 +1341,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -765,6 +1356,20 @@
           "surface": "만날",
           "start": 11,
           "end": 13
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 15,
+          "end": 16,
+          "dict": true
         }
       ]
     },
@@ -787,7 +1392,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -840,7 +1447,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -893,7 +1502,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -924,6 +1535,20 @@
           "surface": "먹",
           "start": 18,
           "end": 19
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 21,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 22,
+          "end": 23,
+          "dict": true
         }
       ]
     },
@@ -946,7 +1571,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
@@ -1004,7 +1631,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
@@ -1062,13 +1691,29 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
           "surface": "노래할",
           "start": 7,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -1098,6 +1743,20 @@
           "surface": "출",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 10,
+          "end": 11,
+          "dict": true
         }
       ]
     },
@@ -1120,7 +1779,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1190,7 +1851,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1260,7 +1923,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1285,6 +1950,20 @@
           "surface": "찍",
           "start": 16,
           "end": 17
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 20,
+          "end": 21,
+          "dict": true
         }
       ]
     },
@@ -1308,6 +1987,20 @@
           "surface": "재미있",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 9,
+          "end": 10,
+          "dict": true
         }
       ]
     },
@@ -1330,7 +2023,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -1365,7 +2060,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1418,7 +2115,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
@@ -1476,7 +2175,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1546,7 +2247,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -1581,7 +2284,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1634,7 +2339,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
@@ -1692,7 +2399,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1762,7 +2471,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "친구",
@@ -1775,6 +2486,20 @@
           "surface": "만날",
           "start": 11,
           "end": 13
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 15,
+          "end": 16,
+          "dict": true
         }
       ]
     },
@@ -1797,7 +2522,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1828,6 +2555,20 @@
           "surface": "먹",
           "start": 18,
           "end": 19
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 21,
+          "end": 22,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 22,
+          "end": 23,
+          "dict": true
         }
       ]
     },
@@ -1850,13 +2591,29 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "노래하다",
           "surface": "노래할",
           "start": 7,
           "end": 10
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 11,
+          "end": 12,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -1886,6 +2643,20 @@
           "surface": "출",
           "start": 7,
           "end": 8
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 9,
+          "end": 10,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 10,
+          "end": 11,
+          "dict": true
         }
       ]
     },
@@ -1908,7 +2679,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "하다",
@@ -1933,6 +2706,20 @@
           "surface": "찍",
           "start": 16,
           "end": 17
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 19,
+          "end": 20,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 20,
+          "end": 21,
+          "dict": true
         }
       ]
     },
@@ -1956,6 +2743,20 @@
           "surface": "재미있",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 8,
+          "end": 9,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 9,
+          "end": 10,
+          "dict": true
         }
       ]
     },
@@ -1973,6 +2774,13 @@
           "surface": "오늘",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 3,
+          "end": 4,
+          "dict": true
         },
         {
           "lemma": "하다",
@@ -1998,6 +2806,13 @@
           "end": 2
         },
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "하다",
           "surface": "했",
           "start": 5,
@@ -2021,10 +2836,31 @@
           "end": 2
         },
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 3,
+          "end": 4,
+          "dict": true
+        },
+        {
           "lemma": "하다",
           "surface": "할",
           "start": 5,
           "end": 6
+        },
+        {
+          "lemma": "거",
+          "surface": "거",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 8,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -2041,7 +2877,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가게",
@@ -2099,7 +2937,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "직원",
@@ -2131,6 +2971,20 @@
           "end": 4
         },
         {
+          "lemma": "두",
+          "surface": "두",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "주다",
           "surface": "주",
           "start": 9,
@@ -2157,7 +3011,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "두쫀쿠",
@@ -2192,7 +3048,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "집",
@@ -2221,7 +3079,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "거실",
@@ -2279,7 +3139,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "강아지",
@@ -2304,6 +3166,13 @@
       "translation": "E cumprimenta o cachorrinho.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "강아지",
           "surface": "강아지",
@@ -2366,7 +3235,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "강아지",
@@ -2401,7 +3272,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "방",
@@ -2459,7 +3332,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고양이",
@@ -2485,6 +3360,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "고양이",
           "surface": "고양이",
           "start": 4,
@@ -2495,6 +3377,13 @@
           "surface": "물",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -2528,7 +3417,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고양이",
@@ -2563,7 +3454,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -2594,6 +3487,13 @@
       "translation": "Mas o irmão não está no quarto dele.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "오빠",
           "surface": "오빠",
@@ -2633,7 +3533,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -2663,6 +3565,13 @@
           "surface": "오빠",
           "start": 1,
           "end": 3
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 5,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -2714,7 +3623,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "옥상",
@@ -2772,7 +3683,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -2807,13 +3720,22 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "묻다",
           "surface": "물",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -2847,7 +3769,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -2882,7 +3806,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -2938,10 +3864,24 @@
           "end": 12
         },
         {
+          "lemma": "말다",
+          "surface": "마",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
           "lemma": "비밀",
           "surface": "비밀",
           "start": 17,
           "end": 19
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 19,
+          "end": 20,
+          "dict": true
         }
       ]
     },
@@ -2958,7 +3898,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "가게",
@@ -3016,7 +3958,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "직원",
@@ -3048,6 +3992,20 @@
           "end": 4
         },
         {
+          "lemma": "두",
+          "surface": "두",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
+          "lemma": "개",
+          "surface": "개",
+          "start": 7,
+          "end": 8,
+          "dict": true
+        },
+        {
           "lemma": "주다",
           "surface": "주",
           "start": 9,
@@ -3074,7 +4032,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "두쫀쿠",
@@ -3109,7 +4069,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "집",
@@ -3138,7 +4100,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "거실",
@@ -3196,7 +4160,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "강아지",
@@ -3221,6 +4187,13 @@
       "translation": "E cumprimenta o cachorrinho.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "강아지",
           "surface": "강아지",
@@ -3283,7 +4256,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "강아지",
@@ -3318,7 +4293,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "방",
@@ -3376,7 +4353,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고양이",
@@ -3402,6 +4381,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "그리고",
+          "surface": "그리고",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
+        {
           "lemma": "고양이",
           "surface": "고양이",
           "start": 4,
@@ -3412,6 +4398,13 @@
           "surface": "물",
           "start": 10,
           "end": 11
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 12,
+          "end": 13,
+          "dict": true
         }
       ]
     },
@@ -3445,7 +4438,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고양이",
@@ -3480,7 +4475,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -3511,6 +4508,13 @@
       "translation": "Mas o irmão não está no quarto dele.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "그런데",
+          "surface": "그런데",
+          "start": 0,
+          "end": 3,
+          "dict": true
+        },
         {
           "lemma": "오빠",
           "surface": "오빠",
@@ -3550,7 +4554,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -3580,6 +4586,13 @@
           "surface": "오빠",
           "start": 1,
           "end": 3
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 5,
+          "end": 7,
+          "dict": true
         },
         {
           "lemma": "있다",
@@ -3631,7 +4644,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "옥상",
@@ -3689,7 +4704,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -3724,13 +4741,22 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "묻다",
           "surface": "물",
           "start": 9,
           "end": 10
+        },
+        {
+          "lemma": "보다",
+          "surface": "봐",
+          "start": 11,
+          "end": 12,
+          "dict": true
         }
       ]
     },
@@ -3764,7 +4790,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -3799,7 +4827,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "오빠",
@@ -3855,10 +4885,24 @@
           "end": 12
         },
         {
+          "lemma": "말다",
+          "surface": "마",
+          "start": 14,
+          "end": 15,
+          "dict": true
+        },
+        {
           "lemma": "비밀",
           "surface": "비밀",
           "start": 17,
           "end": 19
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 19,
+          "end": 20,
+          "dict": true
         }
       ]
     }
@@ -3878,10 +4922,12 @@
       "freqRank": 4,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s16171e9b1cdd.jpg",
       "newWords": [
         "없"
       ],
-      "sceneSrc": "media/frames/s16171e9b1cdd.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-잘",
@@ -3894,11 +4940,13 @@
       "context": "\"안녕? 오늘 잘 지냈어?\" — «Oi! Você passou bem hoje?»",
       "audioClipSrc": "media/tts/wfdb774494454.mp3",
       "exampleAudioSrc": "media/frag/fa41fe8c71ae5.mp3",
-      "freqRank": 22,
+      "freqRank": 23,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf0806d570ca4.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sf0806d570ca4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-말하다",
@@ -3911,13 +4959,15 @@
       "context": "윤지는 직원한테 말해요. — A Yunji fala com o atendente.",
       "audioClipSrc": "media/tts/w7109575bcb72.mp3",
       "exampleAudioSrc": "media/frag/fe67e294c592c.mp3",
-      "freqRank": 23,
+      "freqRank": 20,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sd4532b8048f6.jpg",
       "newWords": [
         "말해"
       ],
-      "sceneSrc": "media/frames/sd4532b8048f6.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-정말",
@@ -3933,8 +4983,10 @@
       "freqRank": 28,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sebb592bc7b94.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sebb592bc7b94.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-친구",
@@ -3947,11 +4999,13 @@
       "context": "친구는 춤을 춰요. — A amiga dança.",
       "audioClipSrc": "media/tts/w2e2bda5f943b.mp3",
       "exampleAudioSrc": "media/frag/f230b9f1139ff.mp3",
-      "freqRank": 61,
+      "freqRank": 45,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s06a1e64e6043.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s06a1e64e6043.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-만나다",
@@ -3964,13 +5018,15 @@
       "context": "오늘 윤지는 친구를 만나요. — Hoje a Yunji encontra a amiga.",
       "audioClipSrc": "media/tts/w4f73b57a70d5.mp3",
       "exampleAudioSrc": "media/frag/f6780c198e1a4.mp3",
-      "freqRank": 75,
+      "freqRank": 71,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg",
       "newWords": [
         "만나"
       ],
-      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-이제",
@@ -3983,11 +5039,13 @@
       "context": "이제 윤지는 집에 가요. — Agora a Yunji vai para casa.",
       "audioClipSrc": "media/tts/wf5e754f61223.mp3",
       "exampleAudioSrc": "media/frag/f8123fa367213.mp3",
-      "freqRank": 129,
+      "freqRank": 134,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s95bb2bb59bf4.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s95bb2bb59bf4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-내일",
@@ -4000,11 +5058,13 @@
       "context": "내일 뭐 할 거예요? — O que você vai fazer amanhã?",
       "audioClipSrc": "media/tts/w0fd17ef79976.mp3",
       "exampleAudioSrc": "media/frag/ff331e22a853a.mp3",
-      "freqRank": 187,
+      "freqRank": 186,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/se0326d008029.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/se0326d008029.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-사다",
@@ -4017,13 +5077,15 @@
       "context": "\"샀어?\" — «Comprou?»",
       "audioClipSrc": "media/tts/wcac1d3391c29.mp3",
       "exampleAudioSrc": "media/frag/f6814ad28f9e6.mp3",
-      "freqRank": 218,
+      "freqRank": 191,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sa655e4c31205.jpg",
       "newWords": [
         "샀"
       ],
-      "sceneSrc": "media/frames/sa655e4c31205.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-묻다",
@@ -4036,13 +5098,15 @@
       "context": "오빠가 윤지한테 물어봐요. — O irmão pergunta para a Yunji.",
       "audioClipSrc": "media/tts/wca1319479a96.mp3",
       "exampleAudioSrc": "media/frag/f328216b22226.mp3",
-      "freqRank": 229,
+      "freqRank": 187,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s77cd032671fc.jpg",
       "newWords": [
         "물"
       ],
-      "sceneSrc": "media/frames/s77cd032671fc.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-사진",
@@ -4055,11 +5119,13 @@
       "context": "오늘 윤지하고 친구는 사진을 찍어요. — Hoje a Yunji e a amiga tiram fotos.",
       "audioClipSrc": "media/tts/w48a75a3a5093.mp3",
       "exampleAudioSrc": "media/frag/f57755b0507b2.mp3",
-      "freqRank": 300,
+      "freqRank": 286,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7a952cb6c260.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s7a952cb6c260.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-지내다",
@@ -4072,13 +5138,15 @@
       "context": "\"안녕? 오늘 잘 지냈어?\" — «Oi! Você passou bem hoje?»",
       "audioClipSrc": "media/tts/w1cb50cfbf500.mp3",
       "exampleAudioSrc": "media/frag/f691e3c60a89c.mp3",
-      "freqRank": 317,
+      "freqRank": 283,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf0806d570ca4.jpg",
       "newWords": [
         "지냈"
       ],
-      "sceneSrc": "media/frames/sf0806d570ca4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-오빠",
@@ -4091,11 +5159,13 @@
       "context": "윤지는 오빠 방에 가요. — A Yunji vai para o quarto do irmão.",
       "audioClipSrc": "media/tts/wafec8386690a.mp3",
       "exampleAudioSrc": "media/frag/f6f5afcdfd237.mp3",
-      "freqRank": 347,
+      "freqRank": 342,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s4ddff07a4690.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s4ddff07a4690.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-전화하다",
@@ -4108,13 +5178,15 @@
       "context": "윤지는 오빠한테 전화해요. — A Yunji liga para o irmão.",
       "audioClipSrc": "media/tts/wb1914bdc2b14.mp3",
       "exampleAudioSrc": "media/frag/f7b36a4b24013.mp3",
-      "freqRank": 353,
+      "freqRank": 314,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s993e14852058.jpg",
       "newWords": [
         "전화해"
       ],
-      "sceneSrc": "media/frames/s993e14852058.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-비밀",
@@ -4127,11 +5199,13 @@
       "context": "\"오빠! 엄마한테 말하지 마. 비밀이야.\" — «Irmão! Não conta para a mamãe. É segredo.»",
       "audioClipSrc": "media/tts/w4fea225ab158.mp3",
       "exampleAudioSrc": "media/frag/f144a2575b621.mp3",
-      "freqRank": 377,
+      "freqRank": 358,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s2baa0ea22dc3.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s2baa0ea22dc3.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-어제",
@@ -4144,11 +5218,13 @@
       "context": "어제 뭐 했어요? — O que você fez ontem?",
       "audioClipSrc": "media/tts/wf269c1911caa.mp3",
       "exampleAudioSrc": "media/frag/f3bda857559b1.mp3",
-      "freqRank": 384,
+      "freqRank": 389,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sa9e2e6a87f63.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sa9e2e6a87f63.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-찍다",
@@ -4161,13 +5237,15 @@
       "context": "오늘 윤지하고 친구는 사진을 찍어요. — Hoje a Yunji e a amiga tiram fotos.",
       "audioClipSrc": "media/tts/wa3f409dc267a.mp3",
       "exampleAudioSrc": "media/frag/f692f0a72ca1f.mp3",
-      "freqRank": 475,
+      "freqRank": 433,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7a952cb6c260.jpg",
       "newWords": [
         "찍"
       ],
-      "sceneSrc": "media/frames/s7a952cb6c260.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-고양이",
@@ -4180,11 +5258,13 @@
       "context": "방에 고양이가 있어요. — No quarto tem um gato.",
       "audioClipSrc": "media/tts/waf8b4e517a38.mp3",
       "exampleAudioSrc": "media/frag/f522ff553132e.mp3",
-      "freqRank": 628,
+      "freqRank": 593,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s65d0754c9208.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s65d0754c9208.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-춤",
@@ -4197,11 +5277,13 @@
       "context": "친구는 춤을 춰요. — A amiga dança.",
       "audioClipSrc": "media/tts/we0dd6cfa626a.mp3",
       "exampleAudioSrc": "media/frag/f92902d75ddc7.mp3",
-      "freqRank": 809,
+      "freqRank": 798,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s06a1e64e6043.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s06a1e64e6043.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-재미있다",
@@ -4214,13 +5296,15 @@
       "context": "정말 재미있어요. — É muito divertido.",
       "audioClipSrc": "media/tts/w4c339009e05d.mp3",
       "exampleAudioSrc": "media/frag/f7e96bdc0f495.mp3",
-      "freqRank": 937,
+      "freqRank": 813,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sebb592bc7b94.jpg",
       "newWords": [
         "재미있"
       ],
-      "sceneSrc": "media/frames/sebb592bc7b94.jpg"
+      "kind": null,
+      "focus": null
     }
   ],
   "source": {
@@ -4487,5 +5571,678 @@
   ],
   "titleTarget": "사진을 찍었어요 · 강아지한테 뽀뽀를 해요",
   "premise": "Histórias ilustradas A0 que introduzem o passado (-았/었어요) e o futuro (-(으)ㄹ 거예요) por contraste direto: a mesma frase repetida nos três tempos. A segunda história traz a partícula -한테 (a alguém) com verbos de dar, falar, perguntar e telefonar.",
-  "createdAt": "2026-08-22T18:42:32.656010+00:00"
+  "glossary": [
+    {
+      "lemma": "오늘",
+      "target": "오늘",
+      "reading": null,
+      "meaning": "hoje",
+      "meaningEn": null,
+      "freqRank": 47,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "윤지",
+      "target": "윤지",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "거",
+      "target": "거",
+      "reading": null,
+      "meaning": "coisa (= 것); (~ㄹ 거예요) vai…",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "이다",
+      "target": "이다",
+      "reading": null,
+      "meaning": "ser (copula: 이에요/예요)",
+      "meaningEn": null,
+      "freqRank": 1396,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "하다",
+      "target": "하다",
+      "reading": null,
+      "meaning": "fazer",
+      "meaningEn": null,
+      "freqRank": 1,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "삼각",
+      "target": "삼각",
+      "reading": null,
+      "meaning": "triângulo (삼각김밥 = gimbap triangular)",
+      "meaningEn": null,
+      "freqRank": 9259,
+      "topikLevel": null,
+      "card": {
+        "id": "w-삼각",
+        "segmentId": "s4",
+        "target": "삼각",
+        "translation": "triângulo (삼각김밥 = gimbap triangular)",
+        "startMs": 33500,
+        "endMs": 39100,
+        "reading": null,
+        "context": "오늘 윤지하고 친구는 삼각김밥을 먹어요. — Hoje a Yunji e a amiga comem gimbap triangular.",
+        "audioClipSrc": "media/tts/w5ecfff1db1ae.mp3",
+        "exampleAudioSrc": "media/frag/f6b0f81ef7258.mp3",
+        "freqRank": 9259,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s37c01e07ee38.jpg"
+      }
+    },
+    {
+      "lemma": "김밥",
+      "target": "김밥",
+      "reading": null,
+      "meaning": "gimbap (rolinho de arroz com alga)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-김밥",
+        "segmentId": "s4",
+        "target": "김밥",
+        "translation": "gimbap (rolinho de arroz com alga)",
+        "startMs": 33500,
+        "endMs": 39100,
+        "reading": null,
+        "context": "오늘 윤지하고 친구는 삼각김밥을 먹어요. — Hoje a Yunji e a amiga comem gimbap triangular.",
+        "audioClipSrc": "media/tts/w79fb0f7004c8.mp3",
+        "exampleAudioSrc": "media/frag/f49c1b3374882.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s37c01e07ee38.jpg"
+      }
+    },
+    {
+      "lemma": "먹다",
+      "target": "먹다",
+      "reading": null,
+      "meaning": "comer",
+      "meaningEn": null,
+      "freqRank": 72,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "노래하다",
+      "target": "노래하다",
+      "reading": null,
+      "meaning": "cantar",
+      "meaningEn": null,
+      "freqRank": 2226,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-노래하다",
+        "segmentId": "s7",
+        "target": "노래하다",
+        "translation": "cantar",
+        "startMs": 66415,
+        "endMs": 70815,
+        "reading": null,
+        "context": "오늘 윤지는 노래해요. — Hoje a Yunji canta.",
+        "audioClipSrc": "media/tts/w661871f78874.mp3",
+        "exampleAudioSrc": "media/frag/f4283036c18a6.mp3",
+        "freqRank": 2226,
+        "topikLevel": "A",
+        "newWords": [
+          "노래해"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf935c4cf6c47.jpg"
+      }
+    },
+    {
+      "lemma": "추다",
+      "target": "추다",
+      "reading": null,
+      "meaning": "dançar (춤을 추다)",
+      "meaningEn": null,
+      "freqRank": 1807,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-추다",
+        "segmentId": "s8",
+        "target": "추다",
+        "translation": "dançar (춤을 추다)",
+        "startMs": 70815,
+        "endMs": 74699,
+        "reading": null,
+        "context": "친구는 춤을 춰요. — A amiga dança.",
+        "audioClipSrc": "media/tts/w19b0d16722fe.mp3",
+        "exampleAudioSrc": "media/frag/f73d5693cad3d.mp3",
+        "freqRank": 1807,
+        "topikLevel": "A",
+        "newWords": [
+          "춰"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s06a1e64e6043.jpg"
+      }
+    },
+    {
+      "lemma": "뭐",
+      "target": "뭐",
+      "reading": null,
+      "meaning": "o quê",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "가게",
+      "target": "가게",
+      "reading": null,
+      "meaning": "loja",
+      "meaningEn": null,
+      "freqRank": 445,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "가다",
+      "target": "가다",
+      "reading": null,
+      "meaning": "ir",
+      "meaningEn": null,
+      "freqRank": 7,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "두쫀쿠",
+      "target": "두쫀쿠",
+      "reading": null,
+      "meaning": "dujjonku (biscoito recheado «de Dubai», moda em 2025)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "card": {
+        "id": "w-두쫀쿠",
+        "segmentId": "s59",
+        "target": "두쫀쿠",
+        "translation": "dujjonku (biscoito recheado «de Dubai», moda em 2025)",
+        "startMs": 566620,
+        "endMs": 571579,
+        "reading": null,
+        "context": "가게에 두쫀쿠가 있어요. — Na loja tem biscoito de Dubai.",
+        "audioClipSrc": "media/tts/w28f6172bc1a4.mp3",
+        "exampleAudioSrc": "media/frag/fc0d13dab1752.mp3",
+        "freqRank": null,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb05d23a21917.jpg"
+      }
+    },
+    {
+      "lemma": "있다",
+      "target": "있다",
+      "reading": null,
+      "meaning": "estar / ter / existir",
+      "meaningEn": null,
+      "freqRank": 2,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "직원",
+      "target": "직원",
+      "reading": null,
+      "meaning": "funcionário(a), atendente",
+      "meaningEn": null,
+      "freqRank": 949,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-직원",
+        "segmentId": "s60",
+        "target": "직원",
+        "translation": "funcionário(a), atendente",
+        "startMs": 572540,
+        "endMs": 577820,
+        "reading": null,
+        "context": "윤지는 직원한테 말해요. — A Yunji fala com o atendente.",
+        "audioClipSrc": "media/tts/w8e3b47e49aa3.mp3",
+        "exampleAudioSrc": "media/frag/f7b6239119d61.mp3",
+        "freqRank": 949,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd4532b8048f6.jpg"
+      }
+    },
+    {
+      "lemma": "두",
+      "target": "두",
+      "reading": null,
+      "meaning": "dois (antes de contador: 두 개)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "개",
+      "target": "개",
+      "reading": null,
+      "meaning": "(contador) unidades, coisas",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "주다",
+      "target": "주다",
+      "reading": null,
+      "meaning": "dar",
+      "meaningEn": null,
+      "freqRank": 35,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "집",
+      "target": "집",
+      "reading": null,
+      "meaning": "casa",
+      "meaningEn": null,
+      "freqRank": 38,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "거실",
+      "target": "거실",
+      "reading": null,
+      "meaning": "sala de estar",
+      "meaningEn": null,
+      "freqRank": 2892,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-거실",
+        "segmentId": "s64",
+        "target": "거실",
+        "translation": "sala de estar",
+        "startMs": 599099,
+        "endMs": 603739,
+        "reading": null,
+        "context": "윤지는 거실에 가요. — A Yunji vai para a sala.",
+        "audioClipSrc": "media/tts/wfde25ff5ec5f.mp3",
+        "exampleAudioSrc": "media/frag/f1a2bf833f843.mp3",
+        "freqRank": 2892,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s6926442c8b59.jpg"
+      }
+    },
+    {
+      "lemma": "강아지",
+      "target": "강아지",
+      "reading": null,
+      "meaning": "cachorrinho, filhote",
+      "meaningEn": null,
+      "freqRank": 1477,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-강아지",
+        "segmentId": "s65",
+        "target": "강아지",
+        "translation": "cachorrinho, filhote",
+        "startMs": 604579,
+        "endMs": 609219,
+        "reading": null,
+        "context": "거실에 강아지가 있어요. — Na sala tem um cachorrinho.",
+        "audioClipSrc": "media/tts/w3246065a00e9.mp3",
+        "exampleAudioSrc": "media/frag/f7a0d12445b40.mp3",
+        "freqRank": 1477,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s4d9736325127.jpg"
+      }
+    },
+    {
+      "lemma": "그리고",
+      "target": "그리고",
+      "reading": null,
+      "meaning": "e, e também",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "인사하다",
+      "target": "인사하다",
+      "reading": null,
+      "meaning": "cumprimentar",
+      "meaningEn": null,
+      "freqRank": 2125,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-인사하다",
+        "segmentId": "s67",
+        "target": "인사하다",
+        "translation": "cumprimentar",
+        "startMs": 615939,
+        "endMs": 620780,
+        "reading": null,
+        "context": "그리고 강아지한테 인사해요. — E cumprimenta o cachorrinho.",
+        "audioClipSrc": "media/tts/w352ea5e6be3b.mp3",
+        "exampleAudioSrc": "media/frag/f6d43fee30c8f.mp3",
+        "freqRank": 2125,
+        "topikLevel": "A",
+        "newWords": [
+          "인사해"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s7d9a30317d5f.jpg"
+      }
+    },
+    {
+      "lemma": "안녕",
+      "target": "안녕",
+      "reading": null,
+      "meaning": "oi / tchau (informal)",
+      "meaningEn": null,
+      "freqRank": 4190,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-안녕",
+        "segmentId": "s68",
+        "target": "안녕",
+        "translation": "oi / tchau (informal)",
+        "startMs": 622460,
+        "endMs": 627500,
+        "reading": null,
+        "context": "\"안녕? 오늘 잘 지냈어?\" — «Oi! Você passou bem hoje?»",
+        "audioClipSrc": "media/tts/wef1c511c9efb.mp3",
+        "exampleAudioSrc": "media/frag/f2324a508d6ab.mp3",
+        "freqRank": 4190,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf0806d570ca4.jpg"
+      }
+    },
+    {
+      "lemma": "뽀뽀",
+      "target": "뽀뽀",
+      "reading": null,
+      "meaning": "beijinho, selinho",
+      "meaningEn": null,
+      "freqRank": 6196,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-뽀뽀",
+        "segmentId": "s69",
+        "target": "뽀뽀",
+        "translation": "beijinho, selinho",
+        "startMs": 630299,
+        "endMs": 635979,
+        "reading": null,
+        "context": "윤지는 강아지한테 뽀뽀를 해요. — A Yunji dá um beijinho no cachorrinho.",
+        "audioClipSrc": "media/tts/w803c1304c6b0.mp3",
+        "exampleAudioSrc": "media/frag/f19533bbab271.mp3",
+        "freqRank": 6196,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc281310c2a7c.jpg"
+      }
+    },
+    {
+      "lemma": "방",
+      "target": "방",
+      "reading": null,
+      "meaning": "quarto",
+      "meaningEn": null,
+      "freqRank": 200,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "보다",
+      "target": "보다",
+      "reading": null,
+      "meaning": "ver / olhar",
+      "meaningEn": null,
+      "freqRank": 10,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-04",
+      "dict": true
+    },
+    {
+      "lemma": "배고프다",
+      "target": "배고프다",
+      "reading": null,
+      "meaning": "estar com fome",
+      "meaningEn": null,
+      "freqRank": 984,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-배고프다",
+        "segmentId": "s74",
+        "target": "배고프다",
+        "translation": "estar com fome",
+        "startMs": 662220,
+        "endMs": 665220,
+        "reading": null,
+        "context": "\"배고파?\" — «Está com fome?»",
+        "audioClipSrc": "media/tts/wa234a2e9beb8.mp3",
+        "exampleAudioSrc": "media/frag/f2c8bac5cdca5.mp3",
+        "freqRank": 984,
+        "topikLevel": "A",
+        "newWords": [
+          "배고파"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s064bd1805bc2.jpg"
+      }
+    },
+    {
+      "lemma": "간식",
+      "target": "간식",
+      "reading": null,
+      "meaning": "lanche",
+      "meaningEn": null,
+      "freqRank": 4176,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-간식",
+        "segmentId": "s75",
+        "target": "간식",
+        "translation": "lanche",
+        "startMs": 666020,
+        "endMs": 671900,
+        "reading": null,
+        "context": "윤지는 고양이한테 간식을 줘요. — A Yunji dá um petisco para o gato.",
+        "audioClipSrc": "media/tts/w9076ddcdd2e3.mp3",
+        "exampleAudioSrc": "media/frag/f4d2bedc61a11.mp3",
+        "freqRank": 4176,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sa46c5a6c47dd.jpg"
+      }
+    },
+    {
+      "lemma": "그런데",
+      "target": "그런데",
+      "reading": null,
+      "meaning": "mas, só que",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "어디",
+      "target": "어디",
+      "reading": null,
+      "meaning": "onde",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "지금",
+      "target": "지금",
+      "reading": null,
+      "meaning": "agora",
+      "meaningEn": null,
+      "freqRank": 26,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "옥상",
+      "target": "옥상",
+      "reading": null,
+      "meaning": "terraço (no alto do prédio)",
+      "meaningEn": null,
+      "freqRank": 2338,
+      "topikLevel": "C",
+      "card": {
+        "id": "w-옥상",
+        "segmentId": "s81",
+        "target": "옥상",
+        "translation": "terraço (no alto do prédio)",
+        "startMs": 704979,
+        "endMs": 709419,
+        "reading": null,
+        "context": "윤지는 옥상에 가요. — A Yunji vai para o terraço.",
+        "audioClipSrc": "media/tts/wd5043e65fb2a.mp3",
+        "exampleAudioSrc": "media/frag/f66a07d19a3a8.mp3",
+        "freqRank": 2338,
+        "topikLevel": "C",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc00279ebab1b.jpg"
+      }
+    },
+    {
+      "lemma": "같이",
+      "target": "같이",
+      "reading": null,
+      "meaning": "junto (com)",
+      "meaningEn": null,
+      "freqRank": 60,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "엄마",
+      "target": "엄마",
+      "reading": null,
+      "meaning": "mãe / mamãe",
+      "meaningEn": null,
+      "freqRank": 32,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-01"
+    },
+    {
+      "lemma": "말다",
+      "target": "말다",
+      "reading": null,
+      "meaning": "(~지 마) não faça",
+      "meaningEn": null,
+      "freqRank": 92,
+      "topikLevel": "A",
+      "dict": true
+    }
+  ],
+  "sentenceCards": [
+    {
+      "id": "s-24eeb649e2",
+      "kind": "sentence",
+      "segmentId": "s94",
+      "target": "이제 윤지는 집에 가요.",
+      "translation": "Agora a Yunji vai para casa.",
+      "startMs": 812060,
+      "endMs": 817180,
+      "audioClipSrc": "media/frag/faf2acfafc84a.mp3",
+      "exampleAudioSrc": "media/frag/faf2acfafc84a.mp3",
+      "freqRank": 134,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "이제",
+        "target": "이제",
+        "meaning": "agora / a partir de agora",
+        "reading": null,
+        "start": 0,
+        "end": 2
+      },
+      "sceneSrc": "media/frames/s4644f42705b6.jpg"
+    },
+    {
+      "id": "s-0125da51eb",
+      "kind": "sentence",
+      "segmentId": "s102",
+      "target": "방에 고양이가 있어요.",
+      "translation": "No quarto tem um gato.",
+      "startMs": 885140,
+      "endMs": 889340,
+      "audioClipSrc": "media/frag/f033f5ede0dc8.mp3",
+      "exampleAudioSrc": "media/frag/f033f5ede0dc8.mp3",
+      "freqRank": 593,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "고양이",
+        "target": "고양이",
+        "meaning": "gato",
+        "reading": null,
+        "start": 3,
+        "end": 6
+      },
+      "sceneSrc": "media/frames/s349beb5e7c74.jpg"
+    },
+    {
+      "id": "s-d48635dee9",
+      "kind": "sentence",
+      "segmentId": "s107",
+      "target": "윤지는 오빠 방에 가요.",
+      "translation": "A Yunji vai para o quarto do irmão.",
+      "startMs": 930220,
+      "endMs": 934940,
+      "audioClipSrc": "media/frag/f8fea32e55c7c.mp3",
+      "exampleAudioSrc": "media/frag/f8fea32e55c7c.mp3",
+      "freqRank": 342,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "오빠",
+        "target": "오빠",
+        "meaning": "irmão mais velho (dito por uma mulher)",
+        "reading": null,
+        "start": 4,
+        "end": 6
+      },
+      "sceneSrc": "media/frames/s839eee3280f8.jpg"
+    }
+  ],
+  "createdAt": "2026-09-24T19:33:43.941648+00:00"
 }

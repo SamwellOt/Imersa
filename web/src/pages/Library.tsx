@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Check, Search, X } from "lucide-react";
+import { Check, Headphones, Search, X } from "lucide-react";
 import { loadIndex, loadCourse, mediaUrl } from "@/lib/content";
 import { getAllProgress, nextDose } from "@/lib/progress";
 import { useAsync, useDocumentTitle, useHotkeys, isTypingTarget } from "@/lib/hooks";
@@ -36,7 +36,7 @@ export function Library() {
 
   // "/" foca a busca, Esc limpa — sem tirar a mão do teclado.
   useHotkeys((e) => {
-    if (e.key === "/" && !isTypingTarget(e)) {
+    if (e.key === "/" && !isTypingTarget(e) && !e.ctrlKey && !e.metaKey) {
       e.preventDefault();
       searchRef.current?.focus();
     } else if (e.key === "Escape" && document.activeElement === searchRef.current) {
@@ -101,7 +101,7 @@ export function Library() {
     <div className="mx-auto max-w-[960px]">
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="font-display text-[1.75rem] leading-tight md:text-[1.9rem]">Biblioteca</h1>
+          <h1 className="page-title">Biblioteca</h1>
           <p className="mt-1 text-sm text-muted">
             {course.name}, {course.doses.length} {pluralizeDose(course.doses.length)} em{" "}
             {course.doses.every((d) => d.mediaKind === "video") ? "vídeo" : "áudio e vídeo"}, {doneCount}{" "}
@@ -168,18 +168,21 @@ export function Library() {
         <div className="mt-8 flex flex-col gap-10">
           {byLevel.map((g) => (
             <section key={g.level.id}>
-              <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-                <h2 className="font-display text-xl">{g.level.name}</h2>
-                <span className="text-xs text-faint">{g.level.id}</span>
+              <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1 border-b border-line pb-3">
+                <h2 className="font-display text-[1.5rem] font-normal">{g.level.name}</h2>
+                <span className="timecode text-faint">{g.level.id}</span>
                 {!filtering && (
-                  <p className="ml-auto text-sm text-muted">{g.level.description}</p>
+                  <p className="line-trans w-full text-[0.9375rem] text-muted sm:ml-auto sm:w-auto">
+                    {g.level.description}
+                  </p>
                 )}
               </div>
 
               {/* Lâminas: a trilha é uma sequência de verdade (uma dose por dia,
                   i+1), então o número é posição. O estado está na imagem: feita
-                  em cor com marca, próxima com contorno, futura em cinza. */}
-              <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
+                  em cor com marca, próxima com contorno, futura em cinza. Sem
+                  caixa em volta — é quadro com legenda, como num catálogo. */}
+              <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 lg:grid-cols-4">
                 {g.doses.map((d) => {
                   const st = status(d);
                   const isNext = d.id === nextId;
@@ -189,12 +192,14 @@ export function Library() {
                     <li key={d.id}>
                       <button
                         onClick={() => nav(`/dose/${d.id}`)}
-                        className={cn(
-                          "elev-1 group relative flex h-full w-full flex-col overflow-hidden rounded-xl border border-line bg-surface text-left transition-colors hover:border-line-strong",
-                          isNext && "outline outline-2 -outline-offset-2 outline-brand",
-                        )}
+                        className="group flex h-full w-full flex-col text-left"
                       >
-                        <div className="relative aspect-video w-full bg-surface-2">
+                        <span
+                          className={cn(
+                            "relative block aspect-video w-full overflow-hidden rounded-lg border border-line bg-surface-2 transition-colors group-hover:border-line-strong",
+                            isNext && "outline outline-2 -outline-offset-2 outline-brand",
+                          )}
+                        >
                           {poster && (
                             <img
                               src={poster}
@@ -209,32 +214,42 @@ export function Library() {
                           <span className="timecode absolute left-2 top-2 rounded bg-black/70 px-1.5 py-0.5 text-[0.6875rem] text-white">
                             {String(d.lessonNumber).padStart(2, "0")}
                           </span>
-                        </div>
-                        <div className="flex flex-1 flex-col px-3 pb-3 pt-2.5">
-                          <div className="flex items-center justify-between gap-2 text-[0.6875rem]">
-                            <span className="timecode text-faint">{fmtDuration(d.durationSec)}</span>
-                            {st === "done" ? (
-                              <span className="inline-flex items-center gap-1 font-semibold text-good">
-                                <Check size={11} strokeWidth={3} /> feita
-                              </span>
-                            ) : isNext ? (
-                              <span className="font-semibold text-brand">
-                                {st === "progress" ? "em andamento" : "próxima"}
-                              </span>
-                            ) : st === "progress" ? (
-                              <span className="font-semibold text-brand">em andamento</span>
-                            ) : null}
-                          </div>
-                          <span
-                            className={cn(
-                              "mt-1 text-[0.8125rem] font-medium leading-snug",
-                              dim ? "text-muted" : "text-fg",
-                            )}
-                          >
-                            {d.title}
+                          <span className="timecode absolute bottom-2 right-2 rounded bg-black/70 px-1.5 py-0.5 text-[0.6875rem] text-white">
+                            {fmtDuration(d.durationSec)}
                           </span>
-                        </div>
+                          {st === "done" && (
+                            <span className="absolute right-2 top-2 grid h-5 w-5 place-items-center rounded-full bg-brand text-brand-fg">
+                              <Check size={11} strokeWidth={3.5} />
+                            </span>
+                          )}
+                        </span>
+                        <span
+                          className={cn(
+                            "mt-2.5 text-[0.875rem] font-medium leading-snug",
+                            dim ? "text-muted" : "text-fg",
+                          )}
+                        >
+                          {d.title}
+                        </span>
+                        {/* Só quem tem estado ganha a linha: a futura fica só com
+                            o título (o "20 palavras" repetido em cada uma era ruído). */}
+                        {st === "done" ? (
+                          <span className="mt-1 text-[0.6875rem] font-semibold text-good">feita</span>
+                        ) : isNext || st === "progress" ? (
+                          <span className="mt-1 text-[0.6875rem] font-semibold text-brand">
+                            {st === "progress" ? "em andamento" : "próxima"}
+                          </span>
+                        ) : null}
                       </button>
+                      {st === "done" && d.condensedAudioSrc && (
+                        <button
+                          onClick={() => nav(`/escuta/${d.id}`)}
+                          className="mt-1 inline-flex items-center gap-1 text-[0.6875rem] font-medium text-muted transition-colors hover:text-brand"
+                          title="Reouvir só as falas, sem o vídeo (funciona offline)"
+                        >
+                          <Headphones size={11} /> ouvir condensado
+                        </button>
+                      )}
                     </li>
                   );
                 })}

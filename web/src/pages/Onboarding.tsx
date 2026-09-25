@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen, Play, GalleryVerticalEnd } from "lucide-react";
 import { loadIndex, loadCourse, loadDose } from "@/lib/content";
 import { useAsync, useDocumentTitle } from "@/lib/hooks";
 import { useApp } from "@/lib/store";
@@ -11,17 +11,22 @@ import { Button, Card, SectionLabel } from "@/components/ui/primitives";
 import { DoseLine } from "@/components/ui/DoseLine";
 import { LoadingScreen, ErrorScreen } from "@/components/ui/feedback";
 
+// Sem "01 / 02 / 03": o ícone de cada fase é o mesmo que o app usa (a revisão
+// tem o ícone da barra lateral), então a lista já ensina a interface.
 const PHASES = [
   {
     title: "Prime",
+    icon: <BookOpen size={17} strokeWidth={1.75} />,
     text: "Um preview em português ativa o contexto antes de você ouvir qualquer coisa.",
   },
   {
     title: "Imersão",
+    icon: <Play size={17} strokeWidth={1.75} />,
     text: "Vídeo nativo real, no seu nível, com as legendas sob o seu controle.",
   },
   {
     title: "Revisão",
+    icon: <GalleryVerticalEnd size={17} strokeWidth={1.75} />,
     text: "As palavras mais frequentes da dose viram flashcards com repetição espaçada.",
   },
 ];
@@ -63,9 +68,10 @@ export function Onboarding() {
     <div className="mx-auto min-h-dvh w-full max-w-2xl px-6 py-12 md:py-20">
       <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
         <Logo />
-        <h1 className="font-display mt-12 text-[2.25rem] leading-[1.15] md:text-[2.875rem]">
-          Aprenda um idioma com{" "}
-          <em className="not-italic text-brand">doses diárias de imersão</em>.
+        {/* A ênfase é o itálico da serifa — a mesma voz da tradução no app
+            inteiro — e não a cor da marca pintando metade do título. */}
+        <h1 className="font-display mt-12 text-[2.5rem] font-normal leading-[1.08] tracking-[-0.015em] md:text-[3.25rem]">
+          Aprenda um idioma com <em className="font-normal">doses diárias de imersão</em>.
         </h1>
         <p className="mt-5 max-w-[54ch] text-lg leading-relaxed text-muted">
           Conteúdo nativo no nível certo, todos os dias. Os flashcards saem da própria
@@ -100,8 +106,8 @@ export function Onboarding() {
               transition={{ delay: 0.06 * i }}
               className="flex gap-5 border-t border-line py-5 last:border-b"
             >
-              <span className="w-5 shrink-0 pt-0.5 text-sm tabular-nums text-faint">
-                {String(i + 1).padStart(2, "0")}
+              <span className="w-5 shrink-0 pt-0.5 text-faint" aria-hidden>
+                {p.icon}
               </span>
               <div className="min-w-0">
                 <h3 className="font-display text-lg leading-none">{p.title}</h3>

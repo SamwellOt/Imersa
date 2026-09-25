@@ -37,14 +37,147 @@
   ],
   "doses": [
     {
-      "id": "ja-A2-01",
-      "level": "A2",
+      "id": "ja-B1-01",
+      "level": "B1",
       "lessonNumber": 1,
-      "title": "Acampamento na chuva de Hiace",
-      "path": "course/A2-01/dose.json",
-      "durationSec": 2773,
+      "title": "Bate-volta em Kyoto",
+      "path": "course/B1-01/dose.json",
+      "durationSec": 1038,
       "cardCount": 20,
-      "mediaKind": "audio"
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 9,
+        "B": 3
+      },
+      "posterSrc": "media/frames/p3b3f7afeda36.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-02",
+      "level": "B1",
+      "lessonNumber": 2,
+      "title": "Café com o kōhai: namoro, idade e casamento",
+      "path": "course/B1-02/dose.json",
+      "durationSec": 1340,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 12,
+        "B": 5
+      },
+      "posterSrc": "media/frames/pae7e5d9dfff2.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-03",
+      "level": "B1",
+      "lessonNumber": 3,
+      "title": "Felicidade, com a Miku e a Sayaka",
+      "path": "course/B1-03/dose.json",
+      "durationSec": 959,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 19,
+        "B": 1
+      },
+      "posterSrc": "media/frames/p7507d41ecbd1.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-04",
+      "level": "B1",
+      "lessonNumber": 4,
+      "title": "De trem e de avião: Kofu → Hiroshima",
+      "path": "course/B1-04/dose.json",
+      "durationSec": 1068,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 12,
+        "B": 2,
+        "C": 2
+      },
+      "posterSrc": "media/frames/p3e20a0ed1e4c.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-05",
+      "level": "B1",
+      "lessonNumber": 5,
+      "title": "Amigos estrangeiros? · O café do amigo",
+      "path": "course/B1-05/dose.json",
+      "durationSec": 1509,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 14,
+        "B": 2,
+        "C": 1
+      },
+      "posterSrc": "media/frames/pe99ecbbec4c8.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-06",
+      "level": "B1",
+      "lessonNumber": 6,
+      "title": "Okinawa com a amiga (e um casamento)",
+      "path": "course/B1-06/dose.json",
+      "durationSec": 1071,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "C": 1,
+        "A": 8,
+        "B": 2
+      },
+      "posterSrc": "media/frames/p2064bb658055.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-07",
+      "level": "B1",
+      "lessonNumber": 7,
+      "title": "Primeiro camping com a bebê",
+      "path": "course/B1-07/dose.json",
+      "durationSec": 1136,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 7,
+        "C": 2,
+        "B": 3
+      },
+      "posterSrc": "media/frames/p11646182ea31.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     }
-  ]
+  ],
+  "vocabLadder": {
+    "exam": "JLPT",
+    "source": "listas de vocabulário JLPT (Jonathan Waller / tanos.co.uk)",
+    "tiers": [
+      {
+        "tier": "A",
+        "name": "Intermediário",
+        "exam": "JLPT N3",
+        "cefr": "B1",
+        "words": 1860
+      },
+      {
+        "tier": "B",
+        "name": "Intermediário alto",
+        "exam": "JLPT N2",
+        "cefr": "B2",
+        "words": 1456
+      },
+      {
+        "tier": "C",
+        "name": "Avançado",
+        "exam": "JLPT N1",
+        "cefr": "C1",
+        "words": 2470
+      }
+    ]
+  }
 }

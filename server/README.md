@@ -24,8 +24,12 @@ Em produção roda como serviço (`systemctl status imersa`), com log em
 `auth-store.mjs`, no mesmo SQLite. Cadastro por **e-mail + senha** (scrypt com sal por
 usuário, N=2^15), **sessões por aparelho** (token aleatório de 32 bytes; o banco guarda só
 o sha256 — vazar o banco não entrega sessões vivas), prazo deslizante de 180 dias,
-limite de 8 tentativas de login por 15 min (por e-mail e por IP). Uma conta é dona do
-espaço `u:<id>` no sync-store.
+limite de 8 tentativas de login por 15 min (por e-mail e por IP) e de 8 cadastros por IP
+na mesma janela; login com e-mail inexistente também paga um scrypt (o tempo de resposta
+não revela quem tem conta). O IP é o do socket: `X-Forwarded-For` só é lido com
+`IMERSA_TRUST_PROXY=1` (atrás de um proxy que reescreve o cabeçalho — hoje a :8000 é
+servida direto). Toda resposta leva `nosniff`, `X-Frame-Options: DENY` e
+`Referrer-Policy: same-origin`. Uma conta é dona do espaço `u:<id>` no sync-store.
 
 | rota | corpo | faz |
 |---|---|---|
@@ -79,7 +83,7 @@ delas, a linha ganha `device` novo e volta a aparecer. Cliente que não mandar
 
 | tipo | forma | regra |
 |---|---|---|
-| `review`, `immersion` | evento imutável, id global (`uid`) | união; um tombstone nunca é desfeito |
+| `review`, `immersion`, `mark` | evento imutável, id global (`uid`) | união; um tombstone nunca é desfeito |
 | `card`, `doseProgress`, `setting` | estado | last-write-wins pelo `updatedAt` do cliente; empate favorece o tombstone |
 
 Do lado do **cliente** (`web/src/lib/sync.ts`) a mesma regra vale ao aplicar um
@@ -87,6 +91,8 @@ tombstone recebido: estado local mais novo que o apagar fica; evento é apagado 
 vez, exceto o restaurado de backup depois do apagar (`local:importedAt`). Importar
 backup zera o cursor e carimba o estado com `updatedAt` de agora — o restaurado
 vence.
+
+`mark` = fala marcada «não entendi» no player (tabela `lineMarks` do app).
 
 O servidor não recalcula nada — ele não sabe o que é FSRS. Ver
 [`../docs/architecture.md`](../docs/architecture.md) para o porquê.

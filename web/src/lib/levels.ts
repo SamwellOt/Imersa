@@ -57,7 +57,10 @@ export async function backfillCardTiers(course: Course): Promise<void> {
     if (!ref) continue;
     try {
       const dose = await loadDose(course.language, ref.path);
-      const tierOf = new Map(dose.cards.map((c) => [c.id, c.topikLevel ?? null]));
+      const tierOf = new Map(
+        [...dose.cards, ...(dose.sentenceCards ?? []), ...(dose.glossary ?? []).flatMap((g) => (g.card ? [g.card] : []))]
+          .map((c) => [c.id, c.topikLevel ?? null]),
+      );
       // `updatedAt` novo: card é ESTADO, e escrita sem tocar no carimbo perde o
       // last-write-wins — o backfill nunca viajava para o outro aparelho e
       // ainda era desfeito pela primeira escrita que chegasse de lá.
@@ -93,11 +96,13 @@ export async function getLevelProgress(
   }
 
   const tiers: TierProgress[] = ladder.tiers.map((t) => {
-    const mine = cards.filter((c) => c.topikLevel === t.tier);
+    // só card de palavra (o de frase repete a faixa da palavra dele); «já sei» = sabida
+    const mine = cards.filter((c) => c.topikLevel === t.tier && c.cardId.startsWith("w-"));
+    const isKnown = (c: CardRecord) => c.known || c.state === STATE_REVIEW;
     return {
       ...t,
-      known: mine.filter((c) => c.state === STATE_REVIEW).length,
-      learning: mine.filter((c) => c.state !== STATE_REVIEW).length,
+      known: mine.filter(isKnown).length,
+      learning: mine.filter((c) => !isKnown(c)).length,
       available: published.get(t.tier) ?? 0,
     };
   });

@@ -6,7 +6,9 @@
 // `tokens` (palavras de conteúdo, com posição e forma de dicionário), e o card
 // da palavra tem id `w-<lema>` — então "já é card?" é comparar strings, sem
 // carregar o dose.json de todas as lições. Só o estado FSRS decide o status:
-// nunca a lição em que a palavra apareceu.
+// nunca a lição em que a palavra apareceu. A exceção é a base declarada do
+// curso (`token.base`, ex.: JLPT N5+N4 e 外来語 no japonês): sem
+// card, ela já conta como conhecida.
 import { db } from "./db";
 import type { Segment, SegmentToken } from "@/types/dose";
 
@@ -29,7 +31,8 @@ export async function loadLemmaStatus(language: string): Promise<LemmaStatus> {
   for (const c of cards) {
     const lemma = lemmaOfCardId(c.cardId);
     if (!lemma) continue; // card de frase (dose antiga): não é palavra
-    const st: WordStatus = c.state === STATE_REVIEW ? "known" : "learning";
+    // «já sei» conta como fixada; card extra ainda não avaliado já é "aprendendo"
+    const st: WordStatus = c.known || c.state === STATE_REVIEW ? "known" : "learning";
     // dedup i+1 garante um card por palavra; se houver dois, o melhor estado vale
     if (out.get(lemma) !== "known") out.set(lemma, st);
   }
@@ -40,6 +43,12 @@ export function statusOf(status: LemmaStatus | null | undefined, lemma: string):
   return status?.get(lemma) ?? "new";
 }
 
+/** Status de uma ocorrência na legenda: o card manda; sem card, palavra da base
+ *  declarada do curso (`token.base`) já é conhecida. */
+export function tokenStatus(status: LemmaStatus | null | undefined, t: SegmentToken): WordStatus {
+  return status?.get(t.lemma) ?? (t.base ? "known" : "new");
+}
+
 export const hasTokens = (segments: Segment[]): boolean =>
   segments.some((s) => (s.tokens?.length ?? 0) > 0);
 
@@ -47,6 +56,8 @@ export const hasTokens = (segments: Segment[]): boolean =>
 export interface MarkedSpan {
   text: string;
   status: WordStatus | null;
+  /** Lema da palavra (para o dicionário ao tocar); ausente fora das palavras. */
+  lemma?: string;
 }
 
 const HANGUL = /[가-힣]/;
@@ -70,7 +81,8 @@ export function markSpans(seg: Segment, status: LemmaStatus | null | undefined):
     const cap = i + 1 < toks.length ? toks[i + 1].start : text.length;
     while (end < cap && HANGUL.test(text[end])) end++;
     if (t.start > cursor) out.push({ text: text.slice(cursor, t.start), status: null });
-    out.push({ text: text.slice(t.start, end), status: statusOf(status, t.lemma) });
+    // palavra só de dicionário: tocável, mas sem marca (não é vocabulário de card)
+    out.push({ text: text.slice(t.start, end), status: t.dict ? null : tokenStatus(status, t), lemma: t.lemma });
     cursor = end;
   }
   if (cursor < text.length) out.push({ text: text.slice(cursor), status: null });
@@ -96,7 +108,8 @@ export function coverage(segments: Segment[], status: LemmaStatus | null | undef
   const seen = new Map<string, WordStatus>();
   for (const s of segments) {
     for (const t of s.tokens ?? []) {
-      const st = statusOf(status, t.lemma);
+      if (t.dict) continue; // só dicionário: fora da compreensão
+      const st = tokenStatus(status, t);
       cov.tokens++;
       if (st === "known") cov.known++;
       else if (st === "learning") cov.learning++;
@@ -118,3 +131,14 @@ export function knownShare(cov: Coverage): number | null {
 }
 
 export type { SegmentToken };
+
+/**
+ * A fala precisa de Prime? No modo "primed adaptativo" o vídeo só pausa antes das
+ * falas que têm alguma palavra que o aluno ainda não fixou — num intermediário,
+ * 3 de cada 4 falas já são i+0 e pausar em todas era só atrito. Fala sem token
+ * (interjeição, "はい") não pausa. Dose sem tokens (build antigo): pausa sempre.
+ */
+export function needsPrime(seg: Segment, status: LemmaStatus | null | undefined): boolean {
+  if (!seg.tokens) return true;
+  return seg.tokens.some((t) => !t.dict && tokenStatus(status, t) !== "known");
+}

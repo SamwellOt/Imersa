@@ -3,7 +3,7 @@ import { Download, Upload, Moon, Sun, Smartphone, RefreshCw } from "lucide-react
 import { useDocumentTitle } from "@/lib/hooks";
 import { useApp, type SubtitleMode } from "@/lib/store";
 import {
-  getSrsSettings, DEFAULT_SRS_SETTINGS, parseSteps, stepsToText, sanitizeW, rescheduleAll,
+  getSrsSettings, DEFAULT_SRS_SETTINGS, parseSteps, stepsToText, sanitizeW, rescheduleAll, listKnown,
   MIN_REVIEWS_TO_OPTIMIZE, FSRS_PARAM_COUNT,
   type SrsSettings, type ReviewOrder, type NewOrder,
 } from "@/lib/srs";
@@ -13,6 +13,7 @@ import { AccountSection } from "@/components/settings/AccountSection";
 import { Segmented } from "@/components/ui/Segmented";
 import { cn, pluralize } from "@/lib/utils";
 import { BRAND } from "@/lib/brand";
+import { useAuth } from "@/lib/auth";
 
 /**
  * Instalação do PWA. O Chrome/Edge guardam o evento `beforeinstallprompt` e só
@@ -54,10 +55,11 @@ function useInstallPrompt() {
   return { canInstall: !!deferred, installed, install };
 }
 
-function Toggle({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
+function Toggle({ checked, onChange, label }: { checked: boolean; onChange: (v: boolean) => void; label?: string }) {
   return (
     <button
       role="switch"
+      aria-label={label}
       aria-checked={checked}
       onClick={() => onChange(!checked)}
       className={cn(
@@ -227,6 +229,9 @@ const SUB_OPTS: { value: SubtitleMode; label: string }[] = [
 export function Settings() {
   useDocumentTitle("Ajustes · " + BRAND.name);
   const app = useApp();
+  // com conta, apagar grava tombstones que sobem: some da conta e dos outros aparelhos
+  const signed = useAuth((s) => s.status === "signed");
+  const signedWarning = signed ? " — na conta e em todos os aparelhos" : "";
   const { canInstall, installed, install } = useInstallPrompt();
   const [srs, setSrs] = useState<SrsSettings | null>(null);
   const [flash, setFlash] = useState<string | null>(null);
@@ -289,6 +294,26 @@ export function Settings() {
     notify("Backup exportado.");
   };
 
+  /** «Já sei» do idioma, no formato que `dose_factory known --import` lê. */
+  const doExportKnown = async () => {
+    const lang = app.activeLanguage;
+    if (!lang) return;
+    const lemmas = (await listKnown(lang)).map((c) => c.cardId.replace(/^w-/, "")).sort();
+    const blob = new Blob([JSON.stringify({ language: lang, lemmas }, null, 1)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `imersa-ja-sei-${lang}.json`;
+    a.style.display = "none";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => {
+      a.remove();
+      URL.revokeObjectURL(url);
+    }, 5000);
+    notify(`${lemmas.length} ${pluralize(lemmas.length, "palavra exportada", "palavras exportadas")}.`);
+  };
+
   const doImport = async (file: File) => {
     try {
       const bundle = JSON.parse(await file.text()) as ExportBundle;
@@ -301,7 +326,7 @@ export function Settings() {
   };
 
   const doReset = async () => {
-    if (!confirm("Isso apaga todo o seu progresso (cards, revisões, estatísticas). Continuar?")) return;
+    if (!confirm(`Isso apaga todo o seu progresso (cards, revisões, estatísticas)${signedWarning}. Continuar?`)) return;
     await resetAll();
     notify("Progresso apagado. Recarregando…");
     setTimeout(() => location.reload(), 700);
@@ -310,7 +335,7 @@ export function Settings() {
   const doResetLang = async () => {
     const lang = app.activeLanguage;
     if (!lang) return;
-    if (!confirm(`Isso zera o progresso do idioma atual (${lang}). Continuar?`)) return;
+    if (!confirm(`Isso zera o progresso do idioma atual (${lang})${signedWarning}. Continuar?`)) return;
     await resetLanguage(lang);
     notify("Idioma reiniciado. Recarregando…");
     setTimeout(() => location.reload(), 700);
@@ -318,7 +343,7 @@ export function Settings() {
 
   return (
     <div className="mx-auto max-w-2xl">
-      <h1 className="font-display text-[1.75rem] leading-tight md:text-[2rem]">Ajustes</h1>
+      <h1 className="page-title">Ajustes</h1>
 
       {/* Conta — no topo: é quem você é e onde o progresso mora */}
       <AccountSection notify={notify} />
@@ -394,6 +419,13 @@ export function Settings() {
             <Toggle checked={app.subtitleMarks} onChange={app.setSubtitleMarks} />
           </Row>
           <Divider />
+          <Row
+            title="Prime adaptativo"
+            desc="No modo Primed, o vídeo só pausa antes das falas que têm alguma palavra que você ainda não fixou. As falas que você já entende passam direto. Desligado, pausa em todas"
+          >
+            <Toggle label="Prime adaptativo" checked={app.primedAdaptive} onChange={app.setPrimedAdaptive} />
+          </Row>
+          <Divider />
           <Row title="Furigana / leitura" desc="Mostrar a leitura quando disponível">
             <Toggle checked={app.furigana} onChange={app.setFurigana} />
           </Row>
@@ -404,6 +436,28 @@ export function Settings() {
       <div className="mt-9">
         <SectionLabel>Repetição espaçada</SectionLabel>
         <Card className="mt-3 px-5">
+          <Row title="Escrita na frente do card" desc="Mostrar a palavra no idioma estudado junto do áudio, antes de revelar a resposta">
+            <Toggle label="Escrita na frente do card" checked={app.flashcardFrontText} onChange={app.setFlashcardFrontText} />
+          </Row>
+          <Divider />
+          <Row
+            title="Frase-exemplo na frente do card"
+            desc="A frase da lição (a i+1, quando existe) embaixo da palavra, com ela sublinhada. Ao abrir o card só a palavra toca; a frase toca no botão"
+          >
+            <Toggle label="Frase-exemplo na frente do card" checked={app.flashcardExample} onChange={app.setFlashcardExample} />
+          </Row>
+          <Divider />
+          <Row title="Tocar a frase ao revelar" desc="Ao mostrar a resposta, a frase-exemplo toca sozinha">
+            <Toggle label="Tocar a frase ao revelar" checked={app.autoPlayExample} onChange={app.setAutoPlayExample} />
+          </Row>
+          <Divider />
+          <Row
+            title="Cards de frase separados"
+            desc="Cards só de escuta com a frase i+1 (a frente é o áudio da frase). Desligado, os que já existem saem das filas sem ser apagados"
+          >
+            <Toggle label="Cards de frase separados" checked={srs?.sentenceCards ?? false} onChange={(v) => saveSrs({ sentenceCards: v })} />
+          </Row>
+          <Divider />
           <Row title="Palavras novas por dia" desc="Uma dose = 20 palavras">
             <Stepper value={srs?.newPerDay ?? 20} min={0} max={100} step={5} onChange={(v) => saveSrs({ newPerDay: v })} />
           </Row>
@@ -569,6 +623,15 @@ export function Settings() {
               className="hidden"
               onChange={(e) => e.target.files?.[0] && doImport(e.target.files[0])}
             />
+          </Row>
+          <Divider />
+          <Row
+            title="Exportar «já sei»"
+            desc="As palavras deste idioma que você marcou como conhecidas, para a fábrica de lições não fazer card delas (dose_factory known)"
+          >
+            <Button variant="secondary" size="sm" onClick={doExportKnown}>
+              <Download size={14} /> Exportar
+            </Button>
           </Row>
           <Divider />
           <Row title="Reiniciar este idioma" desc="Zera o progresso só do idioma atual">

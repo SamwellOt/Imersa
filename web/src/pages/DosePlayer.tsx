@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ArrowRight, Check } from "lucide-react";
-import { resolveDose, loadCourseByLanguage } from "@/lib/content";
+import { X, ArrowRight, Check, Headphones } from "lucide-react";
+import { resolveDose, loadCourseByLanguage, loadDose, langOfDoseId } from "@/lib/content";
 import { useAsync, useDocumentTitle } from "@/lib/hooks";
 import { useApp } from "@/lib/store";
 import {
@@ -84,7 +84,8 @@ function Stepper({
 export function DosePlayer() {
   const { doseId } = useParams();
   const nav = useNavigate();
-  const lang = useApp((s) => s.activeLanguage);
+  const activeLanguage = useApp((s) => s.activeLanguage);
+  const lang = langOfDoseId(doseId) ?? activeLanguage;
   const [params, setParams] = useSearchParams();
   const urlPhase = PHASE_BY_SLUG[params.get("fase") ?? ""] ?? null;
   const [phase, setPhaseState] = useState<Phase | null>(urlPhase);
@@ -171,8 +172,12 @@ export function DosePlayer() {
   // retomada — gravar esse 0 apagava justamente a posição que o aluno tinha.
   const lastSavedAt = useRef(Date.now());
 
-  if (loading || phase == null) return <LoadingScreen label="Abrindo a dose…" />;
-  if (error || !data || !lang) return <ErrorScreen message={error?.message ?? "Erro"} onRetry={reload} />;
+  // O erro vem antes da fase: sem `?fase` na URL a fase só é decidida quando a
+  // dose carrega — com a dose inexistente ela nunca era, e a tela ficava presa
+  // em "Abrindo a dose…" para sempre.
+  if (loading) return <LoadingScreen label="Abrindo a dose…" />;
+  if (error || !data || !lang) return <ErrorScreen message={error?.message ?? "Erro"} onRetry={reload} backHome />;
+  if (phase == null) return <LoadingScreen label="Abrindo a dose…" />;
 
   const { dose, mediaUrl, path, resumeMs } = data;
 
@@ -202,12 +207,12 @@ export function DosePlayer() {
       {/* Barra superior */}
       {/* No celular o título e as três etapas não cabem na mesma linha — as
           etapas descem para uma faixa própria, com alvo de toque inteiro. */}
-      <div className="frosted pt-safe sticky top-0 z-30 border-b border-line">
+      <div className="bar-solid pt-safe sticky top-0 z-30 border-b border-line">
         <div className={cn("mx-auto px-4", phase === "immersion" ? "max-w-[1160px]" : "max-w-3xl")}>
           <div className="flex items-center gap-3">
             <button
               onClick={() => nav("/")}
-              className="grid h-8 w-8 shrink-0 place-items-center rounded-lg text-faint transition-colors hover:bg-surface-2 hover:text-fg"
+              className="-ml-1 grid h-10 w-10 shrink-0 place-items-center rounded-lg md:ml-0 md:h-8 md:w-8 text-faint transition-colors hover:bg-surface-2 hover:text-fg"
               aria-label="Sair da dose"
             >
               <X size={16} />
@@ -370,7 +375,9 @@ function DonePhase({
     // o que ficou pendente das outras, senão o vencido some da vista.
     const dueElsewhere = await countDueElsewhere(language, doseId);
     const overview = await getOverview(language);
-    return { next: nextDose(course, progress), doneId: doseId, dueElsewhere, overview };
+    const ref = course.doses.find((d) => d.id === doseId);
+    const condensed = ref ? !!(await loadDose(language, ref.path).catch(() => null))?.media.condensedAudioSrc : false;
+    return { next: nextDose(course, progress), doneId: doseId, dueElsewhere, overview, condensed };
   }, [language, doseId]);
 
   const streak = data?.overview.streak.current ?? 0;
@@ -433,6 +440,11 @@ function DonePhase({
         ) : (
           <Button size="lg" onClick={() => nav("/review")}>
             Revisar mais cards
+          </Button>
+        )}
+        {data?.condensed && (
+          <Button variant="ghost" onClick={() => nav(`/escuta/${doseId}`)}>
+            <Headphones size={15} /> Reouvir em áudio condensado
           </Button>
         )}
         <Button variant="ghost" onClick={() => nav("/")}>

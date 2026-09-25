@@ -16,7 +16,8 @@ imersão). Não é compromisso — é um banco para revisitar. O que já está n
   (card de palavra gradua → gera o cloze).
 - **Cards de sentença (i+1)** além dos 20 de palavra: as 3–5 frases da dose em que todas as
   palavras já são conhecidas menos uma. O `words` já sabe o vocabulário acumulado, então a
-  pipeline consegue marcar as frases i+1 de graça (subs2srs filtrado).
+  pipeline consegue marcar as frases i+1 de graça (subs2srs filtrado). *(implementado em
+  2026-09-24: `sentenceCards`, até 5 por dose)*
 - **Output guiado com correção** (`find-mistakes`, roadmap): o aluno escreve 2–3 frases com
   palavras da dose; a correção vira card de erro. Precisa de LLM (chave opcional).
 
@@ -25,7 +26,7 @@ imersão). Não é compromisso — é um banco para revisitar. O que já está n
 - ★ **Dicionário pop-up na legenda** (roadmap): tocar numa palavra mostra lema + significado
   + rank. A pipeline tem os offsets do kiwi por token → `segments[].tokens[]` no `dose.json`.
   Extensão: **"+ card"** — adicionar ao SRS uma palavra fora das 20 (card extra, sem furar o
-  `newPerDay` da dose).
+  `newPerDay` da dose). *(implementado em 2026-09-24, com «Já sei»)*
 - **Legenda "conhecido/novo" colorida** (opcional): com tokens por segmento + estado do SRS,
   pintar o que o aluno já domina vs. está aprendendo vs. nunca viu. Feedback de compreensão
   contínuo; mostra o i+1 na tela. *(implementado em 2026-09-05)*
@@ -34,6 +35,7 @@ imersão). Não é compromisso — é um banco para revisitar. O que já está n
 - **Re-imersão programada**: reassistir a dose N (ou só os fragmentos das frases-exemplo)
   3 e 10 dias depois, com legenda só em alvo. SRS aplicado ao input; item na aba Hoje.
 - **Áudio condensado** (roadmap) para escuta passiva — a pipeline já corta fragmentos.
+  *(implementado em 2026-09-24: `/escuta/:id`)*
 
 ## 3. Progressão adaptativa (hoje é linear)
 

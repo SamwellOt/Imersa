@@ -1,3 +1,5 @@
+import { AlertTriangle } from "lucide-react";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 
@@ -33,17 +35,28 @@ export function HomeSkeleton() {
     <div className="mx-auto flex max-w-[960px] flex-col gap-6" aria-busy>
       <div>
         <Skeleton className="h-3.5 w-40" />
-        <Skeleton className="mt-2.5 h-8 w-52" />
+        <Skeleton className="mt-2.5 h-10 w-56" />
       </div>
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_236px]">
-        <div className="flex flex-col gap-4">
-          <Skeleton className="h-[22rem] w-full rounded-2xl" />
-          <Skeleton className="h-[4.5rem] w-full rounded-xl" />
+        <Skeleton className="h-[22rem] w-full rounded-2xl" />
+        <div className="flex flex-col gap-8">
+          <div>
+            <Skeleton className="h-3.5 w-full" />
+            <Skeleton className="mt-4 h-10 w-24" />
+            <Skeleton className="mt-3 h-3 w-5/6" />
+          </div>
+          <div>
+            <Skeleton className="h-3.5 w-full" />
+            {Array.from({ length: 5 }, (_, i) => (
+              <Skeleton key={i} className="mt-2.5 h-3 w-full" />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <Skeleton className="h-[11rem] w-full rounded-2xl" />
-          <Skeleton className="h-[9rem] w-full rounded-2xl" />
-        </div>
+      </div>
+      <div className="flex gap-3 overflow-hidden">
+        {Array.from({ length: 5 }, (_, i) => (
+          <Skeleton key={i} className="aspect-video w-[10.5rem] shrink-0 rounded-lg" />
+        ))}
       </div>
     </div>
   );
@@ -61,12 +74,10 @@ export function ListSkeleton({ rows = 5, title = true }: { rows?: number; title?
       <Skeleton className="mt-6 h-9 w-full max-w-[22rem] rounded-lg" />
       <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
         {Array.from({ length: rows }, (_, i) => (
-          <div key={i} className="overflow-hidden rounded-xl border border-line">
-            <Skeleton className="aspect-video w-full rounded-none" />
-            <div className="px-3 py-3">
-              <Skeleton className="h-3 w-16" />
-              <Skeleton className="mt-2 h-3.5 w-5/6" />
-            </div>
+          <div key={i}>
+            <Skeleton className="aspect-video w-full" />
+            <Skeleton className="mt-2.5 h-3 w-16" />
+            <Skeleton className="mt-2 h-3.5 w-5/6" />
           </div>
         ))}
       </div>
@@ -131,23 +142,40 @@ export function EmptyState({
   );
 }
 
-export function ErrorScreen({ message, onRetry }: { message: string; onRetry?: () => void }) {
+export function ErrorScreen({
+  message,
+  onRetry,
+  backHome,
+}: {
+  message: string;
+  onRetry?: () => void;
+  /** Tela cheia (dose, escuta) não tem navegação: sem isto, uma dose que não
+   *  existe deixava o aluno preso num "Tentar de novo" que nunca funciona. */
+  backHome?: boolean;
+}) {
   return (
     <div className="grid min-h-[60vh] place-items-center px-4">
       <div className="max-w-md text-center">
-        <div className="mx-auto mb-3 grid h-9 w-9 place-items-center rounded-full border border-again/30 text-lg font-semibold text-again">
-          !
+        <div className="mx-auto mb-3 grid h-9 w-9 place-items-center rounded-full border border-again/30 text-again">
+          <AlertTriangle size={16} />
         </div>
         <h3 className="font-display text-lg">Algo deu errado</h3>
         <p className="mt-1.5 break-words text-sm leading-relaxed text-muted">{message}</p>
-        {onRetry && (
-          <button
-            onClick={onRetry}
-            className="mt-5 rounded-lg border border-line bg-surface-2 px-3.5 py-2 text-sm font-semibold transition-colors hover:bg-surface-3"
-          >
-            Tentar de novo
-          </button>
-        )}
+        <div className="mt-5 flex items-center justify-center gap-2">
+          {onRetry && (
+            <button
+              onClick={onRetry}
+              className="rounded-lg border border-line bg-surface-2 px-3.5 py-2 text-sm font-semibold transition-colors hover:bg-surface-3"
+            >
+              Tentar de novo
+            </button>
+          )}
+          {backHome && (
+            <Link to="/" className="rounded-lg px-3.5 py-2 text-sm font-semibold text-muted transition-colors hover:text-fg">
+              Voltar ao início
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

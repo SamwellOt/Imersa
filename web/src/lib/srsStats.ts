@@ -76,6 +76,7 @@ export async function computeSrsStats(language: string, settings: SrsSettings): 
   let overdue = 0;
   let rSum = 0, rN = 0, ivlSum = 0, ivlN = 0, stabSum = 0;
   for (const c of cards) {
+    if (c.known) continue; // «já sei»: fora do SRS
     if (c.suspended) { states.suspended++; continue; }
     if (!isActive(c, now)) states.buried++;
     if (c.state === State.New) states.new++;

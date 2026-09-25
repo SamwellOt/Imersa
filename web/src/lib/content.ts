@@ -66,6 +66,16 @@ export async function loadDose(lang: string, dosePath: string, fresh = false): P
   return dose;
 }
 
+/**
+ * Idioma de uma dose pelo id (`<lang>-<nível>-<NN>`, estável por contrato). Um
+ * link para a lição de outro idioma (histórico, "Próxima dose", favorito) abria
+ * procurando a dose no curso do idioma ATIVO e dava "Dose não encontrada".
+ */
+export function langOfDoseId(doseId: string | undefined): string | null {
+  const m = /^([a-z]{2,3})-/.exec(doseId ?? "");
+  return m ? m[1] : null;
+}
+
 /** Absolute URL for a media path stored relative to a dose's folder. */
 export function mediaUrl(lang: string, dosePath: string, rel: string): string {
   // dosePath = "course/A2-01/dose.json" -> dir "course/A2-01"

@@ -11,7 +11,14 @@ o CSS explica os valores.
    ação primária, estado do card, nota do SRS.
 2. **Fundo chapado.** Nada de blobs radiais, aura ou `backdrop-blur` em card.
    Profundidade vem de `surface` + 1px de `line`. Blur (`.frosted`) é exclusivo
-   das barras fixas de topo/rodapé.
+   das barras fixas do desktop. No celular as barras (navegação de baixo,
+   cabeçalho, topo da dose/revisão/escuta) são **opacas** (`.bar-solid`): com o
+   vidro, o texto da página atravessava os rótulos da navegação.
+   **Navegação no celular**: barra de baixo com alvo de 56 px, ícone de 20 px,
+   rótulo de 11 px, aba ativa = traço de 2 px na borda de cima e o número de
+   vencidos na Revisão; o cabeçalho traz o **seletor de idioma** (한국어 / 日本語 —
+   antes só existia na barra lateral do desktop) e o tema; botões de fechar têm
+   40 px no celular.
 3. **Hierarquia por tamanho e cor, não por peso.** Títulos são serifa
    (Newsreader) em 400/500; a UI é Inter em 400/500/600. `font-extrabold` não é
    usado em lugar nenhum.
@@ -68,7 +75,8 @@ do botão de áudio do card.
 | Papel | Família | Uso |
 |---|---|---|
 | `--font-sans` | Inter | Toda a UI, números (`tabular-nums`) |
-| `--font-display` (`.font-display`) | Newsreader (serifa) | Títulos de página, título da dose, telas de conclusão |
+| `--font-display` (`.font-display`) | Newsreader (serifa) 500 | Título da dose, títulos de seção grandes, telas de conclusão |
+| `.page-title` | Newsreader **400**, `clamp(2.125rem…2.625rem)`, entrelinha 1.05 | O `h1` de toda página (Hoje, Biblioteca, Progresso, Ajustes, Entrar). É o único tipo realmente grande da tela; o resto fica pequeno para ele ter ar. |
 | `--font-target` (`.font-target`) | Noto Sans KR/JP | **Qualquer texto corrido em idioma-alvo** |
 | `--font-target-display` (`.font-target-display`) | Noto Serif KR/JP | Idioma-alvo em destaque: a palavra do card (66 px), a linha de abertura |
 | `.line-trans` | Newsreader itálico 400 | **Toda tradução em PT** ao lado de uma fala (Hoje, legenda, transcrição, card) |
@@ -99,10 +107,22 @@ do botão de áudio do card.
 - **Hoje** (`pages/Dashboard.tsx`): duas colunas a partir de `lg`. À esquerda o
   card da dose — capa 16:9 + as **20 palavras do dia** em idioma-alvo (já
   estudadas sublinhadas) numa coluna, título + linha de abertura + as três
-  fases com seu peso + botão na outra — e a **trilha em capas**. À direita,
-  revisão (vencidos, o card mais atrasado) e os números em `<dl>` pequena. No
-  topo, os **sete últimos dias** em quadrados no lugar da chama. O idioma e o
-  tema moram no rodapé da barra lateral (`AppShell`).
+  fases com seu peso + botão na outra. À direita, **sem caixa** (o card da
+  dose é a única superfície da tela): revisão com o número de vencidos em
+  serifa grande, o card mais atrasado, e os números em `<dl>` de filetes.
+  Embaixo, ocupando a largura toda, a **trilha em filmstrip**: fita horizontal
+  de quadros de 10,5 rem com número, duração e título, que rola de lado e
+  centra a dose atual sozinha (a grade de sete miniaturas era ilegível). No
+  topo, os **sete últimos dias** em quadrados com a inicial do dia embaixo.
+- **Barra lateral** (`AppShell`): o item ativo é texto cheio + um traço de
+  2 px da marca na margem esquerda — a mesma linguagem de filete do resto —
+  não uma pílula de fundo. O idioma no rodapé é uma linha de texto (한국어 em
+  cima, "Coreano" embaixo), não um campo de formulário; o tema fica ao lado
+  da versão.
+- **Onboarding**: o título ganha ênfase pelo **itálico da serifa** (a voz da
+  tradução), não pela cor da marca pintando metade da frase; as três fases
+  levam o ícone lucide que o app usa para cada uma (a revisão, o da barra
+  lateral), sem "01 / 02 / 03".
 - **Imersão** (`ImmersionPlayer`): o quadro num retângulo escuro com a **legenda
   por cima** (escurecimento só no rodapé do quadro; no modo Primed o quadro
   inteiro escurece e só o PT fica). Controles numa barra, não num card; a linha
@@ -120,7 +140,9 @@ do botão de áudio do card.
   layout). Num player com menos de `24rem` os botões encolhem para 32 px para a
   linha de controles não quebrar em duas (celular de 360 px).
 - **Card** (`Flashcard`): sem faixa de cabeçalho; estado, rank e menu `⋯` numa
-  linha. Alto-falante de 40 px em `brand-soft`. Verso: palavra em
+  linha. Alto-falante de 40 px em `brand-soft`. Frente: áudio e, quando ativado
+  em Ajustes, a escrita da palavra em `.font-target-display` (sem tradução).
+  Verso: palavra em
   `.font-target-display`, sentido em `.line-trans`, frase-exemplo com a **cena**
   ao lado. Notas numa **régua única** com o filete colorido de cada uma;
   "Mostrar resposta" ocupa a mesma régua, para o polegar não mudar de lugar; a
@@ -128,9 +150,16 @@ do botão de áudio do card.
   passa da tela e a nota ficava fora do alcance), com o conteúdo esmaecendo
   por baixo. A
   info do card (retenção, estabilidade…) mora no menu, não no verso.
-- **Biblioteca**: grade de lâminas 16:9 (2 / 3 / 4 colunas), estado pela imagem.
+- **Biblioteca**: grade de lâminas 16:9 (2 / 3 / 4 colunas) **sem moldura** —
+  quadro com legenda embaixo, como num catálogo, não um card com padding.
+  Número e duração sobre a imagem, estado pela imagem (feita com marca, próxima
+  com contorno, futura em cinza); só quem tem estado ganha a linha de rótulo
+  sob o título. O cabeçalho do nível é serifa grande com a descrição em
+  `.line-trans`, separado por filete.
 - **Progresso**: frase-resumo no lugar dos seis tiles; calendário e escada
-  TOPIK lado a lado; compreensão por lição com capa; retenção e previsão.
+  TOPIK lado a lado; compreensão por lição com capa; retenção e previsão de
+  vencimentos em **barras sobre uma linha de base** (sem trilho preenchido
+  atrás — sete trilhos iguais liam como grade de tiles).
 
 ## Marca
 

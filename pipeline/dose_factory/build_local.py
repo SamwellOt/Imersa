@@ -21,7 +21,7 @@ from typing import Optional
 
 from . import srt as srtlib
 from .course import update_course
-from .frequency import content_tokens
+from .frequency import content_tokens, is_base
 from .schema import (
     Difficulty, Dose, Media, PrimeChunk, SentenceCard, Segment, Source, SourcePart,
     validate,
@@ -54,9 +54,21 @@ def _norm(text: str) -> str:
 
 
 def segment_tokens(text: str, lang: str) -> list[dict]:
-    """`Segment.tokens`: só o que o app usa (lema + posição); `tag` fica de fora."""
-    return [{"lemma": t["lemma"], "surface": t["surface"], "start": t["start"], "end": t["end"]}
-            for t in content_tokens(text, lang)]
+    """`Segment.tokens`: só o que o app usa (lema + posição); `tag` fica de fora.
+    `base: true` = palavra da base que o aluno já sabe (KNOWN_TOP): o app a conta
+    como conhecida sem precisar de card."""
+    out = []
+    for t in content_tokens(text, lang, dictionary=True):
+        tok = {"lemma": t["lemma"], "surface": t["surface"], "start": t["start"], "end": t["end"]}
+        if t.get("dict"):
+            # só dicionário: clicável na legenda, fora da compreensão (ver frequency)
+            tok["dict"] = True
+            if t.get("proper"):
+                tok["proper"] = t["proper"]
+        elif is_base(t["lemma"], lang):
+            tok["base"] = True
+        out.append(tok)
+    return out
 
 
 def _is_filler(text: str) -> bool:
@@ -285,7 +297,9 @@ def build_dose_from_scribe(
 
     segments: list[Segment] = []
     for j, d in enumerate(disp, start=1):
-        tr = srtlib.align_translation(d["start"], d["end"], sent_spans)
+        # linha com tradução própria (legenda por frase/oração — japonês): usa ela;
+        # senão, a tradução da frase que mais se sobrepõe no tempo
+        tr = d["translation"] if "translation" in d else srtlib.align_translation(d["start"], d["end"], sent_spans)
         segments.append(Segment(
             id=f"s{j}", index=j, startMs=d["start"], endMs=d["end"],
             target=d["text"], translation=tr, speakerId=d.get("speaker"),
@@ -308,7 +322,7 @@ def build_dose_from_scribe(
             ctx = f"{ex['text']} — {ex_pt}".strip(" —")
             surface = w.get("surface")
             cards.append(SentenceCard(
-                id=f"w-{w['lemma']}", segmentId="", target=w["lemma"],
+                id=f"w-{w['lemma']}", segmentId="", target=w.get("display") or w["lemma"],
                 translation=w.get("meaning") or "", reading=w.get("reading"),
                 startMs=ex["start"], endMs=ex["end"], context=ctx,
                 newWords=[surface] if surface and surface != w["lemma"] else [],
@@ -424,7 +438,7 @@ def build_dose(
             ex_pt = srtlib.align_translation(ex.start_ms, ex.end_ms, trans_blocks) if trans_blocks else ""
             surface = w.get("surface")
             cards.append(SentenceCard(
-                id=f"w-{w['lemma']}", segmentId="", target=w["lemma"],
+                id=f"w-{w['lemma']}", segmentId="", target=w.get("display") or w["lemma"],
                 translation=w.get("meaning") or "", reading=w.get("reading"),
                 startMs=ex.start_ms, endMs=ex.end_ms,
                 context=f"{ex.text} — {ex_pt}".strip(" —"),

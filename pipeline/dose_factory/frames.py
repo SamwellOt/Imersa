@@ -55,8 +55,11 @@ def add_frames(dose_path: str) -> dict | None:
         dose["media"]["posterSrc"] = f"{FRAMES_DIR}/{poster}"
         used.add(poster)
 
+    # cards de palavra, cards de frase (i+1) e os do glossário ("+ card")
+    every = list(dose["cards"]) + list(dose.get("sentenceCards") or []) + [
+        g["card"] for g in dose.get("glossary") or [] if g.get("card")]
     n = 0
-    for card in dose["cards"]:
+    for card in every:
         dur = max(0, card["endMs"] - card["startMs"])
         ms = card["startMs"] + min(SCENE_LEAD_MS, dur // 2)
         name = _name("s", ms)
@@ -75,7 +78,7 @@ def add_frames(dose_path: str) -> dict | None:
 
 
 def update_course_posters(content_root: str, lang: str) -> None:
-    """Copia posterSrc de cada dose para o DoseRef do course.json."""
+    """Copia posterSrc (e condensedAudioSrc) de cada dose para o DoseRef do course.json."""
     course_path = os.path.join(content_root, lang, "course.json")
     with open(course_path, encoding="utf-8") as fh:
         course = json.load(fh)
@@ -84,8 +87,13 @@ def update_course_posters(content_root: str, lang: str) -> None:
         if not os.path.exists(p):
             continue
         with open(p, encoding="utf-8") as fh:
-            poster = json.load(fh)["media"].get("posterSrc")
-        if poster:
-            ref["posterSrc"] = poster
+            media = json.load(fh)["media"]
+        if media.get("posterSrc"):
+            ref["posterSrc"] = media["posterSrc"]
+        # a Biblioteca oferece "ouvir" sem baixar a dose inteira
+        if media.get("condensedAudioSrc"):
+            ref["condensedAudioSrc"] = media["condensedAudioSrc"]
+        else:
+            ref.pop("condensedAudioSrc", None)
     with open(course_path, "w", encoding="utf-8") as fh:
         json.dump(course, fh, ensure_ascii=False, indent=2)

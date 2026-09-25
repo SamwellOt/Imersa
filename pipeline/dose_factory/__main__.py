@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import argparse
+import glob
 import json
 import os
 import sys
@@ -71,6 +72,8 @@ def main(argv: list[str] | None = None) -> int:
     wd.add_argument("--lang", required=True)
     wd.add_argument("--units", nargs="+", required=True, help="units.json files IN LESSON ORDER")
     wd.add_argument("--n", type=int, default=20)
+    wd.add_argument("--frozen", nargs="*", default=[],
+                    help="words.json de lições já estudadas: entram no dedup, mas não são regeneradas")
 
     tt = sub.add_parser("tts", help="generate per-word native TTS (edge-tts) for card fronts")
     tt.add_argument("--lang", required=True)
@@ -85,6 +88,28 @@ def main(argv: list[str] | None = None) -> int:
     fr.add_argument("--content-root", default=CONTENT_ROOT)
     fr.add_argument("--lang", default=None, help="só este idioma (padrão: todos)")
 
+    en = sub.add_parser("enrich", help="glossário, cards de frase i+1, homófonos, áudio condensado e cenas das doses publicadas")
+    en.add_argument("--content-root", default=CONTENT_ROOT)
+    en.add_argument("--lang", required=True)
+    en.add_argument("--only", nargs="*", default=None, help="só estas doses (ids); as anteriores entram no i+1")
+    en.add_argument("--no-condensed", action="store_true", help="não refaz o áudio condensado")
+    en.add_argument("--missing", default=None, help="grava aqui (JSON) os lemas novos sem significado PT")
+    en.add_argument("--glossary-only", action="store_true",
+                    help="só tokens + glossário (não refaz cards de frase, condensado nem cenas)")
+
+    dc = sub.add_parser("dict", help="gera data/dict_en_<lang>.json (JMdict / Wiktionary) ou importa PT")
+    dc.add_argument("--lang", required=True)
+    dc.add_argument("--src", default=None, help="ja: JMdict_e.gz · ko: kaikki.org-dictionary-Korean.jsonl")
+    dc.add_argument("--pt", default=None, help="JSON {lema: significado} para acrescentar a dict_pt_<lang>.json")
+
+    fl = sub.add_parser("freqlist", help="refaz data/lemma_freq_<lang>.json com o analisador atual (coreano)")
+    fl.add_argument("--lang", required=True)
+    fl.add_argument("--content-root", default=CONTENT_ROOT)
+
+    kn = sub.add_parser("known", help="importa as palavras marcadas «Já sei» no app para a base declarada")
+    kn.add_argument("--lang", required=True)
+    kn.add_argument("--import", dest="src", required=True, help="arquivo exportado em Ajustes (imersa-ja-sei-<lang>.json)")
+
     sub.add_parser("demo", help="build the bundled Japanese demo dose")
 
     args = ap.parse_args(argv)
@@ -92,9 +117,82 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "demo":
         return _demo()
 
+    if args.cmd == "enrich":
+        from .enrich import enrich_language, refresh_glossary
+        if args.glossary_only:
+            missing = refresh_glossary(args.content_root, args.lang)
+        else:
+            missing = enrich_language(args.content_root, args.lang, set(args.only) if args.only else None,
+                                      condensed=not args.no_condensed)
+        if args.missing:
+            with open(args.missing, "w", encoding="utf-8") as fh:
+                json.dump(missing, fh, ensure_ascii=False, indent=1)
+        n = sum(len(v) for v in missing.values())
+        if n:
+            print(f"⚠ {n} palavras novas sem significado PT (sem '+ card' até traduzir)"
+                  + (f" → {args.missing}" if args.missing else ""))
+        return 0
+
+    if args.cmd == "dict":
+        from . import dictionary as dic
+        if args.src:
+            n = dic.build_en_ja(args.src) if args.lang == "ja" else dic.build_en_ko(args.src)
+            print(f"dict_en_{args.lang}.json: {n} entradas")
+        if args.pt:
+            with open(args.pt, encoding="utf-8") as fh:
+                print(f"dict_pt_{args.lang}.json: {dic.save_pt(args.lang, json.load(fh))} significados novos")
+        return 0
+
+    if args.cmd == "freqlist":
+        # refaz a lista e atualiza o "#N em frequência" das doses publicadas (cards,
+        # cards de frase); o glossário se atualiza com `enrich --glossary-only`
+        from .frequency import build_lemma_freq, lemma_rank
+        n = len(build_lemma_freq(args.lang, rebuild=True))
+        print(f"lista {args.lang}: {n} lemas")
+        for path in sorted(glob.glob(os.path.join(args.content_root, args.lang, "course", "*", "dose.json"))):
+            with open(path, encoding="utf-8") as fh:
+                dose = json.load(fh)
+            changed = 0
+            ranks = {}
+            for c in dose["cards"]:
+                if c["id"].startswith("w-"):
+                    r = lemma_rank(c["id"][2:], args.lang)
+                    ranks[c["id"][2:]] = r
+                    changed += c.get("freqRank") != r
+                    c["freqRank"] = r
+            for sc in dose.get("sentenceCards") or []:
+                r = ranks.get((sc.get("focus") or {}).get("lemma"))
+                if r != sc.get("freqRank"):
+                    sc["freqRank"] = r
+                    changed += 1
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(dose, fh, ensure_ascii=False, indent=2)
+            print(f"  {dose['id']}: {changed} ranks atualizados")
+        return 0
+
+    if args.cmd == "known":
+        from .frequency import DATA, KNOWN_BASE
+        with open(args.src, encoding="utf-8") as fh:
+            got = json.load(fh)
+        if got.get("language") not in (None, args.lang):
+            print(f"o arquivo é de {got.get('language')}, não {args.lang}", file=sys.stderr)
+            return 1
+        name = KNOWN_BASE.get(args.lang, {}).get("declared") or f"known_{args.lang}.json"
+        path = os.path.join(DATA, name)
+        cur = {"lemmas": []}
+        if os.path.isfile(path):
+            with open(path, encoding="utf-8") as fh:
+                cur = json.load(fh)
+        before = set(cur["lemmas"])
+        cur["lemmas"] = sorted(before | set(got["lemmas"]))
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(cur, fh, ensure_ascii=False, indent=1)
+        print(f"{name}: +{len(set(cur['lemmas']) - before)} palavras (total {len(cur['lemmas'])}). "
+              f"Rode `tokens`/`enrich` para a legenda contar como base.")
+        return 0
+
     if args.cmd == "frames":
         from .frames import add_frames, update_course_posters
-        import glob
         langs = [args.lang] if args.lang else sorted(
             d for d in os.listdir(args.content_root)
             if os.path.isdir(os.path.join(args.content_root, d, "course")))
@@ -108,7 +206,6 @@ def main(argv: list[str] | None = None) -> int:
         # Dose publicada antes de `tokens` existir: patch no lugar, sem remontar
         # mídia nem fragmentos (o assemble refaz tudo e é destrutivo).
         from .build_local import segment_tokens
-        import glob
         pat = os.path.join(args.content_root, args.lang or "*", "course", "*", "dose.json")
         for path in sorted(glob.glob(pat)):
             with open(path, encoding="utf-8") as fh:
@@ -129,11 +226,16 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.cmd == "words":
-        from .frequency import build_lemma_freq, select_frequency_words, rank_map
+        from .frequency import build_lemma_freq, select_frequency_words, lemma_rank
         from .levels import level_of
+        from .dictionary import meaning_pt
         build_lemma_freq(args.lang)
-        ranks = rank_map(args.lang)
         used: set[str] = set()
+        # lição que o aluno já estudou tem cards no banco dele (id = lema): regerar
+        # mudaria o conjunto e deixaria cards órfãos. Só entra no dedup.
+        for fp in args.frozen:
+            with open(fp, encoding="utf-8") as fh:
+                used.update(w["lemma"] for w in json.load(fh))
         for up in args.units:
             with open(up, encoding="utf-8") as fh:
                 units = json.load(fh)
@@ -154,15 +256,21 @@ def main(argv: list[str] | None = None) -> int:
             for w in words:
                 pw = prior.get(w["lemma"], {})
                 entry = {"lemma": w["lemma"], "surface": w["surface"], "tag": w["tag"],
-                         "sentenceIndex": w["sentenceIndex"], "freqRank": ranks.get(w["lemma"]),
+                         "sentenceIndex": w["sentenceIndex"], "freqRank": lemma_rank(w["lemma"], args.lang),
+                         "occurrences": w.get("occurrences"),
                          "topikLevel": level_of(w["lemma"], args.lang),
-                         "meaning": pw.get("meaning", ""), "reading": pw.get("reading")}
+                         # significado: o já preenchido; senão o do dicionário PT curado
+                         "meaning": pw.get("meaning") or meaning_pt(w["lemma"], args.lang) or "",
+                         "reading": pw.get("reading") or w.get("reading")}
+                if w.get("display") and w["display"] != w["lemma"]:
+                    entry["display"] = w["display"]
                 if pw.get("ttsFile"):
                     entry["ttsFile"] = pw["ttsFile"]
                 payload.append(entry)
             with open(out, "w", encoding="utf-8") as fh:
                 json.dump(payload, fh, ensure_ascii=False, indent=1)
-            print(f"{out}: {len(words)} words")
+            print(f"{out}: {len(words)} words — " + " ".join(
+                f"{w['lemma']}×{w.get('occurrences')}" for w in words))
         return 0
 
     if args.cmd == "tts":

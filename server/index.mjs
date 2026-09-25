@@ -181,8 +181,22 @@ async function readJson(req) {
   }
 }
 
+// `X-Forwarded-For` só vale atrás de um proxy que o reescreve (IMERSA_TRUST_PROXY=1).
+// Servido direto na porta, qualquer um manda o cabeçalho que quiser — e trocar o
+// "IP" a cada tentativa furava o limite de tentativas por IP do login.
+const TRUST_PROXY = process.env.IMERSA_TRUST_PROXY === "1";
 const clientIp = (req) =>
-  String(req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").split(",")[0].trim();
+  String((TRUST_PROXY && req.headers["x-forwarded-for"]) || req.socket.remoteAddress || "")
+    .split(",")[0].trim();
+
+// Cabeçalhos de segurança em toda resposta: sem sniff de tipo (um .json servido
+// como HTML), sem o app dentro de <iframe> de outro site (clickjacking nos
+// botões de apagar conta/progresso) e sem vazar a URL em referer.
+const SECURITY_HEADERS = {
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "same-origin",
+};
 
 /** Rotas de conta. Devolve `true` se tratou o pedido. */
 async function handleAuth(req, res, path) {
@@ -196,7 +210,7 @@ async function handleAuth(req, res, path) {
   switch (path) {
     case "/api/auth/register": {
       const body = await readJson(req);
-      const { user, session } = await auth.register({ ...body, ...meta(body) });
+      const { user, session } = await auth.register({ ...body, ...meta(body), ip: clientIp(req) });
       return json(res, 201, { ok: true, user, token: session.token, sessionId: session.id }), true;
     }
     case "/api/auth/login": {
@@ -272,6 +286,7 @@ async function handleSync(req, res) {
 }
 
 const server = createServer(async (req, res) => {
+  for (const [k, v] of Object.entries(SECURITY_HEADERS)) res.setHeader(k, v);
   const url = new URL(req.url, "http://localhost");
   const path = url.pathname;
 

@@ -34,6 +34,9 @@ class Media:
     src: str
     durationSec: float
     condensedAudioSrc: Optional[str] = None
+    # [[inícioCondensado, inícioOriginal, duração], …] em ms (dose_factory enrich):
+    # é por ele que a escuta do áudio condensado acha a legenda de cada instante.
+    condensedMap: list[list[int]] = field(default_factory=list)
     posterSrc: Optional[str] = None
 
 
@@ -86,6 +89,13 @@ class SentenceCard:
     imageSrc: Optional[str] = None
     sceneSrc: Optional[str] = None          # quadro do vídeo no momento da frase-exemplo (dose_factory frames)
     newWords: list[str] = field(default_factory=list)
+    # japonês: outras palavras frequentes com a mesma pronúncia (使用 · 仕様) — a frente,
+    # que é só áudio, fica ambígua; o app mostra a escrita junto (dose_factory enrich)
+    homophones: Optional[list[str]] = None
+    # "word" (padrão) ou "sentence" — card de frase i+1 (`Dose.sentenceCards`)
+    kind: Optional[str] = None
+    # só em card de frase: a palavra nova da frase {lemma, target, meaning, reading, start, end}
+    focus: Optional[dict] = None
 
 
 @dataclass
@@ -116,6 +126,11 @@ class Dose:
     tags: list[str] = field(default_factory=list)
     titleTarget: Optional[str] = None
     premise: Optional[str] = None
+    # Preenchidos por `dose_factory enrich` sobre a dose publicada:
+    # glossary = toda palavra da fala (fora os cards) com significado — tocar na
+    # legenda e "+ card"; sentenceCards = até 5 cards de escuta de frases i+1.
+    glossary: list[dict] = field(default_factory=list)
+    sentenceCards: list[dict] = field(default_factory=list)
     createdAt: str = ""
     schemaVersion: int = SCHEMA_VERSION
 

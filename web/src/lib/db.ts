@@ -55,6 +55,13 @@ export interface CardRecord {
    *  quando o card nasce. `undefined` = registro antigo, ainda não preenchido
    *  (ver `backfillCardTiers`); `null` = palavra fora da tabela do idioma. */
   topikLevel?: string | null;
+  /** «Já sei»: a palavra não entra em fila nenhuma e conta como conhecida (legenda,
+   *  compreensão, nível). Não gasta a cota de novos. Ver `markKnown`. */
+  known?: boolean;
+  /** De onde o card veio, quando não é um dos 20 da dose: "extra" = "+ card" pela
+   *  legenda; "sentence" = card de frase i+1. Nenhum dos dois conta no teto de
+   *  palavras novas do dia. */
+  origin?: "extra" | "sentence";
   updatedAt: number; // last-write-wins na sincronização
 }
 
@@ -68,6 +75,24 @@ export interface ReviewRecord {
   day: string; // YYYY-MM-DD (local)
   elapsedMs: number; // time spent on the card
   state: State; // state at review time
+  /** Copiado do card (`CardRecord.origin`): nota em card extra/de frase não conta
+   *  no teto de palavras novas. */
+  origin?: "extra" | "sentence";
+}
+
+/**
+ * «Não entendi» numa fala da imersão — EVENTO (id global, merge = união), como a
+ * revisão. Desmarcar = apagar com tombstone. É a compreensão REAL da lição, para
+ * comparar com a prevista pelo vocabulário (`/progress`) e calibrar a escada de
+ * dificuldade da pipeline (`ladder.py --feedback`).
+ */
+export interface MarkRecord {
+  uid: string;
+  language: string;
+  doseId: string;
+  segmentId: string;
+  day: string;
+  at: number;
 }
 
 /** Minutos de imersão como EVENTO (e não contador), para somar entre aparelhos. */
@@ -104,7 +129,7 @@ export interface SettingRecord {
 }
 
 /** O que foi apagado aqui, para o outro aparelho apagar também. */
-export type SyncKind = "card" | "review" | "doseProgress" | "immersion" | "setting";
+export type SyncKind = "card" | "review" | "doseProgress" | "immersion" | "setting" | "mark";
 
 export interface TombstoneRecord {
   tid: string; // `${kind}:${id}`
@@ -143,6 +168,7 @@ class ImersaDB extends Dexie {
   doseProgress!: Table<DoseProgressRecord, string>;
   tombstones!: Table<TombstoneRecord, string>;
   settings!: Table<SettingRecord, string>;
+  lineMarks!: Table<MarkRecord, string>;
 
   constructor() {
     super("imersa");
@@ -209,6 +235,8 @@ class ImersaDB extends Dexie {
           }
         });
       });
+    // v5 — «não entendi» por fala (evento)
+    this.version(5).stores({ lineMarks: "uid, language, doseId, at" });
   }
 }
 
@@ -295,15 +323,18 @@ export interface ExportBundle {
   immersion: ImmersionRecord[];
   doseProgress: DoseProgressRecord[];
   settings: SettingRecord[];
+  /** Ausente em backup antigo. */
+  marks?: MarkRecord[];
 }
 
 export async function exportAll(): Promise<ExportBundle> {
-  const [cards, reviews, immersion, doseProgress, settings] = await Promise.all([
+  const [cards, reviews, immersion, doseProgress, settings, marks] = await Promise.all([
     db.cards.toArray(),
     db.reviewLog.toArray(),
     db.immersionLog.toArray(),
     db.doseProgress.toArray(),
     db.settings.toArray(),
+    db.lineMarks.toArray(),
   ]);
   return {
     app: "imersa",
@@ -314,6 +345,7 @@ export async function exportAll(): Promise<ExportBundle> {
     immersion,
     doseProgress,
     settings: settings.filter((s) => !s.key.startsWith(LOCAL_SETTING)),
+    marks,
   };
 }
 
@@ -327,11 +359,20 @@ export async function exportAll(): Promise<ExportBundle> {
  * servidor desfazia a importação inteira.
  */
 export async function importAll(bundle: ExportBundle): Promise<void> {
-  if (bundle.app !== "imersa") throw new Error("Arquivo inválido: não é um backup do Imersa.");
+  // `cards`/`doseProgress` são obrigatórios: sem a checagem, um JSON qualquer
+  // passava daqui e estourava no meio da transação com "Cannot read properties
+  // of undefined" — nada era gravado, mas a mensagem não dizia o porquê.
+  if (
+    bundle?.app !== "imersa" ||
+    !Array.isArray(bundle.cards) ||
+    !Array.isArray(bundle.doseProgress)
+  ) {
+    throw new Error("Arquivo inválido: não é um backup do Imersa.");
+  }
   const now = Date.now();
   await db.transaction(
     "rw",
-    [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones],
+    [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones, db.lineMarks],
     async () => {
       await Promise.all([
         db.cards.clear(),
@@ -339,6 +380,7 @@ export async function importAll(bundle: ExportBundle): Promise<void> {
         db.immersionLog.clear(),
         db.doseProgress.clear(),
         db.tombstones.clear(),
+        db.lineMarks.clear(),
       ]);
       // backup de antes do vencimento por dia: traz o `due` para a régua atual
       await db.cards.bulkPut(
@@ -352,11 +394,17 @@ export async function importAll(bundle: ExportBundle): Promise<void> {
         (bundle.reviews ?? []).map((r) => ({ ...r, uid: r.uid ?? newUid() })),
       );
       await db.immersionLog.bulkPut(bundle.immersion ?? []);
+      await db.lineMarks.bulkPut(bundle.marks ?? []);
       await db.doseProgress.bulkPut(bundle.doseProgress.map((p) => ({ ...p, updatedAt: now })));
       for (const s of bundle.settings ?? []) {
         if (!s.key.startsWith(LOCAL_SETTING)) await db.settings.put({ ...s, updatedAt: now });
       }
       await db.settings.put({ key: IMPORTED_AT_KEY, value: now, updatedAt: now });
+      // Cursor zerado + MESMO id de aparelho = o servidor nunca devolve as linhas
+      // que este aparelho subiu antes (supressão de eco): revisões feitas aqui
+      // depois do backup ficavam na conta e nos outros aparelhos, mas não aqui.
+      // Como no `wipeLocalData`: restaurado = aparelho novo.
+      await db.settings.delete(DEVICE_ID_KEY);
       await db.settings.put({
         key: SYNC_STATE_KEY,
         value: { cursor: 0, pushedAt: 0, lastOkAt: 0, lastError: null },
@@ -368,17 +416,20 @@ export async function importAll(bundle: ExportBundle): Promise<void> {
 
 /** Wipe SRS + progress for a single language (keeps other languages + prefs). */
 export async function resetLanguage(language: string): Promise<void> {
-  const [cards, revs, imm, prog] = await Promise.all([
+  const [cards, revs, imm, prog, marks] = await Promise.all([
     db.cards.where("language").equals(language).toArray(),
     db.reviewLog.where("language").equals(language).toArray(),
     db.immersionLog.where("language").equals(language).toArray(),
     db.doseProgress.where("language").equals(language).toArray(),
+    db.lineMarks.where("language").equals(language).toArray(),
   ]);
   // posição do vídeo (local) das doses deste idioma — o id da dose começa pelo idioma
   const posKeys = (await db.settings.toCollection().primaryKeys())
     .filter((k) => k.startsWith(`${LOCAL_SETTING}mediaPos:${language}-`));
-  await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.tombstones, db.settings], async () => {
+  await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.tombstones, db.settings, db.lineMarks], async () => {
     await db.settings.bulkDelete(posKeys);
+    await db.lineMarks.bulkDelete(marks.map((m) => m.uid));
+    await tombstoneMany("mark", marks.map((m) => m.uid));
     await db.cards.bulkDelete(cards.map((c) => c.key));
     await db.reviewLog.bulkDelete(revs.map((r) => r.uid));
     await db.immersionLog.bulkDelete(imm.map((i) => i.uid));
@@ -392,20 +443,23 @@ export async function resetLanguage(language: string): Promise<void> {
 }
 
 export async function resetAll(): Promise<void> {
-  const [cards, revs, imm, prog, settings] = await Promise.all([
+  const [cards, revs, imm, prog, settings, marks] = await Promise.all([
     db.cards.toArray(),
     db.reviewLog.toArray(),
     db.immersionLog.toArray(),
     db.doseProgress.toArray(),
     db.settings.toArray(),
+    db.lineMarks.toArray(),
   ]);
-  await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones], async () => {
+  await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones, db.lineMarks], async () => {
     await Promise.all([
       db.cards.clear(),
       db.reviewLog.clear(),
       db.immersionLog.clear(),
       db.doseProgress.clear(),
+      db.lineMarks.clear(),
     ]);
+    await tombstoneMany("mark", marks.map((m) => m.uid));
     const syncable = settings.filter((s) => !s.key.startsWith(LOCAL_SETTING));
     const posKeys = settings.filter((s) => s.key.startsWith(`${LOCAL_SETTING}mediaPos:`));
     await db.settings.bulkDelete([...syncable, ...posKeys].map((s) => s.key));
@@ -435,13 +489,14 @@ export async function localProgressSummary(): Promise<{ cards: number; reviews: 
  */
 export async function wipeLocalData(keep: string[] = []): Promise<void> {
   const keepSet = new Set(keep);
-  await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones], async () => {
+  await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones, db.lineMarks], async () => {
     await Promise.all([
       db.cards.clear(),
       db.reviewLog.clear(),
       db.immersionLog.clear(),
       db.doseProgress.clear(),
       db.tombstones.clear(),
+      db.lineMarks.clear(),
     ]);
     const keys = (await db.settings.toCollection().primaryKeys()).filter((k) => !keepSet.has(k));
     await db.settings.bulkDelete(keys);

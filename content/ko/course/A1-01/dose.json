@@ -11,7 +11,594 @@
     "kind": "video",
     "src": "media/main.mp4",
     "durationSec": 1102.021333,
-    "condensedAudioSrc": null,
+    "condensedAudioSrc": "media/condensed.mp3",
+    "condensedMap": [
+      [
+        0,
+        1350,
+        5061
+      ],
+      [
+        5061,
+        24271,
+        3619
+      ],
+      [
+        8680,
+        29535,
+        9509
+      ],
+      [
+        18189,
+        39976,
+        6459
+      ],
+      [
+        24648,
+        48248,
+        8082
+      ],
+      [
+        32730,
+        58048,
+        5060
+      ],
+      [
+        37790,
+        68191,
+        5019
+      ],
+      [
+        42809,
+        75591,
+        4979
+      ],
+      [
+        47788,
+        83151,
+        3340
+      ],
+      [
+        51128,
+        90551,
+        4780
+      ],
+      [
+        55908,
+        98831,
+        7174
+      ],
+      [
+        63082,
+        108038,
+        9053
+      ],
+      [
+        72135,
+        118719,
+        4900
+      ],
+      [
+        77035,
+        126752,
+        4221
+      ],
+      [
+        81256,
+        132471,
+        3860
+      ],
+      [
+        85116,
+        138432,
+        4699
+      ],
+      [
+        89815,
+        144802,
+        4199
+      ],
+      [
+        94014,
+        153159,
+        12035
+      ],
+      [
+        106049,
+        176911,
+        3660
+      ],
+      [
+        109709,
+        182929,
+        4660
+      ],
+      [
+        114369,
+        188887,
+        4660
+      ],
+      [
+        119029,
+        199902,
+        5509
+      ],
+      [
+        124538,
+        206750,
+        4339
+      ],
+      [
+        128877,
+        211803,
+        10223
+      ],
+      [
+        139100,
+        226719,
+        9666
+      ],
+      [
+        148766,
+        241183,
+        4341
+      ],
+      [
+        153107,
+        246936,
+        4821
+      ],
+      [
+        157928,
+        256238,
+        6740
+      ],
+      [
+        164668,
+        264614,
+        8955
+      ],
+      [
+        173623,
+        275539,
+        4180
+      ],
+      [
+        177803,
+        282704,
+        2500
+      ],
+      [
+        180303,
+        288031,
+        4859
+      ],
+      [
+        185162,
+        295191,
+        4056
+      ],
+      [
+        189218,
+        301381,
+        4741
+      ],
+      [
+        193959,
+        310050,
+        5565
+      ],
+      [
+        199524,
+        316325,
+        6550
+      ],
+      [
+        206074,
+        331991,
+        3660
+      ],
+      [
+        209734,
+        341448,
+        4619
+      ],
+      [
+        214353,
+        350431,
+        5339
+      ],
+      [
+        219692,
+        361751,
+        5460
+      ],
+      [
+        225152,
+        375191,
+        4500
+      ],
+      [
+        229652,
+        384270,
+        3301
+      ],
+      [
+        232953,
+        395143,
+        5021
+      ],
+      [
+        237974,
+        407631,
+        5019
+      ],
+      [
+        242993,
+        419270,
+        3941
+      ],
+      [
+        246934,
+        430688,
+        5299
+      ],
+      [
+        252233,
+        442270,
+        3780
+      ],
+      [
+        256013,
+        452304,
+        5060
+      ],
+      [
+        261073,
+        460936,
+        4540
+      ],
+      [
+        265613,
+        470217,
+        4500
+      ],
+      [
+        270113,
+        477631,
+        3900
+      ],
+      [
+        274013,
+        487494,
+        5021
+      ],
+      [
+        279034,
+        498174,
+        4180
+      ],
+      [
+        283214,
+        506311,
+        3580
+      ],
+      [
+        286794,
+        516623,
+        4621
+      ],
+      [
+        291415,
+        526590,
+        3500
+      ],
+      [
+        294915,
+        537191,
+        3740
+      ],
+      [
+        298655,
+        546959,
+        7534
+      ],
+      [
+        306189,
+        563981,
+        9832
+      ],
+      [
+        316021,
+        574781,
+        8350
+      ],
+      [
+        324371,
+        585150,
+        4588
+      ],
+      [
+        328959,
+        591504,
+        5353
+      ],
+      [
+        334312,
+        599794,
+        5958
+      ],
+      [
+        340270,
+        607831,
+        4640
+      ],
+      [
+        344910,
+        614877,
+        7268
+      ],
+      [
+        352178,
+        625484,
+        4697
+      ],
+      [
+        356875,
+        632325,
+        5247
+      ],
+      [
+        362122,
+        640660,
+        4220
+      ],
+      [
+        366342,
+        646158,
+        4619
+      ],
+      [
+        370961,
+        653135,
+        7020
+      ],
+      [
+        377981,
+        663540,
+        4340
+      ],
+      [
+        382321,
+        669985,
+        5787
+      ],
+      [
+        388108,
+        678752,
+        5037
+      ],
+      [
+        393145,
+        687733,
+        5019
+      ],
+      [
+        398164,
+        695338,
+        6680
+      ],
+      [
+        404844,
+        704631,
+        4100
+      ],
+      [
+        408944,
+        710505,
+        5188
+      ],
+      [
+        414132,
+        717877,
+        11689
+      ],
+      [
+        425821,
+        731161,
+        6380
+      ],
+      [
+        432201,
+        739659,
+        4373
+      ],
+      [
+        436574,
+        745923,
+        5931
+      ],
+      [
+        442505,
+        753970,
+        4860
+      ],
+      [
+        447365,
+        761231,
+        6817
+      ],
+      [
+        454182,
+        771824,
+        3934
+      ],
+      [
+        458116,
+        777815,
+        6700
+      ],
+      [
+        464816,
+        786733,
+        4060
+      ],
+      [
+        468876,
+        793438,
+        5739
+      ],
+      [
+        474615,
+        808905,
+        6278
+      ],
+      [
+        480893,
+        816425,
+        8539
+      ],
+      [
+        489432,
+        828544,
+        8264
+      ],
+      [
+        497696,
+        840115,
+        5468
+      ],
+      [
+        503164,
+        849235,
+        7015
+      ],
+      [
+        510179,
+        859384,
+        5126
+      ],
+      [
+        515305,
+        867584,
+        6423
+      ],
+      [
+        521728,
+        877555,
+        5768
+      ],
+      [
+        527496,
+        887265,
+        5860
+      ],
+      [
+        533356,
+        896743,
+        5657
+      ],
+      [
+        539013,
+        906396,
+        6032
+      ],
+      [
+        545045,
+        914865,
+        7021
+      ],
+      [
+        552066,
+        926144,
+        6006
+      ],
+      [
+        558072,
+        937231,
+        7159
+      ],
+      [
+        565231,
+        948903,
+        6205
+      ],
+      [
+        571436,
+        960921,
+        5573
+      ],
+      [
+        577009,
+        969845,
+        7475
+      ],
+      [
+        584484,
+        981225,
+        6900
+      ],
+      [
+        591384,
+        991238,
+        5704
+      ],
+      [
+        597088,
+        998865,
+        6511
+      ],
+      [
+        603599,
+        1008738,
+        5573
+      ],
+      [
+        609172,
+        1016714,
+        6608
+      ],
+      [
+        615780,
+        1027152,
+        6685
+      ],
+      [
+        622465,
+        1037105,
+        6312
+      ],
+      [
+        628777,
+        1049064,
+        6622
+      ],
+      [
+        635399,
+        1059206,
+        7284
+      ],
+      [
+        642683,
+        1069264,
+        6131
+      ],
+      [
+        648814,
+        1077805,
+        5757
+      ],
+      [
+        654571,
+        1087991,
+        4139
+      ],
+      [
+        658710,
+        1094793,
+        6500
+      ]
+    ],
     "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
   },
   "segments": [
@@ -28,7 +615,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "학교",
@@ -121,7 +710,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -141,6 +732,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "아빠",
           "surface": "아빠",
           "start": 3,
@@ -156,7 +754,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "같이",
@@ -186,6 +786,13 @@
           "surface": "아침",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -209,6 +816,13 @@
           "surface": "의사",
           "start": 4,
           "end": 6
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -261,6 +875,13 @@
           "surface": "공무원",
           "start": 4,
           "end": 7
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -306,13 +927,22 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고등학생",
           "surface": "고등학생",
           "start": 4,
           "end": 8
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 8,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -329,7 +959,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "학교",
@@ -354,6 +986,13 @@
       "translation": "Eu não vou para a escola.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "학교",
           "surface": "학교",
@@ -384,6 +1023,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "집",
           "surface": "집",
           "start": 3,
@@ -411,6 +1057,13 @@
           "surface": "오후",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -427,7 +1080,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "집",
@@ -453,10 +1108,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "놀다",
@@ -480,6 +1144,13 @@
           "surface": "저녁",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -568,6 +1239,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "우리",
+          "surface": "우리",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "공원",
           "surface": "공원",
           "start": 4,
@@ -591,6 +1269,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "아빠",
           "surface": "아빠",
           "start": 3,
@@ -606,7 +1291,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "같이",
@@ -615,10 +1302,10 @@
           "end": 17
         },
         {
-          "lemma": "산책하다",
-          "surface": "산책해",
+          "lemma": "산책",
+          "surface": "산책",
           "start": 18,
-          "end": 21
+          "end": 20
         }
       ]
     },
@@ -699,7 +1386,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -719,6 +1408,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "아빠",
           "surface": "아빠",
           "start": 3,
@@ -734,7 +1430,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 9,
-          "end": 11
+          "end": 11,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "같이",
@@ -764,6 +1462,13 @@
           "surface": "아침",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -787,6 +1492,13 @@
           "surface": "의사",
           "start": 4,
           "end": 6
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -839,6 +1551,13 @@
           "surface": "공무원",
           "start": 4,
           "end": 7
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -884,13 +1603,22 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고등학생",
           "surface": "고등학생",
           "start": 4,
           "end": 8
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 8,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -907,7 +1635,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "학교",
@@ -932,6 +1662,13 @@
       "translation": "Eu não vou para a escola.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "학교",
           "surface": "학교",
@@ -962,6 +1699,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "집",
           "surface": "집",
           "start": 3,
@@ -989,6 +1733,13 @@
           "surface": "오후",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -1005,7 +1756,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "집",
@@ -1031,10 +1784,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "놀다",
@@ -1058,6 +1820,13 @@
           "surface": "저녁",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -1146,6 +1915,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "우리",
+          "surface": "우리",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "공원",
           "surface": "공원",
           "start": 4,
@@ -1169,6 +1945,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "아빠",
           "surface": "아빠",
           "start": 3,
@@ -1184,7 +1967,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "같이",
@@ -1193,10 +1978,10 @@
           "end": 17
         },
         {
-          "lemma": "산책하다",
-          "surface": "산책해",
+          "lemma": "산책",
+          "surface": "산책",
           "start": 18,
-          "end": 21
+          "end": 20
         }
       ]
     },
@@ -1277,7 +2062,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "있다",
@@ -1297,6 +2084,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "아빠",
           "surface": "아빠",
           "start": 3,
@@ -1312,7 +2106,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "같이",
@@ -1342,6 +2138,13 @@
           "surface": "아침",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -1365,6 +2168,13 @@
           "surface": "의사",
           "start": 4,
           "end": 6
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -1417,6 +2227,13 @@
           "surface": "공무원",
           "start": 4,
           "end": 7
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 7,
+          "end": 8,
+          "dict": true
         }
       ]
     },
@@ -1462,13 +2279,22 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "고등학생",
           "surface": "고등학생",
           "start": 4,
           "end": 8
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 8,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -1485,7 +2311,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "학교",
@@ -1510,6 +2338,13 @@
       "translation": "Eu não vou para a escola.",
       "speakerId": "part_a",
       "tokens": [
+        {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
         {
           "lemma": "학교",
           "surface": "학교",
@@ -1540,6 +2375,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "집",
           "surface": "집",
           "start": 3,
@@ -1567,6 +2409,13 @@
           "surface": "오후",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -1583,7 +2432,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 0,
-          "end": 2
+          "end": 2,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "집",
@@ -1609,10 +2460,19 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "윤지",
           "surface": "윤지",
           "start": 3,
-          "end": 5
+          "end": 5,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "놀다",
@@ -1636,6 +2496,13 @@
           "surface": "저녁",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -1724,6 +2591,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "우리",
+          "surface": "우리",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "공원",
           "surface": "공원",
           "start": 4,
@@ -1747,6 +2621,13 @@
       "speakerId": "part_a",
       "tokens": [
         {
+          "lemma": "저",
+          "surface": "저",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "아빠",
           "surface": "아빠",
           "start": 3,
@@ -1762,7 +2643,9 @@
           "lemma": "윤지",
           "surface": "윤지",
           "start": 11,
-          "end": 13
+          "end": 13,
+          "dict": true,
+          "proper": "name"
         },
         {
           "lemma": "같이",
@@ -1771,10 +2654,10 @@
           "end": 17
         },
         {
-          "lemma": "산책하다",
-          "surface": "산책해",
+          "lemma": "산책",
+          "surface": "산책",
           "start": 18,
-          "end": 21
+          "end": 20
         }
       ]
     },
@@ -1792,6 +2675,20 @@
           "surface": "직업",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 4,
+          "end": 5,
+          "dict": true
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 5,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -1809,6 +2706,13 @@
           "surface": "오늘",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "어디",
+          "surface": "어디",
+          "start": 3,
+          "end": 5,
+          "dict": true
         },
         {
           "lemma": "가다",
@@ -1832,6 +2736,13 @@
           "surface": "벽",
           "start": 0,
           "end": 1
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 1,
+          "end": 2,
+          "dict": true
         }
       ]
     },
@@ -1926,6 +2837,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "으악",
+          "surface": "으악",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "거미",
           "surface": "거미",
           "start": 4,
@@ -1953,6 +2871,13 @@
           "surface": "바닥",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2041,6 +2966,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "으악",
+          "surface": "으악",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "호박",
           "surface": "호박",
           "start": 4,
@@ -2068,6 +3000,13 @@
           "surface": "천장",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2168,6 +3107,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "으악",
+          "surface": "으악",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "박쥐",
           "surface": "박쥐",
           "start": 4,
@@ -2195,6 +3141,13 @@
           "surface": "문",
           "start": 0,
           "end": 1
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 1,
+          "end": 2,
+          "dict": true
         }
       ]
     },
@@ -2243,10 +3196,24 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "어",
+          "surface": "어",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "사람",
           "surface": "사람",
           "start": 3,
           "end": 5
+        },
+        {
+          "lemma": "아니다",
+          "surface": "아니",
+          "start": 7,
+          "end": 9,
+          "dict": true
         }
       ]
     },
@@ -2264,6 +3231,13 @@
           "surface": "인형",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2276,6 +3250,13 @@
       "translation": "Aaah! A boneca dá medo.",
       "speakerId": "part_b",
       "tokens": [
+        {
+          "lemma": "으악",
+          "surface": "으악",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
         {
           "lemma": "인형",
           "surface": "인형",
@@ -2304,6 +3285,13 @@
           "surface": "창문",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2375,6 +3363,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "으악",
+          "surface": "으악",
+          "start": 0,
+          "end": 2,
+          "dict": true
+        },
+        {
           "lemma": "고양이",
           "surface": "고양이",
           "start": 4,
@@ -2421,6 +3416,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "어",
+          "surface": "어",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "고양이",
           "surface": "고양이",
           "start": 3,
@@ -2454,6 +3456,13 @@
           "surface": "고양이",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -2494,6 +3503,13 @@
           "surface": "벽",
           "start": 0,
           "end": 1
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 1,
+          "end": 2,
+          "dict": true
         }
       ]
     },
@@ -2615,6 +3631,13 @@
           "surface": "바닥",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2730,6 +3753,13 @@
           "surface": "천장",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2857,6 +3887,13 @@
           "surface": "문",
           "start": 0,
           "end": 1
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 1,
+          "end": 2,
+          "dict": true
         }
       ]
     },
@@ -2909,6 +3946,13 @@
           "surface": "사람",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "아니다",
+          "surface": "아니",
+          "start": 4,
+          "end": 6,
+          "dict": true
         }
       ]
     },
@@ -2926,6 +3970,13 @@
           "surface": "인형",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -2966,6 +4017,13 @@
           "surface": "창문",
           "start": 0,
           "end": 2
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 2,
+          "end": 3,
+          "dict": true
         }
       ]
     },
@@ -3116,6 +4174,13 @@
           "surface": "고양이",
           "start": 3,
           "end": 6
+        },
+        {
+          "lemma": "이다",
+          "surface": "이",
+          "start": 6,
+          "end": 7,
+          "dict": true
         }
       ]
     },
@@ -3152,6 +4217,13 @@
       "speakerId": "part_b",
       "tokens": [
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 0,
+          "end": 1,
+          "dict": true
+        },
+        {
           "lemma": "무섭다",
           "surface": "무서워",
           "start": 3,
@@ -3181,6 +4253,13 @@
           "end": 3
         },
         {
+          "lemma": "뭐",
+          "surface": "뭐",
+          "start": 5,
+          "end": 6,
+          "dict": true
+        },
+        {
           "lemma": "있다",
           "surface": "있",
           "start": 8,
@@ -3204,10 +4283,12 @@
       "freqRank": 2,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7648a63d6741.jpg",
       "newWords": [
         "있"
       ],
-      "sceneSrc": "media/frames/s7648a63d6741.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-안",
@@ -3223,8 +4304,10 @@
       "freqRank": 6,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s31f8f48af095.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s31f8f48af095.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-가다",
@@ -3240,10 +4323,12 @@
       "freqRank": 7,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s8c93ce1d0725.jpg",
       "newWords": [
         "가"
       ],
-      "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-오다",
@@ -3259,10 +4344,12 @@
       "freqRank": 14,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf521a1f8341e.jpg",
       "newWords": [
         "와"
       ],
-      "sceneSrc": "media/frames/sf521a1f8341e.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-사람",
@@ -3275,11 +4362,13 @@
       "context": "사람이 아니에요. — Não é uma pessoa.",
       "audioClipSrc": "media/tts/w61738cb6ca26.mp3",
       "exampleAudioSrc": "media/frag/fc8145ddefcae.mp3",
-      "freqRank": 19,
+      "freqRank": 12,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/se0b1c7986374.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/se0b1c7986374.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-엄마",
@@ -3292,11 +4381,13 @@
       "context": "엄마가 집에 와요. — A mamãe vem para casa.",
       "audioClipSrc": "media/tts/we771a8b3254e.mp3",
       "exampleAudioSrc": "media/frag/f541c87d39ca8.mp3",
-      "freqRank": 33,
+      "freqRank": 32,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sf60b20e50065.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sf60b20e50065.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-집",
@@ -3309,11 +4400,13 @@
       "context": "저는 집에 있어요. — Eu estou em casa.",
       "audioClipSrc": "media/tts/w4f15583cc4aa.mp3",
       "exampleAudioSrc": "media/frag/f4cd5e3d31d02.mp3",
-      "freqRank": 41,
+      "freqRank": 38,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7648a63d6741.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s7648a63d6741.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-아빠",
@@ -3326,11 +4419,13 @@
       "context": "아빠는 의사예요. — O papai é médico.",
       "audioClipSrc": "media/tts/wb05c8c893ddb.mp3",
       "exampleAudioSrc": "media/frag/f5524ebad952e.mp3",
-      "freqRank": 46,
+      "freqRank": 44,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s15e1995fe18a.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s15e1995fe18a.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-오늘",
@@ -3343,11 +4438,13 @@
       "context": "오늘 어디에 가요? — Hoje você vai aonde?",
       "audioClipSrc": "media/tts/we1e8a7b40216.mp3",
       "exampleAudioSrc": "media/frag/f1fbd9831363b.mp3",
-      "freqRank": 49,
+      "freqRank": 47,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sc5f8cf22ff8c.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sc5f8cf22ff8c.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-같이",
@@ -3360,11 +4457,13 @@
       "context": "저는 아빠 엄마 윤지와 같이 살아요. — Eu moro junto com o papai, a mamãe e a Yunji.",
       "audioClipSrc": "media/tts/w536a6b0fa83f.mp3",
       "exampleAudioSrc": "media/frag/fc15ee1be1def.mp3",
-      "freqRank": 59,
+      "freqRank": 60,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s6f88d25ec5a4.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s6f88d25ec5a4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-살다",
@@ -3377,13 +4476,15 @@
       "context": "저는 아빠 엄마 윤지와 같이 살아요. — Eu moro junto com o papai, a mamãe e a Yunji.",
       "audioClipSrc": "media/tts/w172e0666e518.mp3",
       "exampleAudioSrc": "media/frag/fc794ab67a309.mp3",
-      "freqRank": 81,
+      "freqRank": 77,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s6f88d25ec5a4.jpg",
       "newWords": [
         "살"
       ],
-      "sceneSrc": "media/frames/s6f88d25ec5a4.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-크다",
@@ -3396,13 +4497,15 @@
       "context": "입이 커요. — A boca é grande.",
       "audioClipSrc": "media/tts/wdd0f1a89dca1.mp3",
       "exampleAudioSrc": "media/frag/f1df1b5dfe15a.mp3",
-      "freqRank": 90,
+      "freqRank": 89,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sdc05df31ce91.jpg",
       "newWords": [
         "커"
       ],
-      "sceneSrc": "media/frames/sdc05df31ce91.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-눈",
@@ -3415,11 +4518,13 @@
       "context": "고양이 눈이 커요. — Os olhos do gato são grandes.",
       "audioClipSrc": "media/tts/w0726db86e1da.mp3",
       "exampleAudioSrc": "media/frag/fe2479f292db6.mp3",
-      "freqRank": 123,
+      "freqRank": 126,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sd531de5a6bd9.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sd531de5a6bd9.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-뒤",
@@ -3435,8 +4540,10 @@
       "freqRank": 143,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s9bceac3167ea.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s9bceac3167ea.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-문",
@@ -3449,11 +4556,13 @@
       "context": "문이에요. — É uma porta.",
       "audioClipSrc": "media/tts/w0dadef774087.mp3",
       "exampleAudioSrc": "media/frag/f9210d91e61cb.mp3",
-      "freqRank": 164,
+      "freqRank": 292,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sbc50df50c206.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sbc50df50c206.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-아침",
@@ -3466,11 +4575,13 @@
       "context": "아침이에요. — É de manhã.",
       "audioClipSrc": "media/tts/wa45cabcadba8.mp3",
       "exampleAudioSrc": "media/frag/fbf60ebe7a0cb.mp3",
-      "freqRank": 169,
+      "freqRank": 167,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s7d35bbb5e09b.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s7d35bbb5e09b.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-방",
@@ -3483,11 +4594,13 @@
       "context": "방 벽에 뭐가 있어요? — O que tem na parede do seu quarto?",
       "audioClipSrc": "media/tts/w5c8c70c261a9.mp3",
       "exampleAudioSrc": "media/frag/fe24c128ba4f8.mp3",
-      "freqRank": 199,
+      "freqRank": 200,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/se970efe89e8f.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/se970efe89e8f.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-작다",
@@ -3500,13 +4613,15 @@
       "context": "고양이가 작아요. — O gato é pequeno.",
       "audioClipSrc": "media/tts/w420b36b7aa43.mp3",
       "exampleAudioSrc": "media/frag/f4df793232f0f.mp3",
-      "freqRank": 232,
+      "freqRank": 247,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s3bcd26a5799c.jpg",
       "newWords": [
         "작"
       ],
-      "sceneSrc": "media/frames/s3bcd26a5799c.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-입",
@@ -3519,11 +4634,13 @@
       "context": "입이 커요. — A boca é grande.",
       "audioClipSrc": "media/tts/w62368820ee32.mp3",
       "exampleAudioSrc": "media/frag/fb61252f6fb5e.mp3",
-      "freqRank": 234,
+      "freqRank": 243,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/sdc05df31ce91.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/sdc05df31ce91.jpg"
+      "kind": null,
+      "focus": null
     },
     {
       "id": "w-병원",
@@ -3536,11 +4653,13 @@
       "context": "아빠는 병원에 가요. — O papai vai para o hospital.",
       "audioClipSrc": "media/tts/w00536290cb52.mp3",
       "exampleAudioSrc": "media/frag/f6231b4dc521d.mp3",
-      "freqRank": 236,
+      "freqRank": 237,
       "topikLevel": "A",
       "imageSrc": null,
+      "sceneSrc": "media/frames/s9eaaeea2f581.jpg",
       "newWords": [],
-      "sceneSrc": "media/frames/s9eaaeea2f581.jpg"
+      "kind": null,
+      "focus": null
     }
   ],
   "source": {
@@ -3799,5 +4918,781 @@
   ],
   "titleTarget": "윤지는 학교에 가요 · 문 뒤에 뭐가 있어요?",
   "premise": "Histórias ilustradas para iniciante absoluto (A0), narradas devagar por uma professora, com desenho na tela para cada frase. Só três estruturas: «X é Y», «em tal lugar tem/está X» e «X vai / vem». Vocabulário de casa, família, profissões e coisas do quarto.",
-  "createdAt": "2026-08-22T18:42:25.796173+00:00"
+  "glossary": [
+    {
+      "lemma": "윤지",
+      "target": "윤지",
+      "reading": null,
+      "meaning": "nome próprio",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": null,
+      "dict": true
+    },
+    {
+      "lemma": "학교",
+      "target": "학교",
+      "reading": null,
+      "meaning": "escola",
+      "meaningEn": null,
+      "freqRank": 279,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-학교",
+        "segmentId": "s1",
+        "target": "학교",
+        "translation": "escola",
+        "startMs": 1500,
+        "endMs": 6061,
+        "reading": null,
+        "context": "윤지는 학교에 가요 — A Yunji vai para a escola",
+        "audioClipSrc": "media/tts/w09b9db30e2d1.mp3",
+        "exampleAudioSrc": "media/frag/feffeda6000ec.mp3",
+        "freqRank": 279,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8c93ce1d0725.jpg"
+      }
+    },
+    {
+      "lemma": "저",
+      "target": "저",
+      "reading": null,
+      "meaning": "eu (formal)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "이다",
+      "target": "이다",
+      "reading": null,
+      "meaning": "ser (copula: 이에요/예요)",
+      "meaningEn": null,
+      "freqRank": 1396,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "의사",
+      "target": "의사",
+      "reading": null,
+      "meaning": "médico(a)",
+      "meaningEn": null,
+      "freqRank": 188,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-의사",
+        "segmentId": "s7",
+        "target": "의사",
+        "translation": "médico(a)",
+        "startMs": 53180,
+        "endMs": 55980,
+        "reading": null,
+        "context": "아빠는 의사예요. — O papai é médico.",
+        "audioClipSrc": "media/tts/wcb1e84d6500a.mp3",
+        "exampleAudioSrc": "media/frag/f9efa1b7221e5.mp3",
+        "freqRank": 188,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s15e1995fe18a.jpg"
+      }
+    },
+    {
+      "lemma": "공무원",
+      "target": "공무원",
+      "reading": null,
+      "meaning": "funcionário(a) público(a)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-공무원",
+        "segmentId": "s9",
+        "target": "공무원",
+        "translation": "funcionário(a) público(a)",
+        "startMs": 68341,
+        "endMs": 72860,
+        "reading": null,
+        "context": "엄마는 공무원이에요. — A mamãe é funcionária pública.",
+        "audioClipSrc": "media/tts/w4451932290ec.mp3",
+        "exampleAudioSrc": "media/frag/fa22b027f9613.mp3",
+        "freqRank": null,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s08e03d32dbaf.jpg"
+      }
+    },
+    {
+      "lemma": "시청",
+      "target": "시청",
+      "reading": null,
+      "meaning": "prefeitura",
+      "meaningEn": null,
+      "freqRank": 4091,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-시청",
+        "segmentId": "s10",
+        "target": "시청",
+        "translation": "prefeitura",
+        "startMs": 75741,
+        "endMs": 80220,
+        "reading": null,
+        "context": "엄마는 시청에 가요. — A mamãe vai para a prefeitura.",
+        "audioClipSrc": "media/tts/w425f74fba36a.mp3",
+        "exampleAudioSrc": "media/frag/f29f681189c41.mp3",
+        "freqRank": 4091,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sf4c67f73beb9.jpg"
+      }
+    },
+    {
+      "lemma": "고등학생",
+      "target": "고등학생",
+      "reading": null,
+      "meaning": "estudante do ensino médio",
+      "meaningEn": null,
+      "freqRank": 8042,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-고등학생",
+        "segmentId": "s11",
+        "target": "고등학생",
+        "translation": "estudante do ensino médio",
+        "startMs": 83301,
+        "endMs": 86141,
+        "reading": null,
+        "context": "윤지는 고등학생이에요. — A Yunji é estudante do ensino médio.",
+        "audioClipSrc": "media/tts/w9d6d54a25002.mp3",
+        "exampleAudioSrc": "media/frag/f960fd51e0039.mp3",
+        "freqRank": 8042,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s8b41e95c3b64.jpg"
+      }
+    },
+    {
+      "lemma": "오후",
+      "target": "오후",
+      "reading": null,
+      "meaning": "tarde (depois do meio-dia)",
+      "meaningEn": null,
+      "freqRank": 841,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-오후",
+        "segmentId": "s15",
+        "target": "오후",
+        "translation": "tarde (depois do meio-dia)",
+        "startMs": 108188,
+        "endMs": 112188,
+        "reading": null,
+        "context": "오후예요. — É de tarde.",
+        "audioClipSrc": "media/tts/waefb9b6ffa0b.mp3",
+        "exampleAudioSrc": "media/frag/fff1ae31e695a.mp3",
+        "freqRank": 841,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd7bae2e51101.jpg"
+      }
+    },
+    {
+      "lemma": "놀다",
+      "target": "놀다",
+      "reading": null,
+      "meaning": "brincar, se divertir, passear",
+      "meaningEn": null,
+      "freqRank": 574,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-놀다",
+        "segmentId": "s17",
+        "target": "놀다",
+        "translation": "brincar, se divertir, passear",
+        "startMs": 118869,
+        "endMs": 123269,
+        "reading": null,
+        "context": "저는 윤지와 놀아요. — Eu brinco com a Yunji.",
+        "audioClipSrc": "media/tts/w2802951b0d91.mp3",
+        "exampleAudioSrc": "media/frag/f2518f1174ee9.mp3",
+        "freqRank": 574,
+        "topikLevel": "A",
+        "newWords": [
+          "놀"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/se8a60d962a3f.jpg"
+      }
+    },
+    {
+      "lemma": "저녁",
+      "target": "저녁",
+      "reading": null,
+      "meaning": "noite (também: jantar)",
+      "meaningEn": null,
+      "freqRank": 331,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-02"
+    },
+    {
+      "lemma": "다녀오다",
+      "target": "다녀오다",
+      "reading": null,
+      "meaning": "ir e voltar (다녀왔습니다 = cheguei)",
+      "meaningEn": null,
+      "freqRank": 1137,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-다녀오다",
+        "segmentId": "s21",
+        "target": "다녀오다",
+        "translation": "ir e voltar (다녀왔습니다 = cheguei)",
+        "startMs": 144952,
+        "endMs": 148651,
+        "reading": null,
+        "context": "\"다녀왔습니다.\" — «Cheguei.»",
+        "audioClipSrc": "media/tts/wecb4c8a39e67.mp3",
+        "exampleAudioSrc": "media/frag/fe045ddbe3aa5.mp3",
+        "freqRank": 1137,
+        "topikLevel": "A",
+        "newWords": [
+          "다녀왔"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb1ff83a6024e.jpg"
+      }
+    },
+    {
+      "lemma": "우리",
+      "target": "우리",
+      "reading": null,
+      "meaning": "nós; nosso",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "공원",
+      "target": "공원",
+      "reading": null,
+      "meaning": "parque",
+      "meaningEn": null,
+      "freqRank": 1082,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-공원",
+        "segmentId": "s22",
+        "target": "공원",
+        "translation": "parque",
+        "startMs": 153309,
+        "endMs": 158148,
+        "reading": null,
+        "context": "우리는 공원에 가요. — Nós vamos para o parque.",
+        "audioClipSrc": "media/tts/wa5d6ac446586.mp3",
+        "exampleAudioSrc": "media/frag/ff313377c1c3a.mp3",
+        "freqRank": 1082,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s3a6b7af92c72.jpg"
+      }
+    },
+    {
+      "lemma": "산책",
+      "target": "산책",
+      "reading": null,
+      "meaning": "passeio, caminhada (산책하다 = passear)",
+      "meaningEn": null,
+      "freqRank": 2246,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-산책",
+        "segmentId": "s23",
+        "target": "산책",
+        "translation": "passeio, caminhada (산책하다 = passear)",
+        "startMs": 158891,
+        "endMs": 164844,
+        "reading": null,
+        "context": "저는 아빠, 엄마, 윤지와 같이 산책해요. — Eu passeio junto com o papai, a mamãe e a Yunji.",
+        "audioClipSrc": "media/tts/w51472ded6ee6.mp3",
+        "exampleAudioSrc": "media/frag/f3aee3b665c25.mp3",
+        "freqRank": 2246,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sb038df86791a.jpg"
+      }
+    },
+    {
+      "lemma": "직업",
+      "target": "직업",
+      "reading": null,
+      "meaning": "profissão",
+      "meaningEn": null,
+      "freqRank": 863,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-직업",
+        "segmentId": "s68",
+        "target": "직업",
+        "translation": "profissão",
+        "startMs": 564131,
+        "endMs": 573463,
+        "reading": null,
+        "context": "직업이 뭐예요? — Qual é a sua profissão?",
+        "audioClipSrc": "media/tts/w7e2222eb5ea8.mp3",
+        "exampleAudioSrc": "media/frag/f4caf897097fe.mp3",
+        "freqRank": 863,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sc4c7536300d8.jpg"
+      }
+    },
+    {
+      "lemma": "뭐",
+      "target": "뭐",
+      "reading": null,
+      "meaning": "o quê",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "어디",
+      "target": "어디",
+      "reading": null,
+      "meaning": "onde",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "벽",
+      "target": "벽",
+      "reading": null,
+      "meaning": "parede",
+      "meaningEn": null,
+      "freqRank": 612,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-벽",
+        "segmentId": "s70",
+        "target": "벽",
+        "translation": "parede",
+        "startMs": 585300,
+        "endMs": 589388,
+        "reading": null,
+        "context": "벽이에요. — É uma parede.",
+        "audioClipSrc": "media/tts/w71837b888c19.mp3",
+        "exampleAudioSrc": "media/frag/f2bdf30e43045.mp3",
+        "freqRank": 612,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/scd8168f937bf.jpg"
+      }
+    },
+    {
+      "lemma": "거미줄",
+      "target": "거미줄",
+      "reading": null,
+      "meaning": "teia de aranha",
+      "meaningEn": null,
+      "freqRank": 7220,
+      "topikLevel": null,
+      "card": {
+        "id": "w-거미줄",
+        "segmentId": "s71",
+        "target": "거미줄",
+        "translation": "teia de aranha",
+        "startMs": 591654,
+        "endMs": 596507,
+        "reading": null,
+        "context": "벽에 거미줄이 있어요. — Na parede tem uma teia de aranha.",
+        "audioClipSrc": "media/tts/w7af7fa740d51.mp3",
+        "exampleAudioSrc": "media/frag/f8e78dfcf9cb6.mp3",
+        "freqRank": 7220,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sd0b04d5560dd.jpg"
+      }
+    },
+    {
+      "lemma": "거미",
+      "target": "거미",
+      "reading": null,
+      "meaning": "aranha",
+      "meaningEn": null,
+      "freqRank": 4243,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-거미",
+        "segmentId": "s73",
+        "target": "거미",
+        "translation": "aranha",
+        "startMs": 607981,
+        "endMs": 612121,
+        "reading": null,
+        "context": "거미가 커요. — A aranha é grande.",
+        "audioClipSrc": "media/tts/w99384a8aa6d5.mp3",
+        "exampleAudioSrc": "media/frag/ffddb9a93fa2a.mp3",
+        "freqRank": 4243,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/sbbfac7e1b9e6.jpg"
+      }
+    },
+    {
+      "lemma": "으악",
+      "target": "으악",
+      "reading": null,
+      "meaning": "aaah! (susto)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "B",
+      "dict": true
+    },
+    {
+      "lemma": "무섭다",
+      "target": "무섭다",
+      "reading": null,
+      "meaning": "dar medo, ter medo; assustador",
+      "meaningEn": null,
+      "freqRank": 305,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-무섭다",
+        "segmentId": "s126",
+        "target": "무섭다",
+        "translation": "dar medo, ter medo; assustador",
+        "startMs": 1088141,
+        "endMs": 1091780,
+        "reading": null,
+        "context": "뭐가 무서워요? — O que dá medo em você?",
+        "audioClipSrc": "media/tts/wdba77a38f70b.mp3",
+        "exampleAudioSrc": "media/frag/f7eb701748170.mp3",
+        "freqRank": 305,
+        "topikLevel": "A",
+        "newWords": [
+          "무서워"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s3aac5742f0fb.jpg"
+      }
+    },
+    {
+      "lemma": "바닥",
+      "target": "바닥",
+      "reading": null,
+      "meaning": "chão",
+      "meaningEn": null,
+      "freqRank": 771,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-바닥",
+        "segmentId": "s75",
+        "target": "바닥",
+        "translation": "chão",
+        "startMs": 625634,
+        "endMs": 629831,
+        "reading": null,
+        "context": "바닥이에요. — É o chão.",
+        "audioClipSrc": "media/tts/w132db3d18037.mp3",
+        "exampleAudioSrc": "media/frag/f1723f0e87ede.mp3",
+        "freqRank": 771,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s11fd25165dd0.jpg"
+      }
+    },
+    {
+      "lemma": "호박",
+      "target": "호박",
+      "reading": null,
+      "meaning": "abóbora",
+      "meaningEn": null,
+      "freqRank": 5047,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-호박",
+        "segmentId": "s78",
+        "target": "호박",
+        "translation": "abóbora",
+        "startMs": 646308,
+        "endMs": 650427,
+        "reading": null,
+        "context": "호박이 웃어요. — A abóbora ri.",
+        "audioClipSrc": "media/tts/w82db778815ed.mp3",
+        "exampleAudioSrc": "media/frag/fdd59f2b9290e.mp3",
+        "freqRank": 5047,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s5baee2a05118.jpg"
+      }
+    },
+    {
+      "lemma": "웃다",
+      "target": "웃다",
+      "reading": null,
+      "meaning": "rir, sorrir",
+      "meaningEn": null,
+      "freqRank": 545,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-웃다",
+        "segmentId": "s78",
+        "target": "웃다",
+        "translation": "rir, sorrir",
+        "startMs": 646308,
+        "endMs": 650427,
+        "reading": null,
+        "context": "호박이 웃어요. — A abóbora ri.",
+        "audioClipSrc": "media/tts/wec0bf763da47.mp3",
+        "exampleAudioSrc": "media/frag/f732078588153.mp3",
+        "freqRank": 545,
+        "topikLevel": "A",
+        "newWords": [
+          "웃"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s5baee2a05118.jpg"
+      }
+    },
+    {
+      "lemma": "천장",
+      "target": "천장",
+      "reading": null,
+      "meaning": "teto",
+      "meaningEn": null,
+      "freqRank": 3399,
+      "topikLevel": "B",
+      "card": {
+        "id": "w-천장",
+        "segmentId": "s80",
+        "target": "천장",
+        "translation": "teto",
+        "startMs": 663690,
+        "endMs": 667530,
+        "reading": null,
+        "context": "천장이에요. — É o teto.",
+        "audioClipSrc": "media/tts/w3565aec9ac32.mp3",
+        "exampleAudioSrc": "media/frag/f0fc807e7ac4c.mp3",
+        "freqRank": 3399,
+        "topikLevel": "B",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/se830b9884474.jpg"
+      }
+    },
+    {
+      "lemma": "박쥐",
+      "target": "박쥐",
+      "reading": null,
+      "meaning": "morcego",
+      "meaningEn": null,
+      "freqRank": 3220,
+      "topikLevel": null,
+      "card": {
+        "id": "w-박쥐",
+        "segmentId": "s82",
+        "target": "박쥐",
+        "translation": "morcego",
+        "startMs": 678902,
+        "endMs": 683439,
+        "reading": null,
+        "context": "엄마 박쥐가 커요. — O morcego-mãe é grande.",
+        "audioClipSrc": "media/tts/w5adba6a85e33.mp3",
+        "exampleAudioSrc": "media/frag/f4ae22c7f66ee.mp3",
+        "freqRank": 3220,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s2c8d7875d387.jpg"
+      }
+    },
+    {
+      "lemma": "아기",
+      "target": "아기",
+      "reading": null,
+      "meaning": "bebê",
+      "meaningEn": null,
+      "freqRank": 236,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-아기",
+        "segmentId": "s96",
+        "target": "아기",
+        "translation": "bebê",
+        "startMs": 786883,
+        "endMs": 790443,
+        "reading": null,
+        "context": "아기 고양이예요. — É um gato bebê.",
+        "audioClipSrc": "media/tts/wd6d5c69c36e9.mp3",
+        "exampleAudioSrc": "media/frag/fd13e13daca4b.mp3",
+        "freqRank": 236,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/saf608a1136f3.jpg"
+      }
+    },
+    {
+      "lemma": "어",
+      "target": "어",
+      "reading": null,
+      "meaning": "ué!, ah!",
+      "meaningEn": null,
+      "freqRank": 2563,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "아니다",
+      "target": "아니다",
+      "reading": null,
+      "meaning": "não ser (아니에요)",
+      "meaningEn": null,
+      "freqRank": null,
+      "topikLevel": "A",
+      "dict": true
+    },
+    {
+      "lemma": "인형",
+      "target": "인형",
+      "reading": null,
+      "meaning": "boneco(a), bichinho de pelúcia",
+      "meaningEn": null,
+      "freqRank": 1254,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-06"
+    },
+    {
+      "lemma": "창문",
+      "target": "창문",
+      "reading": null,
+      "meaning": "janela",
+      "meaningEn": null,
+      "freqRank": 790,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-창문",
+        "segmentId": "s90",
+        "target": "창문",
+        "translation": "janela",
+        "startMs": 739809,
+        "endMs": 743682,
+        "reading": null,
+        "context": "창문이에요. — É uma janela.",
+        "audioClipSrc": "media/tts/wf2d48fa1b9a9.mp3",
+        "exampleAudioSrc": "media/frag/f4db3b5baf1ee.mp3",
+        "freqRank": 790,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s2d8164a09792.jpg"
+      }
+    },
+    {
+      "lemma": "고양이",
+      "target": "고양이",
+      "reading": null,
+      "meaning": "gato",
+      "meaningEn": null,
+      "freqRank": 593,
+      "topikLevel": "A",
+      "cardIn": "ko-A1-03"
+    },
+    {
+      "lemma": "귀엽다",
+      "target": "귀엽다",
+      "reading": null,
+      "meaning": "fofo, bonitinho",
+      "meaningEn": null,
+      "freqRank": 569,
+      "topikLevel": "A",
+      "card": {
+        "id": "w-귀엽다",
+        "segmentId": "s97",
+        "target": "귀엽다",
+        "translation": "fofo, bonitinho",
+        "startMs": 793588,
+        "endMs": 798827,
+        "reading": null,
+        "context": "고양이가 귀여워요. — O gato é fofo.",
+        "audioClipSrc": "media/tts/w85d46fa7b88b.mp3",
+        "exampleAudioSrc": "media/frag/f7585bd865017.mp3",
+        "freqRank": 569,
+        "topikLevel": "A",
+        "newWords": [
+          "귀여워"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s45c13f6e4e3c.jpg"
+      }
+    }
+  ],
+  "sentenceCards": [
+    {
+      "id": "s-4aa20b8127",
+      "kind": "sentence",
+      "segmentId": "s87",
+      "target": "어! 사람이 아니에요.",
+      "translation": "Ué! Não é uma pessoa.",
+      "startMs": 718027,
+      "endMs": 724246,
+      "audioClipSrc": "media/frag/f12241f8c347a.mp3",
+      "exampleAudioSrc": "media/frag/f12241f8c347a.mp3",
+      "freqRank": 12,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "사람",
+        "target": "사람",
+        "meaning": "pessoa",
+        "reading": null,
+        "start": 3,
+        "end": 5
+      },
+      "sceneSrc": "media/frames/s78a5ed191c92.jpg"
+    },
+    {
+      "id": "s-c08c8ed403",
+      "kind": "sentence",
+      "segmentId": "s28",
+      "target": "아침이에요.",
+      "translation": "É de manhã.",
+      "startMs": 206900,
+      "endMs": 210739,
+      "audioClipSrc": "media/frag/fc768bc3ad258.mp3",
+      "exampleAudioSrc": "media/frag/fc768bc3ad258.mp3",
+      "freqRank": 167,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "아침",
+        "target": "아침",
+        "meaning": "manhã (também: café da manhã)",
+        "reading": null,
+        "start": 0,
+        "end": 2
+      },
+      "sceneSrc": "media/frames/sea1baf834330.jpg"
+    }
+  ],
+  "createdAt": "2026-09-24T19:33:23.141579+00:00"
 }

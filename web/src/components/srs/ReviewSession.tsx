@@ -5,12 +5,13 @@ import { State } from "ts-fsrs";
 import type { Dose, SentenceCard } from "@/types/dose";
 import {
   buildDoseQueue, buildDueQueue, buryCard, dueLearning, forgetCard, getSrsSettings, gradeCard,
-  gradeNew, isLearningState, suspendCard, undoGrade,
+  gradeNew, isLearningState, markKnown, suspendCard, undoGrade,
   type GradeResult, type QueueEntry, type QueueScope, type ReviewRating, type SrsSettings,
 } from "@/lib/srs";
 import { db, tombstone, type CardRecord } from "@/lib/db";
 import { resolveDose, mediaUrl as mediaPath, DoseMissingError } from "@/lib/content";
-import { Flashcard, type CardAction } from "./Flashcard";
+import { Flashcard, type CardAction, type ResolvedExample } from "./Flashcard";
+import { exampleFor, findCard, isSentenceCard } from "@/lib/cards";
 import { ProgressBar } from "@/components/ui/progress";
 import { LoadingScreen, EmptyState } from "@/components/ui/feedback";
 import { Button } from "@/components/ui/primitives";
@@ -36,6 +37,24 @@ interface ResolvedItem extends QueueEntry {
   wordAudioUrl?: string; // word TTS clip (front)
   fragmentUrl?: string; // pre-cut example fragment (back)
   sceneUrl?: string; // quadro do vídeo na frase-exemplo (back)
+  example?: ResolvedExample; // frase-exemplo (i+1 quando existe), com URLs prontas
+}
+
+type DoseEntry = { dose: Dose; mediaUrl: string; path: string };
+
+/** URLs do card e da frase-exemplo, a partir da dose já resolvida. */
+function assets(language: string, entry: DoseEntry, card: SentenceCard) {
+  const url = (rel?: string | null) => (rel ? mediaPath(language, entry.path, rel) : undefined);
+  const ex = exampleFor(entry.dose, card);
+  return {
+    dose: entry.dose,
+    card,
+    mediaUrl: entry.mediaUrl,
+    wordAudioUrl: url(card.audioClipSrc),
+    fragmentUrl: url(card.exampleAudioSrc),
+    sceneUrl: url(card.sceneSrc),
+    example: ex ? { ...ex, audioUrl: url(ex.audioSrc), sceneUrl: url(ex.sceneSrc) } : undefined,
+  };
 }
 
 type Kind = "new" | "learning" | "review";
@@ -83,7 +102,7 @@ export function ReviewSession({
   // Falha ao gravar/consultar (banco fechado pelo navegador, cota, etc.). Antes
   // a nota se perdia em silêncio e o card ficava morto na tela.
   const [fault, setFault] = useState<string | null>(null);
-  const doseCache = useRef(new Map<string, { dose: Dose; mediaUrl: string; path: string }>());
+  const doseCache = useRef(new Map<string, DoseEntry>());
   // Tudo que já passou pela sessão (por chave): atalho para montar um card que
   // volta sem baixar a dose de novo.
   const seen = useRef(new Map<string, ResolvedItem>());
@@ -112,16 +131,11 @@ export function ReviewSession({
         return null; // sem rede e sem cache: fica para a próxima conferência
       }
     }
-    const card = entry.dose.cards.find((c) => c.id === rec.cardId);
+    const card = findCard(entry.dose, rec.cardId);
     if (!card) return null;
     const item: ResolvedItem = {
       key: rec.key, doseId: rec.doseId, cardId: rec.cardId, isNew: false, rec, uid: nextUid(),
-      dose: entry.dose,
-      card,
-      mediaUrl: entry.mediaUrl,
-      wordAudioUrl: card.audioClipSrc ? mediaPath(language, entry.path, card.audioClipSrc) : undefined,
-      fragmentUrl: card.exampleAudioSrc ? mediaPath(language, entry.path, card.exampleAudioSrc) : undefined,
-      sceneUrl: card.sceneSrc ? mediaPath(language, entry.path, card.sceneSrc) : undefined,
+      ...assets(language, entry, card),
     };
     seen.current.set(item.key, item);
     return item;
@@ -161,7 +175,7 @@ export function ReviewSession({
         const confirmGone = async (it: QueueEntry): Promise<boolean> => {
           try {
             const fresh = await fetchEntry(it.doseId, true);
-            return !fresh.dose.cards.some((c) => c.id === it.cardId);
+            return !findCard(fresh.dose, it.cardId);
           } catch (err) {
             return err instanceof DoseMissingError;
           }
@@ -178,7 +192,7 @@ export function ReviewSession({
               continue;
             }
           }
-          let card = entry.dose.cards.find((c) => c.id === it.cardId);
+          let card = findCard(entry.dose, it.cardId);
           if (!card && it.rec) {
             // card id sumiu da dose em cache: a dose fresca pode tê-lo (build novo)
             if (await confirmGone(it)) {
@@ -186,19 +200,10 @@ export function ReviewSession({
               continue;
             }
             entry = doseCache.current.get(it.doseId) ?? entry;
-            card = entry.dose.cards.find((c) => c.id === it.cardId);
+            card = findCard(entry.dose, it.cardId);
           }
           if (!card) continue;
-          const item: ResolvedItem = {
-            ...it,
-            uid: nextUid(),
-            dose: entry.dose,
-            card,
-            mediaUrl: entry.mediaUrl,
-            wordAudioUrl: card.audioClipSrc ? mediaPath(language, entry.path, card.audioClipSrc) : undefined,
-            fragmentUrl: card.exampleAudioSrc ? mediaPath(language, entry.path, card.exampleAudioSrc) : undefined,
-            sceneUrl: card.sceneSrc ? mediaPath(language, entry.path, card.sceneSrc) : undefined,
-          };
+          const item: ResolvedItem = { ...it, uid: nextUid(), ...assets(language, entry, card) };
           seen.current.set(item.key, item);
           resolved.push(item);
         }
@@ -252,7 +257,7 @@ export function ReviewSession({
   };
 
   // Pilha de avaliações desta sessão, para o "desfazer".
-  const [history, setHistory] = useState<{ grade: GradeResult; rating: ReviewRating; isNew: boolean }[]>([]);
+  const [history, setHistory] = useState<{ grade: GradeResult; rating: ReviewRating; isNew: boolean; known?: boolean }[]>([]);
 
   /** Insere na fila os cards que voltaram, sem repetir o que já está à frente. */
   const insertReturned = (extra: ResolvedItem[], justGraded: string | null, atEnd: boolean) => {
@@ -339,6 +344,23 @@ export function ReviewSession({
     void requeueDue(item.key);
   };
 
+  /** «Já sei»: a palavra sai da fila sem nota (e sem gastar a cota). Desfazível. */
+  const onKnown = async (item: ResolvedItem) => {
+    if (items?.[posRef.current]?.uid !== item.uid) return;
+    let grade: GradeResult;
+    try {
+      grade = await markKnown(item.dose, item.card);
+    } catch (err) {
+      setFault(`Não deu para marcar (${errorText(err)}).`);
+      remountCurrent();
+      return;
+    }
+    setFault(null);
+    setHistory((h) => [...h, { grade, rating: 3 as ReviewRating, isNew: item.isNew, known: true }]);
+    posRef.current += 1;
+    setPos((p) => p + 1);
+  };
+
   /** Reverte a última nota: estado FSRS, log e contadores do dia. */
   const undo = async () => {
     const last = history[history.length - 1];
@@ -350,7 +372,7 @@ export function ReviewSession({
       return;
     }
     setHistory((h) => h.slice(0, -1));
-    setSummary((s) => ({
+    if (!last.known) setSummary((s) => ({
       reviewed: Math.max(0, s.reviewed - 1),
       newLearned: Math.max(0, s.newLearned - (last.isNew ? 1 : 0)),
       again: Math.max(0, s.again - (last.rating === 1 ? 1 : 0)),
@@ -366,11 +388,14 @@ export function ReviewSession({
     doneFired.current = false;
     setSettledFor(-1);
     // O card volta para a fila como "não visto" se ele nasceu nessa nota.
+    // Uma volta dele já enfileirada mais à frente (De novo → requeue, ou o
+    // learn-ahead do fim) carregava o estado desfeito: sai, e a próxima nota
+    // decide de novo se ele volta.
     setItems((prev) => {
       if (!prev) return prev;
       const it = prev[idx];
       if (!it) return prev;
-      const copy = [...prev];
+      const copy = prev.filter((x, i) => i <= idx || x.key !== it.key);
       copy[idx] = { ...it, rec: last.grade.prev ?? undefined, isNew: last.grade.prev == null, uid: nextUid() };
       return copy;
     });
@@ -381,9 +406,13 @@ export function ReviewSession({
     if (!item.rec || items?.[posRef.current]?.uid !== item.uid) return;
     let rec: CardRecord;
     try {
-      if (action === "bury") rec = await buryCard(item.rec);
-      else if (action === "suspend") rec = await suspendCard(item.rec);
-      else rec = await forgetCard(item.rec, settings ?? undefined);
+      // o registro fresco, como na nota: o do item pode ser de antes de um
+      // "desfazer" ou de uma sincronização, e gravá-lo inteiro de volta
+      // desfaria esse estado FSRS em silêncio
+      const fresh = (await db.cards.get(item.key)) ?? item.rec;
+      if (action === "bury") rec = await buryCard(fresh);
+      else if (action === "suspend") rec = await suspendCard(fresh);
+      else rec = await forgetCard(fresh, settings ?? undefined);
     } catch (err) {
       setFault(`Não deu para aplicar a ação (${errorText(err)}).`);
       remountCurrent();
@@ -392,7 +421,11 @@ export function ReviewSession({
     setFault(null);
     // some da sessão: adiado/suspenso não volta (isActive); reiniciado vira novo
     seen.current.set(item.key, { ...item, rec });
-    setItems((prev) => (prev ? prev.filter((it) => it.key !== item.key) : prev));
+    // só daqui para a frente: um card que voltou (De novo) também está ATRÁS
+    // na fila, e tirá-lo de lá encurtava o passado — `pos` pulava um card
+    setItems((prev) =>
+      prev ? prev.filter((it, i) => i < posRef.current || it.key !== item.key) : prev,
+    );
   };
 
   // Ctrl+Z / Z desfaz, como no Anki.
@@ -594,8 +627,14 @@ export function ReviewSession({
         wordAudioUrl={current!.wordAudioUrl}
         fragmentUrl={current!.fragmentUrl}
         sceneUrl={current!.sceneUrl}
+        example={current!.example}
         onGrade={(rating, elapsed) => onGrade(current!, rating, elapsed)}
         onAction={current!.rec ? (a) => onAction(current!, a) : undefined}
+        onKnown={
+          !isSentenceCard(current!.card) && (current!.isNew || current!.rec?.state === State.New)
+            ? () => onKnown(current!)
+            : undefined
+        }
       />
     </div>
   );

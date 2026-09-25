@@ -2,7 +2,8 @@ import { useEffect, useRef } from "react";
 import type { Segment } from "@/types/dose";
 import { cn, fmtClock } from "@/lib/utils";
 import type { LemmaStatus } from "@/lib/vocab";
-import { MarkedText } from "@/components/ui/MarkedText";
+import { MarkedText, type OnWord } from "@/components/ui/MarkedText";
+import { CircleHelp } from "lucide-react";
 
 export function TranscriptList({
   segments,
@@ -10,12 +11,17 @@ export function TranscriptList({
   onSeek,
   showTranslation,
   marks,
+  unclear,
+  onWord,
 }: {
   segments: Segment[];
   activeIndex: number;
   onSeek: (i: number) => void;
   showTranslation: boolean;
   marks?: LemmaStatus | null;
+  /** Falas marcadas «não entendi». */
+  unclear?: Set<string>;
+  onWord?: OnWord;
 }) {
   const activeRef = useRef<HTMLButtonElement>(null);
   // O aluno rolou a lista com a mão? Deixa quieto por alguns segundos em vez de
@@ -81,8 +87,11 @@ export function TranscriptList({
                   active ? "text-fg" : "text-muted group-hover:text-fg",
                 )}
               >
-                {marks ? <MarkedText seg={seg} status={marks} /> : seg.target}
+                <MarkedText seg={seg} status={marks} onWord={onWord} />
               </span>
+              {unclear?.has(seg.id) && (
+                <CircleHelp size={12} className="ml-1.5 inline-block -translate-y-px text-hard" aria-label="não entendida" />
+              )}
               {showTranslation && seg.translation && (
                 <span className="line-trans mt-0.5 block text-[0.875rem] text-faint">
                   {seg.translation}

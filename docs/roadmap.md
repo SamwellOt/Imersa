@@ -56,7 +56,8 @@
       somam em vez de sobrescrever). Roda como serviço `imersa`.
 - [x] **Fábrica de doses** (Python): `prep` → `words` (top-20 por frequência) → `assemble`,
       além de `build` (URL) e `build-local`; emite `dose.json` + mídia.
-- [x] **Dose demo** em japonês gerada do material de exemplo (`../immersion/`).
+- [x] ~~**Dose demo** em japonês gerada do material de exemplo (`../immersion/`)~~ —
+      substituída pela trilha B1 (a demo era só áudio e seus cards eram do top-40).
 - [x] Roda em **produção** (build otimizado servido na porta 8000).
 
 ## 1º idioma oficial: Coreano 🇰🇷 (feito)
@@ -131,9 +132,14 @@ a lista de referência é mudar um arquivo de dados, não o código.
       `ct57VMooh3s` 룸메이트 (18), `SjLWGeIbvEI` 까만 고양이 (19), `ffXdENqhAJ4`
       달리면서 노래해요 (15, traz -(으)면서), `83P2JgWeKBs` Yoonji & Dad (honorífico -시-),
       `Ql1iv81vSFM` 스테이크를 뭐로 먹어요 (partícula -로), `1czfXitUggU` 당근 빼고 주세요.
-      **Atenção:** o rendimento cai a cada lição (as palavras mais frequentes já foram);
-      rode o `scout_next.py` antes de escolher, para não montar uma lição que não fecha
-      20 cards novos.
+      **Atenção:** o rendimento cai a cada lição (as palavras mais frequentes já foram).
+      Agora há a **escada do coreano** (`.work/ko2/ladder.py --next N`, âncoras fixas:
+      car/s, palavras distintas/min, mediana do rank; coluna `cards` = rendimento). Em
+      24/09/2026 ela mostrou só **uma** unidade viável acima da A1-06 (score 21):
+      당근 빼고 주세요 + 생일 선물 + eKL8TDEhoKQ (25, 53 cards). Ampliar os candidatos
+      (`scout2/`) antes do lote seguinte.
+- [x] (24/09/2026) **Escada do coreano** `.work/ko2/ladder.py` (+ `measure.py`), com
+      `--feedback <backup.json>` (compreensão real marcada no app).
 - [ ] Revisar traduções pontuais e adicionar romanização/leitura opcional.
 - [x] ~~Trocar a lista de frequência por uma oficial~~ — resolvido de outro jeito: a lista
       oficial entrou como **régua de nível** (TOPIK/국립국어원), e a frequência continua
@@ -141,16 +147,54 @@ a lista de referência é mudar um arquivo de dados, não o código.
 - [ ] Estender a régua ao japonês (JLPT) — `course.py` já tem o gancho (`_TIER_LABELS`),
       falta a tabela `data/topik_ja.json` equivalente.
 
+## 2º idioma: Japonês (feito — B1, 09/2026)
+
+Trilha **B1** com 7 lições em **vídeo** (16–25 min, até 30) para um aluno **N4–N3** que
+já fazia imersão e **sabe as 1000 palavras mais frequentes**. Conteúdo pedido: vlog,
+viagem e conversa natural.
+- [x] Lista de frequência trocada pela **BCCWJ 短単位語彙表** (NINJAL), por lema UniDic,
+      ordenada pelo registro coloquial (知恵袋 + ブログ). A antiga (OpenSubtitles por
+      palavra solta) punha 見る em #990.
+- [x] **Base já conhecida** (`KNOWN_BASE`: JLPT N5 + N4 + top-1000 sem nível JLPT): fora dos cards, e
+      `token.base` para a legenda "conhecido/novo" e a compreensão por lição.
+- [x] (09/2026) N3+ frequente deixou de contar como base (eram 355 do top-1000) e **外来語
+      não vira card**; lições 3–7 regeneradas, 1–2 congeladas (`words --frozen`).
+- [x] **Régua JLPT** (N3 · N2 · N1) no lugar do TOPIK, publicada em `vocabLadder`.
+- [x] **Escada contínua entre lotes** (`.work/ja/ladder.py`, âncoras fixas) + **banco** de
+      lições prontas para quando a escada chegar nelas.
+- [x] **Legenda por frase/oração** com tradução própria em cada linha — o modo Primed
+      pausava a cada respiro mostrando a tradução da frase inteira.
+- [x] Curadoria medida (`.work/ja/scout_rank.py`, ~45 candidatos): palavras fora da base
+      por minuto 4,3 → 8,9 ao longo da semana; de professor falando natural (Shun, Miku,
+      YUYU) a conversa 100% nativa (casal na estrada, amigas em Nagoya).
+- [x] Transcrição pelo Scribe da mídia concatenada; tradução PT fiel frase a frase.
+- [ ] Dias 8+: `ladder.py --next 7` acima da última publicada (score ~40+), promovendo do
+      banco YUYU, o casal na estrada e Nagoya quando chegarem na vez. Com
+      `--feedback <backup.json>` a escada mostra a compreensão real (falas «não entendi»)
+      e sugere o tamanho do passo.
+- [x] (24/09/2026) **Cards escolhidos por frequência × ocorrências no vídeo** (B1-04 a
+      B1-07 regeneradas; B1-01 a 03 congeladas) + **compostos de unidade longa** (飛行機,
+      金曜日; `data/luw_ja.tsv` do 長単位語彙表 NINJAL, leitura do JMdict) + nomes próprios
+      fora (`data/names_ja.json`). Cobertura das ocorrências novas pelos cards: B1-05
+      19% → 56%, B1-07 14% → 36%.
+- [ ] Vários vídeos-fonte têm legenda japonesa **queimada na imagem**; a legenda do app
+      fica por cima. Se incomodar, dá para subir a legenda do app ou deixar só a PT.
+
 ## Depois
 
 - [ ] Fase **Produção** no app (gravar output → `find-mistakes` → cards de correção).
 - [ ] *Style guide* de "pai linguístico" por idioma.
 - [x] **Legenda "conhecido/novo"** (opcional) + **compreensão por lição** em `/progress`
       (`segments[].tokens` na pipeline, `lib/vocab.ts` no app, `immersionLog.doseId`).
-- [ ] Furigana/romaji automático e dicionário pop-up por palavra na legenda (os
-      `tokens` por fala já existem — falta o significado por lema).
+- [x] (24/09/2026) **Dicionário na legenda** (toque na palavra: PT curado em
+      `data/dict_pt_<lang>.json`, reserva EN do JMdict/Wiktionary) com **+ Card** e
+      **Já sei**; glossário por dose (`dose_factory enrich`).
+- [x] (24/09/2026) **«Já sei»** no card novo e no dicionário (exporta para `dose_factory known`),
+      **homófonos** com escrita na frente, **cards de frase i+1** (até 5 por dose),
+      **Prime adaptativo** (opcional), **«não entendi»** por fala (evento `mark`, sincroniza).
+- [ ] Furigana/romaji automático na legenda.
 - [ ] Mais ideias em [`ideas.md`](ideas.md).
-- [ ] Áudio condensado como modo "escuta passiva" no player.
+- [x] (24/09/2026) **Áudio condensado** (`/escuta/:id`, offline, conta como imersão).
 - [ ] Descoberta de conteúdo assistida dentro do app (curadoria por gosto+nível).
 - [ ] Empacotar como app desktop (Tauri).
 - [ ] **HTTPS** na frente do servidor (Caddy/nginx + Let's Encrypt): hoje o :8000 fala HTTP

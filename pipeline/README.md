@@ -6,7 +6,8 @@ Transforma mídia da língua-alvo em um `dose.json` que o app consome. Reaprovei
 ## Comandos
 
 ```bash
-# Dose demo em japonês (dos arquivos de exemplo, sem chave de API)
+# Dose demo em japonês (dos arquivos de exemplo, sem chave de API). Saiu do curso em
+# 09/2026 (era só áudio); rodar isto recoloca a ja-A2-01 na frente da trilha B1.
 python -m dose_factory demo
 
 # Fluxo por Scribe (usado no coreano): prep → words → (traduzir) → assemble
@@ -19,6 +20,18 @@ python -m dose_factory frames [--lang ko]   # capa (media.posterSrc) + cena de c
 python -m dose_factory assemble --language ko --language-name Coreano \
   --media L1.h264.mp4 --units L1.units.json --translations L1.trans.json \
   --prime L1.prime.json --words L1.words.json --meta L1.meta.json
+
+# Depois de montar (idempotente, sobre as doses publicadas, em ordem de lição):
+# tokens refeitos + glossário (dicionário da legenda / "+ card") + cards de frase i+1 +
+# homófonos + áudio condensado + cenas de todos os cards.
+python -m dose_factory enrich --lang ja [--only ja-B1-08] [--no-condensed] [--missing faltam.json]
+python -m dose_factory freqlist --lang ko                  # refaz a lista coreana com o analisador atual e o "#N" das doses
+python -m dose_factory enrich --lang ja --glossary-only   # só tokens + glossário (não mexe em cards de frase, condensado, cenas)
+#   → as palavras novas sem PT saem em faltam.json; traduza e importe:
+python -m dose_factory dict --lang ja --pt meus_significados.json     # {lema: "significado"} → data/dict_pt_ja.json
+python -m dose_factory dict --lang ja --src JMdict_e.gz                # regera data/dict_en_ja.json + reading_ja.json
+python -m dose_factory dict --lang ko --src kaikki.org-dictionary-Korean.jsonl   # regera data/dict_en_ko.json
+python -m dose_factory known --lang ja --import imersa-ja-sei-ja.json  # «Já sei» do app → base declarada
 
 # Dose a partir de arquivos locais (mídia + legendas + Scribe JSON)
 python -m dose_factory build-local \
@@ -33,6 +46,28 @@ python -m dose_factory build \
   --language ja --language-name Japonês --level A2 --lesson 4 --title "..." \
   [--translation-srt já_traduzido.pt.srt] [--prime-summaries chunks.json]
 ```
+
+## Escolha dos cards, compostos, nomes e dicionários
+
+- **Nota do card** (`frequency.card_score`): `−ln(rank no idioma) + 0,85·ln(falas em que a
+  palavra aparece)`. Entram primeiro as ditas 2+ vezes (rank ≤ 12000), depois as demais.
+  O `words` imprime `lema×ocorrências` de cada card escolhido e preenche `meaning` a partir
+  de `data/dict_pt_<lang>.json` quando a palavra já foi traduzida antes.
+- **Nomes próprios** não são token nem card: NNP (kiwi), 固有名詞 (UniDic) e a lista
+  `data/names_<lang>.json` para o que o analisador erra (さやか → 清か, 몰이).
+- **Compostos (japonês)**: `data/luw_ja.tsv` = compostos nominais do **BCCWJ 長単位語彙表**
+  (NINJAL, doi:10.15084/00003214); substantivo + substantivo/sufixo vira uma palavra
+  (飛行+機 → 飛行機) e ganha um rank comparável pela frequência coloquial. Leitura do
+  composto vem do JMdict (`data/reading_ja.json`: 金曜日 = きんようび, não きんようひ).
+  Compostos raros declarados à mão: `data/compounds_ja.json`.
+- **Coreano**: `-들` (plural) não gruda no substantivo; `N+하다` só vira verbo se existir
+  na lista de frequência ou no TOPIK (강아지하고 ≠ 강아지하다).
+- **Dicionários**: PT curado em `data/dict_pt_<lang>.json` (fonte do glossário e dos
+  `meaning`); reserva EN em `data/dict_en_<lang>.json` (JMdict, EDRDG, CC BY-SA 4.0 /
+  Wiktionary via kaikki.org, CC BY-SA). Só palavra com PT ganha "+ card".
+- **Escadas de dificuldade**: `.work/ja/ladder.py` e `.work/ko2/ladder.py` (âncoras fixas);
+  as duas aceitam `--feedback <backup.json>` (falas «não entendi» do app →
+  `dose_factory/feedback.py`) e sugerem o tamanho do próximo passo.
 
 ## Estágios (URL)
 
@@ -76,6 +111,26 @@ Cuidado que motivou esse fluxo: esses vídeos têm **3 etapas** (história sem l
 legenda **queimada na imagem** → repetição). O texto na imagem foi aceito pelo usuário;
 se um dia não for, só a 1ª etapa é limpa (~3 min por vídeo).
 
+## Japonês B1 (intermediário): Scribe + base conhecida + escada
+
+Artefatos e scripts em `.work/ja/` (fora do git, como os do coreano):
+
+1. **Medir** candidatos pela legenda do YouTube (só texto, via Tor): `scout/search*.sh`
+   busca e baixa as legendas; `scout_rank.py 'scout/*.vtt'` mede cada vídeo; **`ladder.py
+   --next N`** ordena tudo numa escada de score fixo (0–100) e devolve as próximas N
+   lições acima da última publicada, já emendando vídeos curtos. Passo de ~4–6 pontos.
+2. `lessons.txt` (`L1 a <id>`; várias linhas por lição = partes emendadas) → `dl.sh`.
+3. `ELEVENLABS_API_KEY=… python3 build.py [L1 …]` — H.264 640×360 + loudnorm,
+   concatena, transcreve **a mídia concatenada** (`scribe_v2`, `language_code=jpn`,
+   diarização) e roda `prep`. Corrija erros do Scribe direto no `<L>.units.json`.
+4. Traduzir em `<L>/pt.tsv` (`i<TAB>PT`), escrever título/sinopse/prime em
+   `lessons_meta.py` e rodar (gera meta, prime e `trans.json`).
+5. `python -m dose_factory words --lang ja --units .work/ja/L{1..7}/L*.units.json` →
+   `meanings.py` (significados PT por lema) → `tts --lang ja` → `assemble.sh`.
+
+Fragmentos que o UniDic corta de palavras maiores (バイ de バイバイ, 小学 de 小学生,
+詰まる de つまんない…) estão no `_STOP_JA`; confira a lista de cards antes de traduzir.
+
 ## Gerando conteúdo real (o que foi usado no coreano)
 
 Neste ambiente o YouTube bloqueia o IP do servidor ("Sign in to confirm you're not a
@@ -93,7 +148,10 @@ bot"). O fluxo que funciona:
 6. **words** (`--lang ko --units L1.units.json L2… L3…` **em ordem**) → escolhe as **top-20
    palavras por frequência** que aparecem em cada lição, **sem repetir** as das lições
    anteriores (dedup = i+1), em `<L>.words.json`. Ranqueamento por lema (kiwipiepy p/ ko,
-   fugashi p/ ja) usando `data/freq_raw_<lang>.txt`.
+   fugashi p/ ja) usando a lista do idioma (`data/freq_raw_ko.txt`; japonês:
+   `data/freq_bccwj_ja.tsv`, BCCWJ/NINJAL por lema UniDic). Palavras da **base que o
+   aluno já sabe** (`KNOWN_BASE`, japonês = JLPT N5/N4 + as do top-1000 que o JLPT não classifica + 外来語 + as N3+ que o aluno declarou saber em `data/known_ja.json`)
+   nunca entram. Lição já estudada entra só no dedup: `words --frozen L1.words.json …`.
 7. **Traduzir**: `<L>.trans.json` (frases, PT fiel) + preencher `meaning` nas 20 palavras de
    `<L>.words.json` + `<L>.prime.json` (blocos de prime em PT) + `<L>.meta.json`.
 8. **tts** → gera o TTS nativo (edge-tts) de cada palavra em `<L>/tts/` e grava `ttsFile`.
