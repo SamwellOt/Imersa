@@ -1,10 +1,10 @@
 // Dose progress + streak/stat helpers on top of the Dexie store.
 import {
-  db, dailyStats, getSetting, setSetting, LOCAL_SETTING,
+  db, dailyStats, getSetting, LOCAL_SETTING,
   type DailyStat, type DosePhase, type DoseProgressRecord,
 } from "./db";
+import { setSetting, updateState } from "./ledger";
 import type { Course, DoseRef } from "@/types/dose";
-import { scheduleSync } from "./sync";
 import { dayKey, daysBetween, shiftDay } from "./utils";
 
 export async function getDoseProgress(doseId: string): Promise<DoseProgressRecord | undefined> {
@@ -47,15 +47,13 @@ async function updateProgress(
   language: string,
   mutate: (rec: DoseProgressRecord) => DoseProgressRecord | null,
 ): Promise<DoseProgressRecord> {
-  return db.transaction("rw", db.doseProgress, async () => {
-    const existing = await db.doseProgress.get(doseId);
+  const saved = await updateState("doseProgress", doseId, (existing) => {
     const base = existing ?? blankProgress(doseId, language);
     const next = mutate(base);
-    if (!next && existing) return existing;
-    const saved = { ...(next ?? base), updatedAt: Date.now() };
-    await db.doseProgress.put(saved);
-    return saved;
+    if (!next && existing) return null; // nada a mudar: o ledger devolve o atual, sem gravar
+    return next ?? base;
   });
+  return saved!;
 }
 
 /**
@@ -68,7 +66,6 @@ export async function markPhaseDone(doseId: string, language: string, phase: Dos
   await updateProgress(doseId, language, (rec) =>
     rec.phases.includes(phase) ? null : { ...rec, phases: [...rec.phases, phase] },
   );
-  scheduleSync();
 }
 
 /**
@@ -106,7 +103,6 @@ export async function completeDose(doseId: string, language: string): Promise<vo
           completedAt: Date.now(),
         },
   );
-  scheduleSync();
 }
 
 /** First dose in course order that isn't completed yet. */

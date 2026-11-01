@@ -6,7 +6,7 @@
 // Este arquivo é só a API pública (os nomes de sempre). O código mora em camadas:
 //   srsCore.ts  — regra pura: ajustes, conversão ts-fsrs, vencimento, nota
 //   srsQueue.ts — regra pura: montagem e ordem das filas, contadores do dia
-//   srsRepo.ts  — dados: Dexie (transações) + scheduleSync
+//   srsRepo.ts  — dados: Dexie (leituras e transações); as escritas passam pelo ledger
 import type { Dose, SentenceCard } from "@/types/dose";
 import { findCard } from "./cards";
 

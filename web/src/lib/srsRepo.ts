@@ -1,5 +1,6 @@
 // Acesso a dados do SRS: tudo o que lê/grava o Dexie (cards, reviewLog,
-// immersionLog, settings, tombstones) e agenda a sincronização. As decisões
+// immersionLog, settings, tombstones). Toda ESCRITA passa pelo ledger
+// (`lib/ledger.ts`), que carimba, transaciona, grava tombstone e agenda o sync. As decisões
 // moram em `srsCore.ts` (regra) e `srsQueue.ts` (montagem de fila); a API
 // pública continua sendo `srs.ts`, que reexporta daqui.
 import {
@@ -11,11 +12,9 @@ import {
   db,
   getSetting,
   newUid,
-  setSetting,
-  tombstone,
   type CardRecord,
 } from "./db";
-import { scheduleSync } from "./sync";
+import { appendEvent, putState, removeEvent, removeState, setSetting, updateState } from "./ledger";
 import { dayKey, nextDayStart } from "./utils";
 import {
   normalizeSettings, scheduler, toFsrs, applyFsrs, cardKey, isActive, isLearningState, availableAt,
@@ -51,8 +50,7 @@ export async function freshCard(key: string, fallback: CardRecord): Promise<Card
 
 /** Apaga um card órfão (a dose ou o card sumiu do conteúdo), com tombstone. */
 export async function dropStaleCard(key: string): Promise<void> {
-  await db.cards.delete(key);
-  await tombstone("card", key);
+  await removeState("card", key);
 }
 
 /** Total de notas dadas no idioma (o piso do otimizador é contado daqui). */
@@ -85,11 +83,10 @@ export async function getTodayCounts(language: string): Promise<TodayCounts> {
 export async function logImmersion(language: string, ms: number, doseId?: string): Promise<void> {
   if (ms <= 0) return;
   const now = Date.now();
-  await db.immersionLog.add({
+  await appendEvent("immersion", {
     uid: newUid(), language, day: dayKey(new Date(now)), ms, at: now,
     ...(doseId ? { doseId } : {}),
   });
-  scheduleSync();
 }
 
 // ---- queue building ----
@@ -242,11 +239,10 @@ export async function gradeCard(
     // o registro do chamador pode estar velho (outra nota, outro aparelho)
     const fresh = (await db.cards.get(rec.key)) ?? rec;
     const { updated, logEntry } = applyGrade(fresh, rating, elapsedMs, s, now);
-    await db.cards.put(updated);
-    await db.reviewLog.add(logEntry);
-    return { fresh, updated, logEntry };
+    const saved = await putState("card", updated);
+    await appendEvent("review", logEntry);
+    return { fresh, updated: saved, logEntry };
   });
-  scheduleSync();
   return { rec: updated, prev: fresh, reviewUid: logEntry.uid, wasNew: false, language: fresh.language };
 }
 
@@ -270,20 +266,19 @@ export async function gradeNew(
     const existing = await db.cards.get(key);
     if (existing) {
       const { updated, logEntry } = applyGrade(existing, rating, elapsedMs, s, now);
-      await db.cards.put(updated);
-      await db.reviewLog.add(logEntry);
-      return { rec: updated, prev: existing, reviewUid: logEntry.uid, wasNew: false };
+      const saved = await putState("card", updated);
+      await appendEvent("review", logEntry);
+      return { rec: saved, prev: existing, reviewUid: logEntry.uid, wasNew: false };
     }
     const base: CardRecord = {
       ...freshRecord(dose, card, now.getTime()),
       ...(origin ? { origin } : {}),
     };
     const { updated, logEntry } = applyGrade(base, rating, elapsedMs, s, now);
-    await db.cards.put(updated);
-    await db.reviewLog.add(logEntry);
-    return { rec: updated, prev: null, reviewUid: logEntry.uid, wasNew: true };
+    const saved = await putState("card", updated);
+    await appendEvent("review", logEntry);
+    return { rec: saved, prev: null, reviewUid: logEntry.uid, wasNew: true };
   });
-  scheduleSync();
   return { ...result, language: dose.language };
 }
 
@@ -296,17 +291,14 @@ export async function gradeNew(
 export async function undoGrade(g: GradeResult): Promise<void> {
   await db.transaction("rw", [db.cards, db.reviewLog, db.tombstones], async () => {
     if (g.prev) {
-      await db.cards.put({ ...g.prev, updatedAt: Date.now() });
+      await putState("card", g.prev);
     } else {
-      await db.cards.delete(g.rec.key);
-      await tombstone("card", g.rec.key);
+      await removeState("card", g.rec.key);
     }
     if (g.reviewUid) {  // «já sei» não gera nota
-      await db.reviewLog.delete(g.reviewUid);
-      await tombstone("review", g.reviewUid);
+      await removeEvent("review", g.reviewUid);
     }
   });
-  scheduleSync();
 }
 
 // ---- «já sei» e "+ card" ----
@@ -323,11 +315,9 @@ export async function markKnown(dose: Dose, card: SentenceCard): Promise<GradeRe
     const lemmaKey = await db.cards.where("language").equals(dose.language)
       .filter((r) => r.cardId === card.id).first();
     const prev = lemmaKey ?? (await db.cards.get(cardKey(dose.id, card.id))) ?? null;
-    const rec: CardRecord = { ...(prev ?? freshRecord(dose, card, now)), known: true, updatedAt: now };
-    await db.cards.put(rec);
+    const rec = await putState("card", { ...(prev ?? freshRecord(dose, card, now)), known: true });
     return { rec, prev };
   });
-  scheduleSync();
   return { rec, prev, reviewUid: "", wasNew: prev == null, language: dose.language };
 }
 
@@ -339,13 +329,11 @@ export async function unmarkKnown(rec: CardRecord): Promise<void> {
   await db.transaction("rw", [db.cards, db.tombstones], async () => {
     const fresh = (await db.cards.get(rec.key)) ?? rec;
     if (fresh.reps > 0 || fresh.origin === "extra") {
-      await db.cards.put({ ...fresh, known: false, updatedAt: Date.now() });
+      await putState("card", { ...fresh, known: false });
     } else {
-      await db.cards.delete(fresh.key);
-      await tombstone("card", fresh.key);
+      await removeState("card", fresh.key);
     }
   });
-  scheduleSync();
 }
 
 /** Palavras marcadas «já sei» no idioma. */
@@ -360,16 +348,14 @@ export async function listKnown(language: string): Promise<CardRecord[]> {
  */
 export async function addExtraCard(dose: Dose, card: SentenceCard): Promise<CardRecord> {
   const now = Date.now();
-  const { rec, created } = await db.transaction("rw", [db.cards], async () => {
+  const { rec } = await db.transaction("rw", [db.cards], async () => {
     // cursor que para no primeiro achado — não materializa o idioma inteiro
     const existing = await db.cards.where("language").equals(dose.language)
       .filter((r) => r.cardId === card.id).first();
-    if (existing) return { rec: existing, created: false };
-    const rec: CardRecord = { ...freshRecord(dose, card, now), origin: "extra" };
-    await db.cards.put(rec);
-    return { rec, created: true };
+    if (existing) return { rec: existing };
+    const rec = await putState("card", { ...freshRecord(dose, card, now), origin: "extra" });
+    return { rec };
   });
-  if (created) scheduleSync();
   return rec;
 }
 
@@ -377,26 +363,18 @@ export async function addExtraCard(dose: Dose, card: SentenceCard): Promise<Card
 
 /** Adia o card até o próximo dia de estudo (Anki "bury"). */
 export async function buryCard(rec: CardRecord): Promise<CardRecord> {
-  const updated = await db.transaction("rw", [db.cards], async () => {
-    const fresh = (await db.cards.get(rec.key)) ?? rec;
-    const u = { ...fresh, buriedUntil: nextDayStart(), updatedAt: Date.now() };
-    await db.cards.put(u);
-    return u;
-  });
-  scheduleSync();
-  return updated;
+  const updated = await updateState("card", rec.key, (cur) => ({
+    ...(cur ?? rec), buriedUntil: nextDayStart(),
+  }));
+  return updated!;
 }
 
 /** Tira o card de todas as filas até ser reativado (Anki "suspend"). */
 export async function suspendCard(rec: CardRecord): Promise<CardRecord> {
-  const updated = await db.transaction("rw", [db.cards], async () => {
-    const fresh = (await db.cards.get(rec.key)) ?? rec;
-    const u = { ...fresh, suspended: true, updatedAt: Date.now() };
-    await db.cards.put(u);
-    return u;
-  });
-  scheduleSync();
-  return updated;
+  const updated = await updateState("card", rec.key, (cur) => ({
+    ...(cur ?? rec), suspended: true,
+  }));
+  return updated!;
 }
 
 export async function countSuspended(language: string): Promise<number> {
@@ -405,17 +383,14 @@ export async function countSuspended(language: string): Promise<number> {
 
 /** Reativa todos os suspensos do idioma. */
 export async function unsuspendAll(language: string): Promise<number> {
-  const now = Date.now();
   // ler e gravar na mesma transação: uma nota (outra aba) ou um card vindo do
   // sync entre os dois seria sobrescrito pela cópia velha — e, com `updatedAt`
   // de agora, a cópia velha venceria o last-write-wins nos outros aparelhos
-  const n = await db.transaction("rw", db.cards, async () => {
+  return db.transaction("rw", db.cards, async () => {
     const sus = (await db.cards.where("language").equals(language).toArray()).filter((c) => c.suspended);
-    if (sus.length) await db.cards.bulkPut(sus.map((c) => ({ ...c, suspended: false, updatedAt: now })));
+    for (const c of sus) await putState("card", { ...c, suspended: false });
     return sus.length;
   });
-  if (n) scheduleSync();
-  return n;
 }
 
 /**
@@ -426,16 +401,13 @@ export async function forgetCard(rec: CardRecord, settings?: SrsSettings): Promi
   // ajustes lidos antes: nada assíncrono fora do Dexie dentro da transação
   const s = settings ?? (await getSrsSettings());
   const now = new Date();
-  const updated = await db.transaction("rw", [db.cards], async () => {
-    const fresh = (await db.cards.get(rec.key)) ?? rec;
+  const updated = await updateState("card", rec.key, (cur) => {
+    const fresh = cur ?? rec;
     const c = scheduler(s).forget(toFsrs(fresh), now, false).card;
     const { buriedUntil: _b, ...base } = fresh;
-    const u = { ...applyFsrs(base as CardRecord, c), updatedAt: now.getTime() };
-    await db.cards.put(u);
-    return u;
+    return applyFsrs(base as CardRecord, c);
   });
-  scheduleSync();
-  return updated;
+  return updated!;
 }
 
 // ---- card info (o "Card info" do Anki, resumido) ----
@@ -458,15 +430,13 @@ export async function rescheduleAll(
   // dada em outra aba ou um card chegado pelo sync durante o cálculo era
   // sobrescrito pela cópia velha — que, com `updatedAt` de agora, vencia o
   // last-write-wins e apagava a nota também nos outros aparelhos.
-  const result = await db.transaction("rw", [db.cards, db.reviewLog], async () => {
+  return db.transaction("rw", [db.cards, db.reviewLog], async () => {
     const [cards, logs] = await Promise.all([
       db.cards.where("language").equals(language).toArray(),
       db.reviewLog.where("language").equals(language).toArray(),
     ]);
     const updates = replayHistory(cards, logs, f, now);
-    if (updates.length) await db.cards.bulkPut(updates);
+    for (const u of updates) await putState("card", u);
     return { changed: updates.length, total: cards.length };
   });
-  if (result.changed) scheduleSync();
-  return result;
 }

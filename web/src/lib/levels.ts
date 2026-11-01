@@ -7,7 +7,7 @@
 // de dados, não o app.
 import { db, type CardRecord } from "./db";
 import { loadDose } from "./content";
-import { scheduleSync } from "./sync";
+import { putState } from "./ledger";
 import type { Course, TopikTier, VocabTier } from "@/types/dose";
 
 /** Uma palavra só conta como sabida quando o FSRS a considera em revisão. */
@@ -51,7 +51,6 @@ export async function backfillCardTiers(course: Course): Promise<void> {
     if (arr) arr.push(c);
     else byDose.set(c.doseId, [c]);
   }
-  let wrote = false;
   for (const [doseId, recs] of byDose) {
     const ref = course.doses.find((d) => d.id === doseId);
     if (!ref) continue;
@@ -66,23 +65,17 @@ export async function backfillCardTiers(course: Course): Promise<void> {
       // `updatedAt` novo: card é ESTADO, e escrita sem tocar no carimbo perde o
       // last-write-wins — o backfill nunca viajava para o outro aparelho e
       // ainda era desfeito pela primeira escrita que chegasse de lá.
-      const n = await db.transaction("rw", [db.cards], async () => {
-        const now = Date.now();
-        let count = 0;
+      await db.transaction("rw", [db.cards], async () => {
         for (const r of recs) {
           const fresh = await db.cards.get(r.key);
           if (!fresh || fresh.topikLevel !== undefined) continue;
-          await db.cards.put({ ...fresh, topikLevel: tierOf.get(r.cardId) ?? null, updatedAt: now });
-          count++;
+          await putState("card", { ...fresh, topikLevel: tierOf.get(r.cardId) ?? null });
         }
-        return count;
       });
-      if (n > 0) wrote = true;
     } catch {
       /* dose indisponível (offline): tenta de novo na próxima vez */
     }
   }
-  if (wrote) scheduleSync();
 }
 
 /** Onde o aluno está na escada — ou `null` se o idioma não tem tabela. */

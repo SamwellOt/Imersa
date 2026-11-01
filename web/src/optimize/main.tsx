@@ -8,7 +8,8 @@ import { StrictMode, useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { ArrowLeft, Check } from "lucide-react";
 import { getProgress } from "fsrs-browser";
-import { db, setSetting } from "@/lib/db";
+import { db } from "@/lib/db";
+import { setSetting } from "@/lib/ledger";
 import {
   getSrsSettings, rescheduleAll, FSRS_DEFAULT_W, FSRS_PARAM_COUNT, MIN_REVIEWS_TO_OPTIMIZE,
   type SrsSettings,

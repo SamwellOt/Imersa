@@ -298,15 +298,15 @@ export async function getSetting<T>(key: string, fallback: T): Promise<T> {
   return rec ? (rec.value as T) : fallback;
 }
 
+/**
+ * Escrita crua de ajuste, SEM agendar sincronização. No app use `setSetting` de
+ * `lib/ledger.ts`; este fica para o que já está fora da regra (testes de fixture).
+ */
 export async function setSetting<T>(key: string, value: T): Promise<void> {
   await db.settings.put({ key, value, updatedAt: Date.now() });
 }
 
-// ---- tombstones ----
-
-export async function tombstone(kind: SyncKind, id: string): Promise<void> {
-  await db.tombstones.put({ tid: `${kind}:${id}`, kind, id, deletedAt: Date.now() });
-}
+// ---- tombstones (reset/wipe; o resto do app passa pelo ledger) ----
 
 async function tombstoneMany(kind: SyncKind, ids: string[]): Promise<void> {
   if (!ids.length) return;

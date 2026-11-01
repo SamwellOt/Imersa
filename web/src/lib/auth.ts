@@ -11,9 +11,10 @@
 // de um aluno subiriam para a conta do outro na primeira sincronização.
 import { create } from "zustand";
 import {
-  db, getSetting, setSetting, wipeLocalData, localProgressSummary,
+  db, getSetting, wipeLocalData, localProgressSummary,
   AUTH_KEY, DATA_OWNER_KEY, DEVICE_TRUST_KEY, LOCAL_SETTING,
 } from "./db";
+import { removeState, setSetting } from "./ledger";
 import { deviceId, resetSyncState, syncNow, SESSION_EXPIRED_EVENT, REQUEST_TIMEOUT_MS } from "./sync";
 
 export interface AuthUser {
@@ -241,7 +242,7 @@ export async function logout({ force = false } = {}): Promise<void> {
 export async function sessionExpired(): Promise<void> {
   const rec = await readRecord();
   if (!rec || !("token" in rec)) return;
-  await db.settings.delete(AUTH_KEY);
+  await removeState("setting", AUTH_KEY);
   apply(null);
   useAuth.getState().set({ notice: "Sua sessão expirou. Entre de novo para continuar sincronizando." });
 }

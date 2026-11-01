@@ -2,28 +2,23 @@
 // entendeu. É a compreensão REAL da lição — a do vocabulário (`vocab.ts`) é só a
 // prevista. Guardado como EVENTO (`lineMarks`, id global): desmarcar apaga com
 // tombstone, marcar de novo cria outro evento.
-import { db, newUid, tombstone, type MarkRecord } from "./db";
-import { scheduleSync } from "./sync";
+import { db, newUid, type MarkRecord } from "./db";
+import { appendEvent, removeEvent } from "./ledger";
 import { dayKey } from "./utils";
 
 export async function toggleMark(language: string, doseId: string, segmentId: string): Promise<boolean> {
   // ler e alterar na mesma transação: duplo toque não cria duas marcas
-  const on = await db.transaction("rw", [db.lineMarks, db.tombstones], async () => {
+  return db.transaction("rw", [db.lineMarks, db.tombstones], async () => {
     const cur = (await db.lineMarks.where("doseId").equals(doseId).toArray())
       .filter((m) => m.segmentId === segmentId);
     if (cur.length) {
-      for (const m of cur) {
-        await db.lineMarks.delete(m.uid);
-        await tombstone("mark", m.uid);
-      }
+      for (const m of cur) await removeEvent("mark", m.uid);
       return false;
     }
     const now = Date.now();
-    await db.lineMarks.add({ uid: newUid(), language, doseId, segmentId, day: dayKey(new Date(now)), at: now });
+    await appendEvent("mark", { uid: newUid(), language, doseId, segmentId, day: dayKey(new Date(now)), at: now });
     return true;
   });
-  scheduleSync();
-  return on;
 }
 
 export async function marksOf(doseId: string): Promise<Set<string>> {
