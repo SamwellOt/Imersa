@@ -15,6 +15,7 @@ import { IconButton, Button } from "@/components/ui/primitives";
 import { cn } from "@/lib/utils";
 import { useApp } from "@/lib/store";
 import { useHotkeys, isInteractiveTarget, hasShortcutModifier, useMediaQuery } from "@/lib/hooks";
+import { useImmersionMeter } from "@/lib/useImmersionMeter";
 import { CaptionPanel } from "./CaptionPanel";
 import { AudioStage } from "./AudioStage";
 import { PlayerControls } from "./PlayerControls";
@@ -100,10 +101,11 @@ export function ImmersionPlayer({
     rate: playbackRate,
     loopSegment: loop,
     initialMs,
-    onListened,
     onTimeUpdate: onPositionChange,
     onEnded,
   });
+  // Tempo ouvido: o medidor grava a imersão; `onListened` só avisa cada crédito.
+  useImmersionMeter(ctl.mediaRef, { language: dose.language, doseId: dose.id, onCredit: onListened });
 
   const { line, primeSeg } = usePrime({
     segments, subtitleMode, ctl, wantsPrime, playbackRate, adaptive, lemmaStatus,

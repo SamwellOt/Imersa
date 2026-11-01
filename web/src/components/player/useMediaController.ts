@@ -30,7 +30,7 @@ export interface MediaController {
 /**
  * Wraps an <audio>/<video> element: tracks time, resolves the active segment,
  * handles line-level navigation and an optional single-segment loop.
- * Also reports listened time (playing wall-clock) via onListened.
+ * O tempo ouvido não passa por aqui: é do medidor de imersão (lib/immersionMeter).
  */
 export function useMediaController(
   segments: Segment[],
@@ -38,7 +38,6 @@ export function useMediaController(
     rate?: number;
     loopSegment?: boolean;
     initialMs?: number;
-    onListened?: (deltaMs: number) => void;
     onTimeUpdate?: (ms: number) => void;
     /** A mídia chegou ao fim (o `ended` do elemento). */
     onEnded?: () => void;
@@ -55,9 +54,6 @@ export function useMediaController(
   const ptrRef = useRef(0); // search hint
   const loopRef = useRef(opts.loopSegment ?? false);
   loopRef.current = opts.loopSegment ?? false;
-  const lastTickRef = useRef<number | null>(null);
-  const onListenedRef = useRef(opts.onListened);
-  onListenedRef.current = opts.onListened;
   const onTimeRef = useRef(opts.onTimeUpdate);
   onTimeRef.current = opts.onTimeUpdate;
   const onEndedRef = useRef(opts.onEnded);
@@ -116,25 +112,6 @@ export function useMediaController(
       if (loopRef.current && idx >= 0) {
         const seg = segments[idx];
         if (ms >= seg.endMs - 20) el.currentTime = seg.startMs / 1000;
-      }
-
-      // Contabiliza tempo ouvido (relógio de parede enquanto toca).
-      //
-      // O intervalo entre amostras é creditado com TETO em vez de descartado:
-      // em segundo plano o rAF para e o `timeupdate` cai para ~1 por segundo, e
-      // o corte antigo (`d < 1000`) jogava fora exatamente essas amostras — quem
-      // ouvia com a aba atrás não somava minuto nenhum. O teto continua
-      // protegendo do outro lado: aparelho que suspende por uma hora e volta
-      // credita 2 s, não a hora inteira.
-      if (!el.paused) {
-        const now = performance.now();
-        if (lastTickRef.current != null) {
-          const d = now - lastTickRef.current;
-          if (d > 0) onListenedRef.current?.(Math.min(d, 2000));
-        }
-        lastTickRef.current = now;
-      } else {
-        lastTickRef.current = null;
       }
     };
 
