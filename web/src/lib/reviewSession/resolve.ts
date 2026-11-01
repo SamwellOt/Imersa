@@ -1,11 +1,11 @@
-// Dados da sessão de revisão: transforma a fila do SRS (só chaves e registros)
-// em itens prontos para a tela, baixando cada dose uma vez. É aqui que um
-// registro órfão é apagado — e SÓ quando a dose/card sumiu de verdade.
+// Dados da sessão de revisão (interno ao módulo): transforma a fila do SRS (só
+// chaves e registros) em itens prontos para a tela, baixando cada dose uma vez. É
+// aqui que um registro órfão é apagado — e SÓ quando a dose/card sumiu de verdade.
 import type { CardRecord } from "@/lib/db";
 import { dropStaleCard, type QueueEntry } from "@/lib/srs";
 import { resolveDose, DoseMissingError } from "@/lib/content";
 import { findCard } from "@/lib/cards";
-import { assets, type DoseEntry, type ResolvedItem } from "./reviewQueue";
+import { assets, type DoseEntry, type ResolvedItem } from "./queue";
 
 /** O que a sessão mantém entre resoluções (vive em refs do componente). */
 export interface ResolveCtx {

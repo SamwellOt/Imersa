@@ -1,5 +1,5 @@
-// Tela da sessão de revisão (fase da dose e revisão avulsa). O estado e as
-// ações moram em `useReviewSession`; aqui só o que aparece e o que se clica.
+// Tela da sessão de revisão (fase da dose e revisão avulsa). A regra mora em
+// lib/reviewSession; aqui só o que aparece e o que se clica (lê a visão, chama comandos).
 import { motion } from "framer-motion";
 import { Check, Undo2 } from "lucide-react";
 import { State } from "ts-fsrs";
@@ -25,15 +25,11 @@ export function ReviewSession({
   onDone?: (summary: ReviewSummary) => void | Promise<void>;
   emptyHint?: string;
 }) {
-  const {
-    settings, items, heldBack, pos, summary, fault, setFault, settledFor, setSettledFor, setRecheck,
-    doneFired, total, current, finished, pending, history, remaining, currentKind,
-    loadMore, onGrade, onKnown, undo, onAction, closing, closeError, concludeEmpty,
-  } = useReviewSession({ language, introduce, onDone });
+  const s = useReviewSession({ language, introduce, onDone });
 
-  const faultLine = fault && (
+  const faultLine = s.falha && (
     <p role="alert" className="mx-auto mb-4 w-full max-w-xl text-center text-[0.8125rem] text-again">
-      {fault}
+      {s.falha}
     </p>
   );
 
@@ -41,24 +37,24 @@ export function ReviewSession({
     <div className="mx-auto mb-7 w-full max-w-xl">
       <div className="mb-2 flex items-baseline justify-between gap-3 text-xs">
         <div className="flex items-baseline gap-3 tabular-nums">
-          <Count n={remaining.new} label="novos" active={currentKind === "new"} />
-          <Count n={remaining.learning} label="aprendendo" active={currentKind === "learning"} />
-          <Count n={remaining.review} label="a revisar" active={currentKind === "review"} />
+          <Count n={s.faltam.new} label="novos" active={s.tipoAtual === "new"} />
+          <Count n={s.faltam.learning} label="aprendendo" active={s.tipoAtual === "learning"} />
+          <Count n={s.faltam.review} label="a revisar" active={s.tipoAtual === "review"} />
         </div>
         <div className="flex items-baseline gap-3">
-          {history.length > 0 && (
+          {s.podeDesfazer && (
             <button
-              onClick={undo}
+              onClick={() => void s.undo()}
               className="inline-flex items-center gap-1 text-faint transition-colors hover:text-fg"
               title="Desfazer a última nota (Z)"
             >
               <Undo2 size={12} /> Desfazer
             </button>
           )}
-          <span className="text-faint tabular-nums">{summary.reviewed} feitos</span>
+          <span className="text-faint tabular-nums">{s.resumo.reviewed} feitos</span>
         </div>
       </div>
-      <ProgressBar value={summary.reviewed} max={summary.reviewed + (total - pos)} />
+      <ProgressBar value={s.resumo.reviewed} max={s.resumo.reviewed + s.restam} />
     </div>
   );
 
@@ -67,27 +63,47 @@ export function ReviewSession({
     <div className="mx-auto max-w-lg pt-6">
       <EmptyState
         title="Você já fez suas palavras novas de hoje"
-        description={`Faltam ${heldBack} ${pluralize(heldBack, "palavra", "palavras")} desta dose. Elas entram amanhã, quando a cota virar — o método é uma dose por dia. Até lá, dá para rever o vídeo ou os cards já vencidos.`}
+        description={`Faltam ${s.heldBack} ${pluralize(s.heldBack, "palavra", "palavras")} desta dose. Elas entram amanhã, quando a cota virar — o método é uma dose por dia. Até lá, dá para rever o vídeo ou os cards já vencidos.`}
       />
     </div>
   );
 
-  if (items == null) return <LoadingScreen label="Montando sua revisão…" />;
+  const retryButton = (
+    <Button
+      onClick={() => void s.retry()}
+    >
+      Conferir de novo
+    </Button>
+  );
 
-  if (total === 0 && !finished) {
-    // Teto do dia estourado: as palavras desta dose existem e nunca foram
-    // vistas — a fila só está vazia porque a cota acabou. Fechar a dose aqui
-    // marcaria como concluída uma lição com zero palavras aprendidas, e ela
-    // sumiria da trilha para sempre. Então nada de "Concluir": a dose fica
-    // pendente e o aluno sai pelo X da barra de cima.
-    if (heldBack > 0) return heldBackNotice;
-    if (fault) {
+  if (s.estado === "carregando") return <LoadingScreen label="Montando sua revisão…" />;
+
+  if (s.estado === "cota") {
+    // Cota estourada: a dose não fecha (senão as palavras novas que faltam somem da
+    // trilha). Com falha ao conferir, mostra o erro e o "Conferir de novo" junto.
+    if (!s.falha) return heldBackNotice;
+    return (
+      <div>
+        {heldBackNotice}
+        <div className="mx-auto mt-4 flex max-w-xl flex-col items-center gap-2">
+          {faultLine}
+          {retryButton}
+        </div>
+      </div>
+    );
+  }
+
+  if (s.estado === "conferindo") return <LoadingScreen label="Conferindo a fila…" />;
+
+  if (s.estado === "fim" && s.vazia) {
+    // nada para estudar desde o início
+    if (s.falha) {
       return (
         <div className="mx-auto max-w-lg pt-6">
           <EmptyState
             title="Não deu para montar a revisão"
-            description={fault}
-            action={<Button onClick={loadMore}>Tentar de novo</Button>}
+            description={s.falha}
+            action={<Button onClick={() => void s.reload()}>Tentar de novo</Button>}
           />
         </div>
       );
@@ -102,41 +118,18 @@ export function ReviewSession({
           }
           action={
             onDone ? (
-              <Button onClick={concludeEmpty} disabled={closing}>
+              <Button onClick={() => void s.close()} disabled={s.fechando}>
                 Concluir
               </Button>
             ) : undefined
           }
         />
-        {closeError && <p role="alert" className="mt-4 text-center text-[0.8125rem] text-again">{closeError}</p>}
+        {s.erroAoFechar && <p role="alert" className="mt-4 text-center text-[0.8125rem] text-again">{s.erroAoFechar}</p>}
       </div>
     );
   }
 
-  if (finished) {
-    if (settledFor !== total) return <LoadingScreen label="Conferindo a fila…" />;
-    if (heldBack > 0) {
-      // Cota estourada E falha ao conferir: mostra o erro e o "Conferir de novo"
-      // junto do aviso (sem o fault, a tela escondia o motivo e o botão).
-      if (!fault) return heldBackNotice;
-      return (
-        <div>
-          {heldBackNotice}
-          <div className="mx-auto mt-4 flex max-w-xl flex-col items-center gap-2">
-            {faultLine}
-            <Button
-              onClick={() => {
-                setFault(null);
-                setSettledFor(-1);
-                setRecheck((n) => n + 1);
-              }}
-            >
-              Conferir de novo
-            </Button>
-          </div>
-        </div>
-      );
-    }
+  if (s.estado === "fim") {
     return (
       <motion.div
         initial={{ opacity: 0, y: 8 }}
@@ -148,35 +141,27 @@ export function ReviewSession({
         </div>
         <h2 className="font-display mt-5 text-[1.5rem] leading-tight">Revisão concluída</h2>
         <p className="mt-2 text-sm text-muted">
-          {summary.reviewed} {summary.reviewed === 1 ? "card revisado" : "cards revisados"}
-          {summary.newLearned > 0 && ` · ${summary.newLearned} ${summary.newLearned === 1 ? "palavra nova" : "palavras novas"}`}
-          {summary.again > 0 && ` · ${summary.again} ${summary.again === 1 ? "esquecido" : "esquecidos"}`}
+          {s.resumo.reviewed} {s.resumo.reviewed === 1 ? "card revisado" : "cards revisados"}
+          {s.resumo.newLearned > 0 && ` · ${s.resumo.newLearned} ${s.resumo.newLearned === 1 ? "palavra nova" : "palavras novas"}`}
+          {s.resumo.again > 0 && ` · ${s.resumo.again} ${s.resumo.again === 1 ? "esquecido" : "esquecidos"}`}
         </p>
-        {fault && !doneFired.current && (
+        {s.falha && !s.fechado && (
           <div className="mt-6 flex flex-col items-center gap-2">
-            <p className="text-[0.8125rem] text-again">{fault}</p>
-            <Button
-              onClick={() => {
-                setFault(null);
-                setSettledFor(-1);
-                setRecheck((n) => n + 1);
-              }}
-            >
-              Conferir de novo
-            </Button>
+            <p className="text-[0.8125rem] text-again">{s.falha}</p>
+            {retryButton}
           </div>
         )}
         {onDone == null && (
           <div className="mt-6 flex flex-col items-center gap-2">
-            {pending > 0 && (
+            {s.pending > 0 && (
               /* Venceu durante a sessão. Não emendo sozinho: reiniciar a tela
                  na cara de quem acabou de terminar seria hostil. */
-              <Button onClick={loadMore}>
-                Revisar mais {pending} {pending === 1 ? "card" : "cards"}
+              <Button onClick={() => void s.reload()}>
+                Revisar mais {s.pending} {s.pending === 1 ? "card" : "cards"}
               </Button>
             )}
             <Button
-              variant={pending > 0 ? "ghost" : "secondary"}
+              variant={s.pending > 0 ? "ghost" : "secondary"}
               onClick={() => window.history.back()}
             >
               Voltar
@@ -187,26 +172,27 @@ export function ReviewSession({
     );
   }
 
+  const atual = s.atual!;
   return (
     <div className="flex flex-col items-center pt-2">
       {header}
       {faultLine}
       <Flashcard
-        key={current!.uid}
-        card={current!.card}
-        rec={current!.rec}
-        isNew={current!.isNew}
-        settings={settings ?? undefined}
-        mediaUrl={current!.mediaUrl}
-        wordAudioUrl={current!.wordAudioUrl}
-        fragmentUrl={current!.fragmentUrl}
-        sceneUrl={current!.sceneUrl}
-        example={current!.example}
-        onGrade={(rating, elapsed) => onGrade(current!, rating, elapsed)}
-        onAction={current!.rec ? (a) => onAction(current!, a) : undefined}
+        key={atual.uid}
+        card={atual.card}
+        rec={atual.rec}
+        isNew={atual.isNew}
+        settings={s.settings ?? undefined}
+        mediaUrl={atual.mediaUrl}
+        wordAudioUrl={atual.wordAudioUrl}
+        fragmentUrl={atual.fragmentUrl}
+        sceneUrl={atual.sceneUrl}
+        example={atual.example}
+        onGrade={(rating, elapsed) => void s.grade(rating, elapsed)}
+        onAction={atual.rec ? (a) => void s.act(a) : undefined}
         onKnown={
-          !isSentenceCard(current!.card) && (current!.isNew || current!.rec?.state === State.New)
-            ? () => onKnown(current!)
+          !isSentenceCard(atual.card) && (atual.isNew || atual.rec?.state === State.New)
+            ? () => void s.known()
             : undefined
         }
       />

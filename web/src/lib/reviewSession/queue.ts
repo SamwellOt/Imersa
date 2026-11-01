@@ -1,13 +1,13 @@
-// Regra pura da sessão de revisão: o item da fila (card + URLs prontas), o tipo
-// de cada aparição e as transformações da fila em memória (cards que voltam,
-// desfazer, adiar/suspender). Nada aqui lê o banco nem a rede.
+// Regra pura da sessão de revisão (interna ao módulo): o item da fila (card + URLs
+// prontas), o tipo de cada aparição e as transformações da fila em memória (cards
+// que voltam, desfazer, adiar/suspender). Nada aqui lê o banco nem a rede.
 import { State } from "ts-fsrs";
 import type { Dose, SentenceCard } from "@/types/dose";
 import { isLearningState, type QueueEntry } from "@/lib/srs";
 import type { CardRecord } from "@/lib/db";
 import { mediaUrl as mediaPath } from "@/lib/content";
 import { exampleFor } from "@/lib/cards";
-import type { ResolvedExample } from "./Flashcard";
+import type { ResolvedExample } from "@/components/srs/Flashcard";
 
 export interface ResolvedItem extends QueueEntry {
   /** Id desta APARIÇÃO na fila (um card que volta ganha outro). É a `key` do
