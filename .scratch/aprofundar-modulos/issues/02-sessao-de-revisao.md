@@ -1,6 +1,6 @@
 # 02 — Sessão de revisão sem React
 
-Status: ready-for-agent
+Status: resolved
 Blocked by: —
 
 Spec: `.scratch/aprofundar-modulos/spec.md` — seções "Sessão de revisão" (User Stories 12–33,
@@ -15,3 +15,7 @@ Inclui criar `GLOSSARY.md` na raiz com o termo **Sessão de revisão**.
 
 Pronto quando: tela só lê a visão e chama comandos; testes novos listados na spec passam;
 `npm test`, `npm run test:web` e `npm run typecheck` verdes.
+
+## Comments
+
+- 01/11: entregue em `9906ee9` (`web/src/lib/reviewSession/`). `reload()` agora limpa o erro anterior. Testes de UI e snapshots intocados; test:web 106/106.
