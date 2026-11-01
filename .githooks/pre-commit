@@ -1,0 +1,13 @@
+#!/bin/sh
+# Guardrail do Imersa: typecheck do app + testes do servidor, só quando o commit toca web/ ou server/.
+# Ativar (uma vez por clone): git config core.hooksPath .githooks
+# Pular uma vez (ex.: commit só de conteúdo urgente): git commit --no-verify
+set -e
+git diff --cached --name-only --diff-filter=ACMRD | grep -qE '^(web|server)/' || exit 0
+cd "$(git rev-parse --show-toplevel)/web"
+echo "pre-commit: typecheck"
+npm run --silent typecheck
+echo "pre-commit: testes do servidor"
+log=$(mktemp)
+npm test --silent >"$log" 2>&1 || { tail -40 "$log"; echo "pre-commit: testes do servidor falharam"; exit 1; }
+rm -f "$log"
