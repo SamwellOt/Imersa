@@ -1,7 +1,7 @@
 // Sessão de revisão sem React (lib/reviewSession): testes pela própria interface
 // que a tela usa — `getView()` e os comandos —, com IndexedDB real, a dose de
 // fixture e relógio falso. Nada de chamar funções internas da fila.
-import { describe, it, expect, beforeEach, resetDb, setClock, advanceClock, at } from "../harness";
+import { describe, it, expect, beforeEach, resetDb, setClock, advanceClock, at, sleep, waitFor } from "../harness";
 import { loadFixtureDose, saveSrs, rec, putCards } from "../fixtures";
 import { createReviewSession, type ReviewSummary } from "@/lib/reviewSession";
 import { db } from "@/lib/db";
@@ -14,6 +14,9 @@ const T0 = at(2026, 10, 10, 12);
 /** Card em revisão realista, vencido (ou não) em `due`. */
 const review = (key: string, due: number) =>
   rec({ key, state: 2, due, last_review: due - 3 * DAY, scheduled_days: 3, stability: 3, difficulty: 5, reps: 3 });
+/** Card em (re)aprendizado vencido em `due`. */
+const learning = (key: string, due: number) =>
+  rec({ key, state: 1, due, last_review: due - 10 * MIN, scheduled_days: 0, stability: 1, difficulty: 5, reps: 1, learning_steps: 1 });
 
 describe("sessão de revisão: fila da dose", () => {
   beforeEach(async () => {
@@ -222,5 +225,63 @@ describe("sessão de revisão: cards que voltam", () => {
     expect(v.estado).toBe("fim");
     expect(v.vazia).toBe(false);
     expect((await db.cards.toArray()).filter((c) => c.buriedUntil).length).toBe(1);
+  });
+});
+
+describe("sessão de revisão: nota não espera a rede; carga desmontada", () => {
+  beforeEach(async () => {
+    await resetDb();
+    useApp.setState({ autoPlayExample: false, flashcardExample: false, flashcardFrontText: true });
+  });
+
+  it("a próxima nota sai mesmo com a busca de cards que voltam travada na rede", async () => {
+    const past = Date.now() - DAY;
+    await putCards(learning("ko-T1-01::w-가방", past - 2000), learning("ko-T1-01::w-나무", past - 1000));
+    const s = createReviewSession({ language: "ko" });
+    await s.start();
+    expect(s.getView().total).toBe(2);
+    // card de outra dose, ainda sem cache: resolvê-lo trava na rede
+    await putCards(learning("ko-T1-02::w-travado", past));
+    const realFetch = window.fetch;
+    window.fetch = ((input: RequestInfo | URL, init?: RequestInit) =>
+      String(input instanceof Request ? input.url : input).includes("T1-02")
+        ? new Promise<Response>(() => {})
+        : realFetch(input, init)) as typeof fetch;
+    try {
+      // a nota é gravada e a fila anda; a busca dos que voltam fica presa na rede
+      void s.grade(Rating.Good, 0);
+      await waitFor(() => s.getView().resumo.reviewed === 1, 1000, "nota gravada");
+      expect(s.getView().atual!.key).toBe("ko-T1-01::w-나무");
+      // o próximo comando (Desfazer) não espera a rede
+      const outcome = await Promise.race([
+        s.undo().then(() => "ok"),
+        sleep(1500).then(() => "travou"),
+      ]);
+      expect(outcome).toBe("ok");
+      expect(s.getView().resumo.reviewed).toBe(0);
+    } finally {
+      window.fetch = realFetch;
+    }
+  });
+
+  it("carga de sessão desmontada não apaga card órfão", async () => {
+    const past = Date.now() - DAY;
+    await putCards(learning("ko-T1-01::w-sumiu", past));
+    const s = createReviewSession({ language: "ko" });
+    const load = s.start();
+    s.dispose();
+    await load;
+    expect(await db.cards.get("ko-T1-01::w-sumiu")).toBeTruthy();
+  });
+
+  it("StrictMode (start, dispose, start): a fila sai uma vez, sem card repetido", async () => {
+    const dose = await loadFixtureDose(1);
+    const s = createReviewSession({ language: "ko", introduce: dose, onDone: () => {} });
+    const a = s.start();
+    s.dispose();
+    const b = s.start();
+    await Promise.all([a, b]);
+    expect(s.getView().total).toBe(3);
+    expect(s.getView().faltam).toEqual({ new: 3, learning: 0, review: 0 });
   });
 });

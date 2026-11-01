@@ -13,16 +13,10 @@ import { useApp } from "@/lib/store";
 import { useHotkeys, isInteractiveTarget, hasShortcutModifier } from "@/lib/hooks";
 import { cn, fmtClock } from "@/lib/utils";
 import { Kbd } from "@/components/ui/primitives";
-import { isSentenceCard, type CardExample } from "@/lib/cards";
+import { isSentenceCard, type CardExample, type ResolvedExample } from "@/lib/cards";
 
 /** Ações do Anki sobre o card em tela: adiar (bury), suspender, reiniciar (forget). */
 export type CardAction = "bury" | "suspend" | "forget";
-
-/** Frase-exemplo pronta para tocar: `CardExample` + URLs resolvidas. */
-export interface ResolvedExample extends CardExample {
-  audioUrl?: string;
-  sceneUrl?: string;
-}
 
 /** A frase no idioma estudado com a palavra do card sublinhada. */
 function MarkedSentence({ ex, className }: { ex: CardExample; className?: string }) {

@@ -5,6 +5,12 @@
 // procurava só em `dose.cards` tomaria um card de frase por órfão — e o apagaria.
 import type { Dose, GlossEntry, Segment, SentenceCard } from "@/types/dose";
 
+/** Frase-exemplo pronta para tocar: `CardExample` + URLs resolvidas (lib, não a tela). */
+export interface ResolvedExample extends CardExample {
+  audioUrl?: string;
+  sceneUrl?: string;
+}
+
 export const WORD_PREFIX = "w-";
 export const SENTENCE_PREFIX = "s-";
 

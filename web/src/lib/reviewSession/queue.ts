@@ -6,8 +6,7 @@ import type { Dose, SentenceCard } from "@/types/dose";
 import { isLearningState, type QueueEntry } from "@/lib/srs";
 import type { CardRecord } from "@/lib/db";
 import { mediaUrl as mediaPath } from "@/lib/content";
-import { exampleFor } from "@/lib/cards";
-import type { ResolvedExample } from "@/components/srs/Flashcard";
+import { exampleFor, type ResolvedExample } from "@/lib/cards";
 
 export interface ResolvedItem extends QueueEntry {
   /** Id desta APARIÇÃO na fila (um card que volta ganha outro). É a `key` do

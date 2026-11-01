@@ -48,7 +48,12 @@ export async function resolveRecord(ctx: ResolveCtx, rec: CardRecord): Promise<R
  * fila — o app é offline-first, e apagar aqui significaria perder o progresso do
  * aluno (e propagar a perda para os outros aparelhos na sincronização).
  */
-export async function resolveQueue(ctx: ResolveCtx, q: QueueEntry[]): Promise<ResolvedItem[]> {
+export async function resolveQueue(
+  ctx: ResolveCtx,
+  q: QueueEntry[],
+  /** Falso quando a carga já não é a da sessão (desmontada ou recarregada): não apaga nada. */
+  isCurrent: () => boolean = () => true,
+): Promise<ResolvedItem[]> {
   const { language, doseCache } = ctx;
   const resolved: ResolvedItem[] = [];
   const fetchEntry = async (doseId: string, fresh = false) => {
@@ -78,7 +83,7 @@ export async function resolveQueue(ctx: ResolveCtx, q: QueueEntry[]): Promise<Re
       try {
         entry = await fetchEntry(it.doseId);
       } catch (err) {
-        if (it.rec && err instanceof DoseMissingError && (await confirmGone(it))) {
+        if (it.rec && err instanceof DoseMissingError && (await confirmGone(it)) && isCurrent()) {
           await dropStaleCard(it.key);
         }
         continue;
@@ -87,7 +92,7 @@ export async function resolveQueue(ctx: ResolveCtx, q: QueueEntry[]): Promise<Re
     let card = findCard(entry.dose, it.cardId);
     if (!card && it.rec) {
       // card id sumiu da dose em cache: a dose fresca pode tê-lo (build novo)
-      if (await confirmGone(it)) {
+      if ((await confirmGone(it)) && isCurrent()) {
         await dropStaleCard(it.key); // card id no longer exists → self-heal
         continue;
       }

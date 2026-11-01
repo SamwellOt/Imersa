@@ -7,7 +7,7 @@
 // de dados, não o app.
 import { db, type CardRecord } from "./db";
 import { loadDose } from "./content";
-import { putState } from "./ledger";
+import { putStates } from "./ledger";
 import type { Course, TopikTier, VocabTier } from "@/types/dose";
 
 /** Uma palavra só conta como sabida quando o FSRS a considera em revisão. */
@@ -66,11 +66,14 @@ export async function backfillCardTiers(course: Course): Promise<void> {
       // last-write-wins — o backfill nunca viajava para o outro aparelho e
       // ainda era desfeito pela primeira escrita que chegasse de lá.
       await db.transaction("rw", [db.cards], async () => {
+        const fixed: CardRecord[] = [];
         for (const r of recs) {
           const fresh = await db.cards.get(r.key);
           if (!fresh || fresh.topikLevel !== undefined) continue;
-          await putState("card", { ...fresh, topikLevel: tierOf.get(r.cardId) ?? null });
+          fixed.push({ ...fresh, topikLevel: tierOf.get(r.cardId) ?? null });
         }
+        // um lote só: um carimbo, um bulkPut, e o sync é agendado uma vez (se algo mudou)
+        await putStates("card", fixed);
       });
     } catch {
       /* dose indisponível (offline): tenta de novo na próxima vez */

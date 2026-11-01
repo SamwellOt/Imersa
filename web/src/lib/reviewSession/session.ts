@@ -134,13 +134,17 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
 
   const finished = () => items != null && pos >= items.length && (items.length > 0 || hadCards);
 
-  // ---- fila de comandos: um por vez ----
+  // ---- fila de comandos: um por vez (só as escritas na fila, nunca a rede) ----
   let chain: Promise<void> = Promise.resolve();
-  const enqueue = (fn: () => Promise<void>): Promise<void> => {
+  const enqueue = <T>(fn: () => Promise<T>): Promise<T> => {
     const p = chain.then(fn);
-    chain = p.catch(() => {});
+    chain = p.then(() => undefined, () => undefined);
     return p;
   };
+  // Geração: cada carga (start/reload) e cada desmontagem trocam o número. Uma
+  // carga ou uma busca de fim de fila de geração antiga não mexe mais na sessão.
+  let generation = 0;
+  const current = (g: number) => !disposed && g === generation;
 
   const resolveRec = (rec: CardRecord) => resolveRecord(ctx, rec);
 
@@ -150,20 +154,33 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
     setItems(mergeReturned(items, extra, pos, justGraded, atEnd));
   };
 
-  /** Um "De novo" que já venceu volta logo depois do card em tela. */
-  const requeueDue = async (justGraded: string) => {
-    try {
-      const due = await dueLearning(scope, 0, now());
-      if (!due.length) return;
-      const extra: ResolvedItem[] = [];
-      for (const rec of due) {
-        const it = await resolveRec(rec);
-        if (it) extra.push(it);
-      }
-      insertReturned(extra, justGraded, false);
-    } catch {
-      /* a conferência do meio da sessão é oportunista; o fim da fila refaz */
+  /** Cards do escopo que venceram (ou vencem em `aheadMin`), já resolvidos. Roda
+   *  FORA da fila de comandos: resolver uma dose que não está no cache espera a rede. */
+  const fetchDue = async (aheadMin: number): Promise<ResolvedItem[]> => {
+    const due = await dueLearning(scope, aheadMin, now());
+    const extra: ResolvedItem[] = [];
+    for (const rec of due) {
+      const it = await resolveRec(rec);
+      if (it) extra.push(it);
     }
+    return extra;
+  };
+
+  /** Um "De novo" que já venceu volta logo depois do card em tela. A busca não
+   *  bloqueia as próximas notas; só a inserção entra na fila. */
+  const requeueDue = async (justGraded: string, g: number) => {
+    let extra: ResolvedItem[];
+    try {
+      extra = await fetchDue(0);
+    } catch {
+      return; /* a conferência do meio da sessão é oportunista; o fim da fila refaz */
+    }
+    if (!extra.length) return;
+    await enqueue(async () => {
+      if (!current(g)) return;
+      insertReturned(extra, justGraded, false);
+      changed();
+    });
   };
 
   /** Remonta o card em tela (novo `uid`) — destrava o Flashcard depois de uma falha. */
@@ -176,60 +193,63 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
    * learn-ahead do Anki) entram no fim. Só então, sem mais nada, a sessão fecha.
    * Com a cota do dia estourada, a dose não fecha sozinha.
    */
-  async function conferirFim() {
-    if (disposed || !items || !finished() || fechado || settledFor === items.length) return;
+  async function conferirFim(g: number) {
+    if (!current(g) || !items || !finished() || fechado || settledFor === items.length) return;
     const total = items.length;
-    const extra: ResolvedItem[] = [];
+    let extra: ResolvedItem[];
     try {
-      const due = await dueLearning(scope, settings?.learnAheadMin ?? 0, now());
-      for (const rec of due) {
-        const it = await resolveRec(rec);
-        if (it) extra.push(it);
-      }
+      extra = await fetchDue(settings?.learnAheadMin ?? 0);
     } catch (err) {
-      if (disposed) return;
       // sem conseguir conferir, não fecha por conta própria: fica o aviso e "Conferir de novo"
-      falha = `Não deu para conferir a fila (${errorText(err)}).`;
-      settledFor = total;
-      changed();
-      return;
-    }
-    if (disposed) return;
-    if (extra.length) {
-      insertReturned(extra, null, true);
-      changed();
-      return;
-    }
-    settledFor = total;
-    changed();
-    if (heldBack > 0 || !onDone) return;
-    fechado = true;
-    changed();
-    // o fecho pode ser assíncrono (a dose grava antes de trocar de fase); não bloqueia a fila
-    void (async () => {
-      try {
-        await onDone(summary);
-      } catch (err) {
-        fechado = false;
-        falha = errorText(err);
+      await enqueue(async () => {
+        if (!current(g)) return;
+        falha = `Não deu para conferir a fila (${errorText(err)}).`;
+        settledFor = total;
         changed();
+      });
+      return;
+    }
+    await enqueue(async () => {
+      if (!current(g) || !items || fechado) return;
+      if (extra.length) {
+        insertReturned(extra, null, true);
+        changed();
+        return;
       }
-    })();
+      if (!finished() || settledFor === items.length) return;
+      settledFor = items.length;
+      changed();
+      if (heldBack > 0 || !onDone) return;
+      fechado = true;
+      changed();
+      // o fecho pode ser assíncrono (a dose grava antes de trocar de fase); não bloqueia a fila
+      void (async () => {
+        try {
+          await onDone(summary);
+        } catch (err) {
+          fechado = false;
+          falha = errorText(err);
+          changed();
+        }
+      })();
+    });
   }
 
-  async function carregar() {
+  /** Carrega a fila. Uma carga de geração antiga (StrictMode, recarga) é descartada
+   *  e não apaga nada: quem manda é a geração atual. */
+  async function carregar(g: number) {
     try {
       const s = await getSrsSettings();
       const built = introduce
         ? await buildDoseQueue(introduce, s)
         : { entries: await buildDueQueue(language, s), heldBack: 0 };
-      const resolved = await resolveQueue(ctx, built.entries);
-      if (disposed) return;
+      const resolved = await resolveQueue(ctx, built.entries, () => current(g));
+      if (!current(g)) return;
       settings = s;
       setItems(resolved);
       heldBack = built.heldBack;
     } catch (err) {
-      if (disposed) return;
+      if (!current(g)) return;
       falha = errorText(err);
       setItems([]);
       // a cota de uma carga anterior esconderia o erro atrás do aviso de cota
@@ -240,11 +260,13 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
 
   const start = () => {
     disposed = false;
-    return enqueue(carregar);
+    const g = ++generation;
+    return enqueue(() => carregar(g));
   };
 
   const dispose = () => {
     disposed = true;
+    generation++;
   };
 
   const subscribe = (listener: () => void) => {
@@ -260,30 +282,31 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
     return it && it.uid === uid ? it : null;
   };
 
-  const grade = (rating: ReviewRating, elapsedMs: number) => {
+  const grade = async (rating: ReviewRating, elapsedMs: number) => {
     // o card é o que estava em tela AO CLICAR; se a fila andou antes da vez dele, nada
     const uid = items?.[pos]?.uid;
-    return enqueue(async () => {
+    const g = generation;
+    const key = await enqueue(async () => {
       const item = itemAtual(uid);
-      if (!item) return;
-      let g: GradeResult | null = null;
+      if (!item) return null;
+      let res: GradeResult | null = null;
       try {
-        if (item.isNew) g = await gradeNew(item.dose, item.card, rating, elapsedMs, settings ?? undefined);
+        if (item.isNew) res = await gradeNew(item.dose, item.card, rating, elapsedMs, settings ?? undefined);
         else if (item.rec) {
           // o registro fresco, não o da fila: um desfazer ou uma sincronização
           // mudaram o estado, e a nota seria calculada em cima de um velho
           const fresh = await freshCard(item.key, item.rec);
-          g = await gradeCard(fresh, rating, elapsedMs, settings ?? undefined);
+          res = await gradeCard(fresh, rating, elapsedMs, settings ?? undefined);
         }
       } catch (err) {
         // nada foi gravado: o card fica, com os botões vivos, e o aluno vê o porquê
         falha = `Não deu para salvar a nota (${errorText(err)}). Tente de novo.`;
         remount();
         changed();
-        return;
+        return null;
       }
       falha = null;
-      if (g) history = [...history, { grade: g, rating, isNew: item.isNew }];
+      if (res) history = [...history, { grade: res, rating, isNew: item.isNew }];
       summary = {
         reviewed: summary.reviewed + 1,
         newLearned: summary.newLearned + (item.isNew ? 1 : 0),
@@ -291,33 +314,38 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
       };
       pos += 1;
       changed();
-      await requeueDue(item.key);
-      await conferirFim();
+      return item.key;
     });
+    if (key == null) return;
+    // fora da fila: a próxima nota já pode entrar enquanto a rede resolve os vencidos
+    await requeueDue(key, g);
+    await conferirFim(g);
   };
 
-  const known = () => {
+  const known = async () => {
     const uid = items?.[pos]?.uid;
-    return enqueue(async () => {
+    const g = generation;
+    const done = await enqueue(async () => {
       const item = itemAtual(uid);
-      if (!item) return;
+      if (!item) return false;
       // só palavra nova (nunca frase), como o botão do card
-      if (isSentenceCard(item.card) || !(item.isNew || item.rec?.state === State.New)) return;
-      let g: GradeResult;
+      if (isSentenceCard(item.card) || !(item.isNew || item.rec?.state === State.New)) return false;
+      let res: GradeResult;
       try {
-        g = await markKnown(item.dose, item.card);
+        res = await markKnown(item.dose, item.card);
       } catch (err) {
         falha = `Não deu para marcar (${errorText(err)}).`;
         remount();
         changed();
-        return;
+        return false;
       }
       falha = null;
-      history = [...history, { grade: g, rating: 3, isNew: item.isNew, known: true }];
+      history = [...history, { grade: res, rating: 3, isNew: item.isNew, known: true }];
       pos += 1;
       changed();
-      await conferirFim();
+      return true;
     });
+    if (done) await conferirFim(g);
   };
 
   const undo = () =>
@@ -350,12 +378,13 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
       changed();
     });
 
-  const act = (acao: Acao) => {
+  const act = async (acao: Acao) => {
     const uid = items?.[pos]?.uid;
-    return enqueue(async () => {
+    const g = generation;
+    const done = await enqueue(async () => {
       const item = itemAtual(uid);
-      if (!item?.rec) return;
-      let rec: CardRecord;
+      if (!item?.rec) return false;
+      let rec: CardRecord | null;
       try {
         // o registro fresco: gravar o da fila de volta desfaria um estado novo em silêncio
         const fresh = await freshCard(item.key, item.rec);
@@ -366,16 +395,18 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
         falha = `Não deu para aplicar a ação (${errorText(err)}).`;
         remount();
         changed();
-        return;
+        return false;
       }
       falha = null;
       // some da sessão: adiado/suspenso não volta; reiniciado vira novo
-      seen.set(item.key, { ...item, rec });
+      // (apagado pela sincronização: sai da sessão sem gravar nada)
+      if (rec) seen.set(item.key, { ...item, rec });
       // só daqui para a frente: o passado não encolhe
       if (items) setItems(dropAhead(items, pos, item.key));
       changed();
-      await conferirFim();
+      return true;
     });
+    if (done) await conferirFim(g);
   };
 
   const close = async () => {
@@ -393,24 +424,28 @@ export function createReviewSession(opts: ReviewSessionOptions): ReviewSession {
     }
   };
 
-  const reload = () =>
-    enqueue(async () => {
+  const reload = () => {
+    const g = ++generation;
+    return enqueue(async () => {
       fechado = false;
       pos = 0;
       settledFor = -1;
       falha = null;
       setItems(null);
       changed();
-      await carregar();
+      await carregar(g);
     });
+  };
 
-  const retry = () =>
-    enqueue(async () => {
+  const retry = async () => {
+    const g = generation;
+    await enqueue(async () => {
       falha = null;
       settledFor = -1;
       changed();
-      await conferirFim();
     });
+    await conferirFim(g);
+  };
 
   function computeView(): ReviewView {
     const total = items?.length ?? 0;

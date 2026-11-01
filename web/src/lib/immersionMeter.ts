@@ -1,13 +1,15 @@
 // Medidor de imersão: UMA regra de tempo ouvido para o vídeo e para a Escuta.
 //
-// Núcleo sem React. Escuta sozinho os eventos do elemento de mídia (play, pause,
-// timeupdate, ended) e da página (pagehide). A regra:
-//   • o intervalo é medido pelo relógio de parede enquanto a mídia toca — assim a
-//     velocidade (1,5×) não muda o valor e a aba em segundo plano conta;
+// Núcleo sem React. Escuta sozinho os eventos do elemento de mídia (playing, pause,
+// waiting, seeking, timeupdate, ended) e da página (pagehide, visibilitychange). A regra:
+//   • o intervalo é medido pelo relógio de parede enquanto a mídia toca de fato
+//     (abre em `playing`, fecha em waiting/seeking/pause/ended) — a velocidade (1,5×)
+//     não muda o valor, a aba em segundo plano conta e o buffering não;
 //   • cada amostra credita no máximo 2 s: um aparelho que dorme com a mídia
 //     "tocando" não credita a hora inteira;
 //   • acumulado abaixo de 500 ms não grava (toque acidental);
-//   • grava no pagehide, a cada 60 s e ao descartar o medidor.
+//   • grava ao pausar/terminar, ao esconder a aba, no pagehide, a cada 60 s e ao
+//     descartar o medidor.
 // A gravação é um evento imutável (`logImmersion` → `immersionLog`).
 import { logImmersion } from "./srsRepo";
 
@@ -37,7 +39,10 @@ export interface ImmersionMeter {
 export function createImmersionMeter(opts: ImmersionMeterOptions): ImmersionMeter {
   const { media } = opts;
   const now = opts.now ?? Date.now;
-  let lastTick: number | null = null; // relógio da última amostra enquanto tocava
+  let lastTick: number | null = null; // relógio da última amostra com o intervalo aberto
+  // intervalo aberto = a mídia está de fato tocando: abre em `playing`, fecha em
+  // waiting/seeking/pause/ended. Buffering não conta como ouvido.
+  let open = false;
   let pending = 0; // ms creditados e ainda não gravados
   let lastFlushAt = now();
   let disposed = false;
@@ -53,7 +58,7 @@ export function createImmersionMeter(opts: ImmersionMeterOptions): ImmersionMete
         opts.onCredit?.(credit);
       }
     }
-    lastTick = media.paused || media.ended ? null : t;
+    lastTick = open && !media.paused && !media.ended ? t : null;
     if (t - lastFlushAt >= METER_FLUSH_MS) flush();
   };
 
@@ -67,26 +72,39 @@ export function createImmersionMeter(opts: ImmersionMeterOptions): ImmersionMete
     void logImmersion(language, ms, doseId);
   };
 
-  const onPlay = () => {
+  const onPlaying = () => {
     // `playing` volta depois de um buffering: se o intervalo já está aberto, mantém
+    open = true;
     if (lastTick == null) lastTick = now();
   };
-  const onPause = () => {
-    // o pausar fecha o intervalo: o que tocou até aqui conta, o parado não
+  /** Fecha o intervalo: o que tocou até aqui conta, o parado e o buffering não. */
+  const close = () => {
     sample();
+    open = false;
     lastTick = null;
+  };
+  const onStop = () => {
+    // pausar e acabar gravam já: o aparelho pode matar a aba sem aviso depois
+    close();
+    flush();
   };
   const onHide = () => {
     sample();
     flush();
   };
+  // celular mata a aba sem `pagehide`: esconder a página também grava o pendente
+  const onVisibility = () => {
+    if (document.visibilityState === "hidden") onHide();
+  };
 
-  media.addEventListener("play", onPlay);
-  media.addEventListener("playing", onPlay);
+  media.addEventListener("playing", onPlaying);
   media.addEventListener("timeupdate", sample);
-  media.addEventListener("pause", onPause);
-  media.addEventListener("ended", onPause);
+  media.addEventListener("waiting", close);
+  media.addEventListener("seeking", close);
+  media.addEventListener("pause", onStop);
+  media.addEventListener("ended", onStop);
   window.addEventListener("pagehide", onHide);
+  document.addEventListener("visibilitychange", onVisibility);
 
   return {
     dispose() {
@@ -94,12 +112,14 @@ export function createImmersionMeter(opts: ImmersionMeterOptions): ImmersionMete
       sample();
       flush();
       disposed = true;
-      media.removeEventListener("play", onPlay);
-      media.removeEventListener("playing", onPlay);
+      media.removeEventListener("playing", onPlaying);
       media.removeEventListener("timeupdate", sample);
-      media.removeEventListener("pause", onPause);
-      media.removeEventListener("ended", onPause);
+      media.removeEventListener("waiting", close);
+      media.removeEventListener("seeking", close);
+      media.removeEventListener("pause", onStop);
+      media.removeEventListener("ended", onStop);
       window.removeEventListener("pagehide", onHide);
+      document.removeEventListener("visibilitychange", onVisibility);
     },
   };
 }

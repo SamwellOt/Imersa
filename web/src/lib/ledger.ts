@@ -122,6 +122,26 @@ export async function removeState(kind: StateKind, id: string): Promise<void> {
   if (spec.syncable(id)) scheduleSync();
 }
 
+/**
+ * Grava vários registros de estado de uma vez: um carimbo, um `bulkPut`, um
+ * agendamento de sincronização (em vez de um por registro).
+ */
+export async function putStates<K extends StateKind>(
+  kind: K,
+  recs: Omit<StateRecords[K], "updatedAt">[],
+): Promise<void> {
+  if (!recs.length) return;
+  const spec = stateTable(kind) as unknown as {
+    table: { bulkPut(r: unknown[]): Promise<unknown> };
+    syncable: (id: string) => boolean;
+    idOf: (r: unknown) => string;
+  };
+  const at = Date.now();
+  const saved = recs.map((rec) => ({ ...rec, updatedAt: at }));
+  await spec.table.bulkPut(saved);
+  if (saved.some((r) => spec.syncable(spec.idOf(r)))) scheduleSync();
+}
+
 /** Ajuste (`settings`): mesma regra de `putState`. Chave `local:` não sincroniza. */
 export async function setSetting<T>(key: string, value: T): Promise<void> {
   await putState("setting", { key, value });

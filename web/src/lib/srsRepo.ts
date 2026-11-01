@@ -14,7 +14,7 @@ import {
   newUid,
   type CardRecord,
 } from "./db";
-import { appendEvent, putState, removeEvent, removeState, setSetting, updateState } from "./ledger";
+import { appendEvent, putState, putStates, removeEvent, removeState, setSetting, updateState } from "./ledger";
 import { dayKey, nextDayStart } from "./utils";
 import {
   normalizeSettings, scheduler, toFsrs, applyFsrs, cardKey, isActive, isLearningState, availableAt,
@@ -361,20 +361,24 @@ export async function addExtraCard(dose: Dose, card: SentenceCard): Promise<Card
 
 // ---- card actions (Anki: bury / suspend / forget) ----
 
+/*
+ * Ações no card leem o registro DO BANCO e não gravam se ele não existe mais: um
+ * tombstone que chegou da sincronização apagou o card, e gravar a cópia da tela
+ * o ressuscitaria com `updatedAt` novo. Devolvem `null` nesse caso.
+ */
+
 /** Adia o card até o próximo dia de estudo (Anki "bury"). */
-export async function buryCard(rec: CardRecord): Promise<CardRecord> {
-  const updated = await updateState("card", rec.key, (cur) => ({
-    ...(cur ?? rec), buriedUntil: nextDayStart(),
-  }));
-  return updated!;
+export async function buryCard(rec: CardRecord): Promise<CardRecord | null> {
+  const updated = await updateState("card", rec.key, (cur) =>
+    cur ? { ...cur, buriedUntil: nextDayStart() } : null);
+  return updated ?? null;
 }
 
 /** Tira o card de todas as filas até ser reativado (Anki "suspend"). */
-export async function suspendCard(rec: CardRecord): Promise<CardRecord> {
-  const updated = await updateState("card", rec.key, (cur) => ({
-    ...(cur ?? rec), suspended: true,
-  }));
-  return updated!;
+export async function suspendCard(rec: CardRecord): Promise<CardRecord | null> {
+  const updated = await updateState("card", rec.key, (cur) =>
+    cur ? { ...cur, suspended: true } : null);
+  return updated ?? null;
 }
 
 export async function countSuspended(language: string): Promise<number> {
@@ -388,7 +392,7 @@ export async function unsuspendAll(language: string): Promise<number> {
   // de agora, a cópia velha venceria o last-write-wins nos outros aparelhos
   return db.transaction("rw", db.cards, async () => {
     const sus = (await db.cards.where("language").equals(language).toArray()).filter((c) => c.suspended);
-    for (const c of sus) await putState("card", { ...c, suspended: false });
+    await putStates("card", sus.map((c) => ({ ...c, suspended: false })));
     return sus.length;
   });
 }
@@ -397,17 +401,17 @@ export async function unsuspendAll(language: string): Promise<number> {
  * Reinicia o card (Anki "forget"): volta a novo, sem memória de estabilidade e
  * dificuldade. O histórico de notas fica; o contador de repetições também.
  */
-export async function forgetCard(rec: CardRecord, settings?: SrsSettings): Promise<CardRecord> {
+export async function forgetCard(rec: CardRecord, settings?: SrsSettings): Promise<CardRecord | null> {
   // ajustes lidos antes: nada assíncrono fora do Dexie dentro da transação
   const s = settings ?? (await getSrsSettings());
   const now = new Date();
   const updated = await updateState("card", rec.key, (cur) => {
-    const fresh = cur ?? rec;
-    const c = scheduler(s).forget(toFsrs(fresh), now, false).card;
-    const { buriedUntil: _b, ...base } = fresh;
+    if (!cur) return null; // apagado pela sincronização: não ressuscita
+    const c = scheduler(s).forget(toFsrs(cur), now, false).card;
+    const { buriedUntil: _b, ...base } = cur;
     return applyFsrs(base as CardRecord, c);
   });
-  return updated!;
+  return updated ?? null;
 }
 
 // ---- card info (o "Card info" do Anki, resumido) ----
@@ -436,7 +440,7 @@ export async function rescheduleAll(
       db.reviewLog.where("language").equals(language).toArray(),
     ]);
     const updates = replayHistory(cards, logs, f, now);
-    for (const u of updates) await putState("card", u);
+    await putStates("card", updates);
     return { changed: updates.length, total: cards.length };
   });
 }

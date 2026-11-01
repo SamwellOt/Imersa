@@ -30,7 +30,11 @@ function setup() {
   };
   /** Fecha a página: o que já tocou vira evento. */
   const hide = () => window.dispatchEvent(new Event("pagehide"));
-  return { el, m, credits, tick, play, hide };
+  /** Relógio andando SEM evento de mídia (buffering, aba dormindo). */
+  const advance = (ms: number) => {
+    clock += ms;
+  };
+  return { el, m, credits, tick, play, hide, advance };
 }
 
 async function logged() {
@@ -131,6 +135,65 @@ describe("medidor de imersão (núcleo)", () => {
     s.hide();
     const rows = await onlyRow("evento de imersão");
     expect(rows[0].ms).toBe(6000);
+  });
+
+  it("pausar grava o que já tocou, sem esperar a página fechar", async () => {
+    const s = setup();
+    await s.play();
+    s.tick(1500);
+    s.el.pause();
+    const rows = await onlyRow("gravação no pausar");
+    expect(rows[0].ms).toBe(1500);
+  });
+
+  it("aba escondida grava o pendente (celular mata a aba sem pagehide)", async () => {
+    const s = setup();
+    await s.play();
+    s.tick(1500);
+    Object.defineProperty(document, "visibilityState", { value: "hidden", configurable: true });
+    try {
+      document.dispatchEvent(new Event("visibilitychange"));
+    } finally {
+      delete (document as unknown as Record<string, unknown>).visibilityState;
+    }
+    const rows = await onlyRow("gravação ao esconder a aba");
+    expect(rows[0].ms).toBe(1500);
+  });
+
+  it("aba visível não grava a cada visibilitychange (controle)", async () => {
+    const s = setup();
+    await s.play();
+    s.tick(1500);
+    document.dispatchEvent(new Event("visibilitychange"));
+    await sleep(30);
+    expect((await logged()).length).toBe(0);
+    s.hide();
+    const rows = await onlyRow("evento de imersão");
+    expect(rows[0].ms).toBe(1500);
+  });
+
+  it("buffering (waiting) não conta o tempo parado até o playing", async () => {
+    const s = setup();
+    await s.play();
+    s.tick(1000);
+    s.el.dispatchEvent(new Event("waiting"));
+    s.advance(5000); // a rede travou: relógio anda, mídia não
+    s.tick(1000); // timeupdate chega sem avanço de mídia
+    s.el.dispatchEvent(new Event("playing"));
+    s.tick(1000);
+    expect(s.credits).toEqual([1000, 1000]);
+    s.hide();
+    const rows = await onlyRow("evento de imersão");
+    expect(rows[0].ms).toBe(2000);
+  });
+
+  it("o evento play sozinho, sem a mídia tocar, não abre intervalo", async () => {
+    const s = setup();
+    s.el.dispatchEvent(new Event("play"));
+    s.tick(3000);
+    expect(s.credits).toEqual([]);
+    s.hide();
+    expect((await logged()).length).toBe(0);
   });
 
   it("dispose grava o pendente, para de ouvir e não grava duas vezes", async () => {
