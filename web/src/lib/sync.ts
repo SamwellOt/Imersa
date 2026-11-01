@@ -34,6 +34,14 @@ const CFG_KEY = `${LOCAL_SETTING}sync`;
 const STATE_KEY = SYNC_STATE_KEY;
 const DEVICE_KEY = DEVICE_ID_KEY;
 
+/** Teto de uma requisição ao servidor. Sem ele, uma conexão pendurada deixava
+ *  `running` preso para sempre (e o "Sair" girando). */
+export const REQUEST_TIMEOUT_MS = 20_000;
+/** Folga do corte do lote: `gradeCard` carimba `now` alguns ms ANTES de a transação
+ *  comitar; uma revisão nessa janela teria timestamp < corte e nunca subiria. Reenviar
+ *  o que já foi é inofensivo (eventos têm uid; estado é last-write-wins). */
+const CUT_MARGIN_MS = 10_000;
+
 /** Disparado quando o servidor recusa a sessão da conta (401): lib/auth.ts
  *  ouve e derruba o estado "logado" — a tela de entrar aparece sozinha. */
 export const SESSION_EXPIRED_EVENT = "imersa:session-expired";
@@ -103,12 +111,17 @@ export async function setSyncConfig(patch: Partial<SyncConfig>): Promise<SyncCon
 }
 
 export async function deviceId(): Promise<string> {
-  let id = await getSetting<string>(DEVICE_KEY, "");
-  if (!id) {
-    id = newUid();
-    await setSetting(DEVICE_KEY, id);
-  }
-  return id;
+  // ler-ou-criar numa transação: duas chamadas ao mesmo tempo (duas abas, ou o
+  // sync e o login) geravam dois ids, e o 1º sync saía com um id que logo era
+  // trocado — o servidor devolvia ao aparelho o que ele mesmo tinha subido
+  return db.transaction("rw", db.settings, async () => {
+    let id = await getSetting<string>(DEVICE_KEY, "");
+    if (!id) {
+      id = newUid();
+      await setSetting(DEVICE_KEY, id);
+    }
+    return id;
+  });
 }
 
 /** Código novo, legível e longo o bastante para não ser adivinhado. */
@@ -275,7 +288,13 @@ async function runSync(opts: SyncOpts = {}): Promise<SyncResult> {
   const state = await getSyncState();
   const endpoint = `${cred.url.replace(/\/+$/, "")}/api/sync`;
   const startedAt = Date.now();
-  const changes = await localChanges(state.pushedAt);
+  let changes: Change[];
+  try {
+    changes = await localChanges(state.pushedAt);
+  } catch (err) {
+    // falha do IndexedDB não pode virar rejeição não tratada em `void syncNow()`
+    return { ok: false, sent: 0, received: 0, error: err instanceof Error ? err.message : String(err) };
+  }
 
   let cursor = state.cursor;
   let received = 0;
@@ -284,11 +303,16 @@ async function runSync(opts: SyncOpts = {}): Promise<SyncResult> {
     let sentThisRound = changes;
     for (let round = 0; round < 50; round++) {
       const body = JSON.stringify({ since: cursor, deviceId: await deviceId(), changes: sentThisRound });
+      // O teto cresce com o corpo: um lote grande numa rede lenta (ex.: 20 KB/s
+      // de subida) abortava e recomeçava do zero para sempre. Conta 25 KB/s de
+      // piso — o resto do limite continua sendo o teto fixo de 20 s.
+      const timeoutMs = REQUEST_TIMEOUT_MS + Math.ceil(body.length / 25_000) * 1000;
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "content-type": "application/json", authorization: cred.header },
         body,
         keepalive: !!opts.keepalive && body.length < 60_000,
+        signal: AbortSignal.timeout(timeoutMs),
       });
       if (!res.ok) {
         const msg = await res.json().catch(() => ({}));
@@ -311,11 +335,9 @@ async function runSync(opts: SyncOpts = {}): Promise<SyncResult> {
     return { ok: false, sent: 0, received, error };
   }
 
-  // O corte é 1 ms ANTES do início: algo carimbado no mesmo milissegundo de
-  // `startedAt` mas gravado depois da leitura do lote não entrou nele — com o
-  // corte em `startedAt` (e `above`, estrito) essa escrita nunca mais subia, e o
-  // tombstone era apagado sem ter viajado. Reenviar o que já foi é inofensivo.
-  const cut = startedAt - 1;
+  // O corte recua CUT_MARGIN_MS antes do início (ver a constante): escritas feitas
+  // logo antes do commit, durante a subida, entram no próximo lote em vez de sumir.
+  const cut = startedAt - CUT_MARGIN_MS;
   // limpa os tombstones já entregues — eles só existem para viajar uma vez
   const delivered = await db.tombstones.where("deletedAt").belowOrEqual(cut).toArray();
   if (delivered.length) await db.tombstones.bulkDelete(delivered.map((t) => t.tid));

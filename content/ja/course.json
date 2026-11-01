@@ -88,51 +88,51 @@
       "id": "ja-B1-04",
       "level": "B1",
       "lessonNumber": 4,
-      "title": "De trem e de avião: Kofu → Hiroshima",
-      "path": "course/B1-04/dose.json",
-      "durationSec": 1068,
-      "cardCount": 20,
-      "mediaKind": "video",
-      "cardTiers": {
-        "A": 12,
-        "B": 2,
-        "C": 2
-      },
-      "posterSrc": "media/frames/p3e20a0ed1e4c.jpg",
-      "condensedAudioSrc": "media/condensed.mp3"
-    },
-    {
-      "id": "ja-B1-05",
-      "level": "B1",
-      "lessonNumber": 5,
       "title": "Amigos estrangeiros? · O café do amigo",
-      "path": "course/B1-05/dose.json",
+      "path": "course/B1-04/dose.json",
       "durationSec": 1509,
       "cardCount": 20,
       "mediaKind": "video",
       "cardTiers": {
-        "A": 14,
-        "B": 2,
+        "A": 16,
+        "B": 3,
         "C": 1
       },
       "posterSrc": "media/frames/pe99ecbbec4c8.jpg",
       "condensedAudioSrc": "media/condensed.mp3"
     },
     {
-      "id": "ja-B1-06",
+      "id": "ja-B1-05",
       "level": "B1",
-      "lessonNumber": 6,
-      "title": "Okinawa com a amiga (e um casamento)",
-      "path": "course/B1-06/dose.json",
-      "durationSec": 1071,
+      "lessonNumber": 5,
+      "title": "Katakana na rua, a caminho da academia",
+      "path": "course/B1-05/dose.json",
+      "durationSec": 1449,
       "cardCount": 20,
       "mediaKind": "video",
       "cardTiers": {
-        "C": 1,
-        "A": 8,
-        "B": 2
+        "A": 10,
+        "C": 2,
+        "B": 3
       },
-      "posterSrc": "media/frames/p2064bb658055.jpg",
+      "posterSrc": "media/frames/p513e87994733.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-06",
+      "level": "B1",
+      "lessonNumber": 6,
+      "title": "Viagem da firma a Kyoto",
+      "path": "course/B1-06/dose.json",
+      "durationSec": 1106,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "C": 2,
+        "A": 10,
+        "B": 5
+      },
+      "posterSrc": "media/frames/p3a2722c81aa1.jpg",
       "condensedAudioSrc": "media/condensed.mp3"
     },
     {
@@ -145,11 +145,27 @@
       "cardCount": 20,
       "mediaKind": "video",
       "cardTiers": {
-        "A": 7,
+        "A": 8,
         "C": 2,
-        "B": 3
+        "B": 2
       },
       "posterSrc": "media/frames/p11646182ea31.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
+    },
+    {
+      "id": "ja-B1-08",
+      "level": "B1",
+      "lessonNumber": 8,
+      "title": "Dois amigos em Hakone",
+      "path": "course/B1-08/dose.json",
+      "durationSec": 1470,
+      "cardCount": 20,
+      "mediaKind": "video",
+      "cardTiers": {
+        "A": 3,
+        "B": 1
+      },
+      "posterSrc": "media/frames/p70875fe7aa9f.jpg",
       "condensedAudioSrc": "media/condensed.mp3"
     }
   ],
@@ -162,21 +178,21 @@
         "name": "Intermediário",
         "exam": "JLPT N3",
         "cefr": "B1",
-        "words": 1860
+        "words": 2133
       },
       {
         "tier": "B",
         "name": "Intermediário alto",
         "exam": "JLPT N2",
         "cefr": "B2",
-        "words": 1456
+        "words": 1821
       },
       {
         "tier": "C",
         "name": "Avançado",
         "exam": "JLPT N1",
         "cefr": "C1",
-        "words": 2470
+        "words": 2812
       }
     ]
   }

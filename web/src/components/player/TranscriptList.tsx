@@ -24,6 +24,8 @@ export function TranscriptList({
   onWord?: OnWord;
 }) {
   const activeRef = useRef<HTMLButtonElement>(null);
+  // Raiz da lista: existe mesmo sem fala ativa (activeIndex -1 no início da dose).
+  const rootRef = useRef<HTMLDivElement>(null);
   // O aluno rolou a lista com a mão? Deixa quieto por alguns segundos em vez de
   // puxar de volta a cada fala. O scroll programático também dispara `scroll`,
   // então ele é marcado para não contar como gesto.
@@ -31,7 +33,7 @@ export function TranscriptList({
   const autoScrollUntil = useRef(0);
   const USER_HOLD_MS = 4000;
   useEffect(() => {
-    const box = activeRef.current?.closest<HTMLElement>(".overflow-y-auto");
+    const box = rootRef.current?.closest<HTMLElement>(".overflow-y-auto");
     if (!box) return;
     const onScroll = () => {
       if (Date.now() > autoScrollUntil.current) userScrollAt.current = Date.now();
@@ -56,7 +58,7 @@ export function TranscriptList({
   }, [activeIndex]);
 
   return (
-    <div className="flex flex-col">
+    <div ref={rootRef} className="flex flex-col">
       {segments.map((seg, i) => {
         const active = i === activeIndex;
         return (

@@ -91,6 +91,8 @@ export function DosePlayer() {
   const [phase, setPhaseState] = useState<Phase | null>(urlPhase);
   // resumo da fase de revisão, usado no fecho da dose
   const [summary, setSummary] = useState<ReviewSummary | null>(null);
+  // falha ao gravar o fecho: a dose continua na revisão, com aviso e nova tentativa
+  const [finishErr, setFinishErr] = useState<string | null>(null);
 
   const setPhase = (p: Phase) => {
     setPhaseState(p);
@@ -194,11 +196,13 @@ export function DosePlayer() {
   // de antes e mostra a sequência sem contar a dose que acabou de sair.
   const finishDose = async (s: ReviewSummary) => {
     setSummary(s);
+    setFinishErr(null);
     try {
       await markPhaseDone(dose.id, lang, "review");
       await completeDose(dose.id, lang);
-    } finally {
       setPhase("done");
+    } catch (err) {
+      setFinishErr(err instanceof Error ? err.message : "erro desconhecido");
     }
   };
 
@@ -282,12 +286,24 @@ export function DosePlayer() {
             )}
 
             {phase === "review" && (
-              <ReviewSession
-                language={lang}
-                introduce={dose}
-                onDone={finishDose}
-                emptyHint="Sem cards pendentes desta dose por agora."
-              />
+              <>
+                <ReviewSession
+                  language={lang}
+                  introduce={dose}
+                  onDone={finishDose}
+                  emptyHint="Sem cards pendentes desta dose por agora."
+                />
+                {finishErr && (
+                  <div className="mt-4 flex flex-wrap items-center justify-center gap-3 text-center">
+                    <p role="alert" className="text-[0.8125rem] text-again">
+                      Não deu para concluir a dose ({finishErr}).
+                    </p>
+                    <Button variant="ghost" size="sm" onClick={() => summary && finishDose(summary)}>
+                      Tentar de novo
+                    </Button>
+                  </div>
+                )}
+              </>
             )}
 
             {phase === "done" && (

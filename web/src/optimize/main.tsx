@@ -4,7 +4,7 @@
 // exigem SharedArrayBuffer e portanto uma página "cross-origin isolated". Ligar
 // esses cabeçalhos no app inteiro é risco à toa; aqui é só nesta rota (ver
 // server/index.mjs e vite.config.ts). O banco (IndexedDB) é o mesmo — mesma origem.
-import { StrictMode, useEffect, useMemo, useState } from "react";
+import { StrictMode, useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { ArrowLeft, Check } from "lucide-react";
 import { getProgress } from "fsrs-browser";
@@ -41,6 +41,17 @@ function OptimizePage() {
   const lang = useMemo(() => new URLSearchParams(location.search).get("lang") ?? "", []);
   const [settings, setSettings] = useState<SrsSettings | null>(null);
   const [phase, setPhase] = useState<Phase>({ k: "loading" });
+  // worker e intervalo de progresso vivos fora do render: a desmontagem os encerra
+  const workerRef = useRef<Worker | null>(null);
+  const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(
+    () => () => {
+      if (pollRef.current) clearInterval(pollRef.current);
+      workerRef.current?.terminate();
+    },
+    [],
+  );
 
   useEffect(() => {
     (async () => {
@@ -68,15 +79,21 @@ function OptimizePage() {
     const input = phase.input;
     setPhase({ k: "training", input, done: 0, total: 0 });
     const worker = new Worker(new URL("./train.worker.ts", import.meta.url), { type: "module" });
-    let poll: ReturnType<typeof setInterval> | null = null;
+    workerRef.current = worker;
     const stopPoll = () => {
-      if (poll) clearInterval(poll);
-      poll = null;
+      if (pollRef.current) clearInterval(pollRef.current);
+      pollRef.current = null;
+    };
+    // fim do treino (ok ou erro): solta intervalo e worker
+    const finish = () => {
+      stopPoll();
+      worker.terminate();
+      workerRef.current = null;
     };
     worker.onmessage = (e: MessageEvent<TrainMessage>) => {
       const m = e.data;
       if (m.type === "progress-handle") {
-        poll = setInterval(() => {
+        pollRef.current = setInterval(() => {
           try {
             const p = getProgress(m.memory.buffer, m.pointer);
             setPhase((cur) =>
@@ -87,18 +104,15 @@ function OptimizePage() {
           }
         }, 150);
       } else if (m.type === "done") {
-        stopPoll();
-        worker.terminate();
+        finish();
         setPhase({ k: "result", input, w: m.w });
       } else {
-        stopPoll();
-        worker.terminate();
+        finish();
         setPhase({ k: "error", message: m.error });
       }
     };
     worker.onerror = (ev) => {
-      stopPoll();
-      worker.terminate();
+      finish();
       setPhase({ k: "error", message: ev.message || "Falha ao iniciar o worker de treino." });
     };
     worker.postMessage({
@@ -110,13 +124,29 @@ function OptimizePage() {
 
   const apply = async (reschedule: boolean) => {
     if (phase.k !== "result" || !settings) return;
-    const next: SrsSettings = {
-      ...settings, w: phase.w, wOptimizedAt: Date.now(), wReviews: phase.input.reviews,
-    };
-    await setSetting("srs", next);
-    setSettings(next);
-    const r = reschedule ? await rescheduleAll(lang, next) : { changed: 0, total: 0 };
-    setPhase({ k: "applied", ...r });
+    try {
+      // Mescla sobre o valor ATUAL do banco, na mesma transação: `settings` é de
+      // quando a página abriu, e a otimização leva minutos — um ajuste mudado
+      // nesse meio tempo (outra aba, ou vindo do celular pelo sync) se perderia.
+      const w = phase.w;
+      const reviews = phase.input.reviews;
+      const next = await db.transaction("rw", db.settings, async () => {
+        const merged: SrsSettings = {
+          ...(await getSrsSettings()), w, wOptimizedAt: Date.now(), wReviews: reviews,
+        };
+        await setSetting("srs", merged);
+        return merged;
+      });
+      setSettings(next);
+      const r = reschedule ? await rescheduleAll(lang, next) : { changed: 0, total: 0 };
+      setPhase({ k: "applied", ...r });
+    } catch (err) {
+      // sem o try, uma falha em rescheduleAll deixava a tela parada, sem mensagem
+      setPhase({
+        k: "error",
+        message: `Não consegui aplicar: ${err instanceof Error ? err.message : String(err)}`,
+      });
+    }
   };
 
   const current = settings?.w ?? [...FSRS_DEFAULT_W];

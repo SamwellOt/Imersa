@@ -28,6 +28,10 @@ export function WordPopover({
 }) {
   const info = lemmaInfo(dose, lemma);
   const ref = useRef<HTMLDivElement>(null);
+  // `onClose` chega inline e muda a cada render; o ref evita reinstalar os
+  // listeners (e o timer) a cada atualização do player.
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
   const [pos, setPos] = useState<{ left: number; top: number } | null>(null);
   const [busy, setBusy] = useState(false);
   const cardId = WORD_PREFIX + lemma;
@@ -50,12 +54,12 @@ export function WordPopover({
 
   useEffect(() => {
     const onDown = (e: PointerEvent) => {
-      if (!ref.current?.contains(e.target as Node)) onClose();
+      if (!ref.current?.contains(e.target as Node)) onCloseRef.current();
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         e.stopPropagation();
-        onClose();
+        onCloseRef.current();
       }
     };
     // no próximo tique: o toque que abriu não pode fechar
@@ -66,7 +70,7 @@ export function WordPopover({
       document.removeEventListener("pointerdown", onDown);
       window.removeEventListener("keydown", onKey, true);
     };
-  }, [onClose]);
+  }, []);
 
   if (!info) return null;
   const audio = info.addable?.audioClipSrc ?? info.doseCard?.audioClipSrc;

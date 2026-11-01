@@ -78,6 +78,17 @@ def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _span_ms(start: float, end: float) -> tuple[int, int]:
+    """Início e fim em ms, arredondados (int() truncava 1.001 s para 1000).
+    O `end` já é o fim da última palavra; se não passa do início, fala de duração
+    zero ficaria sem tempo ativo no player, então dura 200 ms."""
+    s = round(start * 1000)
+    e = round(end * 1000)
+    if e <= s:
+        e = s + 200
+    return s, e
+
+
 def _group_scribe(path: str, *, max_chars: int | None, gap_s: float) -> list[Sentence]:
     """Group Scribe word tokens into units.
 
@@ -102,7 +113,8 @@ def _group_scribe(path: str, *, max_chars: int | None, gap_s: float) -> list[Sen
         nonlocal buf, start, end, pending_space
         text = _clean("".join(buf))
         if text and start is not None and end is not None:
-            out.append(Sentence(int(start * 1000), int(end * 1000), text, spk))
+            s_ms, e_ms = _span_ms(start, end)
+            out.append(Sentence(s_ms, e_ms, text, spk))
         buf = []
         start = end = None
         pending_space = False
@@ -261,7 +273,8 @@ def clause_lines_from_scribe(path: str, max_chars: int = 40) -> list[list[Senten
         for part in _split_clauses(ws, max_chars):
             text = _clean("".join(x["text"] for x in part))
             if text:
-                parts.append(Sentence(int(part[0]["start"] * 1000), int(part[-1]["end"] * 1000), text, None))
+                s_ms, e_ms = _span_ms(part[0]["start"], part[-1]["end"])
+                parts.append(Sentence(s_ms, e_ms, text, None))
         out.append(parts)
     return out
 

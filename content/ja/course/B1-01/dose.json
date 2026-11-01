@@ -1851,7 +1851,8 @@
           "lemma": "地下鉄",
           "surface": "地下鉄",
           "start": 20,
-          "end": 23
+          "end": 23,
+          "base": true
         },
         {
           "lemma": "バス",
@@ -3549,7 +3550,8 @@
           "lemma": "外国人",
           "surface": "外国人",
           "start": 3,
-          "end": 6
+          "end": 6,
+          "base": true
         },
         {
           "lemma": "沢山",
@@ -4260,7 +4262,7 @@
       "id": "s98",
       "index": 98,
       "startMs": 447990,
-      "endMs": 447990,
+      "endMs": 448050,
       "target": "。",
       "translation": ".",
       "speakerId": "speaker_0",
@@ -9390,7 +9392,8 @@
           "lemma": "方法",
           "surface": "方法",
           "start": 5,
-          "end": 7
+          "end": 7,
+          "base": true
         },
         {
           "lemma": "彼の",
@@ -11422,6 +11425,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -11503,6 +11507,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -11603,7 +11608,7 @@
       "meaning": "não; (いや) pois é, ah (início de fala)",
       "meaningEn": null,
       "freqRank": 4885,
-      "topikLevel": null,
+      "topikLevel": "A",
       "dict": true
     },
     {
@@ -11694,7 +11699,7 @@
       "meaning": "trem-bala (shinkansen)",
       "meaningEn": null,
       "freqRank": 2352,
-      "topikLevel": null,
+      "topikLevel": "B",
       "card": {
         "id": "w-新幹線",
         "segmentId": "s15",
@@ -11707,7 +11712,7 @@
         "audioClipSrc": "media/tts/w1aefe07267d6.mp3",
         "exampleAudioSrc": "media/frag/fed4068369cc8.mp3",
         "freqRank": 2352,
-        "topikLevel": null,
+        "topikLevel": "B",
         "newWords": [],
         "homophones": null,
         "sceneSrc": "media/frames/s7e0d8e865d8f.jpg"
@@ -11868,6 +11873,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -12028,23 +12034,7 @@
       "meaningEn": null,
       "freqRank": 4232,
       "topikLevel": null,
-      "card": {
-        "id": "w-地下鉄",
-        "segmentId": "s31",
-        "target": "地下鉄",
-        "translation": "metrô",
-        "startMs": 162900,
-        "endMs": 171580,
-        "reading": "ちかてつ",
-        "context": "そう、京都はバスがたくさんあって、なんか地下鉄よりバスの方がたくさん乗りますね。 — Pois é, em Kyoto tem muito ônibus, e tipo, a gente anda mais de ônibus do que de metrô.",
-        "audioClipSrc": "media/tts/wea54bd59e711.mp3",
-        "exampleAudioSrc": "media/frag/f951c4137dad6.mp3",
-        "freqRank": 4232,
-        "topikLevel": null,
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/s098750c717c9.jpg"
-      }
+      "base": true
     },
     {
       "lemma": "方",
@@ -12398,7 +12388,7 @@
       "meaning": "visão; (em nomes de templo) observação",
       "meaningEn": null,
       "freqRank": 30498,
-      "topikLevel": null,
+      "topikLevel": "A",
       "dict": true
     },
     {
@@ -12430,27 +12420,7 @@
       "meaningEn": null,
       "freqRank": 3643,
       "topikLevel": "A",
-      "card": {
-        "id": "w-塔",
-        "segmentId": "s55",
-        "target": "塔",
-        "translation": "torre, pagode",
-        "startMs": 283500,
-        "endMs": 293200,
-        "reading": "とう",
-        "context": "ここは京都の法観寺八坂の塔というところですね。 — Aqui é um lugar chamado Pagode de Yasaka, do templo Hōkan-ji, em Kyoto.",
-        "audioClipSrc": "media/tts/w9a626a186f5c.mp3",
-        "exampleAudioSrc": "media/frag/f7050615397c2.mp3",
-        "freqRank": 3643,
-        "topikLevel": "A",
-        "newWords": [],
-        "homophones": [
-          "問う",
-          "等",
-          "糖"
-        ],
-        "sceneSrc": "media/frames/sd8bca475bf75.jpg"
-      }
+      "cardIn": "ja-B1-06"
     },
     {
       "lemma": "言う",
@@ -12638,7 +12608,7 @@
       "meaningEn": null,
       "freqRank": 3088,
       "topikLevel": null,
-      "cardIn": "ja-B1-05"
+      "base": true
     },
     {
       "lemma": "あっ",
@@ -12719,7 +12689,7 @@
       "meaningEn": null,
       "freqRank": 825,
       "topikLevel": "A",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "違う",
@@ -13145,6 +13115,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13155,6 +13126,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13246,6 +13218,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13402,6 +13375,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13422,23 +13396,7 @@
       "meaningEn": null,
       "freqRank": 5368,
       "topikLevel": null,
-      "card": {
-        "id": "w-目茶目茶",
-        "segmentId": "s196",
-        "target": "めちゃめちゃ",
-        "translation": "demais, muito (めちゃめちゃ); bagunçado",
-        "startMs": 763742,
-        "endMs": 768201,
-        "reading": null,
-        "context": "いや、綺麗ですけど、やっぱ休みなのでめちゃめちゃ人がいますね。 — Olha, é lindo, mas como é feriado, tem gente demais, né.",
-        "audioClipSrc": "media/tts/we4e3b40f4063.mp3",
-        "exampleAudioSrc": "media/frag/f03f1a1d496a5.mp3",
-        "freqRank": 5368,
-        "topikLevel": null,
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/sf9b7f78477db.jpg"
-      }
+      "cardIn": "ja-B1-08"
     },
     {
       "lemma": "祈る",
@@ -13698,23 +13656,7 @@
       "meaningEn": null,
       "freqRank": 6832,
       "topikLevel": null,
-      "card": {
-        "id": "w-修学旅行",
-        "segmentId": "s208",
-        "target": "修学旅行",
-        "translation": "excursão da escola, viagem de formatura",
-        "startMs": 844062,
-        "endMs": 853862,
-        "reading": "しゅうがくりょこう",
-        "context": "なんか子供の時、修学旅行に一回この滝に来て、はい、この水を飲んだことがある。 — Tipo, quando eu era criança, vim uma vez a esta cascata numa excursão da escola e, sim, já bebi esta água.",
-        "audioClipSrc": "media/tts/wa0301647c70d.mp3",
-        "exampleAudioSrc": "media/frag/fe6f801f1b365.mp3",
-        "freqRank": 6832,
-        "topikLevel": null,
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/s82dbb6564724.jpg"
-      }
+      "cardIn": "ja-B1-06"
     },
     {
       "lemma": "一",
@@ -13744,7 +13686,7 @@
       "meaning": "aluno do primário",
       "meaningEn": null,
       "freqRank": 1545,
-      "topikLevel": null,
+      "topikLevel": "B",
       "card": {
         "id": "w-小学生",
         "segmentId": "s211",
@@ -13757,7 +13699,7 @@
         "audioClipSrc": "media/tts/w2f7334a4883e.mp3",
         "exampleAudioSrc": "media/frag/fe42964e3ce16.mp3",
         "freqRank": 1545,
-        "topikLevel": null,
+        "topikLevel": "B",
         "newWords": [],
         "homophones": null,
         "sceneSrc": "media/frames/s5102f9fa72d9.jpg"
@@ -13771,6 +13713,7 @@
       "meaningEn": null,
       "freqRank": 11068,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13847,23 +13790,7 @@
       "meaningEn": null,
       "freqRank": 4737,
       "topikLevel": null,
-      "card": {
-        "id": "w-参り",
-        "segmentId": "s221",
-        "target": "参り",
-        "translation": "visita ao templo (お参りする = ir rezar)",
-        "startMs": 887582,
-        "endMs": 899242,
-        "reading": "まいり",
-        "context": "あの、まあここは神社なので、あの、あそこでお参りする時は一回お辞儀。 — É, bom, como aqui é um santuário xintoísta, é, quando for rezar ali, uma reverência.",
-        "audioClipSrc": "media/tts/w909d8d0bc09b.mp3",
-        "exampleAudioSrc": "media/frag/f7b1b9883cc92.mp3",
-        "freqRank": 4737,
-        "topikLevel": null,
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/sbb54cdd9c9a9.jpg"
-      }
+      "cardIn": "ja-B1-08"
     },
     {
       "lemma": "辞儀",
@@ -13976,7 +13903,7 @@
       "meaningEn": null,
       "freqRank": 115,
       "topikLevel": "A",
-      "cardIn": "ja-B1-04"
+      "base": true
     },
     {
       "lemma": "遣る",
@@ -14006,7 +13933,7 @@
       "meaningEn": null,
       "freqRank": 73,
       "topikLevel": "A",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "光",
@@ -14168,6 +14095,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -14240,33 +14168,11 @@
       "meaning": "tchau",
       "meaningEn": null,
       "freqRank": 10603,
-      "topikLevel": null,
+      "topikLevel": "B",
       "base": true
     }
   ],
   "sentenceCards": [
-    {
-      "id": "s-4c5906ce5a",
-      "kind": "sentence",
-      "segmentId": "s192",
-      "target": "そう、まあ秋には紅葉が見ることができて。",
-      "translation": "Pois é, bom, no outono dá para ver as folhas vermelhas.",
-      "startMs": 744142,
-      "endMs": 748962,
-      "audioClipSrc": "media/frag/fd522a6b0df0e.mp3",
-      "exampleAudioSrc": "media/frag/fd522a6b0df0e.mp3",
-      "freqRank": 1628,
-      "topikLevel": "B",
-      "focus": {
-        "lemma": "紅葉",
-        "target": "紅葉",
-        "meaning": "folhas vermelhas de outono (também もみじ)",
-        "reading": "こうよう",
-        "start": 8,
-        "end": 10
-      },
-      "sceneSrc": "media/frames/s83ba9ad34891.jpg"
-    },
     {
       "id": "s-e98902bbff",
       "kind": "sentence",
@@ -14290,26 +14196,26 @@
       "sceneSrc": "media/frames/s13c9739ca6f4.jpg"
     },
     {
-      "id": "s-5cf5b3b60c",
+      "id": "s-4c5906ce5a",
       "kind": "sentence",
-      "segmentId": "s36",
-      "target": "すごいめっちゃ綺麗な通り。",
-      "translation": "Que rua lindíssima.",
-      "startMs": 198460,
-      "endMs": 200040,
-      "audioClipSrc": "media/frag/f4359c425ded5.mp3",
-      "exampleAudioSrc": "media/frag/f4359c425ded5.mp3",
-      "freqRank": 1309,
-      "topikLevel": null,
+      "segmentId": "s192",
+      "target": "そう、まあ秋には紅葉が見ることができて。",
+      "translation": "Pois é, bom, no outono dá para ver as folhas vermelhas.",
+      "startMs": 744142,
+      "endMs": 748962,
+      "audioClipSrc": "media/frag/fd522a6b0df0e.mp3",
+      "exampleAudioSrc": "media/frag/fd522a6b0df0e.mp3",
+      "freqRank": 1628,
+      "topikLevel": "B",
       "focus": {
-        "lemma": "目茶",
-        "target": "めっちゃ",
-        "meaning": "muito, demais (gíria de Kansai)",
-        "reading": null,
-        "start": 3,
-        "end": 7
+        "lemma": "紅葉",
+        "target": "紅葉",
+        "meaning": "folhas vermelhas de outono (também もみじ)",
+        "reading": "こうよう",
+        "start": 8,
+        "end": 10
       },
-      "sceneSrc": "media/frames/s5031c67cf60c.jpg"
+      "sceneSrc": "media/frames/s83ba9ad34891.jpg"
     },
     {
       "id": "s-b93e302777",
@@ -14332,7 +14238,29 @@
         "end": 14
       },
       "sceneSrc": "media/frames/s0da54b26e00a.jpg"
+    },
+    {
+      "id": "s-5cf5b3b60c",
+      "kind": "sentence",
+      "segmentId": "s36",
+      "target": "すごいめっちゃ綺麗な通り。",
+      "translation": "Que rua lindíssima.",
+      "startMs": 198460,
+      "endMs": 200040,
+      "audioClipSrc": "media/frag/f4359c425ded5.mp3",
+      "exampleAudioSrc": "media/frag/f4359c425ded5.mp3",
+      "freqRank": 1309,
+      "topikLevel": null,
+      "focus": {
+        "lemma": "目茶",
+        "target": "めっちゃ",
+        "meaning": "muito, demais (gíria de Kansai)",
+        "reading": null,
+        "start": 3,
+        "end": 7
+      },
+      "sceneSrc": "media/frames/s5031c67cf60c.jpg"
     }
   ],
-  "createdAt": "2026-09-24T19:20:28.184882+00:00"
+  "createdAt": "2026-09-28T15:02:38.800470+00:00"
 }

@@ -16,6 +16,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 from datetime import datetime, timezone
 from typing import Optional
 
@@ -128,15 +129,21 @@ def select_essential(sentences: list[dict], max_cards: int) -> list[dict]:
 
 
 def ffprobe_duration(path: str) -> float:
+    # Sem duração certa a dose sairia com durationSec 0: melhor parar aqui.
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "default=noprint_wrappers=1:nokey=1", path],
+        capture_output=True, text=True,
+    )
+    if out.returncode != 0 or not out.stdout.strip():
+        raise RuntimeError(
+            f"ffprobe não leu a duração de {path} (código {out.returncode}): "
+            f"{(out.stderr or out.stdout).strip()}")
     try:
-        out = subprocess.run(
-            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-             "-of", "default=noprint_wrappers=1:nokey=1", path],
-            capture_output=True, text=True, check=True,
-        )
         return float(out.stdout.strip())
-    except Exception:
-        return 0.0
+    except ValueError as err:
+        raise RuntimeError(
+            f"ffprobe devolveu duração inválida para {path}: {out.stdout.strip()!r}") from err
 
 
 def _teaser(text: str, max_chars: int = PRIME_MAX_CHARS) -> str:
@@ -168,10 +175,16 @@ def _cut_fragment(media_path: str, start_ms: int, end_ms: int, dose_dir: str,
             ["ffmpeg", "-y", "-ss", f"{ss:.3f}", "-i", media_path, "-t", f"{dur:.3f}",
              "-vn", "-ac", "1", "-c:a", "libmp3lame", "-q:a", "5",
              os.path.join(dst_dir, fn)],
-            capture_output=True, check=True,
+            capture_output=True, text=True, check=True,
         )
         return f"media/frag/{fn}"
-    except Exception:
+    except Exception as err:
+        # tolerante (o card sai sem exampleAudioSrc), mas a falha não passa calada
+        tail = (getattr(err, "stderr", None) or str(err)).strip().splitlines()[-6:]
+        print(f"  ⚠ fragmento de {key} ({media_path}): ffmpeg falhou, card sem exampleAudioSrc",
+              file=sys.stderr)
+        for ln in tail:
+            print(f"    {ln}", file=sys.stderr)
         return None
 
 

@@ -1,0 +1,504 @@
+{
+ "srs: API pública › exporta os mesmos nomes :: exports": [
+  "DEFAULT_SRS_SETTINGS",
+  "FSRS_DEFAULT_W",
+  "FSRS_PARAM_COUNT",
+  "MAX_ANSWER_MS",
+  "MIN_REVIEWS_TO_OPTIMIZE",
+  "RATINGS",
+  "addExtraCard",
+  "buildDoseQueue",
+  "buildDueQueue",
+  "buryCard",
+  "cardInfo",
+  "cardKey",
+  "countDue",
+  "countDueElsewhere",
+  "countLearnAhead",
+  "countNewReady",
+  "countReviews",
+  "countSuspended",
+  "dropStaleCard",
+  "dueLearning",
+  "findSentenceCard",
+  "forgetCard",
+  "freshCard",
+  "getSrsSettings",
+  "getTodayCounts",
+  "gradeCard",
+  "gradeNew",
+  "humanDays",
+  "humanInterval",
+  "isActive",
+  "isLearningState",
+  "listKnown",
+  "logImmersion",
+  "markKnown",
+  "mostOverdue",
+  "nextDueAt",
+  "parseSteps",
+  "previewIntervals",
+  "previewNewIntervals",
+  "rescheduleAll",
+  "sanitizeW",
+  "saveSrsSettings",
+  "scheduler",
+  "stepsToText",
+  "suspendCard",
+  "undoGrade",
+  "unmarkKnown",
+  "unsuspendAll"
+ ],
+ "srs: API pública › constantes :: constantes": {
+  "RATINGS": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "MAX_ANSWER_MS": 60000,
+  "FSRS_PARAM_COUNT": 21,
+  "MIN_REVIEWS_TO_OPTIMIZE": 400,
+  "w": 21,
+  "DEFAULT_SRS_SETTINGS": {
+   "newPerDay": 20,
+   "maxReviewsPerDay": 200,
+   "requestRetention": 0.9,
+   "enableFuzz": true,
+   "learningSteps": [
+    "1m",
+    "10m"
+   ],
+   "relearningSteps": [
+    "10m"
+   ],
+   "maximumInterval": 36500,
+   "learnAheadMin": 20,
+   "reviewOrder": "due",
+   "newOrder": "mix",
+   "sentenceCards": false,
+   "w": null,
+   "wOptimizedAt": null,
+   "wReviews": 0
+  }
+ },
+ "srs: ajustes › valores inválidos voltam ao padrão, válidos ficam :: normalizado": {
+  "newPerDay": 7,
+  "maxReviewsPerDay": 200,
+  "requestRetention": 0.9,
+  "enableFuzz": true,
+  "learningSteps": [
+   "1m",
+   "10m"
+  ],
+  "relearningSteps": [
+   "5m"
+  ],
+  "maximumInterval": 36500,
+  "learnAheadMin": 20,
+  "reviewOrder": "due",
+  "newOrder": "mix",
+  "sentenceCards": false,
+  "w": null,
+  "wOptimizedAt": null,
+  "wReviews": 0
+ },
+ "srs: fila da dose › dose nova: os 3 cards em ordem, sem cota retida :: fila": {
+  "entries": [
+   {
+    "key": "ko-T1-01::w-가방",
+    "doseId": "ko-T1-01",
+    "cardId": "w-가방",
+    "isNew": true
+   },
+   {
+    "key": "ko-T1-01::w-나무",
+    "doseId": "ko-T1-01",
+    "cardId": "w-나무",
+    "isNew": true
+   },
+   {
+    "key": "ko-T1-01::w-다리",
+    "doseId": "ko-T1-01",
+    "cardId": "w-다리",
+    "isNew": true
+   }
+  ],
+  "heldBack": 0
+ },
+ "srs: fila da dose › vencidos de outra dose ficam fora; os desta entram (aprendendo antes) :: fila": {
+  "entries": [
+   {
+    "key": "ko-T1-01::w-나무",
+    "doseId": "ko-T1-01",
+    "cardId": "w-나무",
+    "isNew": false,
+    "rec": {
+     "doseId": "ko-T1-01",
+     "cardId": "w-나무",
+     "language": "ko",
+     "due": 1791644340000,
+     "stability": 0,
+     "difficulty": 0,
+     "elapsed_days": 0,
+     "scheduled_days": 0,
+     "learning_steps": 0,
+     "reps": 1,
+     "lapses": 0,
+     "state": 1,
+     "introducedAt": 1791644400000,
+     "updatedAt": 1791644400000,
+     "key": "ko-T1-01::w-나무"
+    }
+   },
+   {
+    "key": "ko-T1-01::w-다리",
+    "doseId": "ko-T1-01",
+    "cardId": "w-다리",
+    "isNew": true
+   },
+   {
+    "key": "ko-T1-01::w-가방",
+    "doseId": "ko-T1-01",
+    "cardId": "w-가방",
+    "isNew": false,
+    "rec": {
+     "doseId": "ko-T1-01",
+     "cardId": "w-가방",
+     "language": "ko",
+     "due": 1791558000000,
+     "stability": 3,
+     "difficulty": 5,
+     "elapsed_days": 0,
+     "scheduled_days": 3,
+     "learning_steps": 0,
+     "reps": 3,
+     "lapses": 0,
+     "state": 2,
+     "introducedAt": 1791644400000,
+     "updatedAt": 1791644400000,
+     "key": "ko-T1-01::w-가방"
+    }
+   }
+  ],
+  "heldBack": 0
+ },
+ "srs: fila da dose › ordem dos novos: mix / before / after :: ordens": {
+  "mix": [
+   "R:w-x2",
+   "N:w-나무",
+   "R:w-가방",
+   "N:w-다리",
+   "R:w-x1"
+  ],
+  "before": [
+   "N:w-나무",
+   "N:w-다리",
+   "R:w-x2",
+   "R:w-가방",
+   "R:w-x1"
+  ],
+  "after": [
+   "R:w-x2",
+   "R:w-가방",
+   "R:w-x1",
+   "N:w-나무",
+   "N:w-다리"
+  ]
+ },
+ "srs: fila da dose › reviewOrder retrievability / random :: ordens": {
+  "retrievability": [
+   "w-x3",
+   "w-x1",
+   "w-x2"
+  ],
+  "random": [
+   "w-x2",
+   "w-x3",
+   "w-x1"
+  ],
+  "due": [
+   "w-x1",
+   "w-x2",
+   "w-x3"
+  ]
+ },
+ "srs: revisão avulsa › aprendendo sempre; revisões vencidas até o teto do dia, pelo vencimento :: fila": [
+  "b::w-4",
+  "a::w-2",
+  "b::w-3"
+ ],
+ "srs: notas › gradeNew cria o registro e o log, para cada nota :: notas": {
+  "1": {
+   "g": {
+    "rec": {
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "cardId": "w-가방",
+     "language": "ko",
+     "due": 1791644460000,
+     "stability": 0.212,
+     "difficulty": 6.4133,
+     "elapsed_days": 0,
+     "scheduled_days": 0,
+     "learning_steps": 0,
+     "reps": 1,
+     "lapses": 0,
+     "state": 1,
+     "topikLevel": null,
+     "last_review": 1791644400000
+    },
+    "prev": null,
+    "reviewUid": "<uid>",
+    "wasNew": true,
+    "language": "ko"
+   },
+   "due": 60000,
+   "log": [
+    {
+     "uid": "<uid>",
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "language": "ko",
+     "rating": 1,
+     "reviewedAt": 1791644400000,
+     "day": "2026-10-10",
+     "elapsedMs": 60000,
+     "state": 0
+    }
+   ]
+  },
+  "2": {
+   "g": {
+    "rec": {
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "cardId": "w-가방",
+     "language": "ko",
+     "due": 1791644760000,
+     "stability": 1.2931,
+     "difficulty": 5.11217071,
+     "elapsed_days": 0,
+     "scheduled_days": 0,
+     "learning_steps": 0,
+     "reps": 1,
+     "lapses": 0,
+     "state": 1,
+     "topikLevel": null,
+     "last_review": 1791644400000
+    },
+    "prev": null,
+    "reviewUid": "<uid>",
+    "wasNew": true,
+    "language": "ko"
+   },
+   "due": 360000,
+   "log": [
+    {
+     "uid": "<uid>",
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "language": "ko",
+     "rating": 2,
+     "reviewedAt": 1791644400000,
+     "day": "2026-10-10",
+     "elapsedMs": 60000,
+     "state": 0
+    }
+   ]
+  },
+  "3": {
+   "g": {
+    "rec": {
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "cardId": "w-가방",
+     "language": "ko",
+     "due": 1791645000000,
+     "stability": 2.3065,
+     "difficulty": 2.11810397,
+     "elapsed_days": 0,
+     "scheduled_days": 0,
+     "learning_steps": 1,
+     "reps": 1,
+     "lapses": 0,
+     "state": 1,
+     "topikLevel": null,
+     "last_review": 1791644400000
+    },
+    "prev": null,
+    "reviewUid": "<uid>",
+    "wasNew": true,
+    "language": "ko"
+   },
+   "due": 600000,
+   "log": [
+    {
+     "uid": "<uid>",
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "language": "ko",
+     "rating": 3,
+     "reviewedAt": 1791644400000,
+     "day": "2026-10-10",
+     "elapsedMs": 60000,
+     "state": 0
+    }
+   ]
+  },
+  "4": {
+   "g": {
+    "rec": {
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "cardId": "w-가방",
+     "language": "ko",
+     "due": 1792306800000,
+     "stability": 8.2956,
+     "difficulty": 1,
+     "elapsed_days": 0,
+     "scheduled_days": 8,
+     "learning_steps": 0,
+     "reps": 1,
+     "lapses": 0,
+     "state": 2,
+     "topikLevel": null,
+     "last_review": 1791644400000
+    },
+    "prev": null,
+    "reviewUid": "<uid>",
+    "wasNew": true,
+    "language": "ko"
+   },
+   "due": 662400000,
+   "log": [
+    {
+     "uid": "<uid>",
+     "key": "ko-T1-01::w-가방",
+     "doseId": "ko-T1-01",
+     "language": "ko",
+     "rating": 4,
+     "reviewedAt": 1791644400000,
+     "day": "2026-10-10",
+     "elapsedMs": 60000,
+     "state": 0
+    }
+   ]
+  }
+ },
+ "srs: notas › sequência Good→Good→Good: vence no início do dia de estudo :: trilha": [
+  {
+   "state": 1,
+   "due": 600000
+  },
+  {
+   "state": 2,
+   "due": 144000000,
+   "sched": 2
+  },
+  {
+   "state": 2,
+   "due": 1008000000,
+   "sched": 10,
+   "elapsed": 2
+  }
+ ],
+ "srs: notas › previews de intervalo (novo e em revisão) :: rótulos": {
+  "novo": [
+   "1 min",
+   "6 min",
+   "10 min",
+   "8 d"
+  ],
+  "rev": [
+   "10 min",
+   "12 d",
+   "17 d",
+   "28 d"
+  ]
+ },
+ "srs: notas › cardInfo :: info": {
+  "retrievability": 0.9,
+  "stability": 5,
+  "difficulty": 6,
+  "intervalDays": 5,
+  "reps": 4,
+  "lapses": 1
+ },
+ "srs: «já sei» e + card › markKnown cria registro novo marcado; unmarkKnown apaga com tombstone :: markKnown": {
+  "rec": {
+   "key": "ko-T1-01::w-나무",
+   "doseId": "ko-T1-01",
+   "cardId": "w-나무",
+   "language": "ko",
+   "due": 1791644400000,
+   "stability": 0,
+   "difficulty": 0,
+   "elapsed_days": 0,
+   "scheduled_days": 0,
+   "learning_steps": 0,
+   "reps": 0,
+   "lapses": 0,
+   "state": 0,
+   "topikLevel": null,
+   "known": true
+  },
+  "prev": null,
+  "reviewUid": "<uid>",
+  "wasNew": true,
+  "language": "ko"
+ },
+ "srs: «já sei» e + card › addExtraCard: cria uma vez, origin extra; o «já sei» dele só sai da marca :: extra": {
+  "key": "ko-T1-01::w-다리",
+  "doseId": "ko-T1-01",
+  "cardId": "w-다리",
+  "language": "ko",
+  "due": 1791644400000,
+  "stability": 0,
+  "difficulty": 0,
+  "elapsed_days": 0,
+  "scheduled_days": 0,
+  "learning_steps": 0,
+  "reps": 0,
+  "lapses": 0,
+  "state": 0,
+  "topikLevel": null,
+  "origin": "extra"
+ },
+ "srs: ações no card › forgetCard volta a novo e tira o adiamento :: forget": {
+  "doseId": "a",
+  "cardId": "w-1",
+  "language": "ko",
+  "due": 1791644400000,
+  "stability": 0,
+  "difficulty": 0,
+  "elapsed_days": 0,
+  "scheduled_days": 0,
+  "learning_steps": 0,
+  "reps": 5,
+  "lapses": 2,
+  "state": 0,
+  "key": "a::w-1",
+  "last_review": 1790866800000
+ },
+ "srs: rescheduleAll › repete o histórico com os ajustes atuais :: reagendado": {
+  "r": {
+   "changed": 2,
+   "total": 2
+  },
+  "cards": [
+   {
+    "key": "ko-T1-01::w-가방",
+    "due": 4377600000,
+    "state": 2,
+    "s": 13.8358
+   },
+   {
+    "key": "ko-T1-01::w-나무",
+    "due": 2476800000,
+    "state": 2,
+    "s": 8.2956
+   }
+  ]
+ }
+}

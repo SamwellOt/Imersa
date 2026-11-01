@@ -12,9 +12,9 @@
 import { create } from "zustand";
 import {
   db, getSetting, setSetting, wipeLocalData, localProgressSummary,
-  AUTH_KEY, DATA_OWNER_KEY, LOCAL_SETTING,
+  AUTH_KEY, DATA_OWNER_KEY, DEVICE_TRUST_KEY, LOCAL_SETTING,
 } from "./db";
-import { deviceId, resetSyncState, syncNow, SESSION_EXPIRED_EVENT } from "./sync";
+import { deviceId, resetSyncState, syncNow, SESSION_EXPIRED_EVENT, REQUEST_TIMEOUT_MS } from "./sync";
 
 export interface AuthUser {
   id: string;
@@ -101,6 +101,7 @@ async function api<T>(path: string, body?: unknown, opts: { auth?: boolean; keep
       headers,
       body: body === undefined ? undefined : JSON.stringify(body),
       keepalive: opts.keepalive,
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS), // conexão pendurada não trava a tela
     });
   } catch {
     throw new ApiError(0, "Sem conexão com o servidor. Verifique a rede e tente de novo.");
@@ -114,6 +115,29 @@ interface SessionResponse {
   user: AuthUser;
   token: string;
   sessionId: string;
+  /** Marca de aparelho confiável desta conta (servidor novo; ausente no antigo). */
+  deviceTrust?: string;
+}
+
+// ---- aparelho confiável ----
+// Uma marca por e-mail (o login só conhece o e-mail antes de responder). Poucas
+// contas por aparelho: guarda as mais recentes e esquece o resto.
+type TrustMap = Record<string, string>;
+const MAX_TRUSTS = 5;
+const trustEmail = (email: string) => email.trim().toLowerCase();
+
+async function trustFor(email: string): Promise<string | undefined> {
+  const map = await getSetting<TrustMap>(DEVICE_TRUST_KEY, {});
+  return map[trustEmail(email)];
+}
+
+async function rememberTrust(email: string, token: string | undefined): Promise<void> {
+  if (!token) return;
+  const map = await getSetting<TrustMap>(DEVICE_TRUST_KEY, {});
+  const key = trustEmail(email);
+  delete map[key];
+  const next = Object.fromEntries([...Object.entries(map), [key, token]].slice(-MAX_TRUSTS));
+  await setSetting(DEVICE_TRUST_KEY, next);
 }
 
 export interface EnterOptions {
@@ -149,6 +173,7 @@ export async function register(
 ): Promise<AuthUser> {
   const r = await api<SessionResponse>("/api/auth/register", { ...input, deviceId: await deviceId() }, { auth: false });
   await adopt(r, opts);
+  await rememberTrust(r.user.email, r.deviceTrust);
   return r.user;
 }
 
@@ -156,8 +181,13 @@ export async function login(
   input: { email: string; password: string },
   opts: EnterOptions,
 ): Promise<AuthUser> {
-  const r = await api<SessionResponse>("/api/auth/login", { ...input, deviceId: await deviceId() }, { auth: false });
+  const r = await api<SessionResponse>(
+    "/api/auth/login",
+    { ...input, deviceId: await deviceId(), deviceTrust: await trustFor(input.email) },
+    { auth: false },
+  );
   await adopt(r, opts);
+  await rememberTrust(r.user.email, r.deviceTrust);
   return r.user;
 }
 
@@ -171,13 +201,15 @@ export async function hasUnsyncedChanges(): Promise<boolean> {
   const state = await getSetting<{ pushedAt: number }>(`${LOCAL_SETTING}syncState`, { pushedAt: 0 });
   const since = state.pushedAt;
   // as mesmas tabelas que o sync sobe (`localChanges`): «não entendi» e ajustes
-  // ficavam de fora e sumiam sem aviso ao sair offline
+  // ficavam de fora e sumiam sem aviso ao sair offline. Tombstones contam só depois
+  // do corte: os já entregues somem no sync, e os recentes (folga do corte) não
+  // podem travar o logout para sempre.
   const [c, p, r, i, t, m, s] = await Promise.all([
     db.cards.where("updatedAt").above(since).count(),
     db.doseProgress.where("updatedAt").above(since).count(),
     db.reviewLog.where("reviewedAt").above(since).count(),
     db.immersionLog.where("at").above(since).count(),
-    db.tombstones.count(),
+    db.tombstones.where("deletedAt").above(since).count(),
     db.lineMarks.where("at").above(since).count(),
     db.settings.filter((x) => !x.key.startsWith(LOCAL_SETTING) && (x.updatedAt ?? 0) > since).count(),
   ]);
@@ -191,7 +223,10 @@ export async function hasUnsyncedChanges(): Promise<boolean> {
  * progresso deste aparelho (a conta fica inteira no servidor).
  */
 export async function logout({ force = false } = {}): Promise<void> {
-  const r = await syncNow();
+  // syncNow pode devolver um lote JÁ EM VOO, com corte anterior às revisões feitas
+  // depois dele: se deu certo, uma segunda rodada leva o resto antes do wipe.
+  let r = await syncNow();
+  if (r.ok && (await hasUnsyncedChanges())) r = await syncNow();
   if (!r.ok && !force && (await hasUnsyncedChanges())) {
     throw new ApiError(0, "pending");
   }

@@ -45,6 +45,12 @@ function DoseRoute() {
   return <DosePlayer key={doseId} />;
 }
 
+/** Mesmo motivo do DoseRoute: a escuta de outra dose remonta, sem reaproveitar estado. */
+function ListenRoute() {
+  const { doseId } = useParams();
+  return <Listen key={doseId} />;
+}
+
 function Shell({ children }: { children: ReactNode }) {
   return (
     <RequireOnboarding>
@@ -88,7 +94,7 @@ export default function App() {
           path="/escuta/:doseId"
           element={
             <RequireOnboarding>
-              <Listen />
+              <ListenRoute />
             </RequireOnboarding>
           }
         />

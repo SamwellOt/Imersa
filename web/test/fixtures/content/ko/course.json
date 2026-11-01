@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "language": "ko", "name": "Coreano", "nativeName": "한국어",
+  "levels": [ { "id": "T1", "name": "Teste", "description": "Fixture" } ],
+  "doses": [
+    { "id": "ko-T1-01", "level": "T1", "lessonNumber": 1, "title": "Um", "path": "course/T1-01/dose.json", "durationSec": 8, "cardCount": 3, "mediaKind": "audio" },
+    { "id": "ko-T1-02", "level": "T1", "lessonNumber": 2, "title": "Dois", "path": "course/T1-02/dose.json", "durationSec": 8, "cardCount": 2, "mediaKind": "audio" },
+    { "id": "ko-T1-03", "level": "T1", "lessonNumber": 3, "title": "Sem arquivo", "path": "course/T1-03/dose.json", "durationSec": 8, "cardCount": 1, "mediaKind": "audio" }
+  ]
+}

@@ -48,7 +48,8 @@
       "cardTiers": {
         "A": 20
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     },
     {
       "id": "ko-A1-02",
@@ -62,7 +63,8 @@
       "cardTiers": {
         "A": 20
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     },
     {
       "id": "ko-A1-03",
@@ -76,7 +78,8 @@
       "cardTiers": {
         "A": 20
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     },
     {
       "id": "ko-A1-04",
@@ -90,7 +93,8 @@
       "cardTiers": {
         "A": 20
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     },
     {
       "id": "ko-A1-05",
@@ -105,7 +109,8 @@
         "A": 18,
         "B": 2
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     },
     {
       "id": "ko-A1-06",
@@ -119,7 +124,8 @@
       "cardTiers": {
         "A": 20
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     },
     {
       "id": "ko-A1-07",
@@ -134,7 +140,8 @@
         "A": 18,
         "B": 2
       },
-      "posterSrc": "media/frames/pe0b2d81c80b9.jpg"
+      "posterSrc": "media/frames/pe0b2d81c80b9.jpg",
+      "condensedAudioSrc": "media/condensed.mp3"
     }
   ],
   "vocabLadder": {

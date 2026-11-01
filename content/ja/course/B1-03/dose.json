@@ -11858,6 +11858,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -12021,7 +12022,7 @@
       "meaningEn": null,
       "freqRank": 1523,
       "topikLevel": "A",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "アイチ",
@@ -12529,6 +12530,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -12539,6 +12541,7 @@
       "meaningEn": null,
       "freqRank": 11068,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -12811,6 +12814,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13283,6 +13287,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13413,6 +13418,7 @@
       "meaningEn": null,
       "freqRank": 3794,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13488,7 +13494,7 @@
       "meaning": "não; (いや) pois é, ah (início de fala)",
       "meaningEn": null,
       "freqRank": 4885,
-      "topikLevel": null,
+      "topikLevel": "A",
       "dict": true
     },
     {
@@ -13498,7 +13504,7 @@
       "meaning": "funcionário, empregado",
       "meaningEn": null,
       "freqRank": 3740,
-      "topikLevel": null,
+      "topikLevel": "C",
       "card": {
         "id": "w-従業員",
         "segmentId": "s84",
@@ -13511,7 +13517,7 @@
         "audioClipSrc": "media/tts/w86e51a6c76ef.mp3",
         "exampleAudioSrc": "media/frag/f974f1472c687.mp3",
         "freqRank": 3740,
-        "topikLevel": null,
+        "topikLevel": "C",
         "newWords": [],
         "homophones": null,
         "sceneSrc": "media/frames/s3ccff180bb15.jpg"
@@ -13815,6 +13821,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15107,6 +15114,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15374,6 +15382,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15553,28 +15562,6 @@
       "sceneSrc": "media/frames/s9b06c2a272d9.jpg"
     },
     {
-      "id": "s-124b37879f",
-      "kind": "sentence",
-      "segmentId": "s224",
-      "target": "そういう小さいことがもう幸せだなって、もう最近は思う。",
-      "translation": "ultimamente acho que essas coisinhas já são felicidade.",
-      "startMs": 863394,
-      "endMs": 870194,
-      "audioClipSrc": "media/frag/fc910143c84d6.mp3",
-      "exampleAudioSrc": "media/frag/fc910143c84d6.mp3",
-      "freqRank": 507,
-      "topikLevel": "A",
-      "focus": {
-        "lemma": "幸せ",
-        "target": "幸せ",
-        "meaning": "felicidade; feliz",
-        "reading": "しあわせ",
-        "start": 12,
-        "end": 14
-      },
-      "sceneSrc": "media/frames/s8bc93e31bf39.jpg"
-    },
-    {
       "id": "s-2e115bdacf",
       "kind": "sentence",
       "segmentId": "s206",
@@ -15619,27 +15606,49 @@
       "sceneSrc": "media/frames/s3c4191f58f66.jpg"
     },
     {
-      "id": "s-8195ae58d8",
+      "id": "s-124b37879f",
       "kind": "sentence",
-      "segmentId": "s10",
-      "target": "さっきね、すごく素敵なカフェに行って、いろんな話をしてね。",
-      "translation": "Agora há pouco, olha, fomos a um café lindíssimo e conversamos sobre várias coisas, né.",
-      "startMs": 27180,
-      "endMs": 31480,
-      "audioClipSrc": "media/frag/fc5d6a3dc7847.mp3",
-      "exampleAudioSrc": "media/frag/fc5d6a3dc7847.mp3",
-      "freqRank": 646,
+      "segmentId": "s224",
+      "target": "そういう小さいことがもう幸せだなって、もう最近は思う。",
+      "translation": "ultimamente acho que essas coisinhas já são felicidade.",
+      "startMs": 863394,
+      "endMs": 870194,
+      "audioClipSrc": "media/frag/fc910143c84d6.mp3",
+      "exampleAudioSrc": "media/frag/fc910143c84d6.mp3",
+      "freqRank": 507,
       "topikLevel": "A",
       "focus": {
-        "lemma": "素敵",
-        "target": "素敵",
-        "meaning": "lindo, encantador",
-        "reading": "すてき",
-        "start": 8,
-        "end": 10
+        "lemma": "幸せ",
+        "target": "幸せ",
+        "meaning": "felicidade; feliz",
+        "reading": "しあわせ",
+        "start": 12,
+        "end": 14
       },
-      "sceneSrc": "media/frames/s4c6bdde14d00.jpg"
+      "sceneSrc": "media/frames/s8bc93e31bf39.jpg"
+    },
+    {
+      "id": "s-a917c01f2b",
+      "kind": "sentence",
+      "segmentId": "s172",
+      "target": "でも遊ぶことによって私は最近気づいたのは、遊ぶというか、",
+      "translation": "Mas o que percebi recentemente, brincando, ou melhor,",
+      "startMs": 643944,
+      "endMs": 650764,
+      "audioClipSrc": "media/frag/f587536ad53f8.mp3",
+      "exampleAudioSrc": "media/frag/f587536ad53f8.mp3",
+      "freqRank": 530,
+      "topikLevel": "A",
+      "focus": {
+        "lemma": "気付く",
+        "target": "気づく",
+        "meaning": "perceber, notar",
+        "reading": "きづく",
+        "start": 14,
+        "end": 17
+      },
+      "sceneSrc": "media/frames/sbb636098ae9b.jpg"
     }
   ],
-  "createdAt": "2026-09-24T19:20:39.705829+00:00"
+  "createdAt": "2026-09-28T15:02:53.988574+00:00"
 }

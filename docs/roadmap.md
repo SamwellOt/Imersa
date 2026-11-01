@@ -149,7 +149,7 @@ a lista de referência é mudar um arquivo de dados, não o código.
 
 ## 2º idioma: Japonês (feito — B1, 09/2026)
 
-Trilha **B1** com 7 lições em **vídeo** (16–25 min, até 30) para um aluno **N4–N3** que
+Trilha **B1** com 8 lições em **vídeo** (16–25 min, até 30) para um aluno **N4–N3** que
 já fazia imersão e **sabe as 1000 palavras mais frequentes**. Conteúdo pedido: vlog,
 viagem e conversa natural.
 - [x] Lista de frequência trocada pela **BCCWJ 短単位語彙表** (NINJAL), por lema UniDic,
@@ -168,8 +168,9 @@ viagem e conversa natural.
       por minuto 4,3 → 8,9 ao longo da semana; de professor falando natural (Shun, Miku,
       YUYU) a conversa 100% nativa (casal na estrada, amigas em Nagoya).
 - [x] Transcrição pelo Scribe da mídia concatenada; tradução PT fiel frase a frase.
-- [ ] Dias 8+: `ladder.py --next 7` acima da última publicada (score ~40+), promovendo do
-      banco YUYU, o casal na estrada e Nagoya quando chegarem na vez. Com
+- [ ] Dias 9+: `ladder.py --next 7` acima da última publicada (score ~68+). O banco
+      ficou abaixo da escada: casal na estrada (57), YUYU (17) e Nagoya (só mulheres) não
+      voltam — procurar candidatos novos com fala masculina. Com
       `--feedback <backup.json>` a escada mostra a compreensão real (falas «não entendi»)
       e sugere o tamanho do passo.
 - [x] (24/09/2026) **Cards escolhidos por frequência × ocorrências no vídeo** (B1-04 a
@@ -177,6 +178,15 @@ viagem e conversa natural.
       金曜日; `data/luw_ja.tsv` do 長単位語彙表 NINJAL, leitura do JMdict) + nomes próprios
       fora (`data/names_ja.json`). Cobertura das ocorrências novas pelos cards: B1-05
       19% → 56%, B1-07 14% → 36%.
+- [x] (28/09/2026) **Reorganização da L4 em diante** a pedido do aluno: nada de narração
+      roteirizada e nada de vídeo só (ou quase só) de mulheres — ele é homem e quer os
+      trejeitos masculinos. Saíram Kofu→Hiroshima (SJN) e Okinawa (amigas) para
+      `.work/ja/retired/`; entraram KEN (タメ口 andando), a viagem da firma a Kyoto
+      (はじめしゃちょーの畑) e dois amigos em Hakone. Escada na transcrição real:
+      44 → 45 → 60 → 64 → 68 (`units_rank.py`); voz medida por falante (`voice.py`).
+      Lista JLPT recuperou os compostos da lista original (誕生日 N5).
+- [ ] Degrau ~50–55 com fala masculina natural: faltou candidato (o DARAKU, dois homens
+      num camping, tinha áudio ruim demais). Procurar antes do próximo lote.
 - [ ] Vários vídeos-fonte têm legenda japonesa **queimada na imagem**; a legenda do app
       fica por cima. Se incomodar, dá para subir a legenda do app ou deixar só a PT.
 

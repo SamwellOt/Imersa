@@ -283,6 +283,8 @@ export function Progress() {
         date: new Date(y, m - 1, dd),
         reviews: s?.reviews ?? 0,
         immersionMs: s?.immersionMs ?? 0,
+        // conclusão de dose também conta como dia de estudo (mesma régua da sequência)
+        dosesCompleted: s?.dosesCompleted ?? 0,
       };
     });
     const stats = await computeSrsStats(lang, srs);
@@ -309,7 +311,7 @@ export function Progress() {
   const { overview, series, states, totalCards, level, newPerDay, stats, targetRetention, lessons, known } = data;
   const active = Math.max(1, totalCards - stats.states.suspended);
   const maxRev = Math.max(1, ...series.map((s) => s.reviews));
-  const activeDays = series.filter((s) => dayIsActive({ ...s, dosesCompleted: 0 })).length;
+  const activeDays = series.filter(dayIsActive).length;
   const hasActivity = overview.reviewsTotal > 0 || overview.immersionMsTotal > 0;
   const fmtDay = (d: Date) =>
     new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "short" }).format(d).replace(".", "");
@@ -354,7 +356,7 @@ export function Progress() {
             <div className="mt-3 grid grid-cols-14 gap-1">
               {series.map((s, i) => {
                 const share = s.reviews / maxRev;
-                const studied = dayIsActive({ ...s, dosesCompleted: 0 });
+                const studied = dayIsActive(s);
                 const tone = !studied
                   ? "bg-surface-3"
                   : share > 0.66

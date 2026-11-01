@@ -1,0 +1,106 @@
+{
+ "schemaVersion": 1,
+ "id": "ko-T1-02",
+ "language": "ko",
+ "languageName": "Coreano",
+ "level": "T1",
+ "lessonNumber": 2,
+ "title": "Dois",
+ "titleTarget": "하나",
+ "synopsis": "fixture",
+ "source": {
+  "platform": "test",
+  "parts": [
+   {
+    "url": "x",
+    "startMs": 0
+   },
+   {
+    "url": "y",
+    "startMs": 4000,
+    "title": "Parte 2"
+   }
+  ]
+ },
+ "media": {
+  "kind": "audio",
+  "src": "media/a.mp3",
+  "durationSec": 8
+ },
+ "difficulty": {},
+ "segments": [
+  {
+   "id": "s1",
+   "index": 0,
+   "startMs": 0,
+   "endMs": 1200,
+   "target": "가방 하나",
+   "translation": "uma bolsa",
+   "tokens": [
+    {
+     "lemma": "가방",
+     "surface": "가방",
+     "start": 0,
+     "end": 2
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "index": 1,
+   "startMs": 2500,
+   "endMs": 3800,
+   "target": "나무 둘",
+   "translation": "duas árvores",
+   "tokens": [
+    {
+     "lemma": "나무",
+     "surface": "나무",
+     "start": 0,
+     "end": 2
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "index": 2,
+   "startMs": 5000,
+   "endMs": 6500,
+   "target": "다리 셋",
+   "translation": "três pernas",
+   "tokens": [
+    {
+     "lemma": "다리",
+     "surface": "다리",
+     "start": 0,
+     "end": 2
+    }
+   ]
+  }
+ ],
+ "primePreview": [],
+ "cards": [
+  {
+   "id": "w-가방",
+   "segmentId": "s1",
+   "target": "가방",
+   "translation": "bolsa",
+   "startMs": 0,
+   "endMs": 1200,
+   "context": "가방 문장",
+   "freqRank": 40
+  },
+  {
+   "id": "w-라면",
+   "segmentId": "s2",
+   "target": "라면",
+   "translation": "lámen",
+   "startMs": 2500,
+   "endMs": 3800,
+   "context": "라면 문장",
+   "freqRank": 50
+  }
+ ],
+ "sentenceCards": [],
+ "createdAt": "2026-01-01"
+}

@@ -174,6 +174,9 @@ def main(argv: list[str] | None = None) -> int:
         from .frequency import DATA, KNOWN_BASE
         with open(args.src, encoding="utf-8") as fh:
             got = json.load(fh)
+        if not isinstance(got, dict) or not isinstance(got.get("lemmas"), list):
+            print(f"{args.src}: falta a lista 'lemmas' (exporte em Ajustes → Imersão)", file=sys.stderr)
+            return 1
         if got.get("language") not in (None, args.lang):
             print(f"o arquivo é de {got.get('language')}, não {args.lang}", file=sys.stderr)
             return 1
@@ -184,7 +187,7 @@ def main(argv: list[str] | None = None) -> int:
             with open(path, encoding="utf-8") as fh:
                 cur = json.load(fh)
         before = set(cur["lemmas"])
-        cur["lemmas"] = sorted(before | set(got["lemmas"]))
+        cur["lemmas"] = sorted(before | set(got["lemmas"]))  # validado acima
         with open(path, "w", encoding="utf-8") as fh:
             json.dump(cur, fh, ensure_ascii=False, indent=1)
         print(f"{name}: +{len(set(cur['lemmas']) - before)} palavras (total {len(cur['lemmas'])}). "
@@ -250,8 +253,9 @@ def main(argv: list[str] | None = None) -> int:
             out = up[: -len(".units.json")] + ".words.json"
             prior: dict[str, dict] = {}
             if os.path.isfile(out):  # preserve meanings/reading/ttsFile across regen
-                for pw in json.load(open(out, encoding="utf-8")):
-                    prior[pw["lemma"]] = pw
+                with open(out, encoding="utf-8") as fh:
+                    for pw in json.load(fh):
+                        prior[pw["lemma"]] = pw
             payload = []
             for w in words:
                 pw = prior.get(w["lemma"], {})
@@ -336,10 +340,13 @@ def _demo() -> int:
     if not os.path.isfile(media):
         print(f"demo source not found: {media}", file=sys.stderr)
         return 1
+    # content-root à parte: o demo não reescreve content/ (nem o course.json real)
+    demo_root = os.path.abspath(os.path.join(HERE, "..", ".work", "ja-demo", "content"))
+    os.makedirs(demo_root, exist_ok=True)
     prime_path = os.path.join(HERE, "demo_prime_ja.json")
     words_path = os.path.abspath(os.path.join(HERE, "..", ".work", "ja-demo", "imm.words.json"))
     build_dose(
-        content_root=CONTENT_ROOT,
+        content_root=demo_root,
         media_path=media,
         language="ja", language_name="Japonês", native_name="日本語",
         level="A2", lesson=1,
@@ -363,7 +370,8 @@ def _demo() -> int:
         source_platform="youtube", creator="(vlog de exemplo)",
         tags=["vlog", "natureza", "viagem", "車中泊"],
     )
-    print("\nDemo pronta. Rode o app:  cd web && npm install && npm run dev")
+    print(f"\nDemo pronta em {demo_root}")
+    print("  (fora de content/: o app não lê essa pasta; o content/ real não foi tocado)")
     return 0
 
 

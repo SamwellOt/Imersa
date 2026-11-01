@@ -243,10 +243,14 @@ export function AccountSection({ notify }: { notify: (msg: string) => void }) {
 
   const runSyncNow = async () => {
     setSyncing(true);
-    const r = await syncNow();
-    setSyncing(false);
-    setSyncState(await getSyncState());
-    notify(r.ok ? `Sincronizado — ${r.sent} enviados, ${r.received} recebidos.` : r.error ?? "Falha ao sincronizar.");
+    try {
+      const r = await syncNow();
+      setSyncState(await getSyncState());
+      notify(r.ok ? `Sincronizado — ${r.sent} enviados, ${r.received} recebidos.` : r.error ?? "Falha ao sincronizar.");
+    } finally {
+      // sem isso, uma rejeição deixava o botão girando para sempre
+      setSyncing(false);
+    }
   };
 
   const doLogout = async () => {

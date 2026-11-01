@@ -7,22 +7,23 @@ import { scheduleSync } from "./sync";
 import { dayKey } from "./utils";
 
 export async function toggleMark(language: string, doseId: string, segmentId: string): Promise<boolean> {
-  const cur = (await db.lineMarks.where("doseId").equals(doseId).toArray())
-    .filter((m) => m.segmentId === segmentId);
-  if (cur.length) {
-    await db.transaction("rw", [db.lineMarks, db.tombstones], async () => {
+  // ler e alterar na mesma transação: duplo toque não cria duas marcas
+  const on = await db.transaction("rw", [db.lineMarks, db.tombstones], async () => {
+    const cur = (await db.lineMarks.where("doseId").equals(doseId).toArray())
+      .filter((m) => m.segmentId === segmentId);
+    if (cur.length) {
       for (const m of cur) {
         await db.lineMarks.delete(m.uid);
         await tombstone("mark", m.uid);
       }
-    });
-    scheduleSync();
-    return false;
-  }
-  const now = Date.now();
-  await db.lineMarks.add({ uid: newUid(), language, doseId, segmentId, day: dayKey(new Date(now)), at: now });
+      return false;
+    }
+    const now = Date.now();
+    await db.lineMarks.add({ uid: newUid(), language, doseId, segmentId, day: dayKey(new Date(now)), at: now });
+    return true;
+  });
   scheduleSync();
-  return true;
+  return on;
 }
 
 export async function marksOf(doseId: string): Promise<Set<string>> {

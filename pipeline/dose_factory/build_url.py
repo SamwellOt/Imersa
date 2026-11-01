@@ -51,10 +51,21 @@ def transcribe(media: str) -> str:
     if not key:
         raise RuntimeError("ELEVENLABS_API_KEY not set — required to transcribe")
     out = os.path.splitext(media)[0] + ".json"
-    _run(["curl", "-s", "-X", "POST", "https://api.elevenlabs.io/v1/speech-to-text",
-          "-H", f"xi-api-key: {key}", "-F", "model_id=scribe_v2",
-          "-F", f"file=@{media}", "-F", "language_code=auto",
-          "-F", "timestamps_granularity=word", "-F", "diarize=true", "-o", out])
+    # -f: erro HTTP (401, 429…) vira returncode != 0, e não JSON de erro gravado como Scribe.
+    # Sem _run, que imprimiria a chave da API no log. A chave vai pelo stdin
+    # (`-H @-`), nunca na linha de comando: argumento de processo aparece no `ps`
+    # e em /proc/<pid>/cmdline para qualquer usuário/container da máquina.
+    print("  $ curl … api.elevenlabs.io/v1/speech-to-text (chave omitida)")
+    r = subprocess.run(
+        ["curl", "-sS", "-f", "-X", "POST", "https://api.elevenlabs.io/v1/speech-to-text",
+         "-H", "@-", "-F", "model_id=scribe_v2",
+         "-F", f"file=@{media}", "-F", "language_code=auto",
+         "-F", "timestamps_granularity=word", "-F", "diarize=true", "-o", out],
+        input=f"xi-api-key: {key}\n", text=True)
+    if r.returncode != 0:
+        if os.path.exists(out):
+            os.remove(out)
+        raise RuntimeError(f"Scribe falhou (curl código {r.returncode}); veja a mensagem acima")
     return out
 
 

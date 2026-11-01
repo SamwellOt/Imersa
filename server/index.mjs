@@ -10,7 +10,7 @@ import { createServer } from "node:http";
 import { createReadStream, statSync, existsSync, realpathSync } from "node:fs";
 import { extname, join, normalize, resolve, dirname, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-import { accountId, openStore, PAGE } from "./sync-store.mjs";
+import { accountId, openStore, PAGE, QuotaError } from "./sync-store.mjs";
 import { openAuth, accountOfUser, AuthError, TOKEN_PREFIX } from "./auth-store.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -136,8 +136,15 @@ function readBody(req) {
     const parts = [];
     let size = 0;
     req.on("data", (c) => {
+      // passou do teto: rejeita (o handler responde 413) mas continua drenando o
+      // corpo sem guardar nada — destruir o socket impedia de responder
+      if (size > MAX_BODY) return;
       size += c.length;
-      if (size > MAX_BODY) { fail(new Error("payload grande demais")); req.destroy(); return; }
+      if (size > MAX_BODY) {
+        parts.length = 0;
+        fail(Object.assign(new Error("payload grande demais"), { status: 413 }));
+        return;
+      }
       parts.push(c);
     });
     req.on("end", () => ok(Buffer.concat(parts).toString("utf8")));
@@ -163,7 +170,11 @@ function authOf(req) {
     return s ? accountOfUser(s.user.id) : null;
   }
   if (cred.length < MIN_CODE) return null;
-  return accountId(cred);
+  // O código legado não tem mais UI: só continua valendo para as contas que já
+  // existem. Antes, qualquer texto de 12+ caracteres criava um espaço novo — sem
+  // cadastro, fora do disjuntor de cadastros (auditoria de 31/10/2026).
+  const account = accountId(cred);
+  return store.exists(account) ? account : null;
 }
 
 /** Sessão de conta obrigatória (rotas /api/auth/* que mexem na conta). */
@@ -173,12 +184,20 @@ function sessionOf(req) {
   return s;
 }
 
+/** Objeto simples: `null`, número ou array quebrariam `body.deviceId` nas rotas. */
+const isPlainObject = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
+
 async function readJson(req) {
+  // fora do try: um 413 do corpo tem que chegar como 413, não como "JSON inválido"
+  const raw = await readBody(req);
+  let body;
   try {
-    return JSON.parse((await readBody(req)) || "{}");
+    body = JSON.parse(raw || "{}");
   } catch {
     throw new AuthError(400, "JSON inválido.");
   }
+  if (!isPlainObject(body)) throw new AuthError(400, "JSON inválido.");
+  return body;
 }
 
 // `X-Forwarded-For` só vale atrás de um proxy que o reescreve (IMERSA_TRUST_PROXY=1).
@@ -207,16 +226,24 @@ async function handleAuth(req, res, path) {
     device: typeof body.deviceId === "string" ? body.deviceId : "",
     agent: String(req.headers["user-agent"] || ""),
   });
+  // Nas rotas com sessão, o corpo é lido ANTES de conferir a sessão: entre os
+  // dois não pode haver `await`. Senão um aparelho encerrado enquanto o corpo
+  // dele ainda chegava executava o pedido mesmo assim (ex.: "encerrar os outros"
+  // derrubava justamente o dono que acabou de encerrá-lo).
   switch (path) {
     case "/api/auth/register": {
       const body = await readJson(req);
       const { user, session } = await auth.register({ ...body, ...meta(body), ip: clientIp(req) });
-      return json(res, 201, { ok: true, user, token: session.token, sessionId: session.id }), true;
+      return json(res, 201, {
+        ok: true, user, token: session.token, sessionId: session.id, deviceTrust: session.deviceTrust,
+      }), true;
     }
     case "/api/auth/login": {
       const body = await readJson(req);
       const { user, session } = await auth.login({ ...body, ...meta(body), ip: clientIp(req) });
-      return json(res, 200, { ok: true, user, token: session.token, sessionId: session.id }), true;
+      return json(res, 200, {
+        ok: true, user, token: session.token, sessionId: session.id, deviceTrust: session.deviceTrust,
+      }), true;
     }
     case "/api/auth/logout": {
       auth.logout(bearerOf(req));
@@ -231,28 +258,28 @@ async function handleAuth(req, res, path) {
       }), true;
     }
     case "/api/auth/sessions/revoke": {
-      const s = sessionOf(req);
       const body = await readJson(req);
+      const s = sessionOf(req);
       if (body.others) auth.revokeOthers(s.user.id, s.session.id);
       else if (typeof body.id === "string" && body.id !== s.session.id) auth.revokeSession(s.user.id, body.id);
       return json(res, 200, { ok: true, sessions: auth.sessions(s.user.id, s.session.id) }), true;
     }
     case "/api/auth/password": {
-      const s = sessionOf(req);
       const body = await readJson(req);
+      const s = sessionOf(req);
       await auth.changePassword(s.user.id, body.current, body.next, s.session.id);
       return json(res, 200, { ok: true }), true;
     }
     case "/api/auth/profile": {
-      const s = sessionOf(req);
       const body = await readJson(req);
+      const s = sessionOf(req);
       const user = auth.rename(s.user.id, body.name);
       return json(res, 200, { ok: true, user }), true;
     }
     case "/api/auth/delete": {
-      const s = sessionOf(req);
       const body = await readJson(req);
-      await auth.deleteAccount(s.user.id, body.password);
+      const s = sessionOf(req);
+      await auth.deleteAccount(s.user.id, body.password, s.session.id);
       return json(res, 200, { ok: true }), true;
     }
   }
@@ -260,22 +287,32 @@ async function handleAuth(req, res, path) {
 }
 
 async function handleSync(req, res) {
+  const SESSION_MSG = "Sessão expirada ou credencial inválida. Entre de novo em Ajustes → Conta.";
   const account = authOf(req);
-  if (!account) {
-    return json(res, 401, { error: "Sessão expirada ou credencial inválida. Entre de novo em Ajustes → Conta." });
-  }
+  if (!account) return json(res, 401, { error: SESSION_MSG });
+  const raw = await readBody(req); // 413 sobe para o catch geral
+  // a conta pode ter sido apagada enquanto o corpo chegava: sem o recheck o push
+  // recriaria registros órfãos de uma conta que já não existe
+  if (authOf(req) !== account) return json(res, 401, { error: SESSION_MSG });
   let body;
   try {
-    body = JSON.parse((await readBody(req)) || "{}");
+    body = JSON.parse(raw || "{}");
   } catch {
     return json(res, 400, { error: "JSON inválido." });
   }
+  if (!isPlainObject(body)) return json(res, 400, { error: "JSON inválido." });
   const changes = Array.isArray(body.changes) ? body.changes : [];
   const since = Number(body.since) || 0;
   // identifica o remetente para não devolver a ele o que ele mesmo acabou de subir
   const device = typeof body.deviceId === "string" ? body.deviceId.slice(0, 64) : "";
   let accepted = 0;
-  if (changes.length) ({ accepted } = store.push(account, changes, device));
+  try {
+    if (changes.length) ({ accepted } = store.push(account, changes, device));
+  } catch (err) {
+    // cota estourada: o cliente mantém as pendências e mostra o erro (não perde nada)
+    if (err instanceof QuotaError) return json(res, 507, { error: err.message });
+    throw err;
+  }
   const { records, hasMore } = store.pull(account, since, PAGE, device);
   return json(res, 200, {
     ok: true, accepted, since,
@@ -287,8 +324,13 @@ async function handleSync(req, res) {
 
 const server = createServer(async (req, res) => {
   for (const [k, v] of Object.entries(SECURITY_HEADERS)) res.setHeader(k, v);
-  const url = new URL(req.url, "http://localhost");
-  const path = url.pathname;
+  // fora de um try, um `//localhost:99999/x` lançaria e derrubaria o processo
+  let path;
+  try {
+    path = new URL(req.url, "http://localhost").pathname;
+  } catch {
+    return send(res, 400, "URL inválida.", { "content-type": "text/plain; charset=utf-8" });
+  }
 
   try {
     if (path === "/api/health") {
@@ -343,6 +385,17 @@ const server = createServer(async (req, res) => {
     }
     return send(res, 404, "not found", { "content-type": "text/plain" });
   } catch (err) {
+    // 413 do readBody: o corpo ainda chega (readBody só para de guardar). Responde
+    // com `connection: close` e derruba o socket depois — senão o cliente o segura
+    // por minutos.
+    if (err?.status === 413) {
+      res.on("finish", () => req.destroy());
+      return send(res, 413, JSON.stringify({ error: err.message }), {
+        "content-type": "application/json; charset=utf-8",
+        connection: "close",
+      });
+    }
+    // AuthError carrega o status que deve devolver
     if (err instanceof AuthError) return json(res, err.status, { error: err.message });
     console.error("erro:", err?.message || err);
     if (!res.headersSent) return json(res, 500, { error: "Erro interno." });

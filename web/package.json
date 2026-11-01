@@ -9,7 +9,9 @@
     "build": "tsc -b && vite build && rm -rf dist/content",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "serve": "node ../server/index.mjs"
+    "serve": "node ../server/index.mjs",
+    "test": "node --test '../server/test/*.test.mjs'",
+    "test:web": "node test/run.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

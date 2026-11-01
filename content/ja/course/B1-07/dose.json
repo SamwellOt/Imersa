@@ -1907,7 +1907,8 @@
           "lemma": "大分",
           "surface": "だいぶ",
           "start": 0,
-          "end": 3
+          "end": 3,
+          "base": true
         },
         {
           "lemma": "準備",
@@ -4544,7 +4545,7 @@
       "id": "s135",
       "index": 135,
       "startMs": 346380,
-      "endMs": 346380,
+      "endMs": 346520,
       "target": "いただきます。",
       "translation": "Vou comer.",
       "speakerId": "speaker_1",
@@ -6271,7 +6272,8 @@
           "lemma": "大分",
           "surface": "だいぶ",
           "start": 0,
-          "end": 3
+          "end": 3,
+          "base": true
         },
         {
           "lemma": "暗い",
@@ -7345,7 +7347,7 @@
       "id": "s217",
       "index": 217,
       "startMs": 556524,
-      "endMs": 556524,
+      "endMs": 556724,
       "target": "すぐできます。",
       "translation": "Fica pronto rápido.",
       "speakerId": "speaker_0",
@@ -7369,7 +7371,7 @@
     {
       "id": "s218",
       "index": 218,
-      "startMs": 556524,
+      "startMs": 556724,
       "endMs": 559364,
       "target": "なこちゃんは今お着替えをしてます。",
       "translation": "A Nako está trocando de roupa agora.",
@@ -7940,7 +7942,7 @@
       "id": "s239",
       "index": 239,
       "startMs": 615644,
-      "endMs": 615644,
+      "endMs": 615844,
       "target": "乾杯。",
       "translation": "Saúde.",
       "speakerId": "speaker_0",
@@ -14875,7 +14877,7 @@
       "id": "w-充電",
       "segmentId": "",
       "target": "充電",
-      "translation": "carregar (bateria); recarregar as energias",
+      "translation": "carregar (bateria) (充電する)",
       "startMs": 694484,
       "endMs": 695324,
       "reading": "じゅうでん",
@@ -14959,7 +14961,7 @@
       "id": "w-助かる",
       "segmentId": "",
       "target": "助かる",
-      "translation": "ser uma ajuda, salvar a pátria (助かる! = que alívio, ajuda muito)",
+      "translation": "ajudar muito, ser uma mão na roda",
       "startMs": 451404,
       "endMs": 455284,
       "reading": "たすかる",
@@ -14977,22 +14979,26 @@
       "focus": null
     },
     {
-      "id": "w-大分",
+      "id": "w-映る",
       "segmentId": "",
-      "target": "だいぶ",
-      "translation": "bastante, consideravelmente (だいぶ)",
-      "startMs": 492064,
-      "endMs": 494924,
-      "reading": null,
-      "context": "だいぶ暗くなってきて、まだ6時ぐらい。 — Escureceu bastante, e ainda são umas seis horas.",
-      "audioClipSrc": "media/tts/we71ae5d498b8.mp3",
-      "exampleAudioSrc": "media/frag/fc978578b73b3.mp3",
-      "freqRank": 1764,
-      "topikLevel": null,
+      "target": "映る",
+      "translation": "aparecer (na tela, no espelho, na foto)",
+      "startMs": 852084,
+      "endMs": 852624,
+      "reading": "うつる",
+      "context": "映ってるからな。 — Porque está aparecendo (na câmera).",
+      "audioClipSrc": "media/tts/w621fa0ea5ecb.mp3",
+      "exampleAudioSrc": "media/frag/fde8173c29fd6.mp3",
+      "freqRank": 2634,
+      "topikLevel": "A",
       "imageSrc": null,
-      "sceneSrc": "media/frames/sdc349f94a109.jpg",
+      "sceneSrc": "media/frames/s92cfc35e2bec.jpg",
       "newWords": [
-        "だいぶ"
+        "映っ"
+      ],
+      "homophones": [
+        "写る",
+        "移る"
       ],
       "kind": null,
       "focus": null
@@ -15001,7 +15007,7 @@
       "id": "w-ばれる",
       "segmentId": "",
       "target": "バレる",
-      "translation": "ser descoberto, vazar (segredo, mentira)",
+      "translation": "ser descoberto, dar bandeira (バレた = descobriram)",
       "startMs": 590024,
       "endMs": 590444,
       "reading": null,
@@ -15043,7 +15049,7 @@
       "id": "w-泊まり",
       "segmentId": "",
       "target": "泊まり",
-      "translation": "pernoite, passar a noite fora (お泊まり)",
+      "translation": "pernoite (泊まりキャンプ = camping com pernoite)",
       "startMs": 61640,
       "endMs": 62520,
       "reading": "とまり",
@@ -15102,7 +15108,7 @@
       "id": "w-うんち",
       "segmentId": "",
       "target": "うんち",
-      "translation": "cocô (linguagem de criança/família)",
+      "translation": "cocô (dito com criança)",
       "startMs": 321440,
       "endMs": 322700,
       "reading": null,
@@ -15140,7 +15146,7 @@
       "id": "w-すき焼き",
       "segmentId": "",
       "target": "すき焼き",
-      "translation": "sukiyaki (carne e legumes cozidos na panela, em molho adocicado)",
+      "translation": "sukiyaki",
       "startMs": 464704,
       "endMs": 465564,
       "reading": "すきやき",
@@ -15159,7 +15165,7 @@
       "id": "w-離乳食",
       "segmentId": "",
       "target": "離乳食",
-      "translation": "papinha, comida de desmame do bebê",
+      "translation": "papinha (comida de bebê no desmame)",
       "startMs": 205000,
       "endMs": 208040,
       "reading": "りにゅうしょく",
@@ -15178,7 +15184,7 @@
       "id": "w-重宝",
       "segmentId": "",
       "target": "重宝",
-      "translation": "muito útil, que quebra um galho (重宝する = ser muito útil)",
+      "translation": "ser muito útil, usar muito (重宝する)",
       "startMs": 961184,
       "endMs": 962544,
       "reading": "ちょうほう",
@@ -15194,20 +15200,20 @@
       "focus": null
     },
     {
-      "id": "w-じゃんけん",
+      "id": "w-満タン",
       "segmentId": "",
-      "target": "じゃんけん",
-      "translation": "pedra, papel e tesoura (jokenpô)",
-      "startMs": 408064,
-      "endMs": 409304,
-      "reading": null,
-      "context": "最初はグー、じゃんけんほい。 — Primeiro, pedra, jo-ken-pô.",
-      "audioClipSrc": "media/tts/w5d30afa6a679.mp3",
-      "exampleAudioSrc": "media/frag/f6008dde56891.mp3",
-      "freqRank": 8301,
-      "topikLevel": "B",
+      "target": "満タン",
+      "translation": "tanque cheio, carga completa",
+      "startMs": 1045544,
+      "endMs": 1047263,
+      "reading": "まんたん",
+      "context": "携帯もずっと満タンで。 — O celular ficou cheio o tempo todo.",
+      "audioClipSrc": "media/tts/wba299c1ce11c.mp3",
+      "exampleAudioSrc": "media/frag/f2d6e5f4a2c49.mp3",
+      "freqRank": 9978,
+      "topikLevel": null,
       "imageSrc": null,
-      "sceneSrc": "media/frames/s7bf4a83880d3.jpg",
+      "sceneSrc": "media/frames/s7a1df86c3aa6.jpg",
       "newWords": [],
       "kind": null,
       "focus": null
@@ -15801,6 +15807,7 @@
       "meaningEn": null,
       "freqRank": 34184,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15831,6 +15838,7 @@
       "meaningEn": null,
       "freqRank": 3794,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -16236,6 +16244,7 @@
       "meaningEn": null,
       "freqRank": 23536,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -16374,6 +16383,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -16404,7 +16414,7 @@
       "meaningEn": null,
       "freqRank": 73,
       "topikLevel": "A",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "よし",
@@ -16424,23 +16434,7 @@
       "meaningEn": null,
       "freqRank": 1248,
       "topikLevel": "B",
-      "card": {
-        "id": "w-早速",
-        "segmentId": "s32",
-        "target": "早速",
-        "translation": "logo, sem demora",
-        "startMs": 78820,
-        "endMs": 80040,
-        "reading": "さっそく",
-        "context": "じゃあ早速運んでいきま — Então vamos levando logo",
-        "audioClipSrc": "media/tts/w0de1dd8fc9df.mp3",
-        "exampleAudioSrc": "media/frag/f1c8e150a1132.mp3",
-        "freqRank": 1248,
-        "topikLevel": "B",
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/s9b72935ec7fc.jpg"
-      }
+      "cardIn": "ja-B1-05"
     },
     {
       "lemma": "まー",
@@ -16490,7 +16484,25 @@
       "meaningEn": null,
       "freqRank": 548,
       "topikLevel": "A",
-      "cardIn": "ja-B1-06"
+      "card": {
+        "id": "w-乗せる",
+        "segmentId": "s36",
+        "target": "乗せる",
+        "translation": "postar (写真を載せる); pôr em cima, dar carona",
+        "startMs": 93680,
+        "endMs": 94960,
+        "reading": "のせる",
+        "context": "これに今日は乗せますよ。 — Hoje vamos pôr nisto aqui.",
+        "audioClipSrc": "media/tts/w9353b627dcfc.mp3",
+        "exampleAudioSrc": "media/frag/fe18ef7cf7191.mp3",
+        "freqRank": 548,
+        "topikLevel": "A",
+        "newWords": [
+          "乗せ"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s6fea998ae89d.jpg"
+      }
     },
     {
       "lemma": "いー",
@@ -16550,6 +16562,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -16655,6 +16668,16 @@
       "base": true
     },
     {
+      "lemma": "大分",
+      "target": "だいぶ",
+      "reading": null,
+      "meaning": "bastante, consideravelmente (だいぶ)",
+      "meaningEn": null,
+      "freqRank": 1764,
+      "topikLevel": null,
+      "base": true
+    },
+    {
       "lemma": "進む",
       "target": "進む",
       "reading": "すすむ",
@@ -16672,6 +16695,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -17127,6 +17151,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -17214,6 +17239,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -17245,6 +17271,7 @@
       "meaningEn": null,
       "freqRank": 11068,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -17696,27 +17723,7 @@
       "meaningEn": null,
       "freqRank": 5026,
       "topikLevel": null,
-      "card": {
-        "id": "w-合",
-        "segmentId": "s100",
-        "target": "合",
-        "translation": "gō (medida de arroz, cerca de 180 ml)",
-        "startMs": 261019,
-        "endMs": 263120,
-        "reading": "ごう",
-        "context": "まずお米を2合で炊いていき — Primeiro vou cozinhar dois gō de arroz (cerca de 2 xícaras).",
-        "audioClipSrc": "media/tts/wc5ef4ac43df7.mp3",
-        "exampleAudioSrc": "media/frag/f270f693b579d.mp3",
-        "freqRank": 5026,
-        "topikLevel": null,
-        "newWords": [],
-        "homophones": [
-          "号",
-          "剛",
-          "豪"
-        ],
-        "sceneSrc": "media/frames/sf7cd8e3c2ca6.jpg"
-      }
+      "cardIn": "ja-B1-08"
     },
     {
       "lemma": "焚く",
@@ -17866,6 +17873,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -18075,7 +18083,7 @@
       "meaning": "cada (毎〜 = todo…)",
       "meaningEn": null,
       "freqRank": null,
-      "topikLevel": null,
+      "topikLevel": "B",
       "dict": true
     },
     {
@@ -18112,7 +18120,26 @@
       "meaningEn": null,
       "freqRank": 1426,
       "topikLevel": "A",
-      "cardIn": "ja-B1-06"
+      "card": {
+        "id": "w-完成",
+        "segmentId": "s132",
+        "target": "完成",
+        "translation": "ficar pronto, conclusão (完成する)",
+        "startMs": 339620,
+        "endMs": 341160,
+        "reading": "かんせい",
+        "context": "完成した時に。 — Quando ficou pronto.",
+        "audioClipSrc": "media/tts/w769d88e425e0.mp3",
+        "exampleAudioSrc": "media/frag/ff3f6a9ff1848.mp3",
+        "freqRank": 1426,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": [
+          "感性",
+          "歓声"
+        ],
+        "sceneSrc": "media/frames/s192140b966d0.jpg"
+      }
     },
     {
       "lemma": "時",
@@ -18460,6 +18487,16 @@
       "base": true
     },
     {
+      "lemma": "じゃんけん",
+      "target": "じゃんけん",
+      "reading": null,
+      "meaning": "pedra, papel e tesoura (jokenpô)",
+      "meaningEn": null,
+      "freqRank": 8301,
+      "topikLevel": "B",
+      "cardIn": "ja-B1-06"
+    },
+    {
       "lemma": "最初",
       "target": "最初",
       "reading": "さいしょ",
@@ -18764,6 +18801,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -18773,7 +18811,7 @@
       "meaning": "não; (いや) pois é, ah (início de fala)",
       "meaningEn": null,
       "freqRank": 4885,
-      "topikLevel": null,
+      "topikLevel": "A",
       "dict": true
     },
     {
@@ -19306,23 +19344,7 @@
       "meaningEn": null,
       "freqRank": 1242,
       "topikLevel": "A",
-      "card": {
-        "id": "w-鍋",
-        "segmentId": "s215",
-        "target": "鍋",
-        "translation": "panela; prato de panela",
-        "startMs": 550784,
-        "endMs": 553284,
-        "reading": "なべ",
-        "context": "切って鍋にぶち込むスタイルやから。 — Porque o estilo é cortar e jogar tudo na panela.",
-        "audioClipSrc": "media/tts/w1b52d3930d08.mp3",
-        "exampleAudioSrc": "media/frag/f360dac339b7e.mp3",
-        "freqRank": 1242,
-        "topikLevel": "A",
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/sd89db7c747fc.jpg"
-      }
+      "cardIn": "ja-B1-06"
     },
     {
       "lemma": "打ち込む",
@@ -19370,7 +19392,7 @@
       "meaning": "troca de roupa, roupa para trocar",
       "meaningEn": null,
       "freqRank": 7124,
-      "topikLevel": null,
+      "topikLevel": "B",
       "card": {
         "id": "w-着替え",
         "segmentId": "s218",
@@ -19383,7 +19405,7 @@
         "audioClipSrc": "media/tts/w1c55fec5b4f0.mp3",
         "exampleAudioSrc": "media/frag/fcce68f25980c.mp3",
         "freqRank": 7124,
-        "topikLevel": null,
+        "topikLevel": "B",
         "newWords": [],
         "homophones": null,
         "sceneSrc": "media/frames/sbf24ecfc2a64.jpg"
@@ -19423,6 +19445,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -19487,16 +19510,6 @@
         "homophones": null,
         "sceneSrc": "media/frames/scb3daf160cea.jpg"
       }
-    },
-    {
-      "lemma": "映る",
-      "target": "映る",
-      "reading": "うつる",
-      "meaning": "aparecer (na tela, no espelho, na foto)",
-      "meaningEn": null,
-      "freqRank": 2634,
-      "topikLevel": "A",
-      "cardIn": "ja-B1-06"
     },
     {
       "lemma": "筋",
@@ -19582,23 +19595,7 @@
       "meaningEn": null,
       "freqRank": 5696,
       "topikLevel": "B",
-      "card": {
-        "id": "w-乾杯",
-        "segmentId": "s239",
-        "target": "乾杯",
-        "translation": "brinde, saúde!",
-        "startMs": 615644,
-        "endMs": 615644,
-        "reading": "かんぱい",
-        "context": "乾杯。 — Saúde.",
-        "audioClipSrc": "media/tts/wa062efba369a.mp3",
-        "exampleAudioSrc": "media/frag/f1d2bd06fb99c.mp3",
-        "freqRank": 5696,
-        "topikLevel": "B",
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/sbfe24b429c78.jpg"
-      }
+      "cardIn": "ja-B1-06"
     },
     {
       "lemma": "のんびり",
@@ -19639,23 +19636,7 @@
       "meaningEn": null,
       "freqRank": 270,
       "topikLevel": "A",
-      "card": {
-        "id": "w-実際",
-        "segmentId": "s245",
-        "target": "実際",
-        "translation": "na prática, de fato (実際に)",
-        "startMs": 621984,
-        "endMs": 624964,
-        "reading": "じっさい",
-        "context": "デイキャンプってだって実際さ、4時間ぐらいしかおらんもんな。 — Afinal, no camping de um dia, na prática, a gente só fica umas quatro horas, né.",
-        "audioClipSrc": "media/tts/w07b474884902.mp3",
-        "exampleAudioSrc": "media/frag/ff3984339129a.mp3",
-        "freqRank": 270,
-        "topikLevel": "A",
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/s34c952494114.jpg"
-      }
+      "cardIn": "ja-B1-05"
     },
     {
       "lemma": "覗く",
@@ -19976,7 +19957,8 @@
       "meaning": "morango",
       "meaningEn": null,
       "freqRank": 2075,
-      "topikLevel": null
+      "topikLevel": null,
+      "cardIn": "ja-B1-08"
     },
     {
       "lemma": "コード",
@@ -20388,7 +20370,7 @@
       "meaningEn": null,
       "freqRank": 1654,
       "topikLevel": "A",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "回す",
@@ -20593,7 +20575,7 @@
       "meaning": "todo tipo de",
       "meaningEn": null,
       "freqRank": null,
-      "topikLevel": null,
+      "topikLevel": "A",
       "dict": true
     },
     {
@@ -20688,7 +20670,23 @@
       "meaningEn": null,
       "freqRank": 406,
       "topikLevel": "A",
-      "cardIn": "ja-B1-06"
+      "card": {
+        "id": "w-結局",
+        "segmentId": "s316",
+        "target": "結局",
+        "translation": "no fim das contas",
+        "startMs": 821704,
+        "endMs": 822244,
+        "reading": "けっきょく",
+        "context": "結局すぐだね。 — No fim, foi rapidinho, né.",
+        "audioClipSrc": "media/tts/w78d7262ac23d.mp3",
+        "exampleAudioSrc": "media/frag/f674569411c9b.mp3",
+        "freqRank": 406,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s6c51324ca0a3.jpg"
+      }
     },
     {
       "lemma": "揃う",
@@ -21472,32 +21470,6 @@
       }
     },
     {
-      "lemma": "満タン",
-      "target": "満タン",
-      "reading": "まんたん",
-      "meaning": "tanque cheio, carga completa",
-      "meaningEn": null,
-      "freqRank": 9978,
-      "topikLevel": null,
-      "card": {
-        "id": "w-満タン",
-        "segmentId": "s387",
-        "target": "満タン",
-        "translation": "tanque cheio, carga completa",
-        "startMs": 1045544,
-        "endMs": 1047263,
-        "reading": "まんたん",
-        "context": "携帯もずっと満タンで。 — O celular ficou cheio o tempo todo.",
-        "audioClipSrc": "media/tts/wba299c1ce11c.mp3",
-        "exampleAudioSrc": "media/frag/f2d6e5f4a2c49.mp3",
-        "freqRank": 9978,
-        "topikLevel": null,
-        "newWords": [],
-        "homophones": null,
-        "sceneSrc": "media/frames/s7a1df86c3aa6.jpg"
-      }
-    },
-    {
       "lemma": "状態",
       "target": "状態",
       "reading": "じょうたい",
@@ -21662,7 +21634,7 @@
       "meaning": "cerca de, aproximadamente",
       "meaningEn": null,
       "freqRank": 39283,
-      "topikLevel": null,
+      "topikLevel": "A",
       "dict": true
     },
     {
@@ -21729,25 +21701,7 @@
       "meaningEn": null,
       "freqRank": 1241,
       "topikLevel": "A",
-      "card": {
-        "id": "w-感覚",
-        "segmentId": "s370",
-        "target": "感覚",
-        "translation": "sensação, percepção",
-        "startMs": 998264,
-        "endMs": 1004864,
-        "reading": "かんかく",
-        "context": "一家に1台あればずっと使えるっていうような感覚でいいのかな。10年間っていうのは非常に長く見れるので、 — dá para pensar que, com uma em casa, você usa para sempre, acho; dez anos é bastante tempo,",
-        "audioClipSrc": "media/tts/w7e684528df7b.mp3",
-        "exampleAudioSrc": "media/frag/fef8aca73de70.mp3",
-        "freqRank": 1241,
-        "topikLevel": "A",
-        "newWords": [],
-        "homophones": [
-          "間隔"
-        ],
-        "sceneSrc": "media/frames/sffbcb29f048f.jpg"
-      }
+      "cardIn": "ja-B1-05"
     },
     {
       "lemma": "長い",
@@ -21932,7 +21886,25 @@
       "meaningEn": null,
       "freqRank": 376,
       "topikLevel": "C",
-      "cardIn": "ja-B1-04"
+      "card": {
+        "id": "w-対応",
+        "segmentId": "s376",
+        "target": "対応",
+        "translation": "atendimento, lidar com (対応する)",
+        "startMs": 1022944,
+        "endMs": 1027584,
+        "reading": "たいおう",
+        "context": "80%以上の電化製品対応してるので、エアベッドとかもやってたんですけど、 — É compatível com mais de 80% dos aparelhos, então a gente usou até com o colchão inflável,",
+        "audioClipSrc": "media/tts/w4b857caf2de6.mp3",
+        "exampleAudioSrc": "media/frag/ff80b6718fe59.mp3",
+        "freqRank": 376,
+        "topikLevel": "C",
+        "newWords": [],
+        "homophones": [
+          "太王"
+        ],
+        "sceneSrc": "media/frames/s8397c95fc0ad.jpg"
+      }
     },
     {
       "lemma": "エアー",
@@ -22121,6 +22093,7 @@
       "meaningEn": null,
       "freqRank": 7646,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -22289,7 +22262,7 @@
       "meaning": "tchau",
       "meaningEn": null,
       "freqRank": 10603,
-      "topikLevel": null,
+      "topikLevel": "B",
       "base": true
     }
   ],
@@ -22309,7 +22282,7 @@
       "focus": {
         "lemma": "充電",
         "target": "充電",
-        "meaning": "carregar (bateria); recarregar as energias",
+        "meaning": "carregar (bateria) (充電する)",
         "reading": "じゅうでん",
         "start": 11,
         "end": 13
@@ -22337,6 +22310,28 @@
         "end": 5
       },
       "sceneSrc": "media/frames/s807178f058d5.jpg"
+    },
+    {
+      "id": "s-5bf114f53d",
+      "kind": "sentence",
+      "segmentId": "s53",
+      "target": "だいぶ準備も進んだので、なこさんの離乳食タイムにしましょうか。",
+      "translation": "Como a preparação já avançou bastante, vamos fazer a hora da papinha da Nako?",
+      "startMs": 145440,
+      "endMs": 150240,
+      "audioClipSrc": "media/frag/fce8776cb7688.mp3",
+      "exampleAudioSrc": "media/frag/fce8776cb7688.mp3",
+      "freqRank": 4864,
+      "topikLevel": null,
+      "focus": {
+        "lemma": "離乳食",
+        "target": "離乳食",
+        "meaning": "papinha (comida de bebê no desmame)",
+        "reading": "りにゅうしょく",
+        "start": 17,
+        "end": 20
+      },
+      "sceneSrc": "media/frames/s16963fa7f579.jpg"
     },
     {
       "id": "s-b7358dbdbe",
@@ -22375,35 +22370,13 @@
       "focus": {
         "lemma": "泊まり",
         "target": "泊まり",
-        "meaning": "pernoite, passar a noite fora (お泊まり)",
+        "meaning": "pernoite (泊まりキャンプ = camping com pernoite)",
         "reading": "とまり",
         "start": 0,
         "end": 3
       },
       "sceneSrc": "media/frames/sbba4a02d48ba.jpg"
-    },
-    {
-      "id": "s-e5007ffbc0",
-      "kind": "sentence",
-      "segmentId": "s368",
-      "target": "毎日使用しても約10年間は使えるので、",
-      "translation": "Mesmo usando todo dia, dura uns dez anos;",
-      "startMs": 991064,
-      "endMs": 994404,
-      "audioClipSrc": "media/frag/f3d7736f3c1b2.mp3",
-      "exampleAudioSrc": "media/frag/f3d7736f3c1b2.mp3",
-      "freqRank": 202,
-      "topikLevel": "A",
-      "focus": {
-        "lemma": "使用",
-        "target": "使用",
-        "meaning": "uso (使用する = usar)",
-        "reading": "しよう",
-        "start": 2,
-        "end": 4
-      },
-      "sceneSrc": "media/frames/s64b974f38a19.jpg"
     }
   ],
-  "createdAt": "2026-09-24T19:21:06.919898+00:00"
+  "createdAt": "2026-09-28T15:03:39.629678+00:00"
 }

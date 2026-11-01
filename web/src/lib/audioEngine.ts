@@ -47,6 +47,11 @@ function tick() {
     cancelAnimationFrame(raf);
     return;
   }
+  // pausado por fora (ex.: o navegador pausou) antes do fim: não fica girando à toa
+  if (el.paused) {
+    cancelAnimationFrame(raf);
+    return;
+  }
   raf = requestAnimationFrame(tick);
 }
 
@@ -63,8 +68,12 @@ export function playRange(url: string, startMs: number, endMs: number, rate = 1)
     const startAt = Math.max(0, startMs / 1000);
     const doPlay = () => {
       if (mine !== gen) return;
-      a.play().catch(() => {});
-      raf = requestAnimationFrame(tick);
+      // play() bloqueado (autoplay) rejeita: sem parar aqui o loop de rAF rodaria
+      // para sempre, esperando um currentTime que nunca anda
+      a.play().then(
+        () => { if (mine === gen) raf = requestAnimationFrame(tick); },
+        () => { cancelAnimationFrame(raf); },
+      );
     };
     // Wait for the seek to land before playing, so we never play the wrong part.
     if (Math.abs(a.currentTime - startAt) > 0.05) {

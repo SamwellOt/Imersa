@@ -22,6 +22,31 @@ export function newUid(): string {
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
+/** cyrb53: hash síncrono de 53 bits (dentro de transação Dexie não dá para
+ *  esperar o `crypto.subtle`, que não é promessa do Dexie). */
+function cyrb53(str: string, seed: number): number {
+  let h1 = 0xdeadbeef ^ seed;
+  let h2 = 0x41c6ce57 ^ seed;
+  for (let i = 0; i < str.length; i++) {
+    const ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+}
+
+/**
+ * `uid` de uma revisão de backup antigo (de antes do campo existir), tirado do
+ * CONTEÚDO da nota: importar o mesmo backup de novo — ou em outro aparelho —
+ * dá o mesmo id, e a sincronização une em vez de duplicar o histórico.
+ */
+export function legacyReviewUid(r: Omit<ReviewRecord, "uid">): string {
+  const src = [r.language, r.key, r.reviewedAt, r.rating, r.state, r.elapsedMs].join("|");
+  return `imp-${cyrb53(src, 1).toString(36)}${cyrb53(src, 2).toString(36)}`;
+}
+
 /** One SRS card = one mined word, keyed globally by `${doseId}::${cardId}`. */
 export interface CardRecord {
   key: string; // `${doseId}::${cardId}`
@@ -262,6 +287,11 @@ export const AUTH_KEY = `${LOCAL_SETTING}auth`;
 export const DATA_OWNER_KEY = `${LOCAL_SETTING}dataOwner`;
 /** Id deste aparelho (para o sync não devolver o eco do que ele mesmo subiu). */
 export const DEVICE_ID_KEY = `${LOCAL_SETTING}deviceId`;
+/** Marcas de "aparelho confiável" por e-mail (`{ [email]: "imd_…" }`), entregues
+ *  pelo servidor a cada login certo. Com ela o dono entra mesmo com a conta sob
+ *  ataque (ver server/auth-store.mjs → login). É de segurança, não de progresso:
+ *  sobrevive a sair da conta e a `wipeLocalData`. */
+export const DEVICE_TRUST_KEY = `${LOCAL_SETTING}deviceTrust`;
 
 export async function getSetting<T>(key: string, fallback: T): Promise<T> {
   const rec = await db.settings.get(key);
@@ -391,7 +421,9 @@ export async function importAll(bundle: ExportBundle): Promise<void> {
         })),
       );
       await db.reviewLog.bulkPut(
-        (bundle.reviews ?? []).map((r) => ({ ...r, uid: r.uid ?? newUid() })),
+        // sem `uid` (backup antigo): id pelo conteúdo, nunca aleatório — senão
+        // cada importação sobe as mesmas notas com ids novos e o histórico dobra
+        (bundle.reviews ?? []).map((r) => ({ ...r, uid: r.uid ?? legacyReviewUid(r) })),
       );
       await db.immersionLog.bulkPut(bundle.immersion ?? []);
       await db.lineMarks.bulkPut(bundle.marks ?? []);
@@ -416,17 +448,19 @@ export async function importAll(bundle: ExportBundle): Promise<void> {
 
 /** Wipe SRS + progress for a single language (keeps other languages + prefs). */
 export async function resetLanguage(language: string): Promise<void> {
-  const [cards, revs, imm, prog, marks] = await Promise.all([
-    db.cards.where("language").equals(language).toArray(),
-    db.reviewLog.where("language").equals(language).toArray(),
-    db.immersionLog.where("language").equals(language).toArray(),
-    db.doseProgress.where("language").equals(language).toArray(),
-    db.lineMarks.where("language").equals(language).toArray(),
-  ]);
-  // posição do vídeo (local) das doses deste idioma — o id da dose começa pelo idioma
-  const posKeys = (await db.settings.toCollection().primaryKeys())
-    .filter((k) => k.startsWith(`${LOCAL_SETTING}mediaPos:${language}-`));
+  // Leitura DENTRO da transação: algo gravado entre um toArray e o delete
+  // sobreviveria sem tombstone e voltaria na próxima sincronização.
   await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.tombstones, db.settings, db.lineMarks], async () => {
+    const [cards, revs, imm, prog, marks] = await Promise.all([
+      db.cards.where("language").equals(language).toArray(),
+      db.reviewLog.where("language").equals(language).toArray(),
+      db.immersionLog.where("language").equals(language).toArray(),
+      db.doseProgress.where("language").equals(language).toArray(),
+      db.lineMarks.where("language").equals(language).toArray(),
+    ]);
+    // posição do vídeo (local) das doses deste idioma — o id da dose começa pelo idioma
+    const posKeys = (await db.settings.toCollection().primaryKeys())
+      .filter((k) => k.startsWith(`${LOCAL_SETTING}mediaPos:${language}-`));
     await db.settings.bulkDelete(posKeys);
     await db.lineMarks.bulkDelete(marks.map((m) => m.uid));
     await tombstoneMany("mark", marks.map((m) => m.uid));
@@ -443,15 +477,16 @@ export async function resetLanguage(language: string): Promise<void> {
 }
 
 export async function resetAll(): Promise<void> {
-  const [cards, revs, imm, prog, settings, marks] = await Promise.all([
-    db.cards.toArray(),
-    db.reviewLog.toArray(),
-    db.immersionLog.toArray(),
-    db.doseProgress.toArray(),
-    db.settings.toArray(),
-    db.lineMarks.toArray(),
-  ]);
+  // Leitura DENTRO da transação (mesmo motivo do resetLanguage).
   await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones, db.lineMarks], async () => {
+    const [cards, revs, imm, prog, settings, marks] = await Promise.all([
+      db.cards.toArray(),
+      db.reviewLog.toArray(),
+      db.immersionLog.toArray(),
+      db.doseProgress.toArray(),
+      db.settings.toArray(),
+      db.lineMarks.toArray(),
+    ]);
     await Promise.all([
       db.cards.clear(),
       db.reviewLog.clear(),
@@ -488,7 +523,8 @@ export async function localProgressSummary(): Promise<{ cards: number; reviews: 
  * subido. Limpo = aparelho novo.
  */
 export async function wipeLocalData(keep: string[] = []): Promise<void> {
-  const keepSet = new Set(keep);
+  // a marca de aparelho confiável não é progresso: sair da conta não a apaga
+  const keepSet = new Set([...keep, DEVICE_TRUST_KEY]);
   await db.transaction("rw", [db.cards, db.reviewLog, db.immersionLog, db.doseProgress, db.settings, db.tombstones, db.lineMarks], async () => {
     await Promise.all([
       db.cards.clear(),

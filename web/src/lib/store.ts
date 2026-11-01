@@ -1,6 +1,32 @@
 // Global UI state + persisted preferences (theme, active language, subtitle prefs).
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
+
+// localStorage pode lançar (modo privado, cota cheia, storage bloqueado). Sem
+// proteção, o setItem do persist estourava dentro de uma ação de UI.
+const safeStorage = {
+  getItem: (name: string): string | null => {
+    try {
+      return localStorage.getItem(name);
+    } catch {
+      return null;
+    }
+  },
+  setItem: (name: string, value: string): void => {
+    try {
+      localStorage.setItem(name, value);
+    } catch {
+      /* sem persistência: as preferências valem só nesta sessão */
+    }
+  },
+  removeItem: (name: string): void => {
+    try {
+      localStorage.removeItem(name);
+    } catch {
+      /* nada a remover */
+    }
+  },
+};
 
 export type Theme = "dark" | "light";
 export type SubtitleMode = "target" | "translation" | "both" | "primed" | "off";
@@ -76,7 +102,7 @@ export const useApp = create<AppState>()(
       setAutoPlayExample: (autoPlayExample) => set({ autoPlayExample }),
       setPrimedAdaptive: (primedAdaptive) => set({ primedAdaptive }),
     }),
-    { name: "imersa-prefs" },
+    { name: "imersa-prefs", storage: createJSONStorage(() => safeStorage) },
   ),
 );
 

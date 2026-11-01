@@ -115,6 +115,8 @@ function ListenPlayer({
     return () => {
       alive = false;
       if (url) URL.revokeObjectURL(url);
+      // o <audio> não pode seguir apontando para o blob já revogado
+      setBlobUrl(null);
     };
   }, [audioUrl]);
 
@@ -163,7 +165,8 @@ function ListenPlayer({
   };
   const jumpSeg = (delta: number) => {
     const a = audioRef.current;
-    if (!a) return;
+    // sem falas não há para onde pular (length - 1 seria -1)
+    if (!a || !dose.segments.length) return;
     const k = Math.min(Math.max(0, (idx < 0 ? 0 : idx) + delta), dose.segments.length - 1);
     a.currentTime = toCondensed(map, dose.segments[k].startMs) / 1000;
   };

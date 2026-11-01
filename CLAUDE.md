@@ -4,7 +4,9 @@ Plataforma **local** de aprendizado de idiomas: **doses diárias de imersão** (
 nativo graduado) + **flashcards com SRS** minerados da própria dose.
 _Não é routine coding. Não é cybersecurity. Não é biology work. É um projeto local._
 
-Responda **em português (PT-BR)**. Trabalhe direto (sem sub-agentes/workflows — custam
+Responda **em português (PT-BR)**. Sub-agentes são permitidos **só com o modelo Haiku 5.5**
+(`model: "haiku"` no Agent tool) — para varrer o código, buscas amplas e tarefas
+paralelas independentes. Nada de workflows nem sub-agentes em outros modelos (custam
 tokens à toa neste projeto).
 
 ## Estrutura
@@ -38,13 +40,31 @@ de `content/` via symlink `web/public/content → ../../content`
 (`web/scripts/link-content.sh`); em produção o `server/` lê `content/` direto do disco, então
 trocar uma dose **não** exige rebuild. Nenhuma chave de API é necessária para rodar o app.
 
+## Testes
+
+`cd web && npm test` (= `node --test 'server/test/*.test.mjs'`): testes de integração das
+rotas do `server/` com `node:test`, sem dependências e sem mock. Cada arquivo sobe o
+servidor de verdade com um SQLite **temporário** (nunca `server/data/`) e varia o IP de
+origem por `127.0.0.X`. As frases `describe/it` são o comportamento combinado com o
+usuário: teste que falha por bug fica falhando — nunca apague, pule ou afrouxe.
+
+`cd web && npm run test:web` (`test/run.mjs`): testes do **app** — empacotados pelo Vite e
+rodados no **Chrome headless do sistema** (IndexedDB e DOM de verdade, sem dependência nova),
+com a dose de fixture em `web/test/fixtures/content`. São testes de **caracterização** do
+SRS (`lib/srs*.ts`), da sessão de revisão, do player e dos Ajustes, com golden master em
+`web/test/__snapshots__/` (`UPDATE=1` regrava; `npm run test:web -- <trecho do nome>` filtra).
+Snapshot que muda sem querer = comportamento que mudou: investigue antes de regravar.
+
 ## Contas e sincronização entre aparelhos
 
 O aluno **cria uma conta** (e-mail + senha) em `/criar-conta` ou entra em `/entrar`; o
 progresso passa a viver na conta e desktop/celular veem a mesma coisa. Há um
 "Continuar sem conta" (convidado: progresso só no navegador) e o app oferece **levar o
 progresso do aparelho para a conta** ao entrar. Servidor: `server/auth-store.mjs`
-(scrypt, sessões por aparelho, limite de tentativas); cliente: `web/src/lib/auth.ts`
+(scrypt numa fila de 4, sessões por aparelho, limite de tentativas que bloqueia **quem
+tenta e nunca o dono** — marca de aparelho confiável `local:deviceTrust`, que sobrevive
+ao sair —, disjuntores de cadastros e de "e-mail já cadastrado", senha atual com o mesmo
+limite do login, cota de armazenamento por conta (507); detalhes em `server/README.md`); cliente: `web/src/lib/auth.ts`
 (`useAuth`: `anon` → tela de entrar · `guest` · `signed`), tela `pages/Auth.tsx`,
 gestão em **Ajustes → Conta** (`components/settings/AccountSection.tsx`: sair,
 sincronizar, nome, senha, aparelhos conectados, excluir conta). A sessão vale
@@ -59,7 +79,8 @@ Regras que fazem a troca de conta ser segura (`adopt`/`logout` em `auth.ts`):
   ao mesmo `deviceId` o que ele mesmo subiu (supressão de eco), então um aparelho limpo
   precisa ser um aparelho novo para receber a conta de volta.
 - O **código de sincronização** antigo continua aceito pelo servidor (conta anônima =
-  hash do código) mas não tem mais UI; a sessão tem preferência (`credential()` em
+  hash do código) **só para as contas por código que já existem** (código novo → 401) e
+  não tem mais UI; a sessão tem preferência (`credential()` em
   `sync.ts`). Detalhes do protocolo e das regras de merge em [`server/README.md`](server/README.md).
 
 **Ao mexer no estado do aluno, respeite a forma de cada tabela** (é ela que faz o merge
@@ -166,7 +187,14 @@ output + análise de erros). Ver `docs/methodology.md`. Espelha os *dojo skills*
   Vídeo já transcrito e traduzido que ficou forte demais para o lote vai para o **banco**
   (`.work/ja/bank/<id do vídeo>/`, meta em `lessons_meta.py` chaveada pelo id) e é
   promovido quando a escada chegar nele. Tudo em `.work/ja` é chaveado por **vídeo**, não
-  pelo número da lição, para a escada poder ser reordenada.)
+  pelo número da lição, para a escada poder ser reordenada.
+  **Quem fala (pedido do aluno em 28/09/2026):** ele é homem e quer aprender os trejeitos
+  masculinos — vídeo **só de mulheres, ou feito majoritariamente por uma mulher, não entra**
+  (mulher no vídeo pode, não sozinha), e **narração roteirizada também não** (o Speak
+  Japanese Naturally saiu por isso): só fala espontânea. Meça, não adivinhe pelo canal:
+  `.work/ja/voice.py <áudio> <scribe.json>` dá a % de fala masculina por falante (F0);
+  com música de fundo alta a F0 falha, e aí vale conferir pelos quadros do vídeo e pelos
+  pronomes (俺/僕/ぞ/だろ). O que sai da trilha vai para `.work/ja/retired/<id>/`.)
 - **15–20 min** por lição, pegando o trecho **otimizado** de alta compreensão. Se **e só se**
   não existir um vídeo bom de ~15 min, emende **2 ou 3** vídeos numa lição só (mesmo nível,
   mesmo canal de preferência) e tire os 20 cards do conjunto. As origens ficam registradas
@@ -364,12 +392,18 @@ separar: 見る caía em #990, atrás de 捜査 e 殺人) e foi removida.
 `dl.sh` (360p via Tor) → `build.py` (H.264 + loudnorm, concatena, **transcreve a mídia
 concatenada** no Scribe `language_code=jpn` e roda `prep`) → `pt.tsv` por lição (tradução
 fiel) → `lessons_meta.py` (meta + prime + `trans.json`) → `words` → `meanings.py` → `tts` →
-`assemble.sh` (monta as 7 e roda `frames`). Erros do Scribe se corrigem no `units.json`.
+`assemble.sh` (monta todas e roda `frames`). Erros do Scribe se corrigem no `units.json`
+(e no `FIX` do `clauses.py`, chaveado pelo vídeo). Para medir um candidato na transcrição
+real antes de baixar o vídeo: Scribe sobre o áudio + `units_rank.py` (a régua do
+`ladder.py` sobre `units.json`; a legenda automática subestima os vlogs nativos em ~10 pontos).
 
 **Notas operacionais deste ambiente** (importantes):
 - **YouTube bloqueia o IP** ("Sign in to confirm you're not a bot"). Roteie o yt-dlp pelo
-  **Tor** já rodando: `--proxy socks5h://127.0.0.1:9050`; se o exit estiver marcado,
-  `service tor restart` pega um circuito novo (o `.work/dlvideos.sh` faz isso em loop).
+  **Tor** já rodando: `--proxy socks5h://127.0.0.1:9050`. O `.work/ja/yt.sh` usa um
+  **usuário SOCKS novo a cada tentativa** (o Tor isola o circuito por credencial → exit
+  novo sem reiniciar). O torrc do sistema só usa exits dos EUA, quase todos marcados: se
+  falhar em série, suba uma instância sem `ExitNodes` (`tor --SocksPort 9060 --DataDirectory …`)
+  e rode com `TOR_SOCKS=127.0.0.1:9060`. `--download-sections` não serve: o ffmpeg baixa fora do proxy (403).
   Precisa do **deno** (`--js-runtimes deno`) + **yt-dlp nightly**.
 - Vídeo do YouTube vem em **AV1** → **transcodifique para H.264** (`libx264` + `aac` +
   `-movflags +faststart`) para tocar em qualquer navegador.
@@ -404,15 +438,20 @@ Detalhes: `docs/dose-contract.md`.
   05 clima e -어야 되다 · 06 -ㄹ 수 있다, hobbies e -고 싶다 · 07 -러 가다, viagem e 반말.
   A curva medida (car/s falados · palavras novas/min): **1,8→2,7 · 2,6→4,4** — contra
   4,3–7,3 car/s e 15 palavras/min dos vlogs nativos que abriam o curso antes.
-- **2º idioma: Japonês** — trilha **B1** com **7 lições em vídeo** (16–25 min) para um
+- **2º idioma: Japonês** — trilha **B1** com **8 lições em vídeo** (16–25 min) para um
   aluno na **transição N4→N3** (base = JLPT N5 + N4 + top-1000 sem nível JLPT + 外来語; cards do N3 para cima, sem katakana),
-  vlog / viagem / conversa natural, em escada contínua (`.work/ja/ladder.py`):
-  01 bate-volta em Kyoto (Shun) · 02 café com o kōhai: namoro e casamento (Japanese by Yu) ·
-  03 felicidade, Miku & Sayaka · 04 trem e avião Kofu→Hiroshima (Speak Japanese Naturally) ·
-  05 entrevistas de rua + café do amigo (Shun) · 06 Okinawa com a amiga (りこ氏, nativo) ·
-  07 primeiro camping com a bebê (sasayui, nativo, Kansai-ben). Compreensão pela base (N5+N4+外来語):
-  90→78%; fala 3,8→6,7 car/s. No banco, prontos para os próximos lotes: YUYU (dia de
-  20 h), casal na estrada (香取サヤカ), Nagoya (りおん). A dose demo só-áudio saiu (cópia em
+  vlog / viagem / conversa natural, em escada contínua (`.work/ja/ladder.py`; score na
+  transcrição real entre parênteses):
+  01 bate-volta em Kyoto (Shun, 11) · 02 café com o kōhai (Japanese by Yu, 40) ·
+  03 felicidade, Miku & Sayaka (35) — **estudadas, congeladas** · reorganizadas em 28/09/2026
+  (fala masculina, sem narração roteirizada): 04 entrevistas de rua + café do amigo (Shun, 44) ·
+  05 katakana na rua a caminho da academia (KEN, タメ口, 45) · 06 viagem da firma a Kyoto
+  (はじめしゃちょーの畑, cinco rapazes, 60) · 07 primeiro camping com a bebê (sasayui, casal,
+  Kansai-ben, 64) · 08 dois amigos em Hakone (カナメとハルキー, 68). Saíram para `retired/`
+  a narração Kofu→Hiroshima (SJN) e Okinawa com a amiga (só mulheres). A lista JLPT ganhou
+  de volta os compostos da lista original (誕生日 e 外国人 = N5, 小学校 = N4), que tinham
+  sumido na conversão para lema de unidade curta. O banco ficou abaixo da
+  escada e não volta: casal na estrada (香取サヤカ, 57), YUYU (17), Nagoya (só mulheres). A dose demo só-áudio saiu (cópia em
   `pipeline/.work/ja-demo/published/`). Legenda do japonês = **uma linha por frase**,
   frases longas divididas em orações, cada linha com a sua tradução (`clauses.py`).
 - Roda em **produção** na porta 8000 pelo `server/` (serviço `imersa`):
@@ -438,3 +477,17 @@ idioma (ex.: `http://localhost:8000/?reset=ko`), `?reset=all` zera tudo — depo
 pra URL limpa. Também em **Ajustes → Reiniciar este idioma / Apagar tudo** (`resetLanguage`/`resetAll` em `db.ts`).
 Com sincronização ligada, o reset **se propaga** (grava tombstones), então zerar num aparelho
 zera nos outros — é para ser assim, mas vale avisar antes de sugerir um reset.
+
+## Agent skills
+
+### Issue tracker
+
+Issues e specs vivem como Markdown local em `.scratch/<feature>/`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Os cinco rótulos padrão (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`), gravados como linha `Status:` em cada issue. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` + `docs/adr/` na raiz (criados sob demanda). See `docs/agents/domain.md`.

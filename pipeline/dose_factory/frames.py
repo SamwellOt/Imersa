@@ -10,6 +10,7 @@ import hashlib
 import json
 import os
 import subprocess
+import sys
 
 FRAMES_DIR = "media/frames"
 # A capa é tirada um pouco depois da primeira fala com tradução: na abertura
@@ -67,6 +68,11 @@ def add_frames(dose_path: str) -> dict | None:
             card["sceneSrc"] = f"{FRAMES_DIR}/{name}"
             used.add(name)
             n += 1
+        else:
+            # sceneSrc antigo apontaria para um quadro que a limpeza abaixo apaga
+            card.pop("sceneSrc", None)
+            print(f"  ⚠ {dose['id']}: sem quadro para {card['id']}, sceneSrc removido",
+                  file=sys.stderr)
     # quadro de um build anterior (outros tempos) que ninguém mais referencia
     stale = [f for f in os.listdir(frames_dir) if f.endswith(".jpg") and f not in used]
     for f in stale:

@@ -11,7 +11,7 @@
   condensado da escuta (`/escuta/:id` baixa o mp3 inteiro, sem `Range`, então ele
   passa pelo cache-first dos mp3).
 */
-const VERSION = "imersa-v6"; // v6: áudio condensado offline; v5: JSON de conteúdo rede-primeiro; v4: /otimizar fora do shell + `cache: "reload"` honrado; v3: capas/cenas offline; v2: assets com COEP
+const VERSION = "imersa-v7"; // v7: condensado rede-primeiro (o nome fixo é regravado ao regerar a lição); v6: áudio condensado offline; v5: JSON de conteúdo rede-primeiro; v4: /otimizar fora do shell + `cache: "reload"` honrado; v3: capas/cenas offline; v2: assets com COEP
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
 const PRECACHE = ["/", "/index.html", "/manifest.webmanifest"];
@@ -38,6 +38,9 @@ self.addEventListener("activate", (event) => {
 
 const isMedia = (url) => /\.(mp4|webm|mov|m4v)$/i.test(url.pathname);
 const isShortAudio = (url) => /\.(mp3|m4a|ogg|wav)$/i.test(url.pathname);
+// o áudio condensado tem nome fixo: regerar a lição regrava o arquivo, e o cache-first
+// serviria o velho, descasado da legenda. Por isso ele segue a regra do JSON (rede-primeiro).
+const isCondensed = (url) => url.pathname.endsWith("/media/condensed.mp3");
 // capa da dose e cena de cada card (`media/frames/*.jpg`): pequenas e imutáveis (nome com hash)
 const isContentImage = (url) => url.pathname.startsWith("/content/") && /\.(jpe?g|png|webp)$/i.test(url.pathname);
 const isAsset = (url) => url.pathname.startsWith("/assets/") || url.pathname.startsWith("/icons/");
@@ -163,7 +166,7 @@ self.addEventListener("fetch", (event) => {
 
   if (isAsset(url)) {
     event.respondWith(cacheFirst(request, SHELL)); // hash no nome = imutável
-  } else if (isContentJson(url)) {
+  } else if (sameOrigin && (isContentJson(url) || isCondensed(url))) {
     event.respondWith(networkFirst(request, RUNTIME)); // regerar dose vale na hora
   } else if (sameOrigin && (isShortAudio(url) || isContentImage(url))) {
     event.respondWith(cacheFirst(request, RUNTIME)); // TTS, fragmentos, capas e cenas dos cards

@@ -14,7 +14,7 @@ import { useApp } from "@/lib/store";
 import { firstName, useAuth } from "@/lib/auth";
 import { Card, Button } from "@/components/ui/primitives";
 import { DoseLine } from "@/components/ui/DoseLine";
-import { HomeSkeleton, ErrorScreen } from "@/components/ui/feedback";
+import { HomeSkeleton, ErrorScreen, EmptyState } from "@/components/ui/feedback";
 import { fmtDuration, fmtClock, dayKey, shiftDay, pluralize, cn } from "@/lib/utils";
 import { BRAND } from "@/lib/brand";
 import type { Dose, DoseRef } from "@/types/dose";
@@ -300,18 +300,21 @@ export function Dashboard() {
     ]);
     const next = nextDose(course, progress);
     // O método é uma dose por dia: a tela precisa saber se a de hoje já saiu.
+    // Se mais de uma apareceu concluída hoje (dois aparelhos), vale a última.
     const today = dayKey();
-    const doneTodayId = [...progress.values()].find(
-      (p) => p.completed && p.completedAt && dayKey(new Date(p.completedAt)) === today,
-    )?.doseId;
-    const doneToday = doneTodayId ? (course.doses.find((d) => d.id === doneTodayId) ?? null) : null;
-    const newReady = next ? await countNewReady(next.id, entry.code, next.cardCount) : 0;
+    const doneTodayRow = [...progress.values()]
+      .filter((p) => p.completed && p.completedAt && dayKey(new Date(p.completedAt)) === today)
+      .sort((a, b) => (b.completedAt ?? 0) - (a.completedAt ?? 0))[0];
+    const doneToday = doneTodayRow ? (course.doses.find((d) => d.id === doneTodayRow.doseId) ?? null) : null;
+    // A carta mostra a de hoje já feita; sem ela, a próxima. O que é da "próxima"
+    // (palavras novas, posição do vídeo) só é lido quando a carta mostra a próxima.
+    const ref = doneToday ?? next;
+    const newReady = next && !doneToday ? await countNewReady(next.id, entry.code, next.cardCount) : 0;
     const learnAhead = await countLearnAhead(entry.code);
-    // A dose de hoje entra inteira (são ~40 KB, servidos do disco) para a tela
+    // A dose em destaque entra inteira (são ~40 KB, servidos do disco) para a tela
     // poder mostrar a fala de abertura, as 20 palavras e a capa.
-    const ref = next ?? doneToday;
     const nextDoseFull = ref ? await loadDose(entry.code, ref.path).catch(() => null) : null;
-    const resumeMs = next ? await getMediaPosition(next.id) : 0;
+    const resumeMs = next && !doneToday ? await getMediaPosition(next.id) : 0;
     const week = Array.from({ length: 7 }, (_, i) => {
       const day = shiftDay(today, i - 6);
       const s = stats.get(day);
@@ -333,11 +336,10 @@ export function Dashboard() {
   const doneIds = new Set(
     course.doses.filter((d) => progress.get(d.id)?.completed).map((d) => d.id),
   );
-  const featured: DoseRef | null = next ?? doneToday;
+  // A carta mostra a dose de hoje (já concluída) ou, sem ela, a próxima.
+  const featured: DoseRef | null = doneToday ?? next;
   const featuredProgress = featured ? progress.get(featured.id) : undefined;
-  const phasesDone = doneToday && featured?.id === doneToday.id
-    ? ["prime", "immersion", "review"]
-    : (featuredProgress?.phases ?? []);
+  const phasesDone = doneToday ? ["prime", "immersion", "review"] : (featuredProgress?.phases ?? []);
   const inProgress = !!next && phasesDone.length > 0 && !doneToday;
   // Só oferece "continuar de X" se houver posição real salva no vídeo.
   const canResume = inProgress && resumeMs > 15_000;
@@ -460,6 +462,8 @@ export function Dashboard() {
                 </div>
               </Card>
             </motion.div>
+          ) : course.doses.length === 0 ? (
+            <EmptyState title="Ainda não há lições neste idioma." />
           ) : (
             <Card className="px-6 py-10 text-center">
               <Check size={20} className="mx-auto text-good" />
@@ -536,13 +540,15 @@ export function Dashboard() {
         </aside>
       </div>
 
-      <Trail
-        lang={entry.code}
-        doses={course.doses}
-        doneIds={doneIds}
-        currentId={next?.id}
-        total={course.doses.length}
-      />
+      {course.doses.length > 0 && (
+        <Trail
+          lang={entry.code}
+          doses={course.doses}
+          doneIds={doneIds}
+          currentId={next?.id}
+          total={course.doses.length}
+        />
+      )}
     </div>
   );
 }

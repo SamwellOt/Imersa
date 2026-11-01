@@ -13,7 +13,13 @@ applyTheme(useApp.getState().theme);
 async function mount() {
   // a sessão da conta é lida ANTES do primeiro render: senão a tela de entrar
   // piscava para quem já está logado (o porteiro em App.tsx decide por ela)
-  await hydrateAuth();
+  // Se o IndexedDB falhar ao abrir, o app ainda tem de aparecer (sem sessão lida,
+  // o porteiro manda para /entrar) — antes a falha deixava a tela em branco.
+  try {
+    await hydrateAuth();
+  } catch (err) {
+    console.error("Não deu para ler a sessão:", err);
+  }
   createRoot(document.getElementById("root")!).render(
     <StrictMode>
       <App />

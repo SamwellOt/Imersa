@@ -234,7 +234,7 @@ def build_condensed(dose: dict, dose_dir: str, media: str) -> tuple[str | None, 
     out_rel = "media/condensed.mp3"
     out = os.path.join(dose_dir, out_rel)
     script = os.path.join(dose_dir, "media", ".condense.filter")
-    with open(script, "w") as fh:
+    with open(script, "w", encoding="utf-8") as fh:
         fh.write(f"aselect='{expr}',asetpts=N/SR/TB")
     try:
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", media,

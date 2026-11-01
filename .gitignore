@@ -22,3 +22,6 @@ server/data/
 
 # builds incrementais do TS
 *.tsbuildinfo
+
+# saída do harness de testes do app (npm run test:web)
+web/test/.out/

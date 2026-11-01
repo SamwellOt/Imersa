@@ -61,14 +61,23 @@ export async function backfillCardTiers(course: Course): Promise<void> {
         [...dose.cards, ...(dose.sentenceCards ?? []), ...(dose.glossary ?? []).flatMap((g) => (g.card ? [g.card] : []))]
           .map((c) => [c.id, c.topikLevel ?? null]),
       );
+      // Relê cada card dentro da transação: o snapshot de `recs` é de antes do
+      // `loadDose` e reverteria notas dadas nesse intervalo.
       // `updatedAt` novo: card é ESTADO, e escrita sem tocar no carimbo perde o
       // last-write-wins — o backfill nunca viajava para o outro aparelho e
       // ainda era desfeito pela primeira escrita que chegasse de lá.
-      const now = Date.now();
-      await db.cards.bulkPut(
-        recs.map((r) => ({ ...r, topikLevel: tierOf.get(r.cardId) ?? null, updatedAt: now })),
-      );
-      wrote = true;
+      const n = await db.transaction("rw", [db.cards], async () => {
+        const now = Date.now();
+        let count = 0;
+        for (const r of recs) {
+          const fresh = await db.cards.get(r.key);
+          if (!fresh || fresh.topikLevel !== undefined) continue;
+          await db.cards.put({ ...fresh, topikLevel: tierOf.get(r.cardId) ?? null, updatedAt: now });
+          count++;
+        }
+        return count;
+      });
+      if (n > 0) wrote = true;
     } catch {
       /* dose indisponível (offline): tenta de novo na próxima vez */
     }

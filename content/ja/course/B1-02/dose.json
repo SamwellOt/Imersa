@@ -1012,7 +1012,7 @@
       "id": "s19",
       "index": 19,
       "startMs": 39440,
-      "endMs": 39440,
+      "endMs": 39520,
       "target": "うん。",
       "translation": "Uhum.",
       "speakerId": "speaker_0",
@@ -1554,7 +1554,7 @@
       "id": "s37",
       "index": 37,
       "startMs": 76940,
-      "endMs": 76940,
+      "endMs": 77140,
       "target": "音、",
       "translation": "O som,",
       "speakerId": "speaker_1",
@@ -2090,7 +2090,8 @@
           "lemma": "方法",
           "surface": "方法",
           "start": 4,
-          "end": 6
+          "end": 6,
+          "base": true
         }
       ]
     },
@@ -2734,7 +2735,7 @@
       "id": "s76",
       "index": 76,
       "startMs": 164560,
-      "endMs": 164560,
+      "endMs": 164760,
       "target": "どこ座ります？",
       "translation": "Onde vamos sentar?",
       "speakerId": "speaker_1",
@@ -2929,7 +2930,7 @@
       "id": "s85",
       "index": 85,
       "startMs": 194220,
-      "endMs": 194220,
+      "endMs": 194420,
       "target": "暑い。",
       "translation": "Que calor.",
       "speakerId": "speaker_1",
@@ -2946,7 +2947,7 @@
     {
       "id": "s86",
       "index": 86,
-      "startMs": 194220,
+      "startMs": 194420,
       "endMs": 196540,
       "target": "充電器貸して。",
       "translation": "Me empresta o carregador.",
@@ -13558,6 +13559,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13680,7 +13682,23 @@
       "meaningEn": null,
       "freqRank": 988,
       "topikLevel": "A",
-      "cardIn": "ja-B1-04"
+      "card": {
+        "id": "w-注文",
+        "segmentId": "s9",
+        "target": "注文",
+        "translation": "pedido (注文する = pedir)",
+        "startMs": 21140,
+        "endMs": 21680,
+        "reading": "ちゅうもん",
+        "context": "注文しようか。 — Vamos pedir?",
+        "audioClipSrc": "media/tts/wc4c7755ed33f.mp3",
+        "exampleAudioSrc": "media/frag/ff1c78ece53ca.mp3",
+        "freqRank": 988,
+        "topikLevel": "A",
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s7dcefd8554ec.jpg"
+      }
     },
     {
       "lemma": "為る",
@@ -13800,6 +13818,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -13830,6 +13849,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -14024,7 +14044,7 @@
       "meaning": "eu (masculino, informal)",
       "meaningEn": null,
       "freqRank": null,
-      "topikLevel": null,
+      "topikLevel": "C",
       "dict": true
     },
     {
@@ -14067,6 +14087,7 @@
       "meaningEn": null,
       "freqRank": 23536,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -14245,6 +14266,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -14306,6 +14328,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -14326,7 +14349,7 @@
       "meaningEn": null,
       "freqRank": 115,
       "topikLevel": "A",
-      "cardIn": "ja-B1-04"
+      "base": true
     },
     {
       "lemma": "畏まる",
@@ -14774,6 +14797,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -14905,6 +14929,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15166,6 +15191,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15482,6 +15508,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -15634,7 +15661,25 @@
       "meaningEn": null,
       "freqRank": 694,
       "topikLevel": "A",
-      "cardIn": "ja-B1-04"
+      "card": {
+        "id": "w-越える",
+        "segmentId": "s179",
+        "target": "超える",
+        "translation": "atravessar, passar por cima (山を越える)",
+        "startMs": 529700,
+        "endMs": 536880,
+        "reading": "こえる",
+        "context": "でももしかしたら三十歳超えたら嫌になるかもしれません。 — Mas talvez, passando dos trinta, eu passe a não gostar.",
+        "audioClipSrc": "media/tts/w6c8dc14779ae.mp3",
+        "exampleAudioSrc": "media/frag/fc0960e52a6c3.mp3",
+        "freqRank": 694,
+        "topikLevel": "A",
+        "newWords": [
+          "超え"
+        ],
+        "homophones": null,
+        "sceneSrc": "media/frames/s0a2b269139d3.jpg"
+      }
     },
     {
       "lemma": "先ず",
@@ -15910,6 +15955,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -16853,6 +16899,7 @@
       "meaningEn": null,
       "freqRank": null,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -16962,7 +17009,7 @@
       "meaningEn": null,
       "freqRank": 2593,
       "topikLevel": "B",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "呉れる",
@@ -17023,6 +17070,7 @@
       "meaningEn": null,
       "freqRank": 34184,
       "topikLevel": null,
+      "base": true,
       "dict": true
     },
     {
@@ -17069,7 +17117,23 @@
       "meaningEn": null,
       "freqRank": 1409,
       "topikLevel": null,
-      "cardIn": "ja-B1-06"
+      "card": {
+        "id": "w-結婚式",
+        "segmentId": "s316",
+        "target": "結婚式",
+        "translation": "cerimônia de casamento",
+        "startMs": 1109208,
+        "endMs": 1110568,
+        "reading": "けっこんしき",
+        "context": "結婚式はやる。 — Vai fazer festa de casamento.",
+        "audioClipSrc": "media/tts/w949a13375a36.mp3",
+        "exampleAudioSrc": "media/frag/fc594e7934de9.mp3",
+        "freqRank": 1409,
+        "topikLevel": null,
+        "newWords": [],
+        "homophones": null,
+        "sceneSrc": "media/frames/s645a6a5b5382.jpg"
+      }
     },
     {
       "lemma": "遣る",
@@ -17184,7 +17248,7 @@
       "meaningEn": null,
       "freqRank": 825,
       "topikLevel": "A",
-      "cardIn": "ja-B1-05"
+      "cardIn": "ja-B1-04"
     },
     {
       "lemma": "確かめる",
@@ -17533,15 +17597,15 @@
   ],
   "sentenceCards": [
     {
-      "id": "s-cb4cb2fa6d",
+      "id": "s-299942ba9f",
       "kind": "sentence",
-      "segmentId": "s236",
-      "target": "結婚してから一緒に暮らし始めるのは普通？",
-      "translation": "É normal começar a morar junto depois de casar?",
-      "startMs": 744560,
-      "endMs": 750780,
-      "audioClipSrc": "media/frag/fa775b0abb174.mp3",
-      "exampleAudioSrc": "media/frag/fa775b0abb174.mp3",
+      "segmentId": "s237",
+      "target": "それとも結婚する前に一緒に暮らすのが普通？",
+      "translation": "Ou é normal morar junto antes de casar?",
+      "startMs": 750780,
+      "endMs": 758260,
+      "audioClipSrc": "media/frag/f3675be3e0157.mp3",
+      "exampleAudioSrc": "media/frag/f3675be3e0157.mp3",
       "freqRank": 1707,
       "topikLevel": "A",
       "focus": {
@@ -17549,10 +17613,10 @@
         "target": "暮らす",
         "meaning": "viver, morar (一緒に暮らす)",
         "reading": "くらす",
-        "start": 9,
-        "end": 12
+        "start": 13,
+        "end": 16
       },
-      "sceneSrc": "media/frames/sf02b84424680.jpg"
+      "sceneSrc": "media/frames/secddaa1efd3c.jpg"
     },
     {
       "id": "s-012139acfc",
@@ -17599,5 +17663,5 @@
       "sceneSrc": "media/frames/s10b590ea1b47.jpg"
     }
   ],
-  "createdAt": "2026-09-24T19:20:34.070581+00:00"
+  "createdAt": "2026-09-28T15:02:46.266451+00:00"
 }

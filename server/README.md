@@ -24,8 +24,30 @@ Em produção roda como serviço (`systemctl status imersa`), com log em
 `auth-store.mjs`, no mesmo SQLite. Cadastro por **e-mail + senha** (scrypt com sal por
 usuário, N=2^15), **sessões por aparelho** (token aleatório de 32 bytes; o banco guarda só
 o sha256 — vazar o banco não entrega sessões vivas), prazo deslizante de 180 dias,
-limite de 8 tentativas de login por 15 min (por e-mail e por IP) e de 8 cadastros por IP
-na mesma janela; login com e-mail inexistente também paga um scrypt (o tempo de resposta
+limites de login que bloqueiam **quem tenta**, nunca o dono: 8 erros em 15 min **por IP**;
+8 erros em 15 min **por conta**, contados só de aparelhos **sem marca de confiança**
+(barra o ataque espalhado por muitos IPs); e 8 por **marca**. A marca (`imd_…`,
+`deviceTrust` na resposta de cadastro/login, só o sha256 no banco, tabela
+`trusted_devices`, 1 ano deslizante) é entregue a cada login certo, o app a guarda em
+`local:deviceTrust` (sobrevive ao sair da conta) e a manda no login: com ela o dono
+entra mesmo com a conta sob ataque. Trocar a senha ou encerrar um aparelho nos Ajustes
+retira a marca dos outros/daquele aparelho. Cadastro: 8 **que falharam** por IP na
+janela (sucesso não conta) e um **disjuntor global** de 100 contas novas por hora
+(`IMERSA_SIGNUP_MAX_PER_HOUR`). O cadastro responde 409 para e-mail já usado — sem
+confirmação por e-mail isso sempre revela quem tem conta —, então há um segundo
+**disjuntor global**: 20 respostas "e-mail já cadastrado" por hora
+(`IMERSA_REGDUP_MAX_PER_HOUR`) e, passou disso, **todo** cadastro dá 429 até a janela
+andar (bloquear só os repetidos entregaria quem existe). Trocar a senha e apagar a conta
+conferem a senha com o mesmo limite do login (8 erros em 15 min, por conta): um token
+roubado não chuta a senha à vontade. **Corridas** (`test/race.test.mjs`): o que foi
+conferido antes de um `await` (corpo do pedido, scrypt) é conferido de novo dentro de um
+`BEGIN IMMEDIATE` na hora de gravar — a troca de senha só grava se o hash ainda é o
+conferido (`UPDATE … WHERE passHash=?`; duas trocas juntas → 200 + **409**), trocar a senha
+ou apagar a conta exigem que a sessão ainda exista (aparelho encerrado no meio → 401), o
+login não cria sessão se a senha mudou durante o scrypt dele, e as rotas com sessão leem o
+corpo **antes** de conferir o token. Todo scrypt passa por uma **fila** de no máximo 4
+simultâneos (`IMERSA_KDF_MAX`; fila acima de 256 → 503), então uma rajada só deixa as
+respostas mais lentas, sem esgotar a memória; login com e-mail inexistente também paga um scrypt (o tempo de resposta
 não revela quem tem conta). O IP é o do socket: `X-Forwarded-For` só é lido com
 `IMERSA_TRUST_PROXY=1` (atrás de um proxy que reescreve o cabeçalho — hoje a :8000 é
 servida direto). Toda resposta leva `nosniff`, `X-Frame-Options: DENY` e
@@ -33,8 +55,8 @@ servida direto). Toda resposta leva `nosniff`, `X-Frame-Options: DENY` e
 
 | rota | corpo | faz |
 |---|---|---|
-| `POST /api/auth/register` | `{email, password, name?, deviceId}` | cria a conta e já devolve `{user, token, sessionId}` |
-| `POST /api/auth/login` | `{email, password, deviceId}` | idem, para conta existente (401 genérico se errar) |
+| `POST /api/auth/register` | `{email, password, name?, deviceId}` | cria a conta e já devolve `{user, token, sessionId, deviceTrust}` |
+| `POST /api/auth/login` | `{email, password, deviceId, deviceTrust?}` | idem, para conta existente (401 genérico se errar) |
 | `POST /api/auth/logout` | — | encerra a sessão do token |
 | `GET /api/auth/me` | — | `{user, sessionId, sessions[], stats}` |
 | `POST /api/auth/sessions/revoke` | `{id}` ou `{others: true}` | encerra outra sessão / todas as outras |
@@ -49,7 +71,9 @@ como `{error}` com texto em PT-BR pronto para a tela.
 
 Antes das contas, a "conta" era um código gerado em Ajustes e colado no outro aparelho:
 `sha256("imersa:" + código)`. O servidor **continua aceitando** (`Bearer <código>`, mínimo
-12 caracteres) para quem ainda o tem configurado, mas o app não oferece mais essa UI. Ao
+12 caracteres) **só para as contas por código que já existem** — código desconhecido dá
+401 e não cria nada (antes, qualquer texto criava um espaço novo, sem cadastro e fora do
+disjuntor). O app não oferece mais essa UI. Ao
 entrar com uma conta, o app oferece levar o progresso do aparelho para ela — é assim que
 se migra.
 
@@ -93,6 +117,17 @@ backup zera o cursor e carimba o estado com `updatedAt` de agora — o restaurad
 vence.
 
 `mark` = fala marcada «não entendi» no player (tabela `lineMarks` do app).
+
+### Limites de armazenamento
+
+- Registro com `id` acima de 200 caracteres ou `value` acima de 256 KB é **ignorado**
+  (como item malformado; os outros do lote entram).
+- **Cota por conta**: 300 mil registros (tombstones contam) e 100 MB de id + json
+  (`IMERSA_QUOTA_RECORDS`, `IMERSA_QUOTA_BYTES`), contados em `accounts.nrec/nbytes`
+  (preenchidos a partir dos registros na primeira abertura de um banco antigo). Lote que
+  deixaria a conta acima da cota → **507** e **nada** dele é gravado; o cliente mantém
+  as pendências e mostra o erro. Lote que só diminui o uso (apagar, valor menor) passa
+  sempre.
 
 O servidor não recalcula nada — ele não sabe o que é FSRS. Ver
 [`../docs/architecture.md`](../docs/architecture.md) para o porquê.
