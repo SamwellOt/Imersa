@@ -9,7 +9,7 @@ import {
   getDoseProgress, markPhaseDone, saveMediaPosition, getMediaPosition, completeDose, nextDose,
   getAllProgress, getOverview,
 } from "@/lib/progress";
-import { logImmersion, countDueElsewhere } from "@/lib/srs";
+import { countDueElsewhere } from "@/lib/srs";
 import { ImmersionPlayer } from "@/components/player/ImmersionPlayer";
 import { ReviewSession, type ReviewSummary } from "@/components/srs/ReviewSession";
 import { LoadingScreen, ErrorScreen } from "@/components/ui/feedback";
@@ -132,40 +132,6 @@ export function DosePlayer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [urlPhase]);
 
-  // Tempo de imersão: acumula em memória e vira evento no banco ao trocar de
-  // fase, ao sair da dose e a cada minuto. O `lang` vem de uma ref porque o
-  // flush do unmount roda com a closure do primeiro render — sem a ref, fechar
-  // a dose perderia os minutos assistidos.
-  const listenedRef = useRef(0);
-  const langRef = useRef(lang);
-  langRef.current = lang;
-  const doseIdRef = useRef(doseId);
-  doseIdRef.current = doseId;
-  const flushListened = () => {
-    const l = langRef.current;
-    if (l && listenedRef.current > 500) {
-      logImmersion(l, listenedRef.current, doseIdRef.current);
-      listenedRef.current = 0;
-    }
-  };
-  const flushRef = useRef(flushListened);
-  flushRef.current = flushListened;
-  useEffect(() => {
-    // fechar a aba no meio do vídeo também precisa registrar o que já rodou
-    const onHide = () => flushRef.current();
-    addEventListener("pagehide", onHide);
-    const every = setInterval(onHide, 60_000);
-    return () => {
-      removeEventListener("pagehide", onHide);
-      clearInterval(every);
-      flushRef.current();
-    };
-  }, []);
-  useEffect(() => {
-    if (phase !== "immersion") flushListened();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase]);
-
   // A posição do vídeo é salva no máximo a cada 5s. Antes o corte era feito
   // pelo valor do tempo (`ms % 5000`), e como o player emite a posição a cada
   // quadro isso gravava ~15 vezes seguidas na mesma janela — enxurrada de
@@ -259,7 +225,6 @@ export function DosePlayer() {
                   dose={dose}
                   mediaUrl={mediaUrl}
                   initialMs={resumeMs}
-                  onListened={(d) => (listenedRef.current += d)}
                   onPositionChange={(ms) => {
                     const now = Date.now();
                     if (ms < 1000 || now - lastSavedAt.current < 5000) return;

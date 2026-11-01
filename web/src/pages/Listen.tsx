@@ -3,8 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { ArrowLeft, Pause, Play, SkipBack, SkipForward, WifiOff } from "lucide-react";
 import type { Dose, Segment } from "@/types/dose";
 import { resolveDose, mediaUrl, langOfDoseId } from "@/lib/content";
-import { logImmersion } from "@/lib/srs";
 import { hasTokens } from "@/lib/vocab";
+import { useImmersionMeter } from "@/lib/useImmersionMeter";
 import { useApp } from "@/lib/store";
 import { useAsync, useDocumentTitle, useHotkeys, isInteractiveTarget, hasShortcutModifier } from "@/lib/hooks";
 import { BRAND } from "@/lib/brand";
@@ -14,8 +14,6 @@ import { MarkedText } from "@/components/ui/MarkedText";
 import { WordPopover } from "@/components/player/WordPopover";
 
 const RATES = [0.85, 1, 1.15, 1.35];
-/** Tempo ouvido vira evento de imersão em blocos (e ao sair). */
-const FLUSH_MS = 30_000;
 
 /** Instante do áudio condensado → instante no vídeo original (via `condensedMap`). */
 function toOriginal(map: [number, number, number][], ms: number): number {
@@ -120,37 +118,12 @@ function ListenPlayer({
     };
   }, [audioUrl]);
 
-  // imersão: soma o tempo ouvido e grava em blocos
-  const pendingMs = useRef(0);
-  const lastT = useRef<number | null>(null);
-  const flush = () => {
-    const n = pendingMs.current;
-    pendingMs.current = 0;
-    if (n > 1000) void logImmersion(dose.language, n, dose.id);
-  };
-  const flushRef = useRef(flush);
-  flushRef.current = flush;
-  useEffect(() => {
-    // fechar a aba no meio da escuta também registra o que já tocou (até 30 s)
-    const onHide = () => flushRef.current();
-    addEventListener("pagehide", onHide);
-    return () => {
-      removeEventListener("pagehide", onHide);
-      flushRef.current();
-    };
-  }, []);
+  // tempo ouvido: o medidor de imersão (mesma regra do vídeo, relógio de parede)
+  useImmersionMeter(audioRef, { language: dose.language, doseId: dose.id });
 
   const onTime = () => {
     const a = audioRef.current;
-    if (!a) return;
-    const t = a.currentTime * 1000;
-    if (lastT.current != null && !a.paused) {
-      const d = t - lastT.current;
-      if (d > 0 && d < 2000) pendingMs.current += d / (a.playbackRate || 1);
-      if (pendingMs.current >= FLUSH_MS) flush();
-    }
-    lastT.current = t;
-    setMs(t);
+    if (a) setMs(a.currentTime * 1000);
   };
 
   const orig = toOriginal(map, ms);
@@ -235,9 +208,9 @@ function ListenPlayer({
               ref={audioRef}
               src={blobUrl}
               onTimeUpdate={onTime}
-              onPlay={() => { setPlaying(true); lastT.current = null; }}
-              onPause={() => { setPlaying(false); flush(); }}
-              onEnded={() => { setPlaying(false); flush(); }}
+              onPlay={() => setPlaying(true)}
+              onPause={() => setPlaying(false)}
+              onEnded={() => setPlaying(false)}
               onLoadedMetadata={(e) => { e.currentTarget.playbackRate = rate; }}
               preload="auto"
             />
