@@ -1,6 +1,6 @@
 # 01 — Medidor de imersão
 
-Status: ready-for-agent
+Status: resolved
 Blocked by: —
 
 Spec: `.scratch/aprofundar-modulos/spec.md` — seções "Medidor de imersão" (User Stories 1–11,
@@ -13,3 +13,7 @@ Testes: `web/test/unit`, `web/test/ui/ImmersionPlayer.test.tsx`, harness `web/te
 
 Pronto quando: um módulo só (núcleo sem React + hook fino) conta para vídeo e Escuta;
 testes do medidor novos; `npm test`, `npm run test:web` e `npm run typecheck` verdes.
+
+## Comments
+
+- 01/11: entregue em `6e2df53` (`web/src/lib/immersionMeter.ts` + `useImmersionMeter.ts`). A prop `onListened` do `ImmersionPlayer` ficou como observadora dos créditos do medidor, porque o teste de caracterização do Primed depende dela.
